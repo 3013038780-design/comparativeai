@@ -7,14 +7,14 @@ import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.org',
+	site: 'https://comparativeai.org',
 	adapter: node({ mode: 'standalone' }),
 	integrations: [
 		react(),
 		keystatic(),
 		starlight({
-			title: 'AI Policy Atlas',
-			description: '中国、美国、欧盟 AI 治理比较分析的学术资源',
+			title: 'Comparative AI',
+			description: 'AI 治理的跨辖区比较资源 · Hard vs. Soft Law across China, US & EU',
 			defaultLocale: 'root',
 			locales: {
 				root: { label: '中文', lang: 'zh-CN' },
@@ -37,7 +37,7 @@ export default defineConfig({
 						{ label: '项目简介 Introduction', slug: 'about' },
 						{
 							label: '方法论 Methodology',
-							collapsed: true,
+							collapsed: false,
 							items: [
 								{ label: '概览', slug: 'methodology' },
 								{ label: '引用与免责', slug: 'methodology/citation-disclaimer' },
@@ -45,104 +45,28 @@ export default defineConfig({
 						},
 					],
 				},
+				// Topics / Rules / Subnational / Companies 都用 autogenerate：
+				// 每个子目录自动生成嵌套组，添加新页面（如新议题的中国/美国/欧盟页，
+				// 或新规则、新地方页、新公司材料）后 sidebar 会自动反映，无需改本文件。
 				{
 					label: '议题比较 Topics',
 					collapsed: false,
-					items: [
-						{ label: '议题总览', slug: 'topics' },
-						{
-							label: '风险分级 Risk Classification',
-							collapsed: true,
-							items: [
-								{ label: '概览', slug: 'topics/risk-classification' },
-								{ label: '中国', slug: 'topics/risk-classification/china' },
-								{ label: '美国', slug: 'topics/risk-classification/us' },
-								{ label: '欧盟', slug: 'topics/risk-classification/eu' },
-							],
-						},
-						{
-							label: '前沿模型与 GPAI',
-							collapsed: true,
-							items: [
-								{ label: '概览', slug: 'topics/frontier-gpai' },
-								{ label: '中国', slug: 'topics/frontier-gpai/china' },
-								{ label: '美国', slug: 'topics/frontier-gpai/us' },
-								{ label: '欧盟', slug: 'topics/frontier-gpai/eu' },
-							],
-						},
-						{
-							label: '数据与训练 Data & Training',
-							collapsed: true,
-							items: [
-								{ label: '概览', slug: 'topics/data-training' },
-								{ label: '中国', slug: 'topics/data-training/china' },
-								{ label: '美国', slug: 'topics/data-training/us' },
-								{ label: '欧盟', slug: 'topics/data-training/eu' },
-							],
-						},
-						{
-							label: '内容标识与溯源',
-							collapsed: true,
-							items: [
-								{ label: '概览', slug: 'topics/content-labeling-provenance' },
-								{ label: '中国', slug: 'topics/content-labeling-provenance/china' },
-								{ label: '美国', slug: 'topics/content-labeling-provenance/us' },
-								{ label: '欧盟', slug: 'topics/content-labeling-provenance/eu' },
-							],
-						},
-					],
+					autogenerate: { directory: 'topics', collapsed: false },
 				},
 				{
 					label: '顶层规则 Rules',
 					collapsed: true,
-					items: [
-						{ label: '索引', slug: 'rules' },
-						{ label: '🇨🇳 中国', slug: 'rules/china' },
-						{ label: '🇺🇸 美国', slug: 'rules/us' },
-						{ label: '🇪🇺 欧盟', slug: 'rules/eu' },
-					],
+					autogenerate: { directory: 'rules', collapsed: true },
 				},
 				{
 					label: '地方层级 Subnational',
 					collapsed: true,
-					items: [
-						{ label: '索引', slug: 'subnational' },
-						{ label: '🇨🇳 中国地方', slug: 'subnational/china' },
-						{ label: '🇺🇸 美国各州/市', slug: 'subnational/us' },
-						{ label: '🇪🇺 成员国', slug: 'subnational/eu' },
-					],
+					autogenerate: { directory: 'subnational', collapsed: true },
 				},
 				{
 					label: '公司实践 Corporate',
 					collapsed: true,
-					items: [
-						{ label: '公司索引', slug: 'companies' },
-						{
-							label: 'Anthropic',
-							collapsed: true,
-							autogenerate: { directory: 'companies/anthropic' },
-						},
-						{
-							label: 'OpenAI',
-							collapsed: true,
-							autogenerate: { directory: 'companies/openai' },
-						},
-						{
-							label: 'Google DeepMind',
-							collapsed: true,
-							autogenerate: { directory: 'companies/google-deepmind' },
-						},
-						{
-							label: 'ByteDance 字节',
-							collapsed: true,
-							autogenerate: { directory: 'companies/bytedance' },
-						},
-						{
-							label: 'DeepSeek',
-							collapsed: true,
-							autogenerate: { directory: 'companies/deepseek' },
-						},
-					],
+					autogenerate: { directory: 'companies', collapsed: true },
 				},
 				{
 					label: '参考框架 Reference',

@@ -9,11 +9,11 @@ sidebar:
 
 ### 建议引用格式（APA 风格）
 
-> 匿名作者. (2026). *《条目标题》*. AI Policy Atlas. Retrieved YYYY-MM-DD, from https://example.org/path
+> 匿名作者. (2026). *《条目标题》*. Comparative AI. Retrieved YYYY-MM-DD, from https://comparativeai.org/path
 
 ### 中文学术格式
 
-> AI Policy Atlas. 《条目标题》[EB/OL]. (本次访问时间 YYYY-MM-DD). https://example.org/path
+> Comparative AI. 《条目标题》[EB/OL]. (本次访问时间 YYYY-MM-DD). https://comparativeai.org/path
 
 ### 建议始终附带
 

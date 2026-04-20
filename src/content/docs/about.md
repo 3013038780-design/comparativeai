@@ -1,13 +1,13 @@
 ---
 title: 项目简介 Introduction
-description: AI Policy Atlas 是什么、为什么做、给谁看
+description: Comparative AI 是什么、为什么做、给谁看
 sidebar:
   order: 1
 ---
 
 ## 这是什么
 
-**AI Policy Atlas** 是一个独立的学术研究项目。目标很具体：
+**Comparative AI** 是一个独立的学术研究项目。目标很具体：
 **在中国、美国、欧盟三个司法辖区之间，建立一个以议题为切口、以一手材料为底座、可追溯、可挑错的 AI 治理比较图谱。**
 
 ## 为什么做

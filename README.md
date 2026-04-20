@@ -1,4 +1,4 @@
-# AI Policy Atlas
+# Comparative AI
 
 基于 Astro + Starlight 搭建的独立研究网站，按议题对中国、美国、欧盟的 AI 治理规则做比较分析。
 

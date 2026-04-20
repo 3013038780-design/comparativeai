@@ -5,7 +5,7 @@ sidebar:
   order: 2
 ---
 
-本页说明 AI Policy Atlas 的编辑规则。所有内容页都遵守这里写明的标准，发现不符请指出。
+本页说明 Comparative AI 的编辑规则。所有内容页都遵守这里写明的标准，发现不符请指出。
 
 引用与免责另立独立页面：[引用与免责](/methodology/citation-disclaimer/)。
 

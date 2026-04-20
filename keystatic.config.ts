@@ -1,7 +1,7 @@
 import { config, fields, collection, singleton } from '@keystatic/core';
 
 /**
- * AI Policy Atlas — Keystatic CMS 配置（v2 IA）
+ * Comparative AI — Keystatic CMS 配置（v2 IA）
  *
  * 信息架构：
  *   - About：home / about / methodology / citation-disclaimer（都是 singletons）
@@ -45,7 +45,7 @@ const fixedPage = (path: string) =>
 export default config({
 	storage: { kind: 'local' },
 	ui: {
-		brand: { name: 'AI Policy Atlas' },
+		brand: { name: 'Comparative AI' },
 		navigation: {
 			关于: ['home', 'about', 'methodology', 'methodologyCitation'],
 			议题: ['topicOverviews', 'topicChina', 'topicUs', 'topicEu', 'topicsIndex'],
