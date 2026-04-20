@@ -1,0 +1,104 @@
+/* AI Policy Atlas — 学术、克制、信息密度高 */
+
+:root {
+	/* 衬线：英文 Charter/Georgia + 中文思源宋体/宋体 */
+	--font-serif:
+		'Charter', 'Source Han Serif SC', 'Noto Serif SC', 'Songti SC',
+		'STSong', 'SimSun', Georgia, 'Times New Roman', serif;
+	/* 无衬线：system UI + 中文苹方/思源黑体 */
+	--font-sans:
+		-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI',
+		'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans SC',
+		'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+	/* 等宽 */
+	--font-mono:
+		'JetBrains Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+
+	/* Starlight 的字体变量 */
+	--sl-font: var(--font-sans);
+	--sl-font-system: var(--font-sans);
+	--sl-font-mono: var(--font-mono);
+}
+
+/* 浅色：稍微暖一点的米白，降低长时间阅读疲劳 */
+:root[data-theme='light'] {
+	--sl-color-bg: #fafaf7;
+	--sl-color-bg-nav: #f5f4ef;
+	--sl-color-bg-sidebar: #f5f4ef;
+	--sl-color-text: #1a1a1a;
+	--sl-color-text-accent: #6b3f3f; /* 深酒红，克制的学术感 */
+	--sl-color-accent: #6b3f3f;
+	--sl-color-accent-high: #4a2b2b;
+	--sl-color-accent-low: #efe7e7;
+	--sl-color-hairline: #e2e0d9;
+	--sl-color-hairline-light: #eceae3;
+	--sl-color-hairline-shade: #d8d5cc;
+}
+
+/* 深色：偏蓝黑，降低纯黑的刺眼 */
+:root[data-theme='dark'] {
+	--sl-color-bg: #141618;
+	--sl-color-bg-nav: #0f1113;
+	--sl-color-bg-sidebar: #0f1113;
+	--sl-color-text: #e8e6e1;
+	--sl-color-text-accent: #d4a5a5;
+	--sl-color-accent: #d4a5a5;
+	--sl-color-accent-high: #e9c9c9;
+	--sl-color-accent-low: #2a1e1e;
+	--sl-color-hairline: #2a2d31;
+	--sl-color-hairline-light: #1e2124;
+	--sl-color-hairline-shade: #33373c;
+}
+
+/* 标题用衬线，突出学术气质 */
+.sl-markdown-content h1,
+.sl-markdown-content h2,
+.sl-markdown-content h3,
+.sl-markdown-content h4,
+h1.hero-title,
+h1, h2, h3, h4 {
+	font-family: var(--font-serif);
+	font-weight: 600;
+	letter-spacing: -0.005em;
+}
+
+/* 正文字号稍紧凑，提升信息密度 */
+.sl-markdown-content {
+	font-size: 0.95rem;
+	line-height: 1.7;
+}
+
+/* 段落之间间距稍收 */
+.sl-markdown-content p {
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+}
+
+/* 引文：左边线代替斜体背景，学术风 */
+.sl-markdown-content blockquote {
+	border-left: 3px solid var(--sl-color-hairline-shade);
+	background: transparent;
+	padding: 0.1em 1em;
+	color: var(--sl-color-text);
+	font-style: normal;
+}
+
+/* 表格密度 */
+.sl-markdown-content table {
+	font-size: 0.88rem;
+}
+.sl-markdown-content th,
+.sl-markdown-content td {
+	padding: 0.45em 0.7em;
+}
+
+/* 代码块不要过分圆角 */
+.sl-markdown-content pre,
+.sl-markdown-content :not(pre) > code {
+	border-radius: 3px;
+}
+
+/* 移除 Starlight 的背景渐变 hero 效果 */
+.hero > .stack {
+	background: none;
+}
