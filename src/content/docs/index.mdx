@@ -1,41 +1,47 @@
 ---
 title: AI Policy Atlas
-description: 中国、美国、欧盟 AI 治理的比较分析与学术资源
+description: 中国、美国、欧盟 AI 治理的学术比较资源
 ---
 
 import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-**AI Policy Atlas** 是一个独立的研究项目，以议题（topic）为主线，
-对中国、美国、欧盟三个司法辖区的 AI 治理规则进行结构化比较与原文追溯。
-
-目标读者：AI 政策研究者、合规从业者、做 LLM/Agent 产品的 PM 与工程师。
-
-## 内容组织
+**AI Policy Atlas** 是一个独立研究项目，对中国、美国、欧盟三个司法辖区的 AI 治理进行结构化整理。
+本站尝试沿着**五个轴**同时组织内容，让同一个问题可以从多个视角找到：
 
 <CardGrid>
 	<LinkCard
-		title="议题比较 Topics"
-		description="按议题横向比较三个辖区的规则差异、立法动机与执法态度"
+		title="议题比较 Topics（横向）"
+		description="按议题（风险分级、内容标识、数据训练等）横向比较三个辖区的差异与争议"
 		href="/topics/"
 	/>
 	<LinkCard
-		title="司法辖区 Jurisdictions"
-		description="以国家/地区为入口的纵向索引，适合快速了解某地全貌"
-		href="/jurisdictions/"
+		title="顶层规则 Top-Level Rules"
+		description="按辖区 × 硬法/软法分类的中央立法与权威指南的一手索引"
+		href="/rules/"
 	/>
 	<LinkCard
-		title="立法翻译"
-		description="关键条文的对照翻译，附原文链接与版本时间戳"
-		href="/law-translations/"
+		title="地方层级 Subnational"
+		description="中国地方试点、美国州市立法、欧盟成员国转化"
+		href="/subnational/"
 	/>
 	<LinkCard
-		title="自主实验 Experiments"
-		description="基于公开信息复现的实证研究、数据集与可复现代码"
-		href="/experiments/"
+		title="公司实践 Corporate Practice"
+		description="Anthropic、OpenAI、Google DeepMind、字节、DeepSeek 等公司的政策与框架快照"
+		href="/companies/"
+	/>
+	<LinkCard
+		title="参考框架 Reference Frameworks"
+		description="OECD、UNESCO、NIST、ISO/IEC、PAI 等国际与行业框架的轻量索引"
+		href="/reference/"
 	/>
 </CardGrid>
 
+## 开始前请读
+
+本站的**编辑规则**——收录标准、硬法/软法划分、公司归属、版本管理——都写在 [方法论](/methodology/)。
+援引本站内容前，请先了解这些规则，尤其是[硬法/软法的划分](/methodology/#hard-vs-soft)在学界并非唯一标准。
+
 ## 引用与免责
 
-本站内容为个人研究整理，不代表任何机构观点；所有法律条文以各辖区的官方最新版本为准。
-引用请注明来源与访问时间，详见 [方法论](/methodology/)。
+本站为个人学术研究，**不构成法律意见、不代表任何机构观点**。
+详细的引用规则与免责声明见 [引用与免责](/methodology/citation-disclaimer/)。

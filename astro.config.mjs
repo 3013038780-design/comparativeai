@@ -7,10 +7,7 @@ import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
-	// 部署上线后改成实际的公开地址，例如 'https://ai-policy-atlas.pages.dev'
 	site: 'https://example.org',
-	// 默认 static，Keystatic 的 /keystatic/* 和 /api/keystatic/* 路由
-	// 会被自动标为 prerender:false，需要下面的 adapter 来跑 SSR。
 	adapter: node({ mode: 'standalone' }),
 	integrations: [
 		react(),
@@ -23,7 +20,11 @@ export default defineConfig({
 				root: { label: '中文', lang: 'zh-CN' },
 			},
 			social: [
-				{ icon: 'github', label: 'GitHub', href: 'https://github.com/3013038780-design/comparativeai' },
+				{
+					icon: 'github',
+					label: 'GitHub',
+					href: 'https://github.com/3013038780-design/comparativeai',
+				},
 			],
 			customCss: ['./src/styles/custom.css'],
 			lastUpdated: true,
@@ -31,11 +32,17 @@ export default defineConfig({
 			tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 },
 			sidebar: [
 				{
-					label: '关于',
+					label: '关于 About',
 					items: [
-						{ label: '项目简介', slug: 'about' },
-						{ label: '方法论', slug: 'methodology' },
-						{ label: '立法翻译', slug: 'law-translations' },
+						{ label: '项目简介 Introduction', slug: 'about' },
+						{
+							label: '方法论 Methodology',
+							collapsed: true,
+							items: [
+								{ label: '概览', slug: 'methodology' },
+								{ label: '引用与免责', slug: 'methodology/citation-disclaimer' },
+							],
+						},
 					],
 				},
 				{
@@ -44,32 +51,111 @@ export default defineConfig({
 					items: [
 						{ label: '议题总览', slug: 'topics' },
 						{
-							label: 'Content Labeling 内容标识',
+							label: '风险分级 Risk Classification',
 							collapsed: true,
 							items: [
-								{ label: '概览', slug: 'topics/content-labeling' },
-								{ label: '中国', slug: 'topics/content-labeling/china' },
-								{ label: '美国', slug: 'topics/content-labeling/us' },
-								{ label: '欧盟', slug: 'topics/content-labeling/eu' },
+								{ label: '概览', slug: 'topics/risk-classification' },
+								{ label: '中国', slug: 'topics/risk-classification/china' },
+								{ label: '美国', slug: 'topics/risk-classification/us' },
+								{ label: '欧盟', slug: 'topics/risk-classification/eu' },
+							],
+						},
+						{
+							label: '前沿模型与 GPAI',
+							collapsed: true,
+							items: [
+								{ label: '概览', slug: 'topics/frontier-gpai' },
+								{ label: '中国', slug: 'topics/frontier-gpai/china' },
+								{ label: '美国', slug: 'topics/frontier-gpai/us' },
+								{ label: '欧盟', slug: 'topics/frontier-gpai/eu' },
+							],
+						},
+						{
+							label: '数据与训练 Data & Training',
+							collapsed: true,
+							items: [
+								{ label: '概览', slug: 'topics/data-training' },
+								{ label: '中国', slug: 'topics/data-training/china' },
+								{ label: '美国', slug: 'topics/data-training/us' },
+								{ label: '欧盟', slug: 'topics/data-training/eu' },
+							],
+						},
+						{
+							label: '内容标识与溯源',
+							collapsed: true,
+							items: [
+								{ label: '概览', slug: 'topics/content-labeling-provenance' },
+								{ label: '中国', slug: 'topics/content-labeling-provenance/china' },
+								{ label: '美国', slug: 'topics/content-labeling-provenance/us' },
+								{ label: '欧盟', slug: 'topics/content-labeling-provenance/eu' },
 							],
 						},
 					],
 				},
 				{
-					label: '司法辖区 Jurisdictions',
+					label: '顶层规则 Rules',
+					collapsed: true,
 					items: [
-						{ label: '索引', slug: 'jurisdictions' },
-						{ label: '中国 China', slug: 'jurisdictions/china' },
-						{ label: '美国 United States', slug: 'jurisdictions/us' },
-						{ label: '欧盟 European Union', slug: 'jurisdictions/eu' },
+						{ label: '索引', slug: 'rules' },
+						{ label: '🇨🇳 中国', slug: 'rules/china' },
+						{ label: '🇺🇸 美国', slug: 'rules/us' },
+						{ label: '🇪🇺 欧盟', slug: 'rules/eu' },
 					],
 				},
 				{
+					label: '地方层级 Subnational',
+					collapsed: true,
+					items: [
+						{ label: '索引', slug: 'subnational' },
+						{ label: '🇨🇳 中国地方', slug: 'subnational/china' },
+						{ label: '🇺🇸 美国各州/市', slug: 'subnational/us' },
+						{ label: '🇪🇺 成员国', slug: 'subnational/eu' },
+					],
+				},
+				{
+					label: '公司实践 Corporate',
+					collapsed: true,
+					items: [
+						{ label: '公司索引', slug: 'companies' },
+						{
+							label: 'Anthropic',
+							collapsed: true,
+							autogenerate: { directory: 'companies/anthropic' },
+						},
+						{
+							label: 'OpenAI',
+							collapsed: true,
+							autogenerate: { directory: 'companies/openai' },
+						},
+						{
+							label: 'Google DeepMind',
+							collapsed: true,
+							autogenerate: { directory: 'companies/google-deepmind' },
+						},
+						{
+							label: 'ByteDance 字节',
+							collapsed: true,
+							autogenerate: { directory: 'companies/bytedance' },
+						},
+						{
+							label: 'DeepSeek',
+							collapsed: true,
+							autogenerate: { directory: 'companies/deepseek' },
+						},
+					],
+				},
+				{
+					label: '参考框架 Reference',
+					items: [{ label: '索引', slug: 'reference' }],
+				},
+				{
 					label: '自主实验 Experiments',
+					collapsed: true,
 					autogenerate: { directory: 'experiments' },
 				},
 				{
 					label: '更新日志 Updates',
+					collapsed: true,
 					autogenerate: { directory: 'updates' },
 				},
 			],

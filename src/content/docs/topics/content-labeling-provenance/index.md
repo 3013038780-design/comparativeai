@@ -15,7 +15,7 @@ sidebar:
 
 ## 比较速览
 
-| 维度 | [中国](/topics/content-labeling/china/) | [美国](/topics/content-labeling/us/) | [欧盟](/topics/content-labeling/eu/) |
+| 维度 | [中国](/topics/content-labeling-provenance/china/) | [美国](/topics/content-labeling-provenance/us/) | [欧盟](/topics/content-labeling-provenance/eu/) |
 | --- | --- | --- | --- |
 | 规则层级 | 部门规章 + 强制性国标 | 以州法 + 行业承诺为主，联邦层级仍在立法中 | 法律（AI Act）+ 配套实施标准 |
 | 核心义务主体 | 服务提供者、传播平台 | 按州法各异；开发者+部署者 | 提供者（provider）+ 部署者（deployer） |
@@ -34,6 +34,6 @@ sidebar:
 
 ## 子页面
 
-- [中国](/topics/content-labeling/china/)
-- [美国](/topics/content-labeling/us/)
-- [欧盟](/topics/content-labeling/eu/)
+- [中国](/topics/content-labeling-provenance/china/)
+- [美国](/topics/content-labeling-provenance/us/)
+- [欧盟](/topics/content-labeling-provenance/eu/)
