@@ -1,12 +1,20 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import react from '@astrojs/react';
+import keystatic from '@keystatic/astro';
+import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
 	// 部署上线后改成实际的公开地址，例如 'https://ai-policy-atlas.pages.dev'
 	site: 'https://example.org',
+	// 默认 static，Keystatic 的 /keystatic/* 和 /api/keystatic/* 路由
+	// 会被自动标为 prerender:false，需要下面的 adapter 来跑 SSR。
+	adapter: node({ mode: 'standalone' }),
 	integrations: [
+		react(),
+		keystatic(),
 		starlight({
 			title: 'AI Policy Atlas',
 			description: '中国、美国、欧盟 AI 治理比较分析的学术资源',
