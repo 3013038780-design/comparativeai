@@ -115,7 +115,40 @@ sidebar:
 
 ---
 
-## 5. 更新频率与版本管理 Versioning & Updates {#versioning}
+## 5. 原文与翻译政策 Originals & Translations {#translations}
+
+### 本站不自产全文翻译
+
+法律条文的完整翻译是高风险工作——术语选择、时态、范围界定任何一处偏差都会误导引用者。
+本站**不自行翻译条文全文**，而是：
+
+1. **中文原文**以官方发布为准，并在 `public/archives/` 归档 PDF 版本
+2. **英文翻译**链到学术圈公认的权威二手来源：
+   - **China Law Translate**（Jeremy Daum, Paul Tsai China Center, Yale Law School） — 中国法律翻译的金标准
+   - **Stanford DigiChina** — 有选择性覆盖，质量高
+   - **Regulations.AI** — 结构化索引
+   - **EUR-Lex** 官方英法德等语言版本 — 欧盟法律的法定翻译
+   - **Congress.gov** / 各州立法官网 — 美国法律本身即英文
+3. **Rule 页面只内嵌官方原文 PDF**（通过 iframe），读者想看翻译一键跳转
+
+### 例外：核心条款的辅助翻译
+
+出于**分析需要**，本站允许在议题页或 Rule 页的"核心义务"、"争议解读"等 section 中，
+**精翻少数关键条款**（通常不超过 5 条），用于支持我们的观点表达。
+此类精翻必须：
+
+- 明确标注"本站译文，仅供参考；以官方或权威译本为准"
+- 标明对应条款号和原文段落（方便核对）
+- 术语用法遵循本站术语对照表（见 [引用与免责](/methodology/citation-disclaimer/)）
+
+### AI 辅助翻译的披露
+
+所有由 LLM 起草、人工校对后保留的段落，**必须在页面内显式标注**。
+未经校对的 AI 产出**不会发布**。
+
+---
+
+## 6. 更新频率与版本管理 Versioning & Updates {#versioning}
 
 - **硬法页**：生效后每**季度**复查一次；有修订立即更新，旧版不删除，标 `superseded: true` 并保留原 URL。
 - **软法页**：每**半年**复查。

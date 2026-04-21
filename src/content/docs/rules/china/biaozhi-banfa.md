@@ -113,32 +113,38 @@ Cybersecurity Law, the Data Security Law, and the Personal Information Protectio
 4. **平台核验责任边界**：要求平台核验每一条上传内容的隐式标识，技术成本极高，
    中小平台合规可行性有待观察
 
-## 条文对照翻译 Full Bilingual Text
+## 原文与翻译 Full Text & Translations
 
-> ⏳ **待作者补充**。完整条文翻译需以官方公布的中文终稿为底本，
-> 本段留给你粘贴原文后由 AI 辅助起草英文译文并由你校对。
+本站**不自产全文翻译**。中文原文以官方为准，英文译本选用学术圈公认的权威二手翻译。
+如需引用条文，请回到下列一手/权威来源。
+
+| 语言 | 来源 | 链接 |
+| --- | --- | --- |
+| 中文（原文） | 国家网信办 | [cac.gov.cn](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm) |
+| 中文（归档） | 本站 | _(待归档：`public/archives/china/biaozhi-banfa-2025-03-07.pdf`)_ |
+| English | **China Law Translate**（Jeremy Daum, Paul Tsai China Center, Yale） | [chinalawtranslate.com/en/ai-labeling](https://www.chinalawtranslate.com/en/ai-labeling/) |
+| English（结构化版） | Regulations.AI | [regulations.ai/.../MIASCXX-2025](https://regulations.ai/regulations/RAI-CN-NA-MIASCXX-2025) |
+| 配套国标 | 国家标准全文公开系统 | [GB 45438-2025](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547&refer=outter) |
+
+### 在本页内浏览官方原文
+
+<details>
+<summary>点开内嵌阅读（本站归档 PDF）</summary>
+
+<iframe
+  src="/archives/china/biaozhi-banfa-2025-03-07.pdf"
+  width="100%"
+  height="700px"
+  style="border: 1px solid var(--sl-color-hairline); border-radius: 4px; margin-top: 0.5em;"
+  title="《人工智能生成合成内容标识办法》官方原文"
 >
-> 建议排版：每条条文中英左右对照，统一术语（provider / 提供者、
-> explicit label / 显式标识、implicit label / 隐式标识 等）。
-> 术语对照表已在 [方法论](/methodology/) 中初步建立，翻译时请引用。
+  您的浏览器不支持 PDF 内嵌预览，请直接
+  <a href="/archives/china/biaozhi-banfa-2025-03-07.pdf">下载 PDF</a>。
+</iframe>
 
-### 第一条（占位）
+_PDF 尚未归档，链接 404。待作者下载官方原文 PDF 到对应路径后此处自动可用。_
 
-**中文原文**：
-（待补）
-
-**English Translation**：
-*(pending)*
-
-### 第二条（占位）
-
-**中文原文**：
-（待补）
-
-**English Translation**：
-*(pending)*
-
-_...等_
+</details>
 
 ## 版本历史 Version History
 
@@ -155,11 +161,27 @@ _...等_
 
 ### 一手来源
 - 国家网信办发布原文：https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm
+- GB 45438-2025《网络安全技术 人工智能生成合成内容标识方法》（强制性国标）：
+  https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547&refer=outter
 - 答记者问：（待补链接）
-- GB 45438-2025 国家标准原文：（待补链接，通常在 TC260 网站）
+
+### 权威英文译本
+- **China Law Translate**（Jeremy Daum, Paul Tsai China Center, Yale Law School）：
+  https://www.chinalawtranslate.com/en/ai-labeling/
+- **Regulations.AI**（结构化版）：
+  https://regulations.ai/regulations/RAI-CN-NA-MIASCXX-2025
+
+### 主要国际解读
+- Covington & Burling "Inside Privacy"：
+  https://www.insideprivacy.com/international/china/china-releases-new-labeling-requirements-for-ai-generated-content/
+- DGC Briefings：
+  https://dgcbriefings.substack.com/p/china-finalised-measures-for-labelling
+- Technology's Legal Edge (Perkins Coie)：
+  https://www.technologyslegaledge.com/2025/03/china-released-new-measures-for-labelling-ai-generated-and-synthetic-content/
 
 ### 相关研究
-_（待补。建议列入：人大、清华、北大的几篇法学评论；CAIDP 等智库报告）_
+_（待补。建议列入：人大、清华、北大的几篇法学评论；CAIDP 等智库报告；
+Paul Triolo、Matt Sheehan 等国际评论者的观察）_
 
 ---
 
