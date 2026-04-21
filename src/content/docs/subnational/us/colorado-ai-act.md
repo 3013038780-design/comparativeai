@@ -1,33 +1,33 @@
 ---
 title: Colorado AI Act (SB24-205)
-description: 美国第一部综合性 AI 反歧视州法，2024-05-17 签署，2026-02-01 生效；与 EU AI Act 结构最接近的州级立法
-ruleName: Colorado Artificial Intelligence Act (SB24-205)
+description: 美国第一部综合性 AI 反歧视州法，2024-05-17 签署；原定 2026-02-01 生效，2025 修正后**推迟至 2026-06-30**；与 EU AI Act 结构最接近的州级立法
+ruleName: Colorado Artificial Intelligence Act (SB24-205, 2025 修正版)
 issuer: Colorado General Assembly
 level: state-law
 binding: hard
-effectiveDate: 2026-02-01
+effectiveDate: 2026-06-30
 publishedDate: 2024-05-17
 originalUrl: https://leg.colorado.gov/bills/sb24-205
 relatedTopics:
   - risk-classification
 snapshotDate: 2026-04-21
 sidebar:
-  label: Colorado AI Act (2026)
-  order: 30
+  label: Colorado AI Act (2026-06-30)
+  order: 1
 ---
+
+> **🆕 生效日期更新 (2025 修正)**：原定 2026-02-01 生效，经 2025 立法会议修正**推迟至
+> 2026-06-30**。同时部分条款做了调整以回应产业界关切。
 
 ## 中文摘要
 
-**科罗拉多州 AI 法案 (SB24-205)** 由州长 Jared Polis 于 2024-05-17 签署，**2026-02-01 生效**，
-是美国**第一部综合性 AI 反歧视州法**。结构最接近 EU AI Act 的高风险系统框架：
+**科罗拉多州 AI 法案 (SB24-205)** 由州长 Jared Polis 于 2024-05-17 签署；经 2025 修正后
+**2026-06-30 生效**。是美国**第一部综合性 AI 反歧视州法**。结构最接近 EU AI Act 的高风险系统框架：
 
 1. **High-Risk AI System** 定义：在"后果性决策"（consequential decision）中起**实质性作用**
 2. **双主体义务**：Developer（开发者 / 供应商）+ Deployer（部署者 / 使用方）
 3. **算法歧视防范**：合理注意义务、影响评估、透明度告知
 4. **消费者权利**：被告知、申诉、更正、退出自动化决策
-
-**2025 修订**：原文定于 2026-02-01 生效，2025 年立法会议有多轮修订尝试推迟或调整部分条款，
-最终落地版本以州务卿网站为准。
 
 ## 核心概念
 
