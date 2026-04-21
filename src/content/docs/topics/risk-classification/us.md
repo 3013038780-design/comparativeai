@@ -12,8 +12,8 @@ sidebar:
 | --- | --- | --- |
 | [NIST AI RMF 1.0](/rules/us/nist-ai-rmf/) (2023) | 技术规范 | 以"风险管理流程"而非分级为主 |
 | [EO 14179](/rules/us/eo-14179-removing-barriers-ai/) (2025) | 行政令 | 撤销 EO 14110，改变联邦态势 |
-| [Colorado AI Act](/rules/us/colorado-ai-act/) (2026 生效) | 州法 | **美国首部引入"High-Risk AI System"的州法** |
-| [NYC LL 144](/rules/us/nyc-local-law-144/) (2023) | 市法 | 就业场景专项 |
+| [Colorado AI Act](/subnational/us/colorado-ai-act/) (2026 生效) | 州法 | **美国首部引入"High-Risk AI System"的州法** |
+| [NYC LL 144](/subnational/us/nyc-local-law-144/) (2023) | 市法 | 就业场景专项 |
 
 ## 美国风险分级的三层结构
 
@@ -26,7 +26,7 @@ sidebar:
 
 ### 州法：向"后果性决策"分层
 
-[Colorado AI Act](/rules/us/colorado-ai-act/) 是首部引入分层的州法：
+[Colorado AI Act](/subnational/us/colorado-ai-act/) 是首部引入分层的州法：
 
 - **一层"High-Risk"**：用于 8 类后果性决策
 - 未细分"不可接受 / 高 / 中 / 低"
@@ -38,7 +38,7 @@ sidebar:
 
 - **金融**：SR 11-7 模型风险管理（2011, 银行业）
 - **医疗**：FDA SaMD 风险分类（1-4 类）+ 2024 AI/ML 预定变更计划
-- **就业**：[NYC LL 144](/rules/us/nyc-local-law-144/) + EEOC 2023 指引
+- **就业**：[NYC LL 144](/subnational/us/nyc-local-law-144/) + EEOC 2023 指引
 - **CFPB** 对 AI 信贷决策的适用 ECOA / FCRA
 - **HUD** 对 AI 选租的适用 FHA
 

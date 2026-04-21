@@ -59,7 +59,7 @@ sidebar:
 ## 与 EU / US 的对比
 
 - **与 EU**：EU 有统一 4 级清单，中国没有。EU 看"系统"，中国看"服务场景"
-- **与 US**：中国更系统化（至少有多部规章覆盖），但 US 的州法（[Colorado AI Act](/rules/us/colorado-ai-act/)）反而有较明确的"high-risk AI system"定义
+- **与 US**：中国更系统化（至少有多部规章覆盖），但 US 的州法（[Colorado AI Act](/subnational/us/colorado-ai-act/)）反而有较明确的"high-risk AI system"定义
 
 ## 待完善
 
