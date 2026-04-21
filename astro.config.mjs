@@ -4,11 +4,15 @@ import starlight from '@astrojs/starlight';
 import react from '@astrojs/react';
 import keystatic from '@keystatic/astro';
 import node from '@astrojs/node';
+import remarkHeadingId from 'remark-heading-id';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://comparativeai.org',
 	adapter: node({ mode: 'standalone' }),
+	markdown: {
+		remarkPlugins: [remarkHeadingId],
+	},
 	integrations: [
 		react(),
 		keystatic(),
@@ -32,11 +36,11 @@ export default defineConfig({
 			tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 },
 			sidebar: [
 				{
-					label: '关于 About',
+					label: '关于',
 					items: [
-						{ label: '项目简介 Introduction', slug: 'about' },
+						{ label: '项目简介', slug: 'about' },
 						{
-							label: '方法论 Methodology',
+							label: '方法论',
 							collapsed: false,
 							items: [
 								{ label: '概览', slug: 'methodology' },
@@ -45,40 +49,103 @@ export default defineConfig({
 						},
 					],
 				},
-				// Topics / Rules / Subnational / Companies 都用 autogenerate：
-				// 每个子目录自动生成嵌套组，添加新页面（如新议题的中国/美国/欧盟页，
-				// 或新规则、新地方页、新公司材料）后 sidebar 会自动反映，无需改本文件。
 				{
-					label: '议题比较 Topics',
+					label: '议题比较',
 					collapsed: false,
 					autogenerate: { directory: 'topics', collapsed: false },
 				},
+				// 顶层规则：中国按五级位阶手工分组；美/欧用 autogenerate
 				{
-					label: '顶层规则 Rules',
+					label: '顶层规则',
 					collapsed: true,
-					autogenerate: { directory: 'rules', collapsed: true },
+					items: [
+						{
+							label: '🇨🇳 中国',
+							collapsed: true,
+							items: [
+								{ label: '五级位阶导航', link: '/rules/china/' },
+								{
+									label: '① 法律（人大）',
+									collapsed: true,
+									items: [
+										{ label: '网络安全法 CSL (2017)', link: '/rules/china/cybersecurity-law/' },
+										{ label: '数据安全法 DSL (2021)', link: '/rules/china/data-security-law/' },
+										{ label: '个人信息保护法 PIPL (2021)', link: '/rules/china/personal-info-protection-law/' },
+									],
+								},
+								{
+									label: '② 行政法规（国务院）',
+									collapsed: true,
+									items: [
+										{ label: '未成年人网络保护条例 (2024)', link: '/rules/china/minors-internet-protection-regulation/' },
+									],
+								},
+								{
+									label: '③ 部门规章（部委联合）',
+									collapsed: true,
+									items: [
+										{ label: '算法推荐规定 (2022)', link: '/rules/china/algorithm-recommendation-provisions/' },
+										{ label: '深度合成规定 (2023)', link: '/rules/china/deep-synthesis-provisions/' },
+										{ label: '生成式 AI 暂行办法 (2023)', link: '/rules/china/generative-ai-interim-measures/' },
+										{ label: '标识办法 (2025)', link: '/rules/china/biaozhi-banfa/' },
+										{ label: '拟人化互动服务办法 (2026)', link: '/rules/china/anthropomorphic-interaction-services/' },
+										{ label: '数字虚拟人办法（征求意见稿）(2026)', link: '/rules/china/digital-virtual-human-services-draft/' },
+										{ label: '科技伦理审查办法 (2023)', link: '/rules/china/science-tech-ethics-review-measures/' },
+									],
+								},
+								{
+									label: '④ 规范性文件',
+									collapsed: true,
+									items: [
+										{ label: '新一代 AI 发展规划 (2017)', link: '/rules/china/new-gen-ai-development-plan/' },
+										{ label: '新一代 AI 治理原则 (2019)', link: '/rules/china/new-gen-ai-governance-principles/' },
+										{ label: '全球 AI 治理倡议 (2023)', link: '/rules/china/global-ai-governance-initiative/' },
+										{ label: 'AI 安全治理框架 1.0/2.0 (2024/2025)', link: '/rules/china/ai-safety-governance-framework/' },
+									],
+								},
+								{
+									label: '⑤ 技术标准',
+									collapsed: true,
+									items: [
+										{ label: 'TC260-003-2024 生成式 AI 安全要求', link: '/rules/china/tc260-gen-ai-security-basic-requirements/' },
+										{ label: 'GB 45438-2025 标识国标', link: '/rules/china/gb-45438-2025-ai-content-labeling-standard/' },
+									],
+								},
+							],
+						},
+						{
+							label: '🇺🇸 美国（联邦）',
+							collapsed: true,
+							autogenerate: { directory: 'rules/us', collapsed: true },
+						},
+						{
+							label: '🇪🇺 欧盟',
+							collapsed: true,
+							autogenerate: { directory: 'rules/eu', collapsed: true },
+						},
+					],
 				},
 				{
-					label: '地方层级 Subnational',
+					label: '地方层级',
 					collapsed: true,
 					autogenerate: { directory: 'subnational', collapsed: true },
 				},
 				{
-					label: '公司实践 Corporate',
+					label: '公司实践',
 					collapsed: true,
 					autogenerate: { directory: 'companies', collapsed: true },
 				},
 				{
-					label: '参考框架 Reference',
+					label: '参考框架',
 					items: [{ label: '索引', slug: 'reference' }],
 				},
 				{
-					label: '自主实验 Experiments',
+					label: '自主实验',
 					collapsed: true,
 					autogenerate: { directory: 'experiments' },
 				},
 				{
-					label: '更新日志 Updates',
+					label: '更新日志',
 					collapsed: true,
 					autogenerate: { directory: 'updates' },
 				},

@@ -22,7 +22,7 @@ sidebar:
 > 与 CSL、PIPL 并列，构成中国数据三法。
 > 详见 [中国规则索引](/rules/china/#法律位阶速览)。
 
-## English Abstract
+## 英文摘要
 
 The **Data Security Law of the People's Republic of China (DSL)**, effective 2021-09-01, governs
 data processing activities conducted within the PRC (and extraterritorially where national

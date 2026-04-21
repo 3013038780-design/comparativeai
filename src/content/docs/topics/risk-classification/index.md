@@ -1,5 +1,5 @@
 ---
-title: 风险分级 Risk Classification
+title: 风险分级
 description: 中国、美国、欧盟对 AI 系统的风险分类方法比较
 sidebar:
   order: 1
@@ -7,7 +7,7 @@ sidebar:
 
 > 🚧 **内容待补充**。此议题在 [v1 计划](/topics/) 内，将优先填充。
 
-## 什么是 Risk Classification
+## 什么是风险分级
 
 不同 AI 系统对个人权利、社会秩序、公共安全的威胁不同，监管强度应相应分层。三个辖区的分层方法差异很大：
 
@@ -21,7 +21,7 @@ sidebar:
 - [美国](/topics/risk-classification/us/)
 - [欧盟](/topics/risk-classification/eu/)
 
-## 相关 Rules（待填充引用）
+## 相关规则
 
 - EU AI Act Annex III
 - 中国《生成式人工智能服务管理暂行办法》

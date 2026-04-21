@@ -1,5 +1,5 @@
 ---
-title: 议题比较 Topics
+title: 议题比较
 description: 按议题横向比较中国、美国、欧盟 AI 治理规则
 sidebar:
   order: 1

@@ -36,7 +36,7 @@ sidebar:
 - 2.0 进一步完善"从风险识别到治理应对的完整链条"
 - 标志中国 AI 治理正从"**政策驱动**"迈向更稳定的"**法治化治理**"
 
-## English One-Liner
+## 英文一句话摘要
 
 The **AI Safety Governance Framework**, issued by TC260 under the guidance of CAC (v1.0 on
 2024-09-09; v2.0 on 2025-09-15), is China's first cross-scenario risk classification and

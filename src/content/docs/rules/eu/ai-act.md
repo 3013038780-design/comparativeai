@@ -32,7 +32,7 @@ sidebar:
 
 罚则上限极高：违反禁止清单**全球年营收 7%**，违反其他义务 3%。
 
-## English One-Liner
+## 英文一句话摘要
 
 The AI Act (Regulation EU 2024/1689) is the world's first horizontal AI law, applying a
 risk-tiered approach plus a dedicated chapter on general-purpose AI models, with global

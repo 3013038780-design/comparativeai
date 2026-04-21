@@ -23,7 +23,7 @@ sidebar:
 > 下位的各 AI 部门规章（生成式 AI 办法、深度合成规定等）在处理个人信息时须回到本法。
 > 详见 [中国规则索引](/rules/china/#法律位阶速览)。
 
-## English Abstract
+## 英文摘要
 
 The **Personal Information Protection Law of the People's Republic of China (PIPL)** is China's
 umbrella data-protection statute, effective 2021-11-01. It establishes (i) consent as the default

@@ -23,7 +23,7 @@ sidebar:
 > **⚠️ 位阶提醒**：本规则是**部门规章**，由四部委联合发布。**不是**国务院行政法规。
 > 详见 [中国规则索引](/rules/china/#法律位阶速览)。
 
-## English Abstract
+## 英文摘要
 
 The *Provisions on the Administration of Algorithm Recommendation in Internet Information
 Services* (互联网信息服务算法推荐管理规定), jointly issued by CAC, MIIT, MPS, and SAMR on
@@ -47,7 +47,7 @@ entirely, with immediate effect.
   涵盖传统推荐系统、内容排序、搜索过滤
 - 第十七条的"用户可关闭算法推荐"是**全球首个同类用户权利**，被国际学界重点关注
 
-## 适用范围 Scope
+## 适用范围
 
 **覆盖的 5 类算法**（第二条）：
 1. **生成合成类** generation-synthesis — 后来被《深度合成规定》和《生成式 AI 办法》接手
@@ -115,7 +115,7 @@ entirely, with immediate effect.
 5. **与 PIPL 第二十四条的衔接**：两者均规制自动化决策，但 PIPL 强调个人权利
    （拒绝单纯自动化决策），本规定强调服务提供者义务，两者如何合力是解释难点。
 
-## 原文与翻译 Full Text & Translations
+## 原文与翻译
 
 | 语言 | 来源 | 链接 |
 | --- | --- | --- |

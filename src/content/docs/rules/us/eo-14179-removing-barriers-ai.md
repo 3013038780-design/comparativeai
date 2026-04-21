@@ -29,7 +29,7 @@ sidebar:
    180 天内提交"美国 AI 行动计划"
 4. **审查监管障碍**：各部委清查撤销 EO 14110 下发布的政策 / 指引 / 规章中"阻碍美国 AI 领导力"的内容
 
-## English One-Liner
+## 英文一句话摘要
 
 EO 14179 (Jan 23, 2025) revokes EO 14110 and orders a 180-day AI Action Plan to remove
 regulatory obstacles to U.S. AI leadership — a pivot in federal AI posture from "safety

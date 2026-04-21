@@ -1,5 +1,5 @@
 ---
-title: Model Card / System Card
+title: 模型卡
 description: 模型卡与系统卡归档
 sidebar:
   order: 2

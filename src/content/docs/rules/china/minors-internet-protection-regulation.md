@@ -23,7 +23,7 @@ sidebar:
 > 下位的 AI 部门规章（生成式 AI 办法等）面向未成年人的义务须回到本条例（第四十四条等）。
 > 详见 [中国规则索引](/rules/china/#法律位阶速览)。
 
-## English Abstract
+## 英文摘要
 
 The **Regulations on the Protection of Minors Online** (未成年人网络保护条例), issued by the
 State Council on 2023-10-24 and effective 2024-01-01, are China's first comprehensive

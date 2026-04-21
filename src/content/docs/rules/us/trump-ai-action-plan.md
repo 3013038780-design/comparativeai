@@ -1,7 +1,7 @@
 ---
 title: Trump AI Action Plan (Winning the Race) + 2025-07 EOs Package
 description: Trump 2025-07-23 发布的 25 页 AI 战略文件，配套 3 道行政令（反 Woke AI、数据中心加速、AI 出口）；美国联邦 AI 政策的系统化去监管转向
-ruleName: "Winning the Race: America's AI Action Plan" (白宫, 2025-07-23)
+ruleName: Winning the Race — America's AI Action Plan (白宫, 2025-07-23)
 issuer: The White House (President Donald J. Trump, Office of Science & Technology Policy)
 level: executive-order
 binding: hard

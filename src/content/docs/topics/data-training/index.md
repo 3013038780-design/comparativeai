@@ -1,5 +1,5 @@
 ---
-title: 数据与训练 Data & Training
+title: 数据与训练
 description: 三辖区对 AI 训练数据合规、版权、个人信息、跨境的规则对比
 sidebar:
   order: 3
@@ -37,7 +37,7 @@ sidebar:
 - [美国](/topics/data-training/us/)
 - [欧盟](/topics/data-training/eu/)
 
-## 相关 Rules
+## 相关规则
 
 - [PIPL](/rules/china/personal-info-protection-law/) · [DSL](/rules/china/data-security-law/) · [CSL](/rules/china/cybersecurity-law/)
 - [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/)（训练数据技术要求）

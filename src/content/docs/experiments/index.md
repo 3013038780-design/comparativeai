@@ -1,5 +1,5 @@
 ---
-title: 自主实验 Experiments
+title: 自主实验
 description: 基于公开资料复现的实证研究、数据集与代码
 sidebar:
   order: 1

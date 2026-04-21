@@ -1,5 +1,5 @@
 ---
-title: Red-Team & Eval Disclosures
+title: 红队与评估披露
 description: 红队与第三方评估披露归档
 sidebar:
   order: 5

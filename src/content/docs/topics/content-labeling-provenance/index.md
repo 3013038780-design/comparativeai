@@ -1,11 +1,11 @@
 ---
-title: Content Labeling 生成内容标识
+title: 生成内容标识
 description: 中国、美国、欧盟对 AI 生成/合成内容标识义务的规则比较
 sidebar:
   order: 1
 ---
 
-## 什么是 Content Labeling
+## 什么是"生成内容标识"
 
 本议题关注：**由 AI 系统生成或经过实质性修改的内容，应当如何向用户或下游系统表明其合成属性**。
 常见的两种技术路径：

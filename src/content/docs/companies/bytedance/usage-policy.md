@@ -1,5 +1,5 @@
 ---
-title: Usage / Acceptable Use Policy
+title: 使用政策
 description: 使用政策归档
 sidebar:
   order: 1

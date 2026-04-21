@@ -1,5 +1,5 @@
 ---
-title: Transparency Report
+title: 透明度报告
 description: 透明度报告归档
 sidebar:
   order: 4

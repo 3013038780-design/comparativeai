@@ -26,7 +26,7 @@ sidebar:
 > "暂行"反映的是立法者在生成式 AI 治理规律不清时留出的政策调整空间，不是位阶指示。
 > 详见 [中国规则索引](/rules/china/#法律位阶速览)。
 
-## English Abstract
+## 英文摘要
 
 The *Interim Measures for the Management of Generative AI Services*
 (生成式人工智能服务管理暂行办法) were jointly issued by the Cyberspace Administration
@@ -56,7 +56,7 @@ Provisions*.
 并首次显式豁免**企业内部研发和使用**。这一转向广泛被解读为
 "北京意识到过度合规会扼杀产业发展"。
 
-## 适用范围 Scope
+## 适用范围
 
 **适用**：
 - 面向**中华人民共和国境内公众**提供生成式 AI 服务
@@ -121,7 +121,7 @@ Provisions*.
 4. **与各地试点的关系**：北京、上海、深圳的地方 AI 创新试点在合规口径上
    可能比中央更宽，未正式公开的"沙盒"机制如何与本办法衔接是灰色地带。
 
-## 原文与翻译 Full Text & Translations
+## 原文与翻译
 
 | 语言 | 来源 | 链接 |
 | --- | --- | --- |

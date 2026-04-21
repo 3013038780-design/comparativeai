@@ -23,7 +23,7 @@ sidebar:
 > AI 部门规章的罚则大多援引本法第六十八条。
 > 详见 [中国规则索引](/rules/china/#法律位阶速览)。
 
-## English Abstract
+## 英文摘要
 
 The **Cybersecurity Law (CSL)**, effective 2017-06-01, is the foundational statute for China's
 cyber and data governance. It introduces (i) real-name registration, (ii) MLPS 2.0

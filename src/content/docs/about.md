@@ -1,5 +1,5 @@
 ---
-title: 项目简介 Introduction
+title: 项目简介
 description: Comparative AI 是什么、为什么做、给谁看
 sidebar:
   order: 1
@@ -43,5 +43,5 @@ sidebar:
 ## 下一步
 
 - 想了解我是怎么做判断的 → [方法论](/methodology/)
-- 想开始读内容 → [议题比较 Topics](/topics/)
+- 想开始读内容 → [议题比较](/topics/)
 - 想引用本站 → [引用与免责](/methodology/citation-disclaimer/)

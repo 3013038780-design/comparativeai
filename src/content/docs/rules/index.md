@@ -1,5 +1,5 @@
 ---
-title: 顶层规则 Top-Level Rules
+title: 顶层规则
 description: 按辖区 × 硬法/软法 组织的主要规则索引
 sidebar:
   order: 3

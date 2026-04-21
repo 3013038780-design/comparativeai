@@ -21,7 +21,7 @@ sidebar:
 > **⚠️ 位阶提醒**：本规则是**部门规章**，由四部委联合发布。**不是**全国人大法律，**不是**国务院行政法规。
 > 罚则通过援引《网络安全法》等上位法律落地。位阶含义详见 [中国规则索引](/rules/china/#法律位阶速览)。
 
-## English Abstract
+## 英文摘要
 
 The *Measures for the Identification of Artificial Intelligence Generated and Synthesized Content*
 (人工智能生成合成内容标识办法), jointly issued by the Cyberspace Administration of China (CAC)
@@ -49,7 +49,7 @@ Cybersecurity Law, the Data Security Law, and the Personal Information Protectio
 3. **技术标准前置绑定**：与 GB 45438-2025 同步生效，明确了隐式标识的字段规范
    （含服务提供者名称、内容编号、生成日期），让不同服务商的标识可互操作。
 
-## 适用范围 Scope
+## 适用范围
 
 - **地域**：境内提供服务及面向境内用户的境外服务（实际执法强度待观察）
 - **活动**：文本、图像、音频、视频四类合成内容
@@ -112,7 +112,7 @@ Cybersecurity Law, the Data Security Law, and the Personal Information Protectio
 4. **平台核验责任边界**：要求平台核验每一条上传内容的隐式标识，技术成本极高，
    中小平台合规可行性有待观察
 
-## 原文与翻译 Full Text & Translations
+## 原文与翻译
 
 本站**不自产全文翻译**。中文原文以官方为准，英文译本选用学术圈公认的权威二手翻译。
 如需引用条文，请回到下列一手/权威来源。
@@ -125,7 +125,7 @@ Cybersecurity Law, the Data Security Law, and the Personal Information Protectio
 | English（结构化版） | Regulations.AI | [regulations.ai/.../MIASCXX-2025](https://regulations.ai/regulations/RAI-CN-NA-MIASCXX-2025) |
 | 配套国标 | 国家标准全文公开系统 | [GB 45438-2025](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547&refer=outter) |
 
-## 版本历史 Version History
+## 版本历史
 
 | 日期 | 事件 |
 | --- | --- |
@@ -136,7 +136,7 @@ Cybersecurity Law, the Data Security Law, and the Personal Information Protectio
 
 本站归档快照：`public/archives/china/biaozhi-banfa-2025-03-07.pdf`（待补）
 
-## 引用来源 References
+## 引用来源
 
 ### 一手来源
 - 国家网信办发布原文：https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm

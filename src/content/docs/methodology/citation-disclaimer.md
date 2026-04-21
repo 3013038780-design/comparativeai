@@ -1,5 +1,5 @@
 ---
-title: 引用与免责 Citation & Disclaimer
+title: 引用与免责
 description: 如何引用本站，以及必须了解的免责声明
 sidebar:
   order: 1
@@ -79,7 +79,7 @@ sidebar:
 
 ---
 
-## 边界情况记录 Hard/Soft Law Edge Cases {#hard-soft-edge-cases}
+## 边界情况记录 {#hard-soft-edge-cases}
 
 以下条目的硬/软法归类在学界或实务中存在争议，本站的处理方式在此登记。
 任何新增边界情况都会补入本列表。

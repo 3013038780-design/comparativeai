@@ -1,5 +1,5 @@
 ---
-title: 公司实践 Corporate Practice
+title: 公司实践
 description: 按公司跟踪使用政策、模型卡、安全框架、透明度报告、红队披露
 sidebar:
   order: 5

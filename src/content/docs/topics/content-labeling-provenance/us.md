@@ -1,5 +1,5 @@
 ---
-title: 美国 — Content Labeling
+title: 美国 — 生成内容标识
 description: 美国对 AI 生成内容标识的联邦立法进展与州法差异
 sidebar:
   order: 3

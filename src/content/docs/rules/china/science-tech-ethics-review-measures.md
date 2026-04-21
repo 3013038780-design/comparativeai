@@ -23,7 +23,7 @@ sidebar:
 > "试行"同"暂行"，反映立法者留出调整空间，不是位阶指示。
 > 详见 [中国规则索引](/rules/china/#法律位阶速览)。
 
-## English Abstract
+## 英文摘要
 
 The **Trial Measures for Science and Technology Ethics Review**, issued jointly by ten
 ministries led by MOST on 2023-09-07 and effective 2023-12-01, establish China's framework

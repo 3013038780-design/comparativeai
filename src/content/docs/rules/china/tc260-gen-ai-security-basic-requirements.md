@@ -25,7 +25,7 @@ sidebar:
 > 这是本站"硬法 / 软法"归类框架里的典型案例。
 > 详见 [中国规则索引](/rules/china/#法律位阶速览) 和 [方法论 §2](/methodology/#hard-vs-soft)。
 
-## English Abstract
+## 英文摘要
 
 **TC260-003-2024 "Basic Security Requirements for Generative AI Services"**, published by
 China's National Information Security Standardization Technical Committee (TC260) on

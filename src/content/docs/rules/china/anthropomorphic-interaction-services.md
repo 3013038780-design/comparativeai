@@ -37,7 +37,7 @@ sidebar:
 填补了《生成式 AI 办法》在**人机交互情感层面**的监管空白，特别回应"**危害未成年人身心健康、
 加剧伦理偏差**"等社会关切。
 
-## English One-Liner
+## 英文一句话摘要
 
 The **Interim Measures for the Administration of AI Anthropomorphic Interaction Services**,
 jointly issued by 5 PRC ministries on 2026-04-10 and effective 2026-07-15, are the first

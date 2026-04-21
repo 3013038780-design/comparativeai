@@ -1,5 +1,5 @@
 ---
-title: 更新日志 Updates
+title: 更新日志
 description: 本站的内容增改与结构调整记录
 sidebar:
   order: 1

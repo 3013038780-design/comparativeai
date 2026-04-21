@@ -1,5 +1,5 @@
 ---
-title: 中国 — Content Labeling
+title: 中国 — 生成内容标识
 description: 中国对生成式 AI 合成内容的标识义务的横向分析
 sidebar:
   order: 2
@@ -9,7 +9,7 @@ sidebar:
 > 📘 **本页为"议题分析"**。具体条文请看对应 [Rules 页](/rules/china/)，
 > 本页只做跨条文的分析与观察。
 
-## 相关 Rules（一手条文在这里）
+## 相关规则
 
 | 规则 | 层级 | 本站 Rules 页 |
 | --- | --- | --- |

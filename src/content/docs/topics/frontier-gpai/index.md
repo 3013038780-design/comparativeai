@@ -1,11 +1,11 @@
 ---
-title: 前沿模型与通用目的 AI Frontier Models & GPAI
+title: 前沿模型与通用目的 AI (GPAI)
 description: 三辖区对基础模型 / 前沿模型 / 通用目的 AI 的专门义务对比
 sidebar:
   order: 2
 ---
 
-## 什么是 Frontier / GPAI
+## 什么是前沿模型 / GPAI
 
 - **Foundation Model**：大规模自监督训练、可适配多种下游任务的通用模型
 - **Frontier Model**：能力最接近 AGI / 前沿的 foundation 模型，通常意味着高算力、大参数
@@ -37,7 +37,7 @@ sidebar:
 - [美国](/topics/frontier-gpai/us/)
 - [欧盟](/topics/frontier-gpai/eu/)
 
-## 相关 Rules
+## 相关规则
 
 - [EU AI Act](/rules/eu/ai-act/) 第 51-56 条
 - [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/)

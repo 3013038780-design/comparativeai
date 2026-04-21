@@ -1,5 +1,5 @@
 ---
-title: 欧盟 — Content Labeling
+title: 欧盟 — 生成内容标识
 description: 欧盟 AI Act 第 50 条及其配套标准对合成内容标识的要求
 sidebar:
   order: 4

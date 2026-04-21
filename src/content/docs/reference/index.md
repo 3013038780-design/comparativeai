@@ -1,5 +1,5 @@
 ---
-title: 参考框架 Reference Frameworks
+title: 参考框架
 description: 国际组织、标准组织、行业联盟的相关工作索引
 sidebar:
   order: 6
@@ -8,7 +8,7 @@ sidebar:
 本轴为**轻量索引**：只记录名称、发布主体、链接、用途。
 不复述框架内容，避免重复 OECD / UNESCO 已经做好的工作。
 
-## 国际组织 International Organizations
+## 国际组织
 
 | 框架 | 发布机构 | 年份 | 性质 | 链接 |
 | --- | --- | --- | --- | --- |
@@ -19,7 +19,7 @@ sidebar:
 | GPAI (Global Partnership on AI) | 多国伙伴 | 2020 | 工作组 / 报告 | [gpai.ai](https://gpai.ai) |
 | Council of Europe AI Treaty (Framework Convention) | Council of Europe | 2024 | **有约束力的国际条约** | [coe.int](https://www.coe.int/en/web/artificial-intelligence) |
 
-## 标准组织 Standards Bodies
+## 标准组织
 
 | 框架 | 发布机构 | 性质 | 链接 |
 | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ sidebar:
 | NIST AI Risk Management Framework | NIST（美国） | 自愿框架 | [nist.gov](https://www.nist.gov/itl/ai-risk-management-framework) |
 | 全国信息安全标准化技术委员会 TC260 | 中国 | 国家标准 | [tc260.org.cn](https://www.tc260.org.cn/) |
 
-## 行业联盟 Industry Alliances
+## 行业联盟
 
 | 联盟 | 成员类型 | 焦点 | 链接 |
 | --- | --- | --- | --- |

@@ -1,5 +1,5 @@
 ---
-title: 地方层级 Subnational Level
+title: 地方层级
 description: 中国地方立法、美国州市法、欧盟成员国转化
 sidebar:
   order: 4

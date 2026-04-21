@@ -22,7 +22,7 @@ sidebar:
 > **⚠️ 位阶提醒**：本规则是**部门规章**，由三部委联合发布。**不是**国务院行政法规。
 > 罚则援引《网络安全法》等上位法律。详见 [中国规则索引](/rules/china/#法律位阶速览)。
 
-## English Abstract
+## 英文摘要
 
 The *Provisions on the Administration of Deep Synthesis Internet Information Services*
 (互联网信息服务深度合成管理规定), jointly issued by the Cyberspace Administration of
@@ -49,7 +49,7 @@ the 2025 *Labeling Measures* directly derive their labeling obligations (see
 2. **首次要求对合成内容做"显著标识"**（第十七条）—— 但没说怎么标；此空白由 2025 年《标识办法》填补
 3. **把"算法备案"作为合规的前置门槛**，为后来《生成式 AI 办法》《标识办法》都作为抓手继承
 
-## 适用范围 Scope
+## 适用范围
 
 - **主体**：
   - **服务提供者** (service providers)：直接提供深度合成功能的平台/应用
@@ -113,7 +113,7 @@ the 2025 *Labeling Measures* directly derive their labeling obligations (see
 4. **技术支持者义务的现实性**：要求上游模型提供商对下游服务提供者的合规负责，
    实际执行中责任边界不清。
 
-## 原文与翻译 Full Text & Translations
+## 原文与翻译
 
 | 语言 | 来源 | 链接 |
 | --- | --- | --- |

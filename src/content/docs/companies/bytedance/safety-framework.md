@@ -1,5 +1,5 @@
 ---
-title: Safety Framework
+title: 安全框架
 description: 负责任扩展 / 准备度框架 / 前沿安全框架归档
 sidebar:
   order: 3
