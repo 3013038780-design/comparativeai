@@ -14,9 +14,10 @@ sidebar:
 | 规则 | 层级 | 本站 Rules 页 |
 | --- | --- | --- |
 | 《人工智能生成合成内容标识办法》 (2025) | 部门规章·硬法 | [biaozhi-banfa](/rules/china/biaozhi-banfa/) |
-| 《互联网信息服务深度合成管理规定》 (2023) | 部门规章·硬法 | _(待补)_ |
-| 《生成式人工智能服务管理暂行办法》 (2023) | 部门规章·硬法 | _(待补)_ |
-| GB 45438-2025 | 强制性国标·软法* | _(待补)_ |
+| 《互联网信息服务深度合成管理规定》 (2023) | 部门规章·硬法 | [deep-synthesis-provisions](/rules/china/deep-synthesis-provisions/) |
+| 《生成式人工智能服务管理暂行办法》 (2023) | 部门规章·硬法 | [generative-ai-interim-measures](/rules/china/generative-ai-interim-measures/) |
+| 《互联网信息服务算法推荐管理规定》 (2022) | 部门规章·硬法 | [algorithm-recommendation-provisions](/rules/china/algorithm-recommendation-provisions/) |
+| GB 45438-2025 | 强制性国标·软法* | _(待补独立 Rules 页)_ |
 
 _* 归类理由见 [方法论 §2](/methodology/#hard-vs-soft)_
 
@@ -31,8 +32,8 @@ _* 归类理由见 [方法论 §2](/methodology/#hard-vs-soft)_
 - 没有统一术语，没有技术标准，可执行性低
 
 ### 第二段（2023）：深度合成 + 生成式 AI 两个专项规章奠定原则
-- [《深度合成规定》](/rules/china/)：首次明确服务提供者义务
-- [《生成式 AI 办法》](/rules/china/)：叠加备案与安全评估要求
+- [《深度合成规定》](/rules/china/deep-synthesis-provisions/)：首次明确服务提供者的**显著标识**义务（第十七条）
+- [《生成式 AI 办法》](/rules/china/generative-ai-interim-measures/)：叠加备案、安全评估与训练数据合规要求
 - 遗留问题：**"标识"具体怎么打？元数据字段是什么？平台如何核验？** 无答案
 
 ### 第三段（2025）：《标识办法》+ GB 45438 技术落地

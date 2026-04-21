@@ -126,26 +126,6 @@ Cybersecurity Law, the Data Security Law, and the Personal Information Protectio
 | English（结构化版） | Regulations.AI | [regulations.ai/.../MIASCXX-2025](https://regulations.ai/regulations/RAI-CN-NA-MIASCXX-2025) |
 | 配套国标 | 国家标准全文公开系统 | [GB 45438-2025](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547&refer=outter) |
 
-### 在本页内浏览官方原文
-
-<details>
-<summary>点开内嵌阅读（本站归档副本）</summary>
-
-<iframe
-  src="/archives/china/biaozhi-banfa-2025-03-07.html"
-  width="100%"
-  height="700px"
-  style="border: 1px solid var(--sl-color-hairline); border-radius: 4px; margin-top: 0.5em;"
-  title="《人工智能生成合成内容标识办法》官方原文（网信办 HTML 快照）"
->
-  您的浏览器不支持内嵌预览，请直接
-  <a href="/archives/china/biaozhi-banfa-2025-03-07.html">打开归档文件</a>。
-</iframe>
-
-_本站归档于 2026-04-21，通过 `npm run archive` 自动抓取的网信办原文 HTML 快照。_
-
-</details>
-
 ## 版本历史 Version History
 
 | 日期 | 事件 |
