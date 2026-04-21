@@ -12,8 +12,10 @@ sidebar:
 | --- | --- |
 | [GDPR](/rules/eu/gdpr/) | 个人数据合法基础、目的限制 |
 | [EU AI Act](/rules/eu/ai-act/) | 第 10 条数据治理 + 第 53 条训练数据摘要 |
+| [GPAI Code of Practice](/rules/eu/gpai-code-of-practice/) | Chapter 2 版权 + 训练数据摘要标准化 |
 | DSM Copyright Directive (2019/790) | TDM 例外（第 3、4 条） |
 | [DSA](/rules/eu/dsa/) | VLOP 对用于训练的内容的可见性 |
+| [France CNIL AI](/subnational/eu/france-cnil-ai/) | GDPR × AI 训练数据合规指引（12+ 份） |
 
 ## 四层框架
 

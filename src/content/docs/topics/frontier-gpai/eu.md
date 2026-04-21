@@ -11,7 +11,8 @@ sidebar:
 | 规则 | 条款 | 与 GPAI 的关系 |
 | --- | --- | --- |
 | [EU AI Act](/rules/eu/ai-act/) | 第 51-56 条、附件 XI/XII/XIII | GPAI 专章 |
-| GPAI Code of Practice | 2025-05 版 | 签署 = 合规推定的事实路径 |
+| [**GPAI Code of Practice**](/rules/eu/gpai-code-of-practice/) | AI Act 第 56 条 | **2025-07-10 定稿**，签署 = 合规推定 |
+| [Digital Omnibus Proposal](/rules/eu/digital-omnibus-proposal/) | — | 2025-11 提议推迟高风险条款至 2027-12（不影响 GPAI）|
 
 ## GPAI 专章结构（第 51-56 条）
 
@@ -41,13 +42,15 @@ sidebar:
 
 ## Code of Practice（行为守则）
 
-第 56 条授权 **AI Office** 召集 GPAI Code of Practice：
+详见独立 Rule 页 [GPAI Code of Practice](/rules/eu/gpai-code-of-practice/)。要点：
 
-- **2025-05** 公布终版（4 个主席，约 30 位主题专家）
-- 覆盖：安全与保障、透明度、版权
+- **2025-07-10** 定稿（约 1,000 参与者多轮起草）
+- 2025-08-01 欧委会 + AI Board 通过 **Adequacy Decisions**
+- **三章结构**：Transparency、Copyright、Safety and Security
 - **签署 = 合规推定**（第 56 条第 8 款）
-- 已签署公司（截至 2026-04）：Anthropic, Google DeepMind, Microsoft, OpenAI, Meta（部分章节异议）, xAI（部分异议）
-- 未签署视作"自证合规"（风险和成本更高）
+- **已签署**（截至 2026-04）：Anthropic、Google DeepMind、Microsoft、Mistral（完整）；
+  OpenAI（保留意见）；Meta（版权章异议）；xAI（安全章异议）
+- **未签署**：DeepSeek、ByteDance、智谱 等中国厂商
 
 ## 开源豁免（第 53 条第 2 款）
 

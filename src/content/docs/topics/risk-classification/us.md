@@ -11,8 +11,12 @@ sidebar:
 | 规则 | 层级 | 与风险分级的关系 |
 | --- | --- | --- |
 | [NIST AI RMF 1.0](/rules/us/nist-ai-rmf/) (2023) | 技术规范 | 以"风险管理流程"而非分级为主 |
-| [EO 14179](/rules/us/eo-14179-removing-barriers-ai/) (2025) | 行政令 | 撤销 EO 14110，改变联邦态势 |
-| [Colorado AI Act](/subnational/us/colorado-ai-act/) (2026 生效) | 州法 | **美国首部引入"High-Risk AI System"的州法** |
+| [EO 14179](/rules/us/eo-14179-removing-barriers-ai/) (2025-01) | 行政令 | 撤销 EO 14110，改变联邦态势 |
+| [Trump AI Action Plan](/rules/us/trump-ai-action-plan/) (2025-07) | 战略 | 去监管 / 全球主导 |
+| [EO 14365](/rules/us/eo-14365-national-ai-framework/) (2025-12) | 行政令 | **抢占州级 AI 法** |
+| [Colorado AI Act](/subnational/us/colorado-ai-act/) (2026-06-30 生效) | 州法 | **美国首部引入"High-Risk AI System"的州法** |
+| [**California SB 53**](/subnational/us/california-sb-53-frontier-ai/) (2026-01-01) | 州法 | **前沿 AI 透明度** |
+| [**Texas TRAIGA**](/subnational/us/texas-traiga/) (2026-01-01) | 州法 | 禁止有害用途 |
 | [NYC LL 144](/subnational/us/nyc-local-law-144/) (2023) | 市法 | 就业场景专项 |
 
 ## 美国风险分级的三层结构
@@ -24,15 +28,22 @@ sidebar:
 - **EO 14110**（拜登）曾引入 10²⁶ FLOP 报告义务，有"前沿模型"分级雏形 → **2025-01 撤销**
 - **EO 14179 + AI Action Plan**（2025-07）**明确不再做联邦统一强度分层**
 
-### 州法：向"后果性决策"分层
+### 州法：三种分层模式（2026 年起生效）
 
-[Colorado AI Act](/subnational/us/colorado-ai-act/) 是首部引入分层的州法：
+**2026-2027 美国州 AI 法进入规模化生效期**，出现**三种结构化分层模式**：
 
-- **一层"High-Risk"**：用于 8 类后果性决策
-- 未细分"不可接受 / 高 / 中 / 低"
-- Developer / Deployer 义务对齐 EU AI Act 的部分高风险义务，但**没有禁止清单**
+1. **后果性决策高风险层**（民主党模式）：
+   [Colorado AI Act](/subnational/us/colorado-ai-act/) (2026-06-30 生效) — 单一 "High-Risk"
+   用于 8 类后果性决策
+2. **前沿模型算力阈值层**（民主党 + 科技派模式）：
+   [California SB 53](/subnational/us/california-sb-53-frontier-ai/) (2026-01-01) — 10²⁶ FLOP
+   以上的前沿模型须披露 + 报告
+3. **禁止清单层**（共和党模式）：
+   [Texas TRAIGA](/subnational/us/texas-traiga/) (2026-01-01) — 禁止特定有害用途，
+   不对一般 AI 系统分层
 
-跟进的州（Connecticut、Texas 等）多采用类似"单一高风险层"结构。
+**2025-12 EO 14365 威胁**：Trump 政府建立 AI 诉讼工作组挑战州 AI 法的合宪性和联邦优先权，
+但法律界普遍认为**行政令不能独立抢占**。2026-Q1/Q2 预期有联邦诉讼，各州 AG 均表态继续执法。
 
 ### 行业 / 场景专项
 

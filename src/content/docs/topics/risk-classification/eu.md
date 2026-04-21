@@ -11,8 +11,12 @@ sidebar:
 | 规则 | 条款 | 与风险分级的关系 |
 | --- | --- | --- |
 | [EU AI Act](/rules/eu/ai-act/) | 第 5 / 6 / 50 / 51 条 | 四级分层 + GPAI 通道 |
+| [GPAI Code of Practice](/rules/eu/gpai-code-of-practice/) | 第 56 条 | GPAI 合规推定路径 |
 | [GDPR](/rules/eu/gdpr/) | 第 35 条 | DPIA 的"高风险"独立认定 |
 | [DSA](/rules/eu/dsa/) | 第 34 条 | VLOP 系统性风险评估 |
+| [Digital Omnibus Proposal](/rules/eu/digital-omnibus-proposal/) | — | **提议推迟高风险条款至 2027-12** |
+| [Spain AESIA](/subnational/eu/spain-aesia/) | 成员国 MSA | 欧盟首个 AI 专职监管 |
+| [France CNIL AI](/subnational/eu/france-cnil-ai/) | GDPR × AI | 最活跃 DPA 之一 |
 
 ## AI Act 的四级分类 + GPAI
 

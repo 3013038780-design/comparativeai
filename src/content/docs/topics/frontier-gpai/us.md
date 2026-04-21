@@ -10,9 +10,14 @@ sidebar:
 
 | 规则 | 与前沿模型的关系 |
 | --- | --- |
-| [EO 14179](/rules/us/eo-14179-removing-barriers-ai/) (2025) | **撤销**前沿模型报告义务 |
+| [EO 14179](/rules/us/eo-14179-removing-barriers-ai/) (2025-01) | **撤销**前沿模型报告义务 |
 | [EO 14110](/rules/us/eo-14110-biden-ai/) (2023, 已撤销) | 曾建立 10²⁶ FLOP 报告门槛 |
+| [Trump AI Action Plan](/rules/us/trump-ai-action-plan/) (2025-07) | 25 页战略 + 3 道 EOs（数据中心等） |
+| [EO 14365](/rules/us/eo-14365-national-ai-framework/) (2025-12) | 抢占州级前沿 AI 立法 |
+| [OMB M-25-21/22](/rules/us/omb-m-25-21-22-federal-ai-use/) (2025-04) | 联邦 AI 使用与采购 |
 | [NIST AI RMF + GenAI Profile](/rules/us/nist-ai-rmf/) (2023/2024) | 自愿性前沿模型风险框架 |
+| [**California SB 53**](/subnational/us/california-sb-53-frontier-ai/) (2026-01 生效) | **美国首部前沿 AI 州法**，10²⁶ FLOP 阈值 |
+| [Texas TRAIGA](/subnational/us/texas-traiga/) (2026-01 生效) | 禁止有害用途（不聚焦前沿） |
 
 ## 从强监管到自愿承诺的反转
 
@@ -58,23 +63,34 @@ sidebar:
 - **国家安全投资审查**：CFIUS 对中国相关的模型投资 / 训练资源
 - **各行业监管机构**（FDA、CFPB 等）对 AI 的既有权限**不受 EO 14179 影响**
 
-### 州法层
+### 州法层（2026-04 重要变化）
 
-- 加州 SB-1047（2024 被州长否决）曾拟引入前沿模型强制安全义务
-- 加州 SB-53、SB-896（2024 通过）针对 AI 灾难性风险的弱义务
-- 纽约、伊利诺伊 2025-2026 多个前沿模型立法在审
+**2025-2026 三部综合性州 AI 法生效**，其中 SB 53 是**全美首部专门针对前沿 AI 的法律**：
+
+- [**California SB 53**](/subnational/us/california-sb-53-frontier-ai/) (2026-01-01) —
+  Transparency in Frontier AI Act，**10²⁶ FLOP 阈值**（与 Biden EO 14110 同阈值）
+  - 大型前沿开发者（营收 ≥ $500M）须公布 AI 框架、发布透明度报告、报告关键安全事件
+  - 罚款 $1M/violation
+- [**Texas TRAIGA**](/subnational/us/texas-traiga/) (2026-01-01) — 聚焦禁止有害用途，不直接规制前沿
+- [**Colorado AI Act**](/subnational/us/colorado-ai-act/) (2026-06-30) — 高风险 AI 反歧视
+
+**2025-12 EO 14365 威胁**：Trump 政府明确目标挑战州级 AI 法，SB 53 是首要对象之一。
+法律界预期 2026-Q1/Q2 有联邦诉讼。但行政令**不能独立抢占州法**，各州 AG 均表态继续执法。
 
 ## 与中国 / 欧盟的结构差异
 
 - **中国**：前沿模型 = 大模型服务，走备案 + TC260-003，**强闸门**
-- **欧盟**：GPAI 专章，10²⁵ FLOP 推定，**合规清单 + 行为守则**
-- **美国**：联邦层面**基本只剩自愿承诺**；州法尝试但**无联邦 preemption**
+- **欧盟**：GPAI 专章，10²⁵ FLOP 推定，**合规清单 + 行为守则**（[GPAI CoP](/rules/eu/gpai-code-of-practice/) 2025-07 定稿）
+- **美国**：**联邦层面只剩自愿承诺 + 去监管**；**州法层首次设前沿 AI 专法（SB 53）**；
+  联邦 / 州冲突是 2026 主线
 
-2025 之后美国在三辖区中对前沿模型的**法律约束最弱**。
+**算力阈值对比**：EU 10²⁵ FLOP < US 加州 10²⁶ FLOP。加州阈值**严格 10 倍**，
+导致 SB 53 比 EU GPAI "系统性风险"条款覆盖更窄。
 
 ## 待完善
 
 - [ ] Voluntary Commitments 公司级履行情况追踪
 - [ ] 各公司 RSP / Preparedness Framework 条款对比
 - [ ] CAISI 职能转换后的实质工作产出
-- [ ] 加州、纽约、伊利诺伊州法草案对比
+- [ ] 2026-Q1/Q2 联邦 vs. 加州 SB 53 诉讼进展
+- [ ] SB 53 与 EU GPAI CoP 的双辖区合规"一套文档"实践
