@@ -17,6 +17,11 @@ sidebar:
   order: 2
 ---
 
+> **📑 法律位阶**：第 3 级 · 部门规章 | **发布**：网信办、工信部、公安部（**三部门联合发布**） | **生效**：2023-01-10 | **属性**：硬法
+
+> **⚠️ 位阶提醒**：本规则是**部门规章**，由三部委联合发布。**不是**国务院行政法规。
+> 罚则援引《网络安全法》等上位法律。详见 [中国规则索引](/rules/china/#法律位阶速览)。
+
 ## English Abstract
 
 The *Provisions on the Administration of Deep Synthesis Internet Information Services*

@@ -16,6 +16,11 @@ sidebar:
   order: 1
 ---
 
+> **📑 法律位阶**：第 3 级 · 部门规章 | **发布**：网信办、工信部、公安部、广电总局（**四部门联合发布**） | **生效**：2025-09-01 | **属性**：硬法
+
+> **⚠️ 位阶提醒**：本规则是**部门规章**，由四部委联合发布。**不是**全国人大法律，**不是**国务院行政法规。
+> 罚则通过援引《网络安全法》等上位法律落地。位阶含义详见 [中国规则索引](/rules/china/#法律位阶速览)。
+
 ## English Abstract
 
 The *Measures for the Identification of Artificial Intelligence Generated and Synthesized Content*

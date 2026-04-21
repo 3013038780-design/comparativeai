@@ -17,6 +17,12 @@ sidebar:
   order: 10
 ---
 
+> **📑 法律位阶**：第 1 级 · 法律 | **制定机关**：全国人民代表大会**常务委员会** | **生效**：2021-11-01 | **属性**：硬法
+
+> **⚠️ 位阶提醒**：本规则是**全国人大常委会制定的法律**（第 1 级），位阶最高。
+> 下位的各 AI 部门规章（生成式 AI 办法、深度合成规定等）在处理个人信息时须回到本法。
+> 详见 [中国规则索引](/rules/china/#法律位阶速览)。
+
 ## English Abstract
 
 The **Personal Information Protection Law of the People's Republic of China (PIPL)** is China's

@@ -17,6 +17,12 @@ sidebar:
   order: 12
 ---
 
+> **📑 法律位阶**：第 1 级 · 法律 | **制定机关**：全国人民代表大会**常务委员会** | **生效**：2017-06-01 | **属性**：硬法
+
+> **⚠️ 位阶提醒**：本规则是**全国人大常委会制定的法律**（第 1 级），位阶最高。
+> AI 部门规章的罚则大多援引本法第六十八条。
+> 详见 [中国规则索引](/rules/china/#法律位阶速览)。
+
 ## English Abstract
 
 The **Cybersecurity Law (CSL)**, effective 2017-06-01, is the foundational statute for China's
