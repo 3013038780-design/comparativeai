@@ -16,8 +16,8 @@ sidebar:
 | --- | --- | --- | --- |
 | **1. 法律** | 全国人民代表大会及其常委会 | 《…法》 | [CSL](./cybersecurity-law/) · [DSL](./data-security-law/) · [PIPL](./personal-info-protection-law/) |
 | **2. 行政法规** | 国务院 | 《…条例》 | [未成年人网络保护条例](./minors-internet-protection-regulation/) |
-| **3. 部门规章** | 国务院部委单独或**多部门联合**发布 | 《…办法》《…规定》《…暂行办法》 | [算法推荐规定](./algorithm-recommendation-provisions/) · [深度合成规定](./deep-synthesis-provisions/) · [生成式 AI 暂行办法](./generative-ai-interim-measures/) · [标识办法](./biaozhi-banfa/) · [科技伦理审查办法](./science-tech-ethics-review-measures/) |
-| **4. 规范性文件** | 部委 / 专门委员会 | 《…框架》《…原则》《…指南》 | _安全治理框架 1.0/2.0（待补页面）_ |
+| **3. 部门规章** | 国务院部委单独或**多部门联合**发布 | 《…办法》《…规定》《…暂行办法》 | [算法推荐规定](./algorithm-recommendation-provisions/) · [深度合成规定](./deep-synthesis-provisions/) · [生成式 AI 暂行办法](./generative-ai-interim-measures/) · [标识办法](./biaozhi-banfa/) · [**拟人化互动服务办法 🆕**](./anthropomorphic-interaction-services/) · [科技伦理审查办法](./science-tech-ethics-review-measures/) |
+| **4. 规范性文件** | 部委 / 专门委员会 | 《…框架》《…原则》《…指南》 | [安全治理框架 1.0/2.0](./ai-safety-governance-framework/) · [新一代 AI 治理原则](./new-gen-ai-governance-principles/) |
 | **5. 技术标准** | 标委会（TC260 等）/ 市监总局（国标） | GB / GB/T / TC260-XXX | [TC260-003-2024](./tc260-gen-ai-security-basic-requirements/) · GB 45438-2025（待补） |
 
 ⚠️ **重要提示**：第 3 级"部门规章"是**中国 AI 治理的主战场**。《生成式人工智能服务管理
@@ -59,20 +59,18 @@ sidebar:
 - [《互联网信息服务深度合成管理规定》](./deep-synthesis-provisions/) — 2023-01-10 生效 · **网信办、工信部、公安部（三部门联合）**
 - [《生成式人工智能服务管理暂行办法》](./generative-ai-interim-measures/) — 2023-08-15 生效 · **网信办联合发改委、教育部、科技部、工信部、公安部、广电总局（七部门联合）**
 - [《人工智能生成合成内容标识办法》](./biaozhi-banfa/) — 2025-09-01 生效 · **网信办、工信部、公安部、广电总局（四部门联合）**
+- [《人工智能拟人化互动服务管理暂行办法》](./anthropomorphic-interaction-services/) — **2026-07-15 生效** · **网信办、发改委、工信部、公安部、市监总局（五部门联合）** 🆕 2026-04-10 发布
 
 跨领域：
 
 - [《科技伦理审查办法（试行）》](./science-tech-ethics-review-measures/) — 2023-12-01 生效 · **科技部牵头十部门联合**
 
-占位（待补官方原文链接）：
-
-- [禁止向未成年人提供虚拟亲密伴侣服务（待补）](./virtual-intimate-companions-minors/)
-
 ### 第 4 级 · 规范性文件（非部门规章的政策文件）
 
-- _《新一代人工智能治理原则》（2019，国家新一代 AI 治理专业委员会）— 待补页面_
-- _《人工智能安全治理框架》1.0（2024-09）/ 2.0（2025-09）（网信办发布）— 待补页面_
+- [《人工智能安全治理框架》1.0（2024-09）/ 2.0（2025-09）](./ai-safety-governance-framework/) · 网信办 / TC260 — **从场景化走向体系化治理的标志**
+- [《新一代人工智能治理原则》(2019)](./new-gen-ai-governance-principles/) · 国家新一代 AI 治理专业委员会 — **八项治理原则，首次官方提出"敏捷治理"**
 - _《新一代人工智能发展规划》（2017，国务院印发）— 待补页面_
+- _《全球人工智能治理倡议》（2023-10，中国对外版立场文件）— 待补页面_
 
 ### 第 5 级 · 技术标准
 
