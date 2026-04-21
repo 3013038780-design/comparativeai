@@ -18,8 +18,6 @@ sidebar:
   order: 4
 ---
 
-> ⚠️ **Draft · 待作者校对**。AI 辅助起草，条款号、学界评论需核对。
-
 ## English Abstract
 
 The *Provisions on the Administration of Algorithm Recommendation in Internet Information
@@ -100,8 +98,6 @@ entirely, with immediate effect.
 - **《反垄断法》**：第十七条不正当竞争条款与本规定算法垄断条款的交叉
 
 ## 争议与解读
-
-> _本节初稿，待作者深度校对。_
 
 1. **"用户可关闭算法推荐"的实际落地**：各平台提供的关闭选项往往**隐藏极深**或
    伴随**功能降级**（例如关闭后无法浏览）。合规形式上满足，实质规避。

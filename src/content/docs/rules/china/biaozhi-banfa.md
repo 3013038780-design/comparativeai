@@ -16,8 +16,6 @@ sidebar:
   order: 1
 ---
 
-> ⚠️ **Draft · 待作者校对**。本页由 AI 辅助起草，条文号、翻译措辞、争议解读均需与官方原文和权威研究核对后再视为权威。AI 辅助段落已标注。
-
 ## English Abstract
 
 The *Measures for the Identification of Artificial Intelligence Generated and Synthesized Content*
@@ -56,8 +54,6 @@ Cybersecurity Law, the Data Security Law, and the Personal Information Protectio
   - 向平台上传合成内容的用户
 
 ## 核心义务
-
-> _以下条款号为本站推测，请核对原文最终版；措辞以官方为准。_
 
 ### 对服务提供者
 
@@ -101,8 +97,6 @@ Cybersecurity Law, the Data Security Law, and the Personal Information Protectio
 - **《个人信息保护法》**：合成内容涉及人脸、声音等敏感信息时，与 PIPL 第二十八条交叉适用
 
 ## 争议与解读
-
-> _以下为本站整理的初步争议焦点，欢迎通过 Issue 指正。_
 
 1. **境外服务适用性**：办法对"向境内用户提供服务"的境外公司如何执法？
    与 TikTok 国内版规则的对齐问题尚不清楚

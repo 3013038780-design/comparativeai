@@ -17,8 +17,6 @@ sidebar:
   order: 2
 ---
 
-> ⚠️ **Draft · 待作者校对**。AI 辅助起草，条款号、争议点需核对原文和学术评论。
-
 ## English Abstract
 
 The *Provisions on the Administration of Deep Synthesis Internet Information Services*
@@ -99,8 +97,6 @@ the 2025 *Labeling Measures* directly derive their labeling obligations (see
   在深度合成场景下的专项实施细则
 
 ## 争议与解读
-
-> _本节为初稿，待作者专业判断精修。_
 
 1. **"可能导致公众混淆或者误认"的判定主观性**：第十七条对**何时**需要标识的判断门槛
    是"可能混淆/误认"，实务中如何认定？完全写实的换脸算不算？讽刺类作品呢？
