@@ -41,6 +41,27 @@ src/
    └─ custom.css              # 学术风覆盖 Starlight 默认样式
 ```
 
+## 归档一手原文
+
+所有 Rule / Company 页面引用的一手材料，用内置脚本统一归档到 `public/archives/`：
+
+```sh
+npm run archive -- \
+  --url "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm" \
+  --slug biaozhi-banfa \
+  --jurisdiction china \
+  --date 2025-03-07
+```
+
+脚本行为：
+- 自动跟随重定向、设置 UA（部分 gov 站点拒绝空 UA）
+- 按 Content-Type 存成 `.pdf` / `.html` / `.txt`
+- 存到 `public/archives/<jurisdiction>/<slug>-<date>.<ext>`
+- 默认不覆盖已有文件（加 `--force` 覆盖）
+
+如果 URL 返回的是 HTML 但你想要 PDF 快照：在浏览器打开归档 HTML → Cmd+P → 保存为 PDF → 手工替换。
+（以后需要全自动 HTML→PDF，装 `playwright-core` 改脚本即可。）
+
 ## 新增议题
 
 1. 在 `src/content/docs/topics/<topic-slug>/` 下创建 `index.md` + `china.md` + `us.md` + `eu.md`；
