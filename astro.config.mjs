@@ -117,17 +117,9 @@ export default defineConfig({
 							label: '🇺🇸 美国（联邦）',
 							collapsed: true,
 							items: [
-								{ label: '联邦层级说明', link: '/rules/us/' },
+								{ label: '联邦层级说明（含联邦立法真空）', link: '/rules/us/' },
 								{
-									label: '① 联邦立法（国会）',
-									collapsed: true,
-									items: [
-										// 暂无独立页面：NAIIA 2020、CHIPS Act、TAKE IT DOWN Act 待补
-										{ label: '（待补 NAIIA / CHIPS / TAKE IT DOWN 等）', link: '/rules/us/' },
-									],
-								},
-								{
-									label: '② 总统行政令',
+									label: '① 总统行政令',
 									collapsed: true,
 									items: [
 										{ label: 'Trump AI Action Plan + 2025-07 EOs', link: '/rules/us/trump-ai-action-plan/' },
@@ -137,7 +129,7 @@ export default defineConfig({
 									],
 								},
 								{
-									label: '③ 软法 / 技术框架',
+									label: '② 软法 / 技术框架',
 									collapsed: true,
 									items: [
 										{ label: 'NIST AI RMF 1.0 + GenAI Profile', link: '/rules/us/nist-ai-rmf/' },
