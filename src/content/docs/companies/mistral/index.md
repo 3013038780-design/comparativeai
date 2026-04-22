@@ -45,12 +45,54 @@ snapshotDate: 2026-04-22
 - **中国**：不在中国大陆提供服务；Le Chat 等消费者产品可访问但无合规本地化
 - **印度 / 中东**：2025-2026 与 UAE G42、印度 Reliance 等建立合作
 
+## 深度分析：开源作为**替代性行业自律**
+
+### 为什么 Mistral 不像美国三大那样发布安全框架
+
+**Mistral 没有 RSP / Preparedness / FSF 对标的安全框架**。其官方逻辑：
+
+1. **透明即安全**：开源权重 + 训练文档让**研究社区和监管方可以独立验证**，不需要公司单方承诺
+2. **不垄断能力**：闭源公司的"安全承诺"本质是"**相信我们有能力管住能力**"；开源公司无此权力不平衡
+3. **欧盟法规已覆盖**：AI Act 第 53 条要求 GPAI 披露技术文档、训练数据摘要、版权合规 →
+   **法律强制的透明度**替代了**自愿的安全框架**
+
+**批评**：
+- 开源模型**"放出去就收不回"**——一旦达到 CCL 级能力（生化 / 网络 / 自主改进）开源将是不可逆风险
+- Mistral 的开源**不是完全开源**：最新旗舰（如 Mistral Large 3）**部分条款保留**（非纯 Apache 2.0）
+- EU AI Act 第 53 条的**开源豁免**（商业 GPAI 不适用；系统性风险 GPAI 也不豁免）——Mistral Large 2 已越过 10²⁵ FLOP，理论上不在豁免内
+
+### Mistral 的开源 / 闭源分层
+
+| 模型 | License | 权重公开 |
+| --- | --- | --- |
+| Mistral 7B / 8x7B / 8x22B | Apache 2.0 | ✅ 完全开源 |
+| Ministral 3 (3B / 7B / 14B) | Apache 2.0 | ✅ 完全开源 |
+| Mistral Small 4 | Apache 2.0 | ✅ 完全开源 |
+| **Mistral Large 2 / 3（旗舰）** | **Mistral Research License (MRL)** | ⚠️ **仅研究用途**，商业需付费许可 |
+| Ministral 3B（商业）| Mistral Commercial License | ❌ 闭源 |
+
+**观察**：Mistral 的"开源叙事"在旗舰模型上**打了折扣**。类似 Meta Llama 的策略——
+**开源中档、闭源旗舰**，商业 + 开源生态兼得。
+
+### GPAI Code of Practice 签署细节
+
+Mistral 是 **CoP 完整签署方**（2025-08-01 首批），三章（Transparency / Copyright / Safety and
+Security）全签。但：
+- 在 **Safety and Security 章节**起草期间曾与法国政府协调**推动轻量化**（2025 Q1-Q2 谈判）
+- 对 **版权章节的 opt-out 机制**拥有**实施层面的谨慎**（训练数据合法性是开源模型的法律风险重心）
+
+### Digital Omnibus Proposal（2025-11）立场
+
+欧委会提议推迟 AI Act 高风险条款 16 个月至 2027-12 → Mistral **隐性支持**（未公开表态，但
+产业协会 DigitalEurope 的 Mistral 代表积极参与游说）。
+
 ## 公司立场速览
 
 - **开源偏好**：Anthropic 和 OpenAI 偏向闭源安全；Mistral 主张"**开源 + 欧盟合规**"更可持续
-- **对 EU AI Act**：**公开支持**但曾在 2024 夏季 GPAI 条款谈判中与法国政府一起推动**更轻 GPAI 义务**
-- **对 Digital Omnibus Proposal**（2025-11 提议延期 AI Act 高风险条款至 2027-12）：**隐性支持**
-- **反垄断**：公开批评美国科技巨头对欧洲 AI 生态的压制
+- **对 EU AI Act**：**公开支持**但在 2024 夏季 GPAI 条款谈判中与法国政府一起推动**更轻 GPAI 义务**
+- **对 Digital Omnibus Proposal**：**隐性支持**
+- **反美**：公开批评美国科技巨头对欧洲 AI 生态的压制
+- **主权 AI 叙事**：与 Macron 政府、欧委会 Breton → Virkkunen 接续的"数字主权"政策高度绑定
 
 ## 待补充
 
