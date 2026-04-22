@@ -31,12 +31,20 @@ sidebar:
 
 ### 🇺🇸 美国
 
+#### 模型层（前沿实验室）
+
 | 公司 | 安全框架 | 定位 | 专页 |
 | --- | --- | --- | --- |
 | **Anthropic** | **RSP v3**（2026-02，撤销 pause）| 安全优先 | [anthropic](/companies/anthropic/) |
 | **OpenAI** | **Preparedness v2**（2025-04，简化阈值）| 商业化加速 | [openai](/companies/openai/) |
 | **Google DeepMind** | **FSF v3**（2026-04，**扩展** CCL + TCL）| 平衡派 | [google-deepmind](/companies/google-deepmind/) |
 | **xAI** | 弱（无对标文档）| **反自律派** | [xai](/companies/xai/) |
+
+#### 基础设施层（上下游）
+
+| 公司 | 角色 | 定位 | 专页 |
+| --- | --- | --- | --- |
+| **NVIDIA** | **AI GPU 单寡头** + 出口管制中心 | AI 革命的"卖铲人" | [nvidia](/companies/nvidia/) |
 
 ### 🇪🇺 欧盟
 
@@ -46,11 +54,22 @@ sidebar:
 
 ### 🇨🇳 中国
 
+#### 平台型巨头
+
 | 公司 | 安全框架 | 定位 | 专页 |
 | --- | --- | --- | --- |
 | **百度 Baidu** | 无独立；**参与国家标准制定**（TC260） | 国家队 | [baidu](/companies/baidu/) |
 | **阿里巴巴 Alibaba** | 无独立；**全线开源**（Qwen）| 开源生态 | [alibaba](/companies/alibaba/) |
 | **字节跳动 ByteDance** | 无独立；**嵌入式合规**（CAC + 党委）| 全球撕裂 | [bytedance](/companies/bytedance/) |
+| **腾讯 Tencent** | 无独立；**多模态全线开源**（Hunyuan）| 平台型 AI | [tencent](/companies/tencent/) |
+
+#### "AI 六小龙"（创业第一梯队）
+
+| 公司 | 安全框架 | 定位 | 专页 |
+| --- | --- | --- | --- |
+| **智谱 ZhipuAI** | 无独立；**港股已上市 2513.HK** | 国家队 + 学术出身 | [zhipuai](/companies/zhipuai/) |
+| **月之暗面 Moonshot** | 无独立；开源 Kimi K2.5 | 长上下文 + 付费突围 | [moonshot](/companies/moonshot/) |
+| **MiniMax** | 无独立；Talkie 海外成功 | AI 陪伴 + 出海 | [minimax](/companies/minimax/) |
 | **DeepSeek** | 无独立；**极限开源**（MIT）| 独立研究 | [deepseek](/companies/deepseek/) |
 
 ## 三种自律模式对比
@@ -117,11 +136,12 @@ sidebar:
 
 ## v2 规划（视 v1 质量判断是否推进）
 
-按 AI 密切度严格筛选后，以下公司**可以考虑**但**优先级低于深化现有 v1**：
+按 AI 密切度严格筛选后，以下公司可能在未来补充：
 
 - **🇺🇸 美国**：Meta（Llama 团队，重要但开源公司治理已可通过 Mistral 页面代表性覆盖）
-- **🇪🇺 欧盟**：Aleph Alpha、Stability AI、Black Forest Labs（Olivia 已明确不补充）
-- **🇨🇳 中国**：智谱 ZhipuAI、腾讯（混元）、月之暗面（Kimi）、MiniMax、华为（**Olivia 明确不补华为**）
+- **🇪🇺 欧盟**：Aleph Alpha、Stability AI、Black Forest Labs（**已明确不补充**）
+- **🇨🇳 中国**：百川智能 Baichuan、阶跃星辰 StepFun、零一万物 01.AI（AI 六小龙其余 3 家）、
+  华为（**已明确不补**）
 
-**v2 重心**：**深化 v1 的 8 家**，把每家的 5 类 subpage（Usage Policy、Model Card、Safety Framework、
-Transparency Report、Red-Team Disclosures）从占位填充为实质分析，而非继续加新公司。
+**当前重心**：**深化现有 13 家**，把每家的 5 类 subpage（Usage Policy、Model Card、Safety
+Framework、Transparency Report、Red-Team Disclosures）从占位填充为实质分析。
