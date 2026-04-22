@@ -116,12 +116,74 @@ export default defineConfig({
 						{
 							label: '🇺🇸 美国（联邦）',
 							collapsed: true,
-							autogenerate: { directory: 'rules/us', collapsed: true },
+							items: [
+								{ label: '联邦层级说明', link: '/rules/us/' },
+								{
+									label: '① 联邦立法（国会）',
+									collapsed: true,
+									items: [
+										// 暂无独立页面：NAIIA 2020、CHIPS Act、TAKE IT DOWN Act 待补
+										{ label: '（待补 NAIIA / CHIPS / TAKE IT DOWN 等）', link: '/rules/us/' },
+									],
+								},
+								{
+									label: '② 总统行政令',
+									collapsed: true,
+									items: [
+										{ label: 'Trump AI Action Plan + 2025-07 EOs', link: '/rules/us/trump-ai-action-plan/' },
+										{ label: 'EO 14365 — 州法抢占 (2025-12)', link: '/rules/us/eo-14365-national-ai-framework/' },
+										{ label: 'EO 14179 — 撤销前任 (2025-01)', link: '/rules/us/eo-14179-removing-barriers-ai/' },
+										{ label: 'EO 14110 — Biden (2023, 已废)', link: '/rules/us/eo-14110-biden-ai/' },
+									],
+								},
+								{
+									label: '③ 软法 / 技术框架',
+									collapsed: true,
+									items: [
+										{ label: 'NIST AI RMF 1.0 + GenAI Profile', link: '/rules/us/nist-ai-rmf/' },
+										{ label: 'OMB M-25-21 / M-25-22 (2025-04)', link: '/rules/us/omb-m-25-21-22-federal-ai-use/' },
+									],
+								},
+							],
 						},
 						{
 							label: '🇪🇺 欧盟',
 							collapsed: true,
-							autogenerate: { directory: 'rules/eu', collapsed: true },
+							items: [
+								{ label: '欧盟层级说明', link: '/rules/eu/' },
+								{
+									label: '① 二级立法（条例 / 指令）',
+									collapsed: true,
+									items: [
+										{ label: 'AI Act (Reg 2024/1689)', link: '/rules/eu/ai-act/' },
+										{ label: 'GDPR (Reg 2016/679)', link: '/rules/eu/gdpr/' },
+										{ label: 'DSA (Reg 2022/2065)', link: '/rules/eu/dsa/' },
+										{ label: '产品责任指令 (2024/2853)', link: '/rules/eu/product-liability-directive/' },
+									],
+								},
+								{
+									label: '② 协调标准（hEN）',
+									collapsed: true,
+									items: [
+										// 暂无独立页面：prEN 18286 等待 CEN-CENELEC JTC 21 发布后补
+										{ label: '（待补 CEN-CENELEC JTC 21 hEN）', link: '/rules/eu/' },
+									],
+								},
+								{
+									label: '③ 软法 · 行为守则与指引',
+									collapsed: true,
+									items: [
+										{ label: 'GPAI Code of Practice (2025-07)', link: '/rules/eu/gpai-code-of-practice/' },
+									],
+								},
+								{
+									label: '④ 立法提案（未通过）',
+									collapsed: true,
+									items: [
+										{ label: 'Digital Omnibus Proposal (2025-11)', link: '/rules/eu/digital-omnibus-proposal/' },
+									],
+								},
+							],
 						},
 					],
 				},
