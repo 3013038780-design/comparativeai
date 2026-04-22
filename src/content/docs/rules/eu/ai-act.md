@@ -110,8 +110,9 @@ extraterritorial reach and headline penalties up to 7% of worldwide turnover.
 
 ### 行为守则 (Code of Practice)
 
-第五十六条授权 AI Office 召集 GPAI 行为守则。2025-05 公布终版；2025-08-02 GPAI 条款生效后，
-签署守则是证明合规的事实路径。
+第五十六条授权 AI Office 召集 GPAI 行为守则。**2025-07-10 定稿**，**2025-08-01 欧委会与 AI Board
+通过 Adequacy Decisions** 并公布签署者列表；**2025-08-02 GPAI 条款生效**后，签署守则是证明合规的
+事实路径。详见 [GPAI Code of Practice](./gpai-code-of-practice/) 独立页。
 
 ## 透明度义务（第五十条 · 有限风险）
 

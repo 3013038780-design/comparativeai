@@ -15,12 +15,23 @@ sidebar:
 
 **一条材料是否值得进本站，按以下优先级判断**：
 
-1. **强相关于 AI 治理**。只涉及计算机犯罪、一般数据保护、网络安全的法规，除非对 AI 场景有专门条款，否则不单独立页（而是作为相邻议题在相关页提及）。
+1. **强相关于 AI 治理**。优先收 AI 专项规则（如生成式 AI 办法、GPAI 章节、SB 53 等）。
+   通用法（计算机犯罪、一般数据保护、网络安全等）原则上不单独立页，**但满足下列条件之一可以例外**：
+   - **承担 AI 治理"上位法"角色**（例如 PIPL 第 24 条自动化决策、第 28 条敏感个人信息含生物识别——
+     是中国所有 AI 部门规章涉及个人信息的回归依据；CSL 第 68 条是 AI 部门规章罚则的事实援引来源）
+   - **AI 部门规章明确援引**（例如 AI Act 第 10 条数据治理与 GDPR 强制叠加）
+   - **承担"分类分级"基础概念**（例如 DSL 第 21 条数据分类是后续重要数据 AI 训练合规的基线）
 2. **公开可查**。原文必须有一个可长期访问的公开链接（官方站、EUR-Lex、Congress.gov 等）。非公开文件（行业内部邮件、未公开政策）不收。
 3. **规范性产出**。立法文本、行政令、监管机构发布的指南、可引用的学术共识（非个人博客）。
 4. **公司实践需有持久文档**。一次性发布会口头表态不收；PDF、官网长期挂载的政策/框架/报告才收。
 
 **不收**：新闻报道（可作为背景引用）、Twitter 发言、政客个人观点（除非已成为法律提案的正式文本）、尚未公开的草案。
+
+**已明确不立独立页的代表性条目**（在相关 AI 规则页做交叉引用即可）：
+- 中国《关键信息基础设施安全保护条例》《网络数据安全管理条例》《数据出境三件套》
+  《反电信网络诈骗法》《科学技术进步法》《网络信息内容生态治理规定》等
+- 美国 **Section 230** / 各行业专项隐私法（COPPA / HIPAA / GLBA / FERPA 等）
+- 欧盟 **Cyber Resilience Act / NIS2 / Data Governance Act** 等数据 / 网络安全通用法
 
 ---
 
@@ -96,25 +107,26 @@ sidebar:
 
 为让"公司实践"这一轴自洽，对下列常见归属模糊定下规则：
 
-| 问题 | 本站处理 |
-| --- | --- |
-| OpenAI 与微软 | OpenAI 独立列，微软另列。微软援引 OpenAI 模型的产品政策归微软。 |
-| Anthropic 与 Amazon/Google | Anthropic 独立列。Amazon/Google 的投资关系在 Anthropic 页注明，但不合并。 |
-| Google DeepMind | 合并在一条，标注 "Google DeepMind"；Alphabet 集团层政策在 Google DeepMind 页做二级分节。 |
-| Meta（Facebook / Instagram 等） | Meta 一条，涵盖 Facebook / Instagram / WhatsApp 产品层政策作为子章节。 |
-| 字节跳动与 TikTok | 字节跳动一条（含抖音、豆包、火山引擎）；TikTok 独立列（面向海外监管的政策与国内不同）。 |
-| 阿里与 Ant Group | 阿里一条（含通义千问、夸克），Ant Group 独立列。 |
-| DeepSeek 与 High-Flyer | DeepSeek 一条，High-Flyer 作为资方在页首注记。 |
-| 智谱 / 百度 / MiniMax / 月之暗面 | 各自一条。 |
-| xAI 与 X Corp / Tesla | xAI 一条；X Corp（前 Twitter）平台政策不在此站（非 AI 产品主体）。 |
+| 问题 | 本站处理 | 当前状态 |
+| --- | --- | --- |
+| OpenAI 与微软 | OpenAI 独立列；微软原则上独立列（援引 OpenAI 模型的产品政策归微软）| 仅 OpenAI 已立页；微软待补 |
+| Anthropic 与 Amazon/Google | Anthropic 独立列。Amazon/Google 的投资关系在 Anthropic 页注明，不合并 | ✅ 已立页 |
+| Google DeepMind | 合并在一条，Alphabet 集团层政策做二级分节 | ✅ 已立页 |
+| Meta（Facebook / Instagram 等） | Meta 一条，含产品层政策作为子章节 | 待补 |
+| 字节跳动与 TikTok | 字节跳动一条（含抖音、豆包、火山引擎、TikTok）。TikTok **暂作为字节子章节处理**，未来若发布独立面向海外监管的 AI 政策，再单独立页 | ✅ 字节已立页（含 TikTok） |
+| 阿里与 Ant Group | 阿里一条（含通义千问、夸克）；Ant Group 原则上独立但**未发布独立 AI 模型 / 政策时不立页** | ✅ 阿里已立页；Ant Group 暂不立 |
+| DeepSeek 与 High-Flyer | DeepSeek 一条，High-Flyer 作为资方在页首注记 | ✅ 已立页 |
+| 智谱 / 百度 / MiniMax / 月之暗面 / 腾讯 | 各自一条 | ✅ 已立页 |
+| xAI 与 X Corp / Tesla | xAI 一条；X Corp（前 Twitter）平台政策不在此站（非 AI 产品主体）| ✅ xAI 已立页 |
+| **NVIDIA**（基础设施层）| 独立列；不是 AI 模型公司但是关键上下游，单独分类 | ✅ 已立页 |
 
-**判断原则**：独立发布 AI 政策 / 模型的实体为一条；未独立发布但在母公司政策内被规制的，归母公司子章节。
+**判断原则**：独立发布 AI 政策 / 模型的实体为一条；未独立发布但在母公司政策内被规制的，归母公司子章节。**TikTok / Ant Group 等当前归母公司**，未来若发布独立 AI 政策再立页。
 
 ---
 
 ## 4. 公司实践收录范围 {#corporate-scope}
 
-对每家已收录公司，本站尝试持续跟踪下列 5 类材料：
+对每家已收录公司，本站**持续跟踪**下列 5 类材料：
 
 1. **使用政策**（Usage / Acceptable Use Policy）—— 用户可否用模型做什么
 2. **模型卡 / 系统卡**（Model Card / System Card）—— 模型能力、训练数据、评估
@@ -122,7 +134,19 @@ sidebar:
 4. **透明度报告**（Transparency Report）—— 定期披露（数据请求、内容审核等）
 5. **红队与评估披露**（Red-Team & Eval Disclosures）—— 第三方评估、内部红队结果
 
-每份材料页面统一结构：
+### 当前实施阶段
+
+本站采用**渐进式建设**：
+- **阶段 1（当前）**：每家公司 **index.md 综合分析页**——含公司概况、安全框架深度解读、
+  自律立场分析、监管合规位置、与同类公司对比
+- **阶段 2（待补）**：每家公司展开 5 类**独立 subpage**，逐条归档具体文档（含 snapshot date、
+  原文链接、归档 PDF、关键条款摘录、版本历史）
+
+目前 13 家公司中：
+- **5 家**（Anthropic、OpenAI、Google DeepMind、ByteDance、DeepSeek）有 5 类 subpage 占位（待填充）
+- **8 家**（Mistral、Baidu、Alibaba、xAI、ZhipuAI、Tencent、Moonshot、MiniMax、NVIDIA）目前仅 index.md
+
+### 5 类材料的统一字段（subpage 填充后）
 
 ```
 - snapshot date：本次归档的日期
@@ -132,6 +156,15 @@ sidebar:
 - key terms：关键条款逐条列出（不改写，引用原文）
 - version history：历次主要修订时间轴
 ```
+
+### 例外说明：基础设施层公司
+
+**NVIDIA** 等**非 AI 模型提供方但属关键上下游**的公司：
+- 不适用 5 类材料完整结构（无 Safety Framework、Model Card 等通用形式）
+- 改用**适合其角色的字段**：出口管制合规、End User License Agreement、政府游说立场、
+  Project Digits 等基础设施类文档
+
+### 编辑原则
 
 **不做评判性表述**。陈述事实、罗列差异，不写"某公司不充分 / 应当加强"之类的价值判断。
 

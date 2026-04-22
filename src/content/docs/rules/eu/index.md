@@ -10,12 +10,20 @@ sidebar:
 
 **成员国层面的实施、主管机构和国家 AI 法：参见 [欧盟成员国](/subnational/eu/)**。
 
-## 欧盟 AI 治理的四层结构
+## 欧盟 AI 治理的两层位阶（New Legislative Framework）
 
-1. **条约层**：TEU、TFEU、Charter of Fundamental Rights（最高位阶）
-2. **二级立法 Hard Law**：Regulation（直接适用）、Directive（成员国转化）
-3. **Commission 实施 / 授权法**：Implementing Acts / Delegated Acts
-4. **Soft Law**：AI Office Guidelines、Commission Communications、**Codes of Practice**
+参见 [方法论 §2 · 欧盟](/methodology/#hard-vs-soft)，欧盟自 1985 NLF 以来的标准范式：
+
+1. **二级立法**（Regulation / Directive）：设"本质要求"（essential requirements）
+2. **协调标准（hEN, harmonised standard）**：把"本质要求"译为可检验技术规范，
+   一经 OJEU 引用产生**符合性推定**（AI Act 第 40 条）
+
+**其他实施机制**（不构成独立位阶）：
+- **条约层**（TEU / TFEU / Charter of Fundamental Rights）：宪法性背景，不直接产生 AI 治理义务
+- **Commission Implementing / Delegated Acts**：填二级立法的技术细节
+- **Code of Practice**（如 GPAI CoP）：**hEN 到位前的过渡合规路径**
+- **Commission Guidelines / AI Office Guidelines**：解释执法预期
+- **成员国 DPA / MSA 执法**：硬法的落地
 
 ## 已收录
 
