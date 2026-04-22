@@ -113,13 +113,23 @@ const fmtDate = (d: string) => d.replaceAll('-', '.');
 		<nav class="topbar">
 			<div class="nav-inner">
 				<a href="/" class="masthead">
-					Comparative&nbsp;AI <em>— 中美欧 AI 治理比较</em>
+					<span class="masthead-full">Comparative&nbsp;AI <em>— 中美欧 AI 治理比较</em></span>
+					<span class="masthead-short">Comparative AI</span>
 				</a>
-				<div class="nav-links">
+				<div class="nav-links nav-links-desktop">
 					{navLinks.map((l) => <a href={l.href}>{l.label}</a>)}
 				</div>
+				<details class="nav-mobile">
+					<summary aria-label="菜单"><span class="hamburger">☰</span><span class="hamburger-close">✕</span></summary>
+					<div class="nav-mobile-panel">
+						{navLinks.map((l) => <a href={l.href}>{l.label}</a>)}
+					</div>
+				</details>
 				<div class="nav-right">
-					<a href={GITHUB_URL} target="_blank" rel="noopener">GitHub ↗</a>
+					<a href={GITHUB_URL} target="_blank" rel="noopener">
+						<span class="nav-right-full">GitHub ↗</span>
+						<span class="nav-right-short" aria-label="GitHub">↗</span>
+					</a>
 				</div>
 			</div>
 		</nav>
@@ -152,7 +162,8 @@ const fmtDate = (d: string) => d.replaceAll('-', '.');
 					</p>
 				</div>
 
-				<table class="matrix">
+				<!-- 桌面 / 平板：表格形式 (>= 900px) -->
+				<table class="matrix matrix-desktop">
 					<thead>
 						<tr>
 							<th>议题 / Issue</th>
@@ -197,6 +208,39 @@ const fmtDate = (d: string) => d.replaceAll('-', '.');
 						}
 					</tbody>
 				</table>
+
+				<!-- 手机 / 窄平板：折叠卡片形式 (< 900px) -->
+				<div class="matrix-cards">
+					{
+						topics.map((t) => (
+							<article class="topic-card">
+								<header class="topic-card-head">
+									<h3 class="topic-card-name">{t.name}</h3>
+									<p class="topic-card-desc">{t.desc}</p>
+								</header>
+								<ul class="topic-card-rows">
+									{(['cn', 'us', 'eu'] as const).map((j) => {
+										const cell = t[j];
+										return (
+											<li>
+												<a href={cell.href} class={`tc-row tc-${j}`}>
+													<span class={`juris-pill ${j}`}>{juris[j].tag}</span>
+													<span class="tc-body">
+														<span class="tc-headline">{cell.headline}</span>
+														<span class={`cell-status ${cell.status}`}>
+															{cell.statusLabel}
+														</span>
+													</span>
+													<span class="tc-arrow">→</span>
+												</a>
+											</li>
+										);
+									})}
+								</ul>
+							</article>
+						))
+					}
+				</div>
 
 				<a href="/topics/" class="read-more">查看所有议题 →</a>
 			</section>
