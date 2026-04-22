@@ -1,6 +1,6 @@
 ---
 title: 智谱 ZhipuAI (Z.ai)
-description: 智谱 AI 公司概况、GLM 系列与 "AI 六小龙" 首家 IPO 公司（2026-04-22）
+description: 智谱 AI 公司概况、GLM 系列与 中国 AI 创业公司首家 IPO（2026-04-22）
 sidebar:
   order: 9
   label: 智谱 ZhipuAI
@@ -19,18 +19,12 @@ snapshotDate: 2026-04-22
 - **Agent 产品**：**AutoGLM**（浏览器 / 手机自动化）+ **GLM-PC**（电脑操作 Agent）—— "GLM-OS" 愿景
 - **商业模式**：开放平台 API（bigmodel.cn）+ 企业定制 + Z.ai 消费者产品
 
-## 战略定位：**"AI 六小龙"** 首家上市 + 国家队深度
+## 战略定位：**中国 AI 创业公司首家上市 + 国家队深度**
 
-### "AI 六小龙"（中国 AI 创业第一梯队）
+中国主要 AI 创业公司包括：智谱 ZhipuAI、月之暗面 Moonshot（Kimi）、MiniMax、百川智能 Baichuan、
+阶跃星辰 StepFun、零一万物 01.AI（李开复创办）、DeepSeek（独立路径）等。
 
-- **智谱 ZhipuAI**
-- **月之暗面 Moonshot AI**（Kimi）
-- **MiniMax**
-- **百川智能 Baichuan**
-- **阶跃星辰 StepFun**
-- **零一万物 01.AI**（李开复创办）
-
-智谱是**六小龙中首个上市**的，标志中国大模型创业公司进入资本市场化阶段。
+**智谱是中国 AI 创业公司中首个上市**的，标志中国大模型创业公司进入资本市场化阶段。
 
 ### 国家队特征
 
@@ -48,7 +42,7 @@ snapshotDate: 2026-04-22
 
 ### 治理结构的独特性
 
-相比其他"AI 六小龙"，智谱的独特性：
+相比其他中国 AI 创业公司，智谱的独特性：
 
 | 维度 | 智谱 | 月之暗面 | MiniMax | 百川 |
 | --- | --- | --- | --- | --- |
