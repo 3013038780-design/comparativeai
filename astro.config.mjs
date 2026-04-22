@@ -187,7 +187,36 @@ export default defineConfig({
 				{
 					label: '公司实践',
 					collapsed: true,
-					autogenerate: { directory: 'companies', collapsed: true },
+					items: [
+						{ label: '公司实践总览', link: '/companies/' },
+						{
+							label: '🇺🇸 美国',
+							collapsed: true,
+							items: [
+								{ label: 'Anthropic', link: '/companies/anthropic/' },
+								{ label: 'OpenAI', link: '/companies/openai/' },
+								{ label: 'Google DeepMind', link: '/companies/google-deepmind/' },
+								{ label: 'xAI', link: '/companies/xai/' },
+							],
+						},
+						{
+							label: '🇪🇺 欧盟',
+							collapsed: true,
+							items: [
+								{ label: 'Mistral AI 🇫🇷', link: '/companies/mistral/' },
+							],
+						},
+						{
+							label: '🇨🇳 中国',
+							collapsed: true,
+							items: [
+								{ label: '百度 Baidu', link: '/companies/baidu/' },
+								{ label: '阿里巴巴 Alibaba', link: '/companies/alibaba/' },
+								{ label: '字节跳动 ByteDance', link: '/companies/bytedance/' },
+								{ label: 'DeepSeek', link: '/companies/deepseek/' },
+							],
+						},
+					],
 				},
 				{
 					label: '参考框架',
