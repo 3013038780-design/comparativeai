@@ -1,104 +1,355 @@
-/* Comparative AI — 学术、克制、信息密度高 */
+/* Comparative AI — 学术报刊风格内页样式
+ * 与首页 (src/styles/home.css) 共享设计基因：
+ * - 纸本米白 + 墨黑 + 深酒红 accent + 三辖区语义色（朱砂/藏青/墨绿）
+ * - 标题 Noto Serif SC；正文 Noto Serif SC（阅读友好）；UI chrome Noto Sans SC；代码 JetBrains Mono
+ * - 更宽松的行距、更大的字号、更细的发丝线
+ *
+ * 这份样式保留 Starlight 的所有结构和功能（侧栏、TOC、搜索、组件），只替换视觉 token。
+ */
+
+/* ===== 1. 字体 ===== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-	/* 衬线：英文 Charter/Georgia + 中文思源宋体/宋体 */
-	--font-serif:
-		'Charter', 'Source Han Serif SC', 'Noto Serif SC', 'Songti SC',
+	/* 衬线（含中文）—— 正文与标题主字体 */
+	--font-serif-cn:
+		'Noto Serif SC', 'Source Han Serif SC', 'Songti SC',
 		'STSong', 'SimSun', Georgia, 'Times New Roman', serif;
-	/* 无衬线：system UI + 中文苹方/思源黑体 */
+	/* 衬线（英文偏好）—— Source Serif 4 用于英文数字突出，中文回退 Noto Serif SC */
+	--font-serif:
+		'Source Serif 4', 'Noto Serif SC', 'Source Han Serif SC', Georgia, serif;
+	/* 无衬线（含中文）—— UI chrome（sidebar、nav、标签等） */
 	--font-sans:
-		-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI',
-		'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans SC',
-		'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+		'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI',
+		'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
 	/* 等宽 */
 	--font-mono:
-		'JetBrains Mono', 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
+		'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
 
-	/* Starlight 的字体变量 */
+	/* Starlight 字体变量：UI chrome 走无衬线，正文覆盖在 .sl-markdown-content 里 */
 	--sl-font: var(--font-sans);
 	--sl-font-system: var(--font-sans);
 	--sl-font-mono: var(--font-mono);
+
+	/* 三辖区语义色（与首页一致，供 Markdown 内容使用） */
+	--juris-cn: #8b2e2e;
+	--juris-us: #1e3a5f;
+	--juris-eu: #2d5a4e;
 }
 
-/* 浅色：稍微暖一点的米白，降低长时间阅读疲劳 */
+/* ===== 2. 浅色：纸本米白 ===== */
 :root[data-theme='light'] {
-	--sl-color-bg: #fafaf7;
-	--sl-color-bg-nav: #f5f4ef;
-	--sl-color-bg-sidebar: #f5f4ef;
-	--sl-color-text: #1a1a1a;
-	--sl-color-text-accent: #6b3f3f; /* 深酒红，克制的学术感 */
+	--sl-color-bg: #fdfcfa;
+	--sl-color-bg-nav: #f4f2ed;
+	--sl-color-bg-sidebar: #f4f2ed;
+	--sl-color-bg-inline-code: #efede6;
+
+	--sl-color-text: #1c1a17;
+	--sl-color-text-invert: #fdfcfa;
+	--sl-color-text-accent: #6b3f3f;      /* 深酒红 */
 	--sl-color-accent: #6b3f3f;
 	--sl-color-accent-high: #4a2b2b;
 	--sl-color-accent-low: #efe7e7;
-	--sl-color-hairline: #e2e0d9;
-	--sl-color-hairline-light: #eceae3;
-	--sl-color-hairline-shade: #d8d5cc;
+
+	--sl-color-white: #1c1a17;
+	--sl-color-gray-1: #2e2b27;
+	--sl-color-gray-2: #45423d;
+	--sl-color-gray-3: #726d65;
+	--sl-color-gray-4: #aeaaa2;
+	--sl-color-gray-5: #dcd7cc;
+	--sl-color-gray-6: #ebe7dd;
+	--sl-color-gray-7: #f4f2ed;
+	--sl-color-black: #fdfcfa;
+
+	--sl-color-hairline: #dcd7cc;
+	--sl-color-hairline-light: #ebe7dd;
+	--sl-color-hairline-shade: #d0cabe;
 }
 
-/* 深色：偏蓝黑，降低纯黑的刺眼 */
+/* ===== 3. 深色：偏蓝黑 ===== */
 :root[data-theme='dark'] {
 	--sl-color-bg: #141618;
 	--sl-color-bg-nav: #0f1113;
 	--sl-color-bg-sidebar: #0f1113;
+	--sl-color-bg-inline-code: #22252a;
+
 	--sl-color-text: #e8e6e1;
 	--sl-color-text-accent: #d4a5a5;
 	--sl-color-accent: #d4a5a5;
 	--sl-color-accent-high: #e9c9c9;
 	--sl-color-accent-low: #2a1e1e;
+
 	--sl-color-hairline: #2a2d31;
 	--sl-color-hairline-light: #1e2124;
 	--sl-color-hairline-shade: #33373c;
+
+	/* 深色模式三辖区色（稍亮） */
+	--juris-cn: #c8645f;
+	--juris-us: #6b8ab5;
+	--juris-eu: #6ba795;
 }
 
-/* 标题用衬线，突出学术气质 */
+/* ===== 4. 文章正文（Markdown 内容）===== */
+
+/* 正文用衬线体，更大字号，更宽松行距 —— 阅读友好 */
+.sl-markdown-content {
+	font-family: var(--font-serif-cn);
+	font-size: 1.0625rem;         /* 17px */
+	line-height: 1.8;
+	font-feature-settings: 'palt' 1, 'kern' 1;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+/* 段落间距 */
+.sl-markdown-content p {
+	margin-top: 0.9em;
+	margin-bottom: 0.9em;
+}
+
+/* 标题：Noto Serif SC，字号阶梯分明，接近首页的报刊风 */
 .sl-markdown-content h1,
 .sl-markdown-content h2,
 .sl-markdown-content h3,
 .sl-markdown-content h4,
-h1.hero-title,
-h1, h2, h3, h4 {
+.sl-markdown-content h5,
+.sl-markdown-content h6 {
+	font-family: var(--font-serif-cn);
+	font-weight: 600;
+	letter-spacing: -0.005em;
+	line-height: 1.35;
+}
+
+.sl-markdown-content h1 {
+	font-size: 2.1rem;
+	margin-top: 0;
+	margin-bottom: 0.8em;
+	letter-spacing: -0.01em;
+}
+.sl-markdown-content h2 {
+	font-size: 1.5rem;
+	margin-top: 2em;
+	margin-bottom: 0.6em;
+	padding-top: 0.6em;
+	border-top: 1px solid var(--sl-color-hairline);
+}
+.sl-markdown-content h3 {
+	font-size: 1.2rem;
+	margin-top: 1.6em;
+	margin-bottom: 0.4em;
+}
+.sl-markdown-content h4 {
+	font-size: 1.05rem;
+	margin-top: 1.3em;
+	margin-bottom: 0.3em;
+}
+
+/* 页面大标题（Starlight 的 hero title） */
+.content-panel :is(h1, .hero-title),
+h1[id] {
+	font-family: var(--font-serif-cn);
+	font-weight: 600;
+	letter-spacing: -0.01em;
+}
+
+/* 链接：深酒红下划线；悬停描下划线加重 */
+.sl-markdown-content a {
+	color: var(--sl-color-text-accent);
+	text-decoration: underline;
+	text-decoration-color: var(--sl-color-hairline-shade);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+	transition: text-decoration-color 0.15s;
+}
+.sl-markdown-content a:hover {
+	text-decoration-color: var(--sl-color-text-accent);
+}
+
+/* 引文：左边线，克制 */
+.sl-markdown-content blockquote {
+	border-left: 3px solid var(--sl-color-hairline-shade);
+	background: transparent;
+	padding: 0.1em 1.2em;
+	color: var(--sl-color-gray-2);
+	font-style: normal;
+	margin: 1.2em 0;
+}
+
+/* 表格：密度 + 发丝线 */
+.sl-markdown-content table {
+	font-size: 0.95rem;
+	border-collapse: collapse;
+	margin: 1.2em 0;
+	border-top: 2px solid var(--sl-color-text);
+	border-bottom: 1px solid var(--sl-color-text);
+}
+.sl-markdown-content th {
+	font-family: var(--font-sans);
+	font-weight: 500;
+	font-size: 0.82rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--sl-color-gray-3);
+	text-align: left;
+	padding: 10px 12px;
+	border-bottom: 1px solid var(--sl-color-text);
+	vertical-align: bottom;
+	background: transparent;
+}
+.sl-markdown-content td {
+	padding: 12px;
+	border-bottom: 1px solid var(--sl-color-hairline);
+	vertical-align: top;
+}
+.sl-markdown-content tr:last-child td {
+	border-bottom: none;
+}
+.sl-markdown-content tr:hover td {
+	background: var(--sl-color-gray-7);
+}
+
+/* 列表：小间距 */
+.sl-markdown-content ul,
+.sl-markdown-content ol {
+	padding-left: 1.4em;
+}
+.sl-markdown-content li {
+	margin-bottom: 0.25em;
+}
+.sl-markdown-content li > ul,
+.sl-markdown-content li > ol {
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+}
+
+/* 代码 */
+.sl-markdown-content pre,
+.sl-markdown-content :not(pre) > code {
+	font-family: var(--font-mono);
+	border-radius: 3px;
+}
+.sl-markdown-content :not(pre) > code {
+	font-size: 0.9em;
+	padding: 0.1em 0.35em;
+}
+
+/* 分隔线：细 */
+.sl-markdown-content hr {
+	border: none;
+	border-top: 1px solid var(--sl-color-hairline);
+	margin: 2.5em 0;
+}
+
+/* 强调 / 加粗 */
+.sl-markdown-content strong {
+	font-weight: 600;
+	color: var(--sl-color-text);
+}
+.sl-markdown-content em {
+	font-style: italic;
 	font-family: var(--font-serif);
+}
+
+/* ===== 5. 侧栏 ===== */
+
+.sidebar-pane {
+	font-family: var(--font-sans);
+}
+
+/* 侧栏节标题 */
+.sidebar-pane summary,
+.sidebar-pane .large {
+	font-family: var(--font-serif-cn);
 	font-weight: 600;
 	letter-spacing: -0.005em;
 }
 
-/* 正文字号稍紧凑，提升信息密度 */
-.sl-markdown-content {
-	font-size: 0.95rem;
-	line-height: 1.7;
+.sidebar-pane .top-level > li > a,
+.sidebar-pane .top-level > li > details > summary {
+	font-size: 0.9rem;
+	font-weight: 500;
 }
 
-/* 段落之间间距稍收 */
-.sl-markdown-content p {
-	margin-top: 0.75em;
-	margin-bottom: 0.75em;
-}
-
-/* 引文：左边线代替斜体背景，学术风 */
-.sl-markdown-content blockquote {
-	border-left: 3px solid var(--sl-color-hairline-shade);
-	background: transparent;
-	padding: 0.1em 1em;
-	color: var(--sl-color-text);
-	font-style: normal;
-}
-
-/* 表格密度 */
-.sl-markdown-content table {
+.sidebar-pane a {
 	font-size: 0.88rem;
 }
-.sl-markdown-content th,
-.sl-markdown-content td {
-	padding: 0.45em 0.7em;
+
+/* 侧栏当前页高亮 */
+.sidebar-pane a[aria-current='page'] {
+	background: var(--sl-color-accent-low);
+	color: var(--sl-color-text-accent);
+	font-weight: 600;
 }
 
-/* 代码块不要过分圆角 */
-.sl-markdown-content pre,
-.sl-markdown-content :not(pre) > code {
-	border-radius: 3px;
+/* ===== 6. 顶部导航 ===== */
+
+header.header,
+.header {
+	font-family: var(--font-sans);
+	border-bottom: 1px solid var(--sl-color-hairline);
 }
 
-/* 移除 Starlight 的背景渐变 hero 效果 */
+/* 站点标题（左上角）*/
+.site-title {
+	font-family: var(--font-serif);
+	font-weight: 600;
+	letter-spacing: 0.01em;
+}
+
+/* ===== 7. 目录 (TOC, Right Sidebar) ===== */
+
+.right-sidebar {
+	font-family: var(--font-sans);
+}
+.right-sidebar a {
+	font-size: 0.85rem;
+	line-height: 1.6;
+}
+
+/* ===== 8. 页头元信息（lastUpdated 等）===== */
+
+.meta {
+	font-family: var(--font-mono);
+	font-size: 0.78rem;
+	color: var(--sl-color-gray-3);
+	letter-spacing: 0.03em;
+}
+
+/* ===== 9. 三辖区语义色工具类（在 Markdown 中使用）===== */
+
+.juris-cn, [data-juris='cn'] { color: var(--juris-cn); }
+.juris-us, [data-juris='us'] { color: var(--juris-us); }
+.juris-eu, [data-juris='eu'] { color: var(--juris-eu); }
+
+/* ===== 10. 移除 Starlight 的 hero 渐变 ===== */
 .hero > .stack {
 	background: none;
+}
+
+/* ===== 11. 印章式 callout / 注释块（在 Markdown 中用 blockquote 实现）===== */
+
+/* 加重的 blockquote（以 emoji 开头时更突出） */
+.sl-markdown-content blockquote p {
+	font-size: 0.97rem;
+	line-height: 1.75;
+}
+
+/* ===== 12. 响应式字号 ===== */
+
+@media (max-width: 820px) {
+	.sl-markdown-content {
+		font-size: 1rem;            /* 16px */
+		line-height: 1.75;
+	}
+	.sl-markdown-content h1 { font-size: 1.75rem; }
+	.sl-markdown-content h2 { font-size: 1.3rem; }
+	.sl-markdown-content h3 { font-size: 1.1rem; }
+	.sl-markdown-content table { font-size: 0.85rem; }
+}
+
+/* ===== 13. 选区色：接近深酒红 ===== */
+
+::selection {
+	background: var(--sl-color-accent-low);
+	color: var(--sl-color-text-accent);
 }
