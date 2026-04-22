@@ -65,16 +65,20 @@ sidebar:
 
 欧盟是三辖区中**制度最体系化**的：硬法设"本质要求"，软法（协调标准）译为可检验的技术规范，一经 OJEU 引用即产生**合规推定**。
 
+**只有两层核心位阶**：立法层设"本质要求"（essential requirements），标准层把要求译成可检验的技术规范。这是欧盟自 **1985 年"新立法框架（New Legislative Framework）"** 以来的标准范式，AI Act 完整沿用（第 40 条：符合协调标准 = 合规推定）。
+
 | 规范类型 | 硬/软 | 角色 | 代表性规则 |
 | --- | --- | --- | --- |
-| 条例（AI Act 及相邻立法）| 硬（直接适用，域外效力）| 规定"本质要求"，留空"如何合规" | AI Act (Reg 2024/1689)、GDPR、DSA、DMA、Data Act、修订后的产品责任指令 |
-| 指令（Directive）| 硬（须成员国转化）| 要求成员国在期限内将条文转入国内法 | DSM 版权指令（TDM 例外，第 4 条）、NIS2 |
-| 协调标准（hEN, harmonised standard）| 软（OJEU 引用后产生符合性推定，实质硬化）| 把"本质要求"译为可检验的技术规范 | CEN-CENELEC JTC 21 在制十大领域标准；prEN 18286 是首部进入 Enquiry 阶段的 AI Act hEN |
-| 行为守则（Code of Practice）| 软（签署后事实硬化）| 第 56 条授权路径，签署即"合规推定" | GPAI Code of Practice（2025-07 定稿，三章：Transparency/Copyright/Safety） |
-| 欧委会指引 / AI Office 指引 | 软 | 填补条款模糊，提供执法预期 | 禁止清单指引、GPAI 指引、VLOP 风险评估指引等 |
-| 成员国 DPA / MSA 执法 | 硬（适用 GDPR / AI Act）| 首批实际执法来自活跃 DPA | CNIL（France）、Garante（Italy）、AEPD（Spain）、DPC（Ireland）|
+| **二级立法**（Regulation / Directive）| 硬（条例直接适用；指令须成员国转化）| 规定"本质要求"，留空"如何合规" | AI Act (Reg 2024/1689)、GDPR、DSA、DMA、Data Act、产品责任指令、DSM 版权指令、NIS2 |
+| **协调标准（hEN）** | 软（OJEU 引用后产生**符合性推定**，实质硬化）| 把"本质要求"译为可检验的技术规范 | CEN-CENELEC JTC 21 在制十大领域标准；prEN 18286 是首部进入 Enquiry 阶段的 AI Act hEN |
 
-**观察**：欧盟的 **Brussels Effect** 主要通过"条例 + 协调标准"的配套机制实现。**Digital Omnibus Proposal（2025-11）** 提议推迟高风险条款 16 个月，是 2026 最重要的制度不确定性。
+**其他软法补充**（在这两层之内的实施机制，不构成独立位阶）：
+
+- **Code of Practice**（如 [GPAI CoP](/rules/eu/gpai-code-of-practice/)）：AI Act 第 56 条授权，签署 = 合规推定。是 **hEN 尚未到位前的过渡合规路径**
+- **欧委会指引 / AI Office 指引**：填补条款模糊，提供执法预期（禁止清单指引、GPAI 指引等）
+- **成员国 DPA / MSA 执法**：把硬法落地的执行机制（[France CNIL](/subnational/eu/france-cnil-ai/)、[Spain AESIA](/subnational/eu/spain-aesia/)、意大利 Garante、爱尔兰 DPC 等）
+
+**观察**：欧盟 AI 治理的**可预测性**源于两层位阶的清晰分工——立法设目标，标准设方法。**Brussels Effect** 也主要通过这个组合外溢。**Digital Omnibus Proposal（2025-11）** 提议推迟高风险条款 16 个月，是 2026 最重要的制度不确定性。
 
 ### 🔶 边界情况记录
 
