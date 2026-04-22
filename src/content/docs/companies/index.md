@@ -63,14 +63,25 @@ sidebar:
 | **字节跳动 ByteDance** | 无独立；**嵌入式合规**（CAC + 党委）| 全球撕裂 | [bytedance](/companies/bytedance/) |
 | **腾讯 Tencent** | 无独立；**多模态全线开源**（Hunyuan）| 平台型 AI | [tencent](/companies/tencent/) |
 
-#### "AI 六小龙"（创业第一梯队）
+#### "AI 六小龙"（2023 创业第一梯队）
 
 | 公司 | 安全框架 | 定位 | 专页 |
 | --- | --- | --- | --- |
 | **智谱 ZhipuAI** | 无独立；**港股已上市 2513.HK** | 国家队 + 学术出身 | [zhipuai](/companies/zhipuai/) |
 | **月之暗面 Moonshot** | 无独立；开源 Kimi K2.5 | 长上下文 + 付费突围 | [moonshot](/companies/moonshot/) |
 | **MiniMax** | 无独立；Talkie 海外成功 | AI 陪伴 + 出海 | [minimax](/companies/minimax/) |
-| **DeepSeek** | 无独立；**极限开源**（MIT）| 独立研究 | [deepseek](/companies/deepseek/) |
+| **百川智能 Baichuan** | _待补_ | 2024 起医疗 AI 垂直转型 | _待补_ |
+| **阶跃星辰 StepFun** | _待补_ | 多模态 Step 系列 | _待补_ |
+| **零一万物 01.AI** | _待补_ | 李开复创办，2024 业务整合 | _待补_ |
+
+#### 独立崛起（2024 起）
+
+| 公司 | 安全框架 | 定位 | 专页 |
+| --- | --- | --- | --- |
+| **DeepSeek** | 无独立；**极限开源**（MIT）| **2025-01 "DeepSeek moment"** | [deepseek](/companies/deepseek/) |
+
+> **说明**：DeepSeek **不属于传统"六小龙"**——2023 年"六小龙"说法形成时 DeepSeek 尚未出名，
+> 由量化私募幻方量化孵化，路径独立。但因其 2025-01 全球影响力，单独分类为"独立崛起"。
 
 ## 三种自律模式对比
 
@@ -140,8 +151,8 @@ sidebar:
 
 - **🇺🇸 美国**：Meta（Llama 团队，重要但开源公司治理已可通过 Mistral 页面代表性覆盖）
 - **🇪🇺 欧盟**：Aleph Alpha、Stability AI、Black Forest Labs（**已明确不补充**）
-- **🇨🇳 中国**：百川智能 Baichuan、阶跃星辰 StepFun、零一万物 01.AI（AI 六小龙其余 3 家）、
-  华为（**已明确不补**）
+- **🇨🇳 中国**：**百川智能 Baichuan、阶跃星辰 StepFun、零一万物 01.AI**（AI 六小龙其余 3 家，
+  优先级中等）、华为（**已明确不补**）
 
 **当前重心**：**深化现有 13 家**，把每家的 5 类 subpage（Usage Policy、Model Card、Safety
 Framework、Transparency Report、Red-Team Disclosures）从占位填充为实质分析。
