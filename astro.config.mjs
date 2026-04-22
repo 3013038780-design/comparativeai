@@ -52,7 +52,49 @@ export default defineConfig({
 				{
 					label: '议题比较',
 					collapsed: false,
-					autogenerate: { directory: 'topics', collapsed: false },
+					items: [
+						{ label: '议题总览', link: '/topics/' },
+						{
+							label: '风险分级',
+							collapsed: true,
+							items: [
+								{ label: '概览', link: '/topics/risk-classification/' },
+								{ label: '🇨🇳 中国', link: '/topics/risk-classification/china/' },
+								{ label: '🇺🇸 美国', link: '/topics/risk-classification/us/' },
+								{ label: '🇪🇺 欧盟', link: '/topics/risk-classification/eu/' },
+							],
+						},
+						{
+							label: '前沿模型与 GPAI',
+							collapsed: true,
+							items: [
+								{ label: '概览', link: '/topics/frontier-gpai/' },
+								{ label: '🇨🇳 中国', link: '/topics/frontier-gpai/china/' },
+								{ label: '🇺🇸 美国', link: '/topics/frontier-gpai/us/' },
+								{ label: '🇪🇺 欧盟', link: '/topics/frontier-gpai/eu/' },
+							],
+						},
+						{
+							label: '数据与训练',
+							collapsed: true,
+							items: [
+								{ label: '概览', link: '/topics/data-training/' },
+								{ label: '🇨🇳 中国', link: '/topics/data-training/china/' },
+								{ label: '🇺🇸 美国', link: '/topics/data-training/us/' },
+								{ label: '🇪🇺 欧盟', link: '/topics/data-training/eu/' },
+							],
+						},
+						{
+							label: '生成内容标识',
+							collapsed: true,
+							items: [
+								{ label: '概览', link: '/topics/content-labeling-provenance/' },
+								{ label: '🇨🇳 中国', link: '/topics/content-labeling-provenance/china/' },
+								{ label: '🇺🇸 美国', link: '/topics/content-labeling-provenance/us/' },
+								{ label: '🇪🇺 欧盟', link: '/topics/content-labeling-provenance/eu/' },
+							],
+						},
+					],
 				},
 				// 顶层规则：中国按五级位阶手工分组；美/欧用 autogenerate
 				{
@@ -182,7 +224,37 @@ export default defineConfig({
 				{
 					label: '地方层级',
 					collapsed: true,
-					autogenerate: { directory: 'subnational', collapsed: true },
+					items: [
+						{ label: '地方层级总览', link: '/subnational/' },
+						{
+							label: '🇨🇳 中国地方',
+							collapsed: true,
+							items: [
+								{ label: '概览', link: '/subnational/china/' },
+								{ label: '深圳 AI 产业促进条例 (2022)', link: '/subnational/china/shenzhen-ai-industry-promotion/' },
+							],
+						},
+						{
+							label: '🇺🇸 美国州 / 市',
+							collapsed: true,
+							items: [
+								{ label: '概览', link: '/subnational/us/' },
+								{ label: 'Colorado AI Act (2026-06)', link: '/subnational/us/colorado-ai-act/' },
+								{ label: 'California SB 53 (2026-01)', link: '/subnational/us/california-sb-53-frontier-ai/' },
+								{ label: 'Texas TRAIGA (2026-01)', link: '/subnational/us/texas-traiga/' },
+								{ label: 'NYC Local Law 144 (2023)', link: '/subnational/us/nyc-local-law-144/' },
+							],
+						},
+						{
+							label: '🇪🇺 欧盟成员国',
+							collapsed: true,
+							items: [
+								{ label: '概览', link: '/subnational/eu/' },
+								{ label: 'Spain AESIA', link: '/subnational/eu/spain-aesia/' },
+								{ label: 'France CNIL AI', link: '/subnational/eu/france-cnil-ai/' },
+							],
+						},
+					],
 				},
 				{
 					label: '公司实践',
