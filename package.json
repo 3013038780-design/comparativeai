@@ -9,11 +9,14 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "npm run build && wrangler dev",
     "astro": "astro",
-    "archive": "node scripts/archive.mjs"
+    "archive": "node scripts/archive.mjs",
+    "deploy": "npm run build && wrangler deploy",
+    "cf-typegen": "wrangler types"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "12",
     "@astrojs/node": "^9.5.5",
     "@astrojs/react": "^5.0.3",
     "@astrojs/starlight": "^0.35.3",
@@ -29,5 +32,8 @@
   },
   "overrides": {
     "@astrojs/sitemap": "3.6.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.84.1"
   }
 }

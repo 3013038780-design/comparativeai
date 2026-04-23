@@ -6,10 +6,12 @@ import keystatic from '@keystatic/astro';
 import node from '@astrojs/node';
 import remarkHeadingId from 'remark-heading-id';
 
+import cloudflare from "@astrojs/cloudflare";
+
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://comparativeai.org',
-	adapter: node({ mode: 'standalone' }),
+	adapter: cloudflare(),
 	markdown: {
 		remarkPlugins: [remarkHeadingId],
 	},
