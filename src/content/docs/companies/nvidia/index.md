@@ -105,9 +105,9 @@ NVIDIA **没有 RSP / Preparedness / FSF 类安全框架**，因为其产品是*
 
 | 类型 | 文档名 | 链接 | 本站子页 |
 | --- | --- | --- | --- |
-| 使用政策 | NVIDIA End User License Agreement（含出口管制条款）| [nvidia.com/en-us/about-nvidia/legal-info](https://www.nvidia.com/en-us/about-nvidia/legal-info/) | _待补_ |
-| 模型 / 工具 | Nemotron 系列 + NeMo 框架 | [developer.nvidia.com/nemo](https://developer.nvidia.com/nemo) | _待补_ |
-| 出口管制合规 | Export Compliance 页面 | [nvidia.com/en-us/about-nvidia/export-compliance](https://www.nvidia.com/en-us/about-nvidia/export-compliance/) | _待补_ |
+| 使用政策 | NVIDIA End User License Agreement（含出口管制条款）| [nvidia.com/en-us/about-nvidia/legal-info](https://www.nvidia.com/en-us/about-nvidia/legal-info/) | — |
+| 模型 / 工具 | Nemotron 系列 + NeMo 框架 | [developer.nvidia.com/nemo](https://developer.nvidia.com/nemo) | — |
+| 出口管制合规 | Export Compliance 页面 | [nvidia.com/en-us/about-nvidia/export-compliance](https://www.nvidia.com/en-us/about-nvidia/export-compliance/) | — |
 
 ## 监管合规位置
 
@@ -144,11 +144,3 @@ NVIDIA **没有 RSP / Preparedness / FSF 类安全框架**，因为其产品是*
 - **在出口管制上游走**：支持政策（Jensen Huang 公开游说）但持续推出合规降级产品
 - **不走安全框架路径**：作为硬件供应商不直接参与模型层自律
 
-## 待补充
-
-- [ ] 历次出口管制下 NVIDIA 对华销售数据
-- [ ] H200 关税版的实际出货情况（2026-04+）
-- [ ] Remote Access Security Act 参议院立法进展
-- [ ] Project Digits 的 AI 治理含义深入分析
-- [ ] NVIDIA 在 Stargate / Colossus / Meta 基础设施的具体规模
-- [ ] 中国国产替代（华为昇腾、寒武纪）对 NVIDIA 长期影响的评估

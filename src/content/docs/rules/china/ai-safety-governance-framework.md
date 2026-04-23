@@ -100,7 +100,7 @@ mitigation scheme for AI — a turning point from the scenario-specific regulato
 | --- | --- | --- |
 | 1.0（中文） | 网信办 / TC260 | [cac.gov.cn](https://www.cac.gov.cn/2024-09/09/c_1727567886199789.htm) |
 | 1.0（中英对照 PDF） | TC260 | [tc260.org.cn](https://www.tc260.org.cn/) |
-| 2.0（中文） | 网信办 / TC260 | _待补_ |
+| 2.0（中文） | 网信办 / TC260 | — |
 | English | _2024 正式对外发布有官方英文版，参见 TC260 / 网信办英文站_ | |
 
 ## 版本历史
@@ -111,9 +111,3 @@ mitigation scheme for AI — a turning point from the scenario-specific regulato
 | 2025-09-15 | 2.0 版本发布（第八届数字中国峰会 / WAIC 等场合） |
 | 未来版本 | 可能继续迭代，重点对 Agent、具身智能的覆盖 |
 
-## 待完善
-
-- [ ] 2.0 版本的原文链接（2025-09 发布页面）
-- [ ] 1.0 → 2.0 的逐项变化对照表
-- [ ] 企业对框架的采纳实务（公开案例）
-- [ ] 国际上对该框架的引用和评价

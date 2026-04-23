@@ -72,10 +72,10 @@ snapshotDate: 2026-04-22
 
 | 类型 | 文档名 | 链接 | 本站子页 |
 | --- | --- | --- | --- |
-| 使用政策 | Z.ai 服务协议 + 隐私政策 | [zhipuai.cn](https://www.zhipuai.cn/) | _待补_ |
-| 技术报告 | GLM-4.5 / GLM-5 Technical Report | ModelScope + arXiv | _待补_ |
-| 开源模型 | GLM-4.5 / GLM-4.5-Air GitHub | [github.com/THUDM](https://github.com/THUDM) | _待补_ |
-| 透明度 | CAC 算法备案 + 港交所披露（2026-03-31 年报）| [cac.gov.cn](https://www.cac.gov.cn/) + [hkexnews.hk](https://www.hkexnews.hk/) | _待补_ |
+| 使用政策 | Z.ai 服务协议 + 隐私政策 | [zhipuai.cn](https://www.zhipuai.cn/) | — |
+| 技术报告 | GLM-4.5 / GLM-5 Technical Report | ModelScope + arXiv | — |
+| 开源模型 | GLM-4.5 / GLM-4.5-Air GitHub | [github.com/THUDM](https://github.com/THUDM) | — |
+| 透明度 | CAC 算法备案 + 港交所披露（2026-03-31 年报）| [cac.gov.cn](https://www.cac.gov.cn/) + [hkexnews.hk](https://www.hkexnews.hk/) | — |
 
 ## 监管合规位置
 
@@ -100,10 +100,3 @@ snapshotDate: 2026-04-22
 - **资本化导向**：港股 IPO 后估值和业绩压力增加
 - **开源友好**：MIT License 是中国头部公司中较开放的
 
-## 待补充
-
-- [ ] 2025 全年业绩（2026-03-31 年报发布后补充）
-- [ ] GLM-5 与昇腾芯片适配的技术细节
-- [ ] AutoGLM / GLM-PC 在 Agent 安全上的具体设计
-- [ ] 智谱在美国 BIS 清单的具体状态（核对 Federal Register）
-- [ ] 唐杰团队与国家 AI 标准的具体关联清单

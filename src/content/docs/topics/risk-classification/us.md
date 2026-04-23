@@ -65,9 +65,3 @@ sidebar:
 - **与 EU**：EU 4 级 + GPAI vs. 美国"联邦无分级，州法单一层，行业各自分类"
 - **与中国**：中国以备案制事实筛选，美国联邦无类似闸门；州法的 impact assessment 与中国的安全评估功能部分重叠
 
-## 待完善
-
-- [ ] 州法对照表（CO / CT / TX / IL / CA）
-- [ ] FDA AI/ML SaMD 四类清单
-- [ ] SR 11-7 更新状态（如 2025 重发）
-- [ ] Frontier Model Forum / AISI 替代方案分析

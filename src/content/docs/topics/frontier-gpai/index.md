@@ -118,7 +118,7 @@ sidebar:
 | [Google DeepMind](/companies/google-deepmind/) | **FSF v3** (2026-04) | Critical Capability Levels (CCL) | **扩展**：新增 TCL + 操纵 CCL |
 | [Mistral](/companies/mistral/) | **无独立框架** | 开源 + GPAI CoP 签署 | — |
 | [xAI](/companies/xai/) | **弱 / 无对标文档** | — | 公开**拒绝**自律范式 |
-| [Meta](/companies/) (待补) | Frontier AI Framework | 类似方法论 | 持续演进 |
+| [Meta](/companies/) | Frontier AI Framework | 类似方法论 | 持续演进 |
 
 ### 达到算力阈值的主要模型（2026-04）
 

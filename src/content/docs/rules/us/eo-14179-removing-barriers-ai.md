@@ -88,7 +88,7 @@ and rights" toward "dominance and innovation."
 | 语言 | 来源 | 链接 |
 | --- | --- | --- |
 | English（原文） | The White House | [whitehouse.gov](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/) |
-| Federal Register（官方刊物） | | _待补 FR 编号和链接_ |
+| Federal Register（官方刊物） | | — |
 | 分析 | Stanford HAI、Brookings、CSET | 持续追踪 |
 
 ## 版本历史

@@ -97,7 +97,7 @@ Anthropic **Usage Policy**（2025-05 最新版）与其他前沿实验室相比�
 | 使用政策 | Anthropic Usage Policy (AUP) | [anthropic.com/legal/aup](https://www.anthropic.com/legal/aup) | [usage-policy](./usage-policy/) |
 | 模型卡 | Claude Model Card（各版本）| [anthropic.com/claude](https://www.anthropic.com/claude) | [model-card](./model-card/) |
 | 安全框架 | **RSP v3** (2026-02-24) | [anthropic.com/news/responsible-scaling-policy-v3](https://www.anthropic.com/news/responsible-scaling-policy-v3) | [safety-framework](./safety-framework/) |
-| SB 53 合规 | Frontier Compliance Framework | [anthropic.com/news/compliance-framework-SB53](https://www.anthropic.com/news/compliance-framework-SB53) | _待补_ |
+| SB 53 合规 | Frontier Compliance Framework | [anthropic.com/news/compliance-framework-SB53](https://www.anthropic.com/news/compliance-framework-SB53) | — |
 | 透明度报告 | Transparency Hub | [anthropic.com/transparency](https://www.anthropic.com/transparency) | [transparency-report](./transparency-report/) |
 | 红队披露 | Frontier Red Team 论文 / 博客 | [anthropic.com/research](https://www.anthropic.com/research) | [red-team-disclosures](./red-team-disclosures/) |
 
@@ -138,12 +138,3 @@ Anthropic 的自律姿态有**三重张力**：
 
 **相对其他前沿实验室，Anthropic 的自律仍是最重的**，但 2026 开始出现**"竞争压力下的退让"**迹象。
 
-## 待补充
-
-- [ ] RSP v1 → v2 各小版本的逐项变化表
-- [ ] RSP v3 "industry-wide recommendations" 的具体清单与追踪机制
-- [ ] Risk Reports 外部审查方的完整构成（GovAI / MATS / METR 之外）
-- [ ] SB 53 Frontier Compliance Framework 与 RSP 的字段映射详表
-- [ ] Claude Opus 4.7 / Sonnet 4.6 / Haiku 4.5 各版本 Model Card 归档
-- [ ] 与 Amazon、Google 投资关系对政策立场的实证影响（是否可观察）
-- [ ] Usage Policy 2022 → 2025-05 的历次修订对比

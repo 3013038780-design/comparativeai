@@ -30,10 +30,10 @@ snapshotDate: 2026-04-22
 
 | 类型 | 文档名 | 链接 | 本站子页 |
 | --- | --- | --- | --- |
-| 使用政策 | Mistral AI Usage Policy | [mistral.ai/terms](https://mistral.ai/terms/) | _待补_ |
-| 模型卡 | 各模型 Model Card | [docs.mistral.ai/getting-started/models](https://docs.mistral.ai/getting-started/models/) | _待补_ |
-| 技术报告 | Mistral Large 3 / Ministral 3 Technical Report | Mistral 博客 + arXiv | _待补_ |
-| 透明度 | 公开博客 + GitHub（开源模型权重和训练说明） | [mistral.ai/news](https://mistral.ai/news/) | _待补_ |
+| 使用政策 | Mistral AI Usage Policy | [mistral.ai/terms](https://mistral.ai/terms/) | — |
+| 模型卡 | 各模型 Model Card | [docs.mistral.ai/getting-started/models](https://docs.mistral.ai/getting-started/models/) | — |
+| 技术报告 | Mistral Large 3 / Ministral 3 Technical Report | Mistral 博客 + arXiv | — |
+| 透明度 | 公开博客 + GitHub（开源模型权重和训练说明） | [mistral.ai/news](https://mistral.ai/news/) | — |
 
 ## 监管合规位置
 
@@ -93,14 +93,6 @@ Security）全签。但：
 - **对 Digital Omnibus Proposal**：**隐性支持**
 - **反美**：公开批评美国科技巨头对欧洲 AI 生态的压制
 - **主权 AI 叙事**：与 Macron 政府、欧委会 Breton → Virkkunen 接续的"数字主权"政策高度绑定
-
-## 待补充
-
-- [ ] Mistral Large 3 的 EU AI Act 系统性风险文档
-- [ ] GPAI Code of Practice 三章签署细节（是否对某章节有异议）
-- [ ] Mistral Compute 开放日期与定价
-- [ ] 开源 vs. 闭源产品线的边界（哪些保留不开源）
-- [ ] 欧盟数字主权叙事的实证依据
 
 ## 与其他公司的对比
 

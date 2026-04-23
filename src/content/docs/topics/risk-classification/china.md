@@ -61,8 +61,3 @@ sidebar:
 - **与 EU**：EU 有统一 4 级清单，中国没有。EU 看"系统"，中国看"服务场景"
 - **与 US**：中国更系统化（至少有多部规章覆盖），但 US 的州法（[Colorado AI Act](/subnational/us/colorado-ai-act/)）反而有较明确的"high-risk AI system"定义
 
-## 待完善
-
-- [ ] TC260-003 的 31 类风险清单完整列表和量化门槛
-- [ ] 已备案算法清单的定期镜像（CAC 公示的 batch 数据）
-- [ ] 科技伦理审查复核实务案例（如有公开）

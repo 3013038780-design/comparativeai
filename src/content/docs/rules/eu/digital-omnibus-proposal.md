@@ -127,14 +127,6 @@ sidebar:
 | Digital Omnibus 综合解读 | IAPP、Covington、WilmerHale 等 |
 | IIEA EU 数字议程 2025-2026 | [iiea.com/blog/eu-digital-policy-2025-2026](https://www.iiea.com/blog/the-transition-to-a-new-digital-policy-agenda-eu-digital-policy-2025-2026) |
 
-## 待完善
-
-- [ ] 提案全文 PDF 链接
-- [ ] 议会一读立场（预计 2026-Q2）
-- [ ] 各成员国对延期的正式表态
-- [ ] AI Office 对"如果不通过"的备用执法方案
-- [ ] 对 GPAI CoP 签署方合规进度的影响
-
 ## 版本历史
 
 | 日期 | 事件 |

@@ -143,5 +143,6 @@ sidebar:
 - **🇨🇳 中国**：百川智能 Baichuan、阶跃星辰 StepFun、零一万物 01.AI（AI 创业公司其他代表，
   优先级中等）、华为（**已明确不补**）
 
-**当前重心**：**深化现有 13 家**，把每家的 5 类 subpage（Usage Policy、Model Card、Safety
-Framework、Transparency Report、Red-Team Disclosures）从占位填充为实质分析。
+**当前重心**：**深化现有 13 家**。5 家前沿实验室（Anthropic、OpenAI、Google DeepMind、ByteDance、
+DeepSeek）的 5 类 subpage 已填充为实质分析；其余 8 家以综合 index 形式呈现，按公司活跃度决定
+是否展开 subpage。

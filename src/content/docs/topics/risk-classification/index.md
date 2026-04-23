@@ -104,7 +104,7 @@ sidebar:
 | [OpenAI](/companies/openai/) | ✅ GPAI + 系统性风险 | ✅ | 未入中国 | **[Preparedness Framework v2](https://openai.com/index/updating-our-preparedness-framework/)** 高 / 关键阈值 |
 | [Google DeepMind](/companies/google-deepmind/) | ✅ GPAI + 系统性风险 | ✅ | 未入中国 | **[FSF v3](https://deepmind.google/blog/strengthening-our-frontier-safety-framework/)** Critical + Tracked CLs |
 | [Mistral](/companies/mistral/) | ✅ GPAI + 系统性风险 | ⚠️（Mistral Large 3 约 10²⁶）| 未入中国 | **GPAI CoP 签署 + 开源透明** |
-| [Meta](/companies/) (待补) | ✅ 部分 | ✅ | 未入中国 | Frontier AI Framework v2 |
+| [Meta](/companies/) | ✅ 部分 | ✅ | 未入中国 | Frontier AI Framework v2 |
 | [字节豆包](/companies/bytedance/) | 未入 | 未入 | ✅ 深度合成 + 生成式 | **CAC 备案 + TC260-003 合规** |
 | [阿里 Qwen](/companies/alibaba/) | 开源模型下载 → 欧盟潜在义务 | 开源下载 → 加州潜在 | ✅ | 开源 + 国内备案 |
 

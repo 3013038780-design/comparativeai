@@ -114,13 +114,6 @@ sidebar:
 | 中文（归档） | [archives/china/digital-virtual-human-services-draft-2026-04-03.html](/archives/china/digital-virtual-human-services-draft-2026-04-03.html) |
 | English | [China Law Translate](https://www.chinalawtranslate.com/%E6%95%B0%E5%AD%97%E8%99%9A%E6%8B%9F%E4%BA%BA%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95-%EF%BC%88%E5%BE%81%E6%B1%82%E6%84%8F%E8%A7%81%E7%A8%BF%EF%BC%89/) |
 
-## 待完善
-
-- [ ] 征求意见起止日期（通常征求意见期 30 日，即 2026-04-03 → 2026-05-03 左右）
-- [ ] 定稿发布后**回填正式条款**和**多部委联署**状态
-- [ ] 与拟人化互动服务办法的**冲突 / 协调**分析（如定稿后有实质差异）
-- [ ] 对虚拟主播 / 数字员工 / AI 主播行业的**合规影响**
-
 ## 版本历史
 
 | 日期 | 事件 |

@@ -43,34 +43,6 @@ sidebar:
 | 政党主导 | 民主党 | 民主党 | 共和党 |
 | 抢占地方 | — | — | **明确抢占市县** |
 
-## 待补充（按重要性排序）
-
-### 州综合性 AI 立法（次重要）
-
-- **Connecticut SB 2**（2024 通过）— 州级第二部综合 AI 法（Colorado 之后）
-- **Illinois HB 3773**（2024，就业反歧视 AI）
-- **Virginia HB 2094**（2025）
-- **California SB-1047**（2024 被 Newsom 否决，但有先例意义）
-- **California SB-896**（2024，GenAI 训练披露）
-- **California ADMT Regulations**（2025，CCPA 下自动决策规则）
-
-### 选举 / 深度伪造专项
-
-- **Texas SB 751 / 1117**（选举 deepfake）
-- **Minnesota HF 1370**
-- **Washington RCW 42.62**（2023）
-
-### 隐私法对 AI 的延伸（20+ 州）
-
-- **Illinois BIPA**（生物特征，对人脸训练数据高影响，Clearview 案例）
-- **Washington My Health My Data**
-- **Tennessee ELVIS Act**（声音克隆）
-
-### 地方专项（暂无综合性值得立页）
-
-- NYC LL 144（已收录）
-- 其他城市条例多被州法抢占（特别是 TRAIGA 明确禁止地方 AI 条例）
-
 ## 与联邦层级的关系（2026-04 当前态势）
 
 - **联邦去监管 + 州监管抵抗**：Trump 政府推动抢占，州 AG 抵抗

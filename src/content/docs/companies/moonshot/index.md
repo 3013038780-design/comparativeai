@@ -91,10 +91,10 @@ Kimi K2 / K2.5 均**完整开源权重**（HuggingFace）：
 
 | 类型 | 文档名 | 链接 | 本站子页 |
 | --- | --- | --- | --- |
-| 使用政策 | Kimi 用户协议 + 隐私政策 | [moonshot.cn](https://www.moonshot.cn/) / [kimi.moonshot.cn](https://kimi.moonshot.cn/) | _待补_ |
-| 技术报告 | Kimi K1.5 / K2 / K2.5 Technical Reports | arXiv + GitHub | _待补_ |
-| 开源模型 | Kimi K2 / K2.5 GitHub | [github.com/MoonshotAI](https://github.com/MoonshotAI) | _待补_ |
-| 透明度 | CAC 算法备案 + （未来港股披露）| [cac.gov.cn](https://www.cac.gov.cn/) | _待补_ |
+| 使用政策 | Kimi 用户协议 + 隐私政策 | [moonshot.cn](https://www.moonshot.cn/) / [kimi.moonshot.cn](https://kimi.moonshot.cn/) | — |
+| 技术报告 | Kimi K1.5 / K2 / K2.5 Technical Reports | arXiv + GitHub | — |
+| 开源模型 | Kimi K2 / K2.5 GitHub | [github.com/MoonshotAI](https://github.com/MoonshotAI) | — |
+| 透明度 | CAC 算法备案 + （未来港股披露）| [cac.gov.cn](https://www.cac.gov.cn/) | — |
 
 ## 监管合规位置
 
@@ -117,10 +117,3 @@ Kimi K2 / K2.5 均**完整开源权重**（HuggingFace）：
 - **开源友好**：Kimi K2 系列完整开源
 - **融资高度国际化**：$5亿 C 轮（2025-12）标志二级市场路径
 
-## 待补充
-
-- [ ] Kimi K2.5 技术报告的详细安全评估
-- [ ] 港股 IPO 招股书（发布后补）—— 将是中国 AI 治理透明度分水岭之一
-- [ ] Kimi K3（3-4T 参数）的算力来源与 BIS 管制应对
-- [ ] 与腾讯、阿里投资方的业务协同
-- [ ] Kimi 出海日本 / 东南亚的合规架构

@@ -140,7 +140,7 @@ sidebar:
 | **Meta AI / Llama** | 部分角标 | **有限 C2PA**（Instagram / Facebook）| C2PA 部分 |
 | **[字节豆包](/companies/bytedance/) / 国内服务** | 符合中国标识办法 | **GB 45438-2025** | 国标 |
 | **[百度文心](/companies/baidu/) / [阿里 Qwen](/companies/alibaba/) / [DeepSeek](/companies/deepseek/)** | 中国标识办法合规 | GB 45438-2025 | 国标 |
-| **[Midjourney](/companies/)** (待补) | 不明显 | **有限** | 社区争议 |
+| **[Midjourney](/companies/)** | 不明显 | **有限** | 社区争议 |
 | **[xAI Grok](/companies/xai/) 图像** | **弱 / 无** | **无** | — |
 
 ### 主要社交平台的标识补充

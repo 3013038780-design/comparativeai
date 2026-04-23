@@ -17,7 +17,7 @@ sidebar:
 | 《互联网信息服务深度合成管理规定》 (2023) | 部门规章·硬法 | [deep-synthesis-provisions](/rules/china/deep-synthesis-provisions/) |
 | 《生成式人工智能服务管理暂行办法》 (2023) | 部门规章·硬法 | [generative-ai-interim-measures](/rules/china/generative-ai-interim-measures/) |
 | 《互联网信息服务算法推荐管理规定》 (2022) | 部门规章·硬法 | [algorithm-recommendation-provisions](/rules/china/algorithm-recommendation-provisions/) |
-| GB 45438-2025 | 强制性国标·软法* | _(待补独立 Rules 页)_ |
+| GB 45438-2025 | 强制性国标·软法* | [gb-45438-2025-ai-content-labeling-standard](/rules/china/gb-45438-2025-ai-content-labeling-standard/) |
 
 _* 归类理由见 [方法论 §2](/methodology/#hard-vs-soft)_
 
@@ -52,9 +52,3 @@ _* 归类理由见 [方法论 §2](/methodology/#hard-vs-soft)_
 - **技术标准前置绑定**是中国独有：GB 45438 与《办法》同步生效，形成
   "规章 + 国标"的组合拳；美国 NIST 的对应工作停留在自愿框架
 
-## 待完善
-
-- [ ] 《深度合成规定》和《生成式 AI 办法》的独立 Rules 页
-- [ ] GB 45438-2025 的 Rules 页（字段清单）
-- [ ] 典型执法案例（如有）
-- [ ] 与《个人信息保护法》《未成年人保护法》的交叉适用分析

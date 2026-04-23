@@ -119,7 +119,7 @@ OpenAI 与 Palantir 建立合作伙伴关系；**军事 AI 已不再是前沿实
 | 使用政策 | Generative AI Prohibited Use Policy | [policies.google.com/terms/generative-ai/use-policy](https://policies.google.com/terms/generative-ai/use-policy) | [usage-policy](./usage-policy/) |
 | 模型卡 | Gemini 3 Pro / 2.5 等 Model Cards | [deepmind.google/technologies/gemini](https://deepmind.google/technologies/gemini/) | [model-card](./model-card/) |
 | 安全框架 | **FSF v3.0 (2026-04-17)** | [storage.googleapis.com/.../frontier-safety-framework_3.pdf](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf) | [safety-framework](./safety-framework/) |
-| 模型级 FSF Report | Gemini 3 Pro FSF Report (2025-11) | [storage.googleapis.com/.../gemini_3_pro_fsf_report.pdf](https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_fsf_report.pdf) | _待补_ |
+| 模型级 FSF Report | Gemini 3 Pro FSF Report (2025-11) | [storage.googleapis.com/.../gemini_3_pro_fsf_report.pdf](https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_fsf_report.pdf) | — |
 | 透明度报告 | Responsibility & Safety Hub | [deepmind.google/about/responsibility-safety](https://deepmind.google/about/responsibility-safety/) | [transparency-report](./transparency-report/) |
 | AI 原则 | **Google AI Principles（2024 修订版）** | [ai.google/responsibility/principles](https://ai.google/responsibility/principles/) | [red-team-disclosures](./red-team-disclosures/) |
 
@@ -172,11 +172,3 @@ Google DeepMind 在三大前沿实验室中**相对平衡**：
 - Project Nimbus 争议
 - 2024 Gemini 图像生成"历史扭曲"事件（种族错置）曾引发内部整改
 
-## 待补充
-
-- [ ] Gemini 3 Pro / Ultra / Flash / Nano 各版本 Model Card 的归档
-- [ ] FSF v1 → v2 → v3 各版本条款级 diff
-- [ ] FSF Report 发布频率与模型级报告的完整清单
-- [ ] 2024 AI Principles 修订的员工抗议完整时间线
-- [ ] Project Nimbus 合同条款与 AI 原则的一致性分析
-- [ ] Gemini 的欧盟 CNIL 调查细节

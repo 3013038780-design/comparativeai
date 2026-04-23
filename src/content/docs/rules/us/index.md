@@ -83,10 +83,3 @@ Colorado AI Act、NYC LL 144 等）。
 | 对前沿模型 | 自愿承诺 + 州法（SB 53） | 备案 + TC260 | GPAI 义务 + CoP |
 | 国际立场 | **Brussels Effect 反制** | 全球 AI 治理倡议 | Brussels Effect 推行 |
 
-## 待补充（联邦层）
-
-- [ ] FDA AI/ML SaMD 指引（2024）
-- [ ] FTC Section 5 对 AI 的执法 Policy Statement
-- [ ] EEOC 2023 AI 就业反歧视指引
-- [ ] BIS AI 芯片出口管制（EAR 更新系列）
-- [ ] CAISI（Center for AI Standards and Innovation，取代 AISI）工作输出

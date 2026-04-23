@@ -89,10 +89,10 @@ snapshotDate: 2026-04-22
 
 | 类型 | 文档名 | 链接 | 本站子页 |
 | --- | --- | --- | --- |
-| 使用政策 | 腾讯混元 / 腾讯云服务协议 | [hunyuan.tencent.com](https://hunyuan.tencent.com/) / [cloud.tencent.com](https://cloud.tencent.com/product/tclm) | _待补_ |
-| 技术报告 | HunyuanVideo / 3D / Image 3 Technical Reports | [github.com/Tencent-Hunyuan](https://github.com/Tencent-Hunyuan) | _待补_ |
-| AI 原则 | 《腾讯人工智能伦理原则》（2018）| _搜索"腾讯 AI 伦理原则"_ | _待补_ |
-| 透明度 | CAC 算法备案 + 微信 / QQ 等业务透明度报告 | [cac.gov.cn](https://www.cac.gov.cn/) | _待补_ |
+| 使用政策 | 腾讯混元 / 腾讯云服务协议 | [hunyuan.tencent.com](https://hunyuan.tencent.com/) / [cloud.tencent.com](https://cloud.tencent.com/product/tclm) | — |
+| 技术报告 | HunyuanVideo / 3D / Image 3 Technical Reports | [github.com/Tencent-Hunyuan](https://github.com/Tencent-Hunyuan) | — |
+| AI 原则 | 《腾讯人工智能伦理原则》（2018）| _搜索"腾讯 AI 伦理原则"_ | — |
+| 透明度 | CAC 算法备案 + 微信 / QQ 等业务透明度报告 | [cac.gov.cn](https://www.cac.gov.cn/) | — |
 
 ## 监管合规位置
 
@@ -118,10 +118,3 @@ snapshotDate: 2026-04-22
 - **治理依托平台既有机制**：微信内容治理、游戏防沉迷等延伸到 AI
 - **政府关系稳健**：多年"科技向善"叙事与国家政策对齐
 
-## 待补充
-
-- [ ] 混元系列 CAC 备案清单（多批次）
-- [ ] 《腾讯人工智能伦理原则》(2018) 全文归档
-- [ ] HunyuanVideo / 3D 开源协议与使用限制
-- [ ] 微信 AI 小程序的合规管理机制
-- [ ] 混元的海外出口（腾讯云国际）合规影响

@@ -34,10 +34,10 @@ snapshotDate: 2026-04-22
 
 | 类型 | 文档名 | 链接 | 本站子页 |
 | --- | --- | --- | --- |
-| 使用政策 | Qwen 服务协议 + 开源 License | [tongyi.aliyun.com](https://tongyi.aliyun.com/) | _待补_ |
-| 技术报告 | Qwen 3 / 3.5 Technical Report | Qwen 官网 + arXiv | _待补_ |
-| 开源模型 | Qwen GitHub / HuggingFace | [github.com/QwenLM](https://github.com/QwenLM) | _待补_ |
-| 透明度 | CAC 算法备案（多批次） | [cac.gov.cn](https://www.cac.gov.cn/) | _待补_ |
+| 使用政策 | Qwen 服务协议 + 开源 License | [tongyi.aliyun.com](https://tongyi.aliyun.com/) | — |
+| 技术报告 | Qwen 3 / 3.5 Technical Report | Qwen 官网 + arXiv | — |
+| 开源模型 | Qwen GitHub / HuggingFace | [github.com/QwenLM](https://github.com/QwenLM) | — |
+| 透明度 | CAC 算法备案（多批次） | [cac.gov.cn](https://www.cac.gov.cn/) | — |
 
 ## 监管合规位置
 
@@ -111,14 +111,6 @@ snapshotDate: 2026-04-22
 - **对国家战略的配合**：参与 TC260 标准、支持国家 AI 产业政策
 - **产业 AI 导向**：ToB + 垂直行业应用（金融、医疗、制造）重于消费者 AI
 - **国际合规待观察**：GPAI CoP 未签、BIS 管制潜在影响
-
-## 待补充
-
-- [ ] Qwen 3.5 技术报告详细分析
-- [ ] Qwen 系列算法备案历次编号
-- [ ] 开源模型在海外的合规影响（特别是 EU AI Act 和美国出口管制）
-- [ ] 夸克 AI 在算法推荐规定下的合规实务
-- [ ] 与蚂蚁集团 AI（**AntFin LLM**）的分工
 
 ## 与 Meta / Mistral 的开源对比
 

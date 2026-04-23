@@ -109,10 +109,10 @@ sidebar:
 
 | 问题 | 本站处理 | 当前状态 |
 | --- | --- | --- |
-| OpenAI 与微软 | OpenAI 独立列；微软原则上独立列（援引 OpenAI 模型的产品政策归微软）| 仅 OpenAI 已立页；微软待补 |
+| OpenAI 与微软 | OpenAI 独立列；微软原则上独立列（援引 OpenAI 模型的产品政策归微软）| 仅 OpenAI 已立页；微软后续按需补入 |
 | Anthropic 与 Amazon/Google | Anthropic 独立列。Amazon/Google 的投资关系在 Anthropic 页注明，不合并 | ✅ 已立页 |
 | Google DeepMind | 合并在一条，Alphabet 集团层政策做二级分节 | ✅ 已立页 |
-| Meta（Facebook / Instagram 等） | Meta 一条，含产品层政策作为子章节 | 待补 |
+| Meta（Facebook / Instagram 等） | Meta 一条，含产品层政策作为子章节 | 后续按需补入 |
 | 字节跳动与 TikTok | 字节跳动一条（含抖音、豆包、火山引擎、TikTok）。TikTok **暂作为字节子章节处理**，未来若发布独立面向海外监管的 AI 政策，再单独立页 | ✅ 字节已立页（含 TikTok） |
 | 阿里与 Ant Group | 阿里一条（含通义千问、夸克）；Ant Group 原则上独立但**未发布独立 AI 模型 / 政策时不立页** | ✅ 阿里已立页；Ant Group 暂不立 |
 | DeepSeek 与 High-Flyer | DeepSeek 一条，High-Flyer 作为资方在页首注记 | ✅ 已立页 |
@@ -137,14 +137,16 @@ sidebar:
 ### 当前实施阶段
 
 本站采用**渐进式建设**：
-- **阶段 1（当前）**：每家公司 **index.md 综合分析页**——含公司概况、安全框架深度解读、
+- **阶段 1（已完成）**：每家公司 **index.md 综合分析页**——含公司概况、安全框架深度解读、
   自律立场分析、监管合规位置、与同类公司对比
-- **阶段 2（待补）**：每家公司展开 5 类**独立 subpage**，逐条归档具体文档（含 snapshot date、
-  原文链接、归档 PDF、关键条款摘录、版本历史）
+- **阶段 2（部分完成）**：每家公司展开 5 类**独立 subpage**，逐条归档具体文档（含 snapshot date、
+  原文链接、关键条款摘录、版本历史、学界批评）
 
 目前 13 家公司中：
-- **5 家**（Anthropic、OpenAI、Google DeepMind、ByteDance、DeepSeek）有 5 类 subpage 占位（待填充）
-- **8 家**（Mistral、Baidu、Alibaba、xAI、ZhipuAI、Tencent、Moonshot、MiniMax、NVIDIA）目前仅 index.md
+- **5 家** 前沿实验室（Anthropic、OpenAI、Google DeepMind、ByteDance、DeepSeek）已完成 5 类 subpage 的
+  实质分析（使用政策 · 模型卡 · 安全框架 · 透明度报告 · 红队与评估披露），每家约 1,000–1,300 行
+- **8 家**（Mistral、Baidu、Alibaba、xAI、ZhipuAI、Tencent、Moonshot、MiniMax、NVIDIA）目前以综合 index
+  形式呈现；后续按公司活跃度决定是否展开 subpage
 
 ### 5 类材料的统一字段（subpage 填充后）
 

@@ -158,7 +158,7 @@ extraterritorial reach and headline penalties up to 7% of worldwide turnover.
 | --- | --- | --- |
 | English（原文） | EUR-Lex | [eur-lex.europa.eu](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689) |
 | 24 种欧盟官方语言 | EUR-Lex | [EUR-Lex 多语言](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689) |
-| 中文非官方译本 | _待补_ | _建议引用学术圈译本；避免自制全文翻译_ |
+| 中文非官方译本 | — | _建议引用学术圈译本；避免自制全文翻译_ |
 | EU AI Act Explorer | Future of Life Institute | [artificialintelligenceact.eu](https://artificialintelligenceact.eu/) |
 | 条文检索工具 | EU AI Office | [digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) |
 

@@ -99,7 +99,7 @@ sidebar:
 | 中文（网信办） | [cac.gov.cn/2023-10/18/c_1699291032884978.htm](https://www.cac.gov.cn/2023-10/18/c_1699291032884978.htm) |
 | 中文（外交部） | [mfa.gov.cn/.../t20231020_11164831.shtml](https://www.mfa.gov.cn/wjb_673085/zzjg_673183/jks_674633/zclc_674645/rgzn/202310/t20231020_11164831.shtml) |
 | 中文（归档） | [archives/china/global-ai-governance-initiative-2023-10-18.html](/archives/china/global-ai-governance-initiative-2023-10-18.html) |
-| 英文（MFA 官方英译） | _待补 MFA 英文站_ |
+| 英文（MFA 官方英译） | — |
 | 答记者问 | [mfa.gov.cn/fyrbt/.../t20231018_11162801.shtml](https://www.mfa.gov.cn/fyrbt_673021/202310/t20231018_11162801.shtml) |
 
 ## 版本历史

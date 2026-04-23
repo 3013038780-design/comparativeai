@@ -76,7 +76,7 @@ EO 14110 vs. EU AI Act 曾是"功能类似、路径不同"的典型对比：
 | 语言 | 来源 | 链接 |
 | --- | --- | --- |
 | English（原文） | Biden Archive | [bidenwhitehouse.archives.gov](https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/) |
-| Federal Register | | _待补_ |
+| Federal Register | | — |
 
 ## 版本历史
 

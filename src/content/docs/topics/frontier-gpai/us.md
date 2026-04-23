@@ -87,10 +87,3 @@ sidebar:
 **算力阈值对比**：EU 10²⁵ FLOP < US 加州 10²⁶ FLOP。加州阈值**严格 10 倍**，
 导致 SB 53 比 EU GPAI "系统性风险"条款覆盖更窄。
 
-## 待完善
-
-- [ ] Voluntary Commitments 公司级履行情况追踪
-- [ ] 各公司 RSP / Preparedness Framework 条款对比
-- [ ] CAISI 职能转换后的实质工作产出
-- [ ] 2026-Q1/Q2 联邦 vs. 加州 SB 53 诉讼进展
-- [ ] SB 53 与 EU GPAI CoP 的双辖区合规"一套文档"实践

@@ -107,7 +107,7 @@ AI 训练和部署几乎都触发。
 | --- | --- | --- |
 | English（原文） | EUR-Lex | [eur-lex.europa.eu](https://eur-lex.europa.eu/eli/reg/2016/679/oj) |
 | 24 种欧盟官方语言 | EUR-Lex | 同上 |
-| 中文（非官方学术译本） | _待补_ | _建议引用大陆学者译本_ |
+| 中文（非官方学术译本） | — | _建议引用大陆学者译本_ |
 | 条款交叉索引 | GDPR-info.eu | [gdpr-info.eu](https://gdpr-info.eu/) |
 
 ## 版本历史

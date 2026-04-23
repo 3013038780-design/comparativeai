@@ -30,11 +30,11 @@ snapshotDate: 2026-04-22
 
 | 类型 | 文档名 | 链接 | 本站子页 |
 | --- | --- | --- | --- |
-| 使用政策 | 文心一言《用户协议》及内容规范 | [yiyan.baidu.com](https://yiyan.baidu.com/) | _待补_ |
-| 技术报告 | ERNIE 4.5 Technical Report、ERNIE 5.0 Blog | [ernie.baidu.com/blog](https://ernie.baidu.com/blog/) | _待补_ |
-| 开源模型 | ERNIE 4.5 系列 GitHub | [github.com/PaddlePaddle/PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) | _待补_ |
-| 安全框架 | 公开文档有限；TC260-003 合规基线 | _公开文档有限_ | _待补_ |
-| 透明度 | CAC 算法备案（多批次） | [cac.gov.cn](https://www.cac.gov.cn/) | _待补_ |
+| 使用政策 | 文心一言《用户协议》及内容规范 | [yiyan.baidu.com](https://yiyan.baidu.com/) | — |
+| 技术报告 | ERNIE 4.5 Technical Report、ERNIE 5.0 Blog | [ernie.baidu.com/blog](https://ernie.baidu.com/blog/) | — |
+| 开源模型 | ERNIE 4.5 系列 GitHub | [github.com/PaddlePaddle/PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) | — |
+| 安全框架 | 公开文档有限；TC260-003 合规基线 | _公开文档有限_ | — |
+| 透明度 | CAC 算法备案（多批次） | [cac.gov.cn](https://www.cac.gov.cn/) | — |
 
 ## 监管合规位置
 
@@ -96,10 +96,3 @@ snapshotDate: 2026-04-22
 - **深度绑定国家战略**：Apollo 自动驾驶是"国家新一代 AI 开放创新平台"首批
 - **全栈自研导向**：应对美国芯片出口管制的核心策略
 
-## 待补充
-
-- [ ] ERNIE 5.0 技术报告详细分析
-- [ ] ERNIE 4.5 开源模型的安全评估细节
-- [ ] 文心系列的 CAC 备案清单（历次）
-- [ ] 昆仑芯自研进度与对美国 BIS 出口管制的应对
-- [ ] Apollo Robotaxi 在武汉、重庆等地的实际运营数据

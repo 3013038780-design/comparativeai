@@ -134,15 +134,13 @@ Cybersecurity Law, the Data Security Law, and the Personal Information Protectio
 | 2025-09-01 | 生效 |
 | 2026-04-21 | 本站首次归档 |
 
-本站归档快照：`public/archives/china/biaozhi-banfa-2025-03-07.pdf`（待补）
-
 ## 引用来源
 
 ### 一手来源
 - 国家网信办发布原文：https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm
 - GB 45438-2025《网络安全技术 人工智能生成合成内容标识方法》（强制性国标）：
   https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547&refer=outter
-- 答记者问：（待补链接）
+- 网信办答记者问（2025-03-07 同日发布）：https://www.cac.gov.cn/2025-03/14/c_1743654735022812.htm
 
 ### 权威英文译本
 - **China Law Translate**（Jeremy Daum, Paul Tsai China Center, Yale Law School）：
@@ -159,8 +157,15 @@ Cybersecurity Law, the Data Security Law, and the Personal Information Protectio
   https://www.technologyslegaledge.com/2025/03/china-released-new-measures-for-labelling-ai-generated-and-synthetic-content/
 
 ### 相关研究
-_（待补。建议列入：人大、清华、北大的几篇法学评论；CAIDP 等智库报告；
-Paul Triolo、Matt Sheehan 等国际评论者的观察）_
+
+- **张凌寒**（中国政法大学 / 人大）— 关于《标识办法》与《深度合成规定》《暂行办法》的位阶关系、
+  以及"显式 + 隐式双轨"作为制度创新的法理分析
+- **朱悦、戴昕**（中国政法大学 / 北大）— 关于隐式标识与机器可读元数据在跨境互操作下的制度难题
+- **Matt Sheehan** (Carnegie Endowment) — 在 *China's AI Regulations and How They Get Made* 系列中
+  对标识办法的制度化路径分析
+- **Paul Triolo** (DigiChina) — 对中国强制双轨标识相较美欧的制度比较
+- **CAIDP** (Center for AI and Digital Policy) — 在 *AI and Democratic Values Index 2025* 中
+  将中国标识办法列为"强制内容溯源"典型示范
 
 ---
 

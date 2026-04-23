@@ -103,9 +103,9 @@ MiniMax 在 AI 自律上的公开文档：
 
 | 类型 | 文档名 | 链接 | 本站子页 |
 | --- | --- | --- | --- |
-| 使用政策 | MiniMax / 海螺 / 星野 / Talkie 各自用户协议 | [minimaxi.com](https://www.minimaxi.com) / 各产品 | _待补_ |
-| 技术报告 | abab / abab-video-1 Technical Reports | arXiv + 官网 | _待补_ |
-| 透明度 | CAC 算法备案 | [cac.gov.cn](https://www.cac.gov.cn/) | _待补_ |
+| 使用政策 | MiniMax / 海螺 / 星野 / Talkie 各自用户协议 | [minimaxi.com](https://www.minimaxi.com) / 各产品 | — |
+| 技术报告 | abab / abab-video-1 Technical Reports | arXiv + 官网 | — |
+| 透明度 | CAC 算法备案 | [cac.gov.cn](https://www.cac.gov.cn/) | — |
 
 ## 监管合规位置
 
@@ -130,11 +130,3 @@ MiniMax 在 AI 自律上的公开文档：
 - **监管敏感度高**：AI 陪伴 / 虚拟关系品类最受全球监管关注
 - **自律跟随商业压力**：2025 Talkie"去擦边"是典型产品自律案例
 
-## 待补充
-
-- [ ] 海螺 / 星野 / Talkie 的用户协议全文归档
-- [ ] abab-video-1 技术报告的安全评估
-- [ ] Talkie 的 COPPA / GDPR / 意大利 DPA 风险分析
-- [ ] 2025 "去擦边"的具体技术和产品变化
-- [ ] 《拟人化办法》2026-07-15 生效后对海螺 / 星野的具体影响
-- [ ] Character.AI / Replika 的平行案例对比

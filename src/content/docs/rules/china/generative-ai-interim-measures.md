@@ -160,8 +160,13 @@ Provisions*.
   https://en.wikipedia.org/wiki/Interim_Measures_for_the_Management_of_Generative_AI_Services
 
 ### 相关研究
-_（待补：Carnegie "Tracing the Roots" 对草案到定稿演进的分析、
-Paul Triolo 的制度分析、CAIDP 声明等）_
+
+- **Matt Sheehan** (Carnegie Endowment) — "Tracing the Roots of China's AI Regulations"（2023-07）
+  对草案到定稿的演进分析，是英文学界最系统的一手研究
+- **Paul Triolo** (DigiChina / Albright Stonebridge) — 对部委联合立法的制度分析
+- **Helen Toner / Jeffrey Ding** — 将暂行办法置于"敏捷治理"框架下的比较政治经济学解读
+- **张凌寒**（中国政法大学）— 对部门规章位阶与"暂行"立法技艺的法理批评
+- **CAIDP** (Center for AI and Digital Policy) — 季度报告对暂行办法国际影响的评估
 
 ---
 

@@ -99,13 +99,6 @@ sidebar:
 | M-25-22 全文 PDF | _OMB 官网下载_ |
 | 业界解读 | Covington、Sidley、Paul Hastings 多份分析 |
 
-## 待完善
-
-- [ ] 回填 M-25-21 / M-25-22 的具体 PDF 链接
-- [ ] "Unbiased AI Principles" 正式文本（OMB 120 天内发布）
-- [ ] 各联邦机构首批 CAIO 指定情况
-- [ ] 联邦合同 LLM 合规认证流程
-
 ## 版本历史
 
 | 日期 | 事件 |

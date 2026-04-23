@@ -180,13 +180,3 @@ OpenAI 的自律姿态 2023-2026 有显著漂移：
 **关键转折**：2024-05 Superalignment 团队解散，核心成员出走（Ilya Sutskever、Jan Leike）
 是安全优先叙事**实质终结**的标志。
 
-## 待补充
-
-- [ ] Model Spec 版本演进完整表
-- [ ] Preparedness Framework v1 vs. v2 条款级对比
-- [ ] Safety Advisory Group 构成和决策记录
-- [ ] GPT-5.4-Cyber "trusted access" 审核流程公开细节
-- [ ] Italy Garante 两轮执法的完整时间线与罚款依据
-- [ ] 2024 公司重组 → Safety & Security Committee 实际权力分析
-- [ ] OpenAI 2024-2026 政府合同清单（DoD、GSA 等）
-- [ ] 欧洲媒体训练数据许可协议经济条款

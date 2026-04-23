@@ -38,9 +38,3 @@ sidebar:
 - **协调**：AI Office（设在委员会内）与 European AI Board。
 - **处罚上限**：违反透明度义务的罚款可达 **€15,000,000 或全球年营业额的 3%**，以较高者为准（第 99 条）。
 
-## 本页待完善
-
-- [ ] 第 50 条逐款翻译 + 官方英文 + 法文版
-- [ ] harmonised standards 发布进度追踪
-- [ ] 成员国 market surveillance authority 清单
-- [ ] 与 DSA 第 35 条（VLOP 危险缓解）的衔接

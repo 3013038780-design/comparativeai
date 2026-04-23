@@ -27,9 +27,9 @@ snapshotDate: 2026-04-22
 
 | 类型 | 文档名 | 链接 | 本站子页 |
 | --- | --- | --- | --- |
-| 使用政策 | xAI Acceptable Use Policy | [x.ai/legal](https://x.ai/legal) | _待补_ |
-| 模型卡 | Grok 系统卡（发布版本） | [x.ai/news](https://x.ai/news) | _待补_ |
-| 安全框架 | xAI Safety Framework（2025 版） | [x.ai/safety](https://x.ai/) | _待补_ |
+| 使用政策 | xAI Acceptable Use Policy | [x.ai/legal](https://x.ai/legal) | — |
+| 模型卡 | Grok 系统卡（发布版本） | [x.ai/news](https://x.ai/news) | — |
+| 安全框架 | xAI Safety Framework（2025 版） | [x.ai/safety](https://x.ai/) | — |
 
 ## 监管合规位置
 
@@ -106,10 +106,3 @@ xAI 的存在揭示了**行业自律作为治理机制**的根本缺陷：
 | 对 EO 14365（州法抢占）| **公开支持**| 隐性不满 | 隐性支持 | 无表态 |
 | 内容审核严格度 | 最低 | 最高 | 中等 | 中等 |
 
-## 待补充
-
-- [ ] Grok 4 系统卡内容
-- [ ] xAI Safety Framework 完整文本
-- [ ] Colossus 算力规模确证
-- [ ] FTC 调查进展
-- [ ] GPAI CoP 异议具体内容

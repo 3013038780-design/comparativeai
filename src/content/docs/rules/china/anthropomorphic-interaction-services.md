@@ -170,7 +170,7 @@ emotional-human-machine-interaction gap left by the 2023 Generative AI Interim M
 | 中文全文（令第 21 号） | [cac.gov.cn/2026-04/10/c_1777558395078289.htm](https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm) |
 | 中文（CAC 新闻稿） | [cac.gov.cn/2026-04/10/c_1777558395023172.htm](https://www.cac.gov.cn/2026-04/10/c_1777558395023172.htm) |
 | 中文（归档） | [archives/china/anthropomorphic-interaction-services-2026-04-10.html](/archives/china/anthropomorphic-interaction-services-2026-04-10.html) |
-| English | _待补_（预期 China Law Translate 会翻译） |
+| English | —（预期 China Law Translate 会翻译） |
 
 ## 配套专家解读（CAC 2026-04-10 / 04-17 同步发布）
 
@@ -181,14 +181,6 @@ emotional-human-machine-interaction gap left by the 2023 Generative AI Interim M
 - 《智能向善 构建人机和谐共生的治理新范式》(2026-04-10)
 
 链接在 CAC [政策法规专栏](https://www.cac.gov.cn/wxzw/zcfg/A093703index_1.htm)。
-
-## 待完善
-
-- [ ] 补齐**全部 30 余条条款**的逐条摘要（目前仅已知关键条款：§14 未成年人 / §15 老年人 / §17 个人信息 / §22 安全评估 / §26 算法备案 / §28 沙箱 / §30 处罚）
-- [ ] **AI 沙箱安全服务平台**的实施细则（如单独发布）
-- [ ] 各家 AI 陪伴 / 虚拟伴侣 / 适老交互产品的合规影响初判（Character.AI、豆包、Cici、夸克宠、Replika 等）
-- [ ] 与 EU AI Act 第 5 条"利用脆弱性"禁止清单的**国际对比分析**
-- [ ] 关联的**《数字虚拟人信息服务管理办法（征求意见稿）》**（2026-04-03 公开征求意见）独立页面 — 两条规则是姐妹关系，拟人化交互侧 + 数字虚拟人侧双向覆盖
 
 ## 版本历史
 

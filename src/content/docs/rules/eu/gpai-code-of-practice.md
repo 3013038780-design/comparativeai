@@ -124,9 +124,3 @@ sidebar:
 | Latham & Watkins 解读 | [lw.com/.../eu-ai-act-gpai-model-obligations](https://www.lw.com/en/insights/eu-ai-act-gpai-model-obligations-in-force-and-final-gpai-code-of-practice-in-place) |
 | Skadden 解读 | [skadden.com/.../eus-general-purpose-ai-obligations](https://www.skadden.com/insights/publications/2025/08/eus-general-purpose-ai-obligations) |
 
-## 待完善
-
-- [ ] 各签署者的**具体异议**文本（Meta 版权、xAI 安全）
-- [ ] 模板对 GPAI 训练数据摘要字段的详细要求
-- [ ] 2026 Q1/Q2 AI Office 首批 GPAI 合规审查实务案例
-- [ ] Digital Omnibus Proposal (2025-11) 对 CoP 运行的潜在影响
