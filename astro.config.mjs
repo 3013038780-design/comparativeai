@@ -30,6 +30,11 @@ export default defineConfig({
 					href: 'https://github.com/3013038780-design/comparativeai',
 				},
 			],
+			components: {
+				Header: './src/components/SiteHeader.astro',
+				ThemeSelect: './src/components/Empty.astro',
+				SocialIcons: './src/components/Empty.astro',
+			},
 			customCss: ['./src/styles/custom.css'],
 			lastUpdated: true,
 			pagination: false,

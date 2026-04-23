@@ -1,0 +1,387 @@
+---
+// 统一顶栏：首页 (src/pages/index.astro) 与 Starlight 内页共用。
+// 结构、样式、行为参考 /Users/olivialee/Downloads/comparativeai-academic1.html
+// 搜索集成方案 A：直接渲染 Starlight 的 <Search />，用 CSS 把默认按钮改造成纯放大镜图标。
+// 全局 ⌘K / Ctrl+K 由 Search.astro 内部脚本处理。
+
+import Search from '@astrojs/starlight/components/Search.astro';
+
+export interface Props {
+	currentSection?:
+		| 'topics'
+		| 'rules'
+		| 'subnational'
+		| 'companies'
+		| 'reference'
+		| 'methodology';
+}
+
+const GITHUB_URL = 'https://github.com/3013038780-design/comparativeai';
+
+const navLinks = [
+	{ key: 'topics', label: '议题', href: '/topics/' },
+	{ key: 'rules', label: '规则', href: '/rules/' },
+	{ key: 'subnational', label: '地方', href: '/subnational/' },
+	{ key: 'companies', label: '公司', href: '/companies/' },
+	{ key: 'reference', label: '参考', href: '/reference/' },
+	{ key: 'methodology', label: '方法论', href: '/methodology/' },
+] as const;
+
+// 优先用 props 传入的 currentSection；否则尝试从 Starlight 路由推断。
+let currentSection: Props['currentSection'] = Astro.props.currentSection;
+if (!currentSection) {
+	try {
+		const route = (Astro.locals as any)?.starlightRoute;
+		const slug: string = route?.entry?.slug ?? '';
+		if (slug.startsWith('topics/') || slug === 'topics') currentSection = 'topics';
+		else if (slug.startsWith('rules/') || slug === 'rules') currentSection = 'rules';
+		else if (slug.startsWith('subnational/') || slug === 'subnational')
+			currentSection = 'subnational';
+		else if (slug.startsWith('companies/') || slug === 'companies')
+			currentSection = 'companies';
+		else if (slug.startsWith('reference/') || slug === 'reference')
+			currentSection = 'reference';
+		else if (slug.startsWith('methodology') || slug === 'about')
+			currentSection = 'methodology';
+	} catch {}
+}
+---
+
+<nav class="topbar">
+	<div class="nav-inner">
+		<a href="/" class="masthead">
+			<span class="masthead-full">Comparative&nbsp;AI <em>— 中美欧 AI 治理比较</em></span>
+			<span class="masthead-short">Comparative AI</span>
+		</a>
+
+		<div class="nav-links nav-links-desktop">
+			{
+				navLinks.map((l) => (
+					<a href={l.href} class={currentSection === l.key ? 'current' : ''}>
+						{l.label}
+					</a>
+				))
+			}
+		</div>
+
+		<div class="nav-right">
+			<Search />
+			<a href={GITHUB_URL} target="_blank" rel="noopener" class="gh-link">
+				<span class="gh-full">GitHub ↗</span>
+				<span class="gh-short" aria-label="GitHub">↗</span>
+			</a>
+			<details class="nav-mobile">
+				<summary aria-label="菜单">
+					<span class="hamburger">☰</span>
+					<span class="hamburger-close">✕</span>
+				</summary>
+				<div class="nav-mobile-panel">
+					{
+						navLinks.map((l) => (
+							<a href={l.href} class={currentSection === l.key ? 'current' : ''}>
+								{l.label}
+							</a>
+						))
+					}
+				</div>
+			</details>
+		</div>
+	</div>
+</nav>
+
+<style>
+	/* ===== Design tokens (本组件自包含；与首页 home.css 保持一致) ===== */
+	.topbar {
+		--paper: #fdfcfa;
+		--paper-alt: #f4f2ed;
+		--ink: #1c1a17;
+		--ink-soft: #45423d;
+		--ink-muted: #726d65;
+		--ink-faint: #aeaaa2;
+		--rule: #dcd7cc;
+		--rule-soft: #ebe7dd;
+		--serif:
+			'Source Serif 4', 'Noto Serif SC', 'Songti SC', Georgia, serif;
+		--serif-cn:
+			'Noto Serif SC', 'Source Han Serif SC', 'Songti SC', serif;
+		--sans:
+			'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue',
+			sans-serif;
+		--mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+		--max: 1100px;
+		--gutter: 48px;
+
+		position: sticky;
+		top: 0;
+		z-index: 50;
+		background: var(--paper);
+		border-bottom: 1px solid var(--rule);
+	}
+
+	.nav-inner {
+		max-width: var(--max);
+		margin: 0 auto;
+		padding: 18px var(--gutter);
+		display: flex;
+		align-items: center;
+		gap: 32px;
+	}
+
+	.masthead {
+		font-family: var(--serif);
+		font-size: 19px;
+		font-weight: 600;
+		letter-spacing: 0.01em;
+		color: var(--ink);
+		flex-shrink: 0;
+		padding-right: 28px;
+		border-right: 1px solid var(--rule);
+		text-decoration: none;
+	}
+	.masthead em {
+		font-style: italic;
+		font-weight: 500;
+		color: var(--ink-muted);
+	}
+	.masthead-short {
+		display: none;
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 24px;
+		font-family: var(--sans);
+		font-size: 14px;
+		flex: 1;
+	}
+	.nav-links a {
+		color: var(--ink-soft);
+		padding-bottom: 3px;
+		border-bottom: 1px solid transparent;
+		transition: all 0.15s;
+		text-decoration: none;
+	}
+	.nav-links a:hover,
+	.nav-links a.current {
+		color: var(--ink);
+		border-bottom-color: var(--ink);
+	}
+
+	.nav-right {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		flex-shrink: 0;
+		margin-left: auto;
+	}
+
+	.gh-link {
+		font-family: var(--sans);
+		font-size: 14px;
+		color: var(--ink-soft);
+		padding-bottom: 3px;
+		border-bottom: 1px solid transparent;
+		transition: all 0.15s;
+		text-decoration: none;
+	}
+	.gh-link:hover {
+		color: var(--ink);
+		border-bottom-color: var(--ink);
+	}
+	.gh-short {
+		display: none;
+	}
+
+	/* 汉堡（桌面隐藏） */
+	.nav-mobile {
+		display: none;
+		position: relative;
+	}
+	.nav-mobile summary {
+		list-style: none;
+		cursor: pointer;
+		padding: 2px 4px;
+		font-size: 20px;
+		line-height: 1;
+		color: var(--ink-soft);
+		-webkit-tap-highlight-color: transparent;
+	}
+	.nav-mobile summary::-webkit-details-marker {
+		display: none;
+	}
+	.nav-mobile summary::marker {
+		content: '';
+	}
+	.nav-mobile .hamburger-close {
+		display: none;
+	}
+	.nav-mobile[open] summary {
+		color: var(--ink);
+	}
+	.nav-mobile[open] .hamburger {
+		display: none;
+	}
+	.nav-mobile[open] .hamburger-close {
+		display: inline;
+	}
+	.nav-mobile-panel {
+		position: absolute;
+		top: calc(100% + 8px);
+		right: 0;
+		min-width: 180px;
+		background: var(--paper);
+		border: 1px solid var(--rule);
+		box-shadow: 0 4px 16px rgba(28, 26, 23, 0.08);
+		display: flex;
+		flex-direction: column;
+		padding: 8px 0;
+		z-index: 60;
+	}
+	.nav-mobile-panel a {
+		font-family: var(--sans);
+		font-size: 16px;
+		color: var(--ink-soft);
+		padding: 12px 20px;
+		border-bottom: 1px solid var(--rule-soft);
+		text-decoration: none;
+	}
+	.nav-mobile-panel a:last-child {
+		border-bottom: none;
+	}
+	.nav-mobile-panel a:hover,
+	.nav-mobile-panel a.current {
+		background: var(--paper-alt);
+		color: var(--ink);
+	}
+
+	/* ======================================================= */
+	/* 平板: 600–899px —— 隐藏副标、收紧间距                      */
+	/* ======================================================= */
+	@media (max-width: 899px) {
+		.topbar {
+			--gutter: 32px;
+		}
+		.nav-inner {
+			gap: 20px;
+		}
+		.masthead em {
+			display: none;
+		}
+		.nav-links {
+			gap: 18px;
+		}
+	}
+
+	/* ======================================================= */
+	/* 手机: <600px —— 折叠成汉堡                                */
+	/* ======================================================= */
+	@media (max-width: 599px) {
+		.topbar {
+			--gutter: 20px;
+		}
+		.nav-inner {
+			padding: 14px var(--gutter);
+			gap: 12px;
+		}
+		.masthead {
+			padding-right: 0;
+			border-right: none;
+			font-size: 16px;
+		}
+		.masthead-full {
+			display: none;
+		}
+		.masthead-short {
+			display: inline;
+		}
+		.nav-links-desktop {
+			display: none;
+		}
+		.nav-right {
+			gap: 14px;
+		}
+		.gh-full {
+			display: none;
+		}
+		.gh-short {
+			display: inline;
+			font-size: 18px;
+		}
+		.nav-mobile {
+			display: block;
+		}
+	}
+</style>
+
+<style is:global>
+	/* ===== 搜索图标：把 Starlight <Search /> 的默认按钮改造为纯放大镜图标 ===== */
+	nav.topbar site-search {
+		display: inline-flex;
+		align-items: center;
+	}
+	nav.topbar site-search button[data-open-modal] {
+		background: transparent;
+		border: 0;
+		border-bottom: 1px solid transparent;
+		border-radius: 0;
+		padding: 4px 2px;
+		margin: 0;
+		height: auto;
+		width: auto;
+		max-width: none;
+		color: #45423d;
+		cursor: pointer;
+		font-size: 0;
+		gap: 0;
+		transition: all 0.15s;
+	}
+	nav.topbar site-search button[data-open-modal]:hover {
+		color: #1c1a17;
+		border-bottom-color: #1c1a17;
+	}
+	nav.topbar site-search button[data-open-modal] > span,
+	nav.topbar site-search button[data-open-modal] > kbd {
+		display: none !important;
+	}
+	nav.topbar site-search button[data-open-modal] svg {
+		width: 15px;
+		height: 15px;
+		fill: currentColor;
+	}
+
+	/* ===== Starlight 内页：让 <header class="header"> 包裹层让位给我们的 topbar ===== */
+	/* Starlight 默认给 header 一个带背景/边框/padding/height 的容器；我们用 SiteHeader 时，
+	   让它彻底透明，由 .topbar 自己负责视觉 chrome。保留 fixed 定位以兼容 main-frame 的 padding-top。 */
+	.page > header.header {
+		padding: 0;
+		border-bottom: 0;
+		background: transparent;
+		height: auto;
+	}
+	.page > header.header > .header {
+		display: contents;
+	}
+	/* Starlight 针对 [data-has-sidebar] 加的右内边距也一起清掉 */
+	[data-has-sidebar] .page > header.header {
+		padding-inline-end: 0;
+	}
+
+	/* 让 main-frame 的 padding-top 跟随我们的 topbar 实际高度 */
+	:root {
+		--sl-nav-height: 64px;
+	}
+	@media (max-width: 599px) {
+		:root {
+			--sl-nav-height: 52px;
+		}
+	}
+
+	/* 隐藏 Starlight 在 topbar 右上的 fixed 汉堡按钮（它原本用于切换 sidebar），
+	   避免与我们 topbar 右侧图标视觉冲突。mobile 下的 sidebar 仍可通过
+	   Starlight 的 [aria-expanded] 机制开启，但当前取消入口，优先保证顶栏一致性。 */
+	@media (max-width: 50rem) {
+		starlight-menu-button > button {
+			display: none !important;
+		}
+	}
+</style>

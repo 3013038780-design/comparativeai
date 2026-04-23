@@ -2,18 +2,10 @@
 // Comparative AI — 首页（完全自定义布局，脱离 Starlight Layout）
 // 数据来自 src/data/home.ts；样式在 src/styles/home.css
 import { topics, updates, timeline, stats } from '../data/home';
+import SiteHeader from '../components/SiteHeader.astro';
 import '../styles/home.css';
 
 const GITHUB_URL = 'https://github.com/3013038780-design/comparativeai';
-
-const navLinks = [
-	{ label: '议题', href: '/topics/' },
-	{ label: '规则', href: '/rules/' },
-	{ label: '地方', href: '/subnational/' },
-	{ label: '公司', href: '/companies/' },
-	{ label: '参考', href: '/reference/' },
-	{ label: '方法论', href: '/methodology/' },
-];
 
 const axes = [
 	{
@@ -110,29 +102,7 @@ const fmtDate = (d: string) => d.replaceAll('-', '.');
 		/>
 	</head>
 	<body>
-		<nav class="topbar">
-			<div class="nav-inner">
-				<a href="/" class="masthead">
-					<span class="masthead-full">Comparative&nbsp;AI <em>— 中美欧 AI 治理比较</em></span>
-					<span class="masthead-short">Comparative AI</span>
-				</a>
-				<div class="nav-links nav-links-desktop">
-					{navLinks.map((l) => <a href={l.href}>{l.label}</a>)}
-				</div>
-				<details class="nav-mobile">
-					<summary aria-label="菜单"><span class="hamburger">☰</span><span class="hamburger-close">✕</span></summary>
-					<div class="nav-mobile-panel">
-						{navLinks.map((l) => <a href={l.href}>{l.label}</a>)}
-					</div>
-				</details>
-				<div class="nav-right">
-					<a href={GITHUB_URL} target="_blank" rel="noopener">
-						<span class="nav-right-full">GitHub ↗</span>
-						<span class="nav-right-short" aria-label="GitHub">↗</span>
-					</a>
-				</div>
-			</div>
-		</nav>
+		<SiteHeader />
 
 		<main>
 			<!-- ===== 刊头 ===== -->
