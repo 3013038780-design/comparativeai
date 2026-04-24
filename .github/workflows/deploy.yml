@@ -34,6 +34,32 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify CF auth (diagnostic)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          echo "Token length: ${#CLOUDFLARE_API_TOKEN}  (expected ≈40)"
+          echo "Account ID length: ${#CLOUDFLARE_ACCOUNT_ID}  (expected 32, hex)"
+          echo "Account ID format check:"
+          if [[ "$CLOUDFLARE_ACCOUNT_ID" =~ ^[a-f0-9]{32}$ ]]; then
+            echo "  ✓ matches 32-hex-char account ID pattern"
+          else
+            echo "  ✗ DOES NOT match 32-hex pattern — likely wrong value (Zone ID, not Account ID)"
+          fi
+          echo "---"
+          echo "Calling Cloudflare /user/tokens/verify:"
+          curl -sS -o /tmp/verify.json -w "HTTP %{http_code}\n" \
+            "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+          cat /tmp/verify.json | python3 -m json.tool
+          echo "---"
+          echo "Calling Cloudflare /accounts/:id (visibility check):"
+          curl -sS -o /tmp/account.json -w "HTTP %{http_code}\n" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID" \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
+          cat /tmp/account.json | python3 -m json.tool
+
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
         with:
