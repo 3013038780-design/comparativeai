@@ -34,31 +34,78 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Verify CF auth (diagnostic)
+      - name: 'Diag 1 · Token must be non-empty'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::error::CLOUDFLARE_API_TOKEN secret is empty or not set"
+            exit 1
+          fi
+          echo "token length: ${#CLOUDFLARE_API_TOKEN}"
+
+      - name: 'Diag 2 · Account ID must be 32-hex (not Zone ID)'
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::error::CLOUDFLARE_ACCOUNT_ID secret is empty"
+            exit 1
+          fi
+          echo "account id length: ${#CLOUDFLARE_ACCOUNT_ID}"
+          if [[ ! "$CLOUDFLARE_ACCOUNT_ID" =~ ^[a-f0-9]{32}$ ]]; then
+            echo "::error::CLOUDFLARE_ACCOUNT_ID is not a 32-char lowercase hex string. You probably pasted a Zone ID by mistake — Account ID is on the dashboard home right sidebar, Zone ID is on each domain's overview page."
+            exit 1
+          fi
+          echo "format OK"
+
+      - name: 'Diag 3 · Token must be valid per CF /tokens/verify'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          http=$(curl -sS -o /tmp/v.json -w "%{http_code}" \
+            "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")
+          echo "HTTP $http"
+          if [ "$http" != "200" ]; then
+            echo "::error::Token failed /tokens/verify (HTTP $http). Token likely expired or malformed. Regenerate from https://dash.cloudflare.com/profile/api-tokens"
+            cat /tmp/v.json
+            exit 1
+          fi
+          python3 -c "import json; d=json.load(open('/tmp/v.json')); r=d.get('result',{}); print('Token status:', r.get('status')); print('Expires on:', r.get('expires_on','never'))"
+
+      - name: 'Diag 4 · Account must be visible to token'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          echo "Token length: ${#CLOUDFLARE_API_TOKEN}  (expected ≈40)"
-          echo "Account ID length: ${#CLOUDFLARE_ACCOUNT_ID}  (expected 32, hex)"
-          echo "Account ID format check:"
-          if [[ "$CLOUDFLARE_ACCOUNT_ID" =~ ^[a-f0-9]{32}$ ]]; then
-            echo "  ✓ matches 32-hex-char account ID pattern"
-          else
-            echo "  ✗ DOES NOT match 32-hex pattern — likely wrong value (Zone ID, not Account ID)"
-          fi
-          echo "---"
-          echo "Calling Cloudflare /user/tokens/verify:"
-          curl -sS -o /tmp/verify.json -w "HTTP %{http_code}\n" \
-            "https://api.cloudflare.com/client/v4/user/tokens/verify" \
-            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
-          cat /tmp/verify.json | python3 -m json.tool
-          echo "---"
-          echo "Calling Cloudflare /accounts/:id (visibility check):"
-          curl -sS -o /tmp/account.json -w "HTTP %{http_code}\n" \
+          http=$(curl -sS -o /tmp/a.json -w "%{http_code}" \
             "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID" \
-            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN"
-          cat /tmp/account.json | python3 -m json.tool
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")
+          echo "HTTP $http"
+          if [ "$http" != "200" ]; then
+            echo "::error::Account not visible to this token (HTTP $http). Either the Account ID belongs to a different CF account, or the token's Account Resources scope excludes it. Regenerate the token with 'All accounts' or include this account explicitly."
+            cat /tmp/a.json
+            exit 1
+          fi
+          python3 -c "import json; d=json.load(open('/tmp/a.json')); r=d.get('result',{}); print('Account name:', r.get('name'))"
+
+      - name: 'Diag 5 · Token must have Workers Scripts: Edit'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          # List workers scripts — needs at least Read. If write is missing, deploy fails later with 403.
+          http=$(curl -sS -o /tmp/w.json -w "%{http_code}" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts" \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN")
+          echo "HTTP $http"
+          if [ "$http" != "200" ]; then
+            echo "::error::Token cannot list Workers scripts for this account (HTTP $http). Add 'Account → Workers Scripts: Edit' to the token's permissions."
+            cat /tmp/w.json
+            exit 1
+          fi
+          python3 -c "import json; d=json.load(open('/tmp/w.json')); print('Existing workers:', [w.get('id') for w in d.get('result',[])] or '(none)')"
 
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
