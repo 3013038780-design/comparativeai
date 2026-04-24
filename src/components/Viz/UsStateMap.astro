@@ -1,0 +1,364 @@
+---
+// Viz C — US state AI legislation activity, rendered as a tile cartogram
+// (geographic grid layout; no external map data needed). Each state is a
+// square whose color encodes legislative-activity bucket.
+import { usStates } from '../../data/viz-data';
+
+export interface Props {
+	locale?: 'zh-CN' | 'en';
+}
+const { locale = 'zh-CN' } = Astro.props;
+const k = locale === 'en' ? 'en' : 'zh';
+const basePath = locale === 'en' ? '/en' : '';
+
+// Deduplicate (data file accidentally has CO twice; keep first occurrence)
+const seen = new Set<string>();
+const stateMap = new Map<string, typeof usStates[number]>();
+usStates.forEach((s) => {
+	if (seen.has(s.code)) return;
+	seen.add(s.code);
+	stateMap.set(s.code, s);
+});
+
+// Tile cartogram layout (11 cols × 8 rows): each entry is a state postal code or null.
+// Approximates geographic position.
+const grid: (string | null)[][] = [
+	['AK',null,null,null,null,null,null,null,null,null,'ME'],
+	[null,null,null,null,null,null,null,null,null,'VT','NH'],
+	[null,'WA','ID','MT','ND','MN','WI','MI',null,'NY','MA'],
+	[null,'OR','NV','WY','SD','IA','IL','IN','OH','PA','NJ'],
+	['HI','CA','UT','CO','NE','MO','KY','WV','VA','MD','CT'],
+	[null,null,'AZ','NM','KS','AR','TN','NC','SC','DC','DE'],
+	[null,null,null,null,'OK','LA','MS','AL','GA',null,'RI'],
+	[null,null,null,'TX',null,null,null,null,'FL',null,null],
+];
+
+// Bucket palette — 0 (none) → 4 (very high)
+const bucketColors = ['#ebe7dd', '#d6cdb8', '#c2a98e', '#a67a56', '#7a3c2e'];
+const bucketLabels = {
+	0: { zh: '无 / 极少', en: 'None / very low' },
+	1: { zh: '低', en: 'Low' },
+	2: { zh: '中', en: 'Medium' },
+	3: { zh: '高', en: 'High' },
+	4: { zh: '极高', en: 'Very high' },
+} as const;
+
+const headings = {
+	title: { zh: '美国各州 AI 立法热度图', en: 'US States · AI Legislation Activity' },
+	sub: {
+		zh: '依据 2024–2025 年 AI 相关提案与已通过州法数量分桶着色（NCSL / IAPP 口径合成）。点击有独立条目的州查看该州页面。',
+		en: 'Colored by approximate count of AI bills introduced and enacted in 2024–2025 (NCSL / IAPP basis). Click a state with a dedicated page for details.',
+	},
+	legend: { zh: '立法活跃度（已通过条数 / 已提出条数）', en: 'Activity bucket (enacted / introduced)' },
+	observations: { zh: '观察', en: 'Observations' },
+	totalBills: { zh: '已提出', en: 'Introduced' },
+	enactedBills: { zh: '已通过', en: 'Enacted' },
+	flagship: { zh: '旗舰法', en: 'Flagship law' },
+};
+
+const observations = locale === 'en' ? [
+	'California, Texas, Colorado, and New York lead on both volume and substance; all four have 2026-applicable comprehensive AI statutes.',
+	'Red-state (Texas) + blue-state (California / Colorado) convergence on AI legislation cross-cuts ideology — a rare cross-partisan regulatory moment.',
+	'The Mountain West + Plains states cluster at bucket 0–1: low legislative density despite some introduced bills. Federal EO 14365 (Dec 2025) targets the high-bucket states for preemption.',
+] : [
+	'**加州、德州、科州、纽约**在立法数量和实质性上领先，四州都有 2026 年生效的综合 AI 州法。',
+	'**红州（德州）× 蓝州（加州 / 科州）在 AI 立法上罕见跨党派同向发力**——构成一段"跨意识形态监管时刻"。',
+	'**山区 + 大平原州**立法密度在 0-1 桶：虽有零星提案但少有通过。联邦 EO 14365（2025-12）的抢占矛头正对准高桶州。',
+];
+---
+
+<section class="viz-usmap" data-locale={locale}>
+	<h2 class="viz-title">{headings.title[k]}</h2>
+	<p class="viz-sub">{headings.sub[k]}</p>
+
+	<div class="legend-row">
+		<span class="legend-label">{headings.legend[k]}:</span>
+		{[0, 1, 2, 3, 4].map((b) => (
+			<span class="legend-chip">
+				<span class="chip-swatch" style={`background: ${bucketColors[b]};`}></span>
+				{bucketLabels[b as 0|1|2|3|4][k]}
+			</span>
+		))}
+	</div>
+
+	<div class="map-grid-wrap">
+		<div class="map-grid">
+			{grid.map((row) => (
+				<div class="map-row">
+					{row.map((code) => {
+						if (!code) return <div class="tile empty"></div>;
+						const s = stateMap.get(code);
+						if (!s) return <div class="tile empty"></div>;
+						const fill = bucketColors[s.bucket];
+						const hasLink = !!s.href;
+						const attrs = hasLink ? { href: basePath + s.href } : {};
+						const Tag = hasLink ? 'a' : 'div';
+						return (
+							<Tag
+								class={`tile bucket-${s.bucket} ${hasLink ? 'linked' : ''}`}
+								style={`background: ${fill};`}
+								title={`${s.name} · ${headings.enactedBills[k]}: ${s.enactedBills} · ${headings.totalBills[k]}: ${s.totalBills}`}
+								{...attrs}
+							>
+								<span class="tile-code">{s.code}</span>
+								<span class="tile-n">{s.totalBills}</span>
+							</Tag>
+						);
+					})}
+				</div>
+			))}
+		</div>
+	</div>
+
+	<!-- Flagship state detail strip -->
+	<div class="flagship-strip">
+		<h3>{headings.flagship[k]}</h3>
+		<ul>
+			{
+				Array.from(stateMap.values())
+					.filter((s) => s.flagshipLaw)
+					.sort((a, b) => b.bucket - a.bucket || a.code.localeCompare(b.code))
+					.map((s) => (
+						<li>
+							<a href={basePath + (s.href ?? '#')} class="flagship-card">
+								<span
+									class="flagship-swatch"
+									style={`background: ${bucketColors[s.bucket]};`}
+								></span>
+								<span class="flagship-info">
+									<span class="flagship-state">{s.code} · {s.name}</span>
+									<span class="flagship-law">{s.flagshipLaw![k]}</span>
+								</span>
+								<span class="flagship-arrow">→</span>
+							</a>
+						</li>
+					))
+			}
+		</ul>
+	</div>
+
+	<div class="observations">
+		<h3>{headings.observations[k]}</h3>
+		<ol>
+			{observations.map((o) => (
+				<li set:html={o.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}></li>
+			))}
+		</ol>
+	</div>
+</section>
+
+<style>
+	.viz-usmap {
+		--ink: #1c1a17;
+		--ink-soft: #45423d;
+		--ink-muted: #726d65;
+		--paper: #fdfcfa;
+		--paper-alt: #f4f2ed;
+		--rule: #dcd7cc;
+		font-family: 'Noto Serif SC', 'Source Serif 4', Georgia, serif;
+		color: var(--ink);
+		max-width: 1100px;
+		margin: 32px auto 48px;
+	}
+	.viz-title {
+		font-size: 24px;
+		font-weight: 600;
+		letter-spacing: -0.005em;
+		margin-bottom: 8px;
+	}
+	.viz-sub {
+		font-family: 'Source Serif 4', Georgia, serif;
+		font-style: italic;
+		font-size: 15px;
+		color: var(--ink-muted);
+		margin-bottom: 20px;
+		max-width: 64ch;
+	}
+	.legend-row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 16px;
+		padding: 10px 0 20px;
+		border-bottom: 1px solid var(--rule);
+		margin-bottom: 20px;
+	}
+	.legend-label {
+		font-family: 'Noto Sans SC', sans-serif;
+		font-size: 11px;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: var(--ink-muted);
+	}
+	.legend-chip {
+		display: inline-flex;
+		align-items: center;
+		gap: 6px;
+		font-family: 'Noto Sans SC', sans-serif;
+		font-size: 12px;
+		color: var(--ink-soft);
+	}
+	.chip-swatch {
+		width: 14px;
+		height: 14px;
+		display: inline-block;
+		border: 1px solid rgba(28, 26, 23, 0.1);
+	}
+
+	.map-grid-wrap {
+		overflow-x: auto;
+	}
+	.map-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		min-width: 660px;
+	}
+	.map-row {
+		display: grid;
+		grid-template-columns: repeat(11, 58px);
+		gap: 4px;
+	}
+	.tile {
+		aspect-ratio: 1;
+		border: 1px solid rgba(28, 26, 23, 0.12);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		color: inherit;
+		transition: all 0.15s;
+		position: relative;
+	}
+	.tile.empty {
+		border-color: transparent;
+		background: transparent !important;
+	}
+	.tile.linked {
+		cursor: pointer;
+	}
+	.tile.linked:hover {
+		transform: scale(1.08);
+		border-color: var(--ink);
+		z-index: 2;
+		box-shadow: 0 2px 8px rgba(28, 26, 23, 0.15);
+	}
+	.tile-code {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 11px;
+		font-weight: 600;
+		color: rgba(28, 26, 23, 0.85);
+	}
+	.tile-n {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 10px;
+		color: rgba(28, 26, 23, 0.6);
+	}
+	.tile.bucket-4 .tile-code,
+	.tile.bucket-3 .tile-code {
+		color: rgba(253, 252, 250, 0.95);
+	}
+	.tile.bucket-4 .tile-n,
+	.tile.bucket-3 .tile-n {
+		color: rgba(253, 252, 250, 0.8);
+	}
+
+	.flagship-strip {
+		margin-top: 32px;
+		padding-top: 20px;
+		border-top: 1px solid var(--rule);
+	}
+	.flagship-strip h3 {
+		font-family: 'Noto Sans SC', sans-serif;
+		font-size: 11px;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--ink-muted);
+		margin-bottom: 12px;
+	}
+	.flagship-strip ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 1px;
+		background: var(--rule);
+		border: 1px solid var(--rule);
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	.flagship-strip li {
+		background: var(--paper);
+	}
+	.flagship-card {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		padding: 14px 16px;
+		text-decoration: none;
+		color: inherit;
+		transition: background 0.15s;
+	}
+	.flagship-card:hover {
+		background: var(--paper-alt);
+	}
+	.flagship-swatch {
+		width: 10px;
+		height: 32px;
+		flex-shrink: 0;
+	}
+	.flagship-info {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+	}
+	.flagship-state {
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 11px;
+		color: var(--ink-muted);
+		letter-spacing: 0.05em;
+	}
+	.flagship-law {
+		font-family: 'Noto Serif SC', serif;
+		font-size: 14px;
+		color: var(--ink);
+	}
+	.flagship-arrow {
+		font-family: 'Noto Sans SC', sans-serif;
+		color: var(--ink-muted);
+	}
+
+	.observations {
+		margin-top: 28px;
+		padding-top: 20px;
+		border-top: 1px solid var(--rule);
+	}
+	.observations h3 {
+		font-family: 'Noto Sans SC', sans-serif;
+		font-size: 11px;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--ink-muted);
+		margin-bottom: 12px;
+	}
+	.observations ol {
+		padding-left: 24px;
+		margin: 0;
+	}
+	.observations li {
+		margin-bottom: 10px;
+		font-size: 15px;
+		color: var(--ink-soft);
+		line-height: 1.7;
+	}
+	.observations strong {
+		color: var(--ink);
+	}
+
+	@media (max-width: 720px) {
+		.map-row {
+			grid-template-columns: repeat(11, 44px);
+		}
+	}
+</style>

@@ -1,0 +1,335 @@
+---
+// Comparative AI — English homepage (mirrors src/pages/index.astro).
+// Data from src/data/home-en.ts; styles from src/styles/home.css.
+import { topics, updates, timeline, stats } from '../../data/home-en';
+import SiteHeader from '../../components/SiteHeader.astro';
+import '../../styles/home.css';
+
+const GITHUB_URL = 'https://github.com/3013038780-design/comparativeai';
+
+const axes = [
+	{
+		num: 'i.',
+		title: 'Topic Comparison · Horizontal',
+		desc: 'Risk classification, content labeling, data training, frontier models — the same issue contrasted across the three jurisdictions.',
+		href: '/en/topics/',
+	},
+	{
+		num: 'ii.',
+		title: 'Top-Level Rules · By Jurisdiction',
+		desc: 'A primary-source index of central legislation and authoritative guidance, sorted into hard and soft law.',
+		href: '/en/rules/',
+	},
+	{
+		num: 'iii.',
+		title: 'Subnational Level',
+		desc: 'Chinese local pilots, US state and city statutes, EU member-state transpositions.',
+		href: '/en/subnational/',
+	},
+	{
+		num: 'iv.',
+		title: 'Corporate Practice',
+		desc: 'Policy, framework, and accountability snapshots from frontier labs and platform giants.',
+		href: '/en/companies/',
+	},
+	{
+		num: 'v.',
+		title: 'Reference Frameworks',
+		desc: 'A lightweight index of OECD, UNESCO, NIST, ISO/IEC, PAI, and other international and industry frameworks.',
+		href: '/en/reference/',
+	},
+	{
+		num: 'vi.',
+		title: 'Methodology',
+		desc: 'Inclusion criteria, hard/soft-law taxonomy, versioning, citation rules, and disclaimers.',
+		href: '/en/methodology/',
+	},
+];
+
+const footerContents = [
+	{ label: 'Topics', href: '/en/topics/' },
+	{ label: 'Top-Level Rules', href: '/en/rules/' },
+	{ label: 'Subnational', href: '/en/subnational/' },
+	{ label: 'Companies', href: '/en/companies/' },
+	{ label: 'Reference', href: '/en/reference/' },
+];
+
+const footerAbout = [
+	{ label: 'About', href: '/en/about/' },
+	{ label: 'Methodology', href: '/en/methodology/' },
+	{ label: 'Citation & Disclaimer', href: '/en/methodology/citation-disclaimer/' },
+	{ label: 'Updates', href: '/en/updates/' },
+];
+
+const footerOSS = [
+	{ label: 'GitHub ↗', href: GITHUB_URL },
+	{ label: 'Contribute', href: GITHUB_URL + '/blob/main/README.md' },
+	{ label: 'Edit this page ↗', href: GITHUB_URL },
+];
+
+// Jurisdiction label mapping
+const juris = {
+	cn: { label: 'CN · China', tag: 'CN', color: 'cn' },
+	us: { label: 'US · United States', tag: 'US', color: 'us' },
+	eu: { label: 'EU · European Union', tag: 'EU', color: 'eu' },
+} as const;
+
+// Date formatter: 2026-04-18 → 2026.04.18
+const fmtDate = (d: string) => d.replaceAll('-', '.');
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Comparative AI | AI governance across China, US & EU</title>
+		<meta
+			name="description"
+			content="A structured comparison of AI governance across three major jurisdictions — China, United States, European Union — along five axes: topics, top-level rules, subnational levels, corporate practice, and reference frameworks. Tracking hard law and soft law in parallel."
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="en">
+		<SiteHeader locale="en" />
+
+		<main>
+			<!-- ===== Masthead ===== -->
+			<header class="masthead-block">
+				<div class="kicker">Independent academic research</div>
+				<h1 class="title">A structured comparison<br />of AI governance across China, US & EU</h1>
+				<p class="dek">
+					Organized along five axes — topics, top-level rules, subnational levels, corporate practice,
+					and reference frameworks — this site tracks the parallel evolution of hard and soft law
+					across three major jurisdictions, read from the primary sources in their original languages.
+				</p>
+				<div class="meta-strip">
+					<span><strong>{stats.jurisdictions}</strong> jurisdictions</span>
+					<span><strong>{stats.issues}</strong> core topics</span>
+					<span><strong>{stats.rules}</strong> primary-source rules</span>
+					<span><strong>{stats.companies}</strong> corporate profiles</span>
+					<span>Last update · <strong>{stats.lastUpdate}</strong></span>
+				</div>
+			</header>
+
+			<!-- ===== §I Topic × Jurisdiction ===== -->
+			<section class="chapter">
+				<div class="chapter-head">
+					<div class="chapter-num">§ I · Issue Matrix</div>
+					<h2 class="chapter-title">Topic × Jurisdiction</h2>
+					<p class="chapter-lede">
+						The same issue compared across the three jurisdictions. Click any cell for in-depth
+						analysis and article-level annotations.
+					</p>
+				</div>
+
+				<!-- Desktop / tablet: table (≥ 900px) -->
+				<table class="matrix matrix-desktop">
+					<thead>
+						<tr>
+							<th>Topic / Issue</th>
+							<th class="cn">
+								<span class="juris-marker"></span>China &middot;
+								<span style="font-family:var(--mono);font-size:11px;">CN</span>
+							</th>
+							<th class="us">
+								<span class="juris-marker"></span>United States &middot;
+								<span style="font-family:var(--mono);font-size:11px;">US</span>
+							</th>
+							<th class="eu">
+								<span class="juris-marker"></span>European Union &middot;
+								<span style="font-family:var(--mono);font-size:11px;">EU</span>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						{
+							topics.map((t) => (
+								<tr>
+									<td class="topic-cell">
+										<div class="topic-name">{t.name}</div>
+										<div class="topic-desc">{t.desc}</div>
+									</td>
+									{(['cn', 'us', 'eu'] as const).map((j) => {
+										const cell = t[j];
+										return (
+											<td class="cell" data-juris={juris[j].label}>
+												<a href={cell.href}>
+													<div class="cell-headline">{cell.headline}</div>
+													<span class={`cell-status ${cell.status}`}>
+														{cell.statusLabel}
+													</span>
+													<span class="cell-meta">{cell.meta}</span>
+												</a>
+											</td>
+										);
+									})}
+								</tr>
+							))
+						}
+					</tbody>
+				</table>
+
+				<!-- Mobile / narrow tablet: collapsed cards (< 900px) -->
+				<div class="matrix-cards">
+					{
+						topics.map((t) => (
+							<article class="topic-card">
+								<header class="topic-card-head">
+									<h3 class="topic-card-name">{t.name}</h3>
+									<p class="topic-card-desc">{t.desc}</p>
+								</header>
+								<ul class="topic-card-rows">
+									{(['cn', 'us', 'eu'] as const).map((j) => {
+										const cell = t[j];
+										return (
+											<li>
+												<a href={cell.href} class={`tc-row tc-${j}`}>
+													<span class={`juris-pill ${j}`}>{juris[j].tag}</span>
+													<span class="tc-body">
+														<span class="tc-headline">{cell.headline}</span>
+														<span class={`cell-status ${cell.status}`}>
+															{cell.statusLabel}
+														</span>
+													</span>
+													<span class="tc-arrow">→</span>
+												</a>
+											</li>
+										);
+									})}
+								</ul>
+							</article>
+						))
+					}
+				</div>
+
+				<a href="/en/topics/" class="read-more">View all topics →</a>
+			</section>
+
+			<!-- ===== §II Five axes ===== -->
+			<section class="chapter">
+				<div class="chapter-head">
+					<div class="chapter-num">§ II · Five Axes</div>
+					<h2 class="chapter-title">A five-axis index</h2>
+					<p class="chapter-lede">
+						The same rule can be indexed along different axes. This site assumes none is primary —
+						readers are welcome to enter through whichever entry point they find most natural.
+					</p>
+				</div>
+
+				<div class="axes">
+					{
+						axes.map((a) => (
+							<a href={a.href} class="axis">
+								<div class="axis-num">{a.num}</div>
+								<div>
+									<div class="axis-title">{a.title}</div>
+									<div class="axis-desc">{a.desc}</div>
+								</div>
+								<div class="axis-link">→</div>
+							</a>
+						))
+					}
+				</div>
+			</section>
+
+			<!-- ===== §III Dispatches + timeline ===== -->
+			<section class="chapter">
+				<div class="chapter-head">
+					<div class="chapter-num">§ III · Dispatches</div>
+					<h2 class="chapter-title">Recent dispatches &amp; a longer arc</h2>
+					<p class="chapter-lede">
+						Legislative and corporate-policy movements across the three jurisdictions, updated
+						biweekly; the sidebar traces the evolution of China's departmental-rule layer.
+					</p>
+				</div>
+
+				<div class="two-col">
+					<div>
+						<ul class="updates-list">
+							{
+								updates.map((u) => {
+									const j = juris[u.jurisdiction.toLowerCase() as 'cn' | 'us' | 'eu'];
+									return (
+										<li>
+											<a href={u.href}>
+												<span class="u-date">{fmtDate(u.date)}</span>
+												<span class="u-title">{u.title}</span>
+												<span class={`u-tag ${j.color}`}>{j.tag}</span>
+											</a>
+										</li>
+									);
+								})
+							}
+						</ul>
+						<a href="/en/updates/" class="read-more">Full update log →</a>
+					</div>
+
+					<aside class="sidebar-card">
+						<h3>Five years of China's GenAI regulation</h3>
+						<p class="sidebar-sub">
+							The departmental-rule layer evolving from "algorithms" to "deep synthesis" to
+							"anthropomorphic interaction".
+						</p>
+						<div class="tl">
+							{
+								timeline.map((item) => (
+									<div class="tl-item">
+										<div class="tl-date">{item.date}</div>
+										<div class="tl-title">{item.title}</div>
+										{item.note && <div class="tl-note">{item.note}</div>}
+									</div>
+								))
+							}
+						</div>
+					</aside>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-inner">
+				<div class="foot-brand">
+					<strong>Comparative AI</strong>
+					An independent academic research project. Not legal advice; does not represent the views
+					of any institution. Content licensed under CC&nbsp;BY&nbsp;4.0; code under MIT.
+				</div>
+				<div class="foot-col">
+					<h5>Contents</h5>
+					<ul>
+						{footerContents.map((x) => <li><a href={x.href}>{x.label}</a></li>)}
+					</ul>
+				</div>
+				<div class="foot-col">
+					<h5>About</h5>
+					<ul>
+						{footerAbout.map((x) => <li><a href={x.href}>{x.label}</a></li>)}
+					</ul>
+				</div>
+				<div class="foot-col">
+					<h5>Open Source</h5>
+					<ul>
+						{
+							footerOSS.map((x) => (
+								<li>
+									<a href={x.href} target="_blank" rel="noopener">
+										{x.label}
+									</a>
+								</li>
+							))
+						}
+					</ul>
+				</div>
+			</div>
+			<div class="colophon">
+				<span>© 2026 Comparative AI · CC BY 4.0</span>
+				<span>build · {stats.lastUpdate}</span>
+			</div>
+		</footer>
+	</body>
+</html>

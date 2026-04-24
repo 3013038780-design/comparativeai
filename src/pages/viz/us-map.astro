@@ -1,0 +1,12 @@
+---
+import VizLayout from '../../layouts/VizLayout.astro';
+import UsStateMap from '../../components/Viz/UsStateMap.astro';
+---
+
+<VizLayout
+	title="美国各州 AI 立法热度图"
+	description="全美 50 州 + DC 的 AI 立法活跃度（2024-2025）按地理位置 tile cartogram 着色"
+	locale="zh-CN"
+>
+	<UsStateMap locale="zh-CN" />
+</VizLayout>

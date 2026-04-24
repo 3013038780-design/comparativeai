@@ -3,6 +3,7 @@
 // 结构、样式、行为参考 /Users/olivialee/Downloads/comparativeai-academic1.html
 // 搜索集成方案 A：直接渲染 Starlight 的 <Search />，用 CSS 把默认按钮改造成纯放大镜图标。
 // 全局 ⌘K / Ctrl+K 由 Search.astro 内部脚本处理。
+// 双语支持：检测当前 locale (zh-CN 为 root, en 为 /en/ 前缀)。
 
 import Search from '@astrojs/starlight/components/Search.astro';
 
@@ -14,25 +15,69 @@ export interface Props {
 		| 'companies'
 		| 'reference'
 		| 'methodology';
+	/** 显式覆盖 locale。不传则从 URL 路径推断（以 /en/ 开头为英文）。 */
+	locale?: 'zh-CN' | 'en';
 }
 
 const GITHUB_URL = 'https://github.com/3013038780-design/comparativeai';
 
-const navLinks = [
-	{ key: 'topics', label: '议题', href: '/topics/' },
-	{ key: 'rules', label: '规则', href: '/rules/' },
-	{ key: 'subnational', label: '地方', href: '/subnational/' },
-	{ key: 'companies', label: '公司', href: '/companies/' },
-	{ key: 'reference', label: '参考', href: '/reference/' },
-	{ key: 'methodology', label: '方法论', href: '/methodology/' },
-] as const;
+// 优先 prop；其次 Astro.currentLocale（Starlight 路由下可用）；最后从 URL 推断。
+const urlPathname = Astro.url.pathname;
+const isEn =
+	Astro.props.locale === 'en' ||
+	(Astro.props.locale !== 'zh-CN' &&
+		(Astro.currentLocale === 'en' || urlPathname.startsWith('/en/') || urlPathname === '/en'));
+const locale: 'zh-CN' | 'en' = isEn ? 'en' : 'zh-CN';
+const basePath = isEn ? '/en' : '';
+
+// 导航链接（按 locale 切换 href 和 label）
+const navLinks = (
+	locale === 'en'
+		? [
+				{ key: 'topics', label: 'Topics', href: `${basePath}/topics/` },
+				{ key: 'rules', label: 'Rules', href: `${basePath}/rules/` },
+				{ key: 'subnational', label: 'Subnational', href: `${basePath}/subnational/` },
+				{ key: 'companies', label: 'Companies', href: `${basePath}/companies/` },
+				{ key: 'reference', label: 'Reference', href: `${basePath}/reference/` },
+				{ key: 'methodology', label: 'Methodology', href: `${basePath}/methodology/` },
+			]
+		: [
+				{ key: 'topics', label: '议题', href: '/topics/' },
+				{ key: 'rules', label: '规则', href: '/rules/' },
+				{ key: 'subnational', label: '地方', href: '/subnational/' },
+				{ key: 'companies', label: '公司', href: '/companies/' },
+				{ key: 'reference', label: '参考', href: '/reference/' },
+				{ key: 'methodology', label: '方法论', href: '/methodology/' },
+			]
+) as const;
+
+// 刊头副标与其他 UI 文案
+const mastheadSubtitle = locale === 'en'
+	? '— AI governance across China, US & EU'
+	: '— 中美欧 AI 治理比较';
+const menuLabel = locale === 'en' ? 'Menu' : '菜单';
+const ghShortLabel = locale === 'en' ? 'GitHub' : 'GitHub';
+
+// 语言切换：英文 → 中文，切到对应路径（去掉 /en 前缀 or 保留相对路径）
+const switchPath = (() => {
+	if (isEn) {
+		// en → zh-CN: 去掉 /en 前缀
+		return urlPathname.replace(/^\/en(\/|$)/, '/') || '/';
+	} else {
+		// zh-CN → en: 加 /en 前缀
+		return `/en${urlPathname === '/' ? '/' : urlPathname}`;
+	}
+})();
+const switchLabel = isEn ? '中文' : 'EN';
 
 // 优先用 props 传入的 currentSection；否则尝试从 Starlight 路由推断。
 let currentSection: Props['currentSection'] = Astro.props.currentSection;
 if (!currentSection) {
 	try {
 		const route = (Astro.locals as any)?.starlightRoute;
-		const slug: string = route?.entry?.slug ?? '';
+		const rawSlug: string = route?.entry?.slug ?? '';
+		// 英文内容的 slug 带 "en/" 前缀；统一剥掉再匹配
+		const slug = rawSlug.replace(/^en\//, '');
 		if (slug.startsWith('topics/') || slug === 'topics') currentSection = 'topics';
 		else if (slug.startsWith('rules/') || slug === 'rules') currentSection = 'rules';
 		else if (slug.startsWith('subnational/') || slug === 'subnational')
@@ -41,16 +86,16 @@ if (!currentSection) {
 			currentSection = 'companies';
 		else if (slug.startsWith('reference/') || slug === 'reference')
 			currentSection = 'reference';
-		else if (slug.startsWith('methodology') || slug === 'about')
-			currentSection = 'methodology';
+		else if (slug.startsWith('methodology') || slug === 'about' || slug === 'en' || slug === '')
+			currentSection = slug.startsWith('methodology') || slug === 'about' ? 'methodology' : undefined;
 	} catch {}
 }
 ---
 
-<nav class="topbar">
+<nav class="topbar" data-locale={locale}>
 	<div class="nav-inner">
-		<a href="/" class="masthead">
-			<span class="masthead-full">Comparative&nbsp;AI <em>— 中美欧 AI 治理比较</em></span>
+		<a href={isEn ? '/en/' : '/'} class="masthead">
+			<span class="masthead-full">Comparative&nbsp;AI <em>{mastheadSubtitle}</em></span>
 			<span class="masthead-short">Comparative AI</span>
 		</a>
 
@@ -66,12 +111,15 @@ if (!currentSection) {
 
 		<div class="nav-right">
 			<Search />
+			<a href={switchPath} class="lang-switch" aria-label={isEn ? '切换到中文' : 'Switch to English'}>
+				{switchLabel}
+			</a>
 			<a href={GITHUB_URL} target="_blank" rel="noopener" class="gh-link">
 				<span class="gh-full">GitHub ↗</span>
-				<span class="gh-short" aria-label="GitHub">↗</span>
+				<span class="gh-short" aria-label={ghShortLabel}>↗</span>
 			</a>
 			<details class="nav-mobile">
-				<summary aria-label="菜单">
+				<summary aria-label={menuLabel}>
 					<span class="hamburger">☰</span>
 					<span class="hamburger-close">✕</span>
 				</summary>
@@ -190,6 +238,22 @@ if (!currentSection) {
 	}
 	.gh-short {
 		display: none;
+	}
+
+	/* 语言切换按钮：和 GitHub 链接同视觉语言 */
+	.lang-switch {
+		font-family: var(--sans);
+		font-size: 13px;
+		letter-spacing: 0.05em;
+		color: var(--ink-soft);
+		padding-bottom: 3px;
+		border-bottom: 1px solid transparent;
+		transition: all 0.15s;
+		text-decoration: none;
+	}
+	.lang-switch:hover {
+		color: var(--ink);
+		border-bottom-color: var(--ink);
 	}
 
 	/* 汉堡（桌面隐藏） */

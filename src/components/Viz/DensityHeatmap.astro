@@ -1,0 +1,304 @@
+---
+// Viz B — Three-jurisdiction legislative density heatmap.
+// Axes: year (2022–2026) × topic (risk / gpai / data / labeling).
+// Cells split into 3 sub-cells for CN/US/EU, color intensity = rule count.
+import { heatmap, topicLabels, jurisdictionLabels, type TopicKey, type Jurisdiction } from '../../data/viz-data';
+
+export interface Props {
+	locale?: 'zh-CN' | 'en';
+}
+const { locale = 'zh-CN' } = Astro.props;
+const k = locale === 'en' ? 'en' : 'zh';
+
+const years = [2022, 2023, 2024, 2025, 2026];
+const topics: TopicKey[] = ['risk', 'gpai', 'data', 'labeling'];
+const jurs: Jurisdiction[] = ['cn', 'us', 'eu'];
+
+// Jurisdiction base colors (hue), intensity encoded via alpha
+const hueColors: Record<Jurisdiction, string> = {
+	cn: '139, 46, 46',   // 朱砂 rgb
+	us: '30, 58, 95',    // 藏青
+	eu: '45, 90, 78',    // 墨绿
+};
+
+// Max count in data (to normalize intensity)
+const maxCount = Math.max(
+	...years.flatMap((y) => topics.flatMap((t) => jurs.map((j) => heatmap[y]?.[t]?.[j] ?? 0))),
+);
+
+const intensity = (n: number) => {
+	if (n === 0) return 0.08;
+	// map 1..max → 0.25..1
+	return 0.25 + (n / maxCount) * 0.75;
+};
+
+const headings = {
+	title: { zh: '三辖区立法密度热力图', en: 'Three-Jurisdiction Legislative Density' },
+	sub: {
+		zh: '横轴=年份，纵轴=议题；每格三小格分别对应中·美·欧的该年度该议题规则数量。颜色深浅 → 数量多少。',
+		en: 'X = year, Y = topic. Each cell splits into CN / US / EU sub-cells; saturation encodes count. Reveals who moves first.',
+	},
+	yearLabel: { zh: '年份 →', en: 'Year →' },
+	topicLabel: { zh: '议题 ↓', en: 'Topic ↓' },
+	observations: { zh: '观察', en: 'Observations' },
+	note: { zh: '计数为分析代理（重要一手规则），非穷举。详见 [方法论](/methodology/)。', en: 'Counts are analytical proxies (major primary-source rules), not exhaustive. See [Methodology](/en/methodology/).' },
+};
+
+const observations = locale === 'en' ? [
+	'China moves first on labeling (2022) and content-synthesis (2023); the US follows in 2024–2025 via state laws; the EU codifies in 2024–2025.',
+	'GPAI density spikes in 2025 across all three: EU GPAI CoP (Jul), CA SB 53 (Sep), CN Safety Governance 2.0 (Sep).',
+	'Data-training is the thinnest column everywhere — in the US it is court-driven (case law), not legislated.',
+] : [
+	'**谁先动**：标识议题中国 2022 起步（算法推荐）、2023 深度合成，美国 2024-2025 靠州法追上，欧盟 2024-2025 集中立法。',
+	'**GPAI 2025 同步发力**：欧盟 GPAI CoP（7 月）、加州 SB 53（9 月）、中国 AI 安全治理框架 2.0（9 月）——三辖区同步密集。',
+	'**数据训练列整体稀疏**：美国主要靠法院判例推进，不立法；中国靠 PIPL+DSL 叠加（既有法延伸）；欧盟靠 GDPR+AI Act 衔接。',
+];
+---
+
+<section class="viz-heatmap" data-locale={locale}>
+	<h2 class="viz-title">{headings.title[k]}</h2>
+	<p class="viz-sub">{headings.sub[k]}</p>
+
+	<div class="heatmap-wrap">
+		<div class="heatmap-corner">
+			<span class="corner-topic">{headings.topicLabel[k]}</span>
+			<span class="corner-year">{headings.yearLabel[k]}</span>
+		</div>
+
+		<div class="heatmap-grid" style={`grid-template-columns: 140px repeat(${years.length}, 1fr);`}>
+			<!-- Header row -->
+			<div></div>
+			{years.map((y) => <div class="year-header">{y}</div>)}
+
+			<!-- Topic rows -->
+			{topics.map((topic) => (
+				<>
+					<div class="topic-header">{topicLabels[topic][k]}</div>
+					{years.map((y) => (
+						<div class="cell">
+							{jurs.map((jur) => {
+								const n = heatmap[y]?.[topic]?.[jur] ?? 0;
+								const a = intensity(n);
+								return (
+									<div
+										class="sub-cell"
+										style={`background: rgba(${hueColors[jur]}, ${a});`}
+										title={`${jurisdictionLabels[jur][k]} · ${y} · ${topicLabels[topic][k]} · ${n}`}
+									>
+										<span class="sc-jur">{jur.toUpperCase()}</span>
+										<span class="sc-n">{n}</span>
+									</div>
+								);
+							})}
+						</div>
+					))}
+				</>
+			))}
+		</div>
+	</div>
+
+	<div class="legend-row">
+		{jurs.map((j) => (
+			<div class="juris-key">
+				<span class="key-swatch" style={`background: rgb(${hueColors[j]});`}></span>
+				<span class="key-label">{jurisdictionLabels[j][k]}</span>
+			</div>
+		))}
+	</div>
+
+	<div class="observations">
+		<h3>{headings.observations[k]}</h3>
+		<ol>
+			{observations.map((o) => (
+				<li set:html={o.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}></li>
+			))}
+		</ol>
+	</div>
+
+	<p class="viz-note" set:html={
+		headings.note[k]
+			.replace('[方法论]', '<a href="/methodology/">方法论</a>')
+			.replace('[Methodology]', '<a href="/en/methodology/">Methodology</a>')
+	}></p>
+</section>
+
+<style>
+	.viz-heatmap {
+		--ink: #1c1a17;
+		--ink-soft: #45423d;
+		--ink-muted: #726d65;
+		--paper: #fdfcfa;
+		--paper-alt: #f4f2ed;
+		--rule: #dcd7cc;
+		font-family: 'Noto Serif SC', 'Source Serif 4', Georgia, serif;
+		color: var(--ink);
+		max-width: 1100px;
+		margin: 32px auto 48px;
+	}
+	.viz-title {
+		font-size: 24px;
+		font-weight: 600;
+		letter-spacing: -0.005em;
+		margin-bottom: 8px;
+	}
+	.viz-sub {
+		font-family: 'Source Serif 4', Georgia, serif;
+		font-style: italic;
+		font-size: 15px;
+		color: var(--ink-muted);
+		margin-bottom: 24px;
+		max-width: 64ch;
+	}
+
+	.heatmap-wrap {
+		position: relative;
+	}
+	.heatmap-corner {
+		display: none; /* decorative — handled in grid */
+	}
+	.heatmap-grid {
+		display: grid;
+		gap: 1px;
+		background: var(--rule);
+		border: 1px solid var(--rule);
+	}
+	.year-header,
+	.topic-header {
+		background: var(--paper-alt);
+		font-family: 'Noto Sans SC', sans-serif;
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 0.08em;
+		color: var(--ink-muted);
+		padding: 10px 8px;
+		text-align: center;
+	}
+	.topic-header {
+		font-family: 'Noto Serif SC', serif;
+		font-size: 14px;
+		color: var(--ink);
+		text-align: left;
+		padding: 10px 14px;
+	}
+	.cell {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1px;
+		background: var(--rule);
+	}
+	.sub-cell {
+		background: transparent;
+		padding: 14px 4px 10px;
+		text-align: center;
+		position: relative;
+		min-height: 62px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		transition: transform 0.15s;
+	}
+	.sub-cell:hover {
+		transform: scale(1.03);
+		z-index: 2;
+	}
+	.sc-jur {
+		display: block;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 10px;
+		letter-spacing: 0.05em;
+		color: rgba(28, 26, 23, 0.65);
+	}
+	.sc-n {
+		display: block;
+		font-family: 'JetBrains Mono', monospace;
+		font-size: 16px;
+		font-weight: 600;
+		color: rgba(28, 26, 23, 0.9);
+	}
+	/* for very dark cells, use light text */
+	.sub-cell[style*='0.9'] .sc-jur,
+	.sub-cell[style*='0.9'] .sc-n,
+	.sub-cell[style*='1)'] .sc-jur,
+	.sub-cell[style*='1)'] .sc-n {
+		color: rgba(253, 252, 250, 0.9);
+	}
+
+	.legend-row {
+		display: flex;
+		gap: 24px;
+		margin-top: 16px;
+		padding: 12px 0;
+	}
+	.juris-key {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+	.key-swatch {
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+	}
+	.key-label {
+		font-family: 'Noto Sans SC', sans-serif;
+		font-size: 13px;
+		color: var(--ink-soft);
+	}
+
+	.observations {
+		margin-top: 24px;
+		padding-top: 20px;
+		border-top: 1px solid var(--rule);
+	}
+	.observations h3 {
+		font-family: 'Noto Sans SC', sans-serif;
+		font-size: 11px;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--ink-muted);
+		margin-bottom: 12px;
+	}
+	.observations ol {
+		padding-left: 24px;
+		margin: 0;
+	}
+	.observations li {
+		margin-bottom: 10px;
+		font-size: 15px;
+		color: var(--ink-soft);
+		line-height: 1.7;
+	}
+	.observations strong {
+		color: var(--ink);
+	}
+
+	.viz-note {
+		font-family: 'Source Serif 4', serif;
+		font-style: italic;
+		font-size: 12.5px;
+		color: var(--ink-muted);
+		margin-top: 16px;
+	}
+	.viz-note a {
+		color: var(--ink);
+		border-bottom: 1px solid var(--ink-muted);
+		text-decoration: none;
+	}
+
+	@media (max-width: 720px) {
+		.heatmap-grid {
+			grid-template-columns: 90px repeat(5, 1fr) !important;
+		}
+		.sub-cell {
+			padding: 10px 2px 6px;
+			min-height: 50px;
+		}
+		.sc-n {
+			font-size: 13px;
+		}
+		.topic-header {
+			font-size: 12px;
+			padding: 8px 6px;
+		}
+	}
+</style>
