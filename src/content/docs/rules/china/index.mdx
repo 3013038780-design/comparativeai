@@ -6,6 +6,11 @@ sidebar:
   label: 🇨🇳 中国
 ---
 
+import CnTimeline from '../../../../components/Viz/CnTimeline.astro';
+import ChinaHierarchy from '../../../../components/Viz/ChinaHierarchy.astro';
+
+<CnTimeline locale="zh-CN" />
+
 ## 法律位阶速览
 
 中国对 AI 的规制**不是一部"AI 法"**，而是由**五个位阶**的规则叠加构成。
@@ -102,3 +107,7 @@ sidebar:
 - 《未成年人用户数量巨大...认定办法》(2026-02)、《移动互联网未成年人模式建设指南》(2023)：非 AI 专项 → 在 [未成年人网络保护条例](./minors-internet-protection-regulation/) 页交叉引用
 
 详见 [方法论 §1 收录标准](/methodology/#inclusion)。
+
+## 五级位阶可视化
+
+<ChinaHierarchy locale="zh-CN" />

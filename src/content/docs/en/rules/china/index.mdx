@@ -6,6 +6,11 @@ sidebar:
   label: 🇨🇳 China
 ---
 
+import CnTimeline from '../../../../../components/Viz/CnTimeline.astro';
+import ChinaHierarchy from '../../../../../components/Viz/ChinaHierarchy.astro';
+
+<CnTimeline locale="en" />
+
 ## The Legal Hierarchy at a Glance
 
 Chinese regulation of AI is **not a single "AI Act"** but a superposition of rules across **five hierarchical levels** (*位阶*). Distinguishing among these levels matters: **the various "Interim Measures" (*暂行办法*) and "Administrative Provisions" are departmental rules — whether issued by a single ministry or jointly by several ministries — they are neither laws of the National People's Congress (NPC) nor administrative regulations of the State Council.**
@@ -93,3 +98,7 @@ The following rules **exist and are important** but their AI proximity is insuff
 - *Measures for Identifying Internet Service Providers with Large Numbers of Minor Users...* (2026-02), *Guidelines for Building the Mobile Internet Minors Mode* (2023): not AI-specific → cross-referenced on the [Regulations on the Protection of Minors Online](./minors-internet-protection-regulation/) page.
 
 See [Methodology §1 · Inclusion criteria](/en/methodology/#inclusion).
+
+## Five-Tier Hierarchy · Visualization
+
+<ChinaHierarchy locale="en" />

@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import react from '@astrojs/react';
+import mdx from '@astrojs/mdx';
 import remarkHeadingId from 'remark-heading-id';
 
 // i18n helper: returns a sidebar item fragment with label + translations
@@ -305,10 +306,6 @@ export default defineConfig({
 					],
 				},
 				{
-					...t('可视化', 'Visualizations'),
-					items: [{ ...t('五张图索引', 'All five charts'), slug: 'viz' }],
-				},
-				{
 					...t('参考框架', 'Reference Frameworks'),
 					items: [{ ...t('索引', 'Index'), slug: 'reference' }],
 				},
@@ -324,5 +321,6 @@ export default defineConfig({
 				},
 			],
 		}),
+		mdx(),
 	],
 });
