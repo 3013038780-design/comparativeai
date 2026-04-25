@@ -5,13 +5,11 @@
   "observability": {
     "enabled": true
   },
-  "main": "dist/_worker.js/index.js",
-  "compatibility_flags": [
-    "global_fetch_strictly_public",
-    "nodejs_compat"
-  ],
+  // Pure static deployment — no Worker code, just assets.
+  // Astro builds plain HTML/CSS/JS into dist/; CF Workers Static Assets
+  // serves them directly. No 3 MiB Worker size limit applies.
   "assets": {
-    "binding": "ASSETS",
-    "directory": "dist"
+    "directory": "dist",
+    "not_found_handling": "404-page"
   }
 }

@@ -2,21 +2,19 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import react from '@astrojs/react';
-import cloudflare from '@astrojs/cloudflare';
 import remarkHeadingId from 'remark-heading-id';
 
 // i18n helper: returns a sidebar item fragment with label + translations
 const t = (zh, en) => ({ label: zh, translations: { en } });
 
 // https://astro.build/config
-// Production deploys to Cloudflare Workers via @astrojs/cloudflare adapter.
-// Most pages are pre-rendered; any dynamic routes run on CF Workers edge.
-// Keystatic admin UI was removed from production to avoid bundling its
-// server runtime; re-enable locally as needed.
+// Production deploys as pure static assets to Cloudflare Workers Static Assets
+// (no SSR worker — every page is pre-rendered HTML, search via Pagefind, viz
+// via client-side React). Keystatic admin UI was removed from production to
+// avoid bundling its server runtime; re-enable locally as needed.
 export default defineConfig({
 	site: 'https://comparativeai.org',
 	output: 'static',
-	adapter: cloudflare(),
 	markdown: {
 		remarkPlugins: [remarkHeadingId],
 	},

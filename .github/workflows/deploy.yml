@@ -1,14 +1,12 @@
 name: Deploy to Cloudflare Workers
 
-# Fires on every push to main. Only used as a fallback if Cloudflare's
-# native GitHub integration isn't auto-building (e.g. if the Workers
-# project isn't connected to this repo on main branch).
+# Fires on every push to main. Deploys dist/ as pure static assets to
+# Cloudflare Workers Static Assets (no SSR worker, no 3 MiB size limit).
 #
-# Required GitHub secrets:
+# Required GitHub secrets (Settings → Secrets and variables → Actions):
 #   CLOUDFLARE_API_TOKEN — create at
 #     https://dash.cloudflare.com/profile/api-tokens
-#     (template: "Edit Cloudflare Workers" or custom with
-#      Account → Workers Scripts: Edit, Account → Workers R2 Storage: Edit)
+#     Template: "Edit Cloudflare Workers". Leave TTL empty (no expiration).
 #   CLOUDFLARE_ACCOUNT_ID — find at
 #     https://dash.cloudflare.com → right sidebar
 
