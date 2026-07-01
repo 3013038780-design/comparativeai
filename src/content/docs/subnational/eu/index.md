@@ -1,37 +1,33 @@
 ---
-title: 欧盟成员国 — AI 监管实施
-description: 成员国层面的 AI 主管机构、国家 AI 法案、DPA 执法动态
+title: EU Member States — AI Regulatory Implementation
+description: Member State AI competent authorities, national AI bills, and DPA enforcement developments
 sidebar:
   order: 3
-  label: 🇪🇺 成员国
+  label: EU Member States
 ---
 
-## 概览
+## Overview
 
-EU AI Act 为**直接适用的 Regulation**，不需成员国转化。但有三个层面的成员国工作：
+The EU AI Act is a **directly applicable Regulation** and does not require Member State transposition. But work at the Member State level happens along three dimensions:
 
-1. **指定国家主管机构**（AI Act 第 70 条）—— 市场监管机构 (MSA) + 通知机构
-2. **国家 AI 立法**（补充、不替代 AI Act）
-3. **DPA（数据保护局）对 AI 的 GDPR 执法**
+1. **Designation of national competent authorities** (AI Act Article 70) — market-surveillance authorities (MSAs) + notified bodies.
+2. **National AI legislation** (supplementary to, not replacing, the AI Act).
+3. **DPA (data protection authority) enforcement of GDPR as applied to AI**.
 
-**2025-07-10 截止**，27 成员国中仅 **3 国**（立陶宛、卢森堡、马耳他）完成 AI Act 主管机构指定。
-**德法意西奥**等主要国家未完成，是 [Digital Omnibus 提案](/rules/eu/digital-omnibus-proposal/)
-建议延期的主因之一。
+By the deadline of **2025-07-10**, only **3** of the 27 Member States (Lithuania, Luxembourg, Malta) had completed the designation of AI Act competent authorities. Major jurisdictions including **Germany, France, Italy, Spain, and Austria** had not; this is one of the main reasons behind the [Digital Omnibus proposal's](/rules/eu/digital-omnibus-proposal/) suggested delay.
 
-## 已收录
+## Collected
 
-### 早期建制 / AI 专职机构
+### Early-mover / dedicated AI authorities
 
-- [Spain — AESIA](./spain-aesia/) — 欧盟首个 AI 专职监管机构，2024-06 运作，
-  2024-12 发布 16 份合规指引
+- [Spain — AESIA](./spain-aesia/) — the EU's first dedicated AI regulator, operational 2024-06, issuing 16 compliance guidance documents in 2024-12.
 
-### DPA 主导的 AI 监管
+### DPA-led AI oversight
 
-- [France — CNIL AI](./france-cnil-ai/) — 法国最活跃的 AI × GDPR 监管，
-  2023 起 12+ 份指引，2025-02 两份核心推荐
+- [France — CNIL AI](./france-cnil-ai/) — France's most active line of AI × GDPR regulation; 12+ guidance documents since 2023, two key recommendations in 2025-02.
 
-## 与非 EU 邻国的对比
+## Comparison with non-EU neighbours
 
-- **UK**：AI Safety Institute (2023)，**pro-innovation 不立法**路径
-- **Norway / Switzerland**：跟随 EU AI Act 但调整细节
-- **Ukraine / 西巴尔干**：EU Candidacy 国家按 AI Act 对齐
+- **UK**: AI Safety Institute (2023), a **pro-innovation non-legislative** approach.
+- **Norway / Switzerland**: follow the EU AI Act with adjustments on specifics.
+- **Ukraine / Western Balkans**: EU-candidate states aligning to the AI Act.

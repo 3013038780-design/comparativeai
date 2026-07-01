@@ -1,70 +1,73 @@
 ---
-title: 欧盟 — 顶层规则
-description: EU Regulation / Directive / Commission Guidelines / AI Office 指引
+title: European Union — Top-Level Rules
+description: EU Regulation / Directive / Commission Guidelines / AI Office guidance
 sidebar:
   order: 3
-  label: 🇪🇺 欧盟
+  label: 🇪🇺 European Union
 ---
 
-## 📍 本页仅收 EU 层级（直接适用于 27 成员国）
+## 📍 This page covers EU-level rules only (directly applicable across 27 member states)
 
-**成员国层面的实施、主管机构和国家 AI 法：参见 [欧盟成员国](/subnational/eu/)**。
+**For member-state implementation, competent authorities, and national AI laws, see [EU Member States](/subnational/eu/).**
 
-## 欧盟 AI 治理的两层位阶（New Legislative Framework）
+## The two-tier hierarchy of EU AI governance (New Legislative Framework)
 
-参见 [方法论 §2 · 欧盟](/methodology/#hard-vs-soft)，欧盟自 1985 NLF 以来的标准范式：
+See [Methodology §2 · EU](/methodology/#hard-vs-soft). Since the NLF of 1985, the EU has followed a standard paradigm:
 
-1. **二级立法**（Regulation / Directive）：设"本质要求"（essential requirements）
-2. **协调标准（hEN, harmonised standard）**：把"本质要求"译为可检验技术规范，
-   一经 OJEU 引用产生**符合性推定**（AI Act 第 40 条）
+1. **Secondary legislation** (Regulation / Directive): establishes "essential requirements"
+2. **Harmonized standards (hEN)**: translate essential requirements into verifiable technical specifications;
+   once referenced in the OJEU they produce a **presumption of conformity** (AI Act Art. 40)
 
-**其他实施机制**（不构成独立位阶）：
-- **条约层**（TEU / TFEU / Charter of Fundamental Rights）：宪法性背景，不直接产生 AI 治理义务
-- **Commission Implementing / Delegated Acts**：填二级立法的技术细节
-- **Code of Practice**（如 GPAI CoP）：**hEN 到位前的过渡合规路径**
-- **Commission Guidelines / AI Office Guidelines**：解释执法预期
-- **成员国 DPA / MSA 执法**：硬法的落地
+**Other implementation mechanisms** (do not form an independent tier):
+- **Treaty layer** (TEU / TFEU / Charter of Fundamental Rights): constitutional backdrop; does not directly generate AI governance obligations
+- **Commission Implementing / Delegated Acts**: fill in technical detail for secondary legislation
+- **Codes of Practice** (e.g., the GPAI CoP): **transitional compliance path pending hEN availability**
+- **Commission Guidelines / AI Office Guidelines**: explain enforcement expectations
+- **Member-state DPA / MSA enforcement**: the on-the-ground landing of hard law
 
-## 已收录
+## Included pages
 
-### AI 专项 Regulation
+### AI-specific regulation
 
-- [**EU AI Act (Regulation 2024/1689)**](./ai-act/) — 全球首部横向 AI 法规，2024-08-01 生效，
-  2025-02 / 2025-08 / 2026-08 / 2027-08 分阶段适用
-- [**GPAI Code of Practice**](./gpai-code-of-practice/) — AI Act 第 56 条授权的行为守则，
-  2025-07-10 定稿；签署 = 合规推定
+- [**EU AI Act (Regulation 2024/1689)**](./ai-act/) — the world's first horizontal AI regulation;
+  entered into force 2024-08-01; phased application 2025-02 / 2025-08 / 2026-08 / 2027-08
+- [**GPAI Code of Practice**](./gpai-code-of-practice/) — Code of Practice under AI Act Art. 56,
+  finalized 2025-07-10; signing equates to a presumption of conformity
+- [**Code of Practice on Transparency of AI-Generated Content**](./synthetic-content-code/) — final voluntary
+  article 50 implementation code, published 2026-06-10
 
-### AI 相关上位 Regulation / Directive
+### AI-relevant horizontal regulation / directive
 
-- [**GDPR (2016/679)**](./gdpr/) — 数据保护基础法，2018 适用
-- [**Digital Services Act (2022/2065)**](./dsa/) — 平台内容治理；VLOP 系统性风险评估纳入生成式 AI
-- [**Product Liability Directive (2024/2853)**](./product-liability-directive/) — 明确 AI 系统为"产品"，
-  无过错责任适用
+- [**GDPR (2016/679)**](./gdpr/) — foundational data protection law, applicable from 2018
+- [**Digital Services Act (2022/2065)**](./dsa/) — platform content governance; VLOP systemic-risk assessment extends to generative AI
+- [**Product Liability Directive (2024/2853)**](./product-liability-directive/) — AI systems expressly classified as "products"; strict liability applies
 
-### 立法提案（未通过）
+### Legislative amendment (political agreement reached)
 
-- [**Digital Omnibus Proposal (2025-11)**](./digital-omnibus-proposal/) — 提议将 AI Act 高风险条款**
-  推迟最多 16 个月至 2027-12**
+- [**Digital Omnibus / AI Omnibus (2025-11)**](./digital-omnibus-proposal/) — political agreement reached
+  **2026-05-07**; high-risk Annex III rules move to 2027-12-02 and product-embedded rules to 2028-08-02
 
-## 时间线（核心）
+## Timeline (core)
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2018-05-25 | GDPR 适用 |
-| 2022-10-19 | DSA 发布 |
-| 2024-02-17 | DSA 对所有中间服务商全面适用 |
-| 2024-07-12 | AI Act 官方公报公布 |
-| 2024-08-01 | AI Act 生效 |
-| 2024-12-08 | Product Liability Directive 生效 |
-| 2025-02-02 | AI Act 禁止清单（第 5 条）适用 |
-| 2025-07-10 | GPAI Code of Practice 定稿 |
-| 2025-08-02 | AI Act GPAI 条款（第 51-56 条）适用 |
-| 2025-11-19 | Digital Omnibus 提案发布 |
-| 2026-08-02 | **AI Act 高风险条款原定适用**（Digital Omnibus 可能延期至 2027-12）|
+| 2018-05-25 | GDPR applicable |
+| 2022-10-19 | DSA published |
+| 2024-02-17 | DSA applies fully to all intermediary services |
+| 2024-07-12 | AI Act published in the Official Journal |
+| 2024-08-01 | AI Act enters into force |
+| 2024-12-08 | Product Liability Directive enters into force |
+| 2025-02-02 | AI Act prohibited list (Art. 5) applies |
+| 2025-07-10 | GPAI Code of Practice finalized |
+| 2025-08-02 | AI Act GPAI provisions (Arts. 51-56) apply |
+| 2025-11-19 | Digital Omnibus proposal released |
+| 2026-05-07 | **Political agreement on AI Omnibus implementation dates** |
+| 2026-06-10 | **Final Code on Transparency of AI-Generated Content published** |
+| 2026-08-02 | AI Act article 50 transparency duties apply; other phased provisions continue under the revised schedule |
 
-## 与其他辖区的关系
+## Relationship with other jurisdictions
 
-- **Brussels Effect**：AI Act 对美国、英国、日本、巴西等立法有事实扩散
-- **跨大西洋合规**：美国 Voluntary Commitments + 加州 SB 53 与 GPAI CoP 文档可复用
-- **美国 Trump 政府反制**：EO 14365 + AI Action Plan 公开抵制 Brussels Effect
-- **中国**：TC260-003 + 安全治理框架形成**对应**但不对标的路径
+- **Brussels Effect**: the AI Act has de facto spread to U.S., UK, Japanese, and Brazilian legislation
+- **Transatlantic compliance**: U.S. Voluntary Commitments + California SB 53 documentation can be reused against GPAI CoP
+- **U.S. Trump administration pushback**: EO 14365 + AI Action Plan openly contest the Brussels Effect
+- **China**: TC260-003 + AI Safety Governance Framework form a **parallel but non-aligned** path

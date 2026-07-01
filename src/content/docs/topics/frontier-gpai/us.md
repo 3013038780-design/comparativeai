@@ -1,89 +1,87 @@
 ---
-title: 美国 — 前沿模型与 GPAI
-description: 美国对前沿模型从 "EO 14110 的 10²⁶ FLOP 报告" 到 "EO 14179 撤销后的自愿承诺" 的政策反转
+title: United States — Frontier Models and GPAI
+description: The US's policy reversal on frontier-model oversight — from the EO 14110 10²⁶ FLOP reporting regime to a voluntary-commitment landscape after EO 14179.
 sidebar:
   order: 3
-  label: 美国
+  label: United States
 ---
 
-## 相关规则
+## Relevant rules
 
-| 规则 | 与前沿模型的关系 |
+| Rule | Relationship to frontier models |
 | --- | --- |
-| [EO 14179](/rules/us/eo-14179-removing-barriers-ai/) (2025-01) | **撤销**前沿模型报告义务 |
-| [EO 14110](/rules/us/eo-14110-biden-ai/) (2023, 已撤销) | 曾建立 10²⁶ FLOP 报告门槛 |
-| [Trump AI Action Plan](/rules/us/trump-ai-action-plan/) (2025-07) | 25 页战略 + 3 道 EOs（数据中心等） |
-| [EO 14365](/rules/us/eo-14365-national-ai-framework/) (2025-12) | 抢占州级前沿 AI 立法 |
-| [OMB M-25-21/22](/rules/us/omb-m-25-21-22-federal-ai-use/) (2025-04) | 联邦 AI 使用与采购 |
-| [NIST AI RMF + GenAI Profile](/rules/us/nist-ai-rmf/) (2023/2024) | 自愿性前沿模型风险框架 |
-| [**California SB 53**](/subnational/us/california-sb-53-frontier-ai/) (2026-01 生效) | **美国首部前沿 AI 州法**，10²⁶ FLOP 阈值 |
-| [Texas TRAIGA](/subnational/us/texas-traiga/) (2026-01 生效) | 禁止有害用途（不聚焦前沿） |
+| [EO 14409](/rules/us/eo-14409-frontier-ai-cybersecurity/) (Jun 2026) | **Voluntary** classified cyber benchmarking and up to 30 days of federal pre-release access |
+| [EO 14179](/rules/us/eo-14179-removing-barriers-ai/) (Jan 2025) | **Revokes** the frontier-model reporting obligation |
+| [EO 14110](/rules/us/eo-14110-biden-ai/) (2023, revoked) | Previously established the 10²⁶ FLOP reporting threshold |
+| [Trump AI Action Plan](/rules/us/trump-ai-action-plan/) (Jul 2025) | A 25-page strategy + three accompanying EOs (data centres, etc.) |
+| [EO 14365](/rules/us/eo-14365-national-ai-framework/) (Dec 2025) | Preemption of state-level frontier-AI legislation |
+| [OMB M-25-21/22](/rules/us/omb-m-25-21-22-federal-ai-use/) (Apr 2025) | Federal AI use and procurement |
+| [NIST AI RMF + GenAI Profile](/rules/us/nist-ai-rmf/) (2023 / 2024) | Voluntary frontier-model risk framework |
+| [**California SB 53**](/subnational/us/california-sb-53-frontier-ai/) (in force Jan 2026) | **First US state frontier-AI law**, 10²⁶ FLOP threshold |
+| [Texas TRAIGA](/subnational/us/texas-traiga/) (in force Jan 2026) | Prohibits harmful uses (not frontier-focused) |
 
-## 从强监管到自愿承诺的反转
+## From heavy oversight to voluntary commitments
 
-### Biden 阶段（2023-10 至 2025-01）
+### Biden phase (Oct 2023 to Jan 2025)
 
-**EO 14110** 是美国联邦层面首次引入"前沿双用途基础模型"概念：
+**EO 14110** introduced the concept of a "frontier dual-use foundation model" into federal US policy for the first time:
 
-- 触发门槛：**≥ 10²⁶ FLOP** 累计训练算力（生物序列专项：10²³）
-- 权限：**《国防生产法》第 705 条**下的信息征集
-- 义务：向商务部报告**模型能力、红队结果、安全保障措施**
-- 数据中心运营者：报告 IaaS 客户训练此类模型的情况
+- Triggering threshold: **≥ 10²⁶ FLOP** cumulative training compute (biological-sequence-specific: 10²³).
+- Authority: information-gathering under **§ 705 of the Defense Production Act**.
+- Obligations: report to the Department of Commerce on **model capabilities, red-teaming results, and safeguard measures**.
+- Data-centre operators: report on IaaS customers training such models.
 
-**AI Safety Institute (AISI)** 建立，NIST 内部机构，与 Anthropic、OpenAI 等签署
-**"测试与红队"自愿协议**。
+The **AI Safety Institute (AISI)** was established within NIST and signed voluntary **"testing and red-teaming" agreements** with Anthropic, OpenAI, and others.
 
-### Trump 阶段（2025-01 至今）
+### Trump phase (Jan 2025 onward)
 
-**EO 14179** 撤销 EO 14110，**10²⁶ FLOP 报告义务不再有法律基础**。
+**EO 14179** revokes EO 14110; **the 10²⁶ FLOP reporting obligation lost its legal basis**.
 
-后续动作：
-- **AI Action Plan**（2025-07）：明确"去监管、加速"方向
-- **AISI → CAISI**（Center for AI Standards and Innovation）：定位从"安全"转向"标准"
-- 行业自愿承诺**保留**（2023 白宫承诺不因 EO 换届而作废），但缺乏强制性
+Follow-on actions:
+- **AI Action Plan** (Jul 2025): explicit "deregulate and accelerate" direction.
+- **AISI → CAISI** (Center for AI Standards and Innovation): rebranded from "safety" to "standards".
+- Industry voluntary commitments **remain** (the 2023 White House Commitments did not expire with the change of administration) — but without statutory enforceability.
 
-## 当前（2026-04）美国前沿模型监管实际结构
+## The actual structure of US frontier-model oversight (28 Jun 2026)
 
-### 自愿层
+### Voluntary layer
 
-- **2023 White House Voluntary Commitments**（Anthropic、Google、OpenAI、Microsoft、Meta 等 8 家签署）
-- **Frontier Model Forum**（行业协会，Anthropic、Google、Microsoft、OpenAI）
-- **NIST AI RMF + GenAI Profile** 作为自愿技术基线
-- **MLCommons AI Luminate / AILuminate** benchmark
+- **2023 White House Voluntary Commitments** (signed by Anthropic, Google, OpenAI, Microsoft, Meta and four others).
+- **Frontier Model Forum** (industry association: Anthropic, Google, Microsoft, OpenAI).
+- **NIST AI RMF + GenAI Profile** as a voluntary technical baseline.
+- **MLCommons AI Luminate / AILuminate** benchmarks.
 
-### 半正式层
+### Semi-formal layer
 
-- **Responsible Scaling Policies (RSP)**（Anthropic 首创，其他公司仿效）
-- **Preparedness Framework**（OpenAI）、**Frontier Safety Framework**（Google DeepMind）
-- Seoul AI Summit (2024)、Paris AI Summit (2025) 的公司级承诺
+- **Responsible Scaling Policies (RSPs)** (Anthropic pioneered; others followed).
+- **Preparedness Framework** (OpenAI); **Frontier Safety Framework** (Google DeepMind).
+- Company commitments from the Seoul AI Summit (2024) and the Paris AI Summit (2025).
 
-### 残余联邦层
+### Residual federal layer
 
-- **出口管制**：BIS 对 AI 芯片 / 模型权重的出口管制（EAR）
-- **国家安全投资审查**：CFIUS 对中国相关的模型投资 / 训练资源
-- **各行业监管机构**（FDA、CFPB 等）对 AI 的既有权限**不受 EO 14179 影响**
+- **EO 14409**: classified cyber-capability benchmarking and a voluntary federal pre-release interface; it expressly
+  does not create model licensing or preclearance.
+- **Export controls**: BIS controls on AI chips / model weights under the EAR.
+- **National-security investment review**: CFIUS on China-linked investments in model training or compute.
+- **Sectoral regulators** (FDA, CFPB, etc.) retain their existing authority over AI, **unaffected** by EO 14179.
 
-### 州法层（2026-04 重要变化）
+### State-law layer (key change in Apr 2026)
 
-**2025-2026 三部综合性州 AI 法生效**，其中 SB 53 是**全美首部专门针对前沿 AI 的法律**：
+**Three comprehensive state AI laws take effect in 2025–2026**, with SB 53 being **the first US law anywhere dedicated to frontier AI**:
 
-- [**California SB 53**](/subnational/us/california-sb-53-frontier-ai/) (2026-01-01) —
-  Transparency in Frontier AI Act，**10²⁶ FLOP 阈值**（与 Biden EO 14110 同阈值）
-  - 大型前沿开发者（营收 ≥ $500M）须公布 AI 框架、发布透明度报告、报告关键安全事件
-  - 罚款 $1M/violation
-- [**Texas TRAIGA**](/subnational/us/texas-traiga/) (2026-01-01) — 聚焦禁止有害用途，不直接规制前沿
-- [**Colorado AI Act**](/subnational/us/colorado-ai-act/) (2026-06-30) — 高风险 AI 反歧视
+- [**California SB 53**](/subnational/us/california-sb-53-frontier-ai/) (Jan 1, 2026) — Transparency in Frontier AI Act, **10²⁶ FLOP threshold** (same threshold as Biden's EO 14110).
+  - Large frontier developers (revenue ≥ $500M) must publish an AI framework, issue transparency reports, and report critical safety incidents.
+  - Penalty: $1M / violation.
+- [**Texas TRAIGA**](/subnational/us/texas-traiga/) (Jan 1, 2026) — focused on prohibited uses; does not directly regulate frontier models.
+- [**Colorado AI Act**](/subnational/us/colorado-ai-act/) (Jun 30, 2026) — high-risk AI anti-discrimination.
 
-**2025-12 EO 14365 威胁**：Trump 政府明确目标挑战州级 AI 法，SB 53 是首要对象之一。
-法律界预期 2026-Q1/Q2 有联邦诉讼。但行政令**不能独立抢占州法**，各州 AG 均表态继续执法。
+**The Dec 2025 EO 14365 threat**: the Trump administration has explicitly identified state AI laws as targets, with SB 53 high on the list. Federal litigation is expected in Q1–Q2 2026. But an executive order **cannot unilaterally preempt** state law, and state AGs have signaled they will continue to enforce.
 
-## 与中国 / 欧盟的结构差异
+## Structural differences vs. China and the EU
 
-- **中国**：前沿模型 = 大模型服务，走备案 + TC260-003，**强闸门**
-- **欧盟**：GPAI 专章，10²⁵ FLOP 推定，**合规清单 + 行为守则**（[GPAI CoP](/rules/eu/gpai-code-of-practice/) 2025-07 定稿）
-- **美国**：**联邦层面只剩自愿承诺 + 去监管**；**州法层首次设前沿 AI 专法（SB 53）**；
-  联邦 / 州冲突是 2026 主线
+- **China**: frontier models = large-model services, filed through CAC with TC260-003 as the yardstick — **a hard gate**.
+- **EU**: dedicated GPAI chapter, 10²⁵ FLOP presumption, **compliance checklist + code of conduct** ([GPAI CoP](/rules/eu/gpai-code-of-practice/) finalised Jul 2025).
+- **US**: the federal layer combines deregulation with EO 14409's narrow voluntary national-security interface;
+  **state laws introduce dedicated frontier-AI legislation for the first time (SB 53)**; federal-vs-state conflict remains a main narrative for 2026.
 
-**算力阈值对比**：EU 10²⁵ FLOP < US 加州 10²⁶ FLOP。加州阈值**严格 10 倍**，
-导致 SB 53 比 EU GPAI "系统性风险"条款覆盖更窄。
-
+**Compute threshold comparison**: EU 10²⁵ FLOP < US California 10²⁶ FLOP. California's threshold is **ten times stricter**, which makes SB 53's coverage narrower than the EU GPAI "systemic-risk" provision.

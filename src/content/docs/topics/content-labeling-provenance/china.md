@@ -1,54 +1,52 @@
 ---
-title: 中国 — 生成内容标识
-description: 中国对生成式 AI 合成内容的标识义务的横向分析
+title: China — Content Labeling and Provenance
+description: A cross-instrument analysis of labeling obligations for AI-generated synthetic content in China.
 sidebar:
   order: 2
-  label: 中国
+  label: China
 ---
 
-> 📘 **本页为"议题分析"**。具体条文请看对应 [Rules 页](/rules/china/)，
-> 本页只做跨条文的分析与观察。
+> This page is **thematic analysis**. For the actual legal text of each instrument, see the corresponding [rule pages](/rules/china/); this page only synthesises the analysis and observations across rules.
 
-## 相关规则
+## Relevant rules
 
-| 规则 | 层级 | 本站 Rules 页 |
+| Rule | Legal tier | Rule page on this site |
 | --- | --- | --- |
-| 《人工智能生成合成内容标识办法》 (2025) | 部门规章·硬法 | [biaozhi-banfa](/rules/china/biaozhi-banfa/) |
-| 《互联网信息服务深度合成管理规定》 (2023) | 部门规章·硬法 | [deep-synthesis-provisions](/rules/china/deep-synthesis-provisions/) |
-| 《生成式人工智能服务管理暂行办法》 (2023) | 部门规章·硬法 | [generative-ai-interim-measures](/rules/china/generative-ai-interim-measures/) |
-| 《互联网信息服务算法推荐管理规定》 (2022) | 部门规章·硬法 | [algorithm-recommendation-provisions](/rules/china/algorithm-recommendation-provisions/) |
-| GB 45438-2025 | 强制性国标·软法* | [gb-45438-2025-ai-content-labeling-standard](/rules/china/gb-45438-2025-ai-content-labeling-standard/) |
+| *Measures for the Identification of AI-Generated Synthetic Content* 《人工智能生成合成内容标识办法》(2025) | Departmental rule · hard law | [biaozhi-banfa](/rules/china/biaozhi-banfa/) |
+| *Provisions on the Administration of Deep Synthesis Internet Information Services* 《互联网信息服务深度合成管理规定》(2023) | Departmental rule · hard law | [deep-synthesis-provisions](/rules/china/deep-synthesis-provisions/) |
+| *Interim Measures for the Management of Generative Artificial Intelligence Services* 《生成式人工智能服务管理暂行办法》(2023) | Departmental rule · hard law | [generative-ai-interim-measures](/rules/china/generative-ai-interim-measures/) |
+| *Provisions on the Administration of Algorithmic Recommendation of Internet Information Services* 《互联网信息服务算法推荐管理规定》(2022) | Departmental rule · hard law | [algorithm-recommendation-provisions](/rules/china/algorithm-recommendation-provisions/) |
+| GB 45438-2025 | Mandatory national standard · soft law* | [gb-45438-2025-ai-content-labeling-standard](/rules/china/gb-45438-2025-ai-content-labeling-standard/) |
 
-_* 归类理由见 [方法论 §2](/methodology/#hard-vs-soft)_
+_* See [methodology §2](/methodology/#hard-vs-soft) for classification rationale._
 
 ---
 
-## 中国监管对"标识"的三段式演进
+## The three-phase evolution of China's labeling regime
 
-本节是本页的**分析主线**。三步法看懂中国对 AI 合成内容标识的政策演化：
+This is the **analytic spine** of this page — a three-step reading of how China's policy on AI-synthetic-content labeling evolved.
 
-### 第一段（2017–2022）：散见于各法的"应当显著标识"
-- 《网络信息内容生态治理规定》《互联网直播服务管理规定》等零星提到"显著标识"
-- 没有统一术语，没有技术标准，可执行性低
+### Phase 1 (2017–2022): scattered "shall be conspicuously labelled" clauses
 
-### 第二段（2023）：深度合成 + 生成式 AI 两个专项规章奠定原则
-- [《深度合成规定》](/rules/china/deep-synthesis-provisions/)：首次明确服务提供者的**显著标识**义务（第十七条）
-- [《生成式 AI 办法》](/rules/china/generative-ai-interim-measures/)：叠加备案、安全评估与训练数据合规要求
-- 遗留问题：**"标识"具体怎么打？元数据字段是什么？平台如何核验？** 无答案
+- The *Provisions on the Governance of the Online Information Content Ecosystem*, the *Provisions on the Administration of Internet Live Streaming Services*, and others made occasional references to "conspicuous labeling".
+- No unified terminology, no technical standard, low enforceability.
 
-### 第三段（2025）：《标识办法》+ GB 45438 技术落地
-- [《标识办法》](/rules/china/biaozhi-banfa/) 引入**显式+隐式双轨**
-- GB 45438-2025 定义互操作字段
-- 义务主体从服务提供者扩展到**服务方 + 平台 + 用户**三方
+### Phase 2 (2023): two specialised rules establish principles — deep synthesis and generative AI
 
-## 与其他辖区的差别（议题层分析）
+- [*Deep Synthesis Provisions*](/rules/china/deep-synthesis-provisions/): for the first time articulated a service provider's **conspicuous-labeling** obligation (art. 17).
+- [*Generative AI Interim Measures*](/rules/china/generative-ai-interim-measures/): layered in filing, security assessment, and training-data compliance requirements.
+- Open questions: **how exactly should a label be applied? what are the metadata fields? how do platforms verify?** — no answers.
 
-> _这是议题页真正的价值所在。本节不复述条文，只做对照分析。_
+### Phase 3 (2025): the Labeling Measures + GB 45438 translate policy into technical implementation
 
-- **与欧盟 AI Act 第 50 条**：欧盟对 deepfake 有显式艺术/讽刺豁免；中国《标识办法》
-  没有明示例外，实务中如何认定"艺术创作"尚不清楚
-- **与美国州法**：美国以**选举场景 + 非自愿性合成**为主，中国覆盖面**广于**美国
-  但**弱于**欧盟（无风险分级义务）
-- **技术标准前置绑定**是中国独有：GB 45438 与《办法》同步生效，形成
-  "规章 + 国标"的组合拳；美国 NIST 的对应工作停留在自愿框架
+- The [*Labeling Measures*](/rules/china/biaozhi-banfa/) introduce a **dual-track explicit + implicit** regime.
+- GB 45438-2025 defines interoperable fields.
+- Obligor scope expands from service providers to a three-way **service provider + platform + user** allocation.
 
+## Differences from other jurisdictions (thematic-level analysis)
+
+> This is where the topic page adds value. This section does not restate legal text — it offers comparative analysis.
+
+- **Versus EU AI Act art. 50**: the EU contains an explicit art / satire exemption for deepfakes; China's *Labeling Measures* has no express exemption, so how "artistic creation" will be recognised in practice is unclear.
+- **Versus US state law**: US state law centres on **elections + non-consensual synthesis**, and China's coverage is **broader** than the US's but **narrower** than the EU's (no risk-tier obligations).
+- **Ex-ante binding to a technical standard** is a distinctive Chinese feature: GB 45438 enters into force on the same day as the Measures, forming a "departmental rule + national standard" one-two combination; the US NIST counterpart remains at the level of voluntary frameworks.

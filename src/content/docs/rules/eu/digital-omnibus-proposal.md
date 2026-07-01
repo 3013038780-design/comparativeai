@@ -1,136 +1,141 @@
 ---
 title: EU Digital Omnibus Proposal (2025-11)
-description: 欧委会 2025-11-19 发布的"数字简化"立法包，含对 AI Act 高风险条款**推迟最多 16 个月**至 2027-12 的提案
+description: Commission proposal released 2025-11-19 as a "digital simplification" legislative package; includes a proposal to **delay AI Act high-risk provisions by up to 16 months** to 2027-12
 ruleName: Digital Omnibus Package (Proposal) — Commission, 2025-11-19
 issuer: European Commission
 level: eu-proposal
 binding: soft
 effectiveDate: 2026-XX-XX
 publishedDate: 2025-11-19
-originalUrl: https://digital-strategy.ec.europa.eu/en/news-redirect/863840
+originalUrl: https://digital-strategy.ec.europa.eu/news-redirect/863840
 relatedTopics:
   - risk-classification
   - frontier-gpai
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
   label: Digital Omnibus Proposal (2025)
   order: 6
 ---
 
-> **⚠️ 本页跟踪立法提案（尚未通过）**。Digital Omnibus 尚在**欧洲议会和理事会审议中**，
-> 本页基于**2025-11-19 欧委会发布版本**整理。定稿后条款可能调整。
+> **⚠️ This page tracks a legislative proposal (not yet adopted).** The Digital Omnibus is still
+> **under consideration in the European Parliament and Council**. This page is based on the **Commission's
+> 2025-11-19 version**; provisions may change in the final text.
 
-## 中文摘要
+## Summary
 
-**Digital Omnibus Package** 由欧委会于 **2025-11-19** 发布，是一个**横跨多部数字立法的简化包**，
-核心是回应**产业界"监管复杂度过高"和"AI Act 落地准备不足"**的关切。
+The **Digital Omnibus Package**, released by the Commission on **2025-11-19**, is a **simplification package
+spanning several digital laws**. Its core rationale is to respond to industry concerns about **"excessive
+regulatory complexity"** and **"insufficient preparedness for AI Act application."**
 
-**最关键的提议**：**AI Act 高风险系统义务（第 III 章）推迟最多 16 个月至 2027-12**。
+**The most consequential proposal**: **delaying the AI Act high-risk system obligations (Chapter III) by
+up to 16 months to 2027-12.**
 
-## 触发背景
+## Triggering context
 
-到 2025-07-10（AI Act 原定成员国指定国家主管机构的截止日），**27 成员国中仅 3 国完成全部指定**
-（立陶宛、卢森堡、马耳他）。**德法意西奥**等重要国家均未完成。
+By 2025-07-10 (the AI Act's original deadline for member states to designate national competent authorities),
+**only 3 of 27 member states had completed all designations** (Lithuania, Luxembourg, Malta). Key countries
+(Germany, France, Italy, Spain, Austria) had not.
 
-这导致：
-- AI Act 在**缺少国家执法机构**的情况下难以按期 2026-08 全面适用
-- 产业界（尤其中小企业）合规时间压力巨大
-- **美国政治压力**（Trump 行政当局反对 Brussels Effect，推动延期）
+Consequences:
+- AI Act cannot effectively apply in 2026-08 without national enforcement bodies
+- Industry (especially SMEs) faces intense compliance-time pressure
+- **U.S. political pressure** (the Trump administration opposes the Brussels Effect and pushes for delay)
 
-## 核心提议
+## Core proposals
 
-### 1. AI Act 高风险条款延期
+### 1. Delay of AI Act high-risk provisions
 
-**原 2026-08-02 适用**的第 III 章（附件 III 独立用例高风险）**推迟至 2027-12**（最多 16 个月）。
+Chapter III (Annex III standalone high-risk use cases), originally to apply on **2026-08-02**, is
+**deferred to 2027-12** (up to 16 months).
 
-影响条款：
-- 第 6 条高风险分类
-- 第 8-15 条高风险义务矩阵
-- 第 17-27 条提供者 / 部署者义务
-- 第 40-49 条合格评定、登记
+Affected provisions:
+- Article 6 high-risk classification
+- Articles 8-15 high-risk obligation matrix
+- Articles 17-27 provider / deployer obligations
+- Articles 40-49 conformity assessment and registration
 
-**不推迟**：
-- 第 5 条**禁止清单**（2025-02-02 已适用）
-- 第 50 条**透明度义务**（2026-08-02 原定适用）
-- 第 51-56 条 **GPAI 义务**（2025-08-02 已适用）
-- 附件 I 产品嵌入式高风险（原 2027-08-02 适用不变）
+**Not delayed**:
+- Article 5 **prohibited list** (already applicable 2025-02-02)
+- Article 50 **transparency obligations** (scheduled 2026-08-02)
+- Articles 51-56 **GPAI obligations** (already applicable 2025-08-02)
+- Annex I embedded high-risk in products (original 2027-08-02 unchanged)
 
-### 2. 简化合规负担
+### 2. Simplified compliance burden
 
-- **高风险影响评估**的文档要求简化
-- **欧盟数据库登记**的字段数量减少
-- **合格评定**流程的可选项增加
+- Simplified documentation for **high-risk impact assessments**
+- Reduced field count for **EU database** registration
+- More optional paths for **conformity assessment**
 
-### 3. 中小企业支持
+### 3. SME support
 
-- 监管沙盒**全欧强制化**（成员国必须提供）
-- 合规成本补贴
-- 简化模板
+- **EU-wide mandatory** regulatory sandboxes (member states must provide them)
+- Compliance-cost subsidies
+- Simplified templates
 
-### 4. 其他 Digital 立法的小调整
+### 4. Minor adjustments to other Digital legislation
 
-- Data Act 实施细节
-- DSA VLOP 认定阈值复核
-- Cyber Resilience Act 生效过渡期
+- Data Act implementation details
+- DSA VLOP designation threshold review
+- Cyber Resilience Act transition period
 
-## 立法程序
+## Legislative procedure
 
-| 阶段 | 时间（估计） |
+| Stage | Timing (estimated) |
 | --- | --- |
-| 欧委会提案 | 2025-11-19 ✅ |
-| 议会一读立场 | 2026-Q2 / Q3 |
-| 理事会立场 | 2026-Q3 / Q4 |
-| **三方会谈（trilogue）** | 2026-Q4 / 2027-Q1 |
-| 政治协议 | 2027-Q1 / Q2（最早） |
-| **正式通过** | 2027 年中 |
+| Commission proposal | 2025-11-19 ✅ |
+| Parliament first-reading position | 2026-Q2 / Q3 |
+| Council position | 2026-Q3 / Q4 |
+| **Trilogue** | 2026-Q4 / 2027-Q1 |
+| Political agreement | 2027-Q1 / Q2 (earliest) |
+| **Formal adoption** | mid-2027 |
 
-**风险**：如果立法拖到 2026-08 之后，**AI Act 第 III 章按原时间表适用**，然后**追溯性修改**。
+**Risk**: if legislation drags past 2026-08, **AI Act Chapter III applies on the original schedule**
+and would then be **retroactively amended**.
 
-## 争议
+## Controversy
 
-### 支持方（产业界 + 部分成员国）
+### Supporters (industry + some member states)
 
-- **DigitalEurope** 等产业协会：欢迎简化
-- 德法西奥（未完成指定国）：需要更多时间
-- **Meta、Google、Microsoft**：公开支持
-- **美国政府**：积极推动（EO 14179 后的 Trump 外交重点）
+- Industry associations such as **DigitalEurope**: welcome the simplification
+- Germany, France, Spain, Austria (non-designation states): need more time
+- **Meta, Google, Microsoft**: publicly supportive
+- **U.S. government**: actively pushing (a Trump diplomatic priority after EO 14179)
 
-### 反对方（公民社会 + 部分议员 + 部分成员国）
+### Opponents (civil society + some MEPs + some member states)
 
-- **EDRi、Algorithm Watch、Access Now** 等公民社会：视为 Brussels Effect 的倒退
-- **欧洲议会部分 GPAI 倡议议员**：Mueller、Benifei 等公开批评
-- **北欧国家**（瑞典、丹麦、芬兰）：对延期持保留态度
+- **EDRi, Algorithm Watch, Access Now** and other civil society groups: view this as a retreat of the Brussels Effect
+- **Part of the European Parliament's GPAI coalition**: Mueller, Benifei, and others publicly critical
+- **Nordic states** (Sweden, Denmark, Finland): skeptical of the delay
 
-## 对企业的实际影响
+## Practical impact on companies
 
-**短期（2026-04 当前）**：
-- **AI Act 继续按原时间表**生效（GPAI 2025-08 已适用，禁止清单 2025-02 已适用）
-- **GPAI CoP 签署 + 合规**仍是 2026 重点
-- 高风险 AI 系统合规准备**暂不需要提速**（等 Omnibus 定稿）
+**Short term (as of 2026-04)**:
+- **AI Act continues on its original schedule** (GPAI applied 2025-08, prohibited list applied 2025-02)
+- **Signing and complying with the GPAI CoP** remains the focus for 2026
+- High-risk AI system compliance preparation **need not accelerate** (pending Omnibus finalization)
 
-**中期（2026 下半年 - 2027）**：
-- Omnibus 通过 → 高风险条款**推迟至 2027-12**
-- 企业获得额外 16 个月准备期
-- Omnibus 未通过 → **2026-08-02 按原 AI Act 时间表** → 成员国执法分散问题显现
+**Medium term (H2 2026 - 2027)**:
+- Omnibus adopted → high-risk provisions **delayed to 2027-12**; companies gain an extra 16 months of preparation
+- Omnibus not adopted → **2026-08-02 applies per original AI Act schedule** → member-state enforcement fragmentation becomes visible
 
-## 与其他辖区的关系
+## Relationship with other jurisdictions
 
-- **美国 Trump AI Action Plan + EO 14365**：推动 EU 与美国"去监管对齐"
-- **中国 AI 安全治理框架 2.0**（2025-09）：中国选择**自发加速治理体系化**，与 EU 延期形成对照
-- **英国**：持续支持 AI Safety Institute 路径，与 EU 延期区分
+- **U.S. Trump AI Action Plan + EO 14365**: push for EU-U.S. "deregulatory alignment"
+- **China's AI Safety Governance Framework 2.0** (2025-09): China chose **self-initiated acceleration** of systematizing governance — a contrast with EU deferral
+- **UK**: continues to support the AI Safety Institute path, distinct from the EU delay
 
-## 原文与归档
+## Text and archives
 
-| 来源 | 链接 |
+| Source | Link |
 | --- | --- |
-| 欧委会官方新闻 | [digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu/en/news-redirect/863840) |
-| Digital Omnibus 综合解读 | IAPP、Covington、WilmerHale 等 |
-| IIEA EU 数字议程 2025-2026 | [iiea.com/blog/eu-digital-policy-2025-2026](https://www.iiea.com/blog/the-transition-to-a-new-digital-policy-agenda-eu-digital-policy-2025-2026) |
+| Commission official press release | [digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu/news-redirect/863840) |
+| Digital Omnibus comprehensive analysis | IAPP, Covington, WilmerHale, and others |
+| IIEA EU digital agenda 2025-2026 | [iiea.com/blog/eu-digital-policy-2025-2026](https://www.iiea.com/blog/the-transition-to-a-new-digital-policy-agenda-eu-digital-policy-2025-2026) |
 
-## 版本历史
+## Version history
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2025-11-19 | 欧委会发布提案 |
-| 2026-Q2+ | 议会审议（预计） |
-| 2027-年中 | 最早通过日期（如果顺利） |
+| 2025-11-19 | Commission released the proposal |
+| 2026-Q2+ | Parliament consideration (expected) |
+| Mid-2027 | Earliest adoption date (if smooth) |

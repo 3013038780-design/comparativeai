@@ -1,221 +1,209 @@
 ---
-title: 安全框架
-description: OpenAI Preparedness Framework v1 → v2 全景、学术批评（arxiv 2509.24394）、Safety Advisory Group 结构
+title: Safety Framework
+description: Panoramic view of the OpenAI Preparedness Framework v1 → v2, academic critique (arxiv 2509.24394), and structure of the Safety Advisory Group
 sidebar:
   order: 3
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> **快照**：基于 [Preparedness Framework v2.0 (2025-04-15)](https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf)、
-> 2025-2026 博客更新与 [Safety & Security Committee](https://openai.com/index/establishing-a-safety-and-security-committee/) 披露；
-> 结合 **GPT-5.4 首次触发 High cyber（2026-03）** 的实际运转数据。
+> **Snapshot**: based on the [Preparedness Framework v2.0 (15 April 2025)](https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf),
+> 2025–2026 blog updates, and the [Safety & Security Committee](https://openai.com/index/establishing-a-safety-and-security-committee/) disclosures;
+> incorporating actual-operation data from **GPT-5.4's first "High cyber" trigger (March 2026)**.
 
-## 一、Preparedness Framework 是什么
+## 1. What is the Preparedness Framework?
 
-Preparedness Framework 是 OpenAI **自 2023-12 起**发布的**内部风险管理文档**，旨在：
+Published by OpenAI **since December 2023**, the Preparedness Framework is an **internal risk-management document** designed to:
 
-- 定义**前沿能力阈值**（何种能力被视为"前沿风险"）
-- 映射**缓解措施**（一旦触发，需采取哪些部署或安全行动）
-- 建立**决策程序**（谁来判定、谁来签字）
+- Define **frontier capability thresholds** (what capabilities count as "frontier risks")
+- Map **mitigations** (what deployment or security actions must follow a trigger)
+- Establish **decision procedures** (who judges and who signs off)
 
-它**不是 Usage Policy**（用户行为约束）、**不是 Model Spec**（模型行为规范），而是**公司自身训练与部署决策的自律档**——
-与 Anthropic **RSP** 同为"能力门槛型自律"的两大代表。
+It is **not the Usage Policy** (which constrains user behaviour) and **not the Model Spec** (which specifies model behaviour); it is a **self-regulatory archive of the company's own training and deployment decisions** — one of the two principal exemplars of the "capability-threshold self-regulation" genre, alongside Anthropic's **RSP**.
 
-## 二、版本演进
+## 2. Version history
 
-| 版本 | 日期 | 核心结构 | 主要变化 |
+| Version | Date | Core structure | Key changes |
 | --- | --- | --- | --- |
-| **v1.0** | **2023-12-18** | 4 档（Low / Medium / High / Critical）× 4 类别 | 首发；响应 2023-07 白宫 Voluntary Commitments |
-| v1.1 更新 | 2024-05、2024-09 等多次增补 | 同上 | GPT-4o、o1 发布时对评估程序的细化 |
-| **v2.0** | **2025-04-15** | **2 档（High / Critical）× 3 tracked + 5 watched** | **结构性重写**（详见 §三）|
-| v2.1 增补 | 2025-10 | 同 v2.0 | 新增 Sora 2 评估程序 |
-| **v2.2 增补** | **2026-03** | 同 v2.0 | **首次触发**：GPT-5.4 "High cyber" 判定 |
+| **v1.0** | **18 December 2023** | 4 tiers (Low / Medium / High / Critical) × 4 categories | Initial release; responding to the July 2023 White House Voluntary Commitments |
+| v1.1 updates | May 2024, September 2024, multiple addenda | Same | Refinement of evaluation procedures for GPT-4o and o1 |
+| **v2.0** | **15 April 2025** | **2 tiers (High / Critical) × 3 tracked + 5 watched** | **Structural rewrite** (see §3) |
+| v2.1 addendum | October 2025 | Same as v2.0 | Added Sora 2 evaluation procedure |
+| **v2.2 addendum** | **March 2026** | Same as v2.0 | **First trigger**: GPT-5.4 "High cyber" determination |
 
-## 三、v2 架构详解
+## 3. Detailed v2 architecture
 
-### 三类 "Tracked Categories"（正式追踪）
+### Three "Tracked Categories" (formally tracked)
 
-1. **Biological & Chemical（生化能力）**
-   - High 阈值：对**有相关学科基础**的行为者，模型提供"meaningful uplift"实施大规模生物/化学伤害的能力
-   - Critical 阈值：对**无相关基础**的行为者，模型能独立指导实施
-2. **Cybersecurity（网络安全能力）**
-   - High 阈值：对**有基础**的网络操作者显著提升攻击成功率
-   - Critical 阈值：能**独立**发现并利用关键基础设施漏洞
-3. **AI Self-improvement（AI 自我改进）**
-   - High 阈值：能**独立执行**当代 AI 研究工作流的实质性部分
-   - Critical 阈值：能**显著加速**前沿 AI 研究，威胁人类对 AI 发展的控制
+1. **Biological & Chemical**
+   - High threshold: for actors **with relevant disciplinary background**, the model provides "meaningful uplift" capable of executing large-scale biological / chemical harm
+   - Critical threshold: for actors **without relevant background**, the model can independently guide execution
+2. **Cybersecurity**
+   - High threshold: the model materially raises attack success for operators **with baseline capability**
+   - Critical threshold: the model can **independently** discover and exploit critical-infrastructure vulnerabilities
+3. **AI Self-improvement**
+   - High threshold: the model can **independently execute** substantial portions of contemporary AI-research workflows
+   - Critical threshold: the model can **materially accelerate** frontier AI research, threatening human control over AI development
 
-### 五类 "Watched Categories"（观察，未正式触发）
+### Five "Watched Categories" (observed, not formally triggered)
 
-- Long-Range Autonomy（长期自主）
-- Sandbagging（故意表现不佳）
-- Autonomous Replication & Adaptation（自主复制）
-- Undermining Safeguards（削弱安全措施）
-- Nuclear & Radiological（核与放射）—— **在 v1 中是 tracked，v2 降为 watched**
+- Long-Range Autonomy
+- Sandbagging (intentional under-performance)
+- Autonomous Replication & Adaptation
+- Undermining Safeguards
+- Nuclear & Radiological — **tracked in v1, downgraded to watched in v2**
 
-### 阈值判定与响应
+### Threshold determination and response
 
-| 阈值 | 官方描述 | 响应 |
+| Threshold | Official description | Response |
 | --- | --- | --- |
-| **High** | 显著增加现有严重伤害风险路径 | 部署限制 + Safety Advisory Group 审批 |
-| **Critical** | 开启前所未有的严重伤害风险路径 | 暂停部署直至独立安全证明 |
+| **High** | Materially increases existing severe-harm pathways | Deployment restriction + Safety Advisory Group sign-off |
+| **Critical** | Opens previously-unprecedented severe-harm pathways | Suspend deployment pending independent safety evidence |
 
-## 四、v1 → v2 的"稀释"：关键删减
+## 4. The v1 → v2 "dilution": key deletions
 
-| 项目 | v1 | v2 |
+| Item | v1 | v2 |
 | --- | --- | --- |
-| 阈值档数 | 4（Low / Medium / High / Critical）| **2（High / Critical）** |
-| 风险类别数 | 4（+ Persuasion）| 3 tracked + 5 watched |
-| Persuasion 类别 | **Tracked**（Medium 触发可定向操纵）| **降级**（并入 Model Spec 行为侧）|
-| Nuclear & Radiological | Tracked | **降为 Watched** |
-| Pause 承诺 | "如触发 Critical 需暂停部署" | **保留但弱化**（"综合考虑后"）|
-| 外部审查条件 | 明确提及 | 松散（"Safety Advisory Group 可纳入外部顾问"）|
+| Number of threshold tiers | 4 (Low / Medium / High / Critical) | **2 (High / Critical)** |
+| Number of risk categories | 4 (+ Persuasion) | 3 tracked + 5 watched |
+| Persuasion category | **Tracked** (Medium trigger for targeted manipulation) | **Downgraded** (folded into Model Spec behavioural side) |
+| Nuclear & Radiological | Tracked | **Downgraded to Watched** |
+| Pause commitment | "Pause deployment if Critical triggers" | **Retained but softened** ("on consideration") |
+| External review conditions | Explicit | Loose ("the Safety Advisory Group may include external advisors") |
 
-**官方叙事**（[openai.com/safety/preparedness](https://openai.com/safety/)）：
+**Official narrative** ([openai.com/safety/preparedness](https://openai.com/safety/)):
 
-- "聚焦真正高风险的类别"
-- "降低 Low/Medium 的合规负担以不拖慢普通迭代"
-- "Persuasion 已被 Model Spec 和用户层政策更好覆盖"
+- "Focus on genuinely high-risk categories"
+- "Reduce the compliance burden of Low / Medium to avoid slowing routine iteration"
+- "Persuasion is better covered by Model Spec and user-layer policy"
 
-## 五、学术批评：arxiv 2509.24394 与"不保证任何实践"
+## 5. Academic critique: arxiv 2509.24394 and "no guaranteed practice"
 
-2025-09 **arxiv 2509.24394** 《Does OpenAI's Preparedness Framework Make Binding Safety Commitments?》
-（作者含 GovAI 与 SaferAI 研究员）的核心结论：
+The September 2025 paper arxiv 2509.24394, *Does OpenAI's Preparedness Framework Make Binding Safety Commitments?* (authors include GovAI and SaferAI researchers), reaches the headline conclusion:
 
 > The 2025 OpenAI Preparedness Framework does not guarantee any AI risk mitigation practices.
 
-### 论文的四层论证
+### The paper's four-layer argument
 
-1. **"Safeguard sufficiency" 的判定权完全内部**
-   - 框架中反复出现的"**sufficient safeguards**"表述**从未被外部化为可核查标准**
-   - Safety Advisory Group 的成员名单未完整公开
-2. **"综合考虑"条款允许事后重新解释**
-   - 文本中的 "weighing considerations including capability, deployment scope, ..." 让任何缓解决策都可被合法化
-3. **"能力—缓解"映射不是硬绑定**
-   - 达到 High 不自动触发特定措施；文本使用 "may include" 而非 "shall"
-4. **全文无"shall not deploy" 类硬禁止**
-   - 与 Anthropic RSP v2 原版的 pause commitment 形成对照；v2 **连这个都没有**
+1. **"Safeguard sufficiency" adjudication is entirely internal**
+   - The repeated phrasing "**sufficient safeguards**" is **never externalised as an auditable standard**
+   - The full Safety Advisory Group membership is not publicly disclosed
+2. **The "on consideration" clause allows ex post re-interpretation**
+   - The text's "weighing considerations including capability, deployment scope, ..." allows any mitigation decision to be legitimated
+3. **The "capability–mitigation" mapping is not a hard binding**
+   - Reaching High does not automatically trigger a specific measure; the text uses "may include" rather than "shall"
+4. **The text contains no "shall not deploy" hard prohibitions**
+   - A contrast with the original pause commitment in Anthropic RSP v2; v2 **lacks even that**
 
-### 其他学术与政策批评
+### Other academic and policy critique
 
-- **Zvi Mowshowitz**（*Don't Worry About the Vase*）系列文章：逐版本拆解 v1 vs. v2 用词变化；
-  典型论点是 v2 更接近营销文档而非实际风险框架
-- **Stuart Russell**（UC Berkeley）在 2025 年多次公开访谈中把 Preparedness v2 与 RSP v3 并列为
-  行业自律的系统性退却
-- **FLI**（Future of Life Institute）*AI Safety Index* 在 v2 发布后对 OpenAI Preparedness 的评分有显著下调
-- **Markus Anderljung**（GovAI Director）2025 年多次评论指出：
-  缺乏硬约束文本的自愿承诺在竞争压力下难以维持
+- **Zvi Mowshowitz** (*Don't Worry About the Vase*): version-by-version breakdown of v1 vs. v2 wording changes; characteristic argument that v2 reads closer to marketing than to an operative risk framework
+- **Stuart Russell** (UC Berkeley): in repeated 2025 interviews, treats Preparedness v2 alongside RSP v3 as a systemic retreat in industry self-regulation
+- **FLI** (Future of Life Institute) *AI Safety Index*: OpenAI Preparedness's score was materially reduced after v2 release
+- **Markus Anderljung** (GovAI Director): repeated 2025 commentary noting that voluntary commitments without hard-constraint text are unsustainable under competitive pressure
 
-## 六、v2 首次运转：GPT-5.4 "High cyber" 案例（2026-03）
+## 6. v2's first operation: GPT-5.4 "High cyber" case (March 2026)
 
-2026-03 GPT-5.4 发布时，OpenAI 官方 blog 《Deploying GPT-5.4 under Preparedness Framework v2》宣布：
+On release of GPT-5.4 in March 2026, the official OpenAI blog "Deploying GPT-5.4 under Preparedness Framework v2" announced:
 
 > Following Preparedness evaluations, **GPT-5.4 has been assessed at High capability in the Cybersecurity category**.
 
-响应措施：
+Response measures:
 
-1. **部署分层**
-   - ChatGPT 面：**阻断**逆向工程、漏洞利用请求
-   - API：**Trusted Access Program**（TAP），面向经人工核验的安全研究员开放
-   - **GPT-5.4-Cyber**（2026-04-14）：独立 endpoint，完整 cyber 能力
-2. **异步监控**
-   - ZDR（Zero Data Retention）客户：异步阻断 + 事后审计
-3. **Trusted Access 核验机制**
-   - 身份验证 + 雇主证明 + 用途声明 + NDA
-   - 核验通过者规模数量级尚未官方披露（仅有非正式报道估算）
+1. **Tiered deployment**
+   - ChatGPT surface: **blocks** reverse-engineering and exploit-development requests
+   - API: **Trusted Access Program** (TAP), open only to security researchers vetted by human review
+   - **GPT-5.4-Cyber** (14 April 2026): stand-alone endpoint with full cyber capabilities
+2. **Asynchronous monitoring**
+   - Zero Data Retention (ZDR) customers: asynchronous blocking + ex post audit
+3. **Trusted Access vetting**
+   - Identity verification + employer verification + use-case declaration + NDA
+   - Order of magnitude of approved vettings not officially disclosed (only informal press estimates)
 
-### 批评：阈值触发 ≠ 限制能力
+### Critique: triggering the threshold ≠ restricting the capability
 
-- **Apollo Research** 2026-04 博客：TAP 的核验强度**低于** Anthropic Claude Opus 4.7 "safeguarded deployment" 的对应机制
-- **SaferAI**：High 触发后的缓解**主要是访问控制层**，模型本身的 uplift 未被削减
-- **UK CAISI**（原 AISI）：在 pre-deployment 测试中已提出**更严格的部署建议**，但 OpenAI 选择了较弱版本
+- **Apollo Research** April 2026 blog post: TAP vetting strength is **lower than** Anthropic's equivalent "safeguarded deployment" mechanism for Claude Opus 4.7
+- **SaferAI**: post-High mitigations are **primarily at the access-control layer**; the model's underlying uplift has not been reduced
+- **UK CAISI** (formerly UK AISI): proposed **stricter deployment recommendations** in pre-deployment testing; OpenAI opted for a weaker variant
 
-## 七、治理结构：Safety Advisory Group 与 Safety & Security Committee
+## 7. Governance structure: Safety Advisory Group and Safety & Security Committee
 
-### Safety Advisory Group（SAG）
+### Safety Advisory Group (SAG)
 
-- **组成**：内部安全团队负责人 + 少量外部顾问（具体名单**非完整公开**）
-- **职能**：对 Preparedness 评估结论与部署决策**出具建议**
-- **权限边界**：**非否决权**——最终决策仍在 CEO 与 Safety & Security Committee
+- **Composition**: internal safety team leads + a small number of external advisors (full membership **not fully public**)
+- **Function**: advises on Preparedness evaluation conclusions and deployment decisions
+- **Authority boundary**: **no veto authority** — final decisions rest with the CEO and the Safety & Security Committee
 
-### Safety & Security Committee（SSC，2024-05 设立）
+### Safety & Security Committee (SSC, established May 2024)
 
-| 项目 | 细节 |
+| Item | Detail |
 | --- | --- |
-| 设立背景 | **Superalignment 团队解散**（2024-05）、Jan Leike / Sutskever 离职后成立 |
-| 首任主席 | **Sam Altman**（CEO 兼任）|
-| 2024-09 主席轮换 | **Zico Kolter**（CMU）接任主席；Altman 转为"成员" |
-| 成员 | Kolter、Bret Taylor（董事长）、Adam D'Angelo、Nicole Seligman |
-| 权限 | 审查安全事项、向董事会报告 |
-| 争议 | 成员**同时**是董事会成员 → 独立性存疑 |
+| Context of founding | Established after the **dissolution of the Superalignment team** (May 2024) and the departures of Jan Leike / Sutskever |
+| First chair | **Sam Altman** (concurrent with CEO) |
+| September 2024 chair rotation | **Zico Kolter** (CMU) assumes the chair; Altman shifts to "member" |
+| Members | Kolter, Bret Taylor (board chair), Adam D'Angelo, Nicole Seligman |
+| Authority | Review safety matters; report to the board |
+| Controversy | Members are **simultaneously** board members → independence in question |
 
-**结构性批评**（Helen Toner 2024 TED talk、Tim O'Reilly、Gary Marcus）：
+**Structural critiques** (Helen Toner 2024 TED talk, Tim O'Reilly, Gary Marcus):
 
-- SSC "自评自"问题：与其说是独立监督，不如说是**公司内部的安全汇报机制**
-- 2023-11 董事会事件后，**有外部独立判断能力的成员（Toner、McCauley）已离开**
-- 相比之下，**Anthropic Long-Term Benefit Trust** 至少在正式权限上有"罢免董事"的路径；OpenAI 2024-2025 重组**削弱**了非营利主体对商业主体的制衡
+- SSC's "self-evaluation" problem: less an independent oversight body than **an internal company safety-reporting mechanism**
+- After the November 2023 board episode, **members with external independent judgement (Toner, McCauley) had departed**
+- By contrast, the **Anthropic Long-Term Benefit Trust** has, in formal authority at least, a "director-removal" pathway; OpenAI's 2024–2025 restructuring has **weakened** the check that the non-profit body holds over the commercial entity
 
-## 八、与其他前沿实验室的对比
+## 8. Comparison with peer frontier labs
 
-| 维度 | OpenAI Preparedness v2 | Anthropic RSP v3 | Google DeepMind FSF v3 | xAI |
+| Dimension | OpenAI Preparedness v2 | Anthropic RSP v3 | Google DeepMind FSF v3 | xAI |
 | --- | --- | --- | --- | --- |
-| 发布日 | 2025-04-15 | 2026-02-24 | 2026-04 | 无 |
-| 架构 | 风险类别 × 2 档阈值 | ASL 能力等级 | CCL + TCL | 无 |
-| Pause 承诺 | **弱**（"必要时"）| **已撤销** | 无明确 | — |
-| 外部审查 | SAG（含外部）| Risk Reports 外部审查 | FSF 报告发布 | — |
-| 首次触发案例 | **GPT-5.4 High cyber（2026-03）** | Claude Opus 4 ASL-3 生化（2025-05）| Gemini 3 Pro TCL 操纵（2025-11）| — |
-| 学术批评核心 | arxiv 2509.24394 | 放弃 pause | TCL 门槛模糊 | 无框架 |
+| Release date | 15 April 2025 | 24 February 2026 | April 2026 | None |
+| Architecture | Risk categories × 2-tier thresholds | ASL capability levels | CCL + TCL | None |
+| Pause commitment | **Weak** ("if necessary") | **Rescinded** | No explicit commitment | — |
+| External review | SAG (includes external members) | Risk Reports with external review | FSF-report publication | — |
+| First trigger case | **GPT-5.4 High cyber (March 2026)** | Claude Opus 4 ASL-3 biochem (May 2025) | Gemini 3 Pro TCL manipulation (November 2025) | — |
+| Core academic critique | arxiv 2509.24394 | Abandonment of pause | TCL thresholds ambiguous | No framework |
 
-### 共同模式：2025-2026 的"松动"
+### Common pattern: the "loosening" of 2025–2026
 
-三家都经历了不同方向的**承诺退却**：
+All three labs have retreated from commitments, in different directions:
 
-- **Anthropic**：撤销 pause，转向"行业共同义务"
-- **OpenAI**：合并阈值，降低 Nuclear/Persuasion 优先级
-- **DeepMind**：2024 删除 Gemini "military prohibition"，2025 扩大 CCL 但 pause 承诺缺失
+- **Anthropic**: rescinded pause; shifted to "industry-shared obligation"
+- **OpenAI**: consolidated thresholds; downgraded Nuclear / Persuasion priority
+- **DeepMind**: deleted Gemini "military prohibition" (2024); expanded CCL (2025) but without pause
 
-**结构性启示**：自律框架在**无硬法托底**时，**竞争压力会让最弱承诺成为共同底线**（race-to-the-bottom 动力学）——
-这是 Mowshowitz、Anderljung、Toner 等一致的观察，也是加州 SB 53、EU AI Act 第 55 条、**欲求立法的存在理由**。
+**Structural implication**: absent hard-law backstops, **competitive pressure drives the weakest commitment to become the common floor** (race-to-the-bottom dynamics) — the consistent observation of Mowshowitz, Anderljung, Toner, and the same reasoning behind California SB 53, Article 55 of the EU AI Act, and other proposed legislation.
 
-## 九、与硬法的衔接
+## 9. Interface with hard law
 
-| 法规 | 衔接条款 | Preparedness 的角色 |
+| Regime | Relevant provisions | Role of Preparedness |
 | --- | --- | --- |
-| **EU AI Act** | Art. 55 systemic risk mitigation | 作为"state-of-the-art"缓解实践的合规引证 |
-| **EU GPAI Code of Practice** | Safety & Security 章节 | OpenAI **部分保留**（未全部接受 Chapter 义务）|
-| **加州 SB 53** | §22757.11 frontier developer protocol | Preparedness 可作为"written protocol" |
-| **White House Voluntary Commitments (2023-07)** | 能力评估承诺 | Preparedness 是合规证明 |
-| **Seoul Commitments (2024-05)** | Frontier AI safety commitments | 16 家公司共同框架，Preparedness 作为 OpenAI 的对应文件 |
+| **EU AI Act** | Art. 55 systemic-risk mitigation | Citable as "state-of-the-art" mitigation practice for compliance |
+| **EU GPAI Code of Practice** | Safety & Security chapter | OpenAI **partially reserves** (has not fully accepted chapter obligations) |
+| **California SB 53** | §22757.11 frontier-developer protocol | Preparedness may serve as the required "written protocol" |
+| **White House Voluntary Commitments (July 2023)** | Capability-evaluation commitments | Preparedness provides compliance evidence |
+| **Seoul Commitments (May 2024)** | Frontier AI safety commitments | Preparedness is OpenAI's corresponding document under this 16-company framework |
 
-## 十、产业实务：Preparedness 如何影响部署决策
+## 10. Industry practice: how Preparedness shapes deployment decisions
 
-以下是从公开信息归纳的**实际决策链条**：
+The following is inferable from public information as the **actual decision chain**:
 
-1. **模型预训练完成** → 内部 eval + 基础能力基准
-2. **Preparedness Team 评估** → 对 3 tracked + 5 watched 类别打分
-3. **外部红队（METR / Apollo / UK CAISI / US CAISI）独立评估** → 提交报告
-4. **SAG 审议** → 写建议书
-5. **SSC 审批 + CEO 签字** → 决定部署范围
-6. **发布 System Card + Preparedness 表格** → 对外披露结论
-7. **持续监控** → 部署后再评估（如 GPT-5.4 → 增补 v2.2）
+1. **Pre-training complete** → internal eval + baseline capability benchmarks
+2. **Preparedness Team evaluates** → scoring the 3 tracked + 5 watched categories
+3. **External red team evaluations (METR / Apollo / UK CAISI / US CAISI)** → reports submitted
+4. **SAG deliberation** → advisory memorandum
+5. **SSC approval + CEO sign-off** → deployment scope decided
+6. **Release of System Card + Preparedness tables** → public disclosure of the conclusions
+7. **Ongoing monitoring** → post-deployment re-evaluation (GPT-5.4 → v2.2 addendum)
 
-**观察到的 gating 案例**：
+**Gating cases observed**:
 
-- **o1 发布（2024-12）**：Apollo 披露的"scheming"结论导致部署方式调整（禁用某些 tool use、增加 CoT 监控）
-- **Sora 2（2025-09）**：Safety Systems 在影响力操作、儿童安全方面的评估导致数周级发布推迟
-- **GPT-5.4（2026-03）**：因 High cyber 触发，部署从默认 ChatGPT 全量**延后数周**转 TAP 模式
+- **o1 release (December 2024)**: Apollo's disclosed "scheming" results led to deployment adjustments (disabling certain tool-use, adding CoT monitoring)
+- **Sora 2 (September 2025)**: Safety Systems' influence-operations and child-safety evaluations delayed release by weeks
+- **GPT-5.4 (March 2026)**: the High-cyber trigger delayed default ChatGPT roll-out **by several weeks** and moved distribution to TAP mode
 
-这些说明 Preparedness **确实影响了日程**，但**未影响最终是否发布**——与 Anthropic 对 Opus 4 **延后 ASL-3 激活**、
-DeepMind **Gemini 3 对 CBRN 类 rollout 分阶段**的对比中，OpenAI 的 Preparedness 在"停止"上依然是最弱的。
+These illustrate that Preparedness **has affected timing** but **has not affected whether to release**. Contrasted with Anthropic's **delayed ASL-3 activation** for Opus 4, or DeepMind's **staged CBRN roll-out** for Gemini 3, OpenAI's Preparedness remains the weakest on "stopping."
 
-## 十一、延伸阅读
+## 11. Further reading
 
-- **一手**：[Preparedness Framework v2 PDF](https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf)、
-  [SSC 公告](https://openai.com/index/establishing-a-safety-and-security-committee/)、
-  [Preparedness blog index](https://openai.com/safety/)
-- **学术**：**arxiv 2509.24394**；Anderljung et al., *Frontier AI Regulation* (2023, arxiv 2307.03718)；
-  Hendrycks et al., *An Overview of Catastrophic AI Risks* (2023, arxiv 2306.12001)
-- **批评**：Zvi Mowshowitz, *OpenAI Delenda Est* 系列；Helen Toner, TED 2024；
-  FLI AI Safety Index 2025；*TIME*, "Inside OpenAI's Safety Shake-up" (2024-06)
-- **本站交叉**：[OpenAI 概况](./)、[红队与评估披露](./red-team-disclosures/)、[Anthropic 安全框架](/companies/anthropic/safety-framework/)、
-  [方法论](/methodology/)
+- **Primary**: [Preparedness Framework v2 PDF](https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf); [SSC announcement](https://openai.com/index/establishing-a-safety-and-security-committee/); [Preparedness blog index](https://openai.com/safety/)
+- **Academic**: arxiv 2509.24394; Anderljung et al., *Frontier AI Regulation* (2023, arxiv 2307.03718); Hendrycks et al., *An Overview of Catastrophic AI Risks* (2023, arxiv 2306.12001)
+- **Critique**: Zvi Mowshowitz, *OpenAI Delenda Est* series; Helen Toner TED 2024; FLI AI Safety Index 2025; *TIME*, "Inside OpenAI's Safety Shake-up" (June 2024)
+- **Cross-references**: [OpenAI overview](./), [red-team disclosures](./red-team-disclosures/), [Anthropic safety framework](/companies/anthropic/safety-framework/), [methodology](/methodology/)

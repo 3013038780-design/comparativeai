@@ -1,119 +1,121 @@
 ---
-title: 月之暗面 Moonshot AI (Kimi)
-description: 月之暗面概况 —— Kimi K2.5 与中国 AI 创业公司的快速崛起（2026-04-22）
+title: Moonshot AI 月之暗面 (Kimi)
+description: Moonshot 月之暗面 profile — Kimi K2.5 and the rapid rise of Chinese AI-native startups (2026-06-28)
 sidebar:
   order: 11
-  label: 月之暗面 Moonshot
-snapshotDate: 2026-04-22
+  label: Moonshot 月之暗面
+snapshotDate: 2026-06-28
 ---
 
-## 公司概况
+## Company profile
 
-- **成立**：2023-03（创始人 **杨植麟**，清华 + CMU 背景，曾在 Meta AI 实习）
-- **总部**：北京
-- **主要产品**：**Kimi**（消费者 / API）
-- **模型系列**：
-  - **Kimi K1**（2024）：**200 万字超长上下文**成名作
-  - **Kimi K1.5**（2025-01-20）：**数学 / 编程 / 多模态推理**达 OpenAI o1 水平
-  - **Kimi K2**（2025-07）：**1 万亿参数 MoE / 320 亿激活**，开源权重
-  - **Kimi K2.5**（2026-01-27）：最新开源旗舰，1T / 32B active
-  - **Kimi-K2-Instruct-0905**（2025-09）：256K token 上下文
-  - **Kimi Linear**（线性注意力，128K-1M 长上下文**解码速度提升 5-6 倍**）
-  - **Kimi K2.6 Code Preview**（2026 Q2，即将发布的代码 / Agent 模型）
-  - **Kimi K3**（研发中，目标 3-4 万亿参数）
-- **商业模式**：消费者订阅（Kimi App）+ API + 企业定制
-- **融资**：2025-12 **IDG 领投 $5亿 C 轮**，腾讯 / 阿里 / 王慧文跟投；2026-03 **评估赴港 IPO**
+- **Founded**: 2023-03 (founder **Yang Zhilin 杨植麟**, Tsinghua + CMU background, formerly an intern at Meta AI)
+- **Headquarters**: Beijing
+- **Main product**: **Kimi** (consumer / API)
+- **Model series**:
+  - **Kimi K1** (2024): **2-million-character super-long context**, the breakout model
+  - **Kimi K1.5** (2025-01-20): **math / coding / multimodal reasoning** at OpenAI o1 level
+  - **Kimi K2** (2025-07): **1-trillion-parameter MoE / 32B active**, open weights
+  - **Kimi K2.5** (2026-01-27): the latest open flagship, 1T / 32B active
+  - **Kimi-K2-Instruct-0905** (2025-09): 256K-token context
+  - **Kimi Linear** (linear attention; 128K–1M long context **with 5–6× decoding speedup**)
+  - **Kimi K2.6 Code Preview** (2026 Q2, forthcoming code / agent model)
+  - **Kimi K3** (in development, targeting 3–4 trillion parameters)
+- **Business model**: consumer subscription (Kimi app) + API + enterprise customisation
+- **Funding**: **$500M Series C led by IDG in 2025-12**, with Tencent / Alibaba / Wang Huiwen 王慧文 following on; **Hong Kong IPO under evaluation in 2026-03**
 
-## 战略定位：**长上下文 + 开源追赶 + 快速货币化**
+## Strategic positioning: **long context + open-source catch-up + rapid monetisation**
 
-### 长上下文立命
+### Built on long context
 
-Kimi K1 (2024) 以 **200 万字中文上下文**在中国一炮而红，成为月之暗面核心技术标签：
-- Kimi Linear 把长上下文推向**技术前沿**（线性注意力的实用化）
-- 长文档分析、长对话记忆成为 Kimi 的独特能力
-- **相对 Claude / GPT 的差异化**在于中文 + 超长上下文的组合
+Kimi K1 (2024) broke out in China with a **2-million-character Chinese context**, cementing long context
+as Moonshot's core technology signature:
+- Kimi Linear pushes long context toward the **technical frontier** (productising linear attention)
+- Long-document analysis and long-dialogue memory became Kimi's distinctive capabilities
+- **Differentiation from Claude / GPT** rests on the combination of Chinese-language strength and ultra-long context
 
-### 用户规模的过山车
+### Rollercoaster user base
 
-| 时间 | MAU | 备注 |
+| Period | MAU | Notes |
 | --- | --- | --- |
-| 2025 Q1 | **2,165 万** | 峰值 |
-| 2025 Q4 | **903 万** | **下降约 58%**，被豆包 / DeepSeek 等抢占 |
-| 2026 Q1 | Kimi K2.5 发布后 | **付费订单环比暴涨 8280%（2026-01）+ 123.8%（2026-02）** |
+| 2025 Q1 | **21.65 million** | Peak |
+| 2025 Q4 | **9.03 million** | **~58% decline**, share lost to Doubao / DeepSeek |
+| 2026 Q1 | after Kimi K2.5 launch | **Paid orders +8,280% m/m (2026-01), +123.8% (2026-02)** |
 
-**意义**：Kimi 用户规模下降但**付费能力急剧上升**——**C 端 ARR 突破 $1 亿**（K2.5 发布一个月后）。
-这是中国 AI 消费者产品**从流量转向价值**的典型案例，**在 Stripe 全球榜单从百名外冲到第九**。
+**Significance**: Kimi's user base fell but **paid capacity surged** — **C-end ARR broke $100M** (one month
+after K2.5 launch). A typical case of Chinese AI consumer products **moving from traffic to value**, and
+**Kimi jumped from outside the top-100 to #9 on Stripe's global ranking**.
 
-### 开源策略
+### Open-source strategy
 
-Kimi K2 / K2.5 均**完整开源权重**（HuggingFace）：
-- 与阿里 Qwen、DeepSeek 形成**中国开源三强**
-- 相比 Qwen 的"生态获客"和 DeepSeek 的"极限开源"，Kimi 更偏向**技术品牌**
-- 开源吸引国际 AI 研究社区关注 → 提升国内融资和估值
+Both Kimi K2 and K2.5 were fully open-sourced (HuggingFace):
+- With Alibaba Qwen and DeepSeek, forms the **"big three" of Chinese open source**
+- Relative to Qwen's "ecosystem acquisition" and DeepSeek's "maximalist open source," Kimi leans toward **technical brand**
+- Open source attracts international AI research attention → supports domestic funding and valuation
 
-## 深度分析：**中国 AI 创业公司中的商业化样板**
+## Deep dive: **a commercialisation exemplar among Chinese AI-native startups**
 
-### 中国 AI 创业公司内部的分化
+### Differentiation within the Chinese AI-native-startup cohort
 
-2024 年后中国 AI 创业公司出现显著分化：
+Since 2024, clear differentiation has emerged among Chinese AI-native startups:
 
-| 公司 | 2026-04 状态 | 主要叙事 |
+| Company | Status as of 2026-04 | Primary narrative |
 | --- | --- | --- |
-| **智谱 ZhipuAI** | **港股已上市**（2513.HK） | 国家队 + 学术出身 |
-| **月之暗面 Moonshot** | 筹备港股 + C 端 ARR $1亿 | 长上下文 + 付费突围 |
-| **MiniMax** | 海外爆款（Talkie） | 多模态 + 出海 |
-| **百川智能 Baichuan** | 医疗垂直转型 | B 端场景化 |
-| **阶跃星辰 StepFun** | 多模态竞赛 | Step-2 旗舰模型 |
-| **零一万物 01.AI** | 2024 起业务整合争议 | 李开复创办 |
+| **ZhipuAI 智谱** | **Listed on HKEX (2513.HK)** | National team + academic heritage |
+| **Moonshot 月之暗面** | Hong Kong IPO prep + C-end ARR $100M | Long context + paid breakout |
+| **MiniMax** | Overseas hit (Talkie) | Multimodal + going global |
+| **Baichuan 百川智能** | Pivot to healthcare vertical | B2B scenario-driven |
+| **StepFun 阶跃星辰** | Multimodal competition | Step-2 flagship |
+| **01.AI 零一万物** | Business consolidation controversy since 2024 | Founded by Lee Kai-Fu 李开复 |
 
-**月之暗面的突出性**：
-- 单一旗舰产品（Kimi）驱动 ARR 增长
-- 付费转化率高于同行
-- C 端消费者认知度高
+**What makes Moonshot stand out:**
+- A single flagship product (Kimi) drives ARR growth
+- Paid conversion higher than peers
+- High C-end brand recognition
 
-### 自律立场
+### Self-regulation posture
 
-与其他中国公司一致，月之暗面**无独立安全框架**：
-- Kimi 各版本通过 **CAC 算法备案**
-- TC260-003-2024 合规
-- Kimi K2/K2.5 技术报告含局部安全评估
-- **GPAI CoP 未签**
+Consistent with other Chinese companies, Moonshot **has no standalone safety framework**:
+- Each Kimi version is filed with the **CAC**
+- TC260-003-2024 compliance
+- Kimi K2 / K2.5 technical reports include some safety-evaluation disclosure
+- **GPAI CoP not signed**
 
-但筹备港股 IPO 意味着**披露义务升级**——类似智谱的路径，月之暗面 2026-2027 可能成为**中国 AI 治理透明度的重要观察对象**。
+But a planned Hong Kong IPO implies **upgraded disclosure obligations** — like Zhipu's path, Moonshot in
+2026–2027 may become an **important observation site for Chinese AI governance transparency**.
 
-### 与国际对手的对比
+### Compared with international peers
 
-- **对比 Anthropic Claude**：长上下文相当（Claude 200K），但 Kimi 中文优势明显
-- **对比 OpenAI**：C 端付费能力追赶
-- **对比 Meta Llama / Mistral**：开源策略类似，但聚焦中文市场
+- **vs. Anthropic Claude**: comparable long-context length (Claude 200K), but Kimi has a clear Chinese-language advantage
+- **vs. OpenAI**: catching up on C-end paid capacity
+- **vs. Meta Llama / Mistral**: similar open-source strategy, but focused on the Chinese-language market
 
-## 公开政策文档快照
+## Policy document snapshot
 
-| 类型 | 文档名 | 链接 | 本站子页 |
+| Type | Document | Link | Subpage |
 | --- | --- | --- | --- |
-| 使用政策 | Kimi 用户协议 + 隐私政策 | [moonshot.cn](https://www.moonshot.cn/) / [kimi.moonshot.cn](https://kimi.moonshot.cn/) | — |
-| 技术报告 | Kimi K1.5 / K2 / K2.5 Technical Reports | arXiv + GitHub | — |
-| 开源模型 | Kimi K2 / K2.5 GitHub | [github.com/MoonshotAI](https://github.com/MoonshotAI) | — |
-| 透明度 | CAC 算法备案 + （未来港股披露）| [cac.gov.cn](https://www.cac.gov.cn/) | — |
+| Usage policy | Kimi user agreement + privacy policy | [moonshot.cn](https://www.moonshot.cn/) / [kimi.moonshot.cn](https://kimi.moonshot.cn/) | — |
+| Technical reports | Kimi K1.5 / K2 / K2.5 Technical Reports | arXiv + GitHub | — |
+| Open-source models | Kimi K2 / K2.5 GitHub | [github.com/MoonshotAI](https://github.com/MoonshotAI) | — |
+| Transparency | CAC algorithm filings + (future HKEX disclosures) | [cac.gov.cn](https://www.cac.gov.cn/) | — |
 
-## 监管合规位置
+## Regulatory-compliance posture
 
-- **中国**：
-  - Kimi 多版本 CAC 算法备案
-  - TC260-003-2024 合规
-  - 内容审核人员规模较同行小（Kimi 为聊天助手，非内容生成平台）
-- **美国**：
-  - Kimi 开源权重美国可下载
-  - 未在美国提供消费者服务
-- **欧盟**：
-  - 同上
-  - GPAI CoP 未签
-- **日本 / 东南亚**：2025 起探索出海
+- **China**:
+  - Multiple CAC algorithm filings for Kimi versions
+  - TC260-003-2024 compliance
+  - Content-moderation headcount is smaller than peers (Kimi is a chat assistant, not a content-generation platform)
+- **United States**:
+  - Kimi open weights downloadable in the U.S.
+  - No U.S. consumer services
+- **European Union**:
+  - Same as above
+  - GPAI CoP not signed
+- **Japan / Southeast Asia**: exploring overseas expansion since 2025
 
-## 公司立场速览
+## Company posture, in brief
 
-- **技术品牌导向**：长上下文、Agent、编码能力竞争
-- **商业化激进**：C 端付费突围 + 港股 IPO 筹备
-- **开源友好**：Kimi K2 系列完整开源
-- **融资高度国际化**：$5亿 C 轮（2025-12）标志二级市场路径
-
+- **Technical-brand orientation**: competitive focus on long context, agents, and coding
+- **Aggressive commercialisation**: C-end paid breakout + Hong Kong IPO prep
+- **Open-source friendly**: Kimi K2 series fully open-sourced
+- **Highly internationalised funding**: $500M Series C (2025-12) signals a secondary-market path

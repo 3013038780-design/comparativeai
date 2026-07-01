@@ -1,6 +1,6 @@
 ---
 title: Executive Order 14179 — Removing Barriers to American Leadership in AI
-description: 特朗普政府 2025-01-23 签署的 AI 执行令，撤销 EO 14110 并启动为期 180 天的 AI 行动计划；表明美国联邦 AI 政策方向从 "安全优先" 转向 "领导力优先"
+description: Trump administration AI executive order signed 2025-01-23; revokes EO 14110 and launches a 180-day AI Action Plan, marking a pivot in federal AI policy from "safety first" to "leadership first"
 ruleName: Executive Order 14179 — Removing Barriers to American Leadership in Artificial Intelligence
 issuer: The White House (President Donald J. Trump)
 level: executive-order
@@ -11,89 +11,95 @@ originalUrl: https://www.whitehouse.gov/presidential-actions/2025/01/removing-ba
 relatedTopics:
   - frontier-gpai
   - risk-classification
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
   label: EO 14179 (2025, Trump)
   order: 1
 ---
 
-## 中文摘要
+## Summary
 
-**第 14179 号行政令《消除美国人工智能领导力障碍》** 由特朗普总统于 2025-01-23 签署，
-取代并撤销拜登 2023 年的 EO 14110。核心内容：
+**Executive Order 14179 — "Removing Barriers to American Leadership in Artificial Intelligence"**, signed
+by President Trump on 2025-01-23, supersedes and revokes Biden's 2023 EO 14110. Its core moves:
 
-1. **政策重设**：美国 AI 政策目标从"安全与权利保护"重设为"**维持和增强美国在 AI 的全球主导地位**"
-2. **撤销 EO 14110**：拜登行政令连同其子文件（含 OMB M-24-10 的部分指引、NIST AI Safety 
-   Institute 相关指示）被撤销或要求审查
-3. **180 天行动计划**：国家安全顾问、科学技术政策办公室（OSTP）、国家经济委员会主任等在
-   180 天内提交"美国 AI 行动计划"
-4. **审查监管障碍**：各部委清查撤销 EO 14110 下发布的政策 / 指引 / 规章中"阻碍美国 AI 领导力"的内容
+1. **Policy reset**: U.S. AI policy is re-oriented from "safety and rights protection" toward **"sustaining
+   and enhancing America's global dominance in AI"**
+2. **Revocation of EO 14110**: the Biden order and its subsidiary instruments (parts of OMB M-24-10, NIST
+   AI Safety Institute-related directives) are revoked or flagged for review
+3. **180-day Action Plan**: the National Security Advisor, Office of Science & Technology Policy (OSTP),
+   and Director of the National Economic Council are to deliver an "America's AI Action Plan" within 180 days
+4. **Review of regulatory barriers**: agencies are to identify and rescind policies, guidance, and rules
+   issued under EO 14110 that "obstruct American AI leadership"
 
-## 英文一句话摘要
+## English one-liner
 
 EO 14179 (Jan 23, 2025) revokes EO 14110 and orders a 180-day AI Action Plan to remove
 regulatory obstacles to U.S. AI leadership — a pivot in federal AI posture from "safety
 and rights" toward "dominance and innovation."
 
-## 核心指令
+## Core directives
 
-### 第一条 · 政策
+### Section 1 · Policy
 
 > It is the policy of the United States to sustain and enhance America's global AI dominance
 > in order to promote human flourishing, economic competitiveness, and national security.
 
-### 第二条 · 撤销 EO 14110
+### Section 2 · Revocation of EO 14110
 
-指令各部委 / 办公室：
-- 立即**暂停**依 EO 14110 尚未发布的指引
-- 30 天内提交**审查报告**：列出 EO 14110 下已发布的指引 / 规章，分类"保留 / 修改 / 撤销"
-- 撤销 OMB M-24-10 和 M-24-18 的"不一致"部分（Trump 政府后续以 M-25-21 / M-25-22 取代）
+Directs agencies and offices to:
+- **Immediately suspend** any guidance not yet issued under EO 14110
+- Within 30 days, submit a **review report** listing all EO 14110 guidance and rules already issued,
+  categorized as "retain / modify / rescind"
+- Rescind the "inconsistent" portions of OMB M-24-10 and M-24-18 (subsequently replaced by the
+  Trump administration with M-25-21 / M-25-22)
 
-### 第三条 · AI 行动计划
+### Section 3 · AI Action Plan
 
-180 天内（2025-07-22）提交涵盖：
-- 联邦计算和数据资源向产业开放
-- 监管、出口管制、能源基础设施对 AI 发展的影响
-- 国家安全应用
-- 员工培训 / AI 教育
+Within 180 days (2025-07-22) deliver a plan covering:
+- Opening federal compute and data resources to industry
+- Impact of regulation, export controls, and energy infrastructure on AI development
+- National security applications
+- Workforce training and AI education
 
-**AI 行动计划**于 2025-07 发布，含多项后续 EO / 备忘录。
+The **AI Action Plan** was released 2025-07, accompanied by multiple follow-on EOs and memoranda.
 
-## 与拜登政策的主要差异
+## Principal differences from Biden policy
 
-| 维度 | EO 14110 (Biden, 2023) | EO 14179 (Trump, 2025) |
+| Dimension | EO 14110 (Biden, 2023) | EO 14179 (Trump, 2025) |
 | --- | --- | --- |
-| 定位 | 安全、保障、可信 AI | 全球领导力、去监管 |
-| 前沿模型 | 双用途基础模型报告（10²⁶ FLOP 门槛） | 撤销 |
-| NIST | 建立 AI Safety Institute (AISI) | 维持但重新定位（后续以 CAISI 再定位） |
-| DPIA / 公民权利 | 强调 | 取消专章 |
-| 移民 / 高技能人才 | 留住 AI 人才 | 删除（但签证政策另议） |
+| Framing | Safe, secure, trustworthy AI | Global leadership, deregulation |
+| Frontier models | Dual-use foundation model reporting (10²⁶ FLOP threshold) | Revoked |
+| NIST | Established AI Safety Institute (AISI) | Retained but repositioned (later re-anchored as CAISI) |
+| DPIA / civil rights | Emphasized | Dedicated chapter removed |
+| Immigration / high-skilled talent | Retain AI talent | Removed (visa policy addressed separately) |
 
-## 后续（截至 2026-04）
+## Follow-on actions (as of 2026-04)
 
-基于 EO 14179 的后续行动：
-- **AI Action Plan**（2025-07-22 发布）
-- **EO 14319**（2025-07，"Preventing Woke AI in the Federal Government"）
-- **EO 14320**（2025-07，加速数据中心审批）
-- **CAISI**（Center for AI Standards and Innovation）取代 AI Safety Institute 定位
-- **OMB M-25-21** 和 **M-25-22** 取代 M-24-10/M-24-18
+Building on EO 14179:
+- **AI Action Plan** (released 2025-07-22)
+- **EO 14319** (2025-07, "Preventing Woke AI in the Federal Government")
+- **EO 14320** (2025-07, accelerating data-center permitting)
+- **CAISI** (Center for AI Standards and Innovation) takes over the AISI role
+- **OMB M-25-21** and **M-25-22** supersede M-24-10 / M-24-18
 
-## 与中国 / 欧盟的对比
+## Comparison with China and the EU
 
-- 与**中国**：中国从 2023 开始监管生成式 AI，体系连续加深；美国 2025 大幅去监管 → 路径分歧
-- 与**欧盟**：EU AI Act 2026-08 高风险条款全面适用之际，美国联邦层面已清理大部分 AI 特定约束 → **Brussels Effect vs. innovation-first** 张力
+- Vs. **China**: China has been tightening generative-AI regulation since 2023 in a continuous trajectory;
+  the U.S. deregulated substantially in 2025 → divergent paths
+- Vs. **EU**: as the EU AI Act approaches comprehensive application of its high-risk provisions in 2026-08,
+  the U.S. federal layer has stripped most AI-specific constraints → **Brussels Effect vs. innovation-first** tension
 
-## 原文与归档
+## Text and archives
 
-| 语言 | 来源 | 链接 |
+| Language | Source | Link |
 | --- | --- | --- |
-| English（原文） | The White House | [whitehouse.gov](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/) |
-| Federal Register（官方刊物） | | — |
-| 分析 | Stanford HAI、Brookings、CSET | 持续追踪 |
+| English (original) | The White House | [whitehouse.gov](https://www.whitehouse.gov/presidential-actions/2025/01/removing-barriers-to-american-leadership-in-artificial-intelligence/) |
+| Federal Register (official gazette) | | — |
+| Analysis | Stanford HAI, Brookings, CSET | ongoing tracking |
 
-## 版本历史
+## Version history
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2025-01-23 | 签署 |
-| 2025-07-22 | AI Action Plan 发布 |
+| 2025-01-23 | Signed |
+| 2025-07-22 | AI Action Plan released |

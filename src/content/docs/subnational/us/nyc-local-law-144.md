@@ -1,6 +1,6 @@
 ---
 title: NYC Local Law 144 (Automated Employment Decision Tools)
-description: 纽约市 2023-07-05 执法的 AEDT 法，要求雇主在使用自动化就业决策工具前完成独立偏见审计并披露
+description: New York City's AEDT law, enforced from 2023-07-05; employers must complete an independent bias audit and provide disclosures before using automated employment decision tools
 ruleName: NYC Administrative Code § 20-870 et seq. (Local Law 144 of 2021) — Automated Employment Decision Tools
 issuer: New York City Council / Department of Consumer and Worker Protection (DCWP)
 level: municipal-law
@@ -10,86 +10,83 @@ publishedDate: 2021-12-11
 originalUrl: https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page
 relatedTopics:
   - risk-classification
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
   label: NYC LL 144 (2023)
   order: 31
 ---
 
-## 中文摘要
+## Summary
 
-纽约市第 144 号地方法（**Local Law 144 of 2021**）于 2023-07-05 起由 DCWP 执法。
-美国**首部针对 AI 招聘工具的具体合规法**。核心三条：
+New York City Local Law No. 144 (**Local Law 144 of 2021**) has been enforced by DCWP since 2023-07-05. It is **the first US law with concrete compliance requirements for AI hiring tools**. Three core requirements:
 
-1. **独立偏见审计**（Bias Audit）：在纽约市范围使用自动化就业决策工具 (AEDT) 前 1 年内须完成
-2. **公开披露**：审计结果摘要需在公司网站公开
-3. **候选人通知**：使用 AEDT 前至少 10 个工作日通知候选人，含工具使用和数据类别
+1. **Independent bias audit** — a bias audit must be completed within 1 year before using an Automated Employment Decision Tool (AEDT) within New York City.
+2. **Public disclosure** — a summary of the audit results must be posted on the company's website.
+3. **Candidate notice** — candidates must be notified at least 10 business days before an AEDT is used, including the tool's use and the data categories involved.
 
-## AEDT 定义（§ 20-870）
+## Definition of AEDT (§ 20-870)
 
-"Automated Employment Decision Tool" 指：
-- 来源于机器学习、统计建模、数据分析、人工智能的
-- **计算过程**
-- 发行**简化输出**（评分、分类、推荐）
-- 以**实质性协助或替代决策自由裁量**的方式用于
-- **就业决策**（招聘、晋升）
+An "Automated Employment Decision Tool" is:
+- derived from machine learning, statistical modelling, data analytics, or artificial intelligence,
+- a **computational process**,
+- that issues a **simplified output** (a score, classification, or recommendation),
+- used to **substantially assist or replace discretionary decision-making** in
+- **employment decisions** (hiring, promotion).
 
-DCWP 的最终规则进一步收紧了"实质性"——工具必须是决策的**唯一重要因素**或**替代人类决策**
-或**覆盖其他准则**时才触发。这一收紧在 2023 生效时引发批评。
+DCWP's final rule further tightened what counts as "substantial" — the tool must be the **sole significant factor** in the decision, or **replace human decision-making**, or **override other criteria** to be triggered. This tightening drew criticism when the rule took effect in 2023.
 
-## 核心义务
+## Core obligations
 
-### 独立偏见审计
+### Independent bias audit
 
-- **独立审计人**：与雇主无雇佣或利益关系
-- **统计指标**：impact ratio、selection rate（按种族 / 民族 × 性别交叉分组）
-- **频率**：每年
-- **公开**：审计日期、摘要结果、公司网站可见
+- **Independent auditor**: no employment or financial relationship with the employer.
+- **Statistical metrics**: impact ratio, selection rate (broken down by race / ethnicity × sex crosstab).
+- **Frequency**: annual.
+- **Public disclosure**: date of the audit, summary of results, visible on the company's website.
 
-### 候选人通知
+### Candidate notice
 
-- 至少 **10 个工作日前** 通知
-- 内容：工具用途、评估的数据类别、数据保留
-- **替代流程**：候选人可要求替代评估流程或合理便利
+- At least **10 business days' advance notice**.
+- Content: the tool's purpose, the categories of data assessed, and data retention.
+- **Alternative process**: candidates may request an alternative assessment process or reasonable accommodation.
 
-### 罚则
+### Penalties
 
-- 初犯：500 美元
-- 后续：500-1500 美元 **每项违法** + **每日视为独立违法**
-- 累积可达显著数额（特别对大型雇主）
+- First violation: $500.
+- Subsequent: $500-$1,500 **per violation**, with **each day deemed a separate violation**.
+- The cumulative amount can be substantial (especially for large employers).
 
-## 局限与批评
+## Limits and criticisms
 
-- **"实质性协助"限缩**：最终规则缩小了触发范围
-- **交叉分析的盲点**：交叉子群（例如 "少数族裔女性"）样本量过小难以显著
-- **无私人诉权**
-- **技术供应商责任空白**：义务主体是雇主 / 职介所，而非 AEDT 提供者
+- **Narrowing of "substantial assistance"**: the final rule shrank the trigger scope.
+- **Blind spots in intersectional analysis**: intersectional subgroups (e.g., "minority women") may be too small a sample for statistical significance.
+- **No private right of action**.
+- **Gap on technology-supplier liability**: the obligated entities are employers / employment agencies, not AEDT providers.
 
-尽管存在局限，LL 144 的**偏见审计 + 公开披露**范式被 Colorado AI Act、
-Illinois、California 等立法借鉴。
+Despite these limits, LL 144's **bias-audit + public-disclosure** paradigm has been drawn on by the Colorado AI Act and by legislation in Illinois, California, and elsewhere.
 
-## 与 Colorado AI Act 的对比
+## Comparison with the Colorado AI Act
 
-| 维度 | NYC LL 144 | Colorado AI Act |
+| Dimension | NYC LL 144 | Colorado AI Act |
 | --- | --- | --- |
-| 范围 | 就业单一场景 | 8 类后果性决策 |
-| 义务主体 | 雇主 / 职介 | Developer + Deployer |
-| 审计 | **独立第三方** | 内部影响评估，合规推定走 NIST RMF |
-| 候选人 / 消费者权利 | 通知 + 替代流程 | 告知 + 申诉 + 人工审核 |
-| 罚则 | $500–$1,500 / day | 按 CPA，无明确上限 |
+| Scope | Employment only | 8 categories of consequential decisions |
+| Obligated entity | Employer / employment agency | Developer + Deployer |
+| Audit | **Independent third party** | Internal impact assessment; safe-harbour via NIST RMF |
+| Candidate / consumer rights | Notice + alternative process | Notice + appeal + human review |
+| Penalties | $500–$1,500 / day | Per CPA, no explicit cap |
 
-## 原文与归档
+## Primary text and archives
 
-| 来源 | 链接 |
+| Source | Link |
 | --- | --- |
-| NYC DCWP 专页 | [nyc.gov/site/dca/.../automated-employment-decision-tools](https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page) |
-| 最终规则（RCNY Title 6 Chapter 5 Subchapter T） | NYC Rules |
-| 法条文本（NYC Admin Code § 20-870 et seq.） | Council |
+| NYC DCWP page | [nyc.gov/site/dca/.../automated-employment-decision-tools](https://www.nyc.gov/site/dca/about/automated-employment-decision-tools.page) |
+| Final rule (RCNY Title 6 Chapter 5 Subchapter T) | NYC Rules |
+| Statutory text (NYC Admin Code § 20-870 et seq.) | Council |
 
-## 版本历史
+## Revision history
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2021-12-11 | 市长签署 |
-| 2023-04-06 | 最终规则发布 |
-| 2023-07-05 | 执法开始 |
+| 2021-12-11 | Mayor signed |
+| 2023-04-06 | Final rule issued |
+| 2023-07-05 | Enforcement began |

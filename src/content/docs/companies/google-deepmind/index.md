@@ -1,174 +1,176 @@
 ---
 title: Google DeepMind
-description: Google DeepMind 公司概况、FSF v3 深度分析、AI 原则演变（2026-04-22）
+description: Google DeepMind company profile, FSF v3 deep dive, and the evolution of the AI Principles (2026-06-28)
 sidebar:
   order: 3
   label: Google DeepMind
-snapshotDate: 2026-04-22
+snapshotDate: 2026-06-28
 ---
 
-> **🆕 2026-04-17 更新**：**FSF v3.0** 新增 **Tracked Capability Levels (TCLs)**——
-> 在 CCL 触发前提前预警；新增 **"Harmful Manipulation" CCL**（规制能系统性改变信念的 AI）。
-> Gemini 3 Pro 于 **2025-11** 发布配套 FSF Report（业界首个模型级 FSF 报告）。
+> **2026-04-17 update**: **FSF v3.0** introduces **Tracked Capability Levels (TCLs)** — an early-warning
+> layer triggered before CCL activation — and adds a **"Harmful Manipulation" CCL** covering AI systems capable
+> of systematically shifting beliefs. Gemini 3 Pro, released in November 2025, was accompanied by the
+> industry's first model-level FSF Report.
 
-## 公司概况
+## Company profile
 
-- **成立**：2010（DeepMind, London）→ 2014 被 Google 收购 → 2023 与 Google Brain 合并为 **Google DeepMind**
-- **总部**：London, UK（DeepMind 起源）+ Mountain View（Google）
-- **主要模型**：
-  - **Gemini 3 系列**（2025-11：3 Pro；后续 Ultra / Flash）
-  - Imagen、Veo、Lyria（多模态生成）
-  - **AlphaFold**（生物）、AlphaGeometry、AlphaProof（数学）
-  - **Project Astra**（多模态代理）
-- **商业模式**：Google Cloud Vertex AI、Gemini App、深度整合 Google 产品矩阵（Search / Workspace / Android）
-- **独特性**：**是三大前沿实验室中唯一有完整上市母公司**（Alphabet 的财务纪律）+ **最深的跨领域研究**（AlphaFold 等科学 AI）
+- **Founded**: 2010 (DeepMind, London) → acquired by Google in 2014 → merged with Google Brain into **Google DeepMind** in 2023
+- **Headquarters**: London, UK (DeepMind origin) + Mountain View, CA (Google)
+- **Main models**:
+  - **Gemini 3 series** (2025-11: 3 Pro; later Ultra / Flash)
+  - Imagen, Veo, Lyria (multimodal generation)
+  - **AlphaFold** (biology), AlphaGeometry, AlphaProof (mathematics)
+  - **Project Astra** (multimodal agent)
+- **Business model**: Google Cloud Vertex AI, the Gemini App, and deep integration across the Google product stack (Search / Workspace / Android)
+- **Distinctive features**: **the only one of the three major frontier labs with a fully listed parent company** (Alphabet's financial discipline) and **the deepest cross-disciplinary research portfolio** (AlphaFold and related scientific-AI work)
 
-## 深度分析：FSF 的三阶段演进与 CCL 方法论
+## Deep dive: the three-phase evolution of the FSF and the CCL methodology
 
-### 框架演进
+### Framework evolution
 
-| 版本 | 日期 | 核心变化 |
+| Version | Date | Core change |
 | --- | --- | --- |
-| v1.0 | 2024-05-17 | 首发 Frontier Safety Framework。建立 CCL（Critical Capability Levels）概念 |
-| v2.0 | 2025-02 | 增加 CBRN 细化；强化模型级 FSF Report 要求 |
-| **v3.0** | **2026-04-17** | **新增 TCLs 预警层；新增 "Harmful Manipulation" CCL** |
+| v1.0 | 2024-05-17 | Initial release of the Frontier Safety Framework. Establishes the CCL (Critical Capability Level) concept |
+| v2.0 | 2025-02 | Adds CBRN refinements; strengthens model-level FSF Report requirements |
+| **v3.0** | **2026-04-17** | **Adds the TCL early-warning layer and the "Harmful Manipulation" CCL** |
 
-### CCL（Critical Capability Level）方法论
+### CCL (Critical Capability Level) methodology
 
-**FSF 核心创新**：不用简单的"能力等级"，而用**跨领域的 CCL 清单**：
+**FSF's core innovation**: rather than a simple capability tier, FSF uses a **cross-domain CCL list**:
 
-- **Cyber capabilities CCL**：能规模化发动网络攻击、利用漏洞
-- **Autonomous ML research CCL**：能自主推进 AI 研发（与 OpenAI "Self-improvement"对标）
-- **Harmful manipulation CCL（2026-04 新增）**：能系统性、大幅改变信念和行为，产生"严重规模"伤害
-- **CBRN CCLs**：生化武器能力
+- **Cyber capabilities CCL**: the ability to launch cyberattacks at scale or exploit vulnerabilities
+- **Autonomous ML research CCL**: the ability to drive AI R&D autonomously (counterpart to OpenAI's "self-improvement" category)
+- **Harmful manipulation CCL (added 2026-04)**: the ability to systematically and substantially shift beliefs and behaviour, producing "severe-scale" harm
+- **CBRN CCLs**: chemical, biological, radiological, and nuclear weapons capabilities
 
-**流程**：
-1. **Early Warning Evaluations**：每个重要模型在训练完成后做 CCL 评估
-2. 若未达 CCL → 正常部署
-3. 若达到 CCL → **延迟部署或强化缓解措施**，**发布 FSF Report** 公开论证
-4. 重大能力提升 → 重新评估
+**Workflow:**
+1. **Early-Warning Evaluations**: every significant model is evaluated against CCL criteria after training
+2. If no CCL is reached → normal deployment
+3. If a CCL is reached → **deployment is delayed or mitigations are hardened**, and an **FSF Report is published** explaining the reasoning
+4. Material capability jumps → re-evaluation
 
-### TCLs（2026-04 新增）
+### TCLs (added 2026-04)
 
-**Tracked Capability Levels**：在 CCL 之前的预警层。
+**Tracked Capability Levels**: an early-warning layer below CCL.
 
-意义：
-- **"看到风险苗头就追踪"**，不等到触发 CCL 才反应
-- 补充 CCL 体系"要么触发要么不触发"的二元性
-- **对比 OpenAI v2**（仅 High / Critical 两档）：DeepMind 现在有 **TCL → CCL → (exceed CCL)** 三档
+Purpose:
+- **"Track risk as soon as a signal appears"**, rather than waiting for a binary CCL trigger
+- Corrects the binary "triggered / not triggered" nature of the CCL regime
+- **Compared with OpenAI v2** (only High / Critical): DeepMind now runs a three-level ladder — **TCL → CCL → (exceeds CCL)**
 
-### Gemini 3 Pro FSF Report（2025-11）
+### The Gemini 3 Pro FSF Report (November 2025)
 
-这是**业界首个模型级 FSF 公开报告**：
-- 披露哪些 CCL 被评估
-- 披露评估结果（未达 CCL）
-- 披露使用的评估方法
-- **为其他实验室发布同类报告提供模板**
+The **first public model-level FSF report in the industry**:
+- Discloses which CCLs were evaluated
+- Discloses the results (no CCL reached)
+- Discloses the evaluation methodology
+- **Provides a template for other labs** publishing comparable reports
 
-### 与 Anthropic RSP / OpenAI Preparedness 对比
+### Compared with Anthropic RSP and OpenAI Preparedness
 
-| 维度 | Google DM FSF v3 | Anthropic RSP v3 | OpenAI Preparedness v2 |
+| Dimension | Google DM FSF v3 | Anthropic RSP v3 | OpenAI Preparedness v2 |
 | --- | --- | --- | --- |
-| 核心概念 | **CCL + TCL**（跨领域） | **ASL 等级** | 风险类别 × 阈值 |
-| 预警层 | **TCL（2026-04 新增）** | 无明确 | "research categories"（弱） |
-| 操纵能力 | **新增专门 CCL** | 说服作为 ASL 考虑因素 | 观察清单中 |
-| 模型级报告 | **Gemini 3 Pro FSF Report（业界首个）** | 个别 Model Card + Risk Reports | System Cards |
-| pause 承诺 | 无明确（措辞模糊）| v3 移除 | 弱 |
-| 被批评点 | TCL 门槛模糊 | 放弃 pause | arxiv 批评"不保证"|
+| Core concept | **CCL + TCL** (cross-domain) | **ASL tiers** | Risk category × threshold |
+| Early-warning layer | **TCL (added 2026-04)** | None explicit | "Research categories" (weak) |
+| Manipulation capabilities | **Dedicated CCL added** | Persuasion factored into ASL | On the watch list |
+| Model-level reports | **Gemini 3 Pro FSF Report (industry first)** | Individual model cards + Risk Reports | System Cards |
+| Pause commitment | No explicit (ambiguous phrasing) | Removed in v3 | Weak |
+| Principal criticism | TCL thresholds are vague | Abandoning pause | arxiv critique of "no guarantees" |
 
-**关键观察**：**DeepMind 在 2026 逆流而动**——在 Anthropic 弱化、OpenAI 简化的同时 DeepMind 
-**扩展**了 FSF（加 TCL + 操纵 CCL）。一个解释：Alphabet 母公司的**品牌声誉约束**更强；
-另一解释：DeepMind 科研文化与商业化团队的内部张力让安全承诺更难松动。
+**Key observation**: **DeepMind is moving against the tide in 2026** — while Anthropic weakens and OpenAI
+simplifies, DeepMind **expanded** the FSF (adding TCL plus the manipulation CCL). One reading: the reputational
+constraint from the Alphabet parent is stronger. An alternative reading: internal tension between
+DeepMind's research culture and Google's commercialisation teams makes it harder for safety commitments to drift.
 
-## AI Principles 的演变：2024 军事使用条款撤销
+## AI Principles evolution: the 2024 removal of the military-use clause
 
-### 2018 原版 Google AI Principles
+### The 2018 original Google AI Principles
 
-**7 项积极原则**（对社会有益 / 避免创造或加剧不公平偏见 / 安全可控 / 问责 / 隐私 / 科学卓越 / 合规使用）
-+ **4 类"我们不会追求的 AI 应用"**：
-1. 会造成或可能造成整体伤害的技术
-2. **武器或其他主要用途为造成人员伤害的技术**
-3. 违反国际公认准则的监控技术
-4. 违反国际法和人权的应用
+**Seven affirmative principles** (socially beneficial / avoid creating or reinforcing unfair bias /
+safe and controllable / accountable / privacy / scientific excellence / lawful use) plus **four categories
+of "AI applications we will not pursue":**
+1. Technologies that cause or are likely to cause overall harm
+2. **Weapons or other technologies whose principal purpose is to cause injury to people**
+3. Surveillance technologies violating internationally accepted norms
+4. Applications contrary to international law and human rights
 
-这**使 Google 成为第一个公开拒绝军事 AI 用途的科技巨头**。
+This made Google **the first major tech company to publicly rule out military AI applications**.
 
-### 2024 修订：**删除军事排除条款**
+### The 2024 revision: **the military-exclusion list was deleted**
 
-2024-02 Google 更新 AI Principles，**删除了四类"我们不会追求"清单**。新版仅有原则性表述，
-无明确禁止类别。
+In February 2024 Google updated its AI Principles and **removed the four "will not pursue" categories**.
+The new version contains only principle-level language, with no explicit prohibited categories.
 
-**争议**：
-- Google 内部员工公开信反对（2024-02，数百名员工联署）
-- *Bloomberg* 等媒体解读为"为 Project Nimbus（以色列国防合作）+ 其他军事合同铺路"
-- Google 官方解释为"清单化的负面列表过于僵化；新版更灵活"
+**Controversy:**
+- An internal employee open letter opposed the change (2024-02, signed by several hundred employees)
+- *Bloomberg* and other outlets read the move as "clearing the path for Project Nimbus (defence cooperation with Israel) and other military contracts"
+- Google's official rationale: "an itemised negative list was too rigid; the new version is more flexible"
 
-**行业影响**：**其他前沿实验室跟进**。Anthropic 2025 接受 $200M DoD 合同；
-OpenAI 与 Palantir 建立合作伙伴关系；**军事 AI 已不再是前沿实验室的禁区**。
+**Industry impact**: **other frontier labs followed**. Anthropic accepted a $200M DoD contract in 2025;
+OpenAI partnered with Palantir; **military AI is no longer off-limits for frontier labs**.
 
-## Project Nimbus 与云服务的分担
+## Project Nimbus and shared cloud-service controversy
 
-- **Project Nimbus（2021-2024）**：Google + Amazon 向以色列政府提供 **$1.2B 云服务合同**
-- 2024 内部员工罢工后仍继续
-- 对 Google 的 AI 原则修订构成**压力因素**
+- **Project Nimbus (2021–2024)**: Google + Amazon provided **$1.2B in cloud services to the Israeli government**
+- Internal employee strikes in 2024 did not stop the contract
+- Constituted a **pressure factor** behind Google's AI-principles revision
 
-## 公开政策文档快照
+## Policy document snapshot
 
-| 类型 | 文档名 | 链接 | 本站子页 |
+| Type | Document | Link | Subpage |
 | --- | --- | --- | --- |
-| 使用政策 | Generative AI Prohibited Use Policy | [policies.google.com/terms/generative-ai/use-policy](https://policies.google.com/terms/generative-ai/use-policy) | [usage-policy](./usage-policy/) |
-| 模型卡 | Gemini 3 Pro / 2.5 等 Model Cards | [deepmind.google/technologies/gemini](https://deepmind.google/technologies/gemini/) | [model-card](./model-card/) |
-| 安全框架 | **FSF v3.0 (2026-04-17)** | [storage.googleapis.com/.../frontier-safety-framework_3.pdf](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf) | [safety-framework](./safety-framework/) |
-| 模型级 FSF Report | Gemini 3 Pro FSF Report (2025-11) | [storage.googleapis.com/.../gemini_3_pro_fsf_report.pdf](https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_fsf_report.pdf) | — |
-| 透明度报告 | Responsibility & Safety Hub | [deepmind.google/about/responsibility-safety](https://deepmind.google/about/responsibility-safety/) | [transparency-report](./transparency-report/) |
-| AI 原则 | **Google AI Principles（2024 修订版）** | [ai.google/responsibility/principles](https://ai.google/responsibility/principles/) | [red-team-disclosures](./red-team-disclosures/) |
+| Usage policy | Generative AI Prohibited Use Policy | [policies.google.com/terms/generative-ai/use-policy](https://policies.google.com/terms/generative-ai/use-policy) | [usage-policy](./usage-policy/) |
+| Model cards | Gemini 3 Pro / 2.5 Model Cards | [deepmind.google/technologies/gemini](https://deepmind.google/technologies/gemini/) | [model-card](./model-card/) |
+| Safety framework | **FSF v3.0 (2026-04-17)** | [storage.googleapis.com/.../frontier-safety-framework_3.pdf](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf) | [safety-framework](./safety-framework/) |
+| Model-level FSF Report | Gemini 3 Pro FSF Report (2025-11) | [storage.googleapis.com/.../gemini_3_pro_fsf_report.pdf](https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_fsf_report.pdf) | — |
+| Transparency report | Responsibility & Safety Hub | [deepmind.google/about/responsibility-safety](https://deepmind.google/about/responsibility-safety/) | [transparency-report](./transparency-report/) |
+| AI Principles | **Google AI Principles (2024 revision)** | [ai.google/responsibility/principles](https://ai.google/responsibility/principles/) | [red-team-disclosures](./red-team-disclosures/) |
 
-## 监管合规立场
+## Regulatory-compliance posture
 
-### 美国
+### United States
 
-- **2023 White House Voluntary Commitments**：首批签署
-- **Frontier Model Forum**：创始成员
-- **加州 SB 53**：立场模糊
-- **EO 14179 / 14365**：未明确表态
+- **2023 White House Voluntary Commitments**: first-wave signatory
+- **Frontier Model Forum**: founding member
+- **California SB 53**: ambiguous stance
+- **EO 14179 / 14365**: no explicit position
 
-### 欧盟
+### European Union
 
-- **GPAI Code of Practice**：**完整签署**（2025-08-01 首批）
-- Gemini 3 Pro 超 10²⁵ FLOP 阈值，触发 AI Act 系统性风险义务
-- **CNIL（法国）**：对 Gemini 的 GDPR 合规审视
+- **GPAI Code of Practice**: **fully signed** (first wave, 2025-08-01)
+- Gemini 3 Pro exceeds 10^25 FLOP, triggering AI Act systemic-risk obligations
+- **CNIL (France)**: ongoing GDPR review of Gemini
 
-### 中国
+### China
 
-- **不在中国大陆提供 Gemini 消费者服务**
-- Google Cloud 部分企业服务通过合作方
-- Search / YouTube 被封，移动业务受限
+- **Gemini consumer services are not offered in mainland China**
+- Some Google Cloud enterprise services delivered via partners
+- Search / YouTube blocked; mobile business limited
 
-### 英国
+### United Kingdom
 
-- **总部所在地**
-- 与 **UK AI Safety Institute** 深度合作（预部署测试）
-- 2024 Bletchley / 2025 Seoul / 2025 Paris AI Summit 签署所有主要声明
+- **Home jurisdiction**
+- Deep collaboration with the **UK AI Safety Institute** (pre-deployment testing)
+- Signed all major statements at the 2024 Bletchley, 2025 Seoul, and 2025 Paris AI Summits
 
-### 印度 / 日本 / 巴西 / 沙特
+### India / Japan / Brazil / Saudi Arabia
 
-- 2025-2026 与主权基金 / 政府建立深度基础设施合作（Gemini 本地化部署）
+- 2025–2026 deep infrastructure partnerships with sovereign funds and governments (localised Gemini deployments)
 
-## 行业自律立场：**"理性安全派"的立场**
+## Self-regulation posture: **the "balanced safety" position**
 
-Google DeepMind 在三大前沿实验室中**相对平衡**：
+Google DeepMind occupies the **middle ground** among the three frontier labs:
 
-- **不像 Anthropic 那样**以安全为品牌核心
-- **不像 OpenAI 那样**明显转向商业化加速
-- **FSF 2026 扩展**是反例：在行业松动时反而收紧
+- **Unlike Anthropic**, it does not brand itself around safety
+- **Unlike OpenAI**, it has not visibly tilted toward commercial acceleration
+- **The 2026 FSF expansion** is a counter-example: it tightened when the industry was loosening
 
-**结构性支撑**：
-1. **Alphabet 母公司财务稳定**：不需要靠 AI 盈利急于扩张
-2. **DeepMind 科研文化**：核心团队（Demis Hassabis 等）**不完全以商业收入为导向**
-3. **品牌声誉**：Google 搜索历史让反歧视 / 信任成为品牌核心资产
+**Structural supports:**
+1. **Alphabet parent-company financial stability**: no urgent need to monetise AI quickly
+2. **DeepMind research culture**: the core team (Demis Hassabis and others) **is not purely revenue-oriented**
+3. **Brand reputation**: Google's search legacy makes anti-discrimination and trust brand-core assets
 
-但也有**裂痕**：
-- 2024 AI 原则修订是商业压力的明证
-- Project Nimbus 争议
-- 2024 Gemini 图像生成"历史扭曲"事件（种族错置）曾引发内部整改
-
+But there are **cracks**:
+- The 2024 AI-principles revision is evidence of commercial pressure
+- The Project Nimbus controversy
+- The 2024 Gemini image-generation "historical distortion" incident (misrendered races) triggered an internal response

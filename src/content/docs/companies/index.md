@@ -1,148 +1,150 @@
 ---
-title: 公司实践
-description: 按国别分组跟踪主要 AI 公司的行业自律——与硬法并行的治理模式
+title: Company Practice
+description: Industry self-regulation at leading AI companies, grouped by jurisdiction — the soft-law companion to binding rules
 sidebar:
   order: 5
 ---
 
-## 为什么"公司实践"是独立一轴
+## Why "Company Practice" is a separate axis
 
-**行业自律（industry self-regulation）是当代 AI 治理的"大头"之一**——在多个关键领域，公司自发布的
-框架、政策、承诺**早于**并**影响**监管立法：
+**Voluntary industry commitments are one of the largest pillars of contemporary AI governance.** In several
+critical areas, company-authored frameworks, policies, and commitments have **predated** and **shaped**
+the regulatory texts that followed:
 
-- **Anthropic RSP**（2023-09）**早于** EU AI Act GPAI 章节（2024）和加州 SB 53（2025）
-- **NIST AI RMF**（2023）的"风险管理"范式被多州法律吸纳作为"合规推定"路径
-- **Frontier Model Forum**（2023）的行业共同语言成为白宫 Voluntary Commitments 的基础
-- **GPAI Code of Practice**（2025）把行业自律正式化为 AI Act 合规推定工具
+- **Anthropic's Responsible Scaling Policy** (RSP, Sept 2023) preceded the EU AI Act GPAI chapter (2024) and California SB 53 (2025)
+- The **NIST AI RMF** (2023) exported a "risk management" paradigm that several U.S. states later adopted as a rebuttable compliance-by-reference path
+- The **Frontier Model Forum** (2023) supplied the shared industry vocabulary underneath the White House Voluntary Commitments
+- The **GPAI Code of Practice** (2025) turned voluntary industry practice into a formal presumption-of-conformity tool under the AI Act
 
-**但 2025-2026 出现结构性松动**：
-- Anthropic RSP v3（2026-02）**移除 pause 承诺**
-- OpenAI Preparedness v2（2025-04）**简化阈值**（删除 Low/Medium）
-- Google DeepMind 2024 **删除军事用途禁止**
-- xAI **拒绝**行业自律范式
+**But 2025–2026 shows structural erosion:**
+- Anthropic **RSP v3** (Feb 2026) **removes the pause commitment**
+- OpenAI **Preparedness v2** (Apr 2025) **simplifies thresholds** (deleting Low / Medium tiers)
+- Google DeepMind (2024) **deleted its military-use prohibition** from the AI Principles
+- xAI **rejects** the industry self-regulation paradigm outright
 
-这揭示了行业自律的**内在局限**：**无硬法约束时，自律的"底线"由最不自律的玩家定义**。
+This exposes the inherent limit of voluntary commitments: **absent binding law, the "floor" of self-regulation
+is set by the least self-disciplined player in the market.**
 
-本轴基于上述结构性视角收录**已公开发布、可长期获取的公司自发布文档**。每家公司下统一按 **5 类材料**组织。
+This axis archives **publicly released, durably accessible company documents** under that structural framing.
+Each company page organises materials in the same **five categories**.
 
-归档原则与公司归属规则见 [方法论 §3–4](/methodology/#company-attribution)。
+See [Methodology §3–4](/methodology/#company-attribution) for archival principles and attribution rules.
 
-## 已收录（按国别）
+## Included companies (by jurisdiction)
 
-### 🇺🇸 美国
+### United States
 
-#### 模型层（前沿实验室）
+#### Model layer (frontier labs)
 
-| 公司 | 安全框架 | 定位 | 专页 |
+| Company | Safety framework | Positioning | Page |
 | --- | --- | --- | --- |
-| **Anthropic** | **RSP v3**（2026-02，撤销 pause）| 安全优先 | [anthropic](/companies/anthropic/) |
-| **OpenAI** | **Preparedness v2**（2025-04，简化阈值）| 商业化加速 | [openai](/companies/openai/) |
-| **Google DeepMind** | **FSF v3**（2026-04，**扩展** CCL + TCL）| 平衡派 | [google-deepmind](/companies/google-deepmind/) |
-| **xAI** | 弱（无对标文档）| **反自律派** | [xai](/companies/xai/) |
+| **Anthropic** | **RSP v3** (Feb 2026, pause commitment withdrawn) | Safety-first | [anthropic](/companies/anthropic/) |
+| **OpenAI** | **Preparedness v2** (Apr 2025, simplified thresholds) | Commercial acceleration | [openai](/companies/openai/) |
+| **Google DeepMind** | **FSF v3** (Apr 2026, **expanded** CCL + TCL) | Balanced | [google-deepmind](/companies/google-deepmind/) |
+| **xAI** | Weak (no counterpart document) | **Anti-self-regulation** | [en/companies/xai](/companies/xai/) |
 
-#### 基础设施层（上下游）
+#### Infrastructure layer
 
-| 公司 | 角色 | 定位 | 专页 |
+| Company | Role | Positioning | Page |
 | --- | --- | --- | --- |
-| **NVIDIA** | **AI GPU 单寡头** + 出口管制中心 | AI 革命的"卖铲人" | [nvidia](/companies/nvidia/) |
+| **NVIDIA** | **Single-vendor dominance in AI GPUs** + export-control focal point | "Selling shovels" in the AI gold rush | [nvidia](/companies/nvidia/) |
 
-### 🇪🇺 欧盟
+### European Union
 
-| 公司 | 安全框架 | 定位 | 专页 |
+| Company | Safety framework | Positioning | Page |
 | --- | --- | --- | --- |
-| **Mistral AI** 🇫🇷 | 无独立框架；靠**开源 + GPAI CoP 签署** | 欧洲主权 AI | [mistral](/companies/mistral/) |
+| **Mistral AI** (France) | No standalone framework; relies on **open-source + GPAI CoP signature** | Sovereign European AI | [mistral](/companies/mistral/) |
 
-### 🇨🇳 中国
+### China (PRC)
 
-#### 平台型巨头
+#### Platform incumbents
 
-| 公司 | 安全框架 | 定位 | 专页 |
+| Company | Safety framework | Positioning | Page |
 | --- | --- | --- | --- |
-| **百度 Baidu** | 无独立；**参与国家标准制定**（TC260） | 国家队 | [baidu](/companies/baidu/) |
-| **阿里巴巴 Alibaba** | 无独立；**全线开源**（Qwen）| 开源生态 | [alibaba](/companies/alibaba/) |
-| **字节跳动 ByteDance** | 无独立；**嵌入式合规**（CAC + 党委）| 全球撕裂 | [bytedance](/companies/bytedance/) |
-| **腾讯 Tencent** | 无独立；**多模态全线开源**（Hunyuan）| 平台型 AI | [tencent](/companies/tencent/) |
+| **Baidu 百度** | None standalone; **participates in national standard-setting** (TC260) | National-team player | [baidu](/companies/baidu/) |
+| **Alibaba 阿里巴巴** | None standalone; **open-source across the line** (Qwen 通义千问) | Open-source ecosystem | [alibaba](/companies/alibaba/) |
+| **ByteDance 字节跳动** | None standalone; **embedded compliance** (CAC + Party committee) | Globally fragmented | [bytedance](/companies/bytedance/) |
+| **Tencent 腾讯** | None standalone; **full-line multimodal open source** (Hunyuan 混元) | Platform-embedded AI | [tencent](/companies/tencent/) |
 
-#### 创业公司
+#### AI-native startups
 
-| 公司 | 安全框架 | 定位 | 专页 |
+| Company | Safety framework | Positioning | Page |
 | --- | --- | --- | --- |
-| **智谱 ZhipuAI** | 无独立；**港股已上市 2513.HK** | 国家队 + 学术出身 | [zhipuai](/companies/zhipuai/) |
-| **月之暗面 Moonshot** | 无独立；开源 Kimi K2.5 | 长上下文 + 付费突围 | [moonshot](/companies/moonshot/) |
-| **MiniMax** | 无独立；Talkie 海外成功 | AI 陪伴 + 出海 | [minimax](/companies/minimax/) |
-| **DeepSeek** | 无独立；**极限开源**（MIT）| **2025-01 "DeepSeek moment"** | [deepseek](/companies/deepseek/) |
+| **ZhipuAI 智谱** | None standalone; **listed on HKEX 2513.HK** | National-team + academic heritage | [zhipuai](/companies/zhipuai/) |
+| **Moonshot 月之暗面** | None standalone; open-source Kimi K2.5 | Long-context + paid breakout | [moonshot](/companies/moonshot/) |
+| **MiniMax** | None standalone; Talkie is an overseas hit | AI companionship + going global | [minimax](/companies/minimax/) |
+| **DeepSeek** | None standalone; **maximalist open source** (MIT) | **The "DeepSeek moment" of Jan 2025** | [deepseek](/companies/deepseek/) |
 
-## 三种自律模式对比
+## Three models of self-regulation, compared
 
-**美国前沿实验室的"结构化自律"**：
-- 发布独立的安全框架（RSP / Preparedness / FSF）
-- 对外公开承诺能力门槛 → 缓解措施的映射
-- 参与行业协调（Frontier Model Forum、GPAI CoP）
-- 2025-2026 整体**松动**（Anthropic 撤销 pause、OpenAI 简化、Google 删除军事禁止）
+**U.S. frontier labs — "structured self-regulation":**
+- Publish standalone safety frameworks (RSP / Preparedness / FSF)
+- Publicly commit to a capability-threshold → mitigation mapping
+- Coordinate through industry venues (Frontier Model Forum, GPAI CoP)
+- 2025–2026: broad **erosion** (Anthropic withdraws pause, OpenAI simplifies, Google deletes the military prohibition)
 
-**欧盟的"制度化自律"**：
-- 独立企业自律较少（Mistral 也无 RSP 对标）
-- 通过**GPAI Code of Practice 签署**获得合规推定
-- **开源 + 强法律**组合作为透明度机制
-- 自律与 AI Act 高度耦合
+**EU — "institutionalised self-regulation":**
+- Few standalone corporate frameworks (Mistral has no RSP-equivalent either)
+- Presumption of conformity achieved via **GPAI Code of Practice signature**
+- **Open source + hard law** used as a joint transparency mechanism
+- Self-regulation tightly coupled to the AI Act
 
-**中国的"嵌入式自律"**：
-- **没有**独立的企业安全框架文档
-- 自律 = 参与国家标准制定（TC260-003、AI 安全治理框架）
-- 合规通过 CAC 算法备案 + 党委内部协调实现
-- **开源成为事实上的透明度机制**（阿里 Qwen / 百度 ERNIE 部分 / DeepSeek 极限）
+**China — "embedded self-regulation":**
+- **No** standalone corporate safety framework documents
+- Self-regulation equals participation in national standard-setting (TC260-003, the AI Safety Governance Framework)
+- Compliance delivered through CAC algorithm filings (算法备案) plus internal Party-committee coordination
+- **Open source functions as the de facto transparency mechanism** (Alibaba Qwen 通义千问, part of Baidu ERNIE 文心, DeepSeek maximalist)
 
-## 跨辖区观察（2026 Q1 快照）
+## Cross-jurisdictional observations (2026 Q1 snapshot)
 
-### GPAI Code of Practice 签署矩阵
+### GPAI Code of Practice signature matrix
 
-| 公司 | 签署 Transparency | Copyright | Safety & Security |
+| Company | Transparency | Copyright | Safety & Security |
 | --- | --- | --- | --- |
-| Anthropic | ✅ | ✅ | ✅ |
-| Google DeepMind | ✅ | ✅ | ✅ |
-| Microsoft | ✅ | ✅ | ✅ |
-| Mistral | ✅ | ✅ | ✅ |
-| OpenAI | ✅ | ✅ | ⚠️ 部分保留 |
-| Meta | ✅ | ⚠️ 异议 | ✅ |
-| xAI | ✅ | ✅ | ❌ 异议 |
-| 阿里 / 百度 / DeepSeek / 字节 | ❌ | ❌ | ❌ |
+| Anthropic | Signed | Signed | Signed |
+| Google DeepMind | Signed | Signed | Signed |
+| Microsoft | Signed | Signed | Signed |
+| Mistral | Signed | Signed | Signed |
+| OpenAI | Signed | Signed | Signed with partial reservations |
+| Meta | Signed | Objected | Signed |
+| xAI | Signed | Signed | Objected |
+| Alibaba / Baidu / DeepSeek / ByteDance | Not signed | Not signed | Not signed |
 
-### 算力门槛与合规压力
+### Compute thresholds and compliance pressure
 
-- **加州 SB 53** 10²⁶ FLOP 阈值：Claude Opus、GPT-5、Gemini Ultra、Grok 4、Llama 4 Max
-- **EU AI Act** 10²⁵ FLOP 系统性风险：上述 + Mistral Large 2/3、**可能** Qwen 3.5、ERNIE 5.0
-- **中国备案**：用户规模 ≥ 100 万触发安全评估（2026-04《拟人化办法》第 22 条）
+- **California SB 53** 10^26 FLOP threshold: Claude Opus, GPT-5, Gemini Ultra, Grok 4, Llama 4 Max
+- **EU AI Act** 10^25 FLOP systemic-risk threshold: the above plus Mistral Large 2/3, and **likely** Qwen 3.5 and ERNIE 5.0
+- **China filings (备案)**: services with ≥ 1 million users trigger mandatory safety assessment (Art. 22 of the 2026-04 Anthropomorphic Interaction Measures 人工智能拟人化互动服务管理暂行办法)
 
-### 叙事差异
+### Narrative differentiation
 
-- **"安全优先"**：Anthropic
-- **"加速第一"**：OpenAI、xAI
-- **"理性安全"**：Google DeepMind
-- **"主权 AI"**：Mistral
-- **"服务国家"**：百度
-- **"开源生态"**：阿里、DeepSeek
-- **"地缘博弈"**：字节（被动）
+- **"Safety first"**: Anthropic
+- **"Acceleration first"**: OpenAI, xAI
+- **"Balanced safety"**: Google DeepMind
+- **"Sovereign AI"**: Mistral
+- **"Serving the state"**: Baidu
+- **"Open-source ecosystem"**: Alibaba, DeepSeek
+- **"Geopolitical crossfire"**: ByteDance (involuntarily)
 
-## 每家公司的收录结构（5 类材料）
+## Five-category archive structure (per company)
 
-1. **使用政策**（Usage / Acceptable Use Policy）—— 用户可否用模型做什么
-2. **模型卡 / 系统卡**（Model Card / System Card）—— 模型能力、训练数据、评估
-3. **安全框架**（Safety Framework）—— 负责任扩展、准备度、前沿风险管理
-4. **透明度报告**（Transparency Report）—— 定期披露（数据请求、内容审核等）
-5. **红队与评估披露**（Red-Team & Eval Disclosures）—— 第三方评估与红队披露
+1. **Usage / Acceptable Use Policy** — what users may and may not do with the model
+2. **Model Card / System Card** — capabilities, training data, evaluations
+3. **Safety Framework** — responsible scaling, preparedness, frontier-risk management
+4. **Transparency Report** — periodic disclosures (data requests, content moderation, etc.)
+5. **Red-Team & Eval Disclosures** — third-party evaluations and red-team results
 
-每份材料都带 `snapshot_date`、原文链接、本站归档副本（PDF 存 `public/archives/`）。
-**不做评判性表述**，只罗列原文关键条款与客观差异。
+Each item carries a `snapshot_date`, a link to the original source, and an archived copy on this site (PDFs in `public/archives/`).
+**No normative framing** — we list the original clauses and factual differences, not editorial judgments.
 
-## v2 规划（视 v1 质量判断是否推进）
+## v2 roadmap (pending a v1 quality review)
 
-按 AI 密切度严格筛选后，以下公司可能在未来补充：
+After strict AI-relevance filtering, the following companies may be added later:
 
-- **🇺🇸 美国**：Meta（Llama 团队，重要但开源公司治理已可通过 Mistral 页面代表性覆盖）
-- **🇪🇺 欧盟**：Aleph Alpha、Stability AI、Black Forest Labs（**已明确不补充**）
-- **🇨🇳 中国**：百川智能 Baichuan、阶跃星辰 StepFun、零一万物 01.AI（AI 创业公司其他代表，
-  优先级中等）、华为（**已明确不补**）
+- **United States**: Meta (the Llama team — important, but open-source governance can be represented through Mistral for v1)
+- **European Union**: Aleph Alpha, Stability AI, Black Forest Labs (**confirmed not being added**)
+- **China**: Baichuan 百川智能, StepFun 阶跃星辰, 01.AI 零一万物 (medium priority among AI-native startups); Huawei (**confirmed not being added**)
 
-**当前重心**：**深化现有 13 家**。5 家前沿实验室（Anthropic、OpenAI、Google DeepMind、ByteDance、
-DeepSeek）的 5 类 subpage 已填充为实质分析；其余 8 家以综合 index 形式呈现，按公司活跃度决定
-是否展开 subpage。
+**Current focus**: **deepening the existing 13 companies.** Five frontier labs (Anthropic, OpenAI, Google DeepMind,
+ByteDance, DeepSeek) already have substantive analysis across all five subpages; the remaining eight are rendered as
+consolidated index pages, with subpages expanded as company activity warrants.

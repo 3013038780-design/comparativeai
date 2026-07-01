@@ -1,8 +1,8 @@
 ---
-title: 生成式人工智能服务安全基本要求 (TC260)
-description: TC260-003-2024 技术规范，生成式 AI 备案和安全评估的事实标准；涵盖训练数据、模型安全、措施安全
-ruleName: 生成式人工智能服务安全基本要求 (TC260-003-2024)
-issuer: 全国网络安全标准化技术委员会 (TC260)
+title: Basic Security Requirements for Generative AI Services (TC260)
+description: TC260-003-2024 technical specification; the de facto standard for generative-AI filing and security assessment, covering training data, model safety, and procedural safety
+ruleName: Basic Security Requirements for Generative AI Services (TC260-003-2024) (《生成式人工智能服务安全基本要求》)
+issuer: National Information Security Standardization Technical Committee (TC260 / 全国网络安全标准化技术委员会)
 level: technical-standard
 binding: soft
 effectiveDate: 2024-02-29
@@ -12,107 +12,94 @@ relatedTopics:
   - frontier-gpai
   - data-training
   - risk-classification
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: TC260 生成式 AI 安全基本要求 (2024)
+  label: TC260 Basic Security Requirements for Generative AI (2024)
   order: 30
 ---
 
-> **📑 法律位阶**：第 5 级 · 技术标准（推荐性 · **事实强制**） | **发布**：全国网络安全标准化技术委员会（TC260） | **生效**：2024-02-29 | **属性**：**软法但有硬约束**
+> **📑 Legal hierarchy**: Level 5 · Technical standard (voluntary · **de facto mandatory**) | **Issuance**: National Information Security Standardization Technical Committee (TC260) | **Effective**: 2024-02-29 | **Character**: **soft in form, hard in practice**
 
-> **⚠️ 位阶提醒**：名义上是**推荐性技术规范**（第 5 级），位阶最低；但 CAC 备案以此为标尺，
-> 通不过 = 拿不到备案 = 不能面向公众服务，因此构成**事实硬约束**。
-> 这是本站"硬法 / 软法"归类框架里的典型案例。
-> 详见 [中国规则索引](/rules/china/#法律位阶速览) 和 [方法论 §2](/methodology/#hard-vs-soft)。
+> **⚠️ Hierarchy note**: Nominally a **voluntary technical specification** (Level 5, the lowest rank); but because CAC uses it as the yardstick for filing (*备案*) review, failing it means no filing — which means no public-facing service — so it operates as a **de facto hard constraint**. This is the canonical case for the "hard law / soft law" categorization framework on this site. See [Index of Chinese Rules](/rules/china/#the-legal-hierarchy-at-a-glance) and [Methodology §2](/methodology/#hard-vs-soft).
 
-## 英文摘要
+## English Summary
 
-**TC260-003-2024 "Basic Security Requirements for Generative AI Services"**, published by
-China's National Information Security Standardization Technical Committee (TC260) on
-2024-02-29, is a **de facto mandatory** technical specification for generative AI service
-providers seeking algorithmic filing (算法备案) and security assessment (安全评估) under the
-2023 Generative AI Interim Measures. It specifies thresholds for (i) training-data corpus
-legality (< 5% illegal content), (ii) source diversity, (iii) annotator training and test
-banks, (iv) 31 categories of risk, (v) model-level security testing with a ≥90% pass rate on
-a 2000-item safety evaluation set. Although technically a voluntary standard, CAC uses it as
-the benchmark for filing approval.
+**TC260-003-2024 "Basic Security Requirements for Generative AI Services"**, published by China's National Information Security Standardization Technical Committee (TC260) on 2024-02-29, is a **de facto mandatory** technical specification for generative AI service providers seeking algorithmic filing (算法备案) and security assessment (安全评估) under the 2023 Generative AI Interim Measures. It specifies thresholds for (i) training-data corpus legality (< 5% illegal content), (ii) source diversity, (iii) annotator training and test banks, (iv) 31 categories of risk, (v) model-level security testing with a ≥90% pass rate on a 2000-item safety evaluation set. Although technically a voluntary standard, CAC uses it as the benchmark for filing approval.
 
-## 总览
+## Overview
 
-TC260-003-2024 是中国生成式 AI **事实合规基线**：
+TC260-003-2024 is the **de facto compliance baseline** for Chinese generative AI:
 
-- 《生成式 AI 办法》要求"安全评估"和"算法备案"，但**办法本身没有技术标准**
-- TC260-003 填补了这一空白，成为 CAC 审核备案时的打分依据
-- 法律上是"推荐性"（soft），但通不过就拿不到备案 → **事实硬法**
+- the *Generative AI Interim Measures* require "security assessment" and "algorithm filing," but **contain no technical specification of their own**;
+- TC260-003 fills that gap and serves as CAC's scoring basis in filing review;
+- legally it is "voluntary" (soft), but failing it means failing filing → **de facto hard law**.
 
-这就是本站方法论[硬法/软法划分](/methodology/#hard-vs-soft)中最典型的"软法有硬约束"案例。
+This is the textbook case in this site's [hard-law / soft-law classification](/methodology/#hard-vs-soft) of "soft law with hard constraint."
 
-## 核心技术要求（摘要）
+## Core Technical Requirements (Summary)
 
-### 语料（训练数据）安全
+### Corpus (training data) safety
 
-- **来源合法性**：每个语料来源需记录，含版权 / 授权 / 用户同意链路
-- **语料库抽样**：从任意语料来源随机抽样 4000 条，**含非法不良信息的比例不得超过 5%**，
-  否则整个来源"不可用"
-- **来源多样性**：中文语料来源不少于特定数量；类型（网页 / 图书 / 论文）需覆盖
+- **Source legality**: each corpus source shall be recorded, with IP / authorization / user-consent chain documented.
+- **Corpus sampling**: from any given source, random samples of 4,000 items; **the proportion containing illegal or harmful information shall not exceed 5%**, otherwise the source is "unusable."
+- **Source diversity**: Chinese-language sources shall not fall below a specified count; coverage across types (web pages / books / papers) is required.
 
-### 标注安全
+### Annotation safety
 
-- **标注人员**：需培训、考核
-- **标注规则**：含功能性标注和安全性标注
-- **抽检**：标注结果的准确性需抽检
+- **Annotators**: must be trained and assessed;
+- **Annotation rules**: both functional and safety-related annotation;
+- **Sampling checks**: accuracy of annotations is spot-checked.
 
-### 模型安全
+### Model safety
 
-- **31 类安全风险**：政治、暴力恐怖、民族歧视、色情、低俗、未成年人保护、隐私、知识产权等
-- **评估集**：构建 ≥ 2000 条的人工测试集覆盖上述 31 类
-- **通过率要求**：生成内容的安全性通过率 **≥ 90%**；拒答率控制在合理区间（不宜过高亦不宜过低）
-- **关键词库**：需建立和维护敏感词 / 关键词黑名单
+- **31 categories of safety risk**: politics, violent terrorism, ethnic discrimination, pornography, vulgarity, minors' protection, privacy, IP, etc.
+- **Evaluation set**: construct a human-reviewed test set of **≥ 2,000 items** covering the 31 categories above.
+- **Pass-rate requirements**: generated-content safety pass rate **≥ 90%**; refusal rates to be kept within a reasonable band (neither too high nor too low).
+- **Keyword libraries**: maintain sensitive-term / keyword blocklists.
 
-### 措施安全
+### Procedural safety
 
-- 用户注册、实名制
-- 违法内容发现与处置机制
-- 投诉举报响应
-- 安全事件应急预案
+- User registration, real-name verification;
+- Mechanisms for detection and disposition of unlawful content;
+- Complaints and reports response;
+- Security-incident contingency plans.
 
-## 事实地位
+## De Facto Status
 
-CAC 审核算法备案时以 TC260-003 为标尺。**未通过的服务不能上线面向公众**。
-对大模型公司而言，TC260-003 的门槛事实上决定：
+In filing review CAC uses TC260-003 as its yardstick. **Services that fail cannot go live for the public.** For large-model firms, TC260-003's threshold effectively determines:
 
-- 哪些训练数据源可用（含中英文分别要求）
-- 模型红队测试的覆盖范围和严格度
-- 哪些 prompt 需要拒答
+- which training-data sources are usable (distinguishing Chinese and English-language requirements);
+- the scope and rigor of red-team testing;
+- which prompts must be refused.
 
-## 演进
+## Evolution
 
-TC260 系列仍在扩展：
+The TC260 series continues to expand:
 
-- TC260-003-2024（本页）：总体要求
-- TC260-004：训练数据相关专项（筹备中）
-- TC260-005+：行业 / 场景相关专项（筹备中）
+- TC260-003-2024 (this page): general requirements;
+- TC260-004: training-data-specific requirements (in preparation);
+- TC260-005+: industry / scenario-specific requirements (in preparation).
 
-版本更新历史和下一版草案需关注 [tc260.org.cn](https://www.tc260.org.cn/) 的公告。
+Version updates and the next draft should be tracked via announcements at [tc260.org.cn](https://www.tc260.org.cn/).
 
-## 与其他规则的关系
+## Relationship with Other Rules
 
-- **生成式 AI 办法**（2023）：上位部门规章，TC260-003 是其技术细则
-- **算法推荐规定 / 深度合成规定**：备案均使用同一体系，但 TC260-003 主要聚焦生成式
-- **GB 45438-2025 标识国标**：并行国标，聚焦"标识"技术，本 TC260 聚焦"内容安全"
-- **PIPL / DSL**：TC260-003 的"语料合法性"以这两部法律为底
+- **Generative AI Interim Measures** (2023): the upstream departmental rule; TC260-003 is its technical implementing spec.
+- **Algorithm Recommendation Provisions / Deep Synthesis Provisions**: filing reuses the same system, but TC260-003 focuses primarily on generative AI.
+- **GB 45438-2025 labeling national standard**: a parallel national standard focused on "labeling" technology, while TC260-003 focuses on "content safety."
+- **PIPL / DSL**: TC260-003's "corpus legality" rests on these two laws.
 
-## 原文与翻译
+## Source Text and Translations
 
-| 语言 | 来源 | 链接 |
+| Language | Source | Link |
 | --- | --- | --- |
-| 中文（原文） | TC260 | https://www.tc260.org.cn/ |
-| English | Stanford DigiChina 译本 | https://digichina.stanford.edu/ |
-| English 分析 | Matt Sheehan (Carnegie) "China's AI Regulations and How They Get Made" | https://carnegieendowment.org/ |
+| Chinese (original) | TC260 | https://www.tc260.org.cn/ |
+| English | Stanford DigiChina translation | https://digichina.stanford.edu/ |
+| English analysis | Matt Sheehan (Carnegie) "China's AI Regulations and How They Get Made" | https://carnegieendowment.org/ |
 
-## 版本历史
+## Version History
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2023-10 | 征求意见稿 |
-| 2024-02-29 | 正式发布 |
+| 2023-10 | Draft for public comment |
+| 2024-02-29 | Officially released |

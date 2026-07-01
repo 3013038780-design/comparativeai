@@ -1,233 +1,232 @@
 ---
-title: 红队与评估披露
-description: 字节跳动红队与安全评估披露 — 备案材料 + TC260 半公开基准 + 出海 DSA 独立审计的三层架构（2026-04-23 快照）
+title: Red Team and Evaluation Disclosures
+description: ByteDance red-team and safety-evaluation disclosures — a three-layer architecture of filing materials + TC260 semi-public benchmarks + overseas DSA independent audit (snapshot 2026-06-28)
 sidebar:
   order: 5
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> 字节跳动**没有**公开发布过 Anthropic Frontier Red Team 论文、OpenAI Preparedness 评估报告、
-> DeepMind FSF Report 意义上的"红队披露"。
-> 这是中国头部前沿实验室的共同特征。但这并不意味着红队工作缺失——
-> 真实红队活动以三层形式存在：**备案材料（不公开）+ TC260 基准（半公开）+ DSA 独立审计（海外公开）**。
+> ByteDance **has not** publicly released anything comparable to Anthropic's Frontier Red Team papers, OpenAI's Preparedness evaluation reports, or the DeepMind FSF Report
+> in the sense of a "red-team disclosure."
+> This is a shared feature of China's frontier labs. But absence of disclosure does not mean absence of work—
+> actual red-team activity exists in three forms: **filing materials (non-public) + TC260 benchmarks (semi-public) + DSA independent audit (publicly available overseas)**.
 
-## 一、红队披露的三层结构
+## 1. The three-layer structure of red-team disclosure
 
-| 层 | 披露对象 | 披露形态 | 公共可见性 |
+| Layer | Audience | Form | Public visibility |
 | --- | --- | --- | --- |
-| **备案层** | CAC / 网信办 | 《算法安全自评估报告》+《模型安全测试报告》 | **不公开** |
-| **国标层** | TC260 + 中国信通院 / 上海智研院 / 国家网信办算法技术评估实验室 | TC260-003 31 项风险类别测试记录；CAIC（中国 AI 合规联盟）评估 | **半公开**（基准公开，结果总量汇总，公司级结果不公开）|
-| **出海层** | EU DSA 独立审计 + 新加坡 IMDA 沟通 | Kroll 年度 SRA；IMDA AI Verify / Project Moonshot 参与 | **公开** |
+| **Filing layer** | CAC / CAC local offices | Algorithm Security Self-Assessment Report + Model Safety Test Report | **Non-public** |
+| **National-standard layer** | TC260 + CAICT / Shanghai AI Lab 上海人工智能实验室 / CAC algorithm-evaluation lab | TC260-003 31-risk-category test records; CAIC (China AI Compliance Alliance) evaluations | **Semi-public** (benchmarks public, aggregate results public, firm-level results non-public) |
+| **Overseas layer** | EU DSA independent audit + Singapore IMDA coordination | Kroll annual SRA; participation in IMDA AI Verify / Project Moonshot | **Public** |
 
-## 二、备案层：CAC 备案中的《算法安全自评估报告》
+## 2. Filing layer: the Algorithm Security Self-Assessment Report
 
-### 结构与内容
+### Structure and contents
 
-依据《生成式人工智能服务管理暂行办法》第 17 条 + CAC《生成式 AI 服务备案相关材料清单》
-+ TC260-003-2024 附录 B，《算法安全自评估报告》的典型结构：
+Under Article 17 of the *Generative AI Interim Measures*, the CAC's *List of Filing Materials for Generative AI Services*, and Appendix B of TC260-003-2024,
+the typical structure of the Algorithm Security Self-Assessment Report is:
 
-1. **算法基本情况**（模型架构、参数、上下文窗口、训练数据规模）
-2. **训练数据安全**（来源合法性、敏感数据筛除比例、个人信息处理）
-3. **语料标注**（标注规则、标注员培训、标注员抽样考核）
-4. **生成内容安全测试**：
-  - 5 大类 31 项风险（违反社会主义核心价值观、歧视内容、商业违法、
-    侵害他人合法权益、准确可靠性缺陷）
-  - 每类测试题量在**千题量级**（TC260-003 附录 B 规定的最低要求）
-  - 生成内容合规率与拒答率均须满足 TC260-003 5.2 节规定的门槛（具体阈值以标准文本为准）
-5. **模型安全对抗测试**：Prompt injection、越狱 (jailbreak)、多轮对话攻击、
-  角色扮演诱导、编码绕过等
-6. **偏见评估**（性别、地域、民族、年龄等维度的回答一致性）
-7. **未成年人保护专项**（豆包等含青少年模式产品必测）
-8. **应急处置预案与整改机制**
+1. **Algorithm basics** (architecture, parameters, context window, training-data scale)
+2. **Training-data safety** (legality of sources, proportion of sensitive data filtered, personal-information processing)
+3. **Corpus labeling** (labeling rules, annotator training, sampling-based annotator audits)
+4. **Generated-content safety testing**:
+   - 5 classes of 31 risks (violations of core socialist values, discriminatory content, commercial-law violations,
+     infringement of lawful rights and interests, and defects in accuracy / reliability)
+   - ≥ 1000 test prompts per class (TC260-003 Appendix B minimums)
+   - Generated-content compliance rate and refusal rate must meet the thresholds in TC260-003 §5.2 (specific values per the standard text)
+5. **Adversarial model-safety testing**: prompt injection, jailbreak, multi-turn dialogue attacks,
+   role-play inducement, encoding-based bypass, etc.
+6. **Bias evaluation** (consistency across gender, region, ethnicity, age, etc.)
+7. **Minor-protection section** (required for products like Doubao that have a youth mode)
+8. **Emergency-response and remediation plan**
 
-### "红队"在备案中的定位
+### Where "red teaming" sits within the filing
 
-TC260-003 明确将"对抗测试"作为备案前置环节。常见测试方法：
+TC260-003 explicitly positions adversarial testing as a prerequisite to filing. Common test methods:
 
-- **关键词变形攻击**（同音字、拆字、繁简转换、emoji 替换）
-- **多轮上下文诱导**（"假设 / 角色扮演 / 续写故事"类攻击链）
-- **编码绕过**（Base64 / 十六进制 / 文言文 / 英文 / 小语种）
-- **未成年人相关场景的敏感引导**
+- **Keyword-morph attacks** (homophones, character splitting, simplified / traditional conversion, emoji substitution)
+- **Multi-turn context inducement** ("hypothetical / role-play / story-continuation" attack chains)
+- **Encoding-based bypass** (Base64, hex, classical Chinese, English, minority languages)
+- **Sensitive inducement in minor-related scenarios**
 
-这些方法与西方红队技术同构，但：
+These methods are structurally similar to Western red-team techniques, but:
 
-- **测试结果不公开**，仅对 CAC 备案机构可见
-- **基准题库半公开**（TC260 工作组成员单位间流通，公共渠道无）
-- 结果表述以"合规率 / 拒答率"等单一数字呈现，而非西方红队的"失败案例定性分析"
+- **Test results are non-public**, visible only to CAC filing authorities
+- **The benchmark pool is semi-public** (circulates among TC260 working-group member units; not available through public channels)
+- Results are reported as single numbers (compliance rate / refusal rate) rather than the qualitative failure-case analysis typical of Western red teams
 
-## 三、国标层：TC260-003 作为行业共同红队基准
+## 3. National-standard layer: TC260-003 as industry-wide red-team benchmark
 
-### 作为"半公开行业红队"
+### As a "semi-public industry red team"
 
-TC260-003-2024 的本质可以理解为**中国 AI 行业的共同红队基准**：
+TC260-003-2024 can in essence be understood as **a shared red-team benchmark for the Chinese AI industry**:
 
-- 31 项风险类别是 CAC + TC260 工作组（含字节、阿里、百度、腾讯、华为等）共同定义
-- 每类≥ 1000 题的评测集在工作组成员间流通，但对外不公开
-- 第三方测试机构（中国信通院 / 上海智研院 / 国家网信办算法技术评估实验室 / CAIC）按该基准做评估
-- 评估结果**公司级不公开**，但**行业级合规水位由监管机构掌握**
+- The 31 risk categories are jointly defined by the CAC and the TC260 working group (ByteDance, Alibaba, Baidu, Tencent, Huawei, and others)
+- ≥ 1000 prompts per category circulate among working-group members but are not released externally
+- Third-party testing bodies (CAICT / Shanghai AI Lab / CAC algorithm-evaluation lab / CAIC) evaluate against this benchmark
+- Evaluation results are **not published at firm level**, but **the industry-wide compliance water level is held by the regulator**
 
-> 把 TC260-003 理解为"行业红队"是理解中国 AI 安全评估的关键——
-> 字节不发布"自己的"红队发现，是因为**红队工作本身在制度上是集体化、监管化的，不是单公司行为**。
+> Reading TC260-003 as an "industry red team" is key to understanding Chinese AI safety evaluation—
+> ByteDance does not publish "its own" red-team findings because **red-team work itself is, institutionally, a collective and regulator-administered activity, not a single-firm activity**.
 
-### 第三方测试机构
+### Third-party testing bodies
 
-- **中国信通院 (CAICT)**：工信部直属事业单位，实际承担大模型安全评估 / 合规认证的"准监管"角色
-- **上海人工智能研究院（上海智研院 / SAIL）**：长三角区域评估中心
-- **国家网信办算法技术评估实验室**：网信办直属，直接服务备案
-- **CAIC（中国 AI 合规联盟）**：由头部企业 + 机构组成
+- **China Academy of Information and Communications Technology (CAICT / 中国信息通信研究院)**: a public institution under MIIT that actually performs "quasi-regulatory" large-model safety evaluation and compliance certification
+- **Shanghai AI Lab 上海人工智能实验室 (also known as SAIL)**: the evaluation center for the Yangtze River Delta region
+- **CAC algorithm-evaluation lab**: directly attached to the CAC and serving filing
+- **CAIC (China AI Compliance Alliance)**: formed by leading firms and institutions
 
-字节跳动的豆包、Seed 系列大多接受过上述机构的合规性测试，但**具体报告非公开**。
-**Kendra Schaefer** 评论：中国信通院实质承担了"FDA for AI"的准监管身份——
-但与 FDA 药品审评报告公开不同，评估结果的披露程度远低于国际同行。
+Doubao and the Seed series have largely been tested by these bodies, but **specific reports are not public**.
+**Kendra Schaefer** comments that CAICT in substance performs the quasi-regulatory role of "FDA for AI"—
+but unlike FDA drug-review reports, the disclosure depth of its evaluation results is far lower than that of international peers.
 
-## 四、出海层：TikTok 的 DSA 独立审计
+## 4. Overseas layer: TikTok's DSA independent audit
 
-### Kroll 年度 Systemic Risk Audit
+### Kroll's annual Systemic Risk Audit
 
-依据 EU DSA Art 37，VLOP 必须接受每年一次的独立审计。TikTok 2024 年选择：
+Under EU DSA Art. 37, a VLOP must undergo an annual independent audit. In 2024, TikTok selected:
 
-- **Kroll**（主审计方）
-- **A&O Shearman**（法律合规顾问）
+- **Kroll** (lead auditor)
+- **A&O Shearman** (legal compliance adviser)
 
-审计覆盖红队式工作：
+The audit covers red-team-adjacent work:
 
-- 算法推荐在 2024 欧洲议会选举期间的系统性风险（2025 SRA 详细复盘罗马尼亚大选事件）
-- AI 生成合成媒体的检测与应对
-- 未成年人心理健康内容的推荐偏差
-- 仇恨言论 / 错误信息的扩散与抑制
+- Systemic risks of algorithmic recommendation during the 2024 European Parliament election (with a detailed Romania-election post-mortem in the 2025 SRA)
+- Detection and mitigation of AI-generated synthetic media
+- Recommendation bias on minors' mental health content
+- Spread and suppression of hate speech / misinformation
 
-**2025 SRA**（2025-11 发布）独立审计意见书全文长度上百页，结论大致为"合规但有改进空间"，
-并给出多项具体改进建议——这是字节系**唯一达到西方头部实验室披露粒度的红队 / 安全评估披露**
-（具体页数与改进建议条目数以官方发布为准）。
+The **2025 SRA** (published 2025-11) contains an independent-auditor opinion running to over a hundred pages, with an overall conclusion on the order of "compliant, with room for improvement,"
+and multiple specific improvement recommendations. It is **the only red-team / safety-evaluation disclosure in the ByteDance product family that reaches the granularity of Western top labs**
+(precise page count and recommendation count per the official release).
 
-### 新加坡 IMDA / Project Moonshot
+### Singapore IMDA / Project Moonshot
 
-TikTok / ByteDance 参与新加坡 IMDA 主导的 **AI Verify** 与 **Project Moonshot**
-（开源 LLM 安全评估工具）。Project Moonshot 提供标准化红队工具链（含多语言越狱 / 偏见 / 文化敏感性测试）。
-字节的参与程度公开可查，但具体测试结果未公开发布。
+TikTok / ByteDance participate in Singapore IMDA's **AI Verify** and **Project Moonshot**
+(an open-source LLM safety-evaluation toolkit). Project Moonshot provides a standardized red-team tool chain (multilingual jailbreak / bias / cultural-sensitivity tests).
+ByteDance's participation is publicly verifiable, but specific test results are not published.
 
-### 未签署 UK AISI / US AISI 预部署测试协议
+### Non-signatory of UK AISI / US AISI pre-deployment testing
 
-与 Anthropic、OpenAI、DeepMind、Meta 均签署 UK AISI / US AISI 预部署测试 MoU 不同，
-**字节未签署**。与新加坡 IMDA、欧委会有非公开沟通。
+Unlike Anthropic, OpenAI, DeepMind, and Meta (all of whom signed UK AISI / US AISI pre-deployment testing MoUs),
+**ByteDance has not signed**. It does maintain non-public communication with Singapore IMDA and with the European Commission.
 
-## 五、学术批评
+## 5. Academic critique
 
-### 国际学者视角
+### International scholarship
 
-- **Markus Anderljung**（GovAI）：
-  中国模式是典型的 "closed AI evaluation regime"——
-  评估机制成熟但披露机制缺失；
-  呼吁建立"全球 AI 安全评估信任协议"以实现跨辖区红队结果互认
-- **Dan Hendrycks**（Center for AI Safety）：
-  TC260-003 的风险清单**对"前沿 catastrophic risk"**（生化武器辅助、自主复制、网络攻击能力）
-  **覆盖不足**；与 RSP / Preparedness / FSF 的风险本体论差距显著
-- **Matt Sheehan**（Carnegie）：
-  "Why Chinese frontier AI won't publish red-team findings the Western way"——
-  核心论点：中国企业披露红队结果会触发"国家安全信息不当披露"风险 +
-  无对应的合规激励结构 + 公众透明度在监管框架中非优先
-- **Jeffrey Ding**（GWU）：
-  TC260-003 作为"集体红队基准"的效果**比西方红队更系统但更浅**——
-  覆盖面广但深度不足，特别是对新型 Agent 风险的覆盖滞后
-- **Kendra Schaefer**（Trivium China）：
-  中国信通院 / 上海智研院的**"准监管身份"**是理解中国 AI 评估治理的关键——
-  他们既不是企业也不是政府，但承担了类似 NIST AI Safety Institute 的职能
-- **Helen Toner**（CSET）：
-  中国监管未在"前沿模型预部署测试"层面建立对外合作机制——
-  这使得中美在"危险能力"领域的对话非常薄弱
+- **Markus Anderljung (GovAI)**:
+  the Chinese model is an archetypal **"closed AI evaluation regime"**—
+  evaluation mechanisms are mature but disclosure mechanisms are missing;
+  calls for a "global AI safety evaluation trust protocol" to enable cross-jurisdictional mutual recognition of red-team results.
+- **Dan Hendrycks (Center for AI Safety)**:
+  the TC260-003 risk list **under-covers frontier catastrophic risks** (bio-weapon uplift, autonomous replication, cyber-offensive capability);
+  its risk ontology diverges significantly from that of RSP / Preparedness / FSF.
+- **Matt Sheehan (Carnegie)**:
+  "Why Chinese frontier AI won't publish red-team findings the Western way"—
+  the core argument: publishing red-team findings creates "improper disclosure of national-security information" risk +
+  no corresponding compliance incentive + public transparency is not prioritized in the regulatory framework.
+- **Jeffrey Ding (GWU)**:
+  TC260-003 as a "collective red-team benchmark" is **more systematic but shallower** than Western red teams—
+  broad in coverage, light in depth, with particularly slow coverage of emerging Agent risks.
+- **Kendra Schaefer (Trivium China)**:
+  the **"quasi-regulatory identity"** of CAICT and Shanghai AI Lab is central to understanding China's AI evaluation governance—
+  they are neither firm nor government, but perform a role analogous to a NIST AI Safety Institute.
+- **Helen Toner (CSET)**:
+  Chinese regulators have not established external cooperation mechanisms at the "frontier model pre-deployment testing" layer—
+  leaving U.S.–China dialogue on "dangerous capabilities" very thin.
 
-### 中国学者视角
+### Chinese scholarship
 
-- **张凌寒**：
-  算法审计的企业自律边界与政府合规检查的边界划定不清——
-  备案材料审查 vs. 执法检查 vs. 技术评估在法律上有交叉，
-  这是实务中的混乱源
-- **朱悦**：
-  呼吁 TC260-003 基准**半公开化**——至少测试方法、题库抽样、统计汇总层面应向学术界开放，
-  以促进学术监督
-- **戴昕**：
-  中国 AI 企业的红队披露不足是"规范性双重外部性"的结果——
-  公开披露对企业有成本无收益（无合规激励 + 有披露风险），
-  需要监管或行业协会建立披露激励
-- **吴洪**：
-  建议在《生成式 AI 暂行办法》修订时新增"企业层红队披露义务"，
-  参考 EU AI Act Art 55 对 GPAI 系统性风险模型的报告义务
+- **Zhang Linghan**:
+  the boundary between corporate-level algorithm audit and governmental compliance checks is unclear—
+  filing review vs. enforcement inspection vs. technical evaluation overlap legally,
+  which is a source of confusion in practice.
+- **Zhu Yue**:
+  calls for **semi-publicizing** TC260-003 benchmarks—at least test methodology, benchmark samples, and aggregated statistics should be opened to academia
+  to support academic oversight.
+- **Dai Xin**:
+  insufficient red-team disclosure by Chinese AI firms is a result of "double normative externality"—
+  public disclosure has costs without benefits for firms (no compliance incentive + disclosure risk),
+  and regulators or industry associations must build disclosure incentives.
+- **Wu Hong**:
+  recommends that a revision of the *Generative AI Interim Measures* add a **"corporate-level red-team disclosure duty,"**
+  with reference to EU AI Act Art. 55 reporting obligations for systemic-risk GPAI models.
 
-## 六、字节内部红队工作架构（行业惯例推测 + 公开访谈）
+## 6. ByteDance's internal red-team architecture (industry inference + public interviews)
 
-基于公开访谈、招聘信息、员工披露：
+Based on public interviews, recruiting postings, and employee disclosures:
 
-1. **AI Lab（研究层红队）**：
-  - 豆包基础模型层的对抗性研究
-  - 参与 Seed 系列论文的 safety 章节实验
-  - 与清华 AISI、上海 AI Lab 的非正式学术合作
-2. **安全中心 / 网络安全部（产品层红队）**：
-  - 豆包、扣子等产品上线前的合规测试
-  - TC260-003 基准题库的企业内执行
-  - 与中国信通院 / 上海智研院对接
-3. **Trust & Safety（运行层红队）**：
-  - TikTok / 豆包在线运行阶段的内容风险持续监测
-  - 对抗性用户 / 恶意账号的红蓝对抗
-  - 年度向欧盟 DSA 审计方提交运营数据
-4. **拟人化互动专项红队（2026-Q2 新建）**：
-  - 响应《拟人化互动服务办法》
-  - 未成年人心理健康场景专项测试
-  - 情感成瘾识别、拒答边界、真人介入触发条件测试
+1. **AI Lab (research-layer red team)**:
+   - Adversarial research on the Doubao base model
+   - Participation in safety chapters of Seed-series papers
+   - Informal academic collaboration with Tsinghua AISI and Shanghai AI Lab
+2. **Security Center / cybersecurity division (product-layer red team)**:
+   - Pre-launch compliance testing for Doubao, Coze, etc.
+   - In-house execution of TC260-003 benchmarks
+   - Liaison with CAICT and Shanghai AI Lab
+3. **Trust & Safety (operating-layer red team)**:
+   - Continuous content-risk monitoring of TikTok / Doubao in live operation
+   - Red / blue exercises against adversarial users and malicious accounts
+   - Annual operational-data submissions to EU DSA auditors
+4. **Dedicated anthropomorphic-interaction red team (newly established 2026 Q2)**:
+   - Responds to the *Anthropomorphic Interactive Services Measures*
+   - Dedicated testing of minors' mental-health scenarios
+   - Tests on emotional-addiction detection, refusal boundaries, and human-intervention trigger conditions
 
-## 七、2026 《拟人化互动服务办法》的新红队压力
+## 7. New red-team pressure from the 2026 *Anthropomorphic Interactive Services Measures*
 
-2026-07-15 施行的《拟人化互动服务办法》引入了**中国模式中最贴近"前沿风险"的红队要求**：
+The Anthropomorphic Measures, effective 2026-07-15, introduce **red-team requirements that come closest to "frontier risk" within the Chinese model**:
 
-- **未成年人心理健康专项测试**：
-  针对 AI 恋人 / 虚拟朋友 / 情感陪伴类产品，要求做系统性的成瘾风险、自杀诱导、
-  脱离现实倾向评估
-- **"长时对话退化"测试**：
-  AI 在连续数小时 / 数天的"关系"对话中，人格设定漂移与敏感话题漏失的评估
-- **监护人 + 未成年人模式切换可靠性测试**
+- **Dedicated mental-health testing for minors**:
+  for AI-partner / virtual-friend / emotional-companion products, requires systematic evaluation of addiction risk, suicide-inducement, and detachment-from-reality tendencies
+- **"Long-session degradation" testing**:
+  evaluation of persona drift and sensitive-topic leakage over conversations lasting hours or days within a "relationship" context
+- **Reliability testing for guardian-mode / minor-mode switching**
 
-这实际上把部分"前沿 catastrophic"类风险（心理 / 社会层面）纳入了红队框架。
-字节的应对：新建拟人化专项红队工作组，预计 2026-Q2 启动产品全线合规审查。
+This, in effect, brings part of the "frontier catastrophic" risk class (psychological and social) into the red-team framework.
+ByteDance's response: a new dedicated red-team working group, with company-wide compliance review of the product line expected to launch in 2026 Q2.
 
-## 八、与其他实验室红队披露的对比
+## 8. Comparison with other labs' red-team disclosure
 
-| 公司 | 旗舰红队披露 | 预部署 AISI 合作 | 独立审计 |
+| Company | Flagship red-team disclosure | Pre-deployment AISI cooperation | Independent audit |
 | --- | --- | --- | --- |
-| **Anthropic** | Frontier Red Team 论文 + RSP v3 Risk Reports | UK/US AISI 签约 | GovAI / METR 等外部方 |
-| **OpenAI** | Preparedness Framework 评估报告 | UK/US AISI 签约 | Safety Advisory Group |
-| **DeepMind** | FSF Report（如 Gemini 3 Pro FSF Report, 2025-11）| UK/US AISI 签约 | 内部 + 外部 |
-| **Meta** | Frontier AI Framework 评估 | UK AISI 签约 | 内部 |
-| **字节跳动** | **无公开红队报告** | **均未签** | **仅 TikTok（DSA Kroll）** |
-| **阿里 / 百度 / 腾讯 / DeepSeek** | **无公开红队报告** | **均未签** | **无** |
+| **Anthropic** | Frontier Red Team papers + RSP v3 Risk Reports | UK / US AISI signed | GovAI / METR and other external parties |
+| **OpenAI** | Preparedness Framework evaluation reports | UK / US AISI signed | Safety Advisory Group |
+| **DeepMind** | FSF Reports (e.g. Gemini 3 Pro FSF Report, 2025-11) | UK / US AISI signed | Internal + external |
+| **Meta** | Frontier AI Framework evaluations | UK AISI signed | Internal |
+| **ByteDance** | **No public red-team report** | **None signed** | **TikTok only (DSA Kroll)** |
+| **Alibaba / Baidu / Tencent / DeepSeek** | **No public red-team report** | **None signed** | **None** |
 
-**结论**：字节在红队披露上**并非显著落后**——
-在中国头部公司中实际领先于阿里 / 百度 / 腾讯 / DeepSeek，因为 TikTok 的 DSA 独立审计
-使其具备唯一的公开红队工作流；但对标西方头部仍有显著差距。
+**Conclusion**: ByteDance is **not notably behind** on red-team disclosure—
+among Chinese leading firms it is actually ahead of Alibaba, Baidu, Tencent, and DeepSeek, because TikTok's DSA independent audit gives it the only public red-team-adjacent workstream;
+but relative to top Western labs, the gap is substantial.
 
-## 九、2025–2026 Q1 关键动态
+## 9. 2025–2026 Q1 key developments
 
-- **2025-05**：TC260-003 修订启动，字节参与多模态 / Agent 章节
-- **2025-09**：GB 45438-2025 生效，豆包全线标识实装；与红队对抗性去水印测试同步启动
-- **2025-11**：TikTok 2025 版 SRA 发布（Kroll 审计）
-- **2025-12**：新加坡 IMDA Project Moonshot v2 发布，字节作为技术贡献方之一
-- **2026-01**：字节 AI Ethics Committee 重组，拟人化专项工作组纳入
-- **2026-02**：Doubao-1.5-Thinking 推理模型接受中国信通院评估（结果非公开）
-- **2026-04-10**：《拟人化互动服务办法》发布，企业内部启动未成年人心理健康红队筹备
+- **2025-05**: TC260-003 revision begins; ByteDance participates in multimodal / Agent chapters.
+- **2025-09**: GB 45438-2025 takes effect; Doubao's full-line labeling is implemented, together with adversarial de-watermarking tests.
+- **2025-11**: TikTok publishes its 2025 SRA (audited by Kroll).
+- **2025-12**: Singapore IMDA Project Moonshot v2 is released; ByteDance is among the technology contributors.
+- **2026-01**: ByteDance's AI Ethics Committee is reorganized to include the anthropomorphic-interaction dedicated working group.
+- **2026-02**: Doubao-1.5-Thinking reasoning model is evaluated by CAICT (results non-public).
+- **2026-04-10**: the *Anthropomorphic Interactive Services Measures* are published; internal preparation begins for minor mental-health red-team work.
 
-## 十、实务建议（给研究者 / 政策分析者）
+## 10. Practical recommendations (for researchers and policy analysts)
 
-- 研究中国头部 AI 红队能力，应把 **TC260-003 + 中国信通院评估**视为 de facto 披露，
-  而不期待企业自行发布红队论文
-- 对比中美红队披露时应区分 **披露机制 vs. 工作能力**——前者差距显著，后者差距被普遍高估
-- 字节相对"领先"的披露是通过 **TikTok DSA 审计**——
-  这对研究中国头部 AI 公司是**唯一可做跨国对标的样本**
-- 跟踪《拟人化互动服务办法》执行，是观察**中国是否将把前沿风险纳入企业层披露义务**的关键窗口
+- In studying Chinese leading AI firms' red-team capabilities, treat **TC260-003 + CAICT evaluations** as de facto disclosure,
+  rather than expecting firms to publish red-team papers on their own.
+- When comparing U.S. and Chinese red-team disclosure, distinguish **disclosure mechanism vs. capability**—the former gap is significant, the latter gap is widely overestimated.
+- ByteDance's relatively "leading" disclosure is via **TikTok's DSA audit**—
+  the **only cross-border comparable sample** for studying Chinese leading AI firms.
+- Tracking enforcement of the *Anthropomorphic Interactive Services Measures* is a key window for observing **whether China will fold frontier risk into corporate-level disclosure duties**.
 
-## 十一、相关索引
+## 11. Related index
 
-- 顶层规则：[TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/)
-  · [《生成式 AI 暂行办法》](/rules/china/generative-ai-interim-measures/) 第 17 条
-  · [《拟人化互动服务办法》](/rules/china/anthropomorphic-interaction-services/)
-- 同类对比：[Anthropic / red-team-disclosures](/companies/anthropic/red-team-disclosures/)
+- Top-level rules: [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/)
+  · [*Generative AI Interim Measures*](/rules/china/generative-ai-interim-measures/) Art. 17
+  · [*Anthropomorphic Interactive Services Measures*](/rules/china/anthropomorphic-interaction-services/)
+- Peer comparison: [Anthropic / red-team-disclosures](/companies/anthropic/red-team-disclosures/)
   · [OpenAI / red-team-disclosures](/companies/openai/red-team-disclosures/)
-  · [DeepMind / red-team-disclosures](/companies/deepmind/red-team-disclosures/)
-- 公司侧相邻页：[usage-policy](./usage-policy/) · [model-card](./model-card/) · [safety-framework](./safety-framework/) · [transparency-report](./transparency-report/)
+  · [DeepMind / red-team-disclosures](/companies/google-deepmind/red-team-disclosures/)
+- Adjacent company pages: [usage-policy](./usage-policy/) · [model-card](./model-card/) · [safety-framework](./safety-framework/) · [transparency-report](./transparency-report/)

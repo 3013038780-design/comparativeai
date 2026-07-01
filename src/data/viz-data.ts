@@ -16,7 +16,7 @@ export interface TimelineNode {
 	kind: Bi;              // 法律 / 行政法规 / 部门规章 / ...
 	summary: Bi;           // 一句话摘要（< 60 字）
 	topics: Array<'risk' | 'gpai' | 'data' | 'labeling' | 'minors' | 'ethics' | 'strategy'>;
-	href: string;          // link to the rule page (zh-side; /en/ prefix added by consumer)
+	href: string;          // canonical English link; /zh prefix added for the Chinese locale
 }
 
 export const cnTimeline: TimelineNode[] = [

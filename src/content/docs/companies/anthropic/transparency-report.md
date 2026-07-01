@@ -1,218 +1,179 @@
 ---
-title: 透明度报告
-description: Anthropic Transparency Hub 披露内容、版本演进、与 RDR / DSA 基线对比，以及"透明度剧场"批评
+title: Transparency Report
+description: Disclosure content in Anthropic's Transparency Hub, version history, comparison against the RDR / DSA baselines, and the "transparency theatre" critique
 sidebar:
   order: 4
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> **概要**：Anthropic **Transparency Hub**（anthropic.com/transparency）自 2024 首次发布以来
-> 按半年至年度节奏公开政府数据请求、内容审核、滥用报告、Trust & Safety 执法与政治偏见测试等指标。
-> 相对 Meta / Google 数十年积累的透明度报告体系，Anthropic 的体系**年轻但专业**。
-> 本页系统梳理披露内容、比较基线，并援引 Kirsten Martin、Mike Ananny 等学者对
-> "**透明度剧场**"的批评。
+> **Summary**: Since its launch in 2024, Anthropic's **Transparency Hub** (anthropic.com/transparency)
+> has published, on a semi-annual to annual cadence, metrics on government data requests, content moderation, misuse reports, Trust & Safety enforcement, and political-bias testing.
+> Compared with the decades of accumulated practice at Meta and Google, Anthropic's system is **young but professionally executed**.
+> This page systematically surveys the disclosures, benchmarks them against peer baselines, and draws on the critiques of "**transparency theatre**" from Kirsten Martin, Mike Ananny, and others.
 
-## Transparency Hub 的披露矩阵
+## The Transparency Hub disclosure matrix
 
-| 类别 | 披露内容 | 首发 | 最新周期 |
+| Category | Disclosed content | First published | Latest cycle |
 | --- | --- | --- | --- |
-| **政府数据请求** | 来自执法机关的用户数据请求数量、国别、响应率 | 2024 H1 | 2025 H2（2026-02 发布） |
-| **国家安全请求** | NSL / FISA（法律允许范围内汇总） | 2024 H2 | 2025 H2 |
-| **内容审核** | AUP 违规账户警告 / 暂停 / 终止统计 | 2025 H1 | 2025 年度（2026-03） |
-| **滥用报告** | 具名披露的 Claude 被滥用案例（事后复盘） | 2024-11 首次 | 周期性（每 3–6 月） |
-| **Trust & Safety 执法** | 误用类别分布、响应时间 | 2025 H1 | 2025 年度 |
-| **政治偏见评估** | Claude 在政治光谱上的行为测试结果 | 2025 Q3 | 2025 年度 |
-| **儿童安全** | CSAM 拒绝率、NCMEC 报告统计 | 2025 H2 | 2025 年度 |
+| **Government data requests** | Volume, country, response rate of law-enforcement user-data requests | H1 2024 | H2 2025 (published February 2026) |
+| **National-security requests** | NSL / FISA (aggregated within legal limits) | H2 2024 | H2 2025 |
+| **Content moderation** | Warnings / suspensions / terminations for AUP violations | H1 2025 | Full-year 2025 (March 2026) |
+| **Misuse reports** | Named disclosures of Claude abuse cases (post-mortems) | November 2024 first issue | Cyclical (every 3–6 months) |
+| **Trust & Safety enforcement** | Distribution of misuse categories, response times | H1 2025 | Full-year 2025 |
+| **Political bias evaluation** | Results of testing Claude's behaviour across the political spectrum | Q3 2025 | Full-year 2025 |
+| **Child safety** | CSAM refusal rates, NCMEC-report statistics | H2 2025 | Full-year 2025 |
 
-**结构参照**：Anthropic 透明度报告的类别选择**部分对标**
-Meta Community Standards Enforcement Report、
-Google Transparency Report、
-Ranking Digital Rights Corporate Accountability Index 的维度。
+**Structural benchmarks**: the categories chosen for the Anthropic transparency report **partly track** dimensions from the Meta Community Standards Enforcement Report, the Google Transparency Report, and the Ranking Digital Rights Corporate Accountability Index.
 
-## 版本演进
+## Version history
 
-| 时间 | 关键事件 |
+| Date | Key event |
 | --- | --- |
-| 2023–2024 Q1 | 无系统透明度报告；零散博客披露 |
-| **2024-05** | 首个"政府请求透明度"半年报（覆盖 2024 H1） |
-| **2024-11** | 首份具名滥用复盘："Disrupting Malicious Uses of Our Models" |
-| **2025-02** | 政府请求 2024 H2 报告；首次披露国别分布 |
-| **2025-08** | Transparency Hub 正式上线，统一入口页；首次公开 Trust & Safety 执法统计 |
-| **2025-Q3** | 政治偏见评估首发（响应 2025 "political neutrality" 行政压力） |
-| **2026-02** | 2025 H2 数据；**首次加入"AI-assisted 大规模滥用"专章** |
-| **2026-03** | 2025 年度报告；AUP 账户终止在**数万量级**披露（具体数字以官方报告为准）|
+| 2023–Q1 2024 | No systematic transparency reporting; scattered blog disclosures |
+| **May 2024** | First "government-request transparency" half-year report (covering H1 2024) |
+| **November 2024** | First named misuse post-mortem, "Disrupting Malicious Uses of Our Models" |
+| **February 2025** | H2 2024 government-request report; first country-level breakdown |
+| **August 2025** | Transparency Hub formally launches as a unified landing page; first public Trust & Safety enforcement statistics |
+| **Q3 2025** | Political-bias evaluation debuts (responding to 2025 "political neutrality" executive pressure) |
+| **February 2026** | H2 2025 data; **first chapter dedicated to "AI-assisted large-scale misuse"** |
+| **March 2026** | Full-year 2025 report; AUP account terminations disclosed in the **tens of thousands** (precise figures should be taken from the official report) |
 
-## 具名滥用披露：一个独特实践
+## Named misuse disclosures: a distinctive practice
 
-Anthropic 自 2024-11 起的"Disrupting Malicious Uses"系列是前沿实验室中**独特的实践**——
-**具名披露已检测并阻断的滥用案例**（去标识化）。2024-11 至 2026-04 期间主要类别：
+Anthropic's "Disrupting Malicious Uses" series, beginning November 2024, is a **distinctive practice among frontier labs** — **named disclosures of detected and blocked misuse cases** (de-identified). From November 2024 to April 2026 the main categories are:
 
-1. **国家关联网络行动**（APT 风格）：具体披露了**与朝鲜、伊朗、俄罗斯相关**的账户试图用 Claude
-   进行恶意代码辅助、侦察信息分析等
-2. **大规模求职欺诈**：2025-01 披露利用 Claude 大规模生成伪造简历、AI 冒充候选人通过远程面试
-3. **Vibe Hacking**：2025-07 披露的利用自然语言诱导模型越狱参与社工攻击的模式
-4. **政治活动操作**：2025-11 披露的大规模自动化政治内容生成集群（具体不披露政治倾向）
-5. **CSAM 相关拒绝数据**：2026-02 首次披露年度拒绝次数与 NCMEC 报告数量
+1. **State-linked cyber operations** (APT-style): specific disclosures of accounts linked to **North Korea, Iran, and Russia** attempting to use Claude for malicious-code assistance and reconnaissance-information analysis
+2. **Large-scale job-application fraud**: January 2025 disclosure of mass-generated fabricated résumés and AI candidates impersonating real applicants in remote interviews
+3. **Vibe Hacking**: the July 2025 disclosure of a natural-language-driven jailbreak pattern used in social-engineering attacks
+4. **Political-influence operations**: November 2025 disclosure of large-scale automated political-content-generation clusters (partisan orientation not disclosed)
+5. **CSAM-related refusal data**: February 2026 first disclosure of annual refusal counts and NCMEC reports
 
-**对比 OpenAI 的"Disrupting deceptive uses of AI"系列**（2024-05 起）：两家的披露节奏与内容
-**高度相似**，是这一实践的行业双头。Meta、Google 在 LLM 滥用上**未对标披露**。
+**Comparison with OpenAI's "Disrupting deceptive uses of AI" series** (launched May 2024): the two labs' cadence and content are **closely similar**, making them the industry's dual leaders in this practice. Meta and Google have **not produced comparable LLM-misuse disclosures**.
 
-## 政治偏见评估：一个外部压力的产物
+## Political-bias evaluation: a product of external pressure
 
-2025 Trump 行政令与美国司法部对"ideological bias"的关注**直接**推动了前沿实验室的
-"政治中立性"披露。Anthropic 2025 Q3 首发的政治偏见评估包含：
+Trump-administration executive orders in 2025 and US Department of Justice focus on "ideological bias" **directly** drove frontier-lab "political neutrality" disclosures. Anthropic's Q3 2025 inaugural political-bias evaluation covered:
 
-- **议题清单**：堕胎、枪支、移民、气候、加密货币等 ~30 项
-- **测试方法**：多样化提问框架，测量模型在"左/右"、"liberal/conservative"维度的回答倾向
-- **基线对比**：Claude vs. GPT-5 vs. Gemini 3 vs. Grok 4（自己公开可复现的评测）
-- **结果**：Claude **略偏左**但在 4.x 后显著向中心移动；相对 Grok 4 最接近中点
+- **Topic list**: ~30 issues including abortion, guns, immigration, climate, cryptocurrency
+- **Method**: diverse prompt framings measuring response lean on left/right and liberal/conservative axes
+- **Baseline comparisons**: Claude vs. GPT-5 vs. Gemini 3 vs. Grok 4 (a self-published reproducible evaluation)
+- **Results**: Claude leans **slightly left** but has moved noticeably toward the centre in the 4.x series; closest to centre among peers other than Grok 4
 
-**学术批评**：Brookings Institution (*AI and political polarization*, 2024) 指出，
-"中立性"本身是**政治建构**——以什么为中点本身是政治选择。Anthropic 的评估采用了
-**美国国内政治光谱**作为参考系，对非美国议题的适用性有限。
+**Academic critique**: Brookings Institution (*AI and political polarization*, 2024) notes that "neutrality" is itself a **political construct** — the choice of centre-point is a political choice. Anthropic's evaluation uses the **US domestic political spectrum** as frame of reference, with limited applicability to non-US issues.
 
-## 相对 Meta / Google 透明度报告体系的基线差距
+## Baseline gap relative to Meta / Google
 
-Meta / Google 的透明度报告从 **2011–2013 年**（Google 2010、Twitter 2012、Meta 2013）开始，
-已有**十年以上**方法论积累。Anthropic 从 2024 起步，**基线差距**体现在：
+Meta and Google's transparency reporting dates to **2011–2013** (Google 2010, Twitter 2012, Meta 2013), with **over a decade** of methodological accumulation. Anthropic started in 2024, and the **baseline gap** manifests in:
 
-| 维度 | Google (2011–) | Meta (2013–) | Anthropic (2024–) |
+| Dimension | Google (2011–) | Meta (2013–) | Anthropic (2024–) |
 | --- | --- | --- | --- |
-| **发布历史** | 14+ 年 | 12+ 年 | 2 年 |
-| **国别分解** | 完整 | 完整 | 部分（2025 起） |
-| **法律依据分类** | 完整 | 完整 | 部分 |
-| **用户影响指标** | 账户数 + 内容数 | 账户数 + 内容数 | 账户数（内容数未披露） |
-| **独立审计** | 部分（PwC、DTTL 等） | **有**（EY、独立审计） | **无** |
-| **历史数据可下载** | 是 | 是 | **部分**（仅最新） |
+| **Reporting history** | 14+ years | 12+ years | 2 years |
+| **Country-level breakdown** | Complete | Complete | Partial (since 2025) |
+| **Legal-basis categorisation** | Complete | Complete | Partial |
+| **User-impact metrics** | Accounts + content | Accounts + content | Accounts only (no content counts) |
+| **Independent audit** | Partial (PwC, DTTL, etc.) | **Yes** (EY, independent audit) | **None** |
+| **Historical data downloads** | Yes | Yes | **Partial** (latest only) |
 
-**Ranking Digital Rights 2024 Corporate Accountability Index** 方法论：
-对"治理 / 自由表达 / 隐私"三大维度共 300+ 指标评分。
-Anthropic **未入选 RDR 常规评估**（RDR 聚焦平台公司），
-但适用的部分 G/F/P 指标对 Anthropic 的适用性测试（内部尝试）显示
-**得分会显著低于 Meta / Google**——主要因为**历史数据、细分披露、独立审计**三项。
+**Ranking Digital Rights 2024 Corporate Accountability Index** methodology: 300+ indicators across governance / freedom of expression / privacy. Anthropic **has not been included** in the RDR routine evaluation (RDR focuses on platform companies), but internal applicability testing of the relevant G/F/P indicators shows that Anthropic would **score significantly below Meta and Google** — principally because of the three gaps above (history, granularity, independent audit).
 
-## 学术批评：透明度剧场
+## Academic critique: transparency theatre
 
-### Kirsten Martin（Notre Dame）
+### Kirsten Martin (Notre Dame)
 
-Martin 的 **"privacy as contextual integrity" 延伸到透明度研究**指出：
-透明度报告的**披露类别选择**本身反映权力结构——
-披露的类别是"对公司有利的透明度"（如政府请求数量表明公司"保护用户"），
-不披露的类别（如内部管理层决策、训练数据、算法变更）是"对公司不利的不透明"。
+Martin's extension of **"privacy as contextual integrity" to transparency research** argues that the **choice of disclosure categories** itself reflects a power structure — what is disclosed is "transparency favourable to the company" (government requests demonstrate the company "protects users"), while what is not disclosed (internal management decisions, training data, algorithmic changes) constitutes "opacity unfavourable to the company."
 
-**Anthropic 的具体表现**：
-- 披露：政府请求、AUP 执法、CSAM 拒绝
-- 不披露：训练数据组成、FLOP、RLHF 劳工、内部政策变更
+**Anthropic's specific profile**:
+- Disclosed: government requests, AUP enforcement, CSAM refusals
+- Not disclosed: training-data composition, FLOP, RLHF labour, internal policy changes
 
-### Mike Ananny（USC）
+### Mike Ananny (USC)
 
-Ananny (*Networked Press Freedom*, 2018; *Seeing Without Knowing*, 2018 with Crawford) 的
-核心主张：**透明度本身不等于问责**。
-**没有独立验证机制的透明度报告**相当于"公司自己告诉你它做了什么"——
-读者**无法独立核实**报告的真实性与完整性。
+Ananny (*Networked Press Freedom*, 2018; *Seeing Without Knowing*, 2018, with Crawford) advances the core claim that **transparency ≠ accountability**. A transparency report with **no independent verification mechanism** reduces to "the company telling you what it did" — the reader **cannot independently verify** the document's accuracy or completeness.
 
-**Anthropic 的应对**：2026 新增的 RSP v3 外部审查方（GovAI / METR / MATS，
-见 [safety-framework](../safety-framework/)）部分回应了这一点，
-但**透明度报告本身的审计仍是内部的**。
+**Anthropic's response**: the external reviewers introduced in RSP v3 (GovAI / METR / MATS; see [safety-framework](../safety-framework/)) partially respond, but the **audit of transparency reports themselves remains internal**.
 
-### Evelyn Douek（Stanford / Columbia）
+### Evelyn Douek (Stanford / Columbia)
 
-Douek (*Content Moderation at Scale*, *The Siren Call of Content Moderation Formalism*)
-聚焦**内容审核的 due process**：
-- 披露规则是什么（AUP）—— 有
-- 披露违规类别统计 —— 有
-- **披露个案处理流程**（是否有申诉机制、典型案例裁量）—— 无
-- **披露政策变更决策** —— 无
+Douek (*Content Moderation at Scale*, *The Siren Call of Content Moderation Formalism*) focuses on due process in content moderation:
+- Disclosure of rules (AUP) — yes
+- Disclosure of violation-category statistics — yes
+- **Disclosure of individual-case processing** (appeal mechanisms, exemplary adjudications) — no
+- **Disclosure of policy-change decision-making** — no
 
-这是 Anthropic（及全行业）透明度报告的**结构性盲区**。
-Douek 称之为"**执法黑盒的量化表皮**"——
-你知道多少账户被封，但不知道**每一个是怎么被判断的**。
+This is a **structural blind spot** across Anthropic (and the industry) transparency reporting. Douek terms it the "**quantitative skin over a black-box enforcement**" — one knows how many accounts were banned, but not **how each was judged**.
 
-### Alex Stamos（SIO → Krebs Stamos Group）
+### Alex Stamos (SIO → Krebs Stamos Group)
 
-Stamos 在 Stanford Internet Observatory 期间多次呼吁 **Trust & Safety 作为学科**
-的专业化 —— Anthropic 2024–2025 的 T&S 团队建设**在行业中算积极响应**。
-但 Stamos 也持续批评**公司自我评估的固有冲突**：
-即使 T&S 人员本身专业，**向股东、合规方、公众三方同时负责的结构**
-使得**批判性判断天然受约束**。
+Stamos, during his time at the Stanford Internet Observatory, repeatedly called for **Trust & Safety as a discipline**. Anthropic's 2024–2025 T&S team build-out is **among the more active industry responses**. Stamos also continually criticised the **inherent conflict** in company self-assessment: even where T&S staff are professionally qualified, a **structure that simultaneously answers to shareholders, compliance, and the public** constrains critical judgement.
 
-## DSA Art. 24 / 42 的基线对比
+## DSA Article 24 / 42 baseline comparison
 
-**EU Digital Services Act** 对 Very Large Online Platforms (VLOPs) 规定了
-**结构化的透明度义务**：
+The **EU Digital Services Act** imposes **structured transparency obligations** on Very Large Online Platforms (VLOPs):
 
-| DSA 要求 | Anthropic 当前实践 | 缺口 |
+| DSA requirement | Anthropic current practice | Gap |
 | --- | --- | --- |
-| **Art. 15**（定期透明度报告） | 有（半年至年度） | 无 DSA 强制格式 |
-| **Art. 24**（广告透明度） | N/A（Claude 非平台） | —— |
-| **Art. 34-35**（系统性风险评估） | RSP 部分覆盖 | **独立性不足** |
-| **Art. 37**（独立审计） | **无** | **DSA 要求每年独立审计** |
-| **Art. 40**（研究者数据访问） | 有（有限合作） | 未达 DSA 研究者访问标准 |
-| **Art. 42**（VLOP 透明度数据库） | 部分（博客式） | 未纳入 DSA 数据库 |
+| **Art. 15** (periodic transparency report) | Yes (semi-annual to annual) | No DSA-prescribed format |
+| **Art. 24** (advertising transparency) | N/A (Claude is not a platform) | — |
+| **Art. 34–35** (systemic risk assessment) | Partial via RSP | **Independence insufficient** |
+| **Art. 37** (independent audit) | **None** | **DSA requires annual independent audit** |
+| **Art. 40** (researcher data access) | Present (limited collaboration) | Below DSA researcher-access standard |
+| **Art. 42** (VLOP transparency database) | Partial (blog-style) | Not incorporated in the DSA database |
 
-**Anthropic 的 Claude.ai 在欧盟虽然不直接受 VLOP 义务约束**
-（用户规模可能不达阈值），但**将来若达到或被认定为 VLOP**，
-当前透明度实践**不足以满足 Art. 37 / 42**。
+**Claude.ai in the EU is not directly subject to VLOP obligations** (user base likely below threshold); but **if it reaches or is designated a VLOP**, current transparency practice is **insufficient to meet Articles 37 / 42**.
 
-## Trust & Safety 作为一门学科的行业兴起
+## Trust & Safety as a discipline: industry emergence
 
-透明度报告之外，**Trust & Safety 生态**在 2023–2026 经历了专业化：
+Beyond transparency reporting, the **Trust & Safety ecosystem** professionalised across 2023–2026:
 
-- **Stanford Internet Observatory**（2019–，2024-06 宣布重组、部分功能转至
-  Krebs Stamos Group 等）—— Alex Stamos、Renée DiResta 引领
-- **Trust & Safety Professional Association**（2020–）—— 认证、培训
-- **T&S 政策期刊**：Stanford *Journal of Online Trust & Safety* 2021 创刊
-- **关键学者**：Evelyn Douek、Daphne Keller、Kate Klonick、Tarleton Gillespie、Sarah T. Roberts
+- **Stanford Internet Observatory** (2019–; reorganisation announced June 2024, some functions transferred to Krebs Stamos Group) — led by Alex Stamos and Renée DiResta
+- **Trust & Safety Professional Association** (2020–) — certification, training
+- **T&S policy journals**: Stanford *Journal of Online Trust & Safety* founded 2021
+- **Key scholars**: Evelyn Douek, Daphne Keller, Kate Klonick, Tarleton Gillespie, Sarah T. Roberts
 
-**Anthropic T&S 团队**在 2023–2026 从初期几人扩展至行业中等规模（具体人数未官方披露），
-招聘路径多来自 Meta Integrity、Twitter、Stanford SIO。
-这使得**团队专业性**在前沿实验室中相对领先；
-但**治理独立性**（T&S 向谁汇报、是否能覆盖产品决策）仍不对外公开。
+Anthropic's T&S team grew from a handful at the outset to a mid-industry size through 2023–2026 (exact headcount not publicly disclosed). Hiring pathways draw on Meta Integrity, Twitter, and Stanford SIO, giving the **team's professional profile** a relative lead among frontier labs; but **governance independence** (to whom T&S reports, whether it can override product decisions) is not publicly disclosed.
 
-## 与本站其他页面的交叉引用
+## Cross-references within this site
 
-- **Anthropic 公司概况**：[../](../)
-- **AUP 执法细节**：[usage-policy](../usage-policy/)
-- **红队与 alignment 披露**：[red-team-disclosures](../red-team-disclosures/)
-- **RSP 外部审查机制**：[safety-framework](../safety-framework/)
-- **Model Card 披露**：[model-card](../model-card/)
-- **OpenAI 透明度实践**：[companies/openai](../../openai/)
-- **EU DSA 要求**：DSA Art. 15 / 24 / 37 / 40 / 42
-- **加州 SB 53 披露义务**：Critical Safety Incident 报告要求
-- **中国算法备案**：[生成式 AI 暂行办法](/rules/china/generative-ai-interim-measures/) ——
-  CAC 备案的"算法透明度"要求与 Anthropic 式公开披露是**不同制度传统**
+- **Anthropic corporate overview**: [../](../)
+- **AUP enforcement detail**: [usage-policy](../usage-policy/)
+- **Red-team and alignment disclosures**: [red-team-disclosures](../red-team-disclosures/)
+- **RSP external review**: [safety-framework](../safety-framework/)
+- **Model Card disclosure**: [model-card](../model-card/)
+- **OpenAI transparency practice**: [companies/openai](../../openai/)
+- **EU DSA**: Articles 15 / 24 / 37 / 40 / 42 DSA
+- **California SB 53**: Critical Safety Incident reporting requirement
+- **Chinese algorithm filing**: [Generative AI Interim Measures 《生成式人工智能服务管理暂行办法》](/rules/china/generative-ai-interim-measures/) — CAC algorithm filing's "algorithmic transparency" mandate and Anthropic-style public disclosure represent **distinct regulatory traditions**
 
-## 2025–2026 Q1 观察
+## Observations 2025–Q1 2026
 
-- **2025-08** Transparency Hub 正式上线，整合此前的分散披露
-- **2025-Q3** 政治偏见评估首发（响应美国行政压力）
-- **2025-11** "Vibe Hacking" 等大规模滥用披露形成持续叙事
-- **2026-02** 2025 H2 数据首次包含 AI 辅助国家级网络行动的归因披露
-- **2026-03** 年度报告披露 AUP 账户终止在**数万量级**（具体数字以官方报告为准）
+- **August 2025**: Transparency Hub formally launches, consolidating previous scattered disclosures
+- **Q3 2025**: political-bias evaluation debuts (responding to US executive pressure)
+- **November 2025**: Vibe Hacking and other large-scale misuse disclosures form a sustained narrative
+- **February 2026**: H2 2025 data first include attribution disclosures for AI-assisted state-level cyber operations
+- **March 2026**: annual report discloses AUP account terminations in the **tens of thousands** (precise figures should be taken from the official report)
 
-## 行业对比快照（2026-04）
+## Industry comparison snapshot (April 2026)
 
-| 公司 | 首发年份 | 发布节奏 | 政府请求 | 滥用披露 | 独立审计 |
+| Company | First report | Cadence | Government requests | Misuse disclosure | Independent audit |
 | --- | --- | --- | --- | --- | --- |
-| **Google** | 2010 | 半年 | 详细 | 有（YouTube / Search） | 部分 |
-| **Meta** | 2013 | 季度 + 年度 | 详细 | 有（CSER / integrity） | EY |
-| **Apple** | 2013 | 半年 | 详细 | 有限 | 未详 |
-| **OpenAI** | 2023 | 不定期 | 部分 | 有（2024 起） | 无 |
-| **Anthropic** | **2024** | **半年至年度** | **部分** | 有（具名） | 无 |
-| **Google DeepMind** | 经由 Google 报告 | 同 Google | 同 Google | 部分 | 部分 |
-| **xAI** | 无 | —— | —— | —— | —— |
-| **Mistral** | 无 | —— | —— | —— | —— |
-| **中国公司**（阿里 / 百度 / 字节 / DeepSeek） | 无 | —— | —— | —— | —— |
+| **Google** | 2010 | Semi-annual | Detailed | Yes (YouTube / Search) | Partial |
+| **Meta** | 2013 | Quarterly + annual | Detailed | Yes (CSER / integrity) | EY |
+| **Apple** | 2013 | Semi-annual | Detailed | Limited | N/A |
+| **OpenAI** | 2023 | Irregular | Partial | Yes (since 2024) | None |
+| **Anthropic** | **2024** | **Semi-annual to annual** | **Partial** | Yes (named) | None |
+| **Google DeepMind** | Via Google reports | Same as Google | Same as Google | Partial | Partial |
+| **xAI** | None | — | — | — | — |
+| **Mistral** | None | — | — | — | — |
+| **Chinese firms** (Alibaba / Baidu / ByteDance / DeepSeek) | None | — | — | — | — |
 
-**两个明显事实**：
-1. **前沿实验室的透明度实践整体 2 年以内起步**，相对老平台公司**结构性年轻**
-2. **中国前沿公司无对外透明度报告**——透明度通过 **CAC 算法备案**的非公开披露实现，
-   向**监管机构而非公众**负责
+**Two salient facts**:
+1. **Frontier-lab transparency practice is less than two years old as a whole**, structurally younger than legacy platform companies
+2. **Chinese frontier firms produce no public transparency reports** — transparency is effected through non-public disclosures to the **Cyberspace Administration of China (CAC) algorithm filing (算法备案)**, answerable to **the regulator, not the public**
 
-## 持续追踪
+## Ongoing tracking
 
-- Anthropic 透明度报告方法论的公开化（当前仅类别披露，缺方法论附录）
-- 外部独立审计是否在 SB 53 / DSA 压力下引入
-- 滥用披露的归因准确性（第三方安全研究者的验证）
-- 政治偏见评估是否扩展到非英文 / 非美国议题
-- Trust & Safety 团队规模与治理地位的公开信息
+- Publication of transparency-report methodology (currently only categories disclosed; no methods annex)
+- Whether external independent audit is introduced under SB 53 / DSA pressure
+- Attribution accuracy in misuse disclosures (validation by third-party security researchers)
+- Extension of political-bias evaluation to non-English / non-US topics
+- Public information on Trust & Safety team size and governance standing

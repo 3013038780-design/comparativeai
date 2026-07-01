@@ -1,106 +1,105 @@
 ---
-title: 欧盟 — 数据与训练
-description: 欧盟 "GDPR + AI Act 第 10 条 + 版权 TDM 例外 + 训练数据摘要" 四层框架
+title: EU — Data and Training
+description: The EU's four-layer framework — GDPR + AI Act art. 10 + DSM TDM exception + training-data summary.
 sidebar:
   order: 4
-  label: 欧盟
+  label: EU
 ---
 
-## 相关规则
+## Relevant rules
 
-| 规则 | 与训练数据的关系 |
+| Rule | Relationship to training data |
 | --- | --- |
-| [GDPR](/rules/eu/gdpr/) | 个人数据合法基础、目的限制 |
-| [EU AI Act](/rules/eu/ai-act/) | 第 10 条数据治理 + 第 53 条训练数据摘要 |
-| [GPAI Code of Practice](/rules/eu/gpai-code-of-practice/) | Chapter 2 版权 + 训练数据摘要标准化 |
-| DSM Copyright Directive (2019/790) | TDM 例外（第 3、4 条） |
-| [DSA](/rules/eu/dsa/) | VLOP 对用于训练的内容的可见性 |
-| [France CNIL AI](/subnational/eu/france-cnil-ai/) | GDPR × AI 训练数据合规指引（12+ 份） |
+| [GDPR](/rules/eu/gdpr/) | Lawful basis for personal data; purpose limitation |
+| [EU AI Act](/rules/eu/ai-act/) | Art. 10 data governance + art. 53 training-data summary |
+| [GPAI Code of Practice](/rules/eu/gpai-code-of-practice/) | Chapter 2 copyright + standardised training-data summary |
+| DSM Copyright Directive (2019/790) | TDM exception (arts. 3, 4) |
+| [DSA](/rules/eu/dsa/) | VLOP visibility of content used for training |
+| [France CNIL AI](/subnational/eu/france-cnil-ai/) | GDPR × AI training-data compliance guidance (12+ papers) |
 
-## 四层框架
+## The four-layer framework
 
-### 1. GDPR：个人数据基础
+### 1. GDPR: the personal-data base layer
 
-- **合法基础**（第 6 条）：同意 / 合同 / 法律义务 / **合法利益**（常用）
-- **特殊类别**（第 9 条）：生物识别、健康、政治观点 — 更严格
-- **目的限制**（第 5 条）：收集目的能否涵盖"训练 AI 模型"？持续争议
-- **透明度**（第 13-14 条）：向数据主体告知
-- **删除权 / 被遗忘权**（第 17 条）：已嵌入模型权重后如何"删除"？
+- **Lawful basis** (art. 6): consent / contract / legal obligation / **legitimate interest** (commonly used).
+- **Special categories** (art. 9): biometrics, health, political views — stricter.
+- **Purpose limitation** (art. 5): can the original purpose of collection cover "training an AI model"? Still contested.
+- **Transparency** (arts. 13–14): notification to data subjects.
+- **Right to erasure / right to be forgotten** (art. 17): how can data already embedded in model weights be "deleted"?
 
-**DPA 行动**：
-- **Garante (IT)** vs. ChatGPT（2023-03 封禁 / 罚款）
-- **CNIL (FR)** AI 行动计划（多份指引）
-- **DPC (IE)** vs. Meta LLaMA
-- **Hamburg DPA** 关于"权重嵌入是否构成个人数据处理"的立场
+**DPA actions**:
+- **Garante (IT) vs ChatGPT** (Mar 2023 ban / fine).
+- **CNIL (FR)** AI action plan (multiple guidance papers).
+- **DPC (IE) vs Meta LLaMA**.
+- **Hamburg DPA** — position on whether weight embedding constitutes personal-data processing.
 
-### 2. AI Act 第 10 条：数据治理
+### 2. AI Act art. 10: data governance
 
-高风险 AI 系统的训练 / 验证 / 测试数据：
-- **相关、充分代表性、无错误、完整**
-- 考虑预期用途的地理、行为、功能特征
-- **偏见检测与缓解**
-- **特殊类别数据**：为消除偏见可处理，但需匹配 GDPR 例外
+For training / validation / test data in high-risk AI systems:
+- **Relevant, sufficiently representative, free of errors, complete**.
+- Consider the geographic, behavioural, and functional characteristics of the intended use.
+- **Bias detection and mitigation**.
+- **Special-category data**: may be processed to mitigate bias, but must comply with GDPR exceptions.
 
-第 10 条**与 GDPR 并行**，不替代。企业需两套文档。
+Art. 10 runs **in parallel with GDPR**, not in place of it. Companies need two sets of documentation.
 
-### 3. DSM TDM 例外（Directive 2019/790）
+### 3. DSM TDM exception (Directive 2019/790)
 
-**第 3 条**：科研机构为科研目的的 TDM 不可被排除（研究例外）
+**Art. 3**: TDM for research purposes by research institutions cannot be excluded (research exception).
 
-**第 4 条**：**商业 TDM** 可由版权人通过**机器可读方式 opt-out**排除
-- "Reservation of rights" 的机器可读形式是争议焦点
-- robots.txt、ai.txt、TDMRep 标准都是候选
+**Art. 4**: **Commercial TDM** may be excluded by the rightsholder via a **machine-readable opt-out**.
+- The machine-readable form of the "reservation of rights" is the focal controversy.
+- `robots.txt`, `ai.txt`, and the TDMRep standard are all candidates.
 
-**AI Act 第 53 条**引用 DSM 第 4 条：GPAI 提供者**必须遵守**版权人的 opt-out。
+**AI Act art. 53** references DSM art. 4: GPAI providers **must respect** rightsholders' opt-outs.
 
-### 4. AI Act 第 53 条：训练数据摘要
+### 4. AI Act art. 53: training-data summary
 
-所有 GPAI 提供者：
-- 发布**训练数据"足够详细"的摘要**
-- 模板由 **AI Office** 于 2024-07 发布
-- 含：主要数据来源类别（互联网 / 许可 / 用户生成 / 合成等）、语言、大致规模
-- **不要求列出每个数据集**
+All GPAI providers:
+- Publish a **"sufficiently detailed" summary** of training data.
+- Template issued by the **AI Office** in Jul 2024.
+- Contents: primary data-source categories (web / licensed / user-generated / synthetic, etc.), languages, approximate scale.
+- **Does not require listing each dataset**.
 
-这是**全球首个强制训练数据披露**要求。
+This is **the world's first mandatory training-data disclosure** requirement.
 
-## 特殊问题
+## Special issues
 
-### 1. 公开可获取 = 可训练？
+### 1. Publicly accessible = trainable?
 
-CNIL、Hamburg DPA、EDPB 2024-12 意见：
-- "公开可获取" 不等于 "合法使用"
-- 合法利益路径需通过三步测试（LIA）
-- 特殊类别数据（第 9 条）原则上不可仅因公开而处理
+CNIL, Hamburg DPA, and the EDPB's Dec 2024 opinion:
+- "Publicly accessible" is not "lawfully usable".
+- The legitimate-interest route requires a three-step test (LIA).
+- Special-category data (art. 9) cannot, in principle, be processed merely because it is public.
 
-### 2. 合法利益与网络抓取
+### 2. Legitimate interest and web scraping
 
-EDPB 2024-12 关于 ChatGPT 等模型合法利益的意见：
-- 合法利益**可以**作为基础，但需严格 LIA
-- 数据主体的反对（第 21 条）有权要求删除或停止使用
+EDPB Dec 2024 opinion on legitimate interest for ChatGPT-style models:
+- Legitimate interest **can** serve as a basis, but requires a rigorous LIA.
+- Data-subject objections (art. 21) may demand deletion or cessation of use.
 
-### 3. 版权 opt-out 的机器可读性
+### 3. Machine-readability of copyright opt-outs
 
-当前实务：
-- 部分媒体公司通过 **robots.txt** / **ai.txt** 发布 opt-out
-- 大型出版商通过**许可协议**（OpenAI × Axel Springer, Financial Times, News Corp 等）
-- **2025 RSL (Robots Exclusion Standard for LLMs)** 标准发展中
+In current practice:
+- Some media companies publish opt-outs via **`robots.txt` / `ai.txt`**.
+- Major publishers sign **licensing agreements** (OpenAI × Axel Springer, Financial Times, News Corp, etc.).
+- **2025 RSL (Robots Exclusion Standard for LLMs)** is in development.
 
-### 4. 训练后的"删除"
+### 4. Post-training "deletion"
 
-- GDPR 第 17 条的"被遗忘权"对已训练模型的技术难题
-- 机器遗忘 (machine unlearning) 研究与法律期望的落差
-- **Hamburg DPA** 2024 立场：模型权重不构成"个人数据"（有争议）
+- The "right to be forgotten" (GDPR art. 17) is technically difficult for trained models.
+- Machine unlearning research lags behind legal expectations.
+- **Hamburg DPA 2024 position**: model weights do not constitute "personal data" (contested).
 
-## 与中国 / 美国的对比
+## Comparison with China and the US
 
-| 维度 | EU | 中国 | 美国 |
+| Dimension | EU | China | US |
 | --- | --- | --- | --- |
-| 综合隐私法 | GDPR | PIPL | 无（州法拼图） |
-| AI 专项数据条款 | AI Act 第 10 条 | 生成式 AI 办法第七条 | 无 |
-| 训练数据摘要强制公开 | **是** | 无 | 无 |
-| 版权 TDM 例外 | **是，可 opt-out** | 无明确 | Fair Use 抗辩 |
-| 儿童数据 | GDPR 第 8 条 | PIPL 第三十一条 | COPPA |
-| 生物特征 | GDPR 第 9 条 | PIPL 第二十八条 | Illinois BIPA 等州法 |
+| Comprehensive privacy law | GDPR | PIPL | None (state-law patchwork) |
+| AI-specific data provisions | AI Act art. 10 | Generative AI Interim Measures art. 7 | None |
+| Mandatory training-data summary | **Yes** | No | No |
+| Copyright TDM exception | **Yes, opt-out permitted** | No express provision | Fair-use defence |
+| Children's data | GDPR art. 8 | PIPL art. 31 | COPPA |
+| Biometrics | GDPR art. 9 | PIPL art. 28 | Illinois BIPA and other state laws |
 
-EU 是三辖区中对训练数据治理**最体系化**的。
-
+The EU has **the most systematised** training-data governance among the three jurisdictions.

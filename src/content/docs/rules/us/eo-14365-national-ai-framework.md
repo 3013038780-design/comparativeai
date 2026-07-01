@@ -1,6 +1,6 @@
 ---
 title: Executive Order 14365 — Ensuring a National Policy Framework for AI
-description: Trump 2025-12-11 签署的州法抢占令；建立"国家政策框架"、创立 AI 诉讼特别工作组，挑战州 AI 法律的合宪性和联邦优先权
+description: Trump's 2025-12-11 state-law preemption order; establishes a "national policy framework," creates an AI Litigation Task Force, and challenges the constitutionality and federal priority of state AI laws
 ruleName: Executive Order 14365 — Ensuring a National Policy Framework for Artificial Intelligence
 issuer: The White House (President Donald J. Trump)
 level: executive-order
@@ -11,113 +11,118 @@ originalUrl: https://www.whitehouse.gov/presidential-actions/2025/12/eliminating
 relatedTopics:
   - risk-classification
   - frontier-gpai
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: EO 14365 (2025, 州法抢占)
+  label: EO 14365 (2025, State-Law Preemption)
   order: 3
 ---
 
-## 中文摘要
+## Summary
 
-**第 14365 号行政令《确保人工智能国家政策框架》**（"Ensuring a National Policy Framework for
-Artificial Intelligence"）由特朗普总统于 **2025-12-11** 签署。核心意图：**对州一级 AI 立法发起
-联邦抢占（preemption）**，通过行政和诉讼机制削弱州级 AI 法律的执行力。
+**Executive Order 14365 — "Ensuring a National Policy Framework for Artificial Intelligence"** was signed
+by President Trump on **2025-12-11**. Its core intent: **launch federal preemption against state-level
+AI legislation**, using administrative and litigation mechanisms to blunt the enforceability of state AI laws.
 
-**历史地位**：这是特朗普政府 AI 去监管战略的第三波（2025-01 EO 14179 撤销 Biden → 2025-07
-AI Action Plan → 2025-12 EO 14365 抢占州法），**直接回应 2025 年 1,208 项州级 AI 法案和 145 项
-州法获通过**的"州法碎片化"压力。
+**Historical position**: this is the third wave of the Trump administration's AI deregulatory strategy
+(2025-01 EO 14179 revoked Biden → 2025-07 AI Action Plan → 2025-12 EO 14365 preempts state laws), a
+**direct response to the "state-law fragmentation" pressure from the 1,208 state AI bills introduced
+and 145 state laws enacted in 2025**.
 
-## 核心机制
+## Core mechanisms
 
-### 1. AI 诉讼特别工作组（AI Litigation Task Force）
+### 1. AI Litigation Task Force
 
-- 由**司法部长**设立，**2026-01-10 运作**
-- 职能：在联邦法院**起诉挑战州 AI 法**，依据为：
-  - **违宪**（州际商业条款）
-  - **联邦优先**（federal preemption）
-- 重点目标（业界推测）：Colorado AI Act、California SB 53、Texas TRAIGA、Illinois AI 雇佣法
+- Established by the **Attorney General**, **operational by 2026-01-10**
+- Function: **bring federal court challenges against state AI laws**, grounded in:
+  - **Unconstitutionality** (dormant Commerce Clause)
+  - **Federal preemption**
+- Likely targets (per industry speculation): Colorado AI Act, California SB 53, Texas TRAIGA,
+  Illinois AI employment law
 
-### 2. 商务部州 AI 法律评估
+### 2. Commerce Department assessment of state AI laws
 
-**2026-03-11 前**，商务部长发布：
-- 州 AI 法律的**系统性评估**，识别"负担过重"的州法
-- FTC 政策声明：何时州法被 FTC Act 优先
+Before **2026-03-11**, the Commerce Secretary is to publish:
+- A **systematic assessment** of state AI laws, identifying "unduly burdensome" statutes
+- An FTC policy statement on when state laws are preempted by the FTC Act
 
-### 3. 联邦资金条件
+### 3. Federal funding conditions
 
-- **BEAD 宽带资金**：对 AI 监管"严苛"的州削减非部署资金
-- **各部委 AI 自由裁量资金**：考虑州的 AI 监管气候作为拨款因素
+- **BEAD broadband funds**: cut non-deployment funds for states with "onerous" AI regulation
+- **Agency AI discretionary funds**: consider a state's AI regulatory climate as a grant factor
 
-### 4. 联邦立法建议
+### 4. Federal legislative recommendations
 
-特别顾问（AI + 网络安全）+ 科技政策助理**联合准备立法建议**，推动国会通过统一 AI 法律，
-**替代州法拼图**。
+The Special Advisor (AI + Cybersecurity) and the Assistant to the President for Science &
+Technology Policy are to **jointly prepare legislative recommendations** to push Congress to
+pass a unified AI law that **replaces the state-law patchwork**.
 
-## 明示豁免（不进入抢占范围）
+## Express carve-outs (outside preemption)
 
-3 个领域**不受抢占**：
+Three areas are **exempt from preemption**:
 
-1. **儿童安全保护**（child safety in AI contexts）— 承认各州对保护未成年人的专属权力
-2. **AI 算力和数据中心基础设施**（含地方数据中心分区审批）
-3. **州政府采购**（state government procurement of AI systems）
+1. **Child safety** (child safety in AI contexts) — recognizing states' exclusive power to protect minors
+2. **AI compute and data-center infrastructure** (including local data-center zoning approval)
+3. **State government procurement** of AI systems
 
-## 法律争议
+## Legal controversy
 
-### 行政令能否抢占州法？
+### Can an executive order preempt state law?
 
-**法律界普遍观点**：**不能单独抢占**。
+**Prevailing legal view**: **an EO alone cannot preempt.**
 
-- **联邦抢占**（preemption）的宪法源头是**国会立法** + 最高法院 **Supremacy Clause** 判例
-- 行政令只能指导**联邦行政分支行为**，不能直接覆盖州法
-- 14365 "likely not independently displace state AI laws" — White & Case、Littler 等法律评论一致意见
+- The constitutional source of federal preemption is **congressional legislation** plus the Supreme
+  Court's **Supremacy Clause** jurisprudence
+- An EO can only direct **federal executive-branch conduct**; it cannot on its own override state law
+- EO 14365 "likely [will] not independently displace state AI laws" — a consensus view among White
+  & Case, Littler, and other legal commentators
 
-**实际效果**：
-- 诉讼威慑（企业 + 州政府成本增加）
-- 联邦资金杠杆（间接压力）
-- 为推动国会立法做舆论和诉讼基础
+**Practical effects**:
+- Litigation chilling (raises costs for firms and state governments)
+- Federal funding leverage (indirect pressure)
+- Laying the discursive and litigation groundwork to push Congress toward legislation
 
-### 州的反抗
+### State pushback
 
-- 加州：Newsom 公开表态"SB 53 不受抢占"
-- 科罗拉多：AG 坚持 6-30 生效（已推迟）
-- NAAG（全国州总检察长协会）：多数州 AG 对 14365 的合宪性存疑
+- California: Governor Newsom stated publicly that "SB 53 is not subject to preemption"
+- Colorado: the AG insists on 6-30 effective date (already postponed)
+- NAAG (National Association of Attorneys General): most state AGs question EO 14365's constitutionality
 
-## 对企业合规的影响
+## Compliance implications
 
-**短期（2026-04 当前）**：
-- 既有州法（Colorado、California SB 53、Texas TRAIGA）**尚未被抢占**
-- 企业须**继续合规**直至诉讼产生明确判决
-- **2026-03-11 商务部评估**将披露哪些州法被"点名"
+**Short term (as of 2026-04)**:
+- Existing state laws (Colorado, California SB 53, Texas TRAIGA) **have not been preempted**
+- Companies must **continue to comply** until litigation produces clear rulings
+- The **2026-03-11 Commerce assessment** will reveal which state laws get "named and shamed"
 
-**中期（2026-2027）**：
-- 联邦诉讼可能逐州推进
-- 加州 / 纽约等"深蓝州"可能采取反制立法
-- 国会是否推动统一 AI 法案取决于 2026 中期选举
+**Medium term (2026-2027)**:
+- Federal litigation will proceed state-by-state
+- Deep-blue states such as California and New York may respond with counter-legislation
+- Whether Congress pushes a unified AI act hinges on the 2026 midterms
 
-## 与既有政策的关系
+## Relationship to prior policy
 
-| 时间 | 文件 | 意图 |
+| Date | Instrument | Intent |
 | --- | --- | --- |
-| 2025-01-23 | [EO 14179](./eo-14179-removing-barriers-ai/) | 撤销 Biden EO 14110，去监管基调 |
-| 2025-04-03 | OMB M-25-21 / M-25-22 | 联邦机构 AI 使用和采购指引 |
-| 2025-07-23 | [Trump AI Action Plan](./trump-ai-action-plan/) + 3 EOs | 25 页战略文件 + 反 woke + 数据中心 |
-| 2025-12-11 | **EO 14365（本页）** | **州法抢占工作** |
+| 2025-01-23 | [EO 14179](./eo-14179-removing-barriers-ai/) | Revokes Biden EO 14110, sets deregulatory tone |
+| 2025-04-03 | OMB M-25-21 / M-25-22 | Federal agency AI use and procurement guidance |
+| 2025-07-23 | [Trump AI Action Plan](./trump-ai-action-plan/) + 3 EOs | 25-page strategy + anti-woke + data centers |
+| 2025-12-11 | **EO 14365 (this page)** | **State-law preemption campaign** |
 
-**轨迹**：从"撤销前任" → "制定战略" → **"打压州级立法"** 的三步走。
+**Trajectory**: from "revoke the predecessor" → "draft the strategy" → **"suppress state-level legislation"** — a three-step sequence.
 
-## 原文与归档
+## Text and archives
 
-| 来源 | 链接 |
+| Source | Link |
 | --- | --- |
 | The White House | [whitehouse.gov/.../eliminating-state-law-obstruction](https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/) |
 | American Presidency Project | [presidency.ucsb.edu/documents/executive-order-14365](https://www.presidency.ucsb.edu/documents/executive-order-14365-ensuring-national-policy-framework-for-artificial-intelligence) |
-| White & Case 解读 | [whitecase.com/.../state-ai-laws-under-federal-scrutiny](https://www.whitecase.com/insight-alert/state-ai-laws-under-federal-scrutiny-key-takeaways-executive-order-establishing) |
+| White & Case commentary | [whitecase.com/.../state-ai-laws-under-federal-scrutiny](https://www.whitecase.com/insight-alert/state-ai-laws-under-federal-scrutiny-key-takeaways-executive-order-establishing) |
 
-## 版本历史
+## Version history
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2025-12-11 | 签署 |
-| 2026-01-10 | AI 诉讼特别工作组运作 |
-| 2026-03-11 | 商务部州法评估截止 |
-| 2026-Q2+ | 诉讼推进（预期） |
+| 2025-12-11 | Signed |
+| 2026-01-10 | AI Litigation Task Force operational |
+| 2026-03-11 | Commerce state-law assessment due |
+| 2026-Q2+ | Litigation proceeds (expected) |

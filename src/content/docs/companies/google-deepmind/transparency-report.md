@@ -1,297 +1,303 @@
 ---
-title: 透明度报告
-description: Google 透明度报告生态与 AI 专项披露；SynthID、选举限流、EU AI Act 训练数据摘要
+title: Transparency Report
+description: Google's transparency reporting ecosystem and AI-specific disclosures; SynthID, elections throttling, and EU AI Act training data summaries
 sidebar:
   order: 4
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> **观察**：Google 的透明度披露是**三大前沿实验室中最成熟但也最碎片化**的。
-> **Ranking Digital Rights 2025** 连续第七年把 Google 列入透明度"顶层"，但批评其
-> **"breadth but not depth"**——文档多，但关键 AI 决策（如训练数据来源比例、CCL 阈值
-> 具体数值）仍不公开。
+> **Observation**: Google's transparency disclosures are **the most mature but also the most fragmented** among the three
+> frontier labs. For the seventh consecutive year, **Ranking Digital Rights 2025** places Google in its transparency
+> "top tier", while criticizing **"breadth but not depth"** — documentation is plentiful, yet key AI decisions (such as
+> training-data source proportions and the specific numeric CCL thresholds) remain non-public.
 
-## Google 透明度报告生态的四重架构
+## The four-tier architecture of Google's transparency reporting
 
-与 Anthropic 单一 **Transparency Hub**、OpenAI 的**Privacy Hub + 单次 Model Spec** 相比，
-Google 的透明度披露**分散在至少四个官方入口**：
+Compared with Anthropic's single **Transparency Hub** or OpenAI's **Privacy Hub + one-off Model Spec**, Google's
+transparency disclosures are **distributed across at least four official entry points**:
 
-1. **[Google Transparency Report](https://transparencyreport.google.com/)**（2010 起）——
-   legacy，政府请求、版权删除等
-2. **[Responsibility & Safety Hub](https://deepmind.google/about/responsibility-safety/)**（DeepMind 维护）——
-   AI 特定安全研究、SynthID、FSF Reports
-3. **[Responsible AI Progress Report](https://ai.google/responsibility/responsible-ai-progress-report/)**（2019 起，年度）——
-   公司级 AI 治理年度汇报
-4. **产品级透明度文档**：Gemini Model Cards、FSF Reports、AI Studio 透明度面板、
+1. **[Google Transparency Report](https://transparencyreport.google.com/)** (since 2010) —
+   legacy: government requests, copyright removals, etc.
+2. **[Responsibility & Safety Hub](https://deepmind.google/about/responsibility-safety/)** (maintained by DeepMind) —
+   AI-specific safety research, SynthID, FSF Reports
+3. **[Responsible AI Progress Report](https://ai.google/responsibility/responsible-ai-progress-report/)** (annual, since 2019) —
+   company-level annual AI governance report
+4. **Product-level transparency documentation**: Gemini Model Cards, FSF Reports, AI Studio transparency panel, and
    Google Cloud Model Armor
 
-这种**多层架构**与公司规模相称——但使得**"Google 的 AI 透明度水平"无法用单一文档判断**。
+This **multi-layered architecture** is commensurate with company scale — but it means **"Google's level of AI transparency"
+cannot be assessed through any single document**.
 
-## 第一层：Google Transparency Report（Legacy + AI 扩展）
+## Layer 1: Google Transparency Report (legacy + AI extensions)
 
-**2010 年 Google 发布 Transparency Report**，是全球首个大型科技公司发布**政府数据请求**
-与**版权删除**的公开披露，被**哈佛 Berkman Klein Center** 誉为"modern transparency
-reporting 的起点"。2023 起新增 **AI 相关的 DMCA 请求**：
+**Google launched the Transparency Report in 2010**, the first large tech company to publicly disclose **government data
+requests** and **copyright takedowns**. The **Berkman Klein Center** at Harvard described it as "the starting point of
+modern transparency reporting". From 2023, **AI-related DMCA requests** were added:
 
-- **Gemini 生成内容的版权删除请求**
-- **AI Overviews / AI Search 的内容标注误用请求**
-- **Bard → Gemini 过渡期的账号合规请求**
-- **Deepfake / 非自愿合成图像请求**
+- **Copyright takedown requests for Gemini-generated content**
+- **Requests concerning misuse of content labeling in AI Overviews / AI Search**
+- **Account compliance requests during the Bard → Gemini transition**
+- **Deepfake / nonconsensual synthetic imagery requests**
 
-**2025 年度数据的量级特征**（具体数字以 Google Transparency Report 官方披露为准）：
+**Order-of-magnitude characteristics of the 2025 annual data** (specific figures per the official Google Transparency Report):
 
-- Gemini 相关 DMCA 请求在**万件量级**，远小于 YouTube 年度的千万级
-- "Deepfake 非自愿图像"类别在**千件量级**（YouTube + Gemini + Workspace 合计）
-- **政府数据请求覆盖范围**延伸至 **AI Studio 开发者账户**（2025 新增）
+- Gemini-related DMCA requests are in the **tens of thousands**, well below YouTube's tens of millions per year
+- "Deepfake / nonconsensual imagery" requests are in the **thousands** (YouTube + Gemini + Workspace combined)
+- **Government data request scope** was extended to **AI Studio developer accounts** (new in 2025)
 
-### 政府请求透明度（按地域）
+### Government requests by jurisdiction
 
-Google Transparency Report 按地域公开政府 AI 相关数据请求。量级规律：
+The Google Transparency Report publishes AI-related government data requests by jurisdiction. Order-of-magnitude patterns:
 
-- 美国仍是请求数量最高的司法辖区（**万级 / 半年**，合并 AI + 传统产品）
-- 欧盟合计处于**千级至万级**，德、法为主
-- 英国处于**千级**
-- **中国大陆**：0 次（Google 未正式运营）
-- **印度**受 IT Rules 与 DSA 式合规压力，请求数量在**千级**
+- The United States remains the jurisdiction with the highest request volume (**tens of thousands per half-year**,
+  combining AI and traditional products)
+- The EU aggregate sits in the **thousands to tens of thousands**, led by Germany and France
+- The United Kingdom sits in the **thousands**
+- **Mainland China**: zero (Google does not formally operate there)
+- **India**, under pressure from IT Rules and DSA-style compliance regimes, records requests in the **thousands**
 
-具体数字以 Google Transparency Report 半年度更新为准。
+Specific figures per the semiannual Google Transparency Report updates.
 
-## 第二层：Responsibility & Safety Hub（DeepMind）
+## Layer 2: Responsibility & Safety Hub (DeepMind)
 
-[deepmind.google/about/responsibility-safety](https://deepmind.google/about/responsibility-safety/) 是
-**DeepMind 而非 Google Legal** 维护的 AI 特定透明度入口：
+[deepmind.google/about/responsibility-safety](https://deepmind.google/about/responsibility-safety/) is the AI-specific
+transparency entry point maintained by **DeepMind, not Google Legal**:
 
-- **FSF 文档**：v1 / v2 / v3 全部公开
-- **Model FSF Reports**：Gemini 2.5（2025-04）、Gemini 3 Pro（2025-11）
-- **Gemini Model Cards**（交叉引用至 [model-card](./model-card/)）
-- **SynthID 技术说明**
-- **AGI Safety Research 论文索引**
-- **UK / US AISI 评估合作说明**
+- **FSF documents**: v1 / v2 / v3 all public
+- **Model FSF Reports**: Gemini 2.5 (2025-04), Gemini 3 Pro (2025-11)
+- **Gemini Model Cards** (cross-referenced to [model-card](./model-card/))
+- **SynthID technical notes**
+- **AGI Safety Research paper index**
+- **UK / US AISI evaluation collaboration notes**
 
-**特点**：**深度但零散**——不是"年度报告"模式，而是**持续更新的研究型披露**。学术界普遍
-认为这种模式**对研究者友好**但**对监管和普通用户不友好**。
+**Character**: **deep but scattered** — not an annual report but **ongoing research-style disclosure**. The academic
+consensus is that this mode is **researcher-friendly** but **less accessible for regulators and general users**.
 
-## 第三层：Responsible AI Progress Report（年度）
+## Layer 3: Responsible AI Progress Report (annual)
 
-**2019 起** Google 发布 *AI Principles Progress Update*，2024 改名 *Responsible AI
-Progress Report*。[ai.google/responsibility/responsible-ai-progress-report/](https://ai.google/responsibility/responsible-ai-progress-report/)
+Since 2019, Google has published the *AI Principles Progress Update*, renamed in 2024 to the *Responsible AI Progress
+Report*. [ai.google/responsibility/responsible-ai-progress-report/](https://ai.google/responsibility/responsible-ai-progress-report/)
 
-**2024 版（本轴所处时期首份改名版）核心内容**：
+**Core content of the 2024 edition (the first renamed edition in the current period)**:
 
-- **AIPR 流程公开**：年度审查案例数以数百级提案计（具体数值以官方报告为准）
-- **拒绝案例**：披露"被拒"项目数量级（不披露具体项目名）
-- **用户研究**：偏见评估、可访问性
-- **AI Principles 修订说明**（包括**删除军事禁令的"背景"说明**，措辞中性）
+- **AIPR process disclosure**: annual review proposals in the low hundreds (exact figures per the official report)
+- **Rejection cases**: order-of-magnitude figures for "rejected" projects (without disclosing specific project names)
+- **User research**: bias evaluation, accessibility
+- **AI Principles revision notes** (including a **"context" note on deleting the military prohibition**, neutrally worded)
 
-**批评**（RDR / Access Now / Article 19 等评估机构）的共识：
+The typical consensus critique (from RDR / Access Now / Article 19 and other evaluators) is that the Progress Report's
+accountability limitation is that the overall presentation trends toward marketing narrative, while negative cases,
+near-misses, and policy disputes are systematically absent.
 
-Progress Report 在可问责性层面的典型局限是——整体呈现接近营销叙事，
-而负面案例、near-miss、政策争议则系统性缺席。
+**The 2025 edition** adds:
 
-**2025 版**新增：
+- **SynthID deployment data** (see below)
+- **EU AI Act compliance summary**
+- **GPAI Code of Practice signing details**
+- **Gemini training-data opt-out statistics**
 
-- **SynthID 部署数据**（见下）
-- **EU AI Act 合规摘要**
-- **GPAI Code of Practice 签署详情**
-- **Gemini 训练数据 opt-out 统计**
-
-## 第四层：产品级透明度
+## Layer 4: product-level transparency
 
 ### Gemini Model Cards & FSF Reports
 
-（详见 [model-card](./model-card/) 和 [safety-framework](./safety-framework/)）
+(See [model-card](./model-card/) and [safety-framework](./safety-framework/) for details.)
 
-### AI Studio 透明度面板
+### The AI Studio transparency panel
 
-Google AI Studio 为开发者提供**实时透明度面板**：
+Google AI Studio provides developers with a **real-time transparency panel**:
 
-- 当前调用的模型版本、知识截止日期
-- Safety 分类器触发日志
-- SynthID 水印状态
-- **Grounding 引用**（"Gemini 答案基于哪些网页"）
+- Current call's model version and knowledge cutoff
+- Safety-classifier trigger logs
+- SynthID watermark status
+- **Grounding citations** ("which web pages is Gemini's answer based on")
 
-**这是目前业界把透明度最深度产品化的做法**——但仅对 Google Cloud 付费开发者可见。
+**This is among the industry's deepest productized transparency** — but visible only to paid Google Cloud developers.
 
 ### Google Cloud Model Armor
 
-**Model Armor**（2024-07 发布）是 Vertex AI 企业客户的**合规可观测性工具**：
+**Model Armor** (released 2024-07) is the compliance observability tool for Vertex AI enterprise customers:
 
-- 实时 PII 检测
-- Jailbreak 尝试检测
-- 内容政策合规日志
-- **透明度 API**：客户可导出"Gemini 对此 prompt 的处理决策摘要"
+- Real-time PII detection
+- Jailbreak-attempt detection
+- Content-policy compliance logs
+- **Transparency API**: customers can export "summaries of Gemini's processing decisions for this prompt"
 
-**实践中**：Model Armor 日志**成为欧盟 AI Act 第 13 条"to users"透明度义务的合规证据**。
-这是"透明度作为 API"的新范式。
+**In practice**: Model Armor logs **serve as evidence of compliance with the EU AI Act Art. 13 "to users" transparency
+obligation**. This is a new paradigm of "transparency as API".
 
-## SynthID 与合成媒体透明度
+## SynthID and synthetic-media transparency
 
-**SynthID** 是 DeepMind 2023 推出、2024-2026 持续演进的**内容水印系统**。
+**SynthID** is the content-watermarking system launched by DeepMind in 2023 and progressively evolved through 2024-2026.
 
-### 部署范围（2026-Q2）
+### Deployment scope (Q2 2026)
 
-| 产品 | SynthID 类型 | 默认状态 |
+| Product | SynthID type | Default status |
 | --- | --- | --- |
-| **Imagen 3 / 4** (图像) | Visual watermark + metadata | **强制开启** |
-| **Veo 3** (视频) | Frame-level watermark | 强制开启 |
-| **Lyria 2** (音乐) | Audio watermark | 强制开启 |
-| **Gemini** (文本) | **Token-level statistical watermark** (2024-10 扩展) | **默认开启**（可 API 关闭） |
-| **NotebookLM Audio** (播客) | Audio watermark | 强制开启 |
+| **Imagen 3 / 4** (image) | Visual watermark + metadata | **Mandatory on** |
+| **Veo 3** (video) | Frame-level watermark | Mandatory on |
+| **Lyria 2** (music) | Audio watermark | Mandatory on |
+| **Gemini** (text) | **Token-level statistical watermark** (extended 2024-10) | **Default on** (can be disabled via API) |
+| **NotebookLM Audio** (podcasts) | Audio watermark | Mandatory on |
 
-### 技术与政策背景
+### Technical and policy context
 
-- **2024-10 Gemini 文本水印**推出后，DeepMind 开源了 **SynthID-Text detector**（有限版）
-- **C2PA 兼容**：SynthID 元数据与 C2PA Content Credentials 标准互操作
-- **EU AI Act 第 50 条**：Gemini 作为 GPAI 须在输出中标注 AI 生成属性——SynthID 是主要合规机制
-- **加州 AB 2655 (Defending Democracy from Deepfake Deception Act)**：要求平台检测并标注
-  AI 生成政治内容——SynthID 是 Google 的合规路径
+- After the **2024-10 Gemini text watermark** launch, DeepMind open-sourced a (limited) **SynthID-Text detector**
+- **C2PA compatibility**: SynthID metadata interoperates with the C2PA Content Credentials standard
+- **EU AI Act Art. 50**: as a GPAI, Gemini must mark its outputs as AI-generated — SynthID is the primary compliance
+  mechanism
+- **California AB 2655 (Defending Democracy from Deepfake Deception Act)** requires platforms to detect and label
+  AI-generated political content — SynthID is Google's compliance pathway
 
-### 局限性
+### Limitations
 
-- **剪切 / 重新编码**会部分破坏视频水印
-- **文本水印**在短文本（< 200 token）检测率低
-- **跨平台**：Gemini 生成文本经 Word 编辑后水印残存率显著下降
-- 独立学术研究（CMU、Stanford 等 2024-2025 水印鲁棒性论文）显示 SynthID-Text
-  在对抗性修改（改写、机器翻译回译等）后检测率显著下降
+- **Cutting / re-encoding** partially disrupts video watermarks
+- **Text watermarks** have low detection rates on short text (<200 tokens)
+- **Cross-platform**: survivability of Gemini-generated text watermarks after editing in Word drops substantially
+- Independent academic research (CMU, Stanford and others, 2024-2025 watermark-robustness papers) finds SynthID-Text
+  detection rates fall markedly after adversarial modifications (paraphrasing, machine-translation round-tripping, etc.)
 
-## 选举透明度：2024 Gemini 的"拒答政策"
+## Electoral transparency: Gemini's 2024 "refusal policy"
 
-2024-03 Google 宣布 **Gemini 对"与选举相关的事实问题"停止回答**。
-官方在博文中以"在重要议题上出于审慎"为由，开始对选举相关查询类型施加回答限制
-（具体措辞与时点以 Google 官方博客存档为准）。
+In 2024-03, Google announced that **Gemini would cease responding to "factual questions related to elections"**.
+Google's blog post framed the decision as caution on important topics, and began imposing response limits on election-related
+queries (exact wording and timing per the Google blog archive).
 
-**范围**：全球有 2024 大选的国家（美国 + 欧盟 + 印度 + 英国 + ...）
+**Scope**: countries with 2024 elections (United States + EU + India + UK + ...)
 
-**争议**：
+**Controversy**:
 
-- **支持**（选举诚信专家）：降低了 LLM 制造虚假信息风险
-- **批评**（新闻学界、Kevin Roose NYT）：**"过度审查"**——用户问"谁是参议院多数党领袖"
-  都被拒绝
-- **Gemini App vs. Google Search 的不对称**：Search 的 AI Overviews **未受同等限制**
+- **Supporters** (election-integrity experts): this reduces the risk that LLMs generate disinformation
+- **Critics** (journalism scholars, Kevin Roose of the NYT): **"over-censorship"** — users asking "who is the Senate
+  majority leader" were refused
+- **Gemini App vs. Google Search asymmetry**: Search's AI Overviews **were not subject to comparable restrictions**
 
-**2026 更新**：Gemini 3 Pro **有限恢复**回答选举事实问题（"谁是现任美国总统"），
-但对**选举预测、候选人评价**仍保持拒答。
+**2026 update**: Gemini 3 Pro **partially restored** answers to factual election questions ("who is the current U.S.
+president"), while maintaining refusals for **election predictions and candidate evaluations**.
 
-## 训练数据透明度（EU AI Act Art 53 合规）
+## Training-data transparency (EU AI Act Art. 53 compliance)
 
-### Google 的合规路径
+### Google's compliance pathway
 
-2025-08-01 Google 签署 **GPAI Code of Practice**（全部三章），使用 CoP **Transparency Chapter
-模板**发布 Gemini 3 Pro 训练数据摘要。内容包括：
+On 2025-08-01, Google signed the **GPAI Code of Practice** (all three chapters) and published the Gemini 3 Pro training
+data summary using the CoP **Transparency Chapter template**. Contents include:
 
-- 数据来源**大类别**：公开网页、书籍、学术、视频、合成数据
-- robots.txt 合规说明（Google-Extended）
-- Workspace / Gmail / YouTube 内部数据的**非训练承诺**
-- copyrighted content 处理的"ongoing licensing efforts"
+- **Major-category** data sources: public web, books, scholarly, video, synthetic data
+- robots.txt compliance note (Google-Extended)
+- **Non-training commitments** for internal Workspace / Gmail / YouTube data
+- "Ongoing licensing efforts" for copyrighted content
 
-### 未披露的关键信息
+### Key undisclosed information
 
-- **具体来源占比**（例如网页 vs. 书籍 vs. 合成的比例）
-- **合成数据的生成方法**
-- **包括的语言分布**
-- **任何"filter 之前 vs. 之后"的对比**
+- **Specific source proportions** (e.g. web vs. books vs. synthetic ratios)
+- **Synthetic-data generation methods**
+- **Language distribution in the data**
+- **Any "pre-filter vs. post-filter" comparisons**
 
-**这是三家前沿实验室的共同问题**——RDR 2025 Scorecard 给三家都在"训练数据透明度"维度
-打 "Partial" 分数。
+**This is a shared problem across the three frontier labs** — the RDR 2025 Scorecard rates all three as "Partial" on
+the "training-data transparency" dimension.
 
-## 学术批评
+## Academic critique
 
-### Ranking Digital Rights（RDR）
+### Ranking Digital Rights (RDR)
 
-RDR 自 2015 起每年评估大型科技公司的**人权 / 言论 / 隐私 / 治理**透明度。
+Since 2015 RDR has annually assessed major tech companies on **human rights / expression / privacy / governance**
+transparency.
 
-在近年 RDR Corporate Accountability Index 中，Google 综合分数位居所有被评估公司前列，
-但在 AI 特定维度（训练数据披露、AI 政策执法指标、AI 申诉救济）分数**显著低于**其整体分数，
-典型评价是 Google 在成熟透明度上领先同业，但在 AI 专项透明度上并未领先。
+In recent RDR Corporate Accountability Indexes, Google's overall score leads among assessed companies, but in AI-specific
+dimensions (training-data disclosure, AI policy-enforcement metrics, AI-grievance remediation) the score sits **materially
+below** its overall. The typical verdict: Google leads peers in mature-transparency dimensions but does not lead in
+AI-specific transparency.
 
-### Kirsten Martin（Notre Dame）—— Transparency Theater
+### Kirsten Martin (Notre Dame) — Transparency Theater
 
-Martin 的 *Ethical AI Starts with Data* 提出**透明度剧场**（transparency theater）
-概念——文件齐全但不产生可问责性。她的 Google 分析：
+In *Ethical AI Starts with Data*, Martin advances the concept of **transparency theater** — well-documented but not
+productive of accountability. Her assessment of Google:
 
-- **文档完整性**：高
-- **可操作性**（外部利益方能否用透明度追究责任）：中低
-- **对比监管**：Martin 的核心论点是 GDPR Art 22 对自动化决策的透明度要求，
-  在可执行性上显著强于 Google 的自愿披露
+- **Documentation completeness**: high
+- **Operability** (can external stakeholders use transparency to hold Google accountable): medium-low
+- **Regulatory comparison**: Martin's central argument is that GDPR Art. 22's transparency requirements for automated
+  decision-making are **materially stronger in enforceability** than Google's voluntary disclosure
 
-### Mike Ananny（USC）—— "Seeing Without Knowing"
+### Mike Ananny (USC) — "Seeing Without Knowing"
 
-Ananny 在 *Seeing Without Knowing: Limits of the Transparency Ideal*（2018）早在 AI
-浪潮前就指出**"透明度 ≠ 问责"**。AI 时代放大了这一问题——**Google 的 SynthID 技术细节
-公开，但 SynthID 的"误报率"与"关闭 API"的企业客户清单不公开**。
+In *Seeing Without Knowing: Limits of the Transparency Ideal* (2018), Ananny argued — before the AI wave — that
+**"transparency ≠ accountability"**. The AI era has magnified this: **SynthID's technical details are public, but
+SynthID's false-positive rates and the enterprise-customer list of those with "disable API" access are not**.
 
-### Meta vs. Google 的透明度对比
+### Meta vs. Google transparency comparison
 
-**Meta CrowdTangle 2024-08 关闭**后，研究者转向 Google 的 YouTube API 和 Google Search
-Console。但 Google 的 API 访问**比 CrowdTangle 更受限**——**Google Researcher Program**
-在 2024-2025 年期间的申请拒绝率据学术界反映处于较高水平（具体比例尚无公开权威统计）。
+Following the **2024-08 shutdown of Meta's CrowdTangle**, researchers pivoted to Google's YouTube API and Google Search
+Console. But Google's API access is **more restrictive than CrowdTangle** — the denial rate for the **Google Researcher
+Program** during 2024-2025 has been reported by the academic community as persistently high (no authoritative public
+statistics are yet available).
 
-## 行业第一手实践视角
+## Industry practitioner perspective
 
-### 内部透明度治理
+### Internal transparency governance
 
-Google 内部透明度报告编制流程（**Jigsaw** 团队与 Trust & Safety 共同主导）：
+Google's transparency-report production flow (co-led by the **Jigsaw** team and Trust & Safety):
 
-- **Q1**：跨部门数据收集（Legal / DeepMind / Product）
-- **Q2**：草稿内部审查（**重点在不披露已进入诉讼的数据**）
-- **Q3**：Communications 润色
-- **Q4**：发布 + 同步更新 ai.google / transparencyreport.google.com
+- **Q1**: cross-departmental data collection (Legal / DeepMind / Product)
+- **Q2**: internal review of the draft (**with emphasis on not disclosing data relevant to ongoing litigation**)
+- **Q3**: communications polish
+- **Q4**: release + synchronized updates to ai.google / transparencyreport.google.com
 
-**内部张力**：**DeepMind Research** 倾向更深的 AI 披露；**Legal** 倾向受诉讼风险约束的保守
-披露。近年（2024-2026）可见**DeepMind 方影响力上升**——FSF Reports 就是典型案例，
-**把详细安全数据"抢先"公开**。
+**Internal tensions**: **DeepMind Research** favors deeper AI disclosure; **Legal** favors conservative disclosure
+constrained by litigation risk. In recent years (2024-2026), **DeepMind's influence has grown** — the FSF Reports are
+a typical case, **pushing detailed safety data into public view proactively**.
 
-### 企业客户透明度 vs. 公共透明度
+### Enterprise customer transparency vs. public transparency
 
-Google Cloud Vertex AI 客户获得的透明度**比公共文档丰富得多**：
+Google Cloud Vertex AI customers receive **substantially richer transparency** than public documentation provides:
 
-- SLA 绑定的 safety 分类器性能指标
-- **Model Armor 日志**（完整合规证据）
-- FSF Report **pre-release**（企业客户在模型公开前获取）
-- Responsible AI Toolkit 的实时 telemetry
+- SLA-bound safety-classifier performance metrics
+- **Model Armor logs** (complete compliance evidence)
+- FSF Reports **pre-release** (enterprise customers receive them before public model release)
+- Real-time telemetry from the Responsible AI Toolkit
 
-**这造成"合规两极"**：付费企业客户获得充分透明度，个人用户依赖公开版本。
-**EU AI Act 要求对普通用户的透明度义务**，正在**部分**缩小这一差距。
+**This creates a "compliance bifurcation"**: paying enterprise customers enjoy full transparency, while individual users
+rely on public versions. **EU AI Act obligations toward ordinary users** are **partially** narrowing this gap.
 
-### 与 DSA 的交互
+### Interaction with the DSA
 
-Google Search 作为 VLOP（Very Large Online Platform），**DSA 第 24、42 条透明度义务**
-要求系统性风险报告、广告库、推荐算法披露。**AI Overviews 被纳入 DSA 报告范围**——
-这是 Google 首次**在法律强制**下披露 AI 产品的系统性风险评估。
+Google Search, as a VLOP (Very Large Online Platform), is subject to **DSA Art. 24 and 42 transparency obligations** —
+systemic-risk reports, advertising archive, and recommender-algorithm disclosure. **AI Overviews were incorporated into
+the DSA reporting scope** — the first time Google has, **under legal compulsion**, disclosed the systemic-risk assessment
+of an AI product.
 
-## 与同业对比
+## Peer comparison
 
-| 维度 | Google (2026) | Anthropic | OpenAI |
+| Dimension | Google (2026) | Anthropic | OpenAI |
 | --- | --- | --- | --- |
-| Legacy 透明度报告 | **自 2010** | 无 | 无 |
-| AI 专项透明度 | Responsibility & Safety Hub + AI Progress Report | Transparency Hub | Privacy Hub + 零散 |
-| 模型级安全报告 | **FSF Reports（独立）** | Risk Reports（2026-04 起） | System Cards |
-| 训练数据摘要 | EU CoP 模板 | EU CoP 模板 | EU CoP 模板（部分保留） |
-| 水印系统 | **SynthID（四模态）** | 无（合作 C2PA） | 有限（图像） |
-| 企业透明度工具 | **Model Armor** | Claude Trust Center | Enterprise Dashboard |
-| DSA 合规 | **Search + Shopping VLOP** | 非 VLOP | 非 VLOP（但 ChatGPT 接近阈值） |
+| Legacy transparency report | **Since 2010** | None | None |
+| AI-specific transparency | Responsibility & Safety Hub + AI Progress Report | Transparency Hub | Privacy Hub + scattered |
+| Model-level safety report | **FSF Reports (standalone)** | Risk Reports (from 2026-04) | System Cards |
+| Training-data summary | EU CoP template | EU CoP template | EU CoP template (partially withheld) |
+| Watermarking | **SynthID (four modalities)** | None (C2PA collaboration) | Limited (image) |
+| Enterprise transparency tool | **Model Armor** | Claude Trust Center | Enterprise Dashboard |
+| DSA compliance | **Search + Shopping VLOP** | Non-VLOP | Non-VLOP (but ChatGPT near threshold) |
 
-## 关键时间线
+## Key timeline
 
-- **2010**：Google Transparency Report 首发
-- **2018**：AI Principles 发布（含 Progress Report 承诺）
-- **2019**：首份 AI Principles Progress Update
-- **2023-10**：SynthID 首发（图像）
-- **2024-03**：Gemini 选举限流
-- **2024-07**：Google Cloud Model Armor
-- **2024-10**：SynthID 扩展至文本
-- **2025-04**：首份模型级 FSF Report (Gemini 2.5)
-- **2025-08**：签署 GPAI Code of Practice
-- **2025-11**：**Gemini 3 Pro FSF Report + 同步训练数据摘要**
-- **2026-04**：FSF v3 + Responsible AI Progress Report 2026 版
+- **2010**: Google Transparency Report launched
+- **2018**: AI Principles released (including Progress Report commitment)
+- **2019**: first AI Principles Progress Update
+- **2023-10**: SynthID launched (image)
+- **2024-03**: Gemini elections throttling
+- **2024-07**: Google Cloud Model Armor
+- **2024-10**: SynthID extended to text
+- **2025-04**: first model-level FSF Report (Gemini 2.5)
+- **2025-08**: signed GPAI Code of Practice
+- **2025-11**: **Gemini 3 Pro FSF Report + paired training-data summary**
+- **2026-04**: FSF v3 + Responsible AI Progress Report 2026 edition
 
-## 跨链接
+## Cross-links
 
-- 公司层总览：[Google DeepMind index](/companies/google-deepmind/)
-- 使用政策：[Usage Policy](./usage-policy/)
-- 模型卡与技术报告：[Model Card](./model-card/)
-- 安全框架（FSF）：[Safety Framework](./safety-framework/)
-- 红队与外部评估披露：[Red-Team Disclosures](./red-team-disclosures/)
-- EU AI Act 合规：[EU AI Act](/policies/eu/ai-act/)
-- DSA 透明度义务：[EU DSA](/policies/eu/dsa/)
-- Ranking Digital Rights 方法：[学术参考](/references/ranking-digital-rights/)
+- Company-level overview: [Google DeepMind index](/companies/google-deepmind/)
+- Usage policy: [Usage Policy](./usage-policy/)
+- Model Card and technical reports: [Model Card](./model-card/)
+- Safety framework (FSF): [Safety Framework](./safety-framework/)
+- Red-teaming and external evaluation disclosures: [Red-Team Disclosures](./red-team-disclosures/)
+- EU AI Act compliance: [EU AI Act](/rules/eu/ai-act/)
+- DSA transparency obligations: [EU DSA](/rules/eu/dsa/)
+- Ranking Digital Rights methodology: [Academic references](https://rankingdigitalrights.org/)

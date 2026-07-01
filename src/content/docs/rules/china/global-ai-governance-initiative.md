@@ -1,8 +1,8 @@
 ---
-title: 全球人工智能治理倡议
-description: 习近平 2023-10-18 在第三届 "一带一路" 国际合作高峰论坛提出；中国对外 AI 治理立场的官方文件
-ruleName: 全球人工智能治理倡议 (Global AI Governance Initiative)
-issuer: 中华人民共和国（由习近平主席在第三届"一带一路"国际合作高峰论坛提出）
+title: Global AI Governance Initiative
+description: Proposed by Xi Jinping on 2023-10-18 at the Third Belt and Road Forum; the official externally facing articulation of China's AI-governance stance
+ruleName: Global AI Governance Initiative (《全球人工智能治理倡议》)
+issuer: People's Republic of China (proposed by President Xi Jinping at the Third Belt and Road Forum for International Cooperation)
 level: normative-document
 binding: soft
 effectiveDate: 2023-10-18
@@ -11,101 +11,95 @@ originalUrl: https://www.cac.gov.cn/2023-10/18/c_1699291032884978.htm
 relatedTopics:
   - risk-classification
   - frontier-gpai
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: 全球 AI 治理倡议 (2023)
+  label: Global AI Governance Initiative (2023)
   order: 53
 ---
 
-> **📑 法律位阶**：第 4 级 · 规范性文件 · **对外立场文件** | **发布**：中华人民共和国（习近平主席 提出） | **发布**：2023-10-18 | **属性**：软法 · 国际政治宣示
+> **📑 Legal hierarchy**: Level 4 · Normative document · **externally facing position document** | **Issuance**: People's Republic of China (proposed by President Xi Jinping) | **Released**: 2023-10-18 | **Character**: soft law · international political declaration
 
-> **⚠️ 位阶提醒**：本文件是**对外政策立场文件**，**不是**国内法律或规章。
-> 不直接产生国内企业义务；但是中国在联合国、G20、BRICS、中美 / 中欧双边对话中
-> **事实上的 AI 治理立场文件**，对 AI 外事与国际合作有指导意义。
-> 详见 [中国规则索引](/rules/china/#法律位阶速览)。
+> **⚠️ Hierarchy note**: This document is an **externally facing policy-position document**, **not** a domestic law or departmental rule. It does not directly impose duties on domestic firms, but it is China's **de facto AI-governance position document** in the UN, G20, BRICS, and China–US / China–EU bilateral dialogues, and informs AI-related diplomacy and international cooperation. See [Index of Chinese Rules](/rules/china/#the-legal-hierarchy-at-a-glance).
 
-## 中文摘要
+## Chinese Summary
 
-《全球人工智能治理倡议》（**Global AI Governance Initiative**）由习近平主席于 **2023-10-18**
-在**第三届"一带一路"国际合作高峰论坛**开幕式主旨演讲中提出，之后由**外交部和网信办**
-联合发布文本。
+The *Global AI Governance Initiative* was proposed by President Xi Jinping on **2023-10-18** in the keynote address at the opening of the **Third Belt and Road Forum for International Cooperation**, and subsequently released jointly by the **Ministry of Foreign Affairs** and the Cyberspace Administration of China.
 
-**定位**：中方对外**AI 治理立场的官方表达**，从三个维度（发展 / 安全 / 治理）系统阐述中国方案。
+**Positioning**: the **official externally facing articulation of China's AI-governance stance**, setting out the Chinese approach systematically along three axes (development / safety / governance).
 
-## 核心主张
+## Core Propositions
 
-围绕**人工智能发展、安全、治理三方面**：
+Organized around **AI development, safety, and governance**:
 
-### 关于 AI 发展
+### On AI Development
 
-- **坚持以人为本、智能向善** — 引导 AI 朝着有利于人类文明进步的方向发展
-- **相互尊重、平等互利** — 反对以意识形态划线或构建排他性集团，反对恶意阻挠他国 AI 发展
-- **开放合作** — 支持全球南方国家发展 AI，缩小数字鸿沟
+- **Uphold people-centered, AI for good** (以人为本、智能向善) — guide AI toward directions favorable to the progress of human civilization.
+- **Mutual respect, equality, and mutual benefit** — oppose drawing ideological lines or forming exclusive blocs; oppose malicious obstruction of other countries' AI development.
+- **Open cooperation** — support AI development in countries of the Global South; narrow the digital divide.
 
-### 关于 AI 安全
+### On AI Safety
 
-- 推动建立**风险等级测试评估体系**
-- 实施**敏捷治理**
-- **分类分级管理**
-- 快速有效响应
-- 研发主体不断提高 AI **可解释性和可预测性**
-- 提升**数据真实性和准确性**
-- 确保 AI 始终处于**人类控制之下**
+- Promote a **risk-level testing-and-assessment system**;
+- Implement **agile governance**;
+- **Classified and graded management**;
+- Rapid and effective response;
+- R&D actors to continuously enhance AI **explainability and predictability**;
+- Improve the **authenticity and accuracy of data**;
+- Ensure AI remains **under human control**.
 
-### 关于 AI 治理
+### On AI Governance
 
-- **联合国框架**：积极支持在联合国框架下讨论成立**国际 AI 治理机构**
-- **发展中国家代表性**：增强发展中国家在 AI 全球治理中的代表性和发言权
-- **面向发展中国家的合作与援助**
-- **反对技术垄断和出口管制**（含明暗针对美国的芯片管制）
+- **Under the UN framework**: actively support discussion of establishing an **international AI governance body** under the UN framework.
+- **Representation of developing countries**: enhance the representation and voice of developing countries in AI global governance.
+- **Cooperation and aid for developing countries**.
+- **Opposition to technological monopolies and export controls** (with explicit and implicit reference to US chip controls).
 
-## 与国内法的映射
+## Mapping onto Domestic Rules
 
-倡议的**国内版本**即中国既有治理规则：
+The Initiative's **domestic counterparts** are China's existing governance rules:
 
-| 倡议主张 | 国内对应规则 |
+| Initiative proposition | Corresponding domestic rule |
 | --- | --- |
-| "以人为本、智能向善" | [新一代 AI 治理原则](./new-gen-ai-governance-principles/) + [拟人化互动服务办法](./anthropomorphic-interaction-services/) |
-| "敏捷治理" + "分类分级" | 场景化部门规章 + [AI 安全治理框架](./ai-safety-governance-framework/) |
-| "可解释、可预测" | [TC260-003-2024](./tc260-gen-ai-security-basic-requirements/) |
-| "数据真实性、准确性" | [生成式 AI 办法](./generative-ai-interim-measures/) 第 7 条 |
-| "人类控制之下" | 同上 + [深度合成规定](./deep-synthesis-provisions/) |
+| "People-centered, AI for good" | [New-Generation AI Governance Principles](./new-gen-ai-governance-principles/) + [Anthropomorphic Interaction Services Measures](./anthropomorphic-interaction-services/) |
+| "Agile governance" + "classified and graded" | Scenario-specific departmental rules + [AI Safety Governance Framework](./ai-safety-governance-framework/) |
+| "Explainability, predictability" | [TC260-003-2024](./tc260-gen-ai-security-basic-requirements/) |
+| "Authenticity and accuracy of data" | [Generative AI Interim Measures](./generative-ai-interim-measures/) Article 7 |
+| "Under human control" | As above + [Deep Synthesis Provisions](./deep-synthesis-provisions/) |
 
-## 国际 follow-up 行动
+## International Follow-up
 
-- **2024-07** 联合国大会通过中国提出的《**加强人工智能能力建设国际合作**》决议
-- **2024-05** 上海世界人工智能大会（WAIC）发布《上海宣言》
-- **2025-07** 中国 + 全球南方国家提出"AI 能力建设行动计划"
-- **2025-09** 马朝旭副外长在联合国全球 AI 治理对话高级别会议发言
-- 在**G20、BRICS+、APEC、中非合作论坛**等场合反复引用
+- **2024-07**: The UN General Assembly adopted China's proposed resolution on "**Enhancing International Cooperation on AI Capacity Building**."
+- **2024-05**: The Shanghai World AI Conference (WAIC) released the *Shanghai Declaration*.
+- **2025-07**: China, together with Global South partners, proposed an "AI capacity-building action plan."
+- **2025-09**: Vice Foreign Minister Ma Zhaoxu spoke at the UN high-level meeting on global AI governance dialogue.
+- Reiterated in **G20, BRICS+, APEC, and the Forum on China-Africa Cooperation** venues.
 
-## 与国际倡议的对比
+## Comparison with International Initiatives
 
-| 文件 | 发起方 | 发布 | 侧重 |
+| Document | Initiating party | Released | Emphasis |
 | --- | --- | --- | --- |
-| **全球 AI 治理倡议** | 中国 | 2023-10 | 发展与安全并重 + 发展中国家代表性 + 反对技术垄断 |
-| **Bletchley Declaration** | UK / 多国 | 2023-11 | 前沿 AI 风险，28 国签署（含中国） |
-| **Seoul Declaration** | 韩国 / 多国 | 2024-05 | AISI 国际网络 |
-| **G7 Hiroshima Process** | G7 | 2023 | 行为准则 |
-| **Paris AI Summit Declaration** | 法国 | 2025-02 | 60+ 国签署，美英拒签 |
+| **Global AI Governance Initiative** | China | 2023-10 | Balance development and safety + developing-country representation + opposition to technology monopolies |
+| **Bletchley Declaration** | UK / multi-country | 2023-11 | Frontier AI risks, 28 signatories (including China) |
+| **Seoul Declaration** | Korea / multi-country | 2024-05 | International AISI network |
+| **G7 Hiroshima Process** | G7 | 2023 | Code of conduct |
+| **Paris AI Summit Declaration** | France | 2025-02 | 60+ signatories; US and UK declined |
 
-中国倡议与 **Bletchley / Seoul** 形成对照：中国更强调**发展中国家话语权**和**反对技术出口管制**；
-英美欧更强调**前沿风险评估与红线**。
+The Chinese Initiative contrasts with **Bletchley / Seoul**: China emphasizes **developing-country representation** and **opposition to export controls**; the UK / US / EU side emphasizes **frontier-risk assessment and red lines**.
 
-## 原文与归档
+## Source Text and Archival Copies
 
-| 来源 | 链接 |
+| Source | Link |
 | --- | --- |
-| 中文（网信办） | [cac.gov.cn/2023-10/18/c_1699291032884978.htm](https://www.cac.gov.cn/2023-10/18/c_1699291032884978.htm) |
-| 中文（外交部） | [mfa.gov.cn/.../t20231020_11164831.shtml](https://www.mfa.gov.cn/wjb_673085/zzjg_673183/jks_674633/zclc_674645/rgzn/202310/t20231020_11164831.shtml) |
-| 中文（归档） | [archives/china/global-ai-governance-initiative-2023-10-18.html](/archives/china/global-ai-governance-initiative-2023-10-18.html) |
-| 英文（MFA 官方英译） | — |
-| 答记者问 | [mfa.gov.cn/fyrbt/.../t20231018_11162801.shtml](https://www.mfa.gov.cn/fyrbt_673021/202310/t20231018_11162801.shtml) |
+| Chinese (CAC) | [cac.gov.cn/2023-10/18/c_1699291032884978.htm](https://www.cac.gov.cn/2023-10/18/c_1699291032884978.htm) |
+| Chinese (MFA) | [mfa.gov.cn/.../t20231020_11164831.shtml](https://www.mfa.gov.cn/wjb_673085/zzjg_673183/jks_674633/zclc_674645/rgzn/202310/t20231020_11164831.shtml) |
+| Chinese (archived copy) | [archives/china/global-ai-governance-initiative-2023-10-18.html](/archives/china/global-ai-governance-initiative-2023-10-18.html) |
+| English (official MFA translation) | — |
+| Press Q&A | [mfa.gov.cn/fyrbt/.../t20231018_11162801.shtml](https://www.mfa.gov.cn/fyrbt_673021/202310/t20231018_11162801.shtml) |
 
-## 版本历史
+## Version History
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2023-10-18 | 第三届"一带一路"国际合作高峰论坛提出 |
-| 2024-07 | 联合国 AI 能力建设合作决议（基于倡议精神） |
-| 2025-09 | 马朝旭在联合国全球 AI 治理对话发言（重申立场） |
+| 2023-10-18 | Announced at the Third Belt and Road Forum |
+| 2024-07 | UN resolution on AI capacity-building cooperation (in the spirit of the Initiative) |
+| 2025-09 | Ma Zhaoxu reiterates the position at the UN global AI governance dialogue |

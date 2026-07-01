@@ -1,279 +1,293 @@
 ---
-title: 安全框架
-description: DeepMind Frontier Safety Framework (FSF) v1→v3 演进；CCL 方法论与 2026-04 的 Harmful Manipulation CCL
+title: Safety Framework
+description: Evolution of DeepMind's Frontier Safety Framework (FSF) v1 to v3; CCL methodology and the 2026-04 Harmful Manipulation CCL
 sidebar:
   order: 3
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> **🆕 2026-04-17 FSF v3.0**：新增 **Tracked Capability Levels (TCLs)** 预警层；
-> 新增 **Harmful Manipulation CCL**（规制能系统性改变人类信念的 AI）。
-> 对比 Anthropic RSP v3 的 "**弱化**" 与 OpenAI Preparedness v2 的 "**简化**"，
-> DeepMind FSF 是 2026 唯一**扩展**的前沿安全框架。
+> **2026-04-17 FSF v3.0**: adds a **Tracked Capability Levels (TCLs)** early-warning layer
+> and a **Harmful Manipulation CCL** governing AI capable of systematically altering human beliefs.
+> Against Anthropic RSP v3's **weakening** and OpenAI Preparedness v2's **simplification**,
+> DeepMind's FSF is the only frontier safety framework to **expand** in 2026.
 
-## 概述：FSF 的制度位置
+> **2026-06-18 AI Control Roadmap**: DeepMind added a system-level framework for securing advanced
+> agents deployed inside Google. It treats agents as potential insider threats, layers monitoring and
+> intervention over alignment, and maps stronger controls to capability milestones. This complements—not
+> replaces—the model-level FSF. [Official announcement](https://deepmind.google/blog/securing-the-future-of-ai-agents/).
 
-**Frontier Safety Framework (FSF)** 是 DeepMind 对标 Anthropic RSP（2023-09）、
-OpenAI Preparedness Framework（2023-12）的**第三个前沿安全框架**。2024-05 首发时
-DeepMind 明确定位：
+## Overview: the institutional position of FSF
+
+The **Frontier Safety Framework (FSF)** is DeepMind's counterpart to Anthropic's RSP (2023-09) and
+OpenAI's Preparedness Framework (2023-12) — **the third frontier safety framework**. At its 2024-05 launch
+DeepMind positioned it as:
 
 > **"a set of protocols aimed at addressing severe risks that may arise from powerful
 > capabilities of future foundation models"**
 > — *Frontier Safety Framework, v1.0 Preamble*
 
-与 Anthropic RSP 并列位于 **Frontier Model Forum** 四家创始成员（Anthropic、Google、
-Microsoft、OpenAI）的**行业自律"双核"**：RSP 以**能力等级（ASL）**为中心，FSF 以
-**关键能力级别（Critical Capability Level, CCL）**为中心。
+Together with Anthropic's RSP, it forms the **"twin cores" of industry self-regulation** within the four-founder
+**Frontier Model Forum** (Anthropic, Google, Microsoft, OpenAI): RSP centers on **capability tiers (ASLs)**, while
+FSF centers on **Critical Capability Levels (CCLs)**.
 
-## 版本演进
+## Version evolution
 
-| 版本 | 日期 | 核心变化 | 官方发布 |
+| Version | Date | Core changes | Official release |
 | --- | --- | --- | --- |
-| v1.0 | 2024-05-17 | 首发；建立 CCL 概念；**4 个能力领域** | [deepmind.google blog](https://deepmind.google/discover/blog/introducing-the-frontier-safety-framework/) |
-| v2.0 | 2025-02 | 强化模型级 FSF Report 要求；细化 CBRN CCL | [FSF v2](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/updating-the-frontier-safety-framework/frontier-safety-framework_2.pdf) |
-| **v3.0** | **2026-04-17** | **新增 TCLs；新增 Harmful Manipulation CCL** | [FSF v3](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf) |
+| v1.0 | 2024-05-17 | Launch; established the CCL concept; **four capability domains** | [deepmind.google blog](https://deepmind.google/discover/blog/introducing-the-frontier-safety-framework/) |
+| v2.0 | 2025-02 | Strengthened model-level FSF Report requirements; refined CBRN CCL | [FSF v2](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/updating-the-frontier-safety-framework/frontier-safety-framework_2.pdf) |
+| **v3.0** | **2026-04-17** | **Adds TCLs; adds Harmful Manipulation CCL** | [FSF v3](https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3.pdf) |
 
-## CCL 方法论（v1 起的核心创新）
+## CCL methodology (the core innovation since v1)
 
-**Critical Capability Levels (CCLs)** 是 DeepMind 对"能力 → 风险"映射的独特抽象。
-**与 Anthropic ASL 的区别**：
+**Critical Capability Levels (CCLs)** are DeepMind's distinctive abstraction for the capability-to-risk mapping.
+**Differences from Anthropic's ASL**:
 
-- ASL 是**单一维度的能力等级**（ASL-2 / ASL-3 / ASL-4），像 BSL 等级
-- **CCL 是按风险类别分别定义的能力阈值**——"网络攻击 CCL"、"自主 ML 研究 CCL" 等是独立轴
+- ASL is a **single-dimensional capability tier** (ASL-2 / ASL-3 / ASL-4), akin to BSL levels
+- **CCLs are capability thresholds defined separately by risk category** — "Cyber CCL", "Autonomous ML R&D CCL", etc.
+  are independent axes
 
-**v3 CCL 清单**（按 2026-04 版）：
+**v3 CCL roster** (per the 2026-04 edition):
 
-| 风险域 | CCL 名称 | 触发条件（概述） |
+| Risk domain | CCL name | Triggering condition (summary) |
 | --- | --- | --- |
-| 网络 | **Cyber Autonomy CCL** | 模型可自主规模化发动复杂网络攻击，相当于中等国家级威胁 |
-| 自主 | **Autonomous ML R&D CCL** | 模型可自主推进 AI 研发，相当于 DeepMind 研究员水平的端到端贡献 |
-| CBRN | **Bio CCL / Chem CCL** | 模型可大幅降低生化武器研发门槛（对 GCSE-level 用户） |
-| 操纵（v3 新增） | **Harmful Manipulation CCL** | 模型可系统性改变信念/行为，产生"严重规模"社会伤害 |
+| Cyber | **Cyber Autonomy CCL** | Model can autonomously and at scale conduct sophisticated cyberattacks at a level comparable to a mid-sized state threat |
+| Autonomy | **Autonomous ML R&D CCL** | Model can autonomously advance AI R&D at the level of end-to-end contribution equivalent to a DeepMind researcher |
+| CBRN | **Bio CCL / Chem CCL** | Model substantially lowers the bar for bio/chemical weapon R&D (for GCSE-level users) |
+| Manipulation (new in v3) | **Harmful Manipulation CCL** | Model can systematically shift beliefs / behavior, producing "severe-scale" societal harm |
 
-**流程**：
+**Process**:
 
-1. **Early Warning Evaluations**：每个重要模型训练后、部署前做 CCL 评估
-2. 若 **< CCL** → 正常部署（仅常规缓解）
-3. 若 **≥ CCL** → **延迟部署 / 强化缓解**，发布 **FSF Report** 公开论证
-4. **持续监控**：部署后重大能力提升 → 触发重新评估
+1. **Early Warning Evaluations**: CCL evaluations run after training and before deployment for every significant model
+2. If **below CCL** → normal deployment (standard mitigations only)
+3. If **at or above CCL** → **delayed deployment / enhanced mitigations**, with a **FSF Report** published to document the reasoning
+4. **Continuous monitoring**: material post-deployment capability gains → trigger re-evaluation
 
-## TCLs（2026-04 新增）
+## TCLs (added 2026-04)
 
-**Tracked Capability Levels** 是 v3 的核心创新——**在 CCL 触发前的预警层**。
+**Tracked Capability Levels** are the core v3 innovation — **an early-warning layer below the CCL threshold**.
 
-**理由（FSF v3 论证概括）**：CCL 设置的阈值很高，一旦触发就意味着"重大"风险。
-但能力演进往往渐进，若等到触发 CCL 再反应，缓解措施的准备时间可能不足——
-TCL 因此作为预警层引入。
+**Rationale (FSF v3 reasoning, paraphrased)**: CCL thresholds are set high, so a trigger signifies "severe" risk.
+But capabilities typically evolve gradually, and waiting until a CCL is reached may leave insufficient lead time to prepare
+mitigations — TCLs are introduced as an early-warning layer.
 
-**TCL 的作用**：
+**Role of TCLs**:
 
-- 对每个 CCL 设定**"接近阈值"的 TCL**（典型为 CCL 的 50-80%）
-- 达到 TCL 触发**内部预警 + 外部披露 + 追加评估**
-- **不触发部署限制**，但**倒逼缓解能力提前就位**
+- Each CCL is paired with a **"near-threshold" TCL** (typically 50-80% of the CCL)
+- Reaching a TCL triggers **internal alert + external disclosure + additional evaluation**
+- **Does not trigger deployment restrictions**, but **forces early readiness of mitigation capacity**
 
-**行业意义**：DeepMind 现在是**唯一设立"预警层"的前沿实验室**：
+**Industry significance**: DeepMind is now **the only frontier lab with a dedicated early-warning layer**:
 
-| 实验室 | 能力门槛 |
+| Lab | Capability thresholds |
 | --- | --- |
-| OpenAI Preparedness v2 | High / Critical（2 档，2025-04 简化） |
-| Anthropic RSP v3 | ASL-2/3/4/5（4 档，含 "deploy standards"） |
-| **Google DeepMind FSF v3** | **TCL → CCL → "exceed CCL"（3 档）** |
+| OpenAI Preparedness v2 | High / Critical (2 tiers, simplified 2025-04) |
+| Anthropic RSP v3 | ASL-2/3/4/5 (4 tiers, including "deploy standards") |
+| **Google DeepMind FSF v3** | **TCL → CCL → "exceed CCL" (3 tiers)** |
 
-## Harmful Manipulation CCL（2026-04 新增）
+## Harmful Manipulation CCL (added 2026-04)
 
-**最具争议的 v3 新增**。覆盖"能在规模上系统性改变人类信念或行为"的能力。
+The **most contested v3 addition**. It covers capabilities to "systematically shift human beliefs or behavior at scale".
 
-### 定义（概括）
+### Definition (summary)
 
-FSF v3 将 Harmful Manipulation CCL 大致界定为：模型能以显著高于人类基线的说服 / 操纵效率，
-系统性改变信念或行为，并在规模化部署下造成严重社会伤害。具体措辞以 FSF v3 正式文本为准。
+FSF v3 characterizes the Harmful Manipulation CCL, in essence, as: a model capable of persuasion / manipulation efficiency
+markedly above a human baseline, systematically shifting beliefs or behavior and producing severe societal harm at scale.
+Exact wording per the formal FSF v3 text.
 
-### 评估方法
+### Evaluation methodology
 
-- **控制实验**：让模型与人类在说服任务中竞争（例如气候议题、疫苗信念）
-- **长对话持久性**：模型引发的信念变化是否在 24 小时 / 7 天后仍存在
-- **个性化适应性**：模型能否根据目标特征调整策略
-- **可扩展性**：缓解措施（如水印、内容标签）能否抵消操纵效果
+- **Controlled experiments**: pitting the model against humans in persuasion tasks (e.g. climate topics, vaccine beliefs)
+- **Long-dialogue persistence**: whether model-induced belief shifts persist at 24 hours / 7 days
+- **Personalized adaptation**: whether the model can adapt strategy to target characteristics
+- **Scalability**: whether mitigations (watermarks, content labels) can offset manipulation effects
 
-### 争议
+### Controversy
 
-**支持**：
+**Supportive voices**:
 
-- **Yoshua Bengio** 在近年 AI 安全报告与公开演讲中，持续将规模化操纵列为 AGI 风险主要类别之一
-  （继自主、武器化之后），**FSF 采纳与该学术立场一致**
-- **Stuart Russell**（Berkeley CHAI）在多次公开发言中强调，规模化说服 / 操纵
-  对民主制度构成存在性风险
+- **Yoshua Bengio**, in recent AI safety reports and public lectures, has consistently listed scaled manipulation among the
+  leading AGI risk categories (after autonomy and weaponization); **FSF's adoption aligns with this academic position**.
+- **Stuart Russell** (Berkeley CHAI), in multiple public remarks, has emphasized that scaled persuasion / manipulation poses
+  an existential risk to democratic institutions.
 
-**批评**：
+**Critical voices**:
 
-- **Zvi Mowshowitz**（*Don't Worry About the Vase*）FSF v3 发布后的系列博文指出逻辑不一致：
-  v3 **将 Harmful Manipulation 列为 CCL，但同时把 Deceptive Alignment / Scheming 降级为 TCL**
-- **Deb Raji**（Mozilla Fellow）等批评定义模糊——"人类 baseline" 如何界定，
-  与广告、公共卫生传播等合法说服如何区分
-- **产业派**（*a16z* 等）则担心此 CCL 阻碍 Gemini 在营销、教育、说服性 AI 应用的部署
+- **Zvi Mowshowitz** (*Don't Worry About the Vase*), in a series of posts following v3, pointed to internal inconsistency:
+  v3 **elevates Harmful Manipulation to a CCL while downgrading Deceptive Alignment / Scheming to a TCL**.
+- **Deb Raji** (Mozilla Fellow) and others have argued the definition is vague — how is the "human baseline" delimited,
+  and how is it to be distinguished from legitimate persuasion such as advertising or public-health messaging?
+- **Industry-aligned commentators** (*a16z* and others) worry that this CCL impedes Gemini's deployment in marketing,
+  education, and persuasion-focused AI applications.
 
-### DeepMind 的内部争论
+### DeepMind's internal debate
 
-**Shane Legg**（DeepMind Chief AGI Scientist）在 2025 年多次公开发言中提及：
-Harmful Manipulation CCL 的草案在 DeepMind 内部经历了较长时间的争论。反对方（产品 / 商业化）
-认为该 CCL 可能**阻碍合法的说服性应用**；支持方（Safety Research）认为**如果操纵能力
-扩展到民主议题就来不及**。最终的 v3 版本是**妥协——定义严格限定于"严重规模"而非一般说服**。
+**Shane Legg** (DeepMind Chief AGI Scientist), in multiple public remarks across 2025, has noted that the draft Harmful
+Manipulation CCL underwent extended internal debate at DeepMind. Dissenting voices (product / commercial) argued that the
+CCL could **impede legitimate persuasion applications**; supporters (Safety Research) argued that **once manipulation
+capabilities extend to democratic discourse, it is too late**. The final v3 text reflects **a compromise — the definition
+is strictly limited to "severe-scale" effects rather than ordinary persuasion**.
 
-## Gemini 模型级 FSF Reports
+## Model-level Gemini FSF Reports
 
-**模型级 FSF Report** 是 v2 起的核心工具——对每个重要模型公开披露其 CCL 评估。
+**Model-level FSF Reports** are the core tool introduced in v2 — public CCL evaluation disclosure for each significant model.
 
-### 已发布的 FSF Reports
+### Published FSF Reports
 
-| 模型 | 发布日期 | 覆盖 CCL | 结果 |
+| Model | Release date | CCLs covered | Results |
 | --- | --- | --- | --- |
-| Gemini 2.5 Pro | 2025-04 | Cyber / Auto ML / CBRN（v2 时期） | 均未达 CCL；Cyber 接近 TCL（当时未发布） |
-| **Gemini 3 Pro** | **2025-11** | Cyber / Auto ML / CBRN（v2 框架） | 均未达 CCL；Auto ML **达到 TCL 草案阈值**——触发"增强监控" |
-| Gemini 3 Ultra | 预期 2026-Q1 | 四维全覆盖（v3 框架） | — |
+| Gemini 2.5 Pro | 2025-04 | Cyber / Auto ML / CBRN (under v2) | All below CCL; Cyber near TCL (TCL not yet formalized) |
+| **Gemini 3 Pro** | **2025-11** | Cyber / Auto ML / CBRN (v2 framework) | All below CCL; Auto ML **reached the draft TCL threshold** — triggering "enhanced monitoring" |
+| Gemini 3 Ultra | Expected 2026-Q1 | All four domains (v3 framework) | — |
 
-### Gemini 3 Pro FSF Report（2025-11）——业界首个
+### Gemini 3 Pro FSF Report (2025-11) — an industry first
 
-这是**业界首个**把模型级安全评估作为**独立公开报告**发布的实例（Anthropic 的 Risk Reports
-2026-04 起才对齐这一格式）。
+This was **the industry's first** instance of a model-level safety evaluation released as a **standalone public report**
+(Anthropic's Risk Reports aligned with this format only from 2026-04).
 
-**报告结构**：
+**Report structure**:
 
-1. **Model overview**（与 Model Card 交叉引用）
-2. **Evaluated CCLs**（当时仅 v2 的三类）
-3. **Early Warning Evaluation 方法**（部分公开，详细方法在 appendix）
-4. **Results**：每项 CCL 的量化分数 + 人工判断
-5. **External Evaluations**：**UK AISI / US AISI 参与部分评估**
-6. **Mitigation plan**：发布前和发布后的缓解措施
-7. **Residual uncertainty**：主动披露未覆盖的风险维度
+1. **Model overview** (cross-referenced to the Model Card)
+2. **Evaluated CCLs** (at the time only the three under v2)
+3. **Early Warning Evaluation methodology** (partly public; detailed methods in the appendix)
+4. **Results**: quantified scores per CCL + human judgment
+5. **External Evaluations**: **partial evaluation involvement from UK AISI / US AISI**
+6. **Mitigation plan**: pre- and post-release mitigations
+7. **Residual uncertainty**: proactive disclosure of risk dimensions not covered
 
-**意义**：**为 Gemini 3 Ultra（预期 2026-Q1 发布）的 v3-framework 首次全维评估提供模板**。
+**Significance**: **a template for the first v3-framework full-domain evaluation to accompany Gemini 3 Ultra**
+(expected 2026-Q1).
 
-## 三大缓解支柱
+## Three mitigation pillars
 
-FSF v1 起规定每个 CCL 对应**三类缓解**：
+Since v1, FSF has specified **three mitigation categories** for each CCL:
 
-1. **Security Mitigations**：模型权重保护（对应 RAND Security Levels SL-1 到 SL-5）
-2. **Deployment Mitigations**：部署时的访问控制、监控、能力限制
-3. **Internal Governance**：Responsible AI Council 流程 + 跨职能审查
+1. **Security Mitigations**: model-weight protection (mapped to RAND Security Levels SL-1 through SL-5)
+2. **Deployment Mitigations**: access controls, monitoring, and capability restrictions at deployment
+3. **Internal Governance**: Responsible AI Council processes + cross-functional review
 
-**v3 的新增**：要求**所有 TCL 达到的模型同步升级 Security Mitigations**（即**不等 CCL 就
-提前投入权重保护**），响应了 GovAI Anderljung 等人的批评。
+**v3 addition**: **all TCL-reaching models must simultaneously upgrade Security Mitigations** (i.e., **investing in weight
+protection before the CCL is reached, rather than waiting**), responding to critiques from Anderljung (GovAI) and others.
 
-## 学术批评
+## Academic critique
 
-### Anderljung et al.（GovAI）—— 框架 vs. 政策
+### Anderljung et al. (GovAI) — framework vs. policy
 
-**Markus Anderljung**（GovAI，论文发表时在 OpenAI Policy）2023 *Frontier AI Regulation*
-论文是前沿安全框架的**理论基础**之一。他对 FSF 的典型评价是：
-这是一个结构良好的框架，但"Framework"而非"Policy"的措辞本身即暗示了较弱的约束力。
+**Markus Anderljung** (GovAI, and at OpenAI Policy at the time of the paper) authored the 2023 *Frontier AI Regulation*
+paper, one of the **theoretical foundations** of frontier safety frameworks. His typical assessment of FSF is that it is a
+well-structured framework, but that the very word "Framework" rather than "Policy" already signals weaker binding force.
 
-FSF v3 **仍然称作 Framework**（相对 Anthropic 的 "Policy"），**保留柔性**。这在
-Anderljung 看来是**利弊参半**——灵活性有利迭代，但降低承诺可问责性。
+FSF v3 **retains the Framework designation** (relative to Anthropic's "Policy") and **preserves its soft character**.
+In Anderljung's view this cuts both ways — flexibility aids iteration, but lowers commitment-level accountability.
 
-### Bengio 的"责任缺口" (Responsibility Gap)
+### Bengio on the "Responsibility Gap"
 
-**Yoshua Bengio** 在 2025 *International AI Safety Report* 中多次引用 FSF 作为**正面案例**，
-但也指出**三大实验室的共同盲点**：
+**Yoshua Bengio**, in the 2025 *International AI Safety Report*, cites FSF multiple times as a **positive example**, but
+also points to **three shared blind spots across the three labs**:
 
-- **"pause commitment" 模糊**：所有三家都未明确"若缓解失败应停止"的具体机制
-- **外部验证有限**：UK / US AISI 参与了评估，但**方法学与结论仍由实验室主导**
-- **FSF 与 AI Principles 之间的联动**：如 2024 删除军事禁令**未触发 FSF 更新**，说明两层治理
-  **未打通**
+- **Vague "pause commitments"**: none of the three has an explicit mechanism for "stopping if mitigations fail"
+- **Limited external validation**: UK / US AISI participate in evaluations, but **methodology and conclusions remain
+  lab-led**
+- **The FSF / AI Principles link**: the 2024 deletion of the military prohibition **did not trigger an FSF update**,
+  indicating that the two governance layers are **not integrated**
 
-### Zvi Mowshowitz 的"稍好但仍不够"(Better But Not Enough)
+### Zvi Mowshowitz on "Better But Not Enough"
 
-Zvi 在多篇博文中持续表达的立场：DeepMind 的框架在三家中相对严谨，但仍缺乏可执行的 pause 承诺。
-对 FSF v3 的典型论点是：TCL 是一项实质改进、Harmful Manipulation CCL 方向正确，但只要没有公开的 pause 承诺，
-FSF 仍是"框架"而非"约束"。
+Zvi's consistent position across multiple posts is that DeepMind's framework is relatively rigorous among the three, but
+still lacks an enforceable pause commitment. His typical argument on FSF v3 is that TCL is a substantive improvement and
+the Harmful Manipulation CCL is directionally correct, but absent a public pause commitment, FSF remains a "framework"
+rather than a "constraint".
 
-### Meredith Whittaker（Signal）—— 治理 vs. 产品
+### Meredith Whittaker (Signal) — governance vs. product
 
-Whittaker 的核心论点是：把 Safety Team 放在商业化产品公司内部，研究者写的框架与产品团队的实操之间存在结构性冲突。
-她举例：2024 Gemini 图像生成的历史失真事件**没有触发任何 CCL**，
-因为**操纵性"历史生成"不在 CCL 定义之内**——反映框架对现实危害的覆盖面仍有限。
+Whittaker's central argument is that placing a Safety Team inside a commercial-product company produces structural conflict
+between the frameworks researchers author and the practices product teams execute. Her example: the 2024 Gemini image-
+generation historical-distortion episode **triggered no CCL**, because **manipulative "historical generation" falls outside
+CCL definitions** — reflecting the framework's limited coverage of real-world harms.
 
-### DeepMind 内部声音：Rohin Shah / Geoffrey Irving / Pushmeet Kohli
+### DeepMind internal voices: Rohin Shah / Geoffrey Irving / Pushmeet Kohli
 
-- **Rohin Shah**（DeepMind Alignment Team Lead）：在 FSF v3 发布相关讨论中公开承认
-  CCL 阈值的标定仍是动态学习过程
-- **Geoffrey Irving**（原 DeepMind，现 UK AISI）：推动 FSF 与 AISI 评估协议对齐的关键人物
-- **Pushmeet Kohli**（DeepMind Safety & Alignment Lead）：在 2025 多场学术活动发言中强调
-  FSF 必须与学术评估界共演进，而非封闭内部标准
+- **Rohin Shah** (DeepMind Alignment Team Lead), in discussions tied to the FSF v3 release, has publicly acknowledged that
+  the calibration of CCL thresholds remains a dynamic learning process.
+- **Geoffrey Irving** (formerly DeepMind, now UK AISI): a key figure in aligning FSF with AISI evaluation protocols.
+- **Pushmeet Kohli** (DeepMind Safety & Alignment Lead), in multiple 2025 academic appearances, has emphasized that FSF
+  must co-evolve with the academic evaluation community rather than remain a closed internal standard.
 
-## 行业第一手实践视角
+## Industry practitioner perspective
 
-### 与 Google AI Principles 的关系
+### Relationship with Google's AI Principles
 
-**FSF 位于 AI Principles 之下**但**独立发布**：
+**FSF sits beneath the AI Principles** but is **released independently**:
 
 ```
-Google AI Principles (2024 修订版)
+Google AI Principles (2024 revision)
     └── DeepMind FSF
-            ├── CCL 定义
+            ├── CCL definitions
             ├── Early Warning Evaluations
-            ├── 模型级 FSF Reports
+            ├── Model-level FSF Reports
             └── Mitigation Requirements
     └── Google Responsible AI Practices
     └── Generative AI Prohibited Use Policy
 ```
 
-**关键：FSF 覆盖的是模型训练与部署前的能力风险**，而 AI Principles 与 Prohibited Use
-覆盖**用途与场景**。两者并不完全重合——这是"AI Principles 2024 修订删除军事禁令未触发
-FSF 更新"的技术原因。
+**Crucially, FSF covers capability risk during model training and pre-deployment**, while the AI Principles and Prohibited
+Use cover **uses and scenarios**. The two do not fully overlap — this is the technical reason that "the 2024 AI Principles
+revision deleting the military prohibition did not trigger an FSF update".
 
-### Responsible AI Council 流程
+### The Responsible AI Council process
 
-Google / DeepMind 内部通过**Responsible AI Council**协调 FSF 落地：
+Google / DeepMind coordinate FSF implementation internally through the **Responsible AI Council**:
 
-- 成员：DeepMind Safety + Google Responsible AI + Legal + Product + External advisors
-- **所有达到 CCL 或 TCL 的模型**须经 Council review
-- **Council 决议**记录为 FSF Report 附录（**摘要公开**）
+- Members: DeepMind Safety + Google Responsible AI + Legal + Product + External advisors
+- **All models reaching a CCL or TCL** must undergo Council review
+- **Council resolutions** are appended to the FSF Report (**summaries are public**)
 
-### 与 Frontier Model Forum 的协调
+### Coordination with the Frontier Model Forum
 
-FSF 与 Anthropic RSP、OpenAI Preparedness **在 Frontier Model Forum 下有"术语对齐"工作组**：
+FSF, Anthropic's RSP, and OpenAI's Preparedness Framework are aligned under a **"terminology harmonization" working group
+within the Frontier Model Forum**:
 
-- **"capability elicitation"** 标准化
-- **"dangerous capability benchmarks"** 共享（如 Cybench、WMDP 变体）
-- **2025 联合发布了"Scheming Evaluations"论文**（DeepMind + Anthropic + Apollo Research）
+- **"capability elicitation"** standardization
+- **Shared "dangerous capability benchmarks"** (e.g. Cybench, WMDP variants)
+- **A joint "Scheming Evaluations" paper in 2025** (DeepMind + Anthropic + Apollo Research)
 
-### UK AISI / US AISI 预部署评估
+### UK AISI / US AISI pre-deployment evaluations
 
-**FSF 流程中的外部评估环节**：
+**External evaluation within the FSF process**:
 
-- Gemini 1.5 Pro（2024-05）UK AISI 参与（首批之一）
-- Gemini 2.5 Pro（2025-03）US AISI + UK AISI 联合评估
-- **Gemini 3 Pro（2025-11）US AISI 因 EO 14179 后政策收缩下降参与；UK AISI 主导**
-- **Gemini 3 Ultra（预期 2026-Q1）AISI 参与方式由 AI Action Plan 后续决定**
+- Gemini 1.5 Pro (2024-05) — UK AISI (among the first)
+- Gemini 2.5 Pro (2025-03) — joint US AISI + UK AISI evaluation
+- **Gemini 3 Pro (2025-11) — reduced US AISI involvement following policy retrenchment after EO 14179; UK AISI led**
+- **Gemini 3 Ultra (expected 2026-Q1) — AISI involvement will be shaped by follow-up to the AI Action Plan**
 
-## 与同业对比（2026 Q2 快照）
+## Peer comparison (Q2 2026 snapshot)
 
-| 维度 | **FSF v3 (2026-04)** | Anthropic RSP v3 (2026-02) | OpenAI Preparedness v2 (2025-04) |
+| Dimension | **FSF v3 (2026-04)** | Anthropic RSP v3 (2026-02) | OpenAI Preparedness v2 (2025-04) |
 | --- | --- | --- | --- |
-| 核心单位 | **CCL (按风险域)** + **TCL (预警)** | ASL (单维度) | High / Critical (两档) |
-| 覆盖风险 | Cyber / Auto ML / CBRN / **Manipulation** | Bio / Cyber / Auto / Persuasion | Bio / Cyber / Auto / Self-improve |
-| 模型级报告 | **FSF Reports（2 份已发）** | Risk Reports（2026-04 起） | System Cards (嵌入式) |
-| 预警层 | **TCL (v3 新增)** | "Yellow Lines"（非正式） | 无 |
-| Pause 承诺 | 模糊（"may delay deployment"） | **v3 撤销** | 弱 |
-| External eval | UK/US AISI + 独立审查 | GovAI + MATS + METR | 内部 Safety Advisory Group |
-| 主要批评 | "Framework not policy" / 无 pause | 撤销 pause | arXiv 批"不保证任何缓解" |
+| Core unit | **CCL (per risk domain)** + **TCL (early warning)** | ASL (single dimension) | High / Critical (two tiers) |
+| Risks covered | Cyber / Auto ML / CBRN / **Manipulation** | Bio / Cyber / Auto / Persuasion | Bio / Cyber / Auto / Self-improve |
+| Model-level reports | **FSF Reports (2 published)** | Risk Reports (from 2026-04) | System Cards (embedded) |
+| Early-warning layer | **TCL (new in v3)** | "Yellow Lines" (informal) | None |
+| Pause commitment | Vague ("may delay deployment") | **Withdrawn in v3** | Weak |
+| External evaluation | UK/US AISI + independent review | GovAI + MATS + METR | Internal Safety Advisory Group |
+| Principal critique | "Framework not policy" / no pause | Pause withdrawn | arXiv critique: "guarantees no mitigation" |
 
-## 关键时间线
+## Key timeline
 
-- **2023-09**：Anthropic RSP v1（FSF 的制度参照）
-- **2023-12**：OpenAI Preparedness Framework v1
-- **2024-05**：**FSF v1 发布**
-- **2025-02**：FSF v2 发布
-- **2025-04**：**Gemini 2.5 FSF Report（首份模型级 FSF Report）**
-- **2025-10**：DeepMind + Anthropic + Apollo *Scheming Evaluations* 论文
-- **2025-11**：**Gemini 3 Pro FSF Report（业界首个与 Model Card 同步发布的安全报告）**
-- **2026-04-17**：**FSF v3 发布**（TCL + Harmful Manipulation CCL）
+- **2023-09**: Anthropic RSP v1 (institutional reference for FSF)
+- **2023-12**: OpenAI Preparedness Framework v1
+- **2024-05**: **FSF v1 released**
+- **2025-02**: FSF v2 released
+- **2025-04**: **Gemini 2.5 FSF Report (first model-level FSF Report)**
+- **2025-10**: DeepMind + Anthropic + Apollo *Scheming Evaluations* paper
+- **2025-11**: **Gemini 3 Pro FSF Report (industry's first safety report co-released with a Model Card)**
+- **2026-04-17**: **FSF v3 released** (TCL + Harmful Manipulation CCL)
 
-## 跨链接
+## Cross-links
 
-- 公司层 FSF 深度分析：[Google DeepMind index](/companies/google-deepmind/)
-- Gemini 模型卡：[Model Card](./model-card/)
-- 外部红队与 AISI 评估：[Red-Team Disclosures](./red-team-disclosures/)
-- 对比：[Anthropic RSP](/companies/anthropic/safety-framework/)、[OpenAI Preparedness](/companies/openai/safety-framework/)
-- Frontier Model Forum 行业协调：[行业自治](/industry/frontier-model-forum/)
-- EU GPAI Code of Practice：[GPAI CoP](/policies/eu/gpai-cop/)
+- Company-level FSF deep analysis: [Google DeepMind index](/companies/google-deepmind/)
+- Gemini Model Card: [Model Card](./model-card/)
+- External red-teaming and AISI evaluation: [Red-Team Disclosures](./red-team-disclosures/)
+- Comparison: [Anthropic RSP](/companies/anthropic/safety-framework/), [OpenAI Preparedness](/companies/openai/safety-framework/)
+- Frontier Model Forum industry coordination: [Industry self-regulation](https://www.frontiermodelforum.org/)
+- EU GPAI Code of Practice: [GPAI CoP](/rules/eu/gpai-code-of-practice/)

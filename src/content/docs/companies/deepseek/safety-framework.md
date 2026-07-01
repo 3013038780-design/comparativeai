@@ -1,221 +1,283 @@
 ---
-title: 安全框架
-description: DeepSeek "极简 + 嵌入式" 安全立场：无 RSP / Preparedness / FSF 对标的开源路径（2026-04-23）
+title: Safety Framework
+description: DeepSeek's "minimalist + embedded" safety posture — an open-source path with no RSP / Preparedness / FSF counterpart (2026-06-28)
 sidebar:
   order: 3
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> **一句话定位**：DeepSeek 是全球能力位列前五的前沿实验室中**唯一没有公开结构化安全框架的公司**。
-> 它没有 Anthropic RSP、OpenAI Preparedness Framework、Google DeepMind Frontier Safety Framework
-> 或 Meta Frontier AI Framework 的对应物，没有签署 Frontier Model Forum、Seoul / Bletchley /
-> Paris 声明、白宫 Voluntary Commitments、**也没有签署 GPAI CoP**。其"安全"几乎完全等同于**
-> 中国服务侧合规（CAC 算法备案 + TC260-003）**，加上**R1 / V3.1 技术报告中的短章节**。
+> **One-line framing**: DeepSeek is **the only firm among the world's top-five capability frontier
+> labs with no published structured safety framework**. It has no counterpart to Anthropic's RSP,
+> OpenAI's Preparedness Framework, Google DeepMind's Frontier Safety Framework, or Meta's
+> Frontier AI Framework; it has not signed onto the Frontier Model Forum, the Seoul / Bletchley /
+> Paris declarations, or the White House Voluntary Commitments; **nor has it signed the GPAI
+> Code of Practice**. Its "safety" is nearly equated with **China's service-side compliance
+> (CAC algorithm filing + TC260-003)**, plus **short sections inside the R1 / V3.1 technical
+> reports**.
 
-## 一、DeepSeek 安全框架的"缺席目录"
+## 1. DeepSeek's "absence list" in frontier safety frameworks
 
-下表列出**全球主流前沿 AI 安全自律框架与承诺**，以及 DeepSeek 的签署 / 对标状态：
+The table below lists **major global frontier AI safety self-regulatory frameworks and
+commitments**, and DeepSeek's signing / alignment status:
 
-| 框架 / 承诺 | 发起 / 主导 | Anthropic | OpenAI | Google DM | Meta | **DeepSeek** |
+| Framework / commitment | Originator / lead | Anthropic | OpenAI | Google DM | Meta | **DeepSeek** |
 | --- | --- | --- | --- | --- | --- | --- |
-| White House Voluntary Commitments (2023) | 美国 | ✅ | ✅ | ✅ | ✅ | ❌ |
-| Frontier Model Forum | 2023-07 创始四家 | ✅ 创始 | ✅ 创始 | ✅ 创始 | 加入 | ❌ |
-| Bletchley Declaration (2023) | UK | ✅ | ✅ | ✅ | ✅ | ❌ |
-| Seoul AI Safety Commitments (2024) | KR+UK | ✅ | ✅ | ✅ | ✅ | ❌ |
-| UK / US AISI 预部署测试 MoU | UK/US AISI | ✅ | ✅ | ✅ | 部分 | ❌ |
-| GPAI Code of Practice (2025) | 欧盟 | ✅ 全部三章 | ✅ | ✅ | 部分 | ❌ |
-| 自家 RSP / Preparedness / FSF | 自主 | RSP v3 | Preparedness v2 | FSF v3 | FAIF | **无** |
+| White House Voluntary Commitments (2023) | US | Signed | Signed | Signed | Signed | Not signed |
+| Frontier Model Forum | 2023-07 founding four | Founding | Founding | Founding | Joined | Not joined |
+| Bletchley Declaration (2023) | UK | Signed | Signed | Signed | Signed | Not signed |
+| Seoul AI Safety Commitments (2024) | KR+UK | Signed | Signed | Signed | Signed | Not signed |
+| UK / US AISI pre-deployment testing MoUs | UK/US AISI | Yes | Yes | Yes | Partial | Not signed |
+| GPAI Code of Practice (2025) | EU | All three chapters | Yes | Yes | Partial | Not signed |
+| In-house RSP / Preparedness / FSF | Self | RSP v3 | Preparedness v2 | FSF v3 | FAIF | **None** |
 
-DeepSeek 的这种"全线缺席"**并非偶然遗漏**，而是由以下结构性因素决定：
+DeepSeek's "across-the-board absence" is **not a random oversight** but is determined by the
+following structural factors:
 
-1. **幻方量化的资本独立性**：无国际投资方压力要求签署全球治理框架（对比 Anthropic 的 Google /
-   Amazon 投资，OpenAI 的 Microsoft 投资）
-2. **不进入欧美主要市场作为官方运营方**：服务侧 chat.deepseek.com 不在欧美直接运营（被托管商
-   转售不代表 DeepSeek 签订 AUP），降低属地合规义务
-3. **中国治理逻辑的内生替代**：CAC 备案 + TC260-003 + 等保 + 算法安全自评估报告，已构成**服务侧
-   完整合规闭环**；企业自律文件在此制度下**边际价值低**
-4. **实验室规模约束**：DeepSeek 团队规模远小于美国头部前沿实验室（海外媒体拼图估算显示量级差距
-   明显；官方未确认具体人数），且**无独立 Trust & Safety 部门**；相比之下 Anthropic、OpenAI 等
-   均有专职安全 / 政策团队，治理文档化能力差距显著
+1. **High-Flyer 幻方量化 capital independence**: no international investor pressure to sign onto
+   global governance frameworks (contrast with Anthropic's Google / Amazon investors, or OpenAI's
+   Microsoft partnership).
+2. **Does not enter US / EU markets as an official operator**: chat.deepseek.com does not operate
+   directly in the US or EU (host resale does not constitute DeepSeek signing an AUP), lowering
+   local compliance burden.
+3. **Endogenous substitution from China's governance logic**: CAC filing + TC260-003 + MLPS +
+   algorithm security self-assessment reports already form a **complete service-side compliance
+   loop**; corporate self-regulatory documents have **low marginal value** under this regime.
+4. **Lab size constraints**: DeepSeek's team is far smaller than the leading US frontier labs
+   (overseas media mosaics suggest an order-of-magnitude gap; the company has not confirmed
+   specific headcount), and it has **no dedicated Trust & Safety department**; by contrast,
+   Anthropic, OpenAI and others all maintain full-time safety / policy teams, with a commensurate
+   gap in governance documentation capacity.
 
-## 二、DeepSeek 安全信息披露的实际载体
+## 2. The actual vehicles of DeepSeek's safety disclosure
 
-虽然缺少结构化框架，DeepSeek **并非完全无安全披露**，但散布在三个载体：
+Even without a structured framework, DeepSeek is **not entirely without safety disclosure** —
+but the disclosure is scattered across three vehicles:
 
-### 载体 1：技术报告的 Safety 章节
+### Vehicle 1: the Safety section in technical reports
 
-- **V3 技术报告 §5**：包含 SafetyBench、CVALUES、TruthfulQA 等中英文安全基准结果
-- **R1 技术报告 §5**：简短讨论 R1-Zero 的 language mixing、格式不稳、reward hacking 初步观察
-- **V3.1 技术博客 + HuggingFace README**（2025-08）：**首次加入系统性 bias / fairness evaluation**
-  跨中文 / 英文基准，讨论性别 / 地域 / 职业偏见
+- **V3 technical report §5**: contains Chinese / English safety benchmarks including SafetyBench,
+  CVALUES, and TruthfulQA.
+- **R1 technical report §5**: briefly discusses R1-Zero's language mixing, format instability,
+  and preliminary reward-hacking observations.
+- **V3.1 technical blog + HuggingFace README** (2025-08): **first systematic bias / fairness
+  evaluation** across Chinese / English benchmarks, covering gender, regional, and occupational
+  bias.
 
-### 载体 2：CAC 算法备案材料
+### Vehicle 2: CAC filing materials
 
-- **不公开**
-- 首批 2023-10 过审；V3 / R1 / V3.1 陆续补充
-- 包括"算法安全自评估报告"，格式参照 TC260-003 与 CAC 2023 指南
-- 学界（张凌寒、朱悦）持续呼吁**至少摘要公开**，截至 2026-04 未实现
+- **Not public**.
+- First batch approved 2023-10; V3 / R1 / V3.1 added successively.
+- Includes the "algorithm security self-assessment report," following TC260-003 and the CAC's
+  2023 guidance.
+- Chinese scholars (Zhang Linghan 张凌寒, Zhu Yue 朱悦) have repeatedly called for **at least
+  summary disclosure**; as of 2026-04, this has not happened.
 
-### 载体 3：GitHub issues / HuggingFace 讨论区
+### Vehicle 3: GitHub issues and HuggingFace discussion pages
 
-- 部分安全问题通过开源社区反馈处理
-- 官方工程师在 GitHub 上回复 issue 的行为**事实上成为非正式的安全披露渠道**
-- 但**无 issue 响应 SLA、无官方漏洞披露政策**（无 security.txt、无 bug bounty）
+- Some safety issues are handled via open-source community feedback.
+- Company engineers replying to GitHub issues has **become an informal safety-disclosure channel**.
+- But there is **no issue-response SLA, no official vulnerability disclosure policy** (no
+  security.txt, no bug bounty).
 
-## 三、开源权重的"不可撤销性"与安全框架的前提假设崩塌
+## 3. The irrevocability of open weights and the collapse of a framework assumption
 
-### 主流安全框架的共同前提
+### The shared premise of mainstream safety frameworks
 
-Anthropic RSP、OpenAI Preparedness、DeepMind FSF、Meta FAIF **全部依赖一个关键假设**：
-**"公司可以选择不部署、推迟部署、或在达到风险阈值时撤回模型"**。
+Anthropic RSP, OpenAI Preparedness, DeepMind FSF, and Meta FAIF **all depend on one key
+assumption**: **"the company can choose not to deploy, delay deployment, or recall a model once a
+risk threshold is crossed."**
 
-- Anthropic RSP v2 原版：达到阈值未达到 safeguards 则 **pause 训练或部署**
-- OpenAI Preparedness：High / Critical 阈值触发 **内部审查 + 可能延迟发布**
-- DeepMind FSF：Critical Capability Level 触发 **deployment gating**
-- Meta FAIF：Critical 级别可"**停止开发** this particular model"
+- Anthropic RSP v2 original: if a threshold is reached without matching safeguards, **pause
+  training or deployment**.
+- OpenAI Preparedness: High / Critical thresholds trigger **internal review and possible delayed
+  release**.
+- DeepMind FSF: Critical Capability Level triggers **deployment gating**.
+- Meta FAIF: the Critical tier can "**halt development** of this particular model."
 
-**DeepSeek 的开源策略从结构上作废这一前提**：权重一旦放到 HuggingFace，**全球已下载副本无法
-回收**，"pause"、"recall"、"deployment gating" 在概念上失效。
+**DeepSeek's open-source strategy structurally invalidates this premise**: once weights are on
+HuggingFace, **globally-downloaded copies cannot be recalled**, and "pause," "recall," and
+"deployment gating" become conceptually inapplicable.
 
-### 学术辩论：这是 bug 还是 feature？
+### Academic debate: bug or feature?
 
-**开源带来不可控风险**（Bengio / Hinton / Russell 阵营）：
+**Open source brings uncontrollable risk** (Bengio / Hinton / Russell camp):
 
-- **Yoshua Bengio**（2024-11 AI Safety Lectures）：开源前沿模型权重类比于"开源生物武器配方"，
-  认为在能力跨越某阈值后应受法律限制
-- **Geoffrey Hinton**：多次公开表达担忧，虽未专门针对 DeepSeek
-- **Stuart Russell**：在 *Human Compatible* 延伸讨论中把开源视为"**对齐研究的额外负担**"
+- **Yoshua Bengio** (2024-11 AI Safety Lectures): open-sourcing frontier model weights is
+  analogous to "open-sourcing biological-weapon recipes," and should be legally restricted once
+  capabilities cross some threshold.
+- **Geoffrey Hinton**: has repeatedly expressed concern publicly, though not specifically about
+  DeepSeek.
+- **Stuart Russell**: in the extended discussion of *Human Compatible*, frames open source as
+  **"an additional burden on alignment research."**
 
-**开源实际未见灾难性滥用**（Kapoor & Narayanan / Bommasani 阵营）：
+**No actual catastrophic misuse has been observed** (Kapoor & Narayanan / Bommasani camp):
 
-- **Kapoor & Narayanan**（Princeton, *AI Snake Oil*; 2025-03 博客）：R1 / V3 开源 12 个月以来，
-  **没有可信的大规模滥用案例**；所谓"bioweapon uplift"担忧被实证研究（Peters et al. 2024）
-  证明**边际效果小**
-- **Rishi Bommasani（Stanford CRFM）**：开源权重使**独立安全研究**成为可能（第三方可以审计 /
-  红队），这是闭源模型无法提供的治理价值
-- **Elizabeth Seger et al.**（GovAI 2023 "Open-Sourcing Highly Capable Foundation Models"）：
-  系统性讨论开源 / 半开源的风险-收益权衡，呼吁**按能力分级的发布协议**而非一刀切
+- **Kapoor & Narayanan** (Princeton, *AI Snake Oil*; 2025-03 blog): in the 12 months since R1 /
+  V3 were open-sourced, **no credible large-scale misuse cases** have surfaced; supposed
+  "bioweapon uplift" concerns have been shown by empirical research (Peters et al. 2024) to have
+  **small marginal effects**.
+- **Rishi Bommasani (Stanford CRFM)**: open weights make **independent safety research** possible
+  (third parties can audit / red-team), a governance value closed-source models cannot provide.
+- **Elizabeth Seger et al.** (GovAI 2023, *Open-Sourcing Highly Capable Foundation Models*):
+  systematically discusses the risk-benefit trade-offs of open / partially open release, calling
+  for **capability-tiered release protocols** rather than blanket rules.
 
-**DeepSeek 的立场是隐含站在后一阵营**（以行动而非声明表达）。
+**DeepSeek's posture implicitly aligns with the latter camp** (expressed through action rather
+than declaration).
 
-### 责任归属争议
+### The liability-attribution debate
 
-**Gary Marcus**（NYU / *Rebooting AI*）：开源权重使**下游滥用的法律与道德责任归属**极度模糊 ——
-下游使用 R1 微调的有害模型，责任在 DeepSeek、托管商、还是微调者？Marcus 认为开源不是"解决
-责任"的方法，而是"转移责任"的方法。
+**Gary Marcus** (NYU / *Rebooting AI*): open weights make **legal and moral attribution of
+downstream misuse** extremely ambiguous — if someone fine-tunes R1 into a harmful model, is
+responsibility on DeepSeek, on the host, or on the fine-tuner? Marcus argues that open source is
+not a "solution to liability" but a "transfer of liability."
 
-**张凌寒**（2024 《前沿大模型的责任法理》）：中国《生成式 AI 暂行办法》第 22 条 "提供者" 的
-定义**未明确覆盖权重提供者**。DeepSeek 在此问题上**享有事实上的法律模糊保护** —— 只要不直接
-向公众提供服务，权重放出的"提供行为"是否构成《暂行办法》下的服务提供，至 2026-04 **无案例
-判例**。
+**Zhang Linghan** (2024, *The Legal Theory of Responsibility for Frontier Foundation Models*):
+Article 22 of the *Generative AI Interim Measures* (《生成式人工智能服务管理暂行办法》) defines
+"provider" in a way that **does not clearly cover weight providers**. DeepSeek therefore
+**enjoys de facto legal-ambiguity protection** on this question — so long as it does not directly
+provide services to the public, whether releasing weights constitutes "service provision" under
+the *Interim Measures* remains, as of 2026-04, **without case-law precedent**.
 
-## 四、中国治理框架的"嵌入式"替代
+## 4. The "embedded" substitution from China's governance framework
 
-即便没有独立企业自律文件，DeepSeek 仍嵌在**中国 AI 治理的完整合规链**内：
+Even without independent corporate self-regulatory documents, DeepSeek remains embedded in the
+**full compliance chain of Chinese AI governance**:
 
-### 硬法层面
+### Hard law
 
-- 《网络安全法》（CSL）合规
-- 《数据安全法》（DSL）合规：重要数据识别、风险评估、境内存储
-- 《个人信息保护法》（PIPL）合规：合法性基础、最小必要、跨境传输
+- Compliance with the *Cybersecurity Law* (CSL)
+- Compliance with the *Data Security Law* (DSL): important-data identification, risk assessment,
+  domestic storage
+- Compliance with the *Personal Information Protection Law* (PIPL): lawful basis, minimum
+  necessity, cross-border transfer
 
-### 部门规章层面
+### Ministerial rules
 
-- 《互联网信息服务算法推荐管理规定》（2022-03 施行）—— 算法备案起点
-- 《互联网信息服务深度合成管理规定》（2023-01 施行）—— 合成内容标识前身
-- 《生成式人工智能服务管理暂行办法》（2023-08 施行）—— 第 7 条训练数据合法性、第 4 条内容安全
-  总则、第 17 条安全评估与备案
-- 《人工智能生成合成内容标识办法》（2025-09 施行）—— 显式 + 隐式双标识
+- *Provisions on the Administration of Algorithmic Recommendation for Internet Information
+  Services* (effective 2022-03) — the starting point of algorithm filing
+- *Provisions on the Administration of Deep Synthesis in Internet Information Services*
+  (effective 2023-01) — precursor to synthetic-content labeling
+- *Generative AI Interim Measures* (《生成式人工智能服务管理暂行办法》, effective 2023-08) —
+  Article 7 on training-data legality, Article 4 on general content safety, Article 17 on safety
+  assessment and filing
+- *Measures for Labeling of AI-Generated Synthetic Content* (effective 2025-09) — explicit +
+  implicit dual labeling
 
-### 技术标准层面
+### Technical standards
 
-- **TC260-003-2024**《生成式人工智能服务安全基本要求》—— 27 项安全要求，事实强制
-- 《人工智能安全治理框架》1.0 / 2.0（网信办 / TC260）—— 原则性指引
+- **TC260-003-2024** *Basic Security Requirements for Generative AI Services* — 27 security
+  requirements, de facto mandatory
+- *AI Safety Governance Framework* 1.0 / 2.0 (CAC / TC260) — principled guidance
 
-### 中国学界的批评
+### Chinese academic critique
 
-- **朱悦（2025）**《开源权重与国家数据安全法的紧张》：论证了**训练数据境外来源 + 权重全球分发**
-  与《数据安全法》"重要数据出境"条款的潜在冲突，**DeepSeek 是最紧张的样本**
-- **戴昕（北京大学）**：在《数字法治评论》（2024）指出，MIT License 的 "as is" 免责条款**与
-  中国法下的产品责任法理不兼容**，开源权重的民事责任承担存在重大不确定性
-- **张凌寒**：反复强调"企业自律不是监管的替代"，但同时指出中国模式下**企业自律几乎被备案完全
-  替代**，导致企业文档化能力退化，形成**全球对话的不对称**
+- **Zhu Yue 朱悦 (2025)**, *The Tension Between Open Weights and National Data Security Law*:
+  argues that **training data of overseas origin + globally distributed weights** creates
+  potential conflict with "important data outbound transfer" provisions of the *Data Security
+  Law*, and that **DeepSeek is the most stressed sample.**
+- **Dai Xin 戴昕 (Peking University)**: in *Digital Rule-of-Law Review* (2024), argues that the
+  "as is" disclaimer in the MIT License is **incompatible with Chinese product-liability
+  doctrine**, creating significant uncertainty around civil liability for open weights.
+- **Zhang Linghan 张凌寒**: repeatedly stresses that "corporate self-regulation is not a
+  substitute for supervision," while also noting that in the Chinese model **corporate
+  self-regulation has been almost fully replaced by filing**, causing corporate documentation
+  capacity to atrophy and producing a **structural asymmetry in global dialogue**.
 
-## 五、国际 China-AI 分析师视角
+## 5. International China-AI analyst perspectives
 
-- **Matt Sheehan（CEIP）**：在 "China's AI Regulations and How They Get Made" 系列中指出，
-  DeepSeek 的"极简自律"是 **中国监管密集所促成的企业行为**，而非企业自身选择。DeepSeek 节省的
-  治理文档成本直接转化为技术研发投入，这是其**成本优势来源之一**
-- **Kendra Schaefer（Trivium China）**：观察到 DeepSeek 2025-Q2 以来**开始出现"治理文档化"的
-  早期迹象**（V3.1 博客增加公平性评估、HuggingFace README 增加 "known limitations" 段落），
-  但**仍远未结构化**
-- **Rebecca Arcesati（MERICS）**：DeepSeek 的"不签国际承诺"与阿里 Qwen / 百度 ERNIE 的保守态度
-  一致，反映**中国前沿实验室集体回避国际治理论坛**的结构性选择；这与中国政府"全球 AI 治理倡议"
-  (2023-10) 层面的**国家级多边主张**形成**企业层—国家层的治理错位**
-- **Paul Triolo（DGA-Albright Stonebridge）**：DeepSeek 代表中国前沿 AI 产业的**"工程师文化
-  主导"**，与美国前沿实验室的**"工程师 + 政策人员"混合文化**不同，后者有完整 policy 团队，
-  前者几乎无
+- **Matt Sheehan (CEIP)**, in the *China's AI Regulations and How They Get Made* series, argues
+  that DeepSeek's "minimalist self-regulation" is **corporate behavior induced by dense Chinese
+  regulation**, not a company choice per se. The governance-documentation costs that DeepSeek
+  saves are directly reinvested into R&D, one **source of its cost advantage.**
+- **Kendra Schaefer (Trivium China)**: observes that from 2025-Q2 onward, DeepSeek has shown
+  **early signs of governance documentation** (a fairness-evaluation section in the V3.1 blog,
+  a "known limitations" paragraph in HuggingFace READMEs) — but **still far from structured**.
+- **Rebecca Arcesati (MERICS)**: DeepSeek's "non-signature of international commitments" is
+  consistent with Alibaba Qwen / Baidu ERNIE's conservative posture, reflecting the structural
+  choice by **Chinese frontier labs to collectively avoid international governance forums**;
+  this creates a **firm-layer / state-layer governance mismatch** with the Chinese government's
+  state-level multilateral positions (such as the 2023-10 Global AI Governance Initiative).
+- **Paul Triolo (DGA-Albright Stonebridge)**: DeepSeek embodies Chinese frontier AI industry's
+  **"engineer-culture dominance"**, distinct from US frontier labs' **"engineer + policy-staff
+  hybrid"** culture; the latter has full policy teams, the former has almost none.
 
-## 六、与阿里 Qwen / 百度 ERNIE / 字节豆包的安全姿态对比
+## 6. Comparison with Alibaba Qwen / Baidu ERNIE / ByteDance Doubao
 
-| 维度 | DeepSeek | 阿里 Qwen | 百度 ERNIE | 字节豆包 |
+| Dimension | DeepSeek | Alibaba Qwen | Baidu ERNIE | ByteDance Doubao |
 | --- | --- | --- | --- | --- |
-| 独立安全框架文件 | **无** | 博客 + 白皮书（非 RSP 式）| 《文心责任 AI 白皮书》| 有限 |
-| Trust & Safety 独立团队 | **无** | 有（阿里云安全）| 有（百度安全）| 有（字节安全与风控）|
-| CAC 备案状态 | 已备案 | 已备案 | 已备案 | 已备案 |
-| 国际框架签署 | **零** | 零 | 零 | 零 |
-| 与 AISI / Frontier Red Team 合作 | **无** | 无 | 无 | 无 |
-| 参与 TC260 标准制定 | 低 | **高** | **高** | 中 |
-| 公开安全研究论文 | 集中于技术报告 | 专项论文 + 博客 | 责任 AI 专栏 | 少 |
+| Independent safety framework | **None** | Blog + white paper (non-RSP style) | *Wenxin Responsible AI White Paper* | Limited |
+| Independent Trust & Safety team | **None** | Yes (Alibaba Cloud Security) | Yes (Baidu Security) | Yes (ByteDance Security & Risk) |
+| CAC filing status | Filed | Filed | Filed | Filed |
+| International framework signatures | **Zero** | Zero | Zero | Zero |
+| Cooperation with AISI / Frontier Red Team | **None** | None | None | None |
+| Participation in TC260 standard drafting | Low | **High** | **High** | Medium |
+| Public safety research papers | Concentrated in technical reports | Dedicated papers + blog | Responsible-AI column | Few |
 
-**结论**：DeepSeek 是中国前沿实验室中**安全文档密度最低**的一家，但其**技术报告的训练披露深度
-最高**——这两个"最"共同构成 DeepSeek 的治理身份。
+**Conclusion**: DeepSeek has **the lowest density of safety documentation** among China's
+frontier labs, but the **highest depth of training disclosure** in its technical reports — these
+two "most extremes" jointly define DeepSeek's governance identity.
 
-## 七、量化资本 + AI 研究双轨的结构性影响
+## 7. The structural impact of the quant-capital + AI-research dual track
 
-幻方量化（High-Flyer Quant）**自有资金支持 DeepSeek**，区别于：
+High-Flyer 幻方量化 (a **quantitative hedge fund (量化私募基金)**) **self-funds DeepSeek**,
+distinguishing it from:
 
-- **Kimi / Moonshot**：外部融资（阿里、腾讯、红杉等）
-- **智谱 Zhipu**：外部融资 + 清华系
-- **MiniMax**：外部融资（腾讯、阿里、高瓴等）
+- **Kimi / Moonshot**: external funding (Alibaba, Tencent, Sequoia, etc.).
+- **Zhipu 智谱**: external funding + Tsinghua (清华) affiliation.
+- **MiniMax**: external funding (Tencent, Alibaba, Hillhouse, etc.).
 
-这一差异的**治理后果**：
+The **governance consequences** of this difference:
 
-- **无投资方合规 KPI 压力**：不像 Anthropic 需向 Google / Amazon 披露治理进展
-- **无 IPO 准备压力**：不面临"尽调披露安全政策"的交易所要求
-- **研究优先级纯粹**：梁文峰在少数公开访谈（2024-07《暗涌》、2025-02 FT）中反复强调"**我们只做
-  通用人工智能研究**"，对治理文档化主动排序在后
+- **No investor compliance-KPI pressure**: unlike Anthropic's need to disclose governance
+  progress to Google / Amazon.
+- **No IPO-preparation pressure**: no exchange requirements for "diligence disclosure of safety
+  policy."
+- **Pure research prioritization**: Liang Wenfeng 梁文峰 has repeatedly emphasized, in rare public
+  interviews (2024-07 *An Yong / Undercurrent*, 2025-02 *FT*), that **"we only do AGI research,"**
+  consciously deprioritizing governance documentation.
 
-**代价**：外部可观察的治理信号极少，**DeepSeek 对外部审计友好度低**（这与其技术报告对外部研究
-友好度高形成强烈反差）。
+**The cost**: externally-observable governance signals are minimal, and **DeepSeek's
+external-audit friendliness is low** — in sharp contrast with the high external-research
+friendliness of its technical reports.
 
-## 八、2025–2026 Q1 观察到的安全文档化迹象
+## 8. Observed signs of safety documentation in 2025–2026-Q1
 
-- **2025-03**：API 文档更新明确"不使用用户输入训练"条款（此前模糊）
-- **2025-05**：HuggingFace README 首次加入 "intended use" 和 "out of scope use" 段落
-  （内容仍简短）
-- **2025-08 V3.1**：技术博客专设 "alignment & safety evaluation" 章节，包含 bias 测试
-- **2025-11**：首次有 DeepSeek 工程师参加 NeurIPS 2025 的 AI Safety Workshop（以个人名义发表，
-  非官方政策演讲）
-- **2026-Q1**：传闻中的 R2 模型**可能伴随首个"DeepSeek Safety Notes"独立文档**（来源：多家媒体
-  匿名消息；未证实）
+- **2025-03**: API documentation updated with an explicit "user inputs not used for training"
+  clause (previously ambiguous).
+- **2025-05**: HuggingFace README added "intended use" and "out of scope use" paragraphs for the
+  first time (still brief).
+- **2025-08 V3.1**: technical blog added a dedicated "alignment & safety evaluation" section
+  including bias tests.
+- **2025-11**: first DeepSeek engineer participation in the NeurIPS 2025 AI Safety Workshop (as
+  an individual, not an official policy appearance).
+- **2026-Q1**: the rumored R2 model **may accompany the first standalone "DeepSeek Safety Notes"
+  document** (source: multiple media anonymous leaks; unverified).
 
-这些**缓慢但单调的增量**显示：DeepSeek 的"安全文档化"正在**被全球生态推动**（HuggingFace 模板
-规范、学术期刊的 Broader Impact 要求、属地监管对下游托管商施压），而非由公司主动发起。
+These **slow but monotonic increments** show that DeepSeek's "safety documentation" is being
+**pushed by the global ecosystem** (HuggingFace template norms, academic-journal Broader Impact
+requirements, local regulatory pressure applied through downstream hosts) rather than driven by
+the firm itself.
 
-## 九、页面结论
+## 9. Page conclusion
 
-DeepSeek 安全框架的"缺席"不是**治理真空**，而是**治理路径选择**：
+DeepSeek's "absent" safety framework is not a **governance vacuum** but a **governance path
+choice**:
 
-> 它选择了**"备案即合规、论文即文档、开源即透明"**的极简路径，放弃了"企业自律品牌"建设，
-> 用研发投入的相对优势换取治理文档化的相对落后。这种选择在**中国语境内部**自洽（监管承担主
-> 要约束），在**全球治理语境**中制造**张力与观察盲点**。
+> It has chosen the minimalist path of **"filing equals compliance, papers equal documentation,
+> open source equals transparency"** — giving up on the "corporate self-regulation brand," and
+> trading relative R&D spending advantage for relative backwardness in governance documentation.
+> This choice is internally coherent within **the Chinese context** (with regulation bearing the
+> primary burden), but creates **tension and observational blind spots within the global
+> governance context**.
 
-DeepSeek 是理解"**开源 + 最低自律**"模式能否持续的**关键观测点**：如果 12–24 个月内未发生
-显著的大规模滥用事件，它将成为"开源权重不必配套结构化自律"立场的**最重要实证样本**；
-反之，任何一次可归因的严重事件都可能**重塑全球开源 AI 治理的边界**。
+DeepSeek is **the key observation point** for whether the **"open source + minimum self-regulation"**
+model can be sustained: if no significant large-scale misuse event occurs within 12–24 months,
+it becomes the **most important empirical sample** for the position that "open-weight releases
+do not require a matching structured self-regulation regime"; conversely, any attributable
+serious incident could **redraw the boundaries of global open-source AI governance**.
 
-## 参考
+## References
 
 - DeepSeek-V3 Technical Report (arXiv 2412.19437) §5
 - DeepSeek-R1 Technical Report (arXiv 2501.12948) §5
@@ -225,10 +287,10 @@ DeepSeek 是理解"**开源 + 最低自律**"模式能否持续的**关键观测
 - Bengio, Y. (2024). *Can We Trust Open-Weight Frontier AI?* AI Safety Lectures
 - Marcus, G. (2024). *Open-Sourcing AI Shifts Liability, Doesn't Solve It.* Marcus on AI blog
 - Sheehan, M. (2023-2025). *China's AI Regulations and How They Get Made.* CEIP
-- Arcesati, R. (2025). *MERICS China Monitor* 特刊
-- 张凌寒 (2024)《前沿大模型的责任法理》
-- 朱悦 (2025)《开源权重与国家数据安全法的紧张》
-- 戴昕 (2024)《开源 AI 的民事责任边界》
-- 本站 [rules/china/generative-ai-interim-measures](/rules/china/generative-ai-interim-measures/)
-  · [rules/china/tc260-gen-ai-security-basic-requirements](/rules/china/tc260-gen-ai-security-basic-requirements/)
-  · [rules/china/ai-safety-governance-framework](/rules/china/ai-safety-governance-framework/)
+- Arcesati, R. (2025). *MERICS China Monitor* special issue
+- Zhang Linghan 张凌寒 (2024). *The Legal Theory of Responsibility for Frontier Foundation Models*
+- Zhu Yue 朱悦 (2025). *The Tension Between Open Weights and National Data Security Law*
+- Dai Xin 戴昕 (2024). *The Civil Liability Boundary of Open-Source AI*
+- This site: [en/rules/china/generative-ai-interim-measures](/rules/china/generative-ai-interim-measures/)
+  · [en/rules/china/tc260-gen-ai-security-basic-requirements](/rules/china/tc260-gen-ai-security-basic-requirements/)
+  · [en/rules/china/ai-safety-governance-framework](/rules/china/ai-safety-governance-framework/)

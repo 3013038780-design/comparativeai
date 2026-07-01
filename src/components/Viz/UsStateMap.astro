@@ -9,7 +9,7 @@ export interface Props {
 }
 const { locale = 'zh-CN' } = Astro.props;
 const k = locale === 'en' ? 'en' : 'zh';
-const basePath = locale === 'en' ? '/en' : '';
+const basePath = locale === 'zh-CN' ? '/zh' : '';
 
 // Deduplicate (data file accidentally has CO twice; keep first occurrence)
 const seen = new Set<string>();

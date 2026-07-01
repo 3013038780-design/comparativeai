@@ -1,0 +1,55 @@
+---
+title: 美国各州 / 市 — AI 相关立法
+description: 州综合性 AI 法、市级专项条例，以及州检察长执法；2025 年 1,208 项州 AI 法案、145 项获通过
+sidebar:
+  order: 2
+  label: 🇺🇸 美国各州
+---
+
+import UsStateMap from '../../../../../components/Viz/UsStateMap.astro';
+
+<UsStateMap locale="zh-CN" />
+
+## 概览
+
+美国**联邦层面**至今无综合性 AI 立法（EO 14179 后更向去监管方向），**AI 治理的硬法主战场在州**。
+
+**2025 立法会议**：全美**1,208 项**州级 AI 法案被提出，**145 项获通过**（IAPP、NCSL 统计）。
+2026 多部综合性州 AI 法进入**生效期**（Colorado、California SB 53、Texas TRAIGA）。
+
+**2025-12-11 Trump EO 14365**：联邦对州 AI 法发起**抢占攻势**，但**法律界普遍认为行政令不能
+独立抢占州法**，短期内各州 AI 法**继续生效**。
+
+## 已收录（三部综合性州法 + 一部市法）
+
+### 州法（综合性 AI）
+
+- [**Colorado AI Act (SB24-205)**](./colorado-ai-act/) — 2026-06-30 生效（2025 修正后推迟）·
+  **美国首部综合性 AI 反歧视州法**，结构最接近 EU AI Act
+- [**California SB 53 (Transparency in Frontier AI Act)**](./california-sb-53-frontier-ai/) —
+  **2026-01-01 生效** · **美国首部前沿 AI 专门州法**，算力阈值 10²⁶ FLOP
+- [**Texas TRAIGA (HB 149)**](./texas-traiga/) — **2026-01-01 生效** · 共和党版综合 AI 法，
+  聚焦禁止有害用途 + 抢占地方条例
+
+### 市法（专项）
+
+- [**NYC Local Law 144 (AEDT)**](./nyc-local-law-144/) — 2023-07-05 执法 · 美国首部针对 AI 招聘
+  工具的具体合规法
+
+## 三部州综合法对比
+
+| 维度 | Colorado AI Act | California SB 53 | Texas TRAIGA |
+| --- | --- | --- | --- |
+| 定位 | 反歧视 / 高风险 AI | 前沿 AI 透明度 | 禁止特定有害用途 |
+| 适用对象 | Developer + Deployer | 年营收 ≥ $500M 大型前沿开发者 | 所有主体 |
+| 合规负担 | 高 | 中 | 低 |
+| 罚则 | 按 CPA | $1M / violation | $10K-$200K / violation |
+| 政党主导 | 民主党 | 民主党 | 共和党 |
+| 抢占地方 | — | — | **明确抢占市县** |
+
+## 与联邦层级的关系（2026-04 当前态势）
+
+- **联邦去监管 + 州监管抵抗**：Trump 政府推动抢占，州 AG 抵抗
+- **EO 14365 诉讼威胁**：2026-Q1/Q2 预期 DOJ AI 诉讼工作组向加州 / 科州提起挑战
+- **实务判断**：企业**短期继续合规既有州法**，中期等联邦法院判决
+- **大州示范效应**：加州 / 科州 / 德州 / 伊州 / 纽州的立法常被后续州借鉴（跨意识形态光谱）

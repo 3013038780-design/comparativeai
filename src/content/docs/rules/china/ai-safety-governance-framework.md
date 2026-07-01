@@ -1,8 +1,8 @@
 ---
-title: 人工智能安全治理框架 1.0 / 2.0
-description: 网信办 2024-09 发布 1.0、2025-09 发布 2.0，中国首个跨场景 AI 风险分类分级体系；从场景化向体系化治理转型的标志
-ruleName: 人工智能安全治理框架 (AI Safety Governance Framework)
-issuer: 全国网络安全标准化技术委员会（TC260）受国家互联网信息办公室指导
+title: AI Safety Governance Framework 1.0 / 2.0
+description: Released by CAC with 1.0 in September 2024 and 2.0 in September 2025; China's first cross-scenario AI risk classification-and-grading system — marking a turn from scenario-specific to systemic governance
+ruleName: AI Safety Governance Framework (《人工智能安全治理框架》)
+issuer: National Information Security Standardization Technical Committee (TC260), under guidance of the Cyberspace Administration of China (CAC)
 level: normative-document
 binding: soft
 effectiveDate: 2024-09-09
@@ -11,103 +11,97 @@ originalUrl: https://www.cac.gov.cn/2024-09/09/c_1727567886199789.htm
 relatedTopics:
   - risk-classification
   - frontier-gpai
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: 安全治理框架 1.0/2.0 (2024/2025)
+  label: Safety Governance Framework 1.0/2.0 (2024/2025)
   order: 50
 ---
 
-> **📑 法律位阶**：第 4 级 · 规范性文件（不是部门规章，不是法律） | **发布**：TC260 受网信办指导 | **1.0 生效**：2024-09-09 | **2.0 生效**：2025-09-15 | **属性**：软法 · 政策性引导
+> **📑 Legal hierarchy**: Level 4 · Normative document (not a departmental rule, not a law) | **Issuance**: TC260 under CAC guidance | **1.0 effective**: 2024-09-09 | **2.0 effective**: 2025-09-15 | **Character**: soft law · policy guidance
 
-> **⚠️ 位阶提醒**：本文件是**规范性文件**（第 4 级），位阶在部门规章之下、技术标准之上。
-> 不具有直接法律约束力，但对企业合规实务有强引导。
-> 详见 [中国规则索引](/rules/china/#法律位阶速览)。
+> **⚠️ Hierarchy note**: This document is a **normative document** (Level 4), below departmental rules and above technical standards in hierarchy. It is not directly legally binding, but it strongly shapes corporate compliance in practice. See [Index of Chinese Rules](/rules/china/#the-legal-hierarchy-at-a-glance).
 
-## 中文摘要
+## Chinese Summary
 
-《人工智能安全治理框架》由**全国网络安全标准化技术委员会（TC260）**受国家互联网信息办公室指导发布。
-1.0 版本于 **2024-09-09** 在第三届中国网络文明大会上正式公布，2.0 版本于 **2025-09-15** 发布。
+The *AI Safety Governance Framework* (《人工智能安全治理框架》) was issued by the **National Information Security Standardization Technical Committee (TC260)** under the guidance of the Cyberspace Administration of China. Version 1.0 was officially released at the Third China Cyberspace Civilization Conference on **2024-09-09**; version 2.0 was released on **2025-09-15**.
 
-**重要意义**：这是中国**首个跨场景的 AI 风险分类分级体系**，标志着中国 AI 治理从**场景化
-（"一类场景一部规章"）向体系化（统一风险坐标系）**的战略转型。
+**Significance**: this is China's **first cross-scenario AI risk classification-and-grading system**, marking China's strategic turn from **scenario-specific ("one rule per scenario") to systemic (a unified risk coordinate system)** governance.
 
-根据毕业论文（张凌寒等观点）：
-- 1.0 首次建立跨场景的风险分类分级体系
-- 2.0 进一步完善"从风险识别到治理应对的完整链条"
-- 标志中国 AI 治理正从"**政策驱动**"迈向更稳定的"**法治化治理**"
+Following the reading of Zhang Linghan 张凌寒 and others:
 
-## 英文一句话摘要
+- 1.0 established the first cross-scenario risk classification-and-grading system;
+- 2.0 further refined the "full chain from risk identification to governance response";
+- together, the Framework marks a shift from "**policy-driven**" toward more stable "**rule-of-law-based governance**."
 
-The **AI Safety Governance Framework**, issued by TC260 under the guidance of CAC (v1.0 on
-2024-09-09; v2.0 on 2025-09-15), is China's first cross-scenario risk classification and
-mitigation scheme for AI — a turning point from the scenario-specific regulatory approach
-(2022-2025) toward a more systemic, horizontal governance paradigm.
+## English One-Sentence Summary
 
-## 1.0 版本（2024-09）要点
+The **AI Safety Governance Framework**, issued by TC260 under the guidance of CAC (v1.0 on 2024-09-09; v2.0 on 2025-09-15), is China's first cross-scenario risk classification and mitigation scheme for AI — a turning point from the scenario-specific regulatory approach (2022-2025) toward a more systemic, horizontal governance paradigm.
 
-### 三项治理原则
+## Version 1.0 (2024-09) — Highlights
 
-1. **包容审慎，确保安全**
-2. **风险导向，敏捷治理**
-3. **技管结合，协同应对**
+### Three Governance Principles
 
-### 四类风险分类
+1. **Inclusive and prudent, ensuring safety** (包容审慎，确保安全);
+2. **Risk-oriented, agile governance** (风险导向，敏捷治理);
+3. **Combining technology and management, coordinated response** (技管结合，协同应对).
 
-1. **模型算法安全风险**：可解释性差、偏见歧视、鲁棒性不足、被盗用
-2. **数据安全风险**：训练数据违规、个人信息泄露、数据污染
-3. **AI 系统安全风险**：对抗攻击、后门、供应链
-4. **AI 应用安全风险**：
-   - 社会伦理：算法歧视、信息茧房
-   - 数字信任：深度合成滥用、信息造假
-   - 网络空间：AI 赋能的网络攻击
-   - 经济就业：替代效应
-   - 国家安全：恐怖主义、军事民用两用
+### Four Categories of Risk
 
-### 技术应对与综合治理
+1. **Model and algorithm security risks**: poor explainability, bias / discrimination, insufficient robustness, theft.
+2. **Data security risks**: unlawful training data, leakage of personal information, data poisoning.
+3. **AI system security risks**: adversarial attacks, backdoors, supply chain.
+4. **AI application security risks**:
+   - Social ethics: algorithmic discrimination, information cocoons;
+   - Digital trust: misuse of deep synthesis, information forgery;
+   - Cyberspace: AI-enabled cyberattacks;
+   - Economy and employment: substitution effects;
+   - National security: terrorism, dual civilian-military use.
 
-针对每类风险给出**技术措施**与**治理措施**清单。
+### Technical Response and Integrated Governance
 
-## 2.0 版本（2025-09）演进
+For each risk category, the Framework provides checklists of **technical measures** and **governance measures**.
 
-相比 1.0，2.0 的主要深化：
+## Version 2.0 (2025-09) — Evolutions
 
-- **风险分类分级更细**：在四类大项下建立更精细的风险图谱
-- **治理主体责任**：明确模型开发者、服务提供者、用户三方的差异化责任
-- **全生命周期覆盖**：从研发 → 部署 → 运营 → 退役的全链条要求
-- **应对 Agent / 具身智能**等新形态：1.0 未涉及，2.0 纳入
-- **治理能力建设**：评估体系、监测预警、应急响应
+Compared with 1.0, 2.0 deepens the Framework along the following lines:
 
-## 与下位规则的关系
+- **Finer risk classification and grading**: a more granular risk map under each of the four major categories;
+- **Responsibility of governance actors**: explicit differentiation among model developers, service providers, and users;
+- **Full lifecycle coverage**: requirements across R&D → deployment → operations → decommissioning;
+- **Coverage of new forms such as Agents and embodied intelligence**: not addressed in 1.0, now incorporated;
+- **Governance capacity building**: assessment systems, monitoring and early warning, emergency response.
 
-- **作为上位引导**：为 TC260-003 等技术标准提供风险分类框架
-- **与部门规章并行**：不修改既有《深度合成》《生成式 AI 办法》等，但提供跨规章的统一风险语言
-- **与国际对接**：是中国参与全球 AI 治理（如联合国、G20、BRICS 对话）的重要文本载体
+## Relationship with Downstream Rules
 
-## 对企业合规的实务意义
+- **Upstream guidance**: provides a risk-classification frame for technical standards such as TC260-003.
+- **Parallel to departmental rules**: does not amend the *Deep Synthesis Provisions* or *Generative AI Interim Measures*, but supplies a unified risk vocabulary across rules.
+- **International interface**: an important text carrier for China's participation in global AI governance (UN, G20, BRICS dialogue).
 
-- **合规基线升级**：从"满足各部门规章"升级到"对照框架风险分类做体系化自查"
-- **内部治理文档**：头部企业已开始以此框架为骨架构建内部 AI 治理手册
-- **面向监管的表达语言**：备案答辩、监管约谈时沿用框架术语有助于沟通
+## Practical Significance for Corporate Compliance
 
-## 与其他辖区的对比
+- **Upgraded compliance baseline**: from "satisfy each departmental rule" to "conduct a systematic self-assessment against the Framework's risk categories."
+- **Internal governance documentation**: leading firms now build internal AI governance handbooks around the Framework's spine.
+- **Communication language with regulators**: using the Framework's terminology in filings and regulatory dialogues supports clearer exchange.
 
-- **对标 EU AI Act 风险分级**：但 AI Act 是硬法 + 清单化；本框架是软法 + 分类引导
-- **对标 NIST AI RMF**：两者都是**跨场景风险管理框架**；但 NIST 更强调流程，本框架更强调风险清单
+## Comparison with Other Jurisdictions
 
-## 原文与归档
+- **Vis-à-vis EU AI Act risk tiering**: AI Act is hard law + list-based; this Framework is soft law + classification guidance.
+- **Vis-à-vis NIST AI RMF**: both are **cross-scenario risk-management frameworks**, but NIST emphasizes process more, while this Framework emphasizes the risk catalogue more.
 
-| 版本 | 来源 | 链接 |
+## Source Text and Archival Copies
+
+| Version | Source | Link |
 | --- | --- | --- |
-| 1.0（中文） | 网信办 / TC260 | [cac.gov.cn](https://www.cac.gov.cn/2024-09/09/c_1727567886199789.htm) |
-| 1.0（中英对照 PDF） | TC260 | [tc260.org.cn](https://www.tc260.org.cn/) |
-| 2.0（中文） | 网信办 / TC260 | — |
-| English | _2024 正式对外发布有官方英文版，参见 TC260 / 网信办英文站_ | |
+| 1.0 (Chinese) | CAC / TC260 | [cac.gov.cn](https://www.cac.gov.cn/2024-09/09/c_1727567886199789.htm) |
+| 1.0 (bilingual PDF) | TC260 | [tc260.org.cn](https://www.tc260.org.cn/) |
+| 2.0 (Chinese) | CAC / TC260 | — |
+| English | _v1.0 has an official English release in 2024; see TC260 / CAC English pages_ | |
 
-## 版本历史
+## Version History
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2024-09-09 | 1.0 版本在第三届中国网络文明大会发布 |
-| 2025-09-15 | 2.0 版本发布（第八届数字中国峰会 / WAIC 等场合） |
-| 未来版本 | 可能继续迭代，重点对 Agent、具身智能的覆盖 |
+| 2024-09-09 | Version 1.0 released at the Third China Cyberspace Civilization Conference |
+| 2025-09-15 | Version 2.0 released (Eighth Digital China Summit / WAIC venues) |
+| Future versions | Further iteration likely, with expanded coverage of Agents and embodied intelligence |
 

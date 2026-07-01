@@ -1,216 +1,208 @@
 ---
-title: 方法论
-description: 收录标准、法律位阶、公司归属、版本管理的规则说明
+title: Methodology
+description: Inclusion criteria, legal hierarchy, company attribution, and version management
 sidebar:
   order: 2
 ---
 
-本页说明 Comparative AI 的编辑规则。所有内容页都遵守这里写明的标准，发现不符请指出。
+This page sets out the editorial rules of Comparative AI. Every content page on the site follows the standards described here; if you spot an inconsistency, please flag it.
 
-引用与免责另立独立页面：[引用与免责](/methodology/citation-disclaimer/)。
-
----
-
-## 1. 收录标准 {#inclusion}
-
-**一条材料是否值得进本站，按以下优先级判断**：
-
-1. **强相关于 AI 治理**。优先收 AI 专项规则（如生成式 AI 办法、GPAI 章节、SB 53 等）。
-   通用法（计算机犯罪、一般数据保护、网络安全等）原则上不单独立页，**但满足下列条件之一可以例外**：
-   - **承担 AI 治理"上位法"角色**（例如 PIPL 第 24 条自动化决策、第 28 条敏感个人信息含生物识别——
-     是中国所有 AI 部门规章涉及个人信息的回归依据；CSL 第 68 条是 AI 部门规章罚则的事实援引来源）
-   - **AI 部门规章明确援引**（例如 AI Act 第 10 条数据治理与 GDPR 强制叠加）
-   - **承担"分类分级"基础概念**（例如 DSL 第 21 条数据分类是后续重要数据 AI 训练合规的基线）
-2. **公开可查**。原文必须有一个可长期访问的公开链接（官方站、EUR-Lex、Congress.gov 等）。非公开文件（行业内部邮件、未公开政策）不收。
-3. **规范性产出**。立法文本、行政令、监管机构发布的指南、可引用的学术共识（非个人博客）。
-4. **公司实践需有持久文档**。一次性发布会口头表态不收；PDF、官网长期挂载的政策/框架/报告才收。
-
-**不收**：新闻报道（可作为背景引用）、Twitter 发言、政客个人观点（除非已成为法律提案的正式文本）、尚未公开的草案。
-
-**已明确不立独立页的代表性条目**（在相关 AI 规则页做交叉引用即可）：
-- 中国《关键信息基础设施安全保护条例》《网络数据安全管理条例》《数据出境三件套》
-  《反电信网络诈骗法》《科学技术进步法》《网络信息内容生态治理规定》等
-- 美国 **Section 230** / 各行业专项隐私法（COPPA / HIPAA / GLBA / FERPA 等）
-- 欧盟 **Cyber Resilience Act / NIS2 / Data Governance Act** 等数据 / 网络安全通用法
+Citation and disclaimers are handled on a separate page: [Citation and disclaimer](/methodology/citation-disclaimer/).
 
 ---
 
-## 2. 法律位阶说明 {#hard-vs-soft}
+## 1. Inclusion criteria {#inclusion}
 
-本站对"硬法"与"软法"的划分，是一个**编辑决定**，非法律定义。**学界在具体边界上有争议**（参见 Bremer 2020、Shapiro 2022 对 guidance documents 规范效力的讨论），本站的切法如下。
+**Whether a document merits inclusion is judged in the following priority order:**
 
-### 共同原则
+1. **Strongly related to AI governance.** AI-specific rules take priority (e.g. the *Interim Measures for the Management of Generative AI Services* (《生成式人工智能服务管理暂行办法》), the GPAI chapter of the EU AI Act, California SB 53). General laws (computer crime, general data protection, cybersecurity) do not as a rule receive a standalone page, **but may do so if one of the following conditions is met**:
+   - **They perform an "upstream law" role for AI governance** — for example, Article 24 of China's *Personal Information Protection Law* (PIPL, 《个人信息保护法》) on automated decision-making and Article 28 on sensitive personal information (including biometrics) are the fallback basis for every Chinese AI ministerial regulation that touches personal data; Article 68 of the *Cybersecurity Law* (CSL, 《网络安全法》) is the *de facto* source for penalty provisions in AI ministerial rules.
+   - **They are explicitly invoked by AI-specific rules** — for example, the mandatory layering of the GDPR on top of Article 10 of the AI Act on data governance.
+   - **They establish a foundational "classification and grading" concept** — for example, Article 21 of the *Data Security Law* (DSL, 《数据安全法》) on data classification serves as the baseline for AI training compliance around "important data".
+2. **Publicly accessible.** Every primary text must have a stable public link (official government site, EUR-Lex, Congress.gov, etc.). Non-public material (internal industry emails, undisclosed policies) is excluded.
+3. **Normative output.** Legislative text, executive orders, regulator guidance, citable academic consensus (not individual blog posts).
+4. **Corporate practice needs durable documentation.** One-off statements at launch events are not included; PDFs and policy / framework / report documents durably hosted on official websites are.
 
-- **硬法（binding）**：由有权机关依法定程序制定、对特定主体设定**可强制执行**义务、违反有明确法律后果的规范。
-- **软法（non-binding）**：由权威机构发布、对行为有**引导或事实拘束力**、但无法作为法院判决直接依据、违反通常无直接法律后果的规范。
+**Excluded:** news reports (may be cited as background), Twitter posts, individual politicians' opinions (unless already incorporated into the formal text of a legislative proposal), and drafts that have not yet been publicly released.
 
-### 🇨🇳 中国 · 五级法律位阶
+**Representative items explicitly not given a standalone page** (cross-referenced from related AI-rule pages):
+- China: *Regulations on the Security Protection of Critical Information Infrastructure*, *Administrative Regulations on Network Data Security*, the "three-piece set" on cross-border data transfer, the *Anti-Telecom and Online Fraud Law*, the *Science and Technology Progress Law*, the *Provisions on the Governance of the Online Information Content Ecosystem*, and so on.
+- United States: **Section 230**; sector-specific privacy statutes (COPPA, HIPAA, GLBA, FERPA, etc.).
+- EU: **Cyber Resilience Act, NIS2, Data Governance Act**, and other general data / cybersecurity instruments.
 
-中国 AI 治理规则**绝大多数是第 3 级部门规章**（含各类"暂行办法""管理规定"），**不是**人大法律，**也不是**国务院行政法规。"暂行"不是位阶指示，而是立法者留政策调整空间的命名习惯。
+---
 
-| 位阶 | 制定机关 | 硬/软 | 在 AI 治理中的实际角色 | 代表性规则 |
+## 2. Legal hierarchy {#hard-vs-soft}
+
+The division between "hard law" and "soft law" used here is an **editorial decision**, not a legal definition. **The boundary is contested in the scholarly literature** (see Bremer 2020 and Shapiro 2022 on the normative force of guidance documents). Our approach is set out below.
+
+### Common principles
+
+- **Hard law (binding):** norms enacted by an authorised body through statutory procedure, imposing **enforceable** obligations on specified subjects, with defined legal consequences for breach.
+- **Soft law (non-binding):** norms promulgated by an authoritative body, exerting **guidance or de facto binding force**, but not usable as direct grounds for a judicial decision, with no direct legal consequence in the ordinary case.
+
+### 🇨🇳 China — five tiers of legal hierarchy
+
+The great majority of Chinese AI governance rules sit at the **third tier, as ministerial regulations** (部门规章; including the various "interim measures" 暂行办法 and "management provisions" 管理规定). They are **not** statutes of the National People's Congress, and **not** administrative regulations of the State Council. The word "interim" (暂行) is not an indicator of rank — it is a drafting convention the legislature uses to preserve room for future policy adjustment.
+
+| Tier | Issuing body | Hard / soft | Actual role in AI governance | Representative rules |
 | --- | --- | --- | --- | --- |
-| 1. 法律 | 全国人大及其常委会 | 硬 | **上位法**，部门规章的罚则常援引第 1 级法律 | CSL（2017）、DSL、PIPL（2021） |
-| 2. 行政法规 | 国务院 | 硬 | 细化上位法，领域横跨多部委时由国务院统筹 | 未成年人网络保护条例（2024） |
-| 3. 部门规章 | 部委单独或**多部门联合** | 硬 | **AI 治理主战场**：敏捷响应、场景化立规 | 算法推荐规定、深度合成规定、生成式 AI 办法、标识办法、拟人化办法 |
-| 4. 规范性文件 | 部委 / 专门委员会 | 软 | **政策导向**，不直接设企业义务但引导合规实务 | 新一代 AI 治理原则、AI 安全治理框架 1.0/2.0、新一代 AI 发展规划 |
-| 5. 技术标准 | 标委会 / 市监总局 | 软（部分"事实硬"）| **备案门槛**：通不过 = 不能面向公众服务 | TC260-003-2024、GB 45438-2025（强制性国标）|
-| **+ 地方** | 地方人大 / 政府 | 硬（仅域内）| **先行先试**：试验制度常被国家层面吸纳 | 深圳《人工智能产业促进条例》（2022，首部）、上海、北京跟进 |
+| 1. Statute (法律) | National People's Congress and its Standing Committee | Hard | **Upstream law**; penalty provisions in ministerial rules often invoke tier-1 statutes | CSL (2017), DSL, PIPL (2021) |
+| 2. Administrative regulation (行政法规) | State Council | Hard | Elaborates on upstream law; used when coordination across multiple ministries is required | *Regulations on the Protection of Minors Online* (2024) |
+| 3. Ministerial regulation (部门规章) | Ministries individually or **jointly** | Hard | **Main theatre of AI governance**: agile response, scenario-specific rulemaking | Algorithmic Recommendation Provisions, Deep Synthesis Provisions, Interim Measures on Generative AI, Labelling Measures, Measures on Humanised Interaction |
+| 4. Normative document (规范性文件) | Ministries / special committees | Soft | **Policy orientation**; does not impose direct obligations on firms but shapes compliance practice | *New Generation AI Governance Principles*, *AI Safety Governance Framework* 1.0/2.0, *New Generation AI Development Plan* |
+| 5. Technical standard (技术标准) | Standards committees / State Administration for Market Regulation (SAMR, 市监总局) | Soft (some "de facto hard") | **Filing threshold**: if you cannot pass the standard, you cannot offer the service to the public | TC260-003-2024; GB 45438-2025 (mandatory national standard) |
+| **+ Subnational** | Local people's congresses / governments | Hard (within jurisdiction) | **Pilot-and-test**: experimental institutions are frequently absorbed at the national level | Shenzhen *Regulations on the Promotion of the AI Industry* (2022, the first) — Shanghai and Beijing have followed |
 
-**观察**：中国 AI 治理规则高密度出台（多数周期 3–12 个月），但代价是**法律位阶较低** → 企业对规则稳定性和弹性执法边界判断困难。**中央网信委**（党中央议事协调机构）为跨部门冲突提供裁决平台；**深圳等地方试验 → 国家层面吸纳**是中国敏捷治理的标志（参考：薛澜、张凌寒）。
+**Observation.** Chinese AI governance rules are issued at high density (most cycles run 3–12 months), but the cost is a **relatively low legal tier**, which makes it difficult for firms to assess the stability of rules and the discretionary edges of enforcement. The **Central Cyberspace Affairs Commission** (中央网信委, a Party Central deliberative and coordinating body) acts as an adjudication forum for cross-ministerial conflicts. The pattern of **subnational experimentation → national absorption**, with Shenzhen as the leading example, is a hallmark of Chinese agile governance (see Xue Lan 薛澜, Zhang Linghan 张凌寒).
 
-### 🇺🇸 美国 · 四类规范来源
+### 🇺🇸 United States — four categories of normative source
 
-美国联邦**无综合 AI 法律**，由三条代偿性轨道填补：总统行政令、州立法、软法与技术框架。
+There is **no comprehensive federal AI statute**. The vacuum is filled by three compensating tracks: presidential executive orders, state legislation, and soft law / technical frameworks.
 
-| 规范来源 | 制定主体 | 硬/软 | 在 AI 治理中的实际角色 | 代表性规则 |
+| Source | Issuing body | Hard / soft | Actual role in AI governance | Representative rules |
 | --- | --- | --- | --- | --- |
-| 联邦立法 | 国会 | 硬 | **真空**：无任何规制 AI 系统本身的综合性或专门性联邦法；AI 合规完全靠 FTC Act §5、Title VII、ADA、FCRA 等通用法被监管机构和法院"类推适用" | —（参见右侧"角色"列）|
-| 总统行政令 | 总统 | 硬（半衰期 ≤ 一届任期）| **一级代偿**：填补立法真空，但随党轮替反转；约束力限于行政分支 | EO 14110（Biden 2023, 已废）→ EO 14179（Trump 2025-01 反转）→ EO 14365（2025-12，试图先占州法）|
-| 州立法 | 各州议会 | 硬（仅域内）| **二级代偿**：填补联邦真空；碎片化为四套并行逻辑；EO 14365 的合宪性挑战即源于此轨道 | Colorado SB 24-205（高风险综合法，2026-06 生效）、California SB 53（前沿模型透明）、Texas TRAIGA、Illinois HB 3773、NYC LL 144 |
-| 软法与技术框架 | NIST、机构、白宫 | 软（经普通法"事实硬化"）| **三级代偿**：通过"合理注意"标准进入侵权与监管执法；多州安全港条款将其提升为合规推定 | NIST AI RMF 1.0、AI 600-1 GenAI Profile、OMB M-25-21 / M-25-22、2023 白宫自愿承诺、ISO/IEC 42001 |
+| Federal legislation | Congress | Hard | **Vacuum**: no comprehensive or specialised federal statute regulating AI systems themselves; AI compliance relies entirely on "analogical application" by agencies and courts of general laws such as FTC Act §5, Title VII, the ADA, and the FCRA | — (see "actual role" column) |
+| Executive order | President | Hard (half-life ≤ one term) | **First-tier compensation**: fills the legislative vacuum, but flips with party alternation; binding only on the executive branch | EO 14110 (Biden 2023, revoked) → EO 14179 (Trump 2025-01 reversal) → EO 14365 (2025-12, attempted pre-emption of state law) |
+| State legislation | State legislatures | Hard (within state) | **Second-tier compensation**: fills the federal vacuum; fragmented into four parallel logics; the constitutional challenge to EO 14365 originates on this track | Colorado SB 24-205 (comprehensive high-risk statute, effective 2026-06), California SB 53 (frontier model transparency), Texas TRAIGA, Illinois HB 3773, NYC Local Law 144 |
+| Soft law and technical frameworks | NIST, agencies, the White House | Soft (with de facto hardening via common law) | **Third-tier compensation**: enters tort and regulatory enforcement through "reasonable care" standards; multiple state safe-harbor provisions elevate it to a compliance presumption | NIST AI RMF 1.0, AI 600-1 GenAI Profile, OMB M-25-21 / M-25-22, 2023 White House voluntary commitments, ISO/IEC 42001 |
 
-**观察**：美国的"硬法 / 软法"边界**极不稳定** —— 行政令可被下任总统撤销；软法通过普通法的"合理注意"标准和州法的"合规推定"获得事实硬化。**EO 14365 对州法的先占尝试**是 2025–2026 美国 AI 治理最关键的结构冲突。
+**Observation.** The hard-law / soft-law boundary in the United States is **extremely unstable**: executive orders can be revoked by the next president, while soft law hardens *de facto* through common-law "reasonable care" standards and state-law compliance presumptions. **EO 14365's pre-emption attempt** is the most consequential structural conflict in US AI governance for 2025–2026.
 
-### 🇪🇺 欧盟 · 条例 + 协调标准双轨
+### 🇪🇺 European Union — a two-track system of regulation plus harmonised standards
 
-欧盟是三辖区中**制度最体系化**的：硬法设"本质要求"，软法（协调标准）译为可检验的技术规范，一经 OJEU 引用即产生**合规推定**。
+The EU is the **most systematised** of the three jurisdictions: hard law sets "essential requirements", soft law (harmonised standards) translates those requirements into verifiable technical specifications, and once cited in the OJEU they trigger a **presumption of conformity**.
 
-**只有两层核心位阶**：立法层设"本质要求"（essential requirements），标准层把要求译成可检验的技术规范。这是欧盟自 **1985 年"新立法框架（New Legislative Framework）"** 以来的标准范式，AI Act 完整沿用（第 40 条：符合协调标准 = 合规推定）。
+There are **only two core tiers**: legislation sets essential requirements; standards translate those into testable technical specifications. This has been the standard paradigm since the EU's **New Legislative Framework of 1985**, and the AI Act adopts it wholesale (Article 40: conformity with harmonised standards = presumption of compliance).
 
-| 规范类型 | 硬/软 | 角色 | 代表性规则 |
+| Type | Hard / soft | Role | Representative rules |
 | --- | --- | --- | --- |
-| **二级立法**（Regulation / Directive）| 硬（条例直接适用；指令须成员国转化）| 规定"本质要求"，留空"如何合规" | AI Act (Reg 2024/1689)、GDPR、DSA、DMA、Data Act、产品责任指令、DSM 版权指令、NIS2 |
-| **协调标准（hEN）** | 软（OJEU 引用后产生**符合性推定**，实质硬化）| 把"本质要求"译为可检验的技术规范 | CEN-CENELEC JTC 21 在制十大领域标准；prEN 18286 是首部进入 Enquiry 阶段的 AI Act hEN |
+| **Secondary legislation** (Regulation / Directive) | Hard (regulations directly applicable; directives require Member-State transposition) | Sets "essential requirements" while leaving "how to comply" open | AI Act (Reg 2024/1689), GDPR, DSA, DMA, Data Act, Product Liability Directive, DSM Copyright Directive, NIS2 |
+| **Harmonised standards (hEN)** | Soft (conformity presumption after OJEU citation; effectively hardens) | Translates essential requirements into testable technical specifications | Ten work areas under CEN-CENELEC JTC 21; prEN 18286 is the first AI Act hEN to reach the Enquiry stage |
 
-**其他软法补充**（在这两层之内的实施机制，不构成独立位阶）：
+**Additional soft-law instruments** (implementation mechanisms within the two tiers, not separate layers):
 
-- **Code of Practice**（如 [GPAI CoP](/rules/eu/gpai-code-of-practice/)）：AI Act 第 56 条授权，签署 = 合规推定。是 **hEN 尚未到位前的过渡合规路径**
-- **欧委会指引 / AI Office 指引**：填补条款模糊，提供执法预期（禁止清单指引、GPAI 指引等）
-- **成员国 DPA / MSA 执法**：把硬法落地的执行机制（[France CNIL](/subnational/eu/france-cnil-ai/)、[Spain AESIA](/subnational/eu/spain-aesia/)、意大利 Garante、爱尔兰 DPC 等）
+- **Codes of Practice** (such as the [GPAI Code of Practice](/rules/eu/gpai-code-of-practice/)): authorised by Article 56 of the AI Act; signing yields a compliance presumption. They function as a **transitional compliance path while the relevant hENs are not yet in place**.
+- **Commission guidelines / AI Office guidelines:** fill textual ambiguities and signal enforcement expectations (prohibited-use guidelines, GPAI guidelines, etc.).
+- **Member-State DPA / MSA enforcement:** the operational machinery that lands hard law in practice ([France CNIL](/subnational/eu/france-cnil-ai/), [Spain AESIA](/subnational/eu/spain-aesia/), Italy's Garante, Ireland's DPC, and so on).
 
-**观察**：欧盟 AI 治理的**可预测性**源于两层位阶的清晰分工——立法设目标，标准设方法。**Brussels Effect** 也主要通过这个组合外溢。**Digital Omnibus Proposal（2025-11）** 提议推迟高风险条款 16 个月，是 2026 最重要的制度不确定性。
+**Observation.** The **predictability** of EU AI governance comes from the clean division of labour between the two tiers: legislation sets the objectives, standards set the methods. The **Brussels Effect** likewise propagates mainly through this combination. The **Digital Omnibus Proposal** (2025-11), which suggests a 16-month postponement of the high-risk provisions, is the single largest regulatory uncertainty for 2026.
 
-### 🔶 边界情况记录
+### 🔶 Boundary-case register
 
-难以归类的条目，单独开一份记录：[法律位阶边界情况](/methodology/citation-disclaimer/#hard-soft-edge-cases)。当前已知的边界情况包括：
+Items that resist easy classification are logged separately: [Legal-hierarchy boundary cases](/methodology/citation-disclaimer/#hard-soft-edge-cases). Currently recorded:
 
-- **中国强制性国标**（GB 45438-2025）：本站归软法，但其强制性在正文中明确标注
-- **美国 NIST AI RMF**：引用频率等同硬法，但本质自愿，本站归软法；多州法通过"合规推定"将其事实硬化
-- **欧盟 GPAI Code of Practice**：带合规推定的软法
-- **美国行政令**：归硬法（对行政分支有强制力），但明确标注"仅约束行政分支、可被下任总统撤销"
-- **中国部门规章的"暂行"命名**：不影响位阶，仅反映立法者政策调整空间
+- **Chinese mandatory national standards** (GB 45438-2025): classified as soft law here, but their mandatory character is flagged in the text.
+- **US NIST AI RMF:** cited as frequently as hard law but voluntary in nature; classified as soft law, with *de facto* hardening through multiple states' compliance presumptions.
+- **EU GPAI Code of Practice:** soft law carrying a conformity presumption.
+- **US executive orders:** classified as hard law (binding on the executive branch), with a note that they apply only to the executive branch and may be revoked by the next president.
+- **The "interim" naming convention in Chinese ministerial regulations:** does not affect legal tier; merely reflects the drafter's reservation of policy-adjustment space.
 
 ---
 
-## 3. 公司归属规则 {#company-attribution}
+## 3. Company attribution rules {#company-attribution}
 
-为让"公司实践"这一轴自洽，对下列常见归属模糊定下规则：
+To keep the "corporate practice" axis internally consistent, we codify the common attribution ambiguities as follows.
 
-| 问题 | 本站处理 | 当前状态 |
+| Question | Our treatment | Current status |
 | --- | --- | --- |
-| OpenAI 与微软 | OpenAI 独立列；微软原则上独立列（援引 OpenAI 模型的产品政策归微软）| 仅 OpenAI 已立页；微软后续按需补入 |
-| Anthropic 与 Amazon/Google | Anthropic 独立列。Amazon/Google 的投资关系在 Anthropic 页注明，不合并 | ✅ 已立页 |
-| Google DeepMind | 合并在一条，Alphabet 集团层政策做二级分节 | ✅ 已立页 |
-| Meta（Facebook / Instagram 等） | Meta 一条，含产品层政策作为子章节 | 后续按需补入 |
-| 字节跳动与 TikTok | 字节跳动一条（含抖音、豆包、火山引擎、TikTok）。TikTok **暂作为字节子章节处理**，未来若发布独立面向海外监管的 AI 政策，再单独立页 | ✅ 字节已立页（含 TikTok） |
-| 阿里与 Ant Group | 阿里一条（含通义千问、夸克）；Ant Group 原则上独立但**未发布独立 AI 模型 / 政策时不立页** | ✅ 阿里已立页；Ant Group 暂不立 |
-| DeepSeek 与 High-Flyer | DeepSeek 一条，High-Flyer 作为资方在页首注记 | ✅ 已立页 |
-| 智谱 / 百度 / MiniMax / 月之暗面 / 腾讯 | 各自一条 | ✅ 已立页 |
-| xAI 与 X Corp / Tesla | xAI 一条；X Corp（前 Twitter）平台政策不在此站（非 AI 产品主体）| ✅ xAI 已立页 |
-| **NVIDIA**（基础设施层）| 独立列；不是 AI 模型公司但是关键上下游，单独分类 | ✅ 已立页 |
+| OpenAI and Microsoft | OpenAI listed separately; Microsoft listed separately in principle (product policies that invoke OpenAI models are attributed to Microsoft) | Only OpenAI has a page to date; Microsoft will be added as needed |
+| Anthropic and Amazon / Google | Anthropic listed separately. Amazon's and Google's investment relationships are noted on the Anthropic page, not merged | Page published |
+| Google DeepMind | Merged into one entry, with Alphabet group-level policies as a second-level section | Page published |
+| Meta (Facebook / Instagram, etc.) | Meta as one entry, with product-level policies as sub-sections | To be added as needed |
+| ByteDance and TikTok | ByteDance as one entry (including Douyin, Doubao, Volcano Engine, TikTok). TikTok is treated **as a ByteDance sub-section for now**; if it publishes an independent AI policy aimed at overseas regulators in the future, it will receive its own page | Page published (includes TikTok) |
+| Alibaba and Ant Group | Alibaba as one entry (including Tongyi Qianwen, Quark); Ant Group is independent in principle, but **no standalone page while it has not published independent AI models or policies** | Alibaba page published; Ant Group not yet |
+| DeepSeek and High-Flyer | DeepSeek as one entry; High-Flyer noted at the top of the page as the investor | Page published |
+| Zhipu, Baidu, MiniMax, Moonshot, Tencent | Each as a separate entry | Pages published |
+| xAI and X Corp / Tesla | xAI as one entry; X Corp (formerly Twitter) platform policies are out of scope (not an AI-product entity) | xAI page published |
+| **NVIDIA** (infrastructure layer) | Listed separately: not an AI-model company but a key upstream / downstream player, categorised on its own | Page published |
 
-**判断原则**：独立发布 AI 政策 / 模型的实体为一条；未独立发布但在母公司政策内被规制的，归母公司子章节。**TikTok / Ant Group 等当前归母公司**，未来若发布独立 AI 政策再立页。
+**Guiding principle.** An entity that independently publishes its own AI policy or model gets its own entry; an entity that does not and is regulated under its parent's policy is treated as a sub-section of the parent. **TikTok and Ant Group are currently attributed to their parents**; they will receive standalone pages if and when they publish independent AI policies.
 
 ---
 
-## 4. 公司实践收录范围 {#corporate-scope}
+## 4. Scope of corporate-practice coverage {#corporate-scope}
 
-对每家已收录公司，本站**持续跟踪**下列 5 类材料：
+For each company covered, the site **tracks on an ongoing basis** the following five document types:
 
-1. **使用政策**（Usage / Acceptable Use Policy）—— 用户可否用模型做什么
-2. **模型卡 / 系统卡**（Model Card / System Card）—— 模型能力、训练数据、评估
-3. **安全框架**（Safety Framework）—— 负责任扩展、准备度、前沿风险管理
-4. **透明度报告**（Transparency Report）—— 定期披露（数据请求、内容审核等）
-5. **红队与评估披露**（Red-Team & Eval Disclosures）—— 第三方评估、内部红队结果
+1. **Usage / Acceptable Use Policy** — what users may and may not do with the model.
+2. **Model Card / System Card** — capabilities, training data, evaluation.
+3. **Safety Framework** — responsible scaling, preparedness, frontier risk management.
+4. **Transparency Report** — periodic disclosures (data requests, content moderation, etc.).
+5. **Red-team and evaluation disclosures** — third-party evaluations and internal red-team results.
 
-### 当前实施阶段
+### Current implementation stage
 
-本站采用**渐进式建设**：
-- **阶段 1（已完成）**：每家公司 **index.md 综合分析页**——含公司概况、安全框架深度解读、
-  自律立场分析、监管合规位置、与同类公司对比
-- **阶段 2（部分完成）**：每家公司展开 5 类**独立 subpage**，逐条归档具体文档（含 snapshot date、
-  原文链接、关键条款摘录、版本历史、学界批评）
+The site is built **incrementally**:
+- **Stage 1 (complete):** an *index.md* comprehensive analysis page for each company — company overview, in-depth reading of the safety framework, analysis of self-regulatory posture, regulatory-compliance position, comparison with peers.
+- **Stage 2 (partially complete):** five standalone **subpages** per company, each archiving specific documents (with snapshot date, original URL, excerpts of key provisions, version history, and scholarly critique).
 
-目前 13 家公司中：
-- **5 家** 前沿实验室（Anthropic、OpenAI、Google DeepMind、ByteDance、DeepSeek）已完成 5 类 subpage 的
-  实质分析（使用政策 · 模型卡 · 安全框架 · 透明度报告 · 红队与评估披露），每家约 1,000–1,300 行
-- **8 家**（Mistral、Baidu、Alibaba、xAI、ZhipuAI、Tencent、Moonshot、MiniMax、NVIDIA）目前以综合 index
-  形式呈现；后续按公司活跃度决定是否展开 subpage
+Of the 13 companies currently covered:
+- **Five** frontier labs (Anthropic, OpenAI, Google DeepMind, ByteDance, DeepSeek) have substantive analysis across all five subpages (Usage Policy, Model Card, Safety Framework, Transparency Report, Red-team and Evaluation Disclosures), about 1,000–1,300 lines each.
+- **Eight** (Mistral, Baidu, Alibaba, xAI, Zhipu, Tencent, Moonshot, MiniMax, NVIDIA) are currently presented through their comprehensive index pages; whether to expand them into subpages depends on the company's activity level.
 
-### 5 类材料的统一字段（subpage 填充后）
+### Shared fields across the five document types (once subpages are filled)
 
 ```
-- snapshot date：本次归档的日期
-- original URL：原文地址
-- archived copy：本站归档 PDF 链接（存在 public/archives/）
-- summary：不超过 500 字的中文摘要
-- key terms：关键条款逐条列出（不改写，引用原文）
-- version history：历次主要修订时间轴
+- snapshot date: date of this archive
+- original URL: source address
+- archived copy: link to the PDF archived on this site (stored in public/archives/)
+- summary: a summary of up to 500 characters
+- key terms: key provisions listed item by item (quoted, not paraphrased)
+- version history: a timeline of major revisions
 ```
 
-### 例外说明：基础设施层公司
+### Exception: infrastructure-layer companies
 
-**NVIDIA** 等**非 AI 模型提供方但属关键上下游**的公司：
-- 不适用 5 类材料完整结构（无 Safety Framework、Model Card 等通用形式）
-- 改用**适合其角色的字段**：出口管制合规、End User License Agreement、政府游说立场、
-  Project Digits 等基础设施类文档
+Companies such as **NVIDIA**, **which do not provide AI models but are essential upstream or downstream players**:
+- do not fit the full five-document structure (they do not publish a Safety Framework, Model Card, etc. in the usual sense);
+- are covered instead through **fields appropriate to their role**: export-control compliance, End User License Agreements, government lobbying positions, infrastructure-focused documents such as Project Digits, and so on.
 
-### 编辑原则
+### Editorial principle
 
-**不做评判性表述**。陈述事实、罗列差异，不写"某公司不充分 / 应当加强"之类的价值判断。
-
----
-
-## 5. 原文与翻译政策 {#translations}
-
-### 本站不自产全文翻译
-
-法律条文的完整翻译是高风险工作——术语选择、时态、范围界定任何一处偏差都会误导引用者。本站**不自行翻译条文全文**，而是：
-
-1. **中文原文**以官方发布为准，并在 `public/archives/` 归档 PDF 版本
-2. **英文翻译**链到学术圈公认的权威二手来源：
-   - **China Law Translate**（Jeremy Daum, Paul Tsai China Center, Yale Law School）—— 中国法律翻译的金标准
-   - **Stanford DigiChina** —— 有选择性覆盖，质量高
-   - **Regulations.AI** —— 结构化索引
-   - **EUR-Lex** 官方英法德等语言版本 —— 欧盟法律的法定翻译
-   - **Congress.gov** / 各州立法官网 —— 美国法律本身即英文
-3. Rule 页面在"原文与翻译"表格里列出所有一手/权威译本链接，读者按需跳转
-
-### 例外：核心条款的辅助翻译
-
-出于**分析需要**，本站允许在议题页或 Rule 页的"核心义务"、"争议解读"等段落中，**精翻少数关键条款**（通常不超过 5 条），用于支持我们的观点表达。此类精翻必须：
-
-- 明确标注"本站译文，仅供参考；以官方或权威译本为准"
-- 标明对应条款号和原文段落（方便核对）
-- 术语用法遵循本站术语对照表（见 [引用与免责](/methodology/citation-disclaimer/)）
-
-### AI 辅助翻译的披露
-
-所有由 LLM 起草、人工校对后保留的段落，**必须在页面内显式标注**。未经校对的 AI 产出**不会发布**。
+**No evaluative framing.** State facts, enumerate differences, avoid value judgements such as "Company X is inadequate" or "should be strengthened".
 
 ---
 
-## 6. 更新频率与版本管理 {#versioning}
+## 5. Primary text and translation policy {#translations}
 
-**AI 治理变化速度远快于传统法律领域**。一条新的部门规章可能在几周内改变合规实务（如 2026-04-10 《拟人化互动服务办法》发布后 30 天内行业就需要响应）；一个州法的生效日可能在立法会议中被推迟或前移。因此本站采用**统一的两周复查节奏**：
+### No in-house full translations
 
-- **硬法页**：**每两周复查一次**。有修订立即更新；旧版不删除，标 `superseded: true` 并保留原 URL。
-- **软法页**：**每两周复查一次**（同硬法）。
-- **公司实践页**：**每两周复查一次**；公司发布重大更新（如 Anthropic 升级 RSP、OpenAI 发新 Model Spec）时应**一周内**更新，带 `snapshot_date`。
-- **议题分析页**：**每两周复查一次**。议题分析本身稳定，但所引用的 Rules 和公司文档会持续更新，复查时确保交叉引用同步。
-- **方法论与收录标准页**：**每两周复查一次**，确保方法论与新增内容一致。
+Full translation of legal text is high-risk work: terminological choice, tense, and scope demarcation can each mislead any subsequent citer. The site does **not translate full statutory text in-house**. Instead:
 
-**版本表现在页面底部显示**（Starlight 的 `lastUpdated` 功能，基于 Git commit 时间）。重要修订同步记入 [更新日志 Updates](/updates/)。
+1. **Chinese originals** track the official publication, with PDF copies archived under `public/archives/`.
+2. **English translations** are linked to authoritative secondary sources recognised in the scholarly community:
+   - **China Law Translate** (Jeremy Daum, Paul Tsai China Center, Yale Law School) — the gold standard for translations of Chinese legal text.
+   - **Stanford DigiChina** — selective coverage, high quality.
+   - **Regulations.AI** — structured index.
+   - **EUR-Lex** official multilingual versions (English, French, German, and so on) — the statutory translations of EU law.
+   - **Congress.gov** and state legislative sites — US statutes are themselves in English.
+3. Rule pages list every primary source and authoritative translation in a dedicated "Original text and translations" table.
 
-**Git 历史**作为完整版本控制，任何一页都能通过 GitHub 看到全部修改记录。
+### Exception: auxiliary translations of key provisions
+
+For **analytical purposes**, the site permits itself to carefully translate a small number of **key provisions** (usually no more than five) within topic pages or the "core obligations" / "contested readings" sections of Rule pages, to support the argument. Such auxiliary translations must:
+
+- Carry an explicit note: "Translation by this site; for reference only. The official or authoritative translation prevails."
+- Indicate the corresponding article number and source paragraph (to aid verification).
+- Follow the site's terminology table (see [Citation and disclaimer](/methodology/citation-disclaimer/)).
+
+### AI-assisted translation disclosure
+
+Any passage drafted with an LLM and then retained after human review **must be explicitly marked on the page**. Uncorrected AI output **is not published**.
+
+---
+
+## 6. Update cadence and version management {#versioning}
+
+**AI governance moves far faster than conventional areas of law.** A single new ministerial regulation can reshape compliance practice within weeks (the 2026-04-10 *Measures on Humanised Interactive Services* required industry response within 30 days of issuance); a US state law's effective date can be advanced or pushed back during a legislative session. The site therefore adopts a **uniform two-week review cadence**:
+
+- **Hard-law pages:** **reviewed every two weeks.** Any amendment is reflected immediately; superseded versions are not deleted — they are marked `superseded: true` with their original URLs preserved.
+- **Soft-law pages:** **reviewed every two weeks** (same as hard law).
+- **Corporate-practice pages:** **reviewed every two weeks**; major company updates (such as an Anthropic RSP upgrade or a new OpenAI Model Spec) are reflected **within a week**, with a `snapshot_date`.
+- **Topic analysis pages:** **reviewed every two weeks.** The topic analysis itself is relatively stable, but the Rules and corporate documents cited evolve continually; the review ensures cross-references remain synchronised.
+- **Methodology and inclusion pages:** **reviewed every two weeks** to keep the methodology aligned with new content.
+
+**Version display at the bottom of each page** uses Starlight's `lastUpdated` feature, which is based on Git commit time. Significant revisions are also recorded in the [Updates log](/updates/).
+
+**Git history** serves as the complete version control: every page's full revision history is visible on GitHub.

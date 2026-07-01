@@ -5,8 +5,8 @@ import react from '@astrojs/react';
 import mdx from '@astrojs/mdx';
 import remarkHeadingId from 'remark-heading-id';
 
-// i18n helper: returns a sidebar item fragment with label + translations
-const t = (zh, en) => ({ label: zh, translations: { en } });
+// English is canonical at root; Chinese mirrors it under /zh/.
+const t = (zh, en) => ({ label: en, translations: { zh } });
 
 // https://astro.build/config
 // Production deploys as pure static assets to Cloudflare Workers Static Assets
@@ -16,6 +16,10 @@ const t = (zh, en) => ({ label: zh, translations: { en } });
 export default defineConfig({
 	site: 'https://comparativeai.org',
 	output: 'static',
+	redirects: {
+		'/en': '/',
+		'/en/[...slug]': '/[...slug]',
+	},
 	markdown: {
 		remarkPlugins: [remarkHeadingId],
 	},
@@ -26,11 +30,11 @@ export default defineConfig({
 				'zh-CN': 'Comparative AI',
 				en: 'Comparative AI',
 			},
-			description: 'AI 治理的跨辖区比较资源 · Hard vs. Soft Law across China, US & EU',
+			description: 'AI governance across China, the United States, and the European Union',
 			defaultLocale: 'root',
 			locales: {
-				root: { label: '中文', lang: 'zh-CN' },
-				en: { label: 'English', lang: 'en' },
+				root: { label: 'English', lang: 'en' },
+				zh: { label: '中文', lang: 'zh-CN' },
 			},
 			social: [
 				{
@@ -157,6 +161,7 @@ export default defineConfig({
 										{ ...t('新一代 AI 治理原则 (2019)', 'Next-Gen AI Governance Principles (2019)'), slug: 'rules/china/new-gen-ai-governance-principles' },
 										{ ...t('全球 AI 治理倡议 (2023)', 'Global AI Governance Initiative (2023)'), slug: 'rules/china/global-ai-governance-initiative' },
 										{ ...t('AI 安全治理框架 1.0/2.0 (2024/2025)', 'AI Safety Governance Framework 1.0/2.0 (2024/2025)'), slug: 'rules/china/ai-safety-governance-framework' },
+										{ ...t('智能体规范应用实施意见 (2026)', 'AI Agent Implementation Opinion (2026)'), slug: 'rules/china/ai-agent-implementation-opinion' },
 									],
 								},
 								{
@@ -165,6 +170,7 @@ export default defineConfig({
 									items: [
 										{ ...t('TC260-003-2024 生成式 AI 安全要求', 'TC260-003-2024 GenAI Safety Requirements'), slug: 'rules/china/tc260-gen-ai-security-basic-requirements' },
 										{ ...t('GB 45438-2025 标识国标', 'GB 45438-2025 AI Content Labeling Standard'), slug: 'rules/china/gb-45438-2025-ai-content-labeling-standard' },
+										{ ...t('TC260-005 AI 应用伦理安全指引 (2026)', 'TC260-005 AI Ethics-Safety Guidelines (2026)'), slug: 'rules/china/tc260-005-ai-ethics-safety-guidelines' },
 									],
 								},
 							],
@@ -178,6 +184,7 @@ export default defineConfig({
 									...t('① 总统行政令', '① Presidential Executive Orders'),
 									collapsed: true,
 									items: [
+										{ ...t('EO 14409 — 前沿 AI 网络安全 (2026-06)', 'EO 14409 — Frontier AI Cybersecurity (Jun 2026)'), slug: 'rules/us/eo-14409-frontier-ai-cybersecurity' },
 										{ ...t('Trump AI Action Plan + 2025-07 EOs', 'Trump AI Action Plan + July 2025 EOs'), slug: 'rules/us/trump-ai-action-plan' },
 										{ ...t('EO 14365 — 州法抢占 (2025-12)', 'EO 14365 — State Law Preemption (Dec 2025)'), slug: 'rules/us/eo-14365-national-ai-framework' },
 										{ ...t('EO 14179 — 撤销前任 (2025-01)', 'EO 14179 — Revoking Prior EOs (Jan 2025)'), slug: 'rules/us/eo-14179-removing-barriers-ai' },
@@ -214,6 +221,7 @@ export default defineConfig({
 									collapsed: true,
 									items: [
 										{ ...t('GPAI Code of Practice (2025-07)', 'GPAI Code of Practice (Jul 2025)'), slug: 'rules/eu/gpai-code-of-practice' },
+										{ ...t('AI 生成内容透明度守则 (2026-06)', 'AI-Generated Content Transparency Code (Jun 2026)'), slug: 'rules/eu/synthetic-content-code' },
 									],
 								},
 								{

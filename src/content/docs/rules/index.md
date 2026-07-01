@@ -1,123 +1,113 @@
 ---
-title: 顶层规则
-description: 中国、美国、欧盟三辖区中央层级 AI 规则索引——按"硬法 / 软法"与法律位阶交叉组织
+title: Top-level rules
+description: An index of central-level AI rules across China, the US, and the EU — organised by the hard-law / soft-law division and by legal hierarchy
 sidebar:
   order: 3
 ---
 
-## 为什么"顶层规则"是一个独立的轴
+## Why "top-level rules" is a separate axis
 
-本轴收录三辖区**中央层级**的 AI 治理规则一手文本：中国的法律 / 行政法规 / 部门规章 / 规范性文件 / 技术标准
-五级位阶；美国的行政令 / OMB 备忘录 / NIST 技术规范；欧盟的二级立法（条例 / 指令）/ 协调标准 /
-行为守则。**地方层级**（中国地方、美国州市、欧盟成员国）在 [subnational](/subnational/) 单独成轴。
+This axis collects **central-level** primary texts of AI governance across the three jurisdictions: China's five-tier hierarchy (statutes / administrative regulations / ministerial regulations / normative documents / technical standards); the US executive orders, OMB memoranda, and NIST technical frameworks; the EU's secondary legislation (regulations / directives), harmonised standards, and codes of practice. **Subnational** rules (Chinese localities, US states and cities, EU Member States) form a separate axis at [Subnational](/subnational/).
 
-**与"议题比较"轴的分工**：[议题页](/topics/)做横向分析（同一问题三辖区怎么想），
-本轴做纵向归档（具体条文的一手索引）。议题页引用本轴，不复述。
+**Division of labour with the "Topic comparisons" axis:** the [topic pages](/topics/) do horizontal analysis (how the three jurisdictions think about the same question); this axis does vertical archiving (a primary-source index of specific provisions). Topic pages cite the rules pages rather than reproduce them.
 
-## 三种治理形态的速览
+## Three forms of governance at a glance
 
-| 维度 | 🇨🇳 中国 | 🇺🇸 美国（联邦） | 🇪🇺 欧盟 |
+| Dimension | 🇨🇳 China | 🇺🇸 US (federal) | 🇪🇺 EU |
 | --- | --- | --- | --- |
-| **综合性 AI 立法** | 无，靠部门规章叠加 | **无**，靠州法 + EO | **AI Act** 横向条例（2024） |
-| **主战场位阶** | **部门规章**（第 3 级）| **行政令** + NIST 软法 | **二级立法**（条例直接适用）|
-| **制定主体** | 网信办牵头多部委联合 | 白宫 / OMB / NIST / FTC 等 | 议会 + 理事会 + 委员会 |
-| **执法机构** | **CAC 主导** | **无专门**（FTC、EEOC、各州 AG）| 成员国 MSA + AI Office + EDPB |
-| **治理哲学** | 敏捷协同 + 场景化 | 自愿风控 + 去监管 | 合规前置 + 人权导向 |
-| **政策稳定性** | 高（党中央协调） | **低**（EO 随政府反转）| 高（立法程序稳定） |
+| **Comprehensive AI legislation** | None; relies on layered ministerial regulations | **None**; relies on state law plus executive orders | **AI Act** horizontal regulation (2024) |
+| **Main tier** | **Ministerial regulations** (tier 3) | **Executive orders** plus NIST soft law | **Secondary legislation** (regulations directly applicable) |
+| **Issuing body** | CAC-led multi-ministry coordination | White House / OMB / NIST / FTC, etc. | Parliament + Council + Commission |
+| **Enforcement body** | **CAC-led** | **No specialised body** (FTC, EEOC, state AGs) | Member-State MSAs + AI Office + EDPB |
+| **Governance philosophy** | Agile coordination + scenario-specific rulemaking | Voluntary risk control + deregulation | Compliance-first + human-rights-led |
+| **Policy stability** | High (Party Central coordination) | **Low** (EOs flip with administrations) | High (stable legislative procedure) |
 
-学界通用参照：Bradford (2023) *Digital Empires* 的"美 / 欧 / 中"三方数字治理框架；
-薛澜团队对中国"敏捷治理"范式的刻画；Anu Bradford (2020) "Brussels Effect" 论欧盟监管外溢。
+Common scholarly references: Bradford (2023), *Digital Empires*, for the "US / EU / China" trilateral framework on digital governance; the Xue Lan 薛澜 team's characterisation of Chinese "agile governance"; Anu Bradford (2020), "The Brussels Effect", on EU regulatory spillover.
 
-## 按辖区进入
+## By jurisdiction
 
-### 🇨🇳 中国 — [五级位阶导航 →](/rules/china/)
+### 🇨🇳 China — [Five-tier hierarchy →](/rules/china/)
 
-**法律位阶速览**：
+**Legal hierarchy at a glance:**
 
-| 位阶 | 制定机关 | 代表规则 |
+| Tier | Issuing body | Representative rules |
 | --- | --- | --- |
-| ① 法律 | 全国人大（常委会） | CSL (2017) · DSL (2021) · PIPL (2021) |
-| ② 行政法规 | 国务院 | 未成年人网络保护条例 (2024) |
-| ③ 部门规章 | 部委联合 | **算法推荐 / 深度合成 / 生成式 AI / 标识办法 / 拟人化办法** |
-| ④ 规范性文件 | 部委 / 专委会 | 新一代 AI 治理原则 · AI 安全治理框架 1.0/2.0 |
-| ⑤ 技术标准 | TC260 / 市监总局 | TC260-003-2024 · **GB 45438-2025**（强制国标）|
+| ① Statute | National People's Congress (Standing Committee) | CSL (2017); DSL (2021); PIPL (2021) |
+| ② Administrative regulation | State Council | *Regulations on the Protection of Minors Online* (2024) |
+| ③ Ministerial regulation | Joint ministries | **Algorithmic Recommendation Provisions; Deep Synthesis Provisions; Interim Measures on Generative AI; Labelling Measures; Measures on Humanised Interaction** |
+| ④ Normative document | Ministries / special committees | *New Generation AI Governance Principles*; *AI Safety Governance Framework* 1.0/2.0 |
+| ⑤ Technical standard | TC260 / SAMR | TC260-003-2024; **GB 45438-2025** (mandatory national standard) |
 
-**关键观察**：第 ③ 级部门规章是 AI 治理主战场；"暂行办法"类规则**不是**人大法律也**不是**
-国务院行政法规，是**部门规章**。理解这点是中国 AI 规则讨论的第一基本功。
+**Key observation.** Tier 3 ministerial regulations are the main theatre of AI governance; the "interim measures" kind of rule is **neither** an NPC statute **nor** a State Council administrative regulation — it is a **ministerial regulation**. Grasping this is the first prerequisite for any serious discussion of Chinese AI rules.
 
-### 🇺🇸 美国 — [联邦层级说明 →](/rules/us/)
+### 🇺🇸 United States — [Federal-layer overview →](/rules/us/)
 
-**联邦立法真空**：至今没有任何规制 AI 系统本身的综合性或专门性联邦立法。填补真空的三类代偿：
+**The federal legislative vacuum.** To date there is no comprehensive or specialised federal statute regulating AI systems themselves. Three compensating tracks fill the gap:
 
-| 代偿 | 形态 | 代表文件 |
+| Compensation | Form | Representative documents |
 | --- | --- | --- |
-| ① 总统行政令 | EO | **EO 14179** (2025-01 撤销 Biden EO) · **EO 14365** (2025-12 州法抢占) · Trump AI Action Plan |
-| ② OMB 备忘录 | 联邦政府自身 AI 使用 | M-25-21 / M-25-22 (2025-04) |
-| ③ NIST 软法 | 技术框架 | **AI RMF 1.0** + **GenAI Profile** (AI 600-1) |
+| ① Presidential executive orders | EO | **EO 14179** (2025-01, revoking Biden EO); **EO 14365** (2025-12, state-law pre-emption); Trump AI Action Plan |
+| ② OMB memoranda | Federal government's own AI use | M-25-21 / M-25-22 (2025-04) |
+| ③ NIST soft law | Technical frameworks | **AI RMF 1.0** + **GenAI Profile** (AI 600-1) |
 
-**州法才是主战场**：2025 年 1,208 项州 AI 法案中 145 项通过。见 [subnational/us](/subnational/us/)。
+**State law is the real theatre.** Of 1,208 state-level AI bills introduced in 2025, 145 passed. See [Subnational: US](/subnational/us/).
 
-**通用法类推适用**：FTC §5（反欺骗）/ Title VII（反歧视）/ FCRA（信用）/ COPPA、HIPAA 等
-部门专项隐私法——这些通用法通过**执法机构解释 + 法院判例**被"类推"到 AI 场景。
+**Analogical application of general laws.** FTC Act §5 (deceptive practices), Title VII (anti-discrimination), the FCRA (credit), COPPA, HIPAA, and sector-specific privacy statutes — these general laws are "analogised" onto AI scenarios through **agency interpretation plus judicial precedent**.
 
-### 🇪🇺 欧盟 — [欧盟层级说明 →](/rules/eu/)
+### 🇪🇺 European Union — [EU-layer overview →](/rules/eu/)
 
-**AI Act 的横向条例模式**（Reg 2024/1689）：
+**The AI Act's horizontal-regulation model** (Reg 2024/1689):
 
-| 层级 | 形态 | 代表 |
+| Layer | Form | Representative |
 | --- | --- | --- |
-| ① 二级立法 | 条例 / 指令 | **AI Act** (2024) · GDPR (2016) · DSA (2022) · **产品责任指令 2024/2853** |
-| ② 协调标准 hEN | CEN-CENELEC JTC 21 | prEN 18286 等（待发布）|
-| ③ 软法 | 行为守则 / 指引 | **GPAI Code of Practice** (2025-07) |
-| ④ 立法提案（未通过）| 条例草案 | Digital Omnibus Proposal (2025-11) |
+| ① Secondary legislation | Regulation / Directive | **AI Act** (2024); GDPR (2016); DSA (2022); **Product Liability Directive 2024/2853** |
+| ② Harmonised standards (hEN) | CEN-CENELEC JTC 21 | prEN 18286 and others (pending publication) |
+| ③ Soft law | Codes of conduct / guidelines | **GPAI Code of Practice** (2025-07) |
+| ④ Legislative proposals (not yet adopted) | Draft regulations | Digital Omnibus Proposal (2025-11) |
 
-**合规路径三条**：① 完全技术合规（证明符合附件条款）② 协调标准符合推定 ③ GPAI CoP 签署推定。
-**Brussels Effect**：AI Act 通过全球市场接入成为事实标准，但 2025-2026 出现**"Brussels Effect
-反制"**——白宫公开施压、Trump EO 禁止"遵守外国 AI 法律"的联邦采购。
+**Three compliance paths.** (1) Full technical compliance (demonstrating conformity with the relevant provisions); (2) conformity presumption via harmonised standards; (3) signatory-based presumption via the GPAI Code of Practice.
+**The Brussels Effect.** Through global market access, the AI Act becomes a *de facto* standard — but 2025–2026 also saw a **"Brussels Effect backlash"**: public White House pressure, and a Trump executive order prohibiting federal procurement from entities that "comply with foreign AI laws".
 
-## 三种形态的制度张力
+## Institutional tensions across the three models
 
-### 中国：位阶低 × 执法强
+### China: low tier × strong enforcement
 
-部门规章（第 3 级位阶）是主战场带来的问题：
+Locating the main theatre at ministerial regulations (tier 3) creates several problems:
 
-- 位阶低 → 上位法冲突风险（与 PIPL、DSL 等竞合）
-- 部委联合发布 → 跨条线协调负担
-- "暂行"二字 → 修订频繁（生成式办法从征求意见稿到最终稿 2 个月内大修）
-- 执法主体是 CAC → **集中但不专门**（网信办既是内容监管也是数据监管也是 AI 监管）
+- Low tier → risk of conflict with upstream law (competition with PIPL, DSL, and so on).
+- Jointly issued by ministries → substantial cross-bureau coordination burden.
+- The word "interim" → frequent revision (the Interim Measures on Generative AI underwent major rewriting within two months between consultation and final version).
+- Enforcement is led by the CAC → **concentrated but non-specialised** (the CAC is simultaneously content regulator, data regulator, and AI regulator).
 
-### 美国：软法硬化 × 政策反转
+### United States: soft-law hardening × policy reversal
 
-- NIST AI RMF 名义推荐性，但通过**"合理注意"义务、保险、招投标、州法引用**事实硬化
-- EO 随政府反转：Biden EO 14110 → Trump EO 14179 撤销 → Trump EO 14365 反向抢占州法
-- 国会立法 100+ 项在审 → **无一通过**
+- NIST AI RMF is nominally recommendatory, but hardens *de facto* through **"reasonable care" obligations, insurance, procurement, and state-law citation**.
+- Executive orders flip with administrations: Biden EO 14110 → Trump EO 14179 (revocation) → Trump EO 14365 (reverse pre-emption of state law).
+- More than 100 bills pending in Congress → **none enacted**.
 
-### 欧盟：合规前置 × 执法延迟
+### EU: compliance-first × delayed enforcement
 
-- AI Act 禁止条款 2025-02 生效；GPAI 义务 2025-08；高风险 2026-08；2027-08 进一步
-- 但成员国 MSA（市场监管机构）指定 **落后**（截至 2026-04 约半数成员国仍未指定）
-- **执法从哪里发起？**AI Office 只管 GPAI；具体案件仍要找成员国 MSA；DPA / DSA 协调
-  的合作机制（AI Pact Board、AI Board）刚建立
+- The AI Act's prohibitions take effect 2025-02; GPAI obligations 2025-08; high-risk obligations 2026-08; further provisions 2027-08.
+- But Member-State MSA (market surveillance authority) designation is **lagging** (as of 2026-04, roughly half the Member States still have no designated MSA).
+- **Where does enforcement start?** The AI Office only covers GPAI; specific cases still depend on Member-State MSAs; the DPA / DSA coordination mechanisms (AI Pact Board, AI Board) have only recently been set up.
 
-## 横向对照表：四个核心议题的跨辖区规则映射
+## Cross-jurisdiction map for the four core topics
 
-| 议题 | 🇨🇳 中国 | 🇺🇸 美国 | 🇪🇺 欧盟 |
+| Topic | 🇨🇳 China | 🇺🇸 US | 🇪🇺 EU |
 | --- | --- | --- | --- |
-| **风险分级**（[→](/topics/risk-classification/)） | **服务 / 用户规模 + 场景**（备案 + 评估） | 无统一；**部分州**（CO AI Act 的 "high-risk AI"）| **禁止 / 高 / 有限 / 最小** 四级（AI Act 第 5-52 条）|
-| **前沿 GPAI**（[→](/topics/frontier-gpai/)） | 无专门阈值；**用户规模 100 万**触发评估（拟人化办法）| 无联邦；**加州 SB 53 10²⁶ FLOP** 州级阈值 | **10²⁵ FLOP** 系统性风险（AI Act Art 51）+ GPAI CoP |
-| **数据与训练**（[→](/topics/data-training/)） | **PIPL + 深度合成规定 + 暂行办法第 7 条** | **无联邦**；版权靠判例（*NYT v OpenAI*, *Authors Guild v Anthropic*）| **GDPR + DSM 指令第 4 条** TDM opt-out + AI Act 第 53 条训练摘要 |
-| **生成内容标识**（[→](/topics/content-labeling-provenance/)） | **强制双轨**（显 + 隐）：标识办法 + **GB 45438-2025** | **无联邦**；州法专注选举深伪（CA AB 2655）| **AI Act 第 50 条**+ GPAI CoP 水印建议 |
+| **Risk classification** ([→](/topics/risk-classification/)) | **Service / user scale + scenario** (filing + evaluation) | No uniform scheme; **some states** (Colorado AI Act's "high-risk AI") | **Prohibited / high / limited / minimal** four tiers (AI Act Arts. 5–52) |
+| **Frontier GPAI** ([→](/topics/frontier-gpai/)) | No specialised threshold; **user scale of 1 million** triggers evaluation (Humanised Interaction Measures) | No federal scheme; **California SB 53's 10²⁶ FLOP** state-level threshold | **10²⁵ FLOP** systemic-risk threshold (AI Act Art. 51) + GPAI CoP |
+| **Data and training** ([→](/topics/data-training/)) | **PIPL + Deep Synthesis Provisions + Article 7 of the Interim Measures** | **No federal scheme**; copyright via case law (*NYT v. OpenAI*, *Authors Guild v. Anthropic*) | **GDPR + DSM Directive Article 4** TDM opt-out + AI Act Article 53 training summary |
+| **Synthetic-content labelling** ([→](/topics/content-labeling-provenance/)) | **Mandatory dual-track** (explicit + implicit): Labelling Measures + **GB 45438-2025** | **No federal scheme**; state laws focus on election deepfakes (CA AB 2655) | **AI Act Art. 50** + GPAI CoP watermarking recommendation |
 
-## 方法论说明
+## Methodological note
 
-本轴的**"硬法 / 软法"划分独立于法律位阶**。例如：
+**The hard-law / soft-law division on this axis is independent of legal hierarchy.** For example:
 
-- TC260-003 是**技术标准**（名义推荐 = 软法），但**事实硬约束**（备案门槛）
-- NIST AI RMF 是**非约束性框架**，但通过合理注意 / 保险 / 州法引用**事实硬化**
-- EU GPAI CoP 是**自愿行为守则**，但签署即获得 AI Act 合规推定——**是"软法作为硬法合规路径"的典型**
+- TC260-003 is a **technical standard** (nominally recommendatory = soft law), but it is **de facto binding** (filing threshold).
+- NIST AI RMF is a **non-binding framework**, yet hardens *de facto* through reasonable-care / insurance / state-law citation.
+- The EU GPAI CoP is a **voluntary code of conduct**, but signing triggers an AI Act conformity presumption — **a textbook case of "soft law as a hard-law compliance path"**.
 
-详见 [方法论 · 硬法/软法划分](/methodology/#hard-vs-soft)。
+See [Methodology — hard law / soft law](/methodology/#hard-vs-soft).
 
-**AI 密切度**：不是所有涉及数据、网络、算法的规则都收入本轴。本站坚持"AI 密切度"筛选——
-通用数据 / 基础设施 / 反诈规则（如《关键信息基础设施安全保护条例》《反电信网络诈骗法》）
-**不单独立页**，只在相关 AI 规则页做交叉引用。详见 [方法论 · 收录标准](/methodology/#inclusion)。
+**AI proximity.** Not every rule that touches data, networks, or algorithms is included on this axis. The site applies a strict "AI proximity" filter — general data / infrastructure / anti-fraud rules (such as the *Regulations on the Security Protection of Critical Information Infrastructure* or the *Anti-Telecom and Online Fraud Law*) **do not receive standalone pages** and are merely cross-referenced from related AI-rule pages. See [Methodology — inclusion criteria](/methodology/#inclusion).

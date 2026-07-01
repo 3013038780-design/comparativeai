@@ -1,8 +1,8 @@
 ---
-title: 生成式人工智能服务管理暂行办法
-description: 中国面向公众的生成式 AI 服务的首部专项规章，2023-08-15 生效，建立备案 + 安全评估 + 训练数据合规三重门
-ruleName: 生成式人工智能服务管理暂行办法
-issuer: 国家互联网信息办公室 / 国家发展和改革委员会 / 教育部 / 科学技术部 / 工业和信息化部 / 公安部 / 国家广播电视总局（七部门联合发布）
+title: Interim Measures for the Management of Generative AI Services
+description: China's first dedicated departmental rule for public-facing generative AI services, effective 2023-08-15; establishes the filing + security-assessment + training-data-legality triple-gate
+ruleName: Interim Measures for the Management of Generative AI Services (《生成式人工智能服务管理暂行办法》)
+issuer: Cyberspace Administration of China (CAC) / National Development and Reform Commission (NDRC) / Ministry of Education (MOE) / Ministry of Science and Technology (MOST) / Ministry of Industry and Information Technology (MIIT) / Ministry of Public Security (MPS) / National Radio and Television Administration (NRTA) — seven-ministry joint issuance
 level: departmental-rule
 binding: hard
 effectiveDate: 2023-08-15
@@ -13,163 +13,139 @@ relatedTopics:
   - data-training
   - content-labeling-provenance
   - risk-classification
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: 生成式 AI 办法 (2023)
+  label: Generative AI Interim Measures (2023)
   order: 3
 ---
 
-> **📑 法律位阶**：第 3 级 · 部门规章 | **发布**：网信办、发改委、教育部、科技部、工信部、公安部、广电总局（**七部门联合发布**） | **生效**：2023-08-15 | **属性**：硬法
+> **📑 Legal hierarchy**: Level 3 · Departmental rule | **Issuance**: CAC, NDRC, MOE, MOST, MIIT, MPS, NRTA (**seven-ministry joint issuance**) | **Effective**: 2023-08-15 | **Character**: hard law
 
-> **⚠️ 位阶提醒**：名字叫"**暂行办法**"不代表它是国务院的"暂行条例"。本规则是**部门规章**，
-> 由**七个国务院部委联合发布**，**不是**国务院行政法规，更**不是**全国人大法律。
-> "暂行"反映的是立法者在生成式 AI 治理规律不清时留出的政策调整空间，不是位阶指示。
-> 详见 [中国规则索引](/rules/china/#法律位阶速览)。
+> **⚠️ Hierarchy note**: The name "**Interim Measures**" (*暂行办法*) does not indicate a State Council "interim regulation." This instrument is a **departmental rule**, jointly issued by **seven State Council ministries**; it is **not** a State Council administrative regulation, and still less a NPC law. "Interim" (*暂行*) reflects the legislator's decision to leave space for policy adjustment under uncertainty about generative-AI governance patterns — it is not a hierarchy marker. See [Index of Chinese Rules](/rules/china/#the-legal-hierarchy-at-a-glance).
 
-## 英文摘要
+## English Summary
 
-The *Interim Measures for the Management of Generative AI Services*
-(生成式人工智能服务管理暂行办法) were jointly issued by the Cyberspace Administration
-of China (CAC) and six other ministries on 2023-07-13, effective 2023-08-15. Widely
-characterized by regulators as an **"inclusive and prudent" (包容审慎)** approach,
-the final version was substantially softer than the April 2023 draft: it narrowed the
-scope to services **provided to the public within mainland China** (excluding enterprise-
-internal use and R&D), dropped some of the draft's most stringent training-data guarantees,
-and embraced **classified and graded supervision** (分类分级). Key obligations include
-**security assessment** and **algorithm filing** for services with "public opinion or
-social mobilization capacity," baseline training-data legality duties, and content
-labeling via the *Deep Synthesis Provisions* and the *Labeling Measures*. The Measures
-sit at the top of China's AI-specific regulatory stack alongside the 2023 *Deep Synthesis
-Provisions*.
+The *Interim Measures for the Management of Generative AI Services* (《生成式人工智能服务管理暂行办法》) were jointly issued by the Cyberspace Administration of China (CAC) and six other ministries on 2023-07-13, effective 2023-08-15. Widely characterized by regulators as an **"inclusive and prudent" (包容审慎)** approach, the final version was substantially softer than the April 2023 draft: it narrowed the scope to services **provided to the public within mainland China** (excluding enterprise-internal use and R&D), dropped some of the draft's most stringent training-data guarantees, and embraced **classified and graded supervision** (分类分级). Key obligations include **security assessment** and **algorithm filing** for services with "public opinion or social mobilization capacity," baseline training-data legality duties, and content labeling via the *Deep Synthesis Provisions* and the *Labeling Measures*. The Measures sit at the top of China's AI-specific regulatory stack alongside the 2023 *Deep Synthesis Provisions*.
 
-## 总览
+## Overview
 
-《生成式 AI 办法》是中国**第一部专门针对生成式 AI 服务**（不再仅限于"深度合成"这个技术子集）
-的规章。和深度合成规定相比，它：
+The *Generative AI Interim Measures* are China's **first departmental rule dedicated to generative AI services** (no longer limited to "deep synthesis" as a technical subset). Compared with the *Deep Synthesis Provisions*, they:
 
-- **客体从"技术"升级到"服务"**：规制面向公众提供的**生成式 AI 产品**本身
-- **义务主体向上游延伸**：不仅服务提供者，研发端（训练数据、基础模型）也部分被规制
-- **引入"分类分级监管"**：为后续按风险/场景差异化监管留下接口（虽然迄今具体规则未公开）
+- **Shift the regulatory object from technology to service**: the regulated object is the **generative AI product** offered to the public.
+- **Extend obligations upstream**: not only service providers but also (in part) the R&D side (training data, foundation models) fall within scope.
+- **Introduce "classified and graded supervision"**: this leaves an interface for differentiated, risk- or scenario-based regulation (although the detailed framework remains unpublished).
 
-从 2023-04 的《征求意见稿》到 2023-07 定稿，**义务明显松动**：不再要求"训练数据
-真实准确"的绝对保证（改为"采取有效措施"），缩小适用范围到面向公众的服务，
-并首次显式豁免**企业内部研发和使用**。这一转向广泛被解读为
-"北京意识到过度合规会扼杀产业发展"。
+Between the April 2023 draft for comment and the July 2023 final text, **duties were noticeably softened**: the absolute guarantee that training data be "true and accurate" was replaced with "take effective measures," scope was narrowed to public-facing services, and **enterprise-internal R&D and use** were expressly exempted for the first time. The shift was widely read as Beijing's recognition that over-compliance would choke industrial development.
 
-## 适用范围
+## Scope
 
-**适用**：
-- 面向**中华人民共和国境内公众**提供生成式 AI 服务
-- 涵盖文本、图像、音频、视频生成
+**Applies to**:
 
-**不适用（显式豁免）**：
-- 行业组织、企业、教育和科研机构、公共文化机构、有关专业机构等**研发、应用**生成式 AI 技术，
-  **未向境内公众提供**生成式 AI 服务的
+- Generative AI services provided to the **public within the People's Republic of China**;
+- Generation of text, images, audio, and video.
 
-这一豁免是 2023-04 草案到 7 月定稿的最大变化，为企业研发留出空间。
+**Does not apply (express carve-out)**:
 
-## 核心义务
+- Industry associations, enterprises, educational and research institutions, public cultural institutions, and relevant professional bodies that **develop or apply** generative AI technologies **without providing generative AI services to the domestic public**.
 
-### 对服务提供者
+This carve-out — the single largest change from the April 2023 draft to the July final text — creates space for enterprise R&D.
 
-- **训练数据合规**（第七条）：
-  - 使用具有合法来源的数据和基础模型
-  - 涉及知识产权的，不得侵害他人依法享有的知识产权
-  - 涉及个人信息的，应当取得个人同意或符合 PIPL 其他合法基础
-  - 采取有效措施**提高训练数据质量**，增强真实性、准确性、客观性、多样性
-- **算法备案**（第十七条）：具有舆论属性或社会动员能力的，依《算法推荐规定》办理
-- **安全评估**（第十七条）：同上条件下，按国家有关规定开展安全评估
-- **内容标识**：依《深度合成规定》和《标识办法》履行
-- **内容监管**：
-  - 对违法内容及时采取**处置措施**，停止生成、停止传输、消除
-  - 采取模型优化训练等措施进行整改，并向主管部门报告
-  - 建立完善**投诉举报机制**
-- **用户管理**：
-  - 明确并公开服务适用人群、场合、用途
-  - 指导用户科学理性使用
-  - 依法依约履行**个人信息保护义务**
+## Core Duties
 
-### 对使用者
+### On service providers
 
-- 不得生成危害国家安全、破坏民族团结、宣扬暴力淫秽色情等违法信息
+- **Training-data compliance (Article 7)**:
+  - use data and foundation models with **lawful sources**;
+  - where intellectual property is implicated, shall not infringe others' IP rights;
+  - where personal information is implicated, shall obtain individual consent or satisfy another lawful basis under PIPL;
+  - **take effective measures to improve training-data quality**, enhancing authenticity, accuracy, objectivity, and diversity.
+- **Algorithm filing (Article 17)**: where the service has public-opinion attributes or social-mobilization capacity, file under the *Algorithm Recommendation Provisions*.
+- **Security assessment (Article 17)**: under the same conditions, conduct a security assessment as prescribed.
+- **Content labeling**: fulfil under the *Deep Synthesis Provisions* and the *Labeling Measures*.
+- **Content moderation**:
+  - take **remedial measures** against unlawful content in a timely manner: halt generation, halt transmission, delete;
+  - take measures such as further model optimization to rectify, and report to the competent authority;
+  - maintain sound **complaint and reporting channels**.
+- **User management**:
+  - specify and publish the service's target users, contexts, and uses;
+  - guide users toward rational and scientific use;
+  - discharge **personal-information protection duties** in accordance with law and contract.
 
-## 执法与处罚
+### On users
 
-- **主管**：网信办牵头，其他六部门在各自职责内协同
-- **处罚依据**：既有法律阶梯；无专属处罚条款
-- **分类分级监管**：留下监管实施细则的接口（尚未发布完整框架）
+- Shall not generate unlawful content — including content endangering national security, undermining ethnic unity, or promoting violence or obscenity.
 
-## 与其他规则的关系
+## Enforcement and Penalties
 
-- **《深度合成规定》(2023)**：上位 + 平行关系。深度合成规定以**技术**为抓手，
-  本办法以**服务**为抓手；交叉部分主要在显著标识和算法备案
-- **《算法推荐规定》(2022)**：本办法引用其备案程序，形成"一套备案、多法共用"
-  见 [algorithm-recommendation-provisions](/rules/china/algorithm-recommendation-provisions/)
-- **《标识办法》(2025)**：标识义务的技术实施细则
-  见 [biaozhi-banfa](/rules/china/biaozhi-banfa/)
-- **《个人信息保护法》(2021)**：训练数据处理个人信息时交叉适用
-- **TC260 系列标准**：配套安全技术规范（训练数据安全、服务安全评估等）
+- **Competent authorities**: CAC leads; the other six ministries coordinate within their mandates.
+- **Penalty basis**: the existing statutory ladder; no standalone penalty provisions.
+- **Classified and graded supervision**: the Measures leave an interface for detailed implementing rules (no comprehensive framework yet released).
 
-## 争议与解读
+## Relationship with Other Rules
 
-1. **"分类分级监管"的空壳状态**：办法写了这个原则（第三条），但到 2024 年底
-   具体的分类分级规则未发布。实务中合规责任依旧**一刀切**。
-2. **训练数据知识产权的执行落差**：要求"不得侵害"，但对何为"合法来源"留白。
-   头部公司实务中以"合理使用 + 许可协议 + 自建数据集"混用模式应对。
-3. **企业内部豁免的边界**：企业 API 对外提供是否算"向公众"？多大规模算公众？
-   实务中以**是否有独立的 2C 产品**作为切线。
-4. **与各地试点的关系**：北京、上海、深圳的地方 AI 创新试点在合规口径上
-   可能比中央更宽，未正式公开的"沙盒"机制如何与本办法衔接是灰色地带。
+- **Deep Synthesis Provisions (2023)**: both upstream and parallel. The Deep Synthesis Provisions regulate via **technology**; the *Interim Measures* regulate via **service**; the overlap is primarily in conspicuous labeling and algorithmic filing.
+- **Algorithm Recommendation Provisions (2022)**: the Interim Measures incorporate its filing procedure — forming a "one filing system, many rules" structure.
+  See [algorithm-recommendation-provisions](/rules/china/algorithm-recommendation-provisions/).
+- **Labeling Measures (2025)**: the technical implementing rules for the labeling duty.
+  See [biaozhi-banfa](/rules/china/biaozhi-banfa/).
+- **Personal Information Protection Law (2021)**: applies jointly where training data processing touches personal information.
+- **TC260 series of standards**: the supporting security technical specifications (training-data security, service-level security assessment, etc.).
 
-## 原文与翻译
+## Debates and Commentary
 
-| 语言 | 来源 | 链接 |
+1. **The hollow state of "classified and graded supervision"**: the Measures set this out as a principle (Article 3), but as of late 2024 no detailed classification-and-grading rules had been released. In practice compliance remains **one-size-fits-all**.
+2. **Execution gap on training-data IP**: the text requires "no infringement," but leaves "lawful source" undefined. In practice, leading firms rely on a mixed model of fair use + licensed content + in-house datasets.
+3. **Boundaries of the enterprise-internal carve-out**: does an enterprise API offered externally count as "public-facing"? What scale counts as "public"? In practice, firms use the presence of **an independent consumer product** as the dividing line.
+4. **Interface with local pilots**: AI-innovation pilots in Beijing, Shanghai, and Shenzhen may adopt looser compliance postures; how undisclosed "sandbox" mechanisms dovetail with the Measures remains a gray zone.
+
+## Source Text and Translations
+
+| Language | Source | Link |
 | --- | --- | --- |
-| 中文（原文） | 国家网信办 | [cac.gov.cn](http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm) |
-| 中文（归档） | 本站 | [generative-ai-interim-measures-2023-07-13.html](/archives/china/generative-ai-interim-measures-2023-07-13.html) |
+| Chinese (original) | CAC | [cac.gov.cn](http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm) |
+| Chinese (archived copy) | This site | [generative-ai-interim-measures-2023-07-13.html](/archives/china/generative-ai-interim-measures-2023-07-13.html) |
 | English | **China Law Translate** | [chinalawtranslate.com/generative-ai-interim](https://www.chinalawtranslate.com/generative-ai-interim/) |
-| English（结构化） | Regulations.AI | [regulations.ai/.../china-2023-7-generative-ai](https://regulations.ai/regulations/china-2023-7-generative-ai) |
-| English（学术版） | China Aerospace Studies Institute (CASI) | [airuniversity.af.edu 2023-08-07](https://www.airuniversity.af.edu/Portals/10/CASI/documents/Translations/2023-08-07%20ITOW%20Interim%20Measures%20for%20the%20Management%20of%20Generative%20Artificial%20Intelligence%20Services.pdf) |
+| English (structured) | Regulations.AI | [regulations.ai/.../china-2023-7-generative-ai](https://regulations.ai/regulations/china-2023-7-generative-ai) |
+| English (academic version) | China Aerospace Studies Institute (CASI) | [airuniversity.af.edu 2023-08-07](https://www.airuniversity.af.edu/Portals/10/CASI/documents/Translations/2023-08-07%20ITOW%20Interim%20Measures%20for%20the%20Management%20of%20Generative%20Artificial%20Intelligence%20Services.pdf) |
 
-## 版本历史
+## Version History
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2023-04-11 | 《生成式人工智能服务管理办法（征求意见稿）》发布 |
-| 2023-07-13 | 定稿发布（名称增加"暂行"；义务明显缓和） |
-| 2023-08-15 | 生效 |
-| 2026-04-21 | 本站首次归档 |
+| 2023-04-11 | *Measures for the Management of Generative AI Services (Draft for Comment)* released |
+| 2023-07-13 | Final text released (name amended to include "Interim"; duties markedly softened) |
+| 2023-08-15 | Effective |
+| 2026-04-21 | First archived on this site |
 
-## 引用来源
+## Cited Sources
 
-### 一手
-- 官方原文：http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm
-- 征求意见稿（对照参考）：
+### Primary
+- Official text: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm
+- Draft for comment (for comparison):
   https://www.chinalawtranslate.com/gen-ai-draft/
 
-### 主要解读
-- Morrison & Foerster：
+### Major commentary
+- Morrison & Foerster:
   https://www.mofo.com/resources/insights/230724-china-interim-measures-governing-generative-ai
-- Covington Inside Privacy：
+- Covington *Inside Privacy*:
   https://www.insideprivacy.com/artificial-intelligence/key-takeaways-from-chinas-finalized-generative-artificial-intelligence-measures/
-- Bird & Bird：
-  https://www.twobirds.com/en/insights/2023/china/what-you-need-to-know-about-china%E2%80%99s-new-generative-ai-measures
-- Haynes Boone 合规简报：
+- Bird & Bird:
+  https://www.twobirds.com/insights/2023/china/what-you-need-to-know-about-china%E2%80%99s-new-generative-ai-measures
+- Haynes Boone compliance briefing:
   https://www.haynesboone.com/-/media/project/haynesboone/haynesboone/pdfs/alert-pdfs/2023/china-publishes-interim-measures-for-the-management-of-generative-artificial-intelligence-services.pdf
-- 维基百科英文页（含历次修订索引）：
+- Wikipedia (English, with index of revisions):
   https://en.wikipedia.org/wiki/Interim_Measures_for_the_Management_of_Generative_AI_Services
 
-### 相关研究
+### Related research
 
-- **Matt Sheehan** (Carnegie Endowment) — "Tracing the Roots of China's AI Regulations"（2023-07）
-  对草案到定稿的演进分析，是英文学界最系统的一手研究
-- **Paul Triolo** (DigiChina / Albright Stonebridge) — 对部委联合立法的制度分析
-- **Helen Toner / Jeffrey Ding** — 将暂行办法置于"敏捷治理"框架下的比较政治经济学解读
-- **张凌寒**（中国政法大学）— 对部门规章位阶与"暂行"立法技艺的法理批评
-- **CAIDP** (Center for AI and Digital Policy) — 季度报告对暂行办法国际影响的评估
+- **Matt Sheehan** (Carnegie Endowment) — "Tracing the Roots of China's AI Regulations" (2023-07). Analysis of the evolution from draft to final text; the most systematic first-hand English-language work.
+- **Paul Triolo** (DigiChina / Albright Stonebridge) — institutional analysis of multi-ministry joint rulemaking.
+- **Helen Toner / Jeffrey Ding** — comparative political-economy readings placing the Interim Measures within the "agile governance" frame.
+- **Zhang Linghan** 张凌寒 (China University of Political Science and Law / CUPL) — legal-theoretic critique of the hierarchy of departmental rules and the draftsmanship of "Interim" (*暂行*) legislation.
+- **CAIDP** (Center for AI and Digital Policy) — quarterly reports assessing the international influence of the Interim Measures.
 
 ---
 
-**引用本页**（生成于 2026-04-21）：
-> Comparative AI. 《生成式人工智能服务管理暂行办法》解读. 访问于 YYYY-MM-DD.
+**Cite this page** (generated 2026-04-21):
+> Comparative AI. Commentary on the *Interim Measures for the Management of Generative AI Services*. Accessed YYYY-MM-DD.
 > https://comparativeai.org/rules/china/generative-ai-interim-measures/

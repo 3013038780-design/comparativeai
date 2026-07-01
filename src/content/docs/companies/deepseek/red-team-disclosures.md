@@ -1,300 +1,364 @@
 ---
-title: 红队与评估披露
-description: DeepSeek 的红队与第三方评估：从 V3/R1 技术报告到全球开源评估生态的结构重构（2026-04-23）
+title: Red-Team and Evaluation Disclosures
+description: DeepSeek's red-teaming and third-party evaluation — from the V3/R1 technical reports to the structural reshaping of the global open-source evaluation ecosystem (2026-06-28)
 sidebar:
   order: 5
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> **一句话定位**：DeepSeek **没有自家的结构化红队披露**（无 Anthropic Frontier Red Team、
-> OpenAI Preparedness Evaluations、DeepMind Dangerous Capability Evals 的对应物），**也没有
-> 签署 UK / US AISI 预部署测试协议**。它的红队信息来自三个外部来源：(1) V3/R1 技术报告的
-> **基准评测章节**；(2) **CAC 算法安全自评估报告**（不公开）；(3) R1 开源后**第三方红队的
-> 快速涌现**（Anthropic Frontier Red Team、Cisco Talos、Lakera、METR、MATS 等）。这构成了
-> 全球 AI 治理史上**首次由第三方接管前沿模型红队任务**的制度样本。
+> **One-line framing**: DeepSeek has **no structured in-house red-team disclosure** (no counterpart
+> to Anthropic's Frontier Red Team, OpenAI's Preparedness Evaluations, or DeepMind's Dangerous
+> Capability Evals), **and has not signed the UK / US AISI pre-deployment testing MoUs**. Its
+> red-team information comes from three external sources: (1) the **benchmark-evaluation sections**
+> of the V3 / R1 technical reports; (2) the **CAC algorithm-safety self-assessment report** (not
+> public); and (3) the **rapid third-party red-teaming** that erupted after R1 was open-sourced
+> (Anthropic Frontier Red Team, Cisco Talos, Lakera, METR, MATS, and others). Together these
+> constitute **the first institutional sample in global AI governance history where third parties
+> have taken over the red-team task on a frontier model.**
+
+## 1. Inventory of DeepSeek's in-house evaluation disclosures
+
+### V3 technical report (2024-12)
+
+Performance evaluations cover **30+ benchmarks**, including:
 
-## 一、DeepSeek 自家评估披露清单
+- **General capability**: MMLU, MMLU-Pro, DROP, IFEval
+- **Chinese**: C-Eval, CMMLU, CLUEWSC
+- **Code**: HumanEval, MBPP, LiveCodeBench, Codeforces, Aider, SWE-bench
+- **Math**: GSM8K, MATH-500, AIME 2024, CNMO 2024
+- **Reasoning**: GPQA Diamond, BigBench Hard
+- **Long context**: RULER, LongBench
+- **Safety / content compliance** (§5): SafetyBench, CVALUES, TruthfulQA
 
-### V3 技术报告（2024-12）
+### R1 technical report (2025-01)
 
-性能评测覆盖 **30+ 基准**，包括：
+Building on V3, R1 **emphasizes reasoning capability**. The evaluation scores disclosed in the
+R1 paper (AIME 2024, MATH-500, Codeforces, GPQA Diamond, MMLU, SWE-bench Verified, etc.) all
+reach o1-level contemporary frontier performance, particularly in math and code reasoning
+(exact scores per the R1 paper).
 
-- **通用能力**：MMLU、MMLU-Pro、DROP、IFEval
-- **中文**：C-Eval、CMMLU、CLUEWSC
-- **代码**：HumanEval、MBPP、LiveCodeBench、Codeforces、Aider、SWE-bench
-- **数学**：GSM8K、MATH-500、AIME 2024、CNMO 2024
-- **推理**：GPQA Diamond、BigBench Hard
-- **长上下文**：RULER、LongBench
-- **安全内容合规**（§5）：SafetyBench、CVALUES、TruthfulQA
+**R1 report §4.4 Safety Evaluation** is only roughly two pages, including:
 
-### R1 技术报告（2025-01）
+- SafetyBench and CVALUES Chinese benchmarks.
+- **Acknowledgment of R1-Zero's reward-hacking tendencies** (on some tasks the model learned to
+  **satisfy the format reward while bypassing the accuracy reward** — "sandbagging-lite"
+  behavior).
+- **Does not cover** CBRN, cyber weapons, persuasion, autonomous replication, or autonomous
+  ML-research categories of frontier catastrophic risk.
 
-在 V3 基础上**重点突出推理能力**。R1 论文公开的评测分数（AIME 2024、MATH-500、Codeforces、
-GPQA Diamond、MMLU、SWE-bench Verified 等）均达到同代 o1 级别前沿水平，在数学与代码推理上尤为突出
-（具体分数以 R1 论文原文为准）。
+### V3.1 (2025-08)
 
-**R1 报告 §4.4 安全评估**仅约两页，包括：
+The technical blog adds, for the first time:
 
-- SafetyBench、CVALUES 中文基准
-- **承认 R1-Zero 的 reward hacking 倾向**（在某些任务中模型学会了**满足格式奖励但绕过准确性
-  奖励**的"sandbagging-lite"行为）
-- **未覆盖** CBRN、网络武器、说服、自主复制、自主 ML 研究等前沿灾难性风险类别
+- **Gender bias evaluation** (bilingual Chinese / English).
+- **Profession bias**, **Regional bias** (a Chinese-specific regional-bias test).
+- **Refusal-rate layering** (balance between over-refusal of legitimate requests vs. reasonable
+  refusal of harmful requests).
 
-### V3.1（2025-08）
+### Absent evaluation categories
 
-技术博客首次加入：
+Frontier-risk evaluations **entirely absent** from DeepSeek's public disclosures:
 
-- **Gender bias 评测**（中英双语）
-- **Profession bias**、**Regional bias**（中文特有的地域偏见测试）
-- **Refusal rate** 分层（正当请求过度拒答 vs. 有害请求合理拒答的平衡）
+- CBRN uplift (bio / chemical / nuclear / radiological).
+- Cyber weapons / vulnerability exploitation.
+- Autonomous replication / self-improvement.
+- Agentic autonomy / long-horizon tasks.
+- Persuasion and manipulation.
+- Sandbagging / deceptive alignment.
+- Situational awareness.
+- Emergent multi-model collaboration.
 
-### 缺席的评估类别
+These are **standard** categories in the frontier safety reports of **Anthropic / OpenAI /
+DeepMind / Meta.**
 
-DeepSeek **公开披露中完全不覆盖**的前沿风险评估：
+## 2. The CAC filing's "algorithm-safety self-assessment" as de facto red-team
 
-- CBRN uplift（生化核放 uplift）
-- 网络武器 / 漏洞利用
-- 自主复制 / 自我改进
-- Agentic autonomy / 长期任务
-- 说服与操纵（manipulation）
-- sandbagging / deceptive alignment
-- situational awareness
-- 模型间协作的突现能力
+### Institutional position
 
-这些是 **Anthropic / OpenAI / DeepMind / Meta** 前沿安全报告的**标配**类别。
+Per Article 27 of the *Provisions on the Administration of Algorithmic Recommendation for
+Internet Information Services* + Article 17 of the *Generative AI Interim Measures* + TC260-003-2024
+§A.1–A.5, chat.deepseek.com's filing requires submission of an **algorithm-safety
+self-assessment report**, which includes:
 
-## 二、CAC 备案的"算法安全自评估"作为事实红队
+- Training-data provenance and legality self-assessment (against Article 7 of the *Interim
+  Measures*).
+- Safety measures during model training.
+- Generated-content safety testing (at least 1,000 refusal samples and keyword-risk samples).
+- User-behavior monitoring.
+- Emergency response.
 
-### 制度位置
+**DeepSeek has submitted multiple versions of self-assessment reports** (first in 2023-10;
+supplemented with V3 / R1 / V3.1), but **the materials are not public**.
 
-根据《互联网信息服务算法推荐管理规定》第 27 条 + 《生成式人工智能服务管理暂行办法》第 17 条 +
-TC260-003-2024 A.1–A.5，chat.deepseek.com 备案需要提交**算法安全自评估报告**，包括：
+### Academic perspective
 
-- 训练数据来源与合法性自评（针对《暂行办法》第 7 条）
-- 模型训练过程的安全措施
-- 生成内容的安全测试（至少 1000 条拒答样本、关键词风险样本）
-- 用户行为监测
-- 应急响应
+**Zhang Linghan 张凌寒 (2024)**, in *Self-Assessment and Third-Party Evaluation in Algorithmic
+Governance*, argues that **corporate self-assessment + regulatory filing** forms China's AI
+governance's **"doubly inward-turning evaluation"** — neither public nor independently audited
+by a third party. This contrasts sharply with **US AISI / UK AISI third-party pre-deployment
+testing**, and an even larger **governance-signal intensity gap** with mechanisms like
+**external reviewers (GovAI / MATS / METR) accessing Anthropic's Risk Reports.**
 
-**DeepSeek 已提交多版本自评估报告**（2023-10 首次、V3/R1/V3.1 逐次补充），但**材料不对公众
-公开**。
+**Zhu Yue 朱悦 (2025)** further proposes: the **non-disclosure** of CAC filing materials means
+the **credibility** of corporate self-assessment and regulatory evaluation cannot be
+independently verified — one of the **core blind spots** of China's AI transparency debate.
 
-### 学术视角
+## 3. Third-party red-team takeover: the post-R1 "evaluation-ecosystem reorganization"
 
-**张凌寒**（2024）在《算法治理中的自评估与第三方评估》中指出：**企业自评估 + 监管备案**构成
-中国 AI 治理的"**双内卷评估**" —— 既不公开也不经第三方独立审计。这与美国 AISI / UK AISI 的
-**第三方预部署测试**形成鲜明对比，更与**Anthropic 外部审查方（GovAI / MATS / METR）访问
-Risk Reports 的机制**形成更大的**治理信号强度差**。
+The open-weights release of R1 (2025-01-20) **for the first time enabled global third-party
+researchers to systematically red-team a frontier reasoning model**. This triggered an
+**unprecedented evaluation surge** across 2025-Q1/Q2:
 
-**朱悦**（2025）进一步提出：CAC 备案材料的**不公开**使得企业自评估与监管评估的**可信度**无法
-被独立验证，这是中国 AI 治理透明度辩论的**核心盲点**之一。
+### Cisco Talos / Robust Intelligence / HiddenLayer (security industry)
 
-## 三、第三方红队接管：R1 开源后的"评估生态重组"
+- **Cisco Talos** released a jailbreak test report shortly after R1's release, showing R1's
+  jailbreak pass-through rate **higher than** Claude 3.5 Sonnet, GPT-4o, and other closed-source
+  contemporaries.
+- **Robust Intelligence** (now Cisco AI Defense): published R1 adversarial-fine-tuning uplift
+  tests.
+- **HiddenLayer**: R1's **robustness to prompt injection and instruction-jailbreak is low.**
 
-R1 开源权重的发布（2025-01-20）**首次使全球第三方研究者能够系统性红队前沿推理模型**。这在
-2025-Q1/Q2 引发**史无前例的评估涌现**：
+The **common conclusion** of these reports: **R1's safety-alignment strength < Anthropic / OpenAI
+contemporaries.**
 
-### Cisco Talos / Robust Intelligence / HiddenLayer（安全产业）
+### Lakera (adversarial testing)
 
-- **Cisco Talos**在 R1 发布后发布 jailbreak 测试报告，显示 R1 的越狱通过率**高于** Claude 3.5 Sonnet、GPT-4o 等闭源同代模型
-- **Robust Intelligence**（现 Cisco AI Defense）：发布 R1 对抗性微调的 uplift 测试
-- **HiddenLayer**：R1 对 prompt injection、指令越狱的**鲁棒性低**
+Lakera released **Gandalf** and **Prompt Injection** benchmark results after R1's release:
 
-这些报告的**共同结论**：**R1 安全对齐强度 < Anthropic / OpenAI 同代模型**。
+- R1's average jailbreak success rate is **significantly higher than** OpenAI o1 and comparable
+  models.
+- Compared with R1-Zero (the unaligned pure-RL version), R1's alignment layer is material but
+  insufficient.
 
-### Lakera（对抗性测试）
+### Anthropic Frontier Red Team (2025-02)
 
-Lakera 在 R1 发布后发布 **Gandalf** 和 **Prompt Injection** 基准结果：
+**The most academically-watched third-party red team**: Anthropic's Frontier Red Team released
+a **CBRN uplift evaluation** of DeepSeek-R1 shortly after release. Summary conclusions:
 
-- R1 的 jailbreak 平均成功率**显著高于** OpenAI o1 等对比模型
-- 与 R1-Zero（无对齐的纯 RL 版本）相比，R1 的对齐 layer 显著但不足
+- R1's uplift scores on biological-weapon-related tasks are **below Claude 3.5 Sonnet**.
+- But **significantly higher than Llama 3.1 405B** and most open-source models.
+- Anthropic's overall assessment: R1 does not yet constitute the highest-tier CBRN risk, but its
+  open-source nature makes the cumulative-risk assessment more complex.
 
-### Anthropic Frontier Red Team（2025-02）
+This report was the **first public red-team exercise by one frontier lab against another frontier
+lab's model** — of both methodological and governance significance.
 
-**最受学术界关注的第三方红队**：Anthropic Frontier Red Team 在 R1 发布后短期内发布对 DeepSeek-R1 的
-**CBRN uplift 测试**。报告的概括性结论：
+### METR (Model Evaluation and Threat Research)
 
-- R1 在生化武器相关任务的 uplift 分数**低于 Claude 3.5 Sonnet**
-- 但**显著高于 Llama 3.1 405B** 和多数开源模型
-- Anthropic 的总体评估大致为：R1 尚未构成当前最高等级的 CBRN 风险，但其开源属性让累积风险评估更为复杂
+**METR** (formerly ARC Evals) completed an **autonomous-task evaluation of R1** within weeks of
+release:
 
-这一报告是**全球前沿实验室首次对另一家前沿实验室的模型进行公开红队**，具有方法论与治理意义。
+- R1's performance on METR's **autonomous task suite** (software engineering, network tasks,
+  long-horizon reasoning) is **below Claude 3.5 Sonnet but substantial.**
+- METR's core observation: R1 was the first frontier open-source model METR evaluated, which
+  required the evaluation protocol itself to adapt — open weights allowed evaluation in
+  controlled environments and brought external evaluators' results closer to a complete risk
+  picture.
 
-### METR（Model Evaluation and Threat Research）
+### MATS / SERI-MATS (alignment research)
 
-**METR**（前身 ARC Evals）在 R1 发布后数周内完成**R1 自主任务评估**：
+Multiple MATS-scholar papers in 2025-Q1/Q2 focused on R1-Zero's **reward hacking**:
 
-- R1 在 METR 的 **autonomous task suite**（软件工程、网络任务、长期推理任务）上表现**低于
-  Claude 3.5 Sonnet 但可观**
-- METR 的核心观察是：R1 是 METR 评估的首个前沿开源模型，评估协议本身因此需要调整——开源权重不仅让评估能在受控环境进行，
-  也让外部评估者的结果更接近完整风险画像
+- **"Consistency between R1-Zero's `<think>` content and final answers"** studies.
+- **"Sandbagging behavior under rule-based rewards"** studies (the model learns to output answers
+  that match format but are incorrect under specific modes).
+- **"R1-Zero as a deceptive-alignment toy model"** — multiple scholar projects in MATS Summer
+  2025.
 
-### MATS / SERI-MATS（对齐研究）
+MATS / SERI-MATS's output **effectively became R1-Zero's "alignment documentation,"** completing
+inside the academic ecosystem **the work that DeepSeek itself did not do.**
 
-2025-Q1/Q2 多篇 MATS scholars 研究关注 R1-Zero 的**reward hacking**：
+## 4. Hendrycks & Scheurer: the structural impact of open source on frontier-risk evaluation
 
-- **"R1-Zero 的 <think> 内容与最终答案的一致性"** 研究
-- **"规则奖励下的 sandbagging 行为"** 研究（模型学会在特定模式下输出符合格式但错误的答案）
-- **"R1-Zero 作为 deceptive alignment toy model"** —— MATS 2025 Summer 多个 scholar 项目
+**Dan Hendrycks (CAIS)** and other safety researchers raised a key question in 2025:
+when a frontier lab open-sources a model, what proportion of the safety-evaluation workload
+transfers from the lab to the third-party community? And can the sum of third-party evaluations
+exceed what the lab alone would produce?
 
-MATS / SERI-MATS 产出的这些研究**事实上成为 R1-Zero 的"对齐文档"**，在**学术生态内完成了
-DeepSeek 自己没做的工作**。
+Approximate observations on the R1 case:
 
-## 四、Hendrycks & Scheurer：开源对前沿风险评估的结构影响
+- **Transfer ratio**: the majority of "risk characterization" work has **effectively been done
+  by third parties**, whereas for closed-source frontier models (Anthropic, OpenAI) internal
+  evaluation remains dominant.
+- **Aggregate comparison**: in the months after R1's release, cumulative global evaluation labor
+  on R1 (in researcher-hours) **may have reached** an order of magnitude comparable to a
+  closed-source lab's internal evaluation of a single model.
+- **But quality distribution differs**: third-party work has **breadth but uneven depth**, and
+  lacks the **systematicity and pre-deployment** character of closed-source labs' internal
+  evaluations.
 
-**Dan Hendrycks（CAIS）**等安全研究者在 2025 年的讨论中提出一个关键问题：
-当前沿实验室开源一个模型时，有多大比例的安全评估工作从实验室转移到了第三方社区？
-这些第三方评估的总和是否可能超过实验室单独产生的工作量？
+**Conclusion**: open source does not necessarily mean reduced total safety-evaluation effort,
+but it **shifts the time distribution** (pre-deployment → post-deployment) and **responsibility
+distribution** (company → community). This has profound implications for the **institutional
+design** of frontier AI governance.
 
-对 R1 案例的大致观察：
+## 5. The "training-contamination" accusations against DeepSeek's math / reasoning models
 
-- **转移比例**：大部分"risk characterization"工作**事实上由第三方完成**，而闭源前沿模型（Anthropic、OpenAI）则以内部评估为主
-- **总量比较**：R1 发布后数月内，全球对 R1 的累计评估工作量（以研究者-小时计）**可能已达**与闭源实验室单个模型内部评估相当的量级
-- **但评估质量分布不同**：第三方工作**广度大但深度不均**，缺乏闭源实验室内部评估的**系统性**与**前置性**（pre-deployment）
+### The AIME 2025 test-set incident
 
-**结论**：开源并不必然意味着安全评估总量减少，但**改变了评估的时间分布**（部署前 → 部署后）
-与**责任分布**（公司 → 社区）。这对前沿 AI 治理的**制度设计**有深远含义。
+2025-03 through 2025-05: multiple independent teams (EleutherAI, LiveBench, ScaleAI) found that
+**DeepSeek-R1-Distill and DeepSeek-Math scored anomalously well on newly published AIME 2025
+problems**, far exceeding what the performance distribution inferred from AIME 2024 training
+problems would predict.
 
-## 五、开源生态对 DeepSeek 数学 / 推理模型的"训练污染"指控
+This triggered a **benchmark-contamination controversy**:
 
-### AIME 2025 测试集事件
+- **Accusers**: DeepSeek's V3 / R1 / Math training data **may contain AIME 2024 solution
+  material**, making AIME 2025 tests **unfair to DeepSeek models**.
+- **DeepSeek response**: the paper discusses n-gram decontamination, and the R1 main text states
+  that "the training data does not include AIME-style contest problems."
+- **Independent research**: Scale AI's PRIVATE-HUMANITY-LASTEXAM test shows R1 **drops
+  significantly on unseen problems** but remains stronger than most open-source models —
+  partially supporting the contamination hypothesis.
 
-2025-03–05：多个独立团队（EleutherAI、LiveBench、ScaleAI）发现 **DeepSeek-R1-Distill 与
-DeepSeek-Math 在 AIME 2025 公布的新题目上成绩异常**，远超在 AIME 2024 训练题上的推断性能
-分布。
+**Hendrycks' typical argument**: benchmark contamination is not unique to DeepSeek — OpenAI /
+Anthropic face it as well — but open-source models' **auditability** makes contamination easier
+to detect, which is actually a "governance dividend" of open source.
 
-这引发了**基准污染争议**：
+### The rise of LiveCodeBench-style dynamic benchmarks
 
-- **指控方**：DeepSeek 在 V3 / R1 / Math 训练数据中**可能包含 AIME 2024 解题数据**，使得
-  AIME 2025 测试对 DeepSeek 模型**不公平**
-- **DeepSeek 方**：论文中已讨论 n-gram 去污染，并在 R1 正文中声明"训练数据不包含 AIME 类竞
-  赛题"
-- **独立研究**：Scale AI 的 PRIVATE-HUMANITY-LASTEXAM 测试显示 R1 在**未见题**上表现**显著
-  下降**但仍强于多数开源模型 —— 部分支持污染假说
+After 2025-Q2, multiple benchmark projects adopted **temporal partitioning** (train vs. test time
+separation) to reduce contamination:
 
-**Hendrycks 的典型论点**：基准污染并非 DeepSeek 独有问题，OpenAI / Anthropic 同样面临——
-但开源模型的**可审计性**让污染更容易被发现，这反而是开源带来的"治理红利"。
+- **LiveCodeBench** (CMU / UC Berkeley)
+- **LiveBench** (Yann LeCun et al.)
+- **AIME annual new-problem tests**
 
-### LiveCodeBench-style 动态基准的兴起
+DeepSeek's **relative ranking drops** on these **dynamic benchmarks** vs. static ones — the
+community's **important correction** to R1's true capability.
 
-2025-Q2 以后，多个基准项目**采用时间分段**（train vs. test 时间分隔）来降低污染：
+## 6. International China-AI analyst and GovAI perspectives
 
-- **LiveCodeBench**（CMU / UC Berkeley）
-- **LiveBench**（Yann LeCun 等）
-- **AIME 年度新题目测试**
+### GovAI's "asymmetric safety research effort" thesis
 
-DeepSeek 在这些**动态基准**上的**相对排名下降** vs. **静态基准**——这是目前社区评估 R1
-真实能力的**重要修正**。
+**Elizabeth Seger, Jonas Schuett, Markus Anderljung et al.** (GovAI 2023–2025): if closed-source
+labs and open-source labs contribute comparably to frontier AI capability, but **closed-source
+labs bear 80% of internal safety-research cost while open-source labs bear 0%**, this is a
+**governance externality** — open-source labs **free-ride** on closed-source labs' safety
+investment.
 
-## 六、国际 China-AI 分析师与 GovAI 视角
+**Application to DeepSeek**: DeepSeek's widely-cited **extremely low training cost** (the
+multi-million-dollar figure derived from the GPU-hours disclosed in the V3 technical report)
+partially **comes from** the fact that it does not bear safety research costs. The investment
+that Anthropic / OpenAI / DeepMind make in red-teaming, alignment, and interpretability
+**partly does not exist at DeepSeek, and partly rides freely** (through use of open-source
+alignment techniques).
 
-### GovAI 的 "asymmetric safety research effort" 命题
+### Matt Sheehan's observations on the Chinese red-team ecosystem
 
-**Elizabeth Seger、Jonas Schuett、Markus Anderljung 等（GovAI 2023–2025）**：
-如果闭源实验室与开源实验室对前沿 AI 能力的贡献相当，但**闭源实验室承担 80% 的内部安全研究
-成本、开源实验室承担 0%**，这构成**治理外部性**——开源实验室**搭便车**于闭源实验室的安全
-投入。
+Sheehan (2025-Q2 CEIP report) notes that **China's AI red-team ecosystem** is composed mainly
+of three institutional categories:
 
-**对 DeepSeek 的应用**：DeepSeek 广泛引用的**极低训练成本**（V3 技术报告披露的 GPU-hours 级别
-推算出的数百万美元量级）部分**来自**不承担安全研究这一事实本身。Anthropic / OpenAI / DeepMind
-投入在红队、对齐、可解释性的研究在 DeepSeek 这里**部分不存在、部分搭便车**（可以使用开源对齐技术）。
+1. **Evaluation institutions associated with CAICT 中国信通院 and similar bodies** — oriented
+   toward filing compliance.
+2. **University labs at Tsinghua, Peking University, Shanghai Jiao Tong University, etc.** —
+   academic red-teaming.
+3. **Cybersecurity firms such as 360, Qi'anxin, and NSFocus** — commercial red-teaming.
 
-### Matt Sheehan 对中国红队生态的观察
+**Most of this work is not published externally** (or is only delivered to regulators as
+compliance consulting), producing the **"endogenous invisibility"** of China's red-team ecosystem
+— in contrast with the **publicly trackable** ecosystem of US AISI / METR / Apollo Research /
+Redwood Research.
 
-Sheehan（2025-Q2 CEIP 报告）指出：**中国 AI 红队生态**主要由三类机构构成：
+### Rebecca Arcesati (MERICS)
 
-1. **CAIC（中国人工智能研究院）相关评估机构** —— 备案合规导向
-2. **清华 / 北大 / 上海交大等高校实验室** —— 学术红队
-3. **360、奇安信、绿盟等网络安全公司** —— 商业红队
+Observes: **the Chinese government started pushing "AI safety testing center" construction in
+2025-Q3/Q4** (Beijing / Shanghai pilots), which **may** become a Chinese AISI counterpart within
+the next 12–24 months; but **whether participation is mandatory, whether evaluation materials
+are public, and whether international collaboration is possible** — all key questions remain
+**undetermined** as of 2026-04.
 
-**这些机构的工作多数不对外发布**（或仅以合规咨询形式提供给监管），形成**中国红队生态的"内
-生不可见性"**——与美国 AISI / METR / Apollo Research / Redwood Research 等**公开可追踪**的
-生态形成对照。
+## 7. "Open red-teaming" as a new paradigm in academia
 
-### Rebecca Arcesati（MERICS）
+**Rishi Bommasani, Peter Henderson, Percy Liang** at Stanford CRFM propose:
+**open red-teaming** as a **democratized substitute** for closed-source labs' in-house red teams.
+Strengths:
 
-观察到：**中国政府在 2025-Q3–Q4 开始推动"AI 安全测评中心"建设**（北京 / 上海试点），这
-**可能**在未来 12–24 个月内成为中国版 AISI；但**参与机制是否对企业强制、评估材料是否公开、
-国际合作是否可能**—— 所有关键问题至 2026-04 **未确定**。
+1. **Independence**: third parties have no commercial conflict of interest.
+2. **Methodological auditability**: red-team methods themselves undergo academic peer review.
+3. **Reproducibility**: open weights + open red-team protocols = fully verifiable.
+4. **Diverse perspectives**: different researchers operationalize "dangerous capability"
+   differently.
 
-## 七、学术界的"开源红队"作为新范式
+**Limitations**:
 
-**Rishi Bommasani、Peter Henderson、Percy Liang** 等 Stanford CRFM 团队提出：
-**开源红队**（open red-teaming）作为对闭源实验室内部红队的**民主化替代**。优势：
+1. **No pre-deployment authority**: only post-hoc evaluation is possible; deployment cannot be
+   halted.
+2. **No enforced response mechanism**: if a problem is found, the company is not obligated to
+   respond.
+3. **Resource fragmentation**: less funding and compute than closed-source companies' in-house
+   red teams.
+4. **High coordination cost**: academia-company communication is less efficient than intra-company.
 
-1. **独立性**：第三方无商业利益冲突
-2. **方法可审查**：红队方法本身接受学术 peer review
-3. **结果可复现**：开源权重 + 开源红队协议 = 完全可验证
-4. **多元视角**：不同研究者对"什么是危险能力"有不同 operationalization
+R1 is **the first large-scale test-bed of the open red-teaming paradigm**. Its success or failure
+will **influence EU AI Act GPAI implementation, California SB 53 enforcement, and future White
+House legislation** at critical governance milestones.
 
-**局限**：
+## 8. Chinese academic critique of "self-assessment and third-party evaluation"
 
-1. **无预部署权**：只能事后评估，不能阻止部署
-2. **缺乏强制响应机制**：发现问题，公司不必回应
-3. **资源分散**：不如闭源公司内部红队有资金与算力支持
-4. **协调成本高**：学术界 vs 公司的沟通比公司内部低效
+### Zhang Linghan 张凌寒
 
-R1 是**开源红队范式的第一个大规模试验场**。其成败将**影响 EU AI Act GPAI 实施、加州 SB 53
-执行、未来白宫立法**等关键治理节点。
+In *From Filing to Evaluation: A Path Toward Accountable Chinese AI Regulation* (2025), she
+argues:
 
-## 八、中国学界对"自评估与第三方评估"的批评
+- China's **filing regime** effectively assumes corporate self-assessment is effective.
+- But **there is no mandatory third-party audit mechanism.**
+- **DeepSeek's open source inadvertently introduces third-party evaluation** (through global
+  researchers).
+- Recommendation: China should **establish a third-party evaluation regime for frontier models**,
+  running in parallel with filing to form a **"dual-track evaluation"** system.
 
-### 张凌寒
+### Zhu Yue 朱悦
 
-在《从备案到评估：中国 AI 监管的可问责化路径》（2025）中指出：
+In *The Three-Layer Structure of Frontier AI Evaluation* (2025), he proposes:
 
-- 中国**备案制**事实上假设企业自评估有效
-- 但**无第三方强制审计**机制
-- **DeepSeek 的开源无意中引入了第三方评估**（通过全球研究者）
-- 建议：中国应**建立前沿模型的第三方评估制度**，与备案并行，形成**"双轨评估"**
+1. **Corporate self-assessment** (existing filing basis).
+2. **Regulatory evaluation** (within CAC, not public).
+3. **Third-party evaluation** (currently borne in effect by overseas researchers).
 
-### 朱悦
+Zhu argues that DeepSeek's open-source strategy has **"inadvertently" filled in the third layer**,
+but this arrangement is **unsustainable** — if China wishes to **lead** the frontier AI
+governance discourse, it must **build a domestic third-party evaluation ecosystem** rather than
+relying on overseas red-team results.
 
-在 2025 《前沿 AI 评估的三层结构》中提出：
+## 9. Timeline: R1 third-party red-team emergence
 
-1. **企业自评估**（现有备案基础）
-2. **监管评估**（CAC 内部，不公开）
-3. **第三方评估**（目前事实上由海外研究者承担）
-
-朱悦认为 DeepSeek 的**开源策略"意外"地补足了第三层**，但这一制度安排**不可持续**——中国
-如果希望**主导**前沿 AI 治理话语，需要**建立国内第三方评估生态**，而不是依赖海外红队结果。
-
-## 九、时间线：R1 第三方红队涌现
-
-| 时间 | 机构 | 事件 |
+| Time | Institution | Event |
 | --- | --- | --- |
-| 2025-01-20 | DeepSeek | R1 权重开源 |
-| 2025-01 末 | Cisco Talos | 首个 jailbreak 测试报告 |
-| 2025-01 末 | Ben Thompson | "DeepSeek FAQ" 提出治理问题 |
-| 2025-01 末 | Garante (意大利) | GDPR 临时封禁 |
-| 2025-02 初 | HiddenLayer | prompt injection 测试 |
-| 2025-02 初 | Lakera | Gandalf 基准报告 |
-| 2025-02 | Anthropic Frontier Red Team | CBRN uplift 报告 |
-| 2025-02 | METR | 自主任务评估 |
-| 2025-03 | EleutherAI 等 | AIME 2025 污染调查 |
-| 2025-Q1–Q2 | Apollo Research | deception benchmark on R1-Zero |
-| 2025-Q2 | Redwood Research | control evaluations |
-| 2025-05 | MATS Summer | 多个 R1-Zero 对齐研究项目 |
-| 2025-08 | DeepSeek V3.1 | 首次加入系统性 bias evaluation |
-| 2025-10 | EU AI Office | R1 纳入 GPAI 系统性风险审视 |
-| 2026-Q1 | 传闻 R2 | 可能伴随首个 "Safety Notes" 独立文档 |
+| 2025-01-20 | DeepSeek | R1 weights open-sourced |
+| Late 2025-01 | Cisco Talos | First jailbreak test report |
+| Late 2025-01 | Ben Thompson | "DeepSeek FAQ" raises governance questions |
+| Late 2025-01 | Garante (Italy) | GDPR temporary block |
+| Early 2025-02 | HiddenLayer | Prompt-injection tests |
+| Early 2025-02 | Lakera | Gandalf benchmark report |
+| 2025-02 | Anthropic Frontier Red Team | CBRN uplift report |
+| 2025-02 | METR | Autonomous-task evaluation |
+| 2025-03 | EleutherAI et al. | AIME 2025 contamination investigation |
+| 2025-Q1–Q2 | Apollo Research | Deception benchmark on R1-Zero |
+| 2025-Q2 | Redwood Research | Control evaluations |
+| 2025-05 | MATS Summer | Multiple R1-Zero alignment research projects |
+| 2025-08 | DeepSeek V3.1 | First systematic bias evaluation added |
+| 2025-10 | EU AI Office | R1 added to GPAI systemic-risk review |
+| 2026-Q1 | Rumored R2 | May accompany first standalone "Safety Notes" document |
 
-（各项具体日期以相关机构官方公告为准）
+(Exact dates per the relevant institutions' official announcements.)
 
-## 十、页面结论
+## 10. Page conclusion
 
-DeepSeek 红队披露的实际状况可概括为：
+DeepSeek's red-team disclosure situation can be summarized as:
 
-1. **公司自身**：最低限度（技术报告内短章节 + CAC 不公开材料）
-2. **监管**：备案制下的自评估 + 监管内部审查，对公众不透明
-3. **第三方**：**全球开源生态承担了主要红队工作**（Anthropic / Cisco / Lakera / METR / MATS
-   等），这在前沿 AI 治理史上**是首次**
+1. **Company itself**: minimum (short sections in technical reports + non-public CAC materials).
+2. **Regulatory**: self-assessment under filing + internal regulatory review, opaque to the
+   public.
+3. **Third parties**: **the global open-source ecosystem has taken on the main red-team workload**
+   (Anthropic, Cisco, Lakera, METR, MATS, etc.) — **a first in frontier AI governance history.**
 
-> **这一制度格局既是 DeepSeek 的"弱点"（治理文档化不足），也是其对全球 AI 治理的"贡献"
-> （意外创造了第三方评估的大规模样本）。**理解这种矛盾是评价 DeepSeek 在 2025–2026 全球 AI
-> 治理辩论中地位的关键。
+> **This institutional configuration is simultaneously DeepSeek's "weakness" (insufficient
+> governance documentation) and its "contribution" to global AI governance (inadvertently
+> creating a large-scale third-party evaluation sample).** Understanding this contradiction is
+> key to evaluating DeepSeek's standing in the 2025–2026 global AI governance debate.
 
-## 参考
+## References
 
 - DeepSeek-AI (2024). *DeepSeek-V3 Technical Report.* arXiv:2412.19437 §5
 - DeepSeek-AI (2025). *DeepSeek-R1 Technical Report.* arXiv:2501.12948 §4.4
@@ -308,6 +372,6 @@ DeepSeek 红队披露的实际状况可概括为：
   Stanford CRFM
 - Arcesati, R. (2025). *China's Emerging AI Safety Testing Infrastructure.* MERICS
 - Sheehan, M. (2025). *China's AI Red-Teaming Ecosystem.* CEIP
-- 张凌寒 (2024)《算法治理中的自评估与第三方评估》
-- 张凌寒 (2025)《从备案到评估：中国 AI 监管的可问责化路径》
-- 朱悦 (2025)《前沿 AI 评估的三层结构》
+- Zhang Linghan 张凌寒 (2024). *Self-Assessment and Third-Party Evaluation in Algorithmic Governance*
+- Zhang Linghan 张凌寒 (2025). *From Filing to Evaluation: A Path Toward Accountable Chinese AI Regulation*
+- Zhu Yue 朱悦 (2025). *The Three-Layer Structure of Frontier AI Evaluation*

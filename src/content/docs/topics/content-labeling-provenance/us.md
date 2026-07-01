@@ -1,40 +1,37 @@
 ---
-title: 美国 — 生成内容标识
-description: 美国对 AI 生成内容标识的联邦立法进展与州法差异
+title: United States — Content Labeling and Provenance
+description: Federal-level legislative progress and state-level variation in AI-generated-content labeling in the United States.
 sidebar:
   order: 3
-  label: 美国
+  label: United States
 ---
 
-## 规则层级
+## Regulatory tiers
 
-美国在该议题上呈现**州法先行、联邦在议、行业承诺补充**的格局：
+The US posture on this topic is **state-first, federal in deliberation, supplemented by industry commitments**:
 
-- **联邦行政令**：[EO 14110](/rules/us/eo-14110-biden-ai/)（2023-10，2025-01 已被撤销）曾要求商务部/NIST 研究水印与出处标准；
-  继任行政令（[EO 14179](/rules/us/eo-14179-removing-barriers-ai/)、
-  [EO 14365](/rules/us/eo-14365-national-ai-framework/)）方向转向"反过度监管 + 抢占州法"。
-- **联邦立法（在审）**：
-  - *COPIED Act*（出处来源、保护艺术家）
-  - *NO FAKES Act*（非自愿深度伪造、人格权）
-  - *DEFIANCE Act*（私密伪造影像的民事救济）
-- **州法**：加州、德州、华盛顿州、明尼苏达州等已通过与 AI 标识相关的专项法，主要聚焦 **选举** 和 **性暴力伪造** 场景。
-- **行业承诺**：2023 年白宫牵头的主要 AI 公司自愿承诺（watermarking、provenance），以及 C2PA 联盟的技术规范。
+- **Federal executive orders**: [EO 14110](/rules/us/eo-14110-biden-ai/) (Oct 2023, revoked Jan 2025) had directed the Department of Commerce / NIST to study watermarking and provenance standards. Successor orders ([EO 14179](/rules/us/eo-14179-removing-barriers-ai/), [EO 14365](/rules/us/eo-14365-national-ai-framework/)) pivot toward "anti-overregulation + preemption of state law".
+- **Federal legislation (pending)**:
+  - *COPIED Act* (provenance, artist protection).
+  - *NO FAKES Act* (non-consensual deepfakes, rights of publicity).
+  - *DEFIANCE Act* (civil remedies for intimate forgery).
+- **State law**: California, Texas, Washington, Minnesota, and others have enacted AI-labeling-related statutes, focused principally on **elections** and **sexual-abuse forgery** contexts.
+- **Industry commitments**: the 2023 White House–led voluntary commitments by major AI companies (watermarking, provenance), together with C2PA's technical specifications.
 
-## 义务主体（典型州法模式）
+## Obligor profile (typical state-law model)
 
-- **内容发布者**：在选举类合成内容上必须标注来源。
-- **大型平台**：对可疑合成内容承担核验、标注、下架义务。
-- **开发者**：目前多数州法不直接对基础模型开发者施加标识义务。
+- **Publishers**: required to mark the source of synthetic content in election-related material.
+- **Large platforms**: must verify, label, and take down suspicious synthetic content.
+- **Developers**: most state laws do not yet impose labeling duties directly on foundation-model developers.
 
-## 核心义务（共性）
+## Core obligations (common features)
 
-1. **选举类**：投票前 N 天内传播未标注的合成内容构成违法（多数州为 60–90 天）。
-2. **非自愿的性相关合成**：几乎所有州法都禁止并允许民事求偿，部分州有刑事处罚。
-3. **一般消费者场景**：目前仍以行业自律为主，联邦无统一命令。
+1. **Elections**: distributing unlabelled synthetic content within the N days before an election is unlawful (most states: 60–90 days).
+2. **Non-consensual sexual synthesis**: almost every state law prohibits it and permits civil remedies; some states add criminal penalties.
+3. **General consumer contexts**: still largely governed by industry self-regulation, with no unified federal mandate.
 
-## 执法机构与处罚
+## Enforcement bodies and penalties
 
-- **FTC**：通过 "Section 5 — unfair or deceptive acts" 起诉欺骗性 AI 宣传。
-- **各州检察长**：州法层面的首要执法者。
-- **私人诉权**：部分州法（如 NO FAKES 类提案）赋予个人直接起诉权。
-
+- **FTC**: prosecutes deceptive AI promotion under "Section 5 — unfair or deceptive acts".
+- **State attorneys general**: the primary enforcers at the state level.
+- **Private right of action**: some state laws (such as the NO FAKES-type proposals) grant individuals a direct right to sue.

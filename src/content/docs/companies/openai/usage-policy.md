@@ -1,183 +1,162 @@
 ---
-title: 使用政策
-description: OpenAI Usage Policies 结构、2025-10 重大重写、军事禁令松动与企业条款分层
+title: Usage Policy
+description: Structure of the OpenAI Usage Policies, the major October 2025 rewrite, erosion of the military prohibition, and enterprise-tier layering
 sidebar:
   order: 1
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> **快照**：基于 [openai.com/policies/usage-policies](https://openai.com/policies/usage-policies/) 2025-10-29 版本，
-> 并参照 [ChatGPT Enterprise Privacy](https://openai.com/enterprise-privacy/) 与 Commercial Terms（2025-08 修订）。
+> **Snapshot**: based on the 29 October 2025 version of [openai.com/policies/usage-policies](https://openai.com/policies/usage-policies/),
+> with reference to [ChatGPT Enterprise Privacy](https://openai.com/enterprise-privacy/) and the Commercial Terms (August 2025 amendment).
 
-## 一、当前结构（2025-10 重写后）
+## 1. Current structure (after the October 2025 rewrite)
 
-OpenAI 把面向终端用户和开发者的政策重新切分为**三层并列**的文档体系：
+OpenAI has reorganised its user- and developer-facing policy into a **three-layer parallel document system**:
 
-| 层级 | 文档 | 适用对象 | 关键定位 |
+| Tier | Document | Scope | Positioning |
 | --- | --- | --- | --- |
-| **通用条款** | Universal Policies | 所有产品用户 | 合规、反滥用底线 |
-| **使用政策** | Usage Policies | ChatGPT 终端用户 + API 客户 | 场景类禁止与义务 |
-| **构建条款** | Building with our products | 基于 OpenAI API 的开发者 | 部署责任、内容标签、披露义务 |
+| **Universal terms** | Universal Policies | All product users | Compliance and anti-abuse floor |
+| **Usage policy** | Usage Policies | ChatGPT end users and API customers | Scenario-specific prohibitions and duties |
+| **Building terms** | Building with our products | Developers building on the OpenAI API | Deployment responsibility, content labelling, disclosure obligations |
 
-这是 2024 年前的**单一 Usage Policy 文档**拆分而来的。官方说法是"让开发者义务与消费者义务更清晰"；
-批评角度则认为，**拆分使单一条款不再"一读即知所有禁止行为"**，增加了**条款之间相互引用的复杂度**。
+This structure was carved out of the **single pre-2024 Usage Policy document**. The official rationale is to "make developer duties and consumer duties clearer"; the critical reading is that **splitting the document means no single text lets the reader know all prohibited conduct at one glance**, and increases **the complexity of cross-references among clauses**.
 
-### 禁止与限制的核心清单
+### Core list of prohibitions and restrictions
 
-2025-10 版保留的明确禁止大致可归为六类：
+The clear prohibitions retained in the October 2025 version fall into roughly six categories:
 
-1. **武器与关键基础设施**：军用武器系统的"武器化"开发（见 §四对军事禁令松动的讨论）、生化核武器研发、关键基础设施攻击
-2. **儿童安全**：CSAM（儿童性虐待材料）、对未成年人的性化内容、**Grooming 类交互**
-3. **政治完整性**：**冒充候选人或官员**、大规模政治说服活动、**虚假选举信息的自动化生成**（比 2024 版措辞更概括）
-4. **隐私与数据**：未授权人脸识别、生物特征抓取、从公开数据**重新身份化**
-5. **自动化高风险决策**：法律、医疗、金融、就业等**无人类审核的最终决策**
-6. **金融与欺诈**：金融欺诈、学术欺诈、伪造身份证件
+1. **Weapons and critical infrastructure**: "weaponisation" development of military weapons systems (see §4 on the military-prohibition erosion), CBRN weapon R&D, and attacks on critical infrastructure
+2. **Child safety**: CSAM (child sexual abuse material), sexualisation of minors, **grooming-style interactions**
+3. **Political integrity**: **impersonating candidates or officials**, mass political-persuasion campaigns, **automated generation of election disinformation** (more generalised wording than the 2024 version)
+4. **Privacy and data**: unauthorised facial recognition, biometric scraping, **re-identification** from public data
+5. **Automated high-risk decisions**: **terminal decisions without human review** in law, medicine, finance, employment, etc.
+6. **Financial and fraud**: financial fraud, academic fraud, forged identity documents
 
-## 二、版本演进
+## 2. Version history
 
-| 版本 | 日期 | 关键变化 |
+| Version | Date | Key change |
 | --- | --- | --- |
-| v2022 首版 | 2022-03 | 伴随 GPT-3 API 公开发布 |
-| 2023-03 更新 | 2023-03 | 增加"禁止生成有针对性的选举竞选材料" |
-| **2024-01 重大更新** | **2024-01-10** | **悄然删除"禁止将我们的服务用于军事和战争用途"**的明文条款（仅保留"禁止开发武器"与"伤害他人"）|
-| 2024-10 | 2024-10 | 统一三产品线（ChatGPT / API / GPT Store）默认行为 |
-| **2025-10 重写** | **2025-10-29** | **语言简化、条款合并**；把"禁止类别"合并为"原则+示例"结构 |
+| First release | March 2022 | Published with the public release of the GPT-3 API |
+| 2023-03 update | March 2023 | Added "prohibition on generating targeted election-campaign materials" |
+| **Major 2024-01 update** | **10 January 2024** | **Quietly deleted** the explicit prohibition on "using our services for military and warfare" (retaining only "weapons development" and "harm to others") |
+| 2024-10 | October 2024 | Unified default behaviour across the three product lines (ChatGPT / API / GPT Store) |
+| **2025-10 rewrite** | **29 October 2025** | **Language simplification, clause consolidation**; converted the "prohibited categories" into a "principles + examples" structure |
 
-> 2024-01 的变化被 *The Intercept* 率先报道（"OpenAI Quietly Deletes Ban on Using ChatGPT for 'Military and Warfare'"），
-> 是 **OpenAI 从"普世使命叙事"向"国家安全资本主义"转向**的标志性事件。
+> The January 2024 change was first reported by *The Intercept* ("OpenAI Quietly Deletes Ban on Using ChatGPT for 'Military and Warfare'") and marks the **transition of OpenAI from a "universal mission" narrative to "national-security capitalism."**
 
-## 三、2025-10 重写的"简化—模糊化"权衡
+## 3. The "simplification–blurring" trade-off in the October 2025 rewrite
 
-2025-10 的重写并非单纯语言润色：它把**大量原来逐条列举的禁止场景**（如"禁止未成年人保险定价"、
-"禁止个性化政治广告微定向"等）**合并为少数原则**（"不得用于非法或侵害他人的活动"）。
+The October 2025 rewrite is not mere linguistic polishing: it consolidates **a large number of previously itemised prohibited scenarios** (e.g. "prohibition on minors' insurance pricing," "prohibition on micro-targeted political advertising") **into a small set of principles** ("no unlawful activity or activity that infringes others").
 
-### 官方叙事 vs. 批评视角
+### Official narrative vs. critical reading
 
-**OpenAI 官方解释**（博客 [Updates to our Usage Policies](https://openai.com/index/updated-usage-policies/)）：
+**OpenAI's official explanation** (blog post [Updates to our Usage Policies](https://openai.com/index/updated-usage-policies/)):
 
-- "更清晰、更易读"
-- "避免重复列举已被法律覆盖的行为"
-- "为企业客户提供一致的全球基线"
+- "Clearer, more readable"
+- "Avoiding redundant enumeration of conduct already covered by law"
+- "Providing enterprise customers with a consistent global baseline"
 
-**学术与业界批评**则从三条路径切入：
+**Academic and industry critiques** enter from three angles:
 
-1. **语境完整性（Nissenbaum, 2010）视角**：Helen Nissenbaum 的 contextual integrity 理论指出，
-   规范之所以有约束力，在于**场景化的具体承诺**；把具体条款消解为"符合当地法律"等于把政策**外包给辖区多元性**，
-   在实际跨境部署中**失去可预期性**。
+1. **Contextual integrity (Nissenbaum, 2010)**: Helen Nissenbaum's contextual-integrity theory notes that norms derive binding force from **context-specific commitments**; dissolving specific clauses into "comply with local law" effectively **outsources policy to jurisdictional plurality**, which **loses predictability** in cross-border deployment.
 
-2. **"模糊—执法裁量权"论题**：Daniel Solove（乔治华盛顿大学）在隐私法语境下反复指出，
-   条款越模糊，**被监管方对执法者的裁量让渡越大**。同样的逻辑适用于 OpenAI：
-   删除具体禁止类别并不等于放松实际执法，而是把决定权从**合同条款**转移到**内部信任与安全团队（T&S）的自由裁量**。
+2. **"Vagueness → enforcement discretion"**: Daniel Solove (GWU) has repeatedly noted in the privacy-law context that the vaguer the terms, the **greater the deference regulated parties owe to enforcers**. The same logic applies to OpenAI: deleting specific prohibited categories does not loosen actual enforcement but transfers decision-making from **contractual clauses** to the **discretion of the internal Trust & Safety team**.
 
-3. **与 Anthropic AUP 的直接对比**：Anthropic 的 Usage Policy（2025-05 版）**反向操作**——
-   更详细地列举 High-Risk Use Cases，并给出"企业客户如何通过 Commercial Terms 申请豁免"的路径。
-   两家 2025 年的走向几乎相反：**OpenAI 删具体、给自己更大裁量**；**Anthropic 加具体、让客户更可预测**。
+3. **Direct contrast with the Anthropic AUP**: Anthropic's Usage Policy (May 2025 edition) moved in the **opposite direction** — it enumerates High-Risk Use Cases in greater detail and sets out "how enterprise customers can obtain carveouts through the Commercial Terms." The two labs' 2025 trajectories are nearly opposite: **OpenAI removes specificity and enlarges its own discretion**; **Anthropic adds specificity and makes customer outcomes more predictable**.
 
 > The most important question about a use policy is not what it prohibits, but **who decides** when something falls within a prohibition.
-> — 改写自 Kirsten Martin, *Ethics of Data and Analytics* (2022)
+> — adapted from Kirsten Martin, *Ethics of Data and Analytics* (2022)
 
-## 四、军事禁令的事实性消失
+## 4. The factual disappearance of the military prohibition
 
-2023 年前，OpenAI Usage Policy 明文禁止 "activity that has high risk of physical harm, including: **weapons development**; **military and warfare**"。
-2024-01-10 的更新**移除**了"military and warfare"表述，仅保留"武器开发"与"对他人的伤害"。
+Before 2023, the OpenAI Usage Policy expressly prohibited "activity that has high risk of physical harm, including: **weapons development**; **military and warfare**." The 10 January 2024 update **removed** the "military and warfare" phrasing, retaining only "weapons development" and "harm to others."
 
-### 从"移除禁令"到"主动接合"
+### From "removing the prohibition" to "active engagement"
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2024-01-10 | Usage Policy 删除 "military and warfare" 措辞 |
-| 2024 年末 | 与 Anduril Industries 合作，面向美军反无人机系统 |
-| 2025 年中 | 签署美国国防部 OTA 合同（"Civil Harmony" 等前沿 AI 用于后勤与网络防御；具体金额以官方公告为准）|
-| 2025-10 | Usage Policy 重写版**新增**"为美国政府和盟友提供国家安全用途"作为**允许**场景 |
-| 2026-Q1 | GSA / CIA 合同传闻（未证实）|
+| 10 January 2024 | Usage Policy removes the "military and warfare" phrasing |
+| Late 2024 | Collaboration with Anduril Industries on counter-drone systems for the US military |
+| Mid-2025 | OTA contract signed with the US Department of Defense ("Civil Harmony" and other frontier-AI deployments for logistics and cyber defence; specific dollar amounts should be verified against official announcements) |
+| October 2025 | The Usage Policy rewrite **adds** "national-security use by the US government and allies" as a **permitted** scenario |
+| Q1 2026 | GSA / CIA contract rumours (unconfirmed) |
 
-**批评**（Stuart Russell 2024 BBC 访谈、Future of Life Institute 2025 年度报告）：
+**Critiques** (Stuart Russell BBC interview 2024; Future of Life Institute 2025 Annual Report):
 
-- 从"我们不做军事"到"我们是国家安全工具"的转换，**没有任何公开的价值重新论证**
-- 与 Google 2018 年 Project Maven 风波（员工抗议 → 公司退出）形成**强烈反差**
-- 说明 2023 年后 OpenAI 的企业文化**已无类似 Maven 规模的内部反对力量**
+- The pivot from "we don't do military" to "we are a national-security tool" is accompanied by **no public value-based re-argumentation**
+- A **stark contrast** with the 2018 Google Project Maven episode (employees protested → company withdrew)
+- It suggests that post-2023 OpenAI's corporate culture **no longer contains internal dissent at Maven-scale**
 
-## 五、企业碎片化：同一政策的多重面孔
+## 5. Enterprise fragmentation: one policy, many faces
 
-Usage Policy **不是铁板一块**——在 OpenAI 的产品分层下，实际生效的条款组合因产品而异：
+The Usage Policy **is not monolithic** — across OpenAI's product tiers the clause set that actually binds varies by product:
 
-| 产品 | 默认 Usage Policy | 可通过合同覆盖 | 默认数据使用 |
+| Product | Default Usage Policy | Overridable by contract | Default data use |
 | --- | --- | --- | --- |
-| ChatGPT Free / Plus | 完整适用 | 否 | 可训练（Plus 可退出）|
-| ChatGPT Team | 完整适用 | 部分 | **不训练** |
-| ChatGPT Enterprise | **可通过 MSA 定制**部分条款 | **是** | **不训练** |
-| API（默认）| 完整适用 | 否（标准条款）| **不训练**（2023-03 后默认）|
-| API Enterprise | **Commercial Terms 覆盖** | **是** | **不训练** |
+| ChatGPT Free / Plus | Fully applicable | No | May be used for training (Plus can opt out) |
+| ChatGPT Team | Fully applicable | Partially | **Not used for training** |
+| ChatGPT Enterprise | **Some clauses customisable by MSA** | **Yes** | **Not used for training** |
+| API (default) | Fully applicable | No (standard terms) | **Not used for training** (default since March 2023) |
+| API Enterprise | **Covered by Commercial Terms** | **Yes** | **Not used for training** |
 
-**实务含义**：ChatGPT Enterprise 客户可以通过 **Master Services Agreement (MSA)** 与 **Commercial Terms** 的组合，
-**豁免**部分默认 Usage Policy 条款（例如对某些"高风险自动化决策"的默认限制）。这在企业法律合规圈内公开，
-但**不在 Usage Policy 文本中披露**——对外部观察者来说，**公开政策与企业合同政策是两套体系**。
+**Practical implication**: ChatGPT Enterprise customers may, through the combined **Master Services Agreement (MSA)** and **Commercial Terms**, **obtain carveouts** from some default Usage Policy clauses (e.g. default limits on certain "high-risk automated decisions"). This is openly discussed in enterprise legal-compliance circles but is **not disclosed in the text of the Usage Policy** — for external observers, **the public policy and the enterprise-contract policy are two different systems**.
 
-## 六、执法：Trust & Safety 的内部机制
+## 6. Enforcement: the internal Trust & Safety mechanism
 
-OpenAI 的 Usage Policy 执法依赖其 **Trust & Safety** 团队（规模位于行业中等水平，与 Meta / Google 同类组织相似，具体人数未官方披露），
-执法手段包括：
+Enforcement of the Usage Policy depends on OpenAI's **Trust & Safety** team (industry-median size, comparable to peer organisations at Meta and Google; exact headcount not publicly disclosed). Enforcement mechanisms include:
 
-1. **自动检测**：Moderation API（2023 公开，2024 升级到 `omni-moderation-latest`）对输入/输出做分类
-2. **人工审核**：升级至人工后可导致 **API 密钥暂停**、**账户封禁**、**组织级封禁**
-3. **GPT Store 移除**：从 GPT Store 下架违规自定义 GPT（2024-2025 累计下架数未披露）
-4. **生态驱逐**：对调用 API 的 B 端产品，可**整体撤销访问权**
+1. **Automated detection**: the Moderation API (published 2023, upgraded in 2024 to `omni-moderation-latest`) classifies inputs / outputs
+2. **Human review**: escalation to humans may lead to **API-key suspension**, **account ban**, **organisation-wide ban**
+3. **GPT Store removal**: removal of offending custom GPTs from the GPT Store (cumulative 2024–2025 removal counts not disclosed)
+4. **Ecosystem eviction**: for B2B products calling the API, **wholesale revocation of access**
 
-已知的大规模执法事件：
+Known large-scale enforcement events:
 
-| 时间 | 行动 | 规模 |
+| Date | Action | Scale |
 | --- | --- | --- |
-| 2024-02 | 封禁朝鲜、伊朗、俄罗斯、中国国家行为者账号 | 5 个操作、数十账号 |
-| 2024-05 | "Bad Grammar"、"Doppelganger" 等影响力操作账号 | 5 个网络 |
-| 2024-10 | 首份 *Influence and Cyber Operations Report* 汇总 | 累计 20+ 操作 |
-| 2025-02 | 披露针对 ChatGPT 的"Peer Review"影响力操作（PRC 关联）| 1 操作 |
-| 2025-06 | Sora 2 封禁涉 CSAM 生成者 | 未披露 |
+| February 2024 | Bans on North Korean, Iranian, Russian, and Chinese state-actor accounts | 5 operations, dozens of accounts |
+| May 2024 | Influence-operation accounts including "Bad Grammar" and "Doppelganger" | 5 networks |
+| October 2024 | First *Influence and Cyber Operations Report* aggregation | 20+ operations to date |
+| February 2025 | Disclosure of the "Peer Review" influence operation targeting ChatGPT (PRC-linked) | 1 operation |
+| June 2025 | Bans on Sora 2 CSAM generators | Not disclosed |
 
-详见 [透明度报告](./transparency-report/) 页。
+See the [transparency report](./transparency-report/) for detail.
 
-## 七、产业实务：政策文档如何形塑产品
+## 7. Industry practice: how the policy shapes the product
 
-Usage Policy 的条款**直接决定了工程决策**，以下是从 2023-2026 年公开信号可观察到的几条耦合链：
+Usage-Policy clauses **directly determine engineering decisions**; the following coupling chains are observable from public signals across 2023–2026:
 
-1. **"禁止自动化高风险决策"** → ChatGPT Enterprise **强制日志 + 审计出口**、医疗/法律场景的**"非决策建议"默认免责语**
-2. **"儿童安全"底线** → Sora 视频生成的**年龄过滤器**、DALL-E 的**面孔政策**、ChatGPT 的**未成年人对话模式**（2025-09 推出）
-3. **"虚假选举信息"** → 2024 美国大选期间 ChatGPT 在选举相关问询中**重定向至 CanIVote.org**（后被批评为"回避实质性回答"）
-4. **"CSAM 零容忍"** → 与 Thorn、NCMEC 合作的 **CSAM 哈希扫描**、**训练数据过滤**（2024-04 联合声明）
-5. **"武器禁令"的保留条款** → 仍禁止**消费者**级的武器开发用途；**国家安全例外**通过 Commercial Terms 而非公共 Policy 处理
+1. **"Prohibit automated high-risk decisions"** → ChatGPT Enterprise **mandatory logs + audit export**; default "not-a-decision advice" disclaimers for medical / legal scenarios
+2. **Child-safety floor** → age-based filtering in Sora video generation, the DALL-E **face policy**, and the ChatGPT **minors-conversation mode** (launched September 2025)
+3. **"Election disinformation"** → during the 2024 US election, ChatGPT **redirected election-related queries to CanIVote.org** (later criticised for "avoiding substantive answers")
+4. **"CSAM zero tolerance"** → **CSAM hash scanning** and **training-data filtering** in collaboration with Thorn and NCMEC (April 2024 joint statement)
+5. **Residual weapons prohibition** → still prohibits **consumer-level** weapon-development use; **national-security exceptions** handled via Commercial Terms rather than the public Policy
 
-## 八、与其他前沿实验室的对比
+## 8. Comparison with peer frontier labs
 
-| 维度 | OpenAI Usage Policies (2025-10) | Anthropic AUP (2025-05) | Google AI 使用要求 | xAI Acceptable Use |
+| Dimension | OpenAI Usage Policies (October 2025) | Anthropic AUP (May 2025) | Google AI Usage Requirements | xAI Acceptable Use |
 | --- | --- | --- | --- | --- |
-| 结构 | Universal / Usage / Building 三层 | 单文档 + High-Risk 附录 | 分产品（Gemini、Vertex）| 极简单文档 |
-| 军事用途 | **允许国家安全用途** | **明文禁止**武器化 | 禁止武器系统核心控制 | **无明确禁止** |
-| 政治内容 | 原则性禁止"操纵" | **实质性操纵**禁止 + 容许真实草拟 | 禁止"欺骗性政治内容" | 弱约束 |
-| CSAM | 零容忍 | 零容忍 | 零容忍 | 零容忍 |
-| 具体化程度 | **低（2025-10 后）** | **高** | 中 | **极低** |
-| 企业豁免路径 | MSA + Commercial Terms | Commercial Terms | 企业合同 | 不透明 |
+| Structure | Universal / Usage / Building three tiers | Single document + High-Risk annex | By product (Gemini, Vertex) | Minimal single document |
+| Military use | **Permits national-security use** | **Express prohibition** of weaponisation | Prohibits core control of weapons systems | **No explicit prohibition** |
+| Political content | Principles-based ban on "manipulation" | Ban on **substantive manipulation** + allows genuine drafting | Bans "deceptive political content" | Weak constraints |
+| CSAM | Zero tolerance | Zero tolerance | Zero tolerance | Zero tolerance |
+| Degree of specificity | **Low (post-October 2025)** | **High** | Medium | **Very low** |
+| Enterprise-carveout pathway | MSA + Commercial Terms | Commercial Terms | Enterprise contracts | Opaque |
 
-**跨家对比结论**：Anthropic 的 AUP 在具体化程度与公开执法披露上仍是**业界上限**；
-OpenAI 2025-10 后更接近 Google 的"原则+行业指南"模式；xAI 则**系统性拒绝**把 AUP 作为可核查承诺。
+**Cross-firm conclusion**: Anthropic's AUP remains the **industry ceiling** on specificity and public enforcement disclosure; OpenAI, after the October 2025 rewrite, is closer to Google's "principles + industry guidance" model; xAI **systematically refuses** to make the AUP a verifiable commitment.
 
-## 九、监管对位：Usage Policy 与硬法的关系
+## 9. Regulatory interface: the Usage Policy and hard law
 
-Usage Policy 不是真空条款，它与以下硬法形成**交叉覆盖**：
+The Usage Policy does not sit in a vacuum; it overlaps with the following hard-law regimes:
 
-- **EU AI Act** 第 5 条（禁止用途）、第 51-55 条（GPAI 系统性风险义务）：Usage Policy 对**禁止用途**的覆盖通常比 AI Act 更严
-- **EU DSA** 第 14、34-35 条（超大平台 T&C 透明度与风险评估）：ChatGPT 被指定为 VLOP（超大在线平台）后，
-  Usage Policy 的**修订需前置评估**（OpenAI 2025-10 重写**未公开完整 risk assessment**，学者已质询）
-- **加州 SB 53** 第 22757.11 条（Frontier Developer 义务）：要求披露"可预见的重大风险"缓解措施，
-  Usage Policy 成为合规引证文档之一
-- **中国《生成式 AI 服务管理办法》** 第 4、10、14 条：OpenAI 不在中国大陆提供服务，但**透过 Azure 国际版**的间接服务
-  引发 CAC **2024-10 通报**（未公开细节）
+- **EU AI Act** Art. 5 (prohibited uses), Art. 51–55 (GPAI systemic-risk obligations): the Usage Policy's coverage of **prohibited uses** is typically stricter than the AI Act
+- **EU DSA** Art. 14, 34–35 (VLOP Terms & Conditions transparency and risk assessment): after ChatGPT was designated a VLOP, Usage Policy **amendments require prior risk assessment** (OpenAI's October 2025 rewrite **did not publish a complete risk assessment**, which scholars have questioned)
+- **California SB 53** §22757.11 (frontier-developer obligations): requires disclosure of "foreseeable material risk" mitigation, with the Usage Policy as one of the cited compliance documents
+- **China's Generative AI Interim Measures 《生成式人工智能服务管理暂行办法》** Art. 4, 10, 14: OpenAI does not offer services in mainland China, but indirect access through the **Azure international edition** triggered a **Cyberspace Administration of China (CAC) notice in October 2024** (details not public)
 
-## 十、延伸阅读
+## 10. Further reading
 
-- **一手**：[OpenAI Usage Policies](https://openai.com/policies/usage-policies/)、[Updates blog 2025-10](https://openai.com/index/updated-usage-policies/)、
-  [Commercial Terms](https://openai.com/policies/business-terms/)
-- **二手学术**：Helen Nissenbaum, *Privacy in Context* (2010)；Kirsten Martin, *Ethics of Data and Analytics* (2022)；
-  Solove, *The Myth of the Privacy Paradox* (2021)
-- **新闻与调查**：*The Intercept*, "OpenAI Quietly Deletes Ban on Using ChatGPT for 'Military and Warfare'" (2024-01-12)；
-  *TIME*, "Inside OpenAI's Military Turn" (2025-07)
-- **本站交叉引用**：[OpenAI 概况](./)、[安全框架](./safety-framework/)、[透明度报告](./transparency-report/)、
-  [Anthropic 使用政策](/companies/anthropic/usage-policy/)、[公司实践总览](/companies/)
+- **Primary**: [OpenAI Usage Policies](https://openai.com/policies/usage-policies/), [Updates blog October 2025](https://openai.com/index/updated-usage-policies/), [Commercial Terms](https://openai.com/policies/business-terms/)
+- **Secondary scholarship**: Helen Nissenbaum, *Privacy in Context* (2010); Kirsten Martin, *Ethics of Data and Analytics* (2022); Solove, *The Myth of the Privacy Paradox* (2021)
+- **News and investigations**: *The Intercept*, "OpenAI Quietly Deletes Ban on Using ChatGPT for 'Military and Warfare'" (12 January 2024); *TIME*, "Inside OpenAI's Military Turn" (July 2025)
+- **Cross-references**: [OpenAI overview](./), [safety framework](./safety-framework/), [transparency report](./transparency-report/), [Anthropic Usage Policy](/companies/anthropic/usage-policy/), [company practice overview](/companies/)

@@ -1,196 +1,250 @@
 ---
-title: 使用政策
-description: DeepSeek 使用政策归档：服务侧 AUP、API 条款、MIT License 开源权重与中国合规基线的互动（2026-04-23）
+title: Usage Policy
+description: DeepSeek usage policy archive — the interplay between service-side AUP, API terms, MIT-licensed open weights, and China's compliance baseline (2026-06-28)
 sidebar:
   order: 1
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> **一句话定位**：DeepSeek 的"使用政策"是**中国 AI 行业最简短、最"不像自律文件"**的一份。它在
-> 形式上存在（chat.deepseek.com 页脚的《用户协议》/《隐私政策》+ API 条款 + 权重随附的 MIT License），
-> 但在**内容密度**上远低于 OpenAI / Anthropic / Meta —— 这并非疏漏，而是**中国"服务侧合规靠备案、
-> 不靠企业自主 AUP"**治理逻辑的自然结果。
+> **One-line framing**: DeepSeek's "usage policy" is **the shortest, least self-regulatory-looking
+> document in China's AI industry**. It exists in form (the *Terms of Use* / *Privacy Policy* in
+> the chat.deepseek.com footer, plus API terms, plus the MIT License that accompanies the weights),
+> but its **content density** is far below OpenAI / Anthropic / Meta. This is not an oversight —
+> it is the natural consequence of China's governance logic, in which **service-side compliance
+> is carried by filing (算法备案), not by corporate AUPs**.
 
-## 一、文档结构与层级
+## 1. Document structure and layering
 
-DeepSeek 的使用约束分布在**三个相互独立的层面**，任何一层单独阅读都不完整：
+DeepSeek's usage constraints are distributed across **three mutually independent layers**, and no
+single layer is complete on its own:
 
-| 层面 | 文件 | 约束对象 | 性质 | 长度估算 |
+| Layer | Document | Constrained party | Nature | Approximate length |
 | --- | --- | --- | --- | --- |
-| **服务侧** | chat.deepseek.com 用户协议 / 隐私政策 | C 端用户 | 合同条款 + 合规声明 | 约 3,500–4,500 汉字 |
-| **API 侧** | api-docs.deepseek.com 开发者条款 | B 端 / 开发者 | SaaS 合同 + 内容规范 | 约 2,000–3,000 汉字 |
-| **权重侧** | `LICENSE` (HuggingFace / GitHub 仓库根) | 下载 / 微调 / 再分发者 | **MIT License 全文**（约 170 词） | 极短 |
+| **Service-side** | chat.deepseek.com Terms of Use / Privacy Policy | Consumer users | Contract terms + compliance declaration | ~3,500–4,500 Chinese characters |
+| **API-side** | api-docs.deepseek.com developer terms | Business / developers | SaaS contract + content norms | ~2,000–3,000 Chinese characters |
+| **Weight-side** | `LICENSE` (HuggingFace / GitHub repo root) | Downloaders / fine-tuners / redistributors | **Full text of the MIT License** (~170 words) | Very short |
 
-这种**"三层解耦"**是 DeepSeek 使用政策最重要的结构特征：服务侧对应 CAC 备案义务，API 侧对应
-B 端商用边界，权重侧完全敞开。三者加起来的总文字量**仍不及 Anthropic Usage Policy 单一文档**，
-这是观察中国前沿实验室自律姿态的关键切面。
+This **"three-layer decoupling"** is the most important structural feature of DeepSeek's usage
+policy: the service-side layer maps onto the CAC filing obligation, the API layer delimits B2B
+commercial boundaries, and the weight layer is fully open. The three combined still amount to
+**less total text than Anthropic's single Usage Policy document** — a key cross-section for
+observing the self-regulatory posture of China's frontier labs.
 
-## 二、服务侧用户协议：合规驱动的"最小可行 AUP"
+## 2. Service-side terms: a compliance-driven "minimum viable AUP"
 
-### 核心禁止事项（chat.deepseek.com）
+### Core prohibitions (chat.deepseek.com)
 
-服务侧用户协议的禁用清单基本**重述《生成式 AI 暂行办法》第 4 条 + TC260-003 的 A.1 内容安全基线**：
+The service-side prohibition list essentially **restates Article 4 of the *Generative AI Interim
+Measures* (《生成式人工智能服务管理暂行办法》) plus TC260-003's A.1 content-safety baseline**:
 
-- 危害国家安全、颠覆国家政权、破坏国家统一
-- 煽动民族仇恨、破坏宗教政策
-- 传播暴力、色情、赌博、恐怖主义信息
-- 侵犯他人知识产权、商业秘密、个人隐私
-- 生成虚假信息干扰社会秩序
+- Endangering national security, subverting state power, undermining national unity
+- Inciting ethnic hatred, disrupting religious policy
+- Disseminating violent, pornographic, gambling, or terrorist content
+- Infringing intellectual property, trade secrets, or personal privacy
+- Generating false information that disrupts social order
 
-**与 Anthropic AUP 的结构性对比**：
+**Structural comparison with Anthropic's AUP**:
 
-- Anthropic AUP 把**武器化（CBRN）**、**儿童保护（CSAM + 显著身心损害）**、**选举干预**、
-  **关键基础设施攻击** 作为独立分类逐项禁止
-- DeepSeek 用户协议把这些并入"不得违法"的**概括性条款**，不做类别化拆解
-- Anthropic AUP 区分 **Consumer Usage Policy** 与 **Commercial Terms**，分摊企业合规责任；
-  DeepSeek 服务侧用户协议**未做此区分**，B 端用户默认跳转 API 条款
+- Anthropic's AUP itemizes **weaponization (CBRN)**, **child safety (CSAM + serious physical or
+  psychological harm)**, **election interference**, and **critical infrastructure attacks** as
+  distinct categories with dedicated prohibitions.
+- DeepSeek's terms fold all of these into a **general "do not break the law" clause**, with no
+  categorical decomposition.
+- Anthropic distinguishes **Consumer Usage Policy** from **Commercial Terms**, distributing
+  enterprise compliance responsibility; DeepSeek's service-side terms **make no such distinction**,
+  defaulting B2B users to the API terms.
 
-### 合规文本的"监管回声"
+### The "regulatory echo" of the compliance text
 
-朱悦（中国社会科学院法学所，2024）在《生成式 AI 服务的合规文本研究》中观察到：
-**中国前沿实验室的 AUP 文本超过 70% 可以逐句追溯到《暂行办法》或 TC260-003 条目**。这在 DeepSeek
-身上表现得尤为极端 —— 其服务条款几乎不包含"公司自主的价值判断"，而是**把监管要求平移为合同义务**。
+Zhu Yue 朱悦 (CASS Institute of Law, 2024), in *Research on Compliance Texts of Generative AI
+Services*, observes that **more than 70% of the AUP text of China's frontier labs can be traced
+sentence-by-sentence to the *Interim Measures* or to TC260-003**. This is especially pronounced at
+DeepSeek — its service terms contain almost no "corporate value judgment" of their own, and instead
+**translate regulatory requirements directly into contractual obligations**.
 
-张凌寒（中国政法大学数据法治研究院）将这一模式概括为**"合规文本的代偿性"**：当行业治理以监管
-为主导、以企业自律为次要时，企业 AUP 的功能从"价值宣示"退化为"合规声明"。
+Zhang Linghan 张凌寒 (Data Law Research Institute, China University of Political Science and Law)
+has summarized this pattern as **"the substitutive function of compliance text"**: when industry
+governance is regulator-led and corporate self-regulation is secondary, the function of a
+corporate AUP degrades from "value declaration" to "compliance declaration."
 
-### 话题拒答模式
+### Topic-refusal behavior
 
-chat.deepseek.com 在**政治敏感、历史评价、涉港澳台、领导人相关**话题上采用标准的**拒答 + 转移**
-模式（"让我们换个话题聊聊"）。这一行为并非 AUP 明文规定，而是由**训练侧 RLHF + 服务侧关键词
-过滤 + 内容安全 API**三层机制共同实现。第三方测试（2025-Q1 多个 GitHub 仓库的系统性探测）表明：
+chat.deepseek.com applies a standard **refuse-and-redirect** pattern ("let's talk about something
+else") on **politically sensitive topics, historical appraisal, Hong Kong / Macau / Taiwan issues,
+and leader-related prompts**. This behavior is not specified in the AUP text; it is jointly
+produced by three layers — **training-side RLHF, service-side keyword filtering, and content-safety
+APIs**. Third-party testing (systematic probing across multiple GitHub repositories in 2025-Q1)
+shows:
 
-- **拒答率在部署环境间存在显著差异**：chat.deepseek.com 官方服务 > API 直调 > 开源权重本地部署
-- 同一 R1 权重在 HuggingFace 本地部署时，敏感话题拒答率**接近零**
-- 这印证了"**拒答是服务层实现、不是模型层实现**"的基本判断
+- **Refusal rates vary significantly across deployment environments**: chat.deepseek.com official
+  service > direct API > locally deployed open weights.
+- When the same R1 weights are deployed locally from HuggingFace, the refusal rate on sensitive
+  topics is **close to zero**.
+- This confirms the basic judgment that **refusal is implemented at the service layer, not at the
+  model layer**.
 
-## 三、API 使用政策
+## 3. API usage policy
 
-### 合同边界
+### Contractual boundaries
 
-DeepSeek API 条款相对服务侧协议更贴近**技术 SaaS 合同**：
+DeepSeek's API terms read more like a **technical SaaS contract** than the service-side agreement:
 
-- 按 token 计费（V3 / R1 价格在中国前沿模型中**极低**，是其商业策略核心）
-- Rate limit、SLA、退款机制
-- 数据使用条款：**默认不将用户 API 输入用于训练**（2025-03 更新后明确）
-- 企业商用**不另签 MSA**（除大额合同）
+- Per-token pricing (V3 / R1 prices are **extremely low** among China's frontier models, a
+  cornerstone of its commercial strategy).
+- Rate limits, SLAs, refund mechanisms.
+- Data-use clauses: **by default, user API inputs are not used for training** (clarified after the
+  2025-03 update).
+- Enterprise commercial use **does not require a separate MSA** (except for large contracts).
 
-### "禁用行业"清单的缺席
+### The absent "prohibited industries" list
 
-Anthropic 在 Commercial Terms 中**明确禁用**某些行业（武器、监控基础设施），Meta Llama 的
-Acceptable Use Policy（Llama 3 引入、Llama 4 延续）附加了**"军事、战争、核工业、间谍活动"**
-等专门禁令。**DeepSeek API 条款无此类行业黑名单**，统一以"不得违法"概括。
+Anthropic's Commercial Terms **explicitly prohibit** certain industries (weapons, surveillance
+infrastructure); Meta Llama's Acceptable Use Policy (introduced with Llama 3 and continued in
+Llama 4) adds dedicated bans on **"military, warfare, nuclear industry, and espionage"**. **DeepSeek's
+API terms contain no such industry blacklist** — everything is folded into the general "do not
+break the law" clause.
 
-这是观察中国前沿实验室与美国同行**自律深度差**最直观的文本证据。
+This is the most direct textual evidence of the **self-regulation depth gap** between Chinese
+frontier labs and their US counterparts.
 
-## 四、MIT License：中国开源的"极限立场"
+## 4. MIT License: the "maximalist" posture of Chinese open source
 
-### 无附加条款
+### No additional clauses
 
-DeepSeek-V2 / V2.5 / V3 / R1 / V3.1 / VL / Coder / Math 等权重在 HuggingFace 和 GitHub 上
-**统一采用 MIT License**。MIT 的关键特征：
+DeepSeek-V2 / V2.5 / V3 / R1 / V3.1 / VL / Coder / Math weights on HuggingFace and GitHub
+**uniformly adopt the MIT License**. Key features of MIT:
 
-- **无"no military use"**
-- **无"no surveillance"**
-- **无"acceptable use policy" 附加**（不同于 Llama / Falcon / Stable Diffusion 的修订版许可）
-- **无使用量阈值触发的再授权义务**（不同于 Llama 3 的 7 亿 MAU 条款）
-- **无 notification / attribution 要求之外的限制**
+- **No "no military use" clause.**
+- **No "no surveillance" clause.**
+- **No "acceptable use policy" attachment** (unlike the revised licenses of Llama / Falcon /
+  Stable Diffusion).
+- **No re-licensing trigger tied to usage thresholds** (unlike Llama 3's 700M MAU clause).
+- **No restrictions beyond notification / attribution.**
 
-> Irene Solaiman（Hugging Face, 2023 "Gradient of Release"）把模型发布分为六个梯度
-> （从 fully closed 到 fully open）；DeepSeek-V3/R1 位于**最开放一端**，且是**全球前五大能力模型
-> 中唯一采用无附加条款 MIT 的**。
+> Irene Solaiman (Hugging Face, 2023, *Gradient of Release*) classifies model releases along a
+> six-step gradient from fully closed to fully open; DeepSeek-V3/R1 sit **at the most open end**,
+> and are **the only model among the world's top-five capability models released under an
+> unmodified MIT License**.
 
-### 与 Meta Llama 的对比
+### Comparison with Meta Llama
 
-| 维度 | DeepSeek (MIT) | Meta Llama 3 / 4 (Custom) |
+| Dimension | DeepSeek (MIT) | Meta Llama 3 / 4 (Custom) |
 | --- | --- | --- |
-| 核心许可 | MIT | 定制许可 + AUP |
-| 商业使用 | 无限制 | **月活用户 > 7 亿需单独授权** |
-| 禁用场景 | 无 | AUP 列 13 类（含武器、执法滥用、CSAM 等）|
-| 再分发 | 允许（保留版权声明即可） | 允许但**衍生模型命名须含 "Llama"** |
-| 欧盟适用 | 由下游合规 | Llama 3 曾**短暂排除欧盟**（后恢复）|
+| Core license | MIT | Custom license + AUP |
+| Commercial use | Unrestricted | **Monthly active users > 700M requires separate license** |
+| Prohibited uses | None | AUP lists 13 categories (weapons, law-enforcement abuse, CSAM, etc.) |
+| Redistribution | Allowed (retain copyright notice) | Allowed, but **derivative models must include "Llama" in the name** |
+| EU applicability | Delegated to downstream compliance | Llama 3 was **briefly excluded from the EU** (later restored) |
 
-**Kapoor & Narayanan**（*AI Snake Oil*, Princeton, 2024）指出：Meta 的 "Acceptable Use" 在
-**开源语境下几乎不可执行**（谁能监督全球下载者？），所以附加条款更多是**法律保险**而非实际约束。
-DeepSeek 的 MIT 立场把这一点推到极致 —— **既然不可执行就不假装能执行**。
+**Kapoor & Narayanan** (*AI Snake Oil*, Princeton, 2024) argue that Meta's "Acceptable Use" is
+**nearly unenforceable in an open-source context** (who polices global downloaders?), making the
+additional clauses more of a **legal insurance policy** than a substantive constraint. DeepSeek's
+MIT stance pushes this observation to its logical conclusion — **if it cannot be enforced, do not
+pretend it can be**.
 
-## 五、海外托管者的 AUP 归属问题
+## 5. The AUP-attribution problem for overseas hosts
 
-2025-Q1 以后，DeepSeek 权重被 **Together AI、Lepton AI、Fireworks AI、Perplexity、Groq、
-Cerebras、AWS Bedrock（2025-03 上架 R1 Distill 变体）** 等托管商纷纷提供：
+Since 2025-Q1, DeepSeek weights have been served by hosts including **Together AI, Lepton AI,
+Fireworks AI, Perplexity, Groq, Cerebras, and AWS Bedrock** (R1 Distill variants listed in
+2025-03):
 
-- **权重由 MIT 授权流出** → 再分发合法
-- **服务由托管商自己的 AUP 覆盖**：Together 有自己的 AUP，Lepton 有自己的，各不相同
-- **用户通过托管商访问 DeepSeek 模型时，DeepSeek 的服务侧 AUP 不适用**
-- **中国 CAC 备案**只覆盖 DeepSeek 自己在中国境内运营的服务端点，对海外托管**不产生域外效力**
+- **Weights flow out under MIT** → redistribution is legal.
+- **Services are covered by each host's own AUP**: Together has its own, Lepton has its own, and
+  they differ.
+- **When users access DeepSeek models via a host, DeepSeek's service-side AUP does not apply.**
+- **China's CAC filing** only covers DeepSeek's own service endpoints operated inside China;
+  **it carries no extraterritorial effect** over overseas hosts.
 
-这种**"权重开源 → 一份 MIT + N 份托管商 AUP + 0 份 DeepSeek 境内 AUP"**的结构，构成了
-**全球开源 AI 治理的最复杂版图之一**，也是后续监管讨论（EU AI Act 第 53 条开源豁免边界、
-美国 BIS 的 "Advanced Open-Weight AI Model" 规则草案）的核心争议场景。
+This structure — **"open weights → one MIT + N host AUPs + 0 DeepSeek in-China AUPs"** — forms
+**one of the most complex maps in global open-source AI governance**, and is the central battleground
+for subsequent regulatory debates (the scope of the EU AI Act Article 53 open-source exemption,
+the US BIS draft rule on "Advanced Open-Weight AI Models").
 
-## 六、2025-01 R1 发布后的"服务中断 / 注册限制"插曲
+## 6. The 2025-01 post-R1 "service disruption / registration restriction" episode
 
-2025-01-27 前后，chat.deepseek.com 一度**暂停新用户注册**，官方声明称"注册量异常增长，需加强
-安全防护"。学界对此事件有两种主流解读：
+Around 2025-01-27, chat.deepseek.com temporarily **suspended new-user registration**, with an
+official statement citing "abnormal registration growth requiring strengthened security." Two
+main readings circulate in academia:
 
-1. **基础设施解释**（Paul Triolo, DGA-Albright Stonebridge）：纯粹是流量超预期造成的工程响应
-2. **监管沟通解释**（Matt Sheehan, CEIP "ChinAI"；Jeffrey Ding, GWU）：这可能是**首批爆款式海外
-   舆情回流**触发 CAC 与 DeepSeek 之间的非公开协调窗口 —— 在中国 AI 治理中，**服务端的可控性**
-   是监管首要诉求，注册限制是降低海外新流量暴露的快速手段
+1. **Infrastructure reading** (Paul Triolo, DGA-Albright Stonebridge): purely an engineering
+   response to traffic exceeding expectations.
+2. **Regulatory-communication reading** (Matt Sheehan, CEIP *ChinAI*; Jeffrey Ding, GWU): the
+   event may have triggered a non-public coordination window between CAC and DeepSeek — in
+   Chinese AI governance, **service-side controllability** is the regulator's primary concern,
+   and registration restrictions are a rapid lever for reducing overseas new-traffic exposure.
 
-两种解读并不互斥。无论主因为何，这一事件**展示了服务侧合规杠杆的即时生效能力**，与权重侧的
-**完全不可撤销**形成鲜明对比 —— 这正是理解 DeepSeek 合规结构的核心张力。
+The two readings are not mutually exclusive. Whatever the primary cause, the episode **demonstrated
+the instantaneous effect of service-side compliance leverage**, in stark contrast with the **full
+irrevocability of the weight-side release** — the core tension in understanding DeepSeek's
+compliance structure.
 
-## 七、学术与产业观察
+## 7. Academic and industry observations
 
-### 学术批评视角
+### Academic critiques
 
-- **Irene Solaiman（HuggingFace）**：DeepSeek 是 "gradient of release" 光谱上**最接近 fully open
-  的边界案例**，为测试"开源即透明度替代"的假设提供了材料
-- **Kapoor & Narayanan（Princeton）**：2025-03 博客文章论证 DeepSeek 权重公开后 6 个月内，
-  **没有出现灾难性滥用证据**，支持"开源风险被夸大"派
-- **Rishi Bommasani et al.（Stanford CRFM）**：2025 年更新版 Foundation Model Transparency Index
-  中，DeepSeek 在 **"methods" 和 "data" 维度排名明显提升**，但**"usage policy" 和 "downstream
-  impact" 维度得分低**，反映出技术透明与治理透明的不对称
-- **张凌寒**：在《开源人工智能模型的监管悖论》（2025）中指出，中国现行治理框架以**服务备案**为
-  主轴，权重开源本身**不直接触发备案义务**；但 2026 若将"提供训练 / 微调素材"纳入规制，DeepSeek
-  将是主要影响对象
-- **戴昕（北京大学法学院）**：从数据安全法视角提出，**MIT License 的"无限制性"与《数据安全法》
-  第 21 条"重要数据"管控存在张力**，未来可能通过《网络数据安全管理条例》配套规则收紧
+- **Irene Solaiman (HuggingFace)**: DeepSeek is the **closest boundary case to fully open** on
+  the gradient of release, and serves as material for testing the hypothesis that "open source
+  substitutes for transparency."
+- **Kapoor & Narayanan (Princeton)**: in a 2025-03 blog post, they argue that in the six months
+  following DeepSeek's weight release **no catastrophic misuse evidence emerged**, supporting the
+  "open-source risks are overstated" camp.
+- **Rishi Bommasani et al. (Stanford CRFM)**: in the 2025 update of the Foundation Model
+  Transparency Index, DeepSeek's **"methods" and "data" scores rose notably**, but **"usage policy"
+  and "downstream impact" scores remain low** — reflecting the asymmetry between technical and
+  governance transparency.
+- **Zhang Linghan**: in *The Regulatory Paradox of Open-Source AI Models* (2025), she argues that
+  China's current framework is anchored in **service-side filing**, and that open-weights release
+  itself **does not directly trigger a filing obligation**; but if 2026 brings "providing training
+  / fine-tuning materials" into the regulatory perimeter, DeepSeek will be the primary affected
+  party.
+- **Dai Xin 戴昕 (Peking University Law School)**: from a data-security-law perspective, he
+  argues that **the "no restriction" character of MIT is in tension with Article 21 of the
+  *Data Security Law* on "important data" controls**, and that supporting rules under the
+  *Network Data Security Management Regulation* may tighten this.
 
-### 产业第一手实践
+### Industry first-hand practice
 
-- **金融客户的 API 集成谨慎性**：部分中国商业银行和头部券商 2025 上半年对 DeepSeek API 持观望态度，
-  核心顾虑并非模型能力，而是**合同条款单薄**（无企业级 SLA、无数据驻留承诺的详细书面化）
-- **教育客户的选择性使用**：K12 教育产品（作业帮、猿辅导等）倾向于**通过备案更完整的中间层**
-  （阿里云百炼、百度千帆）接入 DeepSeek 而非直连
-- **海外开发者的 AUP 困惑**：2025-Q2 多家北美 SaaS 公司通过 Together / Fireworks 调用 R1 时，
-  法务对"适用哪一份 AUP"提出明确疑问，催生了**托管商层的"开源模型 AUP 说明页"**新文档类型
+- **Cautious API adoption by financial clients**: in H1 2025, several Chinese commercial banks
+  and leading brokerages took a wait-and-see stance on DeepSeek's API — not because of model
+  capability, but because of **thin contract terms** (no enterprise SLA, no detailed written data
+  residency commitment).
+- **Selective use by educational clients**: K-12 education products (Zuoyebang, Yuanfudao)
+  prefer to integrate DeepSeek **through more fully filed intermediary layers** (Alibaba Bailian,
+  Baidu Qianfan) rather than connecting directly.
+- **AUP confusion among overseas developers**: in 2025-Q2, several North American SaaS companies
+  accessing R1 via Together / Fireworks asked their legal teams which AUP actually applied — giving
+  rise to a new document genre: the **host-side "open-model AUP explainer" page**.
 
-## 八、与"监管合规位置"的衔接
+## 8. Interface with "regulatory compliance positioning"
 
-DeepSeek 使用政策的**最终约束力**并不来自文本本身，而来自三层外部机制：
+The **ultimate binding force** of DeepSeek's usage policy does not come from the text itself; it
+comes from three external mechanisms:
 
-1. **CAC 算法备案**（2023-10 首批过审，V3 / R1 分别于 2024-12、2025-01 补充备案）—— 服务
-   侧下架权在监管
-2. **TC260-003-2024 基线**—— 推荐性标准但事实强制
-3. **下游托管商 AUP + 各国属地监管**（2025 年初意大利 Garante 临时封禁、韩国 / 台湾 / 澳大利亚
-   政府设备禁用、2025 年上半年美国 DoD / Commerce 相关禁用；具体日期以官方公告为准）——
-   权重层开放、服务层被属地切断
+1. **CAC algorithm filing** (first batch approved in 2023-10; V3 / R1 supplementary filings in
+   2024-12 and 2025-01 respectively) — the takedown power on the service side rests with the
+   regulator.
+2. **TC260-003-2024 baseline** — a recommended standard that is de facto mandatory.
+3. **Downstream host AUPs + local regulation in each jurisdiction** (Italy's Garante temporary
+   block in early 2025; government-device bans in South Korea / Taiwan / Australia; US DoD /
+   Commerce bans in H1 2025; specific dates per official announcements) — the weight layer is
+   open, the service layer is severed locally.
 
-> **结论**：DeepSeek 的使用政策是一份**"主动留白 + 被动兜底"**的文档 —— 它放弃了通过企业自律
-> 来塑造行业治理的姿态，把约束力全部托付给**服务侧备案 + 权重侧 MIT + 托管层各自合规**的组合。
-> 这既是中国治理路径的自然结果，也是对全球"前沿实验室必须发布 AUP"叙事的结构性挑战。
+> **Conclusion**: DeepSeek's usage policy is a document of **"deliberate blanks plus passive
+> backstops"** — it has given up on shaping industry governance through corporate self-regulation,
+> and has outsourced all binding force to the combination of **service-side filing + weight-side
+> MIT + host-layer compliance in each jurisdiction**. This is both a natural consequence of
+> China's governance path and a structural challenge to the global narrative that "frontier labs
+> must publish an AUP."
 
-## 参考与延伸阅读
+## References and further reading
 
-- chat.deepseek.com（用户协议 / 隐私政策页面）
-- HuggingFace: `deepseek-ai/DeepSeek-V3` / `DeepSeek-R1` 仓库 LICENSE 文件
+- chat.deepseek.com (Terms of Use / Privacy Policy pages)
+- HuggingFace: `deepseek-ai/DeepSeek-V3` / `DeepSeek-R1` repository LICENSE files
 - Solaiman, I. (2023). *The Gradient of Generative AI Release: Methods and Considerations.* FAccT
 - Kapoor, S. & Narayanan, A. (2024). *AI Snake Oil.* Princeton University Press
 - Bommasani, R. et al. (2024/2025). *The Foundation Model Transparency Index.* Stanford CRFM
-- 张凌寒 (2025)《开源人工智能模型的监管悖论》，《中国法学》
-- 朱悦 (2024)《生成式 AI 服务的合规文本研究》，《法学研究》
-- Matt Sheehan, *ChinAI Newsletter* 2025-02 特刊
-- 本站 [rules/china/generative-ai-interim-measures](/rules/china/generative-ai-interim-measures/)
-  · [tc260-gen-ai-security-basic-requirements](/rules/china/tc260-gen-ai-security-basic-requirements/)
+- Zhang Linghan 张凌寒 (2025). *The Regulatory Paradox of Open-Source AI Models.* *China Legal Science*
+- Zhu Yue 朱悦 (2024). *Research on Compliance Texts of Generative AI Services.* *Chinese Journal of Law*
+- Matt Sheehan, *ChinAI Newsletter* 2025-02 special issue
+- This site: [en/rules/china/generative-ai-interim-measures](/rules/china/generative-ai-interim-measures/)
+  · [en/rules/china/tc260-gen-ai-security-basic-requirements](/rules/china/tc260-gen-ai-security-basic-requirements/)

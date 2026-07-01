@@ -1,8 +1,8 @@
 ---
-title: 新一代人工智能治理原则
-description: 国家新一代人工智能治理专业委员会 2019-06 发布的八项治理原则；中国 AI 治理的价值坐标与后续全部规章的方向性锚点
-ruleName: 新一代人工智能治理原则 — 发展负责任的人工智能
-issuer: 国家新一代人工智能治理专业委员会（科技部组建）
+title: New-Generation AI Governance Principles
+description: Eight governance principles issued by the National New-Generation AI Governance Expert Committee in June 2019; the value anchor for China's subsequent AI rulemaking
+ruleName: New-Generation AI Governance Principles — Developing Responsible AI (《新一代人工智能治理原则——发展负责任的人工智能》)
+issuer: National New-Generation AI Governance Expert Committee (convened by MOST) (国家新一代人工智能治理专业委员会，科技部组建)
 level: normative-document
 binding: soft
 effectiveDate: 2019-06-17
@@ -10,75 +10,68 @@ publishedDate: 2019-06-17
 originalUrl: https://www.most.gov.cn/kjbgz/201906/t20190617_147107.html
 relatedTopics:
   - risk-classification
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: 新一代 AI 治理原则 (2019)
+  label: New-Gen AI Governance Principles (2019)
   order: 51
 ---
 
-> **📑 法律位阶**：第 4 级 · 规范性文件（治理原则） | **发布**：国家新一代人工智能治理专业委员会（科技部组建） | **发布**：2019-06-17 | **属性**：软法 · 价值坐标
+> **📑 Legal hierarchy**: Level 4 · Normative document (governance principles) | **Issuance**: National New-Generation AI Governance Expert Committee (convened by MOST) | **Released**: 2019-06-17 | **Character**: soft law · value anchor
 
-> **⚠️ 位阶提醒**：本文件是**治理原则声明**（第 4 级规范性文件），不直接产生法律义务；
-> 但为后续全部 AI 部门规章提供**方向性锚点**。
-> 详见 [中国规则索引](/rules/china/#法律位阶速览)。
+> **⚠️ Hierarchy note**: This document is a **statement of governance principles** (Level 4 normative document); it does not directly impose legal duties, but provides **directional anchoring** for every subsequent AI departmental rule. See [Index of Chinese Rules](/rules/china/#the-legal-hierarchy-at-a-glance).
 
-## 中文摘要
+## Chinese Summary
 
-《新一代人工智能治理原则——发展负责任的人工智能》由**国家新一代人工智能治理专业委员会**
-于 **2019-06-17** 发布。是中国**首个**专门针对 AI 的官方治理原则文件。
+The *New-Generation AI Governance Principles — Developing Responsible AI* were issued by the **National New-Generation AI Governance Expert Committee** on **2019-06-17**. This is China's **first** dedicated official AI governance-principles document.
 
-**意义**：在《生成式 AI 办法》《深度合成规定》等具体部门规章出台前，本原则为中国 AI 治理
-的基本**价值坐标**；其后续多部规章的表述（"发展与安全并重"等）均可追溯至此。
+**Significance**: before the subsequent AI departmental rules (the *Generative AI Interim Measures*, *Deep Synthesis Provisions*, etc.), these Principles provided the basic **value anchor** for Chinese AI governance; phrasings in later rules (e.g., "balance development and security") can be traced to them.
 
-## 八项原则
+## The Eight Principles
 
-1. **和谐友好** (Harmony and Friendship)
-2. **公平公正** (Fairness and Justice)
-3. **包容共享** (Inclusion and Sharing)
-4. **尊重隐私** (Respect for Privacy)
-5. **安全可控** (Safety and Controllability)
-6. **共担责任** (Shared Responsibility)
-7. **开放协作** (Open Cooperation)
-8. **敏捷治理** (Agile Governance) — **首次官方提出"敏捷治理"概念**
+1. **Harmony and Friendship** (和谐友好)
+2. **Fairness and Justice** (公平公正)
+3. **Inclusion and Sharing** (包容共享)
+4. **Respect for Privacy** (尊重隐私)
+5. **Safety and Controllability** (安全可控)
+6. **Shared Responsibility** (共担责任)
+7. **Open Cooperation** (开放协作)
+8. **Agile Governance** (敏捷治理) — **first official articulation of "agile governance"**.
 
-## 后续延展
+## Follow-on Developments
 
-### 《新一代人工智能伦理规范》(2021-09)
+### *Ethics Norms for a New Generation of AI* (2021-09)
 
-同一专委会于 2021-09-25 发布更细化的《新一代人工智能伦理规范》，
-提出 6 项基本伦理要求 + 18 项具体伦理要求。
+The same expert committee released the more granular *Ethics Norms for a New Generation of AI* on 2021-09-25, setting out 6 basic ethical requirements and 18 specific ethical requirements.
 
-### 对部门规章的影响
+### Impact on Departmental Rules
 
-- "敏捷治理"原则 → 《暂行办法》等"**暂行**"命名的制度背景
-- "安全可控" → 算法备案 / 安全评估制度
-- "尊重隐私" → 与 PIPL 的对齐
-- "共担责任" → 服务提供者 + 用户 + 平台三元责任结构
+- "Agile governance" → the institutional backdrop for instruments with the "**Interim**" (*暂行*) naming.
+- "Safety and controllability" → the algorithm filing / security-assessment regime.
+- "Respect for privacy" → alignment with PIPL.
+- "Shared responsibility" → the tripartite liability structure of service provider + user + platform.
 
-## 与国际治理原则的比较
+## Comparison with International Governance Principles
 
-- **OECD AI Principles** (2019-05) 同期：透明、公平、稳健、问责、人本、包容
-- **G20 AI Principles** (2019-06 大阪宣言) 与 OECD 对齐
-- 中国原则 vs. OECD：价值维度有高度重合，但**"共担责任"和"包容共享"更强调集体维度**；
-  OECD 更强调**人权与自主**
+- **OECD AI Principles** (2019-05), contemporaneous: transparency, fairness, robustness, accountability, human-centric, inclusion.
+- **G20 AI Principles** (2019-06 Osaka Declaration), aligned with OECD.
+- Chinese Principles vs. OECD: substantial overlap on value axes, but **"shared responsibility" and "inclusion and sharing" emphasize the collective dimension more strongly**; OECD places more emphasis on **human rights and autonomy**.
 
-## 作为全球治理的外交表达
+## As Diplomatic Expression for Global Governance
 
-2023-10 中国进一步提出《全球人工智能治理倡议》（AI Global Governance Initiative），
-与本原则一脉相承，作为中国在联合国 / 双边 / 多边场合推动 AI 治理的立场文件。
+In 2023-10, China went further with the *Global AI Governance Initiative*, an externally facing complement to these Principles and the position document China advances in the UN, bilateral, and multilateral contexts.
 
-## 原文与归档
+## Source Text and Archival Copies
 
-| 来源 | 链接 |
+| Source | Link |
 | --- | --- |
-| 中文（科技部） | [most.gov.cn](https://www.most.gov.cn/kjbgz/201906/t20190617_147107.html) |
-| English translation | China Law Translate | [chinalawtranslate.com](https://www.chinalawtranslate.com/) （关键词：AI governance principles） |
+| Chinese (MOST) | [most.gov.cn](https://www.most.gov.cn/kjbgz/201906/t20190617_147107.html) |
+| English translation | China Law Translate | [chinalawtranslate.com](https://www.chinalawtranslate.com/) (keyword: AI governance principles) |
 
-## 版本历史
+## Version History
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2019-06-17 | 八项治理原则发布 |
-| 2021-09-25 | 《新一代人工智能伦理规范》（6+18 条）发布 |
-| 2023-10 | 《全球人工智能治理倡议》（对外版） |
-| 2024-09 | 《人工智能安全治理框架》1.0（从原则到体系化） |
+| 2019-06-17 | Eight governance principles released |
+| 2021-09-25 | *Ethics Norms for a New Generation of AI* (6 + 18) released |
+| 2023-10 | *Global AI Governance Initiative* (external-facing) |
+| 2024-09 | *AI Safety Governance Framework* 1.0 (from principles to a systematic framework) |

@@ -1,98 +1,94 @@
 ---
-title: 百度 Baidu
-description: 百度文心大模型概况与政策文档快照（2026-04-22）
+title: Baidu 百度
+description: Baidu ERNIE 文心 profile and policy-document snapshot (2026-06-28)
 sidebar:
   order: 6
-  label: 百度 Baidu
-snapshotDate: 2026-04-22
+  label: Baidu 百度
+snapshotDate: 2026-06-28
 ---
 
-## 公司概况
+## Company profile
 
-- **成立**：2000
-- **总部**：北京
-- **主要 AI 产品**：
-  - **文心一言（ERNIE Bot）**：消费者 / 开发者 AI 助手
-  - **文心大模型（ERNIE）系列**：
-    - **ERNIE 5.0**（2026-01 发布）：**2.4 万亿参数**，原生多模态统一建模；官方声称语言和多模态理解超过 Gemini-2.5-Pro、GPT-5-High
-    - **ERNIE 4.5 系列**（2025-06-30 开源，10 个模型）：0.3B / A3B / A47B 三档
-  - **千帆大模型平台**（MaaS）：面向企业的大模型部署和微调
-  - **Apollo 自动驾驶**：AI 驱动的自动驾驶生态
-- **商业模式**：搜索广告 + 云计算（含 AI）+ 自动驾驶 + AI 应用（文小言、秒哒等）
+- **Founded**: 2000
+- **Headquarters**: Beijing
+- **Main AI products**:
+  - **ERNIE Bot 文心一言**: consumer / developer AI assistant
+  - **ERNIE 文心 model family**:
+    - **ERNIE 5.0** (released 2026-01): **2.4 trillion parameters**, natively multimodal unified modelling; Baidu claims language and multimodal understanding exceeding Gemini 2.5 Pro and GPT-5-High
+    - **ERNIE 4.5 series** (open-sourced 2025-06-30, 10 models): tiers at 0.3B / A3B / A47B
+  - **Qianfan 千帆 platform** (MaaS): enterprise-facing model deployment and fine-tuning
+  - **Apollo**: AI-driven autonomous-driving ecosystem
+- **Business model**: search advertising + cloud (including AI) + autonomous driving + AI applications (Wenxiaoyan 文小言, Miaoda 秒哒, etc.)
 
-## 战略定位
+## Strategic positioning
 
-- **中国 BAT 中 AI 投入最早、最大的公司**（2010 起步，2017 发布"All in AI"战略）
-- **自研芯片**（昆仑芯）+ **自研大模型**（文心）+ **自研推理框架**（飞桨）→ **全栈自研**
-- **闭源旗舰 + 开源中小模型**的分层策略（类似 Anthropic/OpenAI 闭源 + Meta 开源的对冲）
+- **The earliest and heaviest AI investor among China's BAT trio** (started 2010; announced "All in AI" strategy in 2017)
+- **In-house chips** (Kunlun 昆仑芯) + **in-house LLM** (ERNIE) + **in-house inference framework** (PaddlePaddle 飞桨) → **full-stack indigenisation**
+- **Closed-source flagship + open-source mid-tier** layering (a hedging pattern similar to Anthropic / OpenAI closed + Meta open)
 
-## 公开政策文档快照
+## Policy document snapshot
 
-| 类型 | 文档名 | 链接 | 本站子页 |
+| Type | Document | Link | Subpage |
 | --- | --- | --- | --- |
-| 使用政策 | 文心一言《用户协议》及内容规范 | [yiyan.baidu.com](https://yiyan.baidu.com/) | — |
-| 技术报告 | ERNIE 4.5 Technical Report、ERNIE 5.0 Blog | [ernie.baidu.com/blog](https://ernie.baidu.com/blog/) | — |
-| 开源模型 | ERNIE 4.5 系列 GitHub | [github.com/PaddlePaddle/PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) | — |
-| 安全框架 | 公开文档有限；TC260-003 合规基线 | _公开文档有限_ | — |
-| 透明度 | CAC 算法备案（多批次） | [cac.gov.cn](https://www.cac.gov.cn/) | — |
+| Usage policy | ERNIE Bot User Agreement and content rules | [yiyan.baidu.com](https://yiyan.baidu.com/) | — |
+| Technical reports | ERNIE 4.5 Technical Report, ERNIE 5.0 Blog | [ernie.baidu.com/blog](https://ernie.baidu.com/blog/) | — |
+| Open-source models | ERNIE 4.5 series on GitHub | [github.com/PaddlePaddle/PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP) | — |
+| Safety framework | Limited public documentation; TC260-003 compliance as baseline | _limited public documentation_ | — |
+| Transparency | CAC algorithm filings (算法备案, multiple batches) | [cac.gov.cn](https://www.cac.gov.cn/) | — |
 
-## 监管合规位置
+## Regulatory-compliance posture
 
-- **中国**：
-  - [《生成式 AI 办法》](/rules/china/generative-ai-interim-measures/) 算法备案 — 文心一言是**首批备案**的服务之一（2023-08）
-  - [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) 合规
-  - [《深度合成规定》](/rules/china/deep-synthesis-provisions/)、[《算法推荐规定》](/rules/china/algorithm-recommendation-provisions/) 多项合规
-  - **新一代 AI 开放创新平台**之一（自动驾驶领域）——国家队待遇
-- **美国**：AI 部分产品**不在美国提供消费者服务**；企业 API 受 BIS 出口管制影响
-- **欧盟**：**不在欧盟提供消费者服务**；ERNIE 开源权重下载欧洲可访问但涉及 AI Act 第 53 条义务
-- **俄罗斯 / 中东 / 东南亚**：持续推进本地化合作
+- **China**:
+  - Algorithm filing under the [Generative AI Interim Measures 生成式人工智能服务管理暂行办法](/rules/china/generative-ai-interim-measures/) — ERNIE Bot was among the **first wave of filed services** (2023-08)
+  - [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) compliance
+  - Compliance with the [Deep Synthesis Provisions 深度合成规定](/rules/china/deep-synthesis-provisions/), [Algorithm Recommendation Provisions 算法推荐规定](/rules/china/algorithm-recommendation-provisions/), and others
+  - One of the **"New-Generation AI Open Innovation Platforms"** (autonomous driving) — national-team treatment
+- **United States**: some consumer AI services **are not offered in the U.S.**; enterprise API is affected by BIS export controls
+- **European Union**: **no consumer services in the EU**; ERNIE open weights are downloadable in Europe but trigger AI Act Article 53 obligations
+- **Russia / Middle East / Southeast Asia**: ongoing localisation partnerships
 
-## 深度分析：**国家队公司的"共治"自律**
+## Deep dive: **the "co-governance" self-regulation of a national-team company**
 
-### 百度的独特位置
+### Baidu's distinctive position
 
-百度是中国 AI "国家队"的**最深绑定**：
+Baidu is **the most deeply embedded** of China's AI "national team" companies:
 
-- **2017 国务院规划**：**首批"国家新一代 AI 开放创新平台"**依托企业（自动驾驶 Apollo）
-- **党委嵌入程度高**：头部平台公司中党委在战略、算法价值观、内容审核的参与度为业内公开记录的显著水平
-  （参考论文 §3.2.1）
-- **全栈自研导向**：昆仑芯（AI 芯片）+ 飞桨（深度学习框架）+ 文心（模型）+ 千帆（MaaS）——
-  对标国家"技术自立"战略
-- **Robin Li 的公开立场**：历任 WAIC、两会、乌镇互联网大会积极表态；2026-01 ERNIE 5.0 发布时
-  明确**"对标 GPT-5 High"** 的技术自信叙事
+- **2017 State Council plan**: one of the **first designated "New-Generation AI Open Innovation Platform"** anchor companies (autonomous driving / Apollo)
+- **Deep Party-committee embedding**: among the top Chinese platform companies, Party-committee involvement in strategy, algorithmic values, and content moderation is publicly documented at notable levels (see the graduate thesis cited in [About](/about/) §3.2.1)
+- **Full-stack indigenisation**: Kunlun (AI chips) + PaddlePaddle (deep-learning framework) + ERNIE (model) + Qianfan (MaaS) — aligned with the national strategy of **"technological self-reliance"**
+- **Robin Li 李彦宏's public posture**: regular participation in WAIC, the Two Sessions, and the Wuzhen Internet Conference; at the ERNIE 5.0 launch in January 2026, Li foregrounded a **"benchmarked against GPT-5 High"** narrative of technical confidence
 
-### 百度自律的制度特征
+### Institutional features of Baidu's self-regulation
 
-- **以参与国家标准制定为主要自律形式**：
-  - TC260-003-2024 起草参与方
-  - 人工智能安全治理框架 1.0/2.0 的重要产业输入方
-  - 多份 AI 相关国家标准（推荐性 GB/T）起草
-- **算法备案领先**：文心一言是 2023-08 **首批**通过 CAC 备案的生成式 AI 服务
-- **AI 伦理委员会**：百度 2019 成立"百度 AI 伦理委员会"，但**公开输出有限**
-- **内部红队**：技术报告局部披露，无系统性公开文档
+- **Participation in national standard-setting as the primary form of self-regulation**:
+  - Participant in the drafting of TC260-003-2024
+  - Significant industry input into the AI Safety Governance Framework 1.0 / 2.0
+  - Drafting party for multiple AI-related recommended national standards (GB/T)
+- **Leadership in algorithm filing**: ERNIE Bot was in the **first wave** of generative-AI services to pass CAC filing (August 2023)
+- **AI Ethics Committee**: Baidu established its AI Ethics Committee in 2019, but **public output is limited**
+- **Internal red-teaming**: partial disclosure in technical reports; no systematic public documentation
 
-### ERNIE 4.5 开源的治理含义
+### Governance implications of the ERNIE 4.5 open-source release
 
-2025-06-30 ERNIE 4.5 系列开源（10 个模型）是百度**治理姿态的重要转变**：
+The 2025-06-30 open-sourcing of the ERNIE 4.5 family (10 models) marked an **important governance-posture shift** by Baidu:
 
-- **跟随阿里 Qwen / DeepSeek 的开源浪潮**：闭源旗舰 + 开源中档成为中国头部公司主流
-- **回应国际 AI 开源压力**：相对 Meta Llama、Mistral，中国开源生态显著加强
-- **开源合规挑战**：ERNIE 4.5 的训练数据合规声明在 GitHub 模型卡中**较美国同类更简略**
+- **Follows the Alibaba Qwen / DeepSeek open-source wave**: "closed flagship + open mid-tier" has become the mainstream pattern among leading Chinese companies
+- **Responds to international open-source pressure**: relative to Meta Llama and Mistral, China's open-source ecosystem has noticeably strengthened
+- **Open-source compliance challenge**: ERNIE 4.5's training-data compliance statement in the GitHub model card **is briefer than U.S. counterparts**
 
-### 与阿里 / DeepSeek / 字节的对比
+### Compared with Alibaba / DeepSeek / ByteDance
 
-| 维度 | 百度 | 阿里 | DeepSeek | 字节 |
+| Dimension | Baidu | Alibaba | DeepSeek | ByteDance |
 | --- | --- | --- | --- | --- |
-| 国家队绑定 | **最深**（Apollo 国家平台）| 中（阿里云国家平台）| 独立 | 商业化+地缘 |
-| 开源深度 | 中档开源 + 旗舰闭源 | **全线开源**（Apache 2.0）| **极限开源**（MIT）| 部分开源 |
-| 芯片自研 | **昆仑芯**（全栈）| 通义 + 含光芯片 | 无 | 无（依赖 GPU 采购）|
-| 国际影响 | 中 | **最大**（Qwen 下载）| **最大**（"DeepSeek moment"）| 中等 |
-| 产业生态 | 千帆 MaaS + 自动驾驶 | 阿里云 + 百炼 | API + 开源社区 | 火山引擎 + 豆包 |
+| National-team embedding | **Deepest** (Apollo national platform) | Medium (Alibaba Cloud national platform) | Independent | Commercial + geopolitical |
+| Open-source depth | Mid-tier open + flagship closed | **Full-line open** (Apache 2.0) | **Maximalist open** (MIT) | Partial open |
+| In-house chips | **Kunlun** (full stack) | Tongyi + Hanguang chips | None | None (GPU-purchase dependent) |
+| International reach | Medium | **Largest** (Qwen downloads) | **Largest** ("DeepSeek moment") | Medium |
+| Industry ecosystem | Qianfan MaaS + autonomous driving | Alibaba Cloud + Bailian 百炼 | API + open-source community | Volcano Engine 火山引擎 + Doubao 豆包 |
 
-## 公司立场速览
+## Company posture, in brief
 
-- **紧密配合国家 AI 治理**：头部公司中率先通过算法备案，积极参与 TC260 标准起草
-- **自律以参与标准制定为主**，不发布独立承诺文件
-- **深度绑定国家战略**：Apollo 自动驾驶是"国家新一代 AI 开放创新平台"首批
-- **全栈自研导向**：应对美国芯片出口管制的核心策略
-
+- **Tightly aligned with national AI governance**: first among leading companies to complete algorithm filing; active participation in TC260 standard drafting
+- **Self-regulation via participation in standard-setting** rather than standalone commitment documents
+- **Deep alignment with national strategy**: Apollo autonomous driving is one of the first "New-Generation AI Open Innovation Platforms"
+- **Full-stack indigenisation orientation**: core response to U.S. chip export controls

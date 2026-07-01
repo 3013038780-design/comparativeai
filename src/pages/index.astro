@@ -1,7 +1,7 @@
 ---
-// Comparative AI — 首页（完全自定义布局，脱离 Starlight Layout）
-// 数据来自 src/data/home.ts；样式在 src/styles/home.css
-import { topics, updates, timeline, stats } from '../data/home';
+// Comparative AI — English homepage (mirrors src/pages/index.astro).
+// Data from src/data/home-en.ts; styles from src/styles/home.css.
+import { topics, updates, timeline, stats } from '../data/home-en';
 import SiteHeader from '../components/SiteHeader.astro';
 import '../styles/home.css';
 
@@ -10,89 +10,83 @@ const GITHUB_URL = 'https://github.com/3013038780-design/comparativeai';
 const axes = [
 	{
 		num: 'i.',
-		title: '议题比较 · 横向',
-		desc: '风险分级、内容标识、数据训练、前沿模型——同一议题的三辖区对照。',
+		title: 'Topic Comparison · Horizontal',
+		desc: 'Risk classification, content labeling, data training, frontier models — the same issue contrasted across the three jurisdictions.',
 		href: '/topics/',
 	},
 	{
 		num: 'ii.',
-		title: '顶层规则 · 辖区',
-		desc: '按辖区整理的中央立法与权威指南一手索引，划分硬法 / 软法。',
+		title: 'Top-Level Rules · By Jurisdiction',
+		desc: 'A primary-source index of central legislation and authoritative guidance, sorted into hard and soft law.',
 		href: '/rules/',
 	},
 	{
 		num: 'iii.',
-		title: '地方层级',
-		desc: '中国地方试点、美国州市立法、欧盟成员国转化。',
+		title: 'Subnational Level',
+		desc: 'Chinese local pilots, US state and city statutes, EU member-state transpositions.',
 		href: '/subnational/',
 	},
 	{
 		num: 'iv.',
-		title: '公司实践',
-		desc: '前沿实验室与平台巨头的政策、框架与责任声明快照。',
+		title: 'Corporate Practice',
+		desc: 'Policy, framework, and accountability snapshots from frontier labs and platform giants.',
 		href: '/companies/',
 	},
 	{
 		num: 'v.',
-		title: '参考框架',
-		desc: 'OECD、UNESCO、NIST、ISO/IEC、PAI 等国际与行业框架的轻量索引。',
+		title: 'Reference Frameworks',
+		desc: 'A lightweight index of OECD, UNESCO, NIST, ISO/IEC, PAI, and other international and industry frameworks.',
 		href: '/reference/',
 	},
 	{
 		num: 'vi.',
-		title: '方法论',
-		desc: '收录标准、硬法/软法划分、版本管理、引用规则与免责声明。',
+		title: 'Methodology',
+		desc: 'Inclusion criteria, hard/soft-law taxonomy, versioning, citation rules, and disclaimers.',
 		href: '/methodology/',
 	},
 ];
 
 const footerContents = [
-	{ label: '议题比较', href: '/topics/' },
-	{ label: '顶层规则', href: '/rules/' },
-	{ label: '地方层级', href: '/subnational/' },
-	{ label: '公司实践', href: '/companies/' },
-	{ label: '参考框架', href: '/reference/' },
+	{ label: 'Topics', href: '/topics/' },
+	{ label: 'Top-Level Rules', href: '/rules/' },
+	{ label: 'Subnational', href: '/subnational/' },
+	{ label: 'Companies', href: '/companies/' },
+	{ label: 'Reference', href: '/reference/' },
 ];
 
 const footerAbout = [
-	{ label: '项目简介', href: '/about/' },
-	{ label: '方法论', href: '/methodology/' },
-	{ label: '引用与免责', href: '/methodology/citation-disclaimer/' },
-	{ label: '更新日志', href: '/updates/' },
+	{ label: 'About', href: '/about/' },
+	{ label: 'Methodology', href: '/methodology/' },
+	{ label: 'Citation & Disclaimer', href: '/methodology/citation-disclaimer/' },
+	{ label: 'Updates', href: '/updates/' },
 ];
 
 const footerOSS = [
 	{ label: 'GitHub ↗', href: GITHUB_URL },
-	{
-		label: '贡献指南',
-		href: GITHUB_URL + '/blob/main/README.md',
-	},
-	{
-		label: 'Edit this page ↗',
-		href: GITHUB_URL,
-	},
+	{ label: 'Contribute', href: GITHUB_URL + '/blob/main/README.md' },
+	{ label: 'Edit this page ↗', href: GITHUB_URL },
 ];
 
-// 辖区标签映射（表格每行的 data-juris 属性、更新列表的 tag 等）
+// Jurisdiction label mapping
 const juris = {
-	cn: { label: 'CN · 中国', tag: 'CN', color: 'cn' },
-	us: { label: 'US · 美国', tag: 'US', color: 'us' },
-	eu: { label: 'EU · 欧盟', tag: 'EU', color: 'eu' },
+	cn: { label: 'CN · China', tag: 'CN', color: 'cn' },
+	us: { label: 'US · United States', tag: 'US', color: 'us' },
+	eu: { label: 'EU · European Union', tag: 'EU', color: 'eu' },
 } as const;
 
-// 格式化日期：2026-04-18 → 2026.04.18
+// Date formatter: 2026-04-18 → 2026.04.18
 const fmtDate = (d: string) => d.replaceAll('-', '.');
 ---
 
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Comparative AI | 中美欧 AI 治理比较</title>
+		<title>Comparative AI | AI governance across China, US & EU</title>
 		<meta
 			name="description"
-			content="沿议题、顶层规则、地方层级、公司实践、参考框架五个轴，对中美欧三大司法辖区的 AI 治理规则进行结构化整理。"
+			content="A structured comparison of AI governance across three major jurisdictions — China, United States, European Union — along five axes: topics, top-level rules, subnational levels, corporate practice, and reference frameworks. Tracking hard law and soft law in parallel."
 		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -101,52 +95,54 @@ const fmtDate = (d: string) => d.replaceAll('-', '.');
 			rel="stylesheet"
 		/>
 	</head>
-	<body>
-		<SiteHeader />
+	<body class="en">
+		<SiteHeader locale="en" />
 
 		<main>
-			<!-- ===== 刊头 ===== -->
+			<!-- ===== Masthead ===== -->
 			<header class="masthead-block">
-				<div class="kicker">独立学术研究</div>
-				<h1 class="title">中美欧 AI 治理的<br />结构化比较</h1>
+				<div class="kicker">Independent academic research</div>
+				<h1 class="title">A structured comparison<br />of AI governance across China, US & EU</h1>
 				<p class="dek">
-					沿议题、顶层规则、地方层级、公司实践、参考框架五个轴，对三大司法辖区的 AI
-					治理规则进行结构化整理，追踪硬法与软法的平行演进。
+					Organized along five axes — topics, top-level rules, subnational levels, corporate practice,
+					and reference frameworks — this site tracks the parallel evolution of hard and soft law
+					across three major jurisdictions, read from the primary sources in their original languages.
 				</p>
 				<div class="meta-strip">
-					<span><strong>{stats.jurisdictions}</strong> 司法辖区</span>
-					<span><strong>{stats.issues}</strong> 核心议题</span>
-					<span><strong>{stats.rules}</strong> 一手规则</span>
-					<span><strong>{stats.companies}</strong> 公司快照</span>
-					<span>最近更新 · <strong>{stats.lastUpdate}</strong></span>
+					<span><strong>{stats.jurisdictions}</strong> jurisdictions</span>
+					<span><strong>{stats.issues}</strong> core topics</span>
+					<span><strong>{stats.rules}</strong> primary-source rules</span>
+					<span><strong>{stats.companies}</strong> corporate profiles</span>
+					<span>Last update · <strong>{stats.lastUpdate}</strong></span>
 				</div>
 			</header>
 
-			<!-- ===== §I 议题 × 辖区 ===== -->
+			<!-- ===== §I Topic × Jurisdiction ===== -->
 			<section class="chapter">
 				<div class="chapter-head">
 					<div class="chapter-num">§ I · Issue Matrix</div>
-					<h2 class="chapter-title">议题 × 辖区</h2>
+					<h2 class="chapter-title">Topic × Jurisdiction</h2>
 					<p class="chapter-lede">
-						同一议题在三辖区的规则形态对照。点击任一条目进入详细比较与逐条批注。
+						The same issue compared across the three jurisdictions. Click any cell for in-depth
+						analysis and article-level annotations.
 					</p>
 				</div>
 
-				<!-- 桌面 / 平板：表格形式 (>= 900px) -->
+				<!-- Desktop / tablet: table (≥ 900px) -->
 				<table class="matrix matrix-desktop">
 					<thead>
 						<tr>
-							<th>议题 / Issue</th>
+							<th>Topic / Issue</th>
 							<th class="cn">
-								<span class="juris-marker"></span>中国 &middot;
+								<span class="juris-marker"></span>China &middot;
 								<span style="font-family:var(--mono);font-size:11px;">CN</span>
 							</th>
 							<th class="us">
-								<span class="juris-marker"></span>美国 &middot;
+								<span class="juris-marker"></span>United States &middot;
 								<span style="font-family:var(--mono);font-size:11px;">US</span>
 							</th>
 							<th class="eu">
-								<span class="juris-marker"></span>欧盟 &middot;
+								<span class="juris-marker"></span>European Union &middot;
 								<span style="font-family:var(--mono);font-size:11px;">EU</span>
 							</th>
 						</tr>
@@ -179,7 +175,7 @@ const fmtDate = (d: string) => d.replaceAll('-', '.');
 					</tbody>
 				</table>
 
-				<!-- 手机 / 窄平板：折叠卡片形式 (< 900px) -->
+				<!-- Mobile / narrow tablet: collapsed cards (< 900px) -->
 				<div class="matrix-cards">
 					{
 						topics.map((t) => (
@@ -212,16 +208,17 @@ const fmtDate = (d: string) => d.replaceAll('-', '.');
 					}
 				</div>
 
-				<a href="/topics/" class="read-more">查看所有议题 →</a>
+				<a href="/topics/" class="read-more">View all topics →</a>
 			</section>
 
-			<!-- ===== §II 五轴导览 ===== -->
+			<!-- ===== §II Five axes ===== -->
 			<section class="chapter">
 				<div class="chapter-head">
 					<div class="chapter-num">§ II · Five Axes</div>
-					<h2 class="chapter-title">五轴交叉的整理体系</h2>
+					<h2 class="chapter-title">A five-axis index</h2>
 					<p class="chapter-lede">
-						同一条规则可以沿不同轴被索引。本站不假设任何一轴是主，而是让读者从最顺手的入口进入。
+						The same rule can be indexed along different axes. This site assumes none is primary —
+						readers are welcome to enter through whichever entry point they find most natural.
 					</p>
 				</div>
 
@@ -241,13 +238,14 @@ const fmtDate = (d: string) => d.replaceAll('-', '.');
 				</div>
 			</section>
 
-			<!-- ===== §III 最新 + 时间线 ===== -->
+			<!-- ===== §III Dispatches + timeline ===== -->
 			<section class="chapter">
 				<div class="chapter-head">
 					<div class="chapter-num">§ III · Dispatches</div>
-					<h2 class="chapter-title">近期更新 &amp; 纵向脉络</h2>
+					<h2 class="chapter-title">Recent dispatches &amp; a longer arc</h2>
 					<p class="chapter-lede">
-						每两周追踪三辖区立法与公司政策变化；侧栏附中国部门规章层的演进。
+						Legislative and corporate-policy movements across the three jurisdictions, updated
+						biweekly; the sidebar traces the evolution of China's departmental-rule layer.
 					</p>
 				</div>
 
@@ -269,13 +267,14 @@ const fmtDate = (d: string) => d.replaceAll('-', '.');
 								})
 							}
 						</ul>
-						<a href="/updates/" class="read-more">查看完整更新日志 →</a>
+						<a href="/updates/" class="read-more">Full update log →</a>
 					</div>
 
 					<aside class="sidebar-card">
-						<h3>中国生成式 AI 监管的五年轨迹</h3>
+						<h3>Five years of China's GenAI regulation</h3>
 						<p class="sidebar-sub">
-							部门规章层从"算法"到"深度合成"到"拟人化"的演进。
+							The departmental-rule layer evolving from "algorithms" to "deep synthesis" to
+							"anthropomorphic interaction".
 						</p>
 						<div class="tl">
 							{
@@ -297,8 +296,8 @@ const fmtDate = (d: string) => d.replaceAll('-', '.');
 			<div class="footer-inner">
 				<div class="foot-brand">
 					<strong>Comparative AI</strong>
-					独立学术研究项目。不构成法律意见，不代表任何机构立场。内容按 CC&nbsp;BY&nbsp;4.0
-					授权，代码按 MIT 授权。
+					An independent academic research project. Not legal advice; does not represent the views
+					of any institution. Content licensed under CC&nbsp;BY&nbsp;4.0; code under MIT.
 				</div>
 				<div class="foot-col">
 					<h5>Contents</h5>

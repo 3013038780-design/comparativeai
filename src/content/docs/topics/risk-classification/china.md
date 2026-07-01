@@ -1,63 +1,61 @@
 ---
-title: 中国 — 风险分级
-description: 中国对 AI 系统的事实分层：场景化 + 备案制 + 未落地的"分类分级"原则
+title: China — Risk Classification
+description: China's de facto tiering — scenario-based rule-making, algorithm filing, and an unimplemented "classified and graded" principle.
 sidebar:
   order: 2
-  label: 中国
+  label: China
 ---
 
-## 相关规则
+## Relevant rules
 
-| 规则 | 层级 | 与风险分级的关系 |
+| Rule | Legal tier | Relationship to risk classification |
 | --- | --- | --- |
-| [《生成式 AI 办法》](/rules/china/generative-ai-interim-measures/) (2023) | 部门规章 | 第三条写明"分类分级监管"原则 |
-| [《深度合成规定》](/rules/china/deep-synthesis-provisions/) (2023) | 部门规章 | 按场景划分"可能导致公众混淆"类别 |
-| [《算法推荐规定》](/rules/china/algorithm-recommendation-provisions/) (2022) | 部门规章 | 分为"具有舆论属性或社会动员能力"和普通 |
-| [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) | 技术规范 | 31 类风险，90% 安全通过率 |
-| [科技伦理审查办法（试行）](/rules/china/science-tech-ethics-review-measures/) (2023) | 部门规章 | 第二十五条给出"清单"，触发专家复核 |
+| [*Generative AI Interim Measures*](/rules/china/generative-ai-interim-measures/) (2023) | Departmental rule | Article 3 contains the "classified and graded supervision" principle |
+| [*Deep Synthesis Provisions*](/rules/china/deep-synthesis-provisions/) (2023) | Departmental rule | Sorts content by whether it "may cause public confusion" |
+| [*Algorithmic Recommendation Provisions*](/rules/china/algorithm-recommendation-provisions/) (2022) | Departmental rule | Distinguishes services "with public opinion attributes or capacity for social mobilisation" from ordinary ones |
+| [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) | Technical specification | 31 risk categories; 90% safety pass rate |
+| [*Science and Technology Ethics Review Measures (Trial)*](/rules/china/science-tech-ethics-review-measures/) (2023) | Departmental rule | Article 25 sets a list that triggers expert review |
 
-## 中国风险分级的三个特征
+## Three features of risk classification in China
 
-### 1. 有"分类分级监管"原则，但无统一清单
+### 1. There is a "classified and graded" principle, but no unified list
 
-- 《生成式 AI 办法》第三条写：**"对生成式人工智能服务实行包容审慎和分类分级监管"**
-- 《数据安全法》第二十一条：数据**一般 / 重要 / 核心**三级
-- 至 2026-04，**"生成式 AI 系统"的统一分级目录仍未发布**
+- Article 3 of the *Generative AI Interim Measures* states: 《生成式人工智能服务管理暂行办法》第三条 "对生成式人工智能服务实行包容审慎和分类分级监管" — i.e., "generative AI services shall be subject to inclusive, prudent, classified and graded supervision."
+- Article 21 of the *Data Security Law* sets three tiers for data: **general / important / core**.
+- As of Apr 2026, **no unified grading catalogue for "generative AI systems" has been issued**.
 
-结果：名义有分级，执行上靠**场景化专项规章**堆叠。
+Result: classification exists in name; in practice it is produced by stacking **scenario-specific departmental rules**.
 
-### 2. 场景化 ≠ 风险分级
+### 2. Scenario-based ≠ risk-tiered
 
-中国实际的"分层"靠把场景拆开单独规制：
+In practice China's "tiers" are produced by peeling off scenarios and regulating each separately:
 
-- **深度合成** → 一套规则
-- **生成式 AI** → 另一套
-- **算法推荐** → 第三套
-- **有舆论属性 / 社会动员能力** → 强化备案
+- **Deep synthesis** → one rulebook
+- **Generative AI** → another
+- **Algorithmic recommendation** → a third
+- **"Public-opinion attributes / social-mobilisation capacity"** → heightened filing
 
-这更接近**场景清单**而非"风险分级"。跨场景的统一强度标尺**不存在**。
+This looks more like a **list of scenarios** than a risk-tier system. A unified cross-scenario intensity yardstick does not exist.
 
-### 3. 备案制是事实筛选器
+### 3. Filing (*bei'an*) as the de facto gatekeeper
 
-- 达到一定能力 / 面向公众 / 有舆论属性 → 必须算法备案
-- 备案审查以 **TC260-003** 为标尺，实质上构成"二元风险闸门"（通过 / 不通过）
-- 而**未备案 = 无法合法面向公众服务**
+- Models that meet certain capability or user-scale thresholds, or that carry public-opinion attributes, **must** complete algorithm filing.
+- Filing review uses **TC260-003** as its yardstick, which functions as a **binary risk gate** (pass / fail).
+- **Without a completed filing, a service cannot legally serve the public.**
 
-这是与 EU 四级分层最大的差异：**欧盟的分级结果是不同强度的义务；中国的"备案"结果是通过或不通过**。
+This is the sharpest structural difference from the EU's four-tier approach: **EU tiers produce differentiated obligations; China's filing regime produces a yes-or-no answer.**
 
-## 科技伦理审查"清单"的分层作用
+## The "list" in science and technology ethics review
 
-[科技伦理审查办法](/rules/china/science-tech-ethics-review-measures/) 第二十五条建立**前置清单**：
+Article 25 of the [*Science and Technology Ethics Review Measures*](/rules/china/science-tech-ethics-review-measures/) establishes an **ex-ante list** of research activities that must undergo expert re-review. The AI-related categories are:
 
-触发专家复核的 AI 类：
-- 具有舆论社会动员能力和社会意识引导能力的算法
-- 面向安全、人身健康风险场景的自动化决策
-- 具有较强心理情感影响的人机融合系统
+- Algorithms with the capacity for social mobilisation or for shaping social consciousness.
+- Automated decision-making in scenarios bearing on security or personal health.
+- Human-machine integration systems with pronounced psychological or emotional influence.
 
-这是中国最接近 EU "高风险清单"的**前置性清单**，但位于研发立项阶段，不是产品上市分级。
+This is the closest thing in China to the EU's "high-risk list", but it operates at the R&D stage, not at product launch.
 
-## 与 EU / US 的对比
+## Comparison with the EU and the US
 
-- **与 EU**：EU 有统一 4 级清单，中国没有。EU 看"系统"，中国看"服务场景"
-- **与 US**：中国更系统化（至少有多部规章覆盖），但 US 的州法（[Colorado AI Act](/subnational/us/colorado-ai-act/)）反而有较明确的"high-risk AI system"定义
-
+- **Versus the EU**: the EU has a single four-tier list; China does not. The EU looks at "systems", China at "service scenarios".
+- **Versus the US**: China is more systematised at the regulatory-instrument level (multiple rules across sectors), but US state laws such as the [Colorado AI Act](/subnational/us/colorado-ai-act/) actually carry a clearer definition of "high-risk AI system".

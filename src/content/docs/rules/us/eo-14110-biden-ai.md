@@ -1,6 +1,6 @@
 ---
 title: Executive Order 14110 — Safe, Secure, Trustworthy AI (REVOKED)
-description: 拜登政府 2023-10-30 签署的 AI 行政令，确立美国联邦 AI 治理框架；2025-01-23 被 EO 14179 撤销，但其制度遗产（NIST AI RMF、AISI 等）部分延续
+description: Biden administration AI executive order signed 2023-10-30, establishing the U.S. federal AI governance framework; revoked by EO 14179 on 2025-01-23, though parts of its institutional legacy (NIST AI RMF, AISI, etc.) continue
 ruleName: Executive Order 14110 — Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence
 issuer: The White House (President Joseph R. Biden, Jr.) — REVOKED
 level: executive-order
@@ -12,76 +12,80 @@ relatedTopics:
   - frontier-gpai
   - risk-classification
   - data-training
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: EO 14110 (2023, 已撤销)
+  label: EO 14110 (2023, Revoked)
   order: 2
 ---
 
-## 中文摘要
+## Summary
 
-**第 14110 号行政令** 由拜登总统于 2023-10-30 签署，是美国**联邦层面首个系统性 AI 行政令**，
-搭建"安全、保障、可信 AI"框架。2025-01-23 被特朗普 EO 14179 **明确撤销**。
+**Executive Order 14110**, signed by President Biden on 2023-10-30, was the **first systematic federal
+AI executive order** in the United States, framing a "Safe, Secure, and Trustworthy AI" agenda.
+It was **expressly revoked** by Trump's EO 14179 on 2025-01-23.
 
-尽管被撤销，其制度遗产部分延续：
-- **NIST AI Risk Management Framework**（延续）
-- **NIST AI Safety Institute**（改组为 CAISI）
-- 各部委在医疗、金融、住房、教育等领域的 AI 指引（**部分保留，部分撤销**，视 EO 14179 第二条要求的审查结果）
+Despite revocation, parts of its institutional legacy persist:
+- **NIST AI Risk Management Framework** (continues)
+- **NIST AI Safety Institute** (reorganized as CAISI)
+- Agency AI guidance in healthcare, finance, housing, education, etc. (**partially retained, partially rescinded**,
+  depending on the review mandated by EO 14179 §2)
 
-本页保留是为了历史对照和比较研究。
+This page is retained for historical reference and comparative study.
 
-## 原行政令核心内容（被撤销）
+## Core content of the original order (revoked)
 
-### 前沿双用途基础模型报告
+### Dual-use foundation model reporting
 
-触发门槛：**训练算力 ≥ 10²⁶ 整数或浮点运算**（或 ≥ 10²³ FLOP 用于主要从生物序列数据训练）→
-**《国防生产法》**第 705 条权限下的报告义务。本条是 EO 14110 最具标志性的条款，
-2025-01 被 EO 14179 撤销。
+Trigger threshold: **training compute ≥ 10²⁶ integer or floating-point operations** (or ≥ 10²³ FLOP
+for models trained primarily on biological sequence data) → reporting obligation under **Defense
+Production Act** §705 authority. This was EO 14110's most emblematic provision; it was revoked
+by EO 14179 in 2025-01.
 
-### 八大领域行动
+### Eight action areas
 
-1. 新的安全与保障标准（NIST AI RMF 配套）
-2. 隐私（推动国会立法；至 2026 仍无联邦隐私法）
-3. 公民权利与公平（雇佣、住房、信贷等 AI 歧视）
-4. 消费者 / 患者 / 学生保护
-5. 工人权利
-6. 创新 / 竞争
-7. 全球领导力
-8. 联邦政府 AI 使用（OMB M-24-10 承接）
+1. New safety and security standards (paired with NIST AI RMF)
+2. Privacy (push for congressional legislation; as of 2026, still no federal privacy law)
+3. Civil rights and equity (AI discrimination in employment, housing, credit, etc.)
+4. Consumer / patient / student protections
+5. Worker rights
+6. Innovation / competition
+7. Global leadership
+8. Federal government use of AI (carried forward in OMB M-24-10)
 
 ### AI Safety Institute (AISI)
 
-NIST 内部机构，负责先进 AI 模型的测试、标准。2025 改组为 **CAISI**（Center for AI Standards
-and Innovation），重新定位向"标准"而非"安全"。
+An internal NIST body responsible for advanced-model testing and standards. In 2025 it was reorganized
+as **CAISI** (Center for AI Standards and Innovation), repositioned toward "standards" rather than "safety."
 
-## 撤销的具体法律效力
+## Specific legal effect of revocation
 
-EO 14179 第二条："revoke the following executive order and presidential memoranda" 明确列出 EO 14110。
+EO 14179 §2 states: "revoke the following executive order and presidential memoranda" and explicitly lists EO 14110.
 
-技术上：
-- 10²⁶ FLOP 报告义务**不再有法律基础**
-- 各部委基于 EO 14110 的 180 / 365 天义务**停止**
-- 已发布的指引 / 规章**视各部委审查结果**保留或撤销
+Operationally:
+- The 10²⁶ FLOP reporting obligation **no longer has a legal basis**
+- Agency 180- and 365-day obligations grounded in EO 14110 **cease**
+- Previously published guidance and rules are **retained or rescinded according to each agency's review**
 
-## 与 EU AI Act 的对照（历史对照）
+## Comparison with the EU AI Act (historical)
 
-EO 14110 vs. EU AI Act 曾是"功能类似、路径不同"的典型对比：
-- EU: 立法，**全面横向风险分级**
-- US (EO 14110): 行政令 + 部委指引，**以自愿 / 推动立法 / 采购杠杆**为主
+EO 14110 vs. the EU AI Act was once a classic "functionally similar, methodologically different" pairing:
+- EU: legislation, **comprehensive horizontal risk tiering**
+- U.S. (EO 14110): executive order plus agency guidance, relying on **voluntary measures, legislative
+  advocacy, and procurement leverage**
 
-随 EO 14179 撤销，美国联邦层面对比 EU AI Act 的 analogue **已不存在**。
+With EO 14179's revocation, the U.S. federal analogue to the EU AI Act **no longer exists**.
 
-## 原文与归档
+## Text and archives
 
-| 语言 | 来源 | 链接 |
+| Language | Source | Link |
 | --- | --- | --- |
-| English（原文） | Biden Archive | [bidenwhitehouse.archives.gov](https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/) |
+| English (original) | Biden Archive | [bidenwhitehouse.archives.gov](https://bidenwhitehouse.archives.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/) |
 | Federal Register | | — |
 
-## 版本历史
+## Version history
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2023-10-30 | 签署 |
-| 2024-01 至 2024-10 | 各部委陆续发布配套指引 |
-| 2025-01-23 | 被 EO 14179 **撤销** |
+| 2023-10-30 | Signed |
+| 2024-01 to 2024-10 | Agencies issued companion guidance |
+| 2025-01-23 | **Revoked** by EO 14179 |
