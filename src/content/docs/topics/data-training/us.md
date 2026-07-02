@@ -1,84 +1,83 @@
 ---
-title: 美国 — 数据与训练
-description: 美国对训练数据的 "无联邦隐私法 + 州法拼图 + fair use 争议" 现状
+title: United States — Data and Training
+description: The US approach to training data — no federal privacy law, a patchwork of state laws, and a contested fair-use doctrine.
 sidebar:
   order: 3
-  label: 美国
+  label: United States
 ---
 
-## 相关规则
+## Relevant rules
 
-| 规则 | 与训练数据的关系 |
+| Rule | Relationship to training data |
 | --- | --- |
-| CCPA/CPRA (California) | 州隐私法，AI 训练数据的个人信息义务 |
-| COPPA (联邦) | 13 岁以下儿童数据 |
-| Section 230 | 用户生成内容平台的责任边界 |
-| [NIST AI RMF + GenAI Profile](/rules/us/nist-ai-rmf/) | 数据治理自愿实践 |
+| CCPA / CPRA (California) | State privacy law; obligations on personal information in AI training data |
+| COPPA (federal) | Data of children under 13 |
+| Section 230 | Platform-liability boundary for user-generated content |
+| [NIST AI RMF + GenAI Profile](/rules/us/nist-ai-rmf/) | Voluntary data-governance practice |
 
-## 三层碎片化格局
+## Three-layer fragmentation
 
-### 联邦层的空白
+### The federal vacuum
 
-美国至今**无联邦综合隐私法**。对训练数据的联邦层触点：
+The United States still has **no comprehensive federal privacy law**. Federal touchpoints on training data:
 
-- **COPPA**：13 岁以下儿童数据单独保护
-- **HIPAA**：医疗数据（对医疗 AI 训练数据直接相关）
-- **GLBA**：金融信息
-- **FERPA**：教育记录
-- **FCRA / ECOA**：信贷决策用数据
+- **COPPA**: separate protection for children under 13.
+- **HIPAA**: medical data (directly relevant to medical-AI training data).
+- **GLBA**: financial information.
+- **FERPA**: education records.
+- **FCRA / ECOA**: data used in credit decisions.
 
-**行业特定** + **未成年人特定**，但**通用训练数据**无联邦框架。
+**Sector-specific + minor-specific**, but **no federal framework for general-purpose training data**.
 
-### 州法拼图
+### The state-law patchwork
 
-- **California (CCPA/CPRA)**：2020 起，**自动化决策权利**（2025 加州 ADMT 规则生效）
-- **Virginia、Colorado、Utah、Connecticut、Texas、Oregon** 等州：GDPR-style 隐私法
-- **Illinois BIPA**：生物特征法，对人脸训练数据有极强约束
-- **Washington My Health My Data**：健康数据扩展
-- **Tennessee ELVIS Act**：声音克隆数据
+- **California (CCPA / CPRA)**: since 2020; **automated-decision rights** (California ADMT rules in force 2025).
+- **Virginia, Colorado, Utah, Connecticut, Texas, Oregon**, etc.: GDPR-style privacy laws.
+- **Illinois BIPA**: biometric-information law with strong constraints on facial training data.
+- **Washington My Health My Data**: extended health data.
+- **Tennessee ELVIS Act**: voice-cloning data.
 
-到 2026-04 已有 **20+ 州**通过综合隐私法，细节各异。
+By Apr 2026, **20+ states** have passed comprehensive privacy laws, with varying detail.
 
-### 版权 / Fair Use
+### Copyright / fair use
 
-训练数据的版权问题是 2023-2026 美国最激烈的 AI 法律辩论：
+Copyright on training data has been the most intense legal debate in US AI law from 2023 to 2026:
 
-- **2023 NYT v. OpenAI / Microsoft**：版权训练诉讼，2026 持续进行
-- **Bartz v. Anthropic / Kadrey v. Meta / Tremblay v. OpenAI**：多起诉讼
-- **Andersen v. Stability AI**：文生图版权
-- **Thaler v. Perlmutter**：AI 生成作品的版权归属
+- **2023 *NYT v. OpenAI / Microsoft***: a copyright training lawsuit, ongoing in 2026.
+- **Bartz v. Anthropic / Kadrey v. Meta / Tremblay v. OpenAI**: multiple parallel cases.
+- ***Andersen v. Stability AI***: text-to-image copyright.
+- ***Thaler v. Perlmutter***: authorship of AI-generated works.
 
-**Fair Use** 是美国特色抗辩，其"变革性使用"（transformative use）标准对 LLM 训练的适用尚在形成。
+**Fair use** is the distinctive US defence, and its "transformative use" standard is still being shaped as applied to LLM training.
 
-## 特殊问题
+## Special issues
 
-### 1. "公开可获取"的合法性
+### 1. The lawfulness of "publicly accessible" data
 
-- 美国法对"公开可获取"数据的抓取宽容度**高于** EU 和中国
-- hiQ Labs v. LinkedIn（2019/2022）对 Computer Fraud and Abuse Act 的解读
-- 但 TOS（服务条款）违反仍可被起诉
+- US law is more permissive about scraping "publicly accessible" data than the EU or China.
+- *hiQ Labs v. LinkedIn* (2019 / 2022): interpretation of the Computer Fraud and Abuse Act.
+- But breach of TOS (terms of service) can still be actionable.
 
-### 2. 儿童数据
+### 2. Children's data
 
-- COPPA：13 岁以下单独同意
-- 加州、纽约等州：扩展至 18 岁以下
-- 训练数据**含未成年人面孔 / 声音**的风险：BIPA / COPPA 叠加
+- COPPA: separate consent for those under 13.
+- California, New York, and other states: extend to those under 18.
+- Risk when training data contains minors' faces or voices: **BIPA + COPPA stacking**.
 
-### 3. 生物识别（尤其 Illinois BIPA）
+### 3. Biometrics (especially Illinois BIPA)
 
-- Illinois BIPA 对人脸训练数据的诉讼量激增
-- Clearview AI 案例是典型
-- **BIPA 允许私人诉权**，每次违法最高 $5,000
+- Illinois BIPA has produced a surge in facial-training-data litigation.
+- Clearview AI is the canonical case.
+- **BIPA allows a private right of action**, with up to $5,000 per violation.
 
-### 4. 合成数据 & 去标识化
+### 4. Synthetic data and de-identification
 
-- 无专门合成数据规则
-- 去标识化：HIPAA 有明确标准（Safe Harbor / Expert Determination）；其他领域模糊
+- No dedicated synthetic-data rule.
+- De-identification: HIPAA has clear standards (Safe Harbor / Expert Determination); other domains remain vague.
 
-## 与中国 / 欧盟的对比
+## Comparison with China and the EU
 
-- **联邦层面**：中国和 EU 都有完整数据保护法；美国**没有**
-- **可预测性**：美国**最低**（州法各异 + fair use 诉讼未定）
-- **执法**：美国主要靠**私人诉讼**（BIPA、版权、TCPA 等）；中国靠 CAC 执法；EU 靠 DPA
-- **训练数据摘要**：EU 强制；美国无；中国无（备案材料非公开）
-
+- **Federal layer**: both China and the EU have comprehensive data-protection laws; the US **does not**.
+- **Predictability**: the US is **lowest** (state-law variation + unsettled fair-use litigation).
+- **Enforcement**: the US relies primarily on **private litigation** (BIPA, copyright, TCPA, etc.); China relies on CAC enforcement; the EU on DPAs.
+- **Training-data summary**: mandatory in the EU; absent in the US; absent in China (filing materials are not public).

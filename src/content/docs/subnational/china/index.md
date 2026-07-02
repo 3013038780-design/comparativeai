@@ -1,21 +1,27 @@
 ---
-title: 中国地方 — AI 立法
-description: 地方人大立法、政府规章、试点方案（深圳、上海、北京、杭州等）
+title: Chinese Local — AI Legislation
+description: Local People's Congress legislation, government regulations, and pilot programmes (Shenzhen, Shanghai, Beijing, Hangzhou, etc.)
 sidebar:
   order: 1
-  label: 🇨🇳 中国地方
+  label: CN Chinese local
 ---
 
-## 概览
+## Overview
 
-中国**中央—地方—企业**三级协同治理中，地方层级的 AI 立法具有**先行先试**功能：
-地方试验的制度（分类分级、监管沙盒、低风险先行先试）常被国家层面立法吸纳。
-详见[方法论](/methodology/)和[rules/china/ 五级法律位阶](/rules/china/#法律位阶速览)。
+Within China's three-tier **central — local — enterprise** collaborative governance, AI legislation at the subnational level serves a **pilot-and-experiment** function: mechanisms tested locally (classification-and-grading, regulatory sandboxes, low-risk pilot-and-experiment) are often absorbed into national-level legislation. See the [Methodology](/methodology/) page and [the five-tier legal hierarchy under rules/china/](/rules/china/#legal-hierarchy-overview).
 
-## 已收录
+## Collected
 
-### 地方人大立法（综合性 AI 条例）
+### Local People's Congress legislation (comprehensive AI regulations)
 
-- [深圳经济特区人工智能产业促进条例 (2022)](./shenzhen-ai-industry-promotion/) —
-  **中国首部地方 AI 产业立法**，首创"低风险 AI 先行先试"
+- [Shenzhen Special Economic Zone AI Industry Promotion Regulation (2022)](./shenzhen-ai-industry-promotion/) —
+  **China's first local AI industry legislation**, pioneering "low-risk AI pilot-and-experiment".
 
+### Sector-specific implementation and public-sector practice
+
+- [Shanghai Government-Procurement Supervisory Agent Trial Measures (2026)](./shanghai-government-procurement-agent/) —
+  issued in June 2026 and effective 1 July; a procurement-sector workflow that treats AI alerts as auxiliary,
+  requires human verification and preserves the evaluation committee's legal responsibility.
+
+The Shanghai instrument is intentionally separated from comprehensive local legislation: it regulates one
+government-procurement application and should not be read as a citywide AI Act.

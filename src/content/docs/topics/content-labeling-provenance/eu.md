@@ -1,40 +1,46 @@
 ---
-title: 欧盟 — 生成内容标识
-description: 欧盟 AI Act 第 50 条及其配套标准对合成内容标识的要求
+title: EU — Content Labeling and Provenance
+description: The EU AI Act's article 50 and its accompanying standards on synthetic-content labeling.
 sidebar:
   order: 4
-  label: 欧盟
+  label: EU
 ---
 
-## 规则层级
+## Regulatory tiers
 
-- **Regulation (EU) 2024/1689（AI Act）**：2024-08-01 生效，**第 50 条**专门规定透明度与标识义务。
-- **AI Act 第 50 条的核心时间线**：2026-08-02 起适用（普通部署者义务），与整部法规的分阶段适用表一致。
-- **配套标准**：欧洲标准化组织（CEN-CENELEC JTC 21）正在为"机器可读且稳健的标识"制定 harmonised standards，一旦发布即产生合规推定。
-- **相邻法规**：*Digital Services Act* 对超大在线平台（VLOP）施加合成内容分发义务；*Product Liability Directive*（2024 新版）在缺陷责任层面关联。
+- **Regulation (EU) 2024/1689 (AI Act)**: in force Aug 1, 2024; **article 50** sets out the transparency and labeling obligations.
+- **Core timeline for art. 50**: applies from Aug 2, 2026 (general deployer obligations), consistent with the regulation's staggered applicability.
+- **Implementation code**: the Commission published the final [Code of Practice on Transparency of AI-Generated Content](/rules/eu/synthetic-content-code/) on **10 June 2026**. It is voluntary and supports article 50 compliance from 2 August 2026.
+- **Accompanying standards**: the European standardisation organisations (CEN-CENELEC JTC 21) continue developing harmonised standards for "machine-readable and robust labeling"; once published, they will produce a presumption of conformity.
+- **Adjacent regulations**: the *Digital Services Act* imposes synthetic-content distribution obligations on very large online platforms (VLOPs); the 2024 revised *Product Liability Directive* links at the defect-liability layer.
 
-## 义务主体（第 50 条）
+## Obligor scope (art. 50)
 
-- **Provider**：投放到欧盟市场的生成式 AI 系统提供者。
-- **Deployer**：部署 deepfake 或用于公共议题的 AI 生成文本的主体。
-- **对自然人的披露**：当系统与自然人交互时，应让其知晓"正在与 AI 系统交互"（除非场景显而易见）。
+- **Provider**: the provider of a generative AI system placed on the EU market.
+- **Deployer**: an entity deploying deepfakes or AI-generated text on matters of public interest.
+- **Disclosure to natural persons**: when the system interacts with a natural person, that person must be informed that they are "interacting with an AI system" (unless evident from context).
 
-## 核心义务
+## Core obligations
 
-1. **Provider 必须**：对机器生成/合成的音频、图像、视频、文本输出，使用**机器可读**的方式标注其为合成，且标注应"有效、可互操作、稳健、可靠"（第 50(2) 条）。
-2. **Deployer 必须**：
-   - 部署 deepfake 的，应**披露**内容由 AI 生成或操纵（第 50(4) 条）；艺术作品/讽刺作品有例外但需不影响作品欣赏。
-   - 将 AI 生成文本用于**公共利益议题**的，应披露其合成属性，除非经过人工审核且有人承担编辑责任。
-3. **情感识别、生物分类** 等场景另有披露义务（第 50(3) 条）。
+1. **Providers must**: mark machine-generated / synthetic audio, image, video, or text output in a **machine-readable** way, and the marking must be "effective, interoperable, robust, and reliable" (art. 50(2)).
+2. **Deployers must**:
+   - When deploying deepfakes, **disclose** that the content is AI-generated or manipulated (art. 50(4)); works of art or satire qualify for an exception but disclosure must not disturb appreciation of the work.
+   - When AI-generated text is used on **matters of public interest**, disclose its synthetic nature unless it has undergone human review and a person has taken editorial responsibility.
+3. **Emotion recognition and biometric categorisation** carry separate disclosure obligations (art. 50(3)).
 
-## 豁免与例外
+## Final implementation code (June 2026)
 
-- 为**侦查、预防、调查、起诉犯罪**的执法使用，部分义务可豁免。
-- 明显的艺术、虚构、讽刺、类似创作在 deepfake 披露上享受弱化义务（不免除，但允许不破坏艺术体验的披露方式）。
+The final voluntary code translates article 50 into practical measures for machine-readable marking, deployer disclosures,
+chatbot notices and common EU visual icons. Signing does not replace the AI Act and does not immunise a provider or deployer
+from enforcement; non-signatories may demonstrate compliance through other adequate means.
 
-## 执法机构与处罚
+## Exemptions and exceptions
 
-- **市场监督**：各成员国指定的 market surveillance authorities。
-- **协调**：AI Office（设在委员会内）与 European AI Board。
-- **处罚上限**：违反透明度义务的罚款可达 **€15,000,000 或全球年营业额的 3%**，以较高者为准（第 99 条）。
+- Partial exemption for law-enforcement use in **detection, prevention, investigation, or prosecution of crime**.
+- Manifestly artistic, fictional, satirical, or analogous creative works receive weakened disclosure obligations for deepfakes (not eliminated, but in a form that does not disturb artistic appreciation).
 
+## Enforcement bodies and penalties
+
+- **Market surveillance**: member-state-designated market surveillance authorities.
+- **Coordination**: the AI Office (within the Commission) and the European AI Board.
+- **Maximum penalties**: for breaches of transparency duties, fines of up to **€15,000,000 or 3% of global annual turnover**, whichever is higher (art. 99).

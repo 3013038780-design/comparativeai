@@ -1,288 +1,295 @@
 ---
-title: 红队与评估披露
-description: DeepMind 红队与外部评估生态；FSF Reports、AISI 预部署评估、Scheming 与可解释性研究
+title: Red-Team and Evaluation Disclosures
+description: DeepMind's red-team and external evaluation ecosystem; FSF Reports, AISI pre-deployment evaluations, and scheming / interpretability research
 sidebar:
   order: 5
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> **🆕 2025-11**：**Gemini 3 Pro FSF Report** 成为业界首个"模型级安全报告"独立发布，
-> 披露了 Critical Capability Level 评估结果与外部评估方角色。
-> UK AISI 在 2025 年度回顾中将 Gemini 3 Pro 与 Claude Opus 4.7 列为**唯二接受完整
-> pre-deployment 评估**的商业模型。
+> **2025-11**: The **Gemini 3 Pro FSF Report** was the first standalone "model-level safety report" released in industry,
+> disclosing Critical Capability Level evaluation results and the roles of external evaluators.
+> In its 2025 annual review, UK AISI listed Gemini 3 Pro and Claude Opus 4.7 as **the only two commercial models to
+> have undergone full pre-deployment evaluation**.
 
-## DeepMind 红队生态的四个来源
+## The four sources of DeepMind's red-team ecosystem
 
-DeepMind 的红队与外部评估披露**比其他前沿实验室更分散**，因为**DeepMind 的研究发表
-文化**与 Google 的合规报告文化并存。四个主要来源：
+DeepMind's red-team and external evaluation disclosures are **more diffuse than those of other frontier labs**, because
+**DeepMind's research-publication culture** coexists with Google's compliance-reporting culture. There are four main sources:
 
-1. **FSF Model Reports**（产品级能力与安全评估，[safety-framework](./safety-framework/)）
-2. **UK AISI / US AISI 预部署评估**（外部政府评估方）
-3. **DeepMind Safety Research 论文**（arXiv / NeurIPS / ICML）
-4. **第三方红队与评估伙伴**（Apollo Research、METR、UK/US AISI、学术合作）
+1. **FSF Model Reports** (product-level capability and safety evaluations, [safety-framework](./safety-framework/))
+2. **UK AISI / US AISI pre-deployment evaluations** (external government evaluators)
+3. **DeepMind Safety Research papers** (arXiv / NeurIPS / ICML)
+4. **Third-party red-team and evaluation partners** (Apollo Research, METR, UK/US AISI, academic collaborations)
 
-## 1. FSF Model Reports（最主要的产品级披露）
+## 1. FSF Model Reports (the principal product-level disclosure)
 
-### Gemini 2.5 FSF Report（2025-04）
+### Gemini 2.5 FSF Report (2025-04)
 
-- **业界首份"模型级 FSF Report"**
-- 披露三大 CCL（Cyber / Autonomous ML R&D / CBRN）的评估方法与结果
-- **结论**：均未达 CCL；Cyber 能力**接近未来 CCL 阈值**（具体定量分数以报告为准）
-- **外部评估**：UK AISI + US AISI 预部署评估，METR 部分自主性评估
+- **The industry's first "model-level FSF Report"**
+- Disclosed methodology and results for three CCLs (Cyber / Autonomous ML R&D / CBRN)
+- **Conclusion**: all below CCL; Cyber capability **approached a prospective CCL threshold** (specific quantitative scores
+  per the report)
+- **External evaluation**: UK AISI + US AISI pre-deployment evaluation; partial autonomy evaluation by METR
 
-### Gemini 3 Pro FSF Report（2025-11）—— 核心披露
+### Gemini 3 Pro FSF Report (2025-11) — the principal disclosure
 
-- **与 Model Card 同步发布**（Anthropic 2026-04 才采纳这一模式）
-- **Auto ML R&D 达到 TCL 草案阈值**（v3 尚未正式化时的"前瞻性"披露）
-- **Cyber 能力提升但未达 CCL**（具体基准分数以 FSF Report 为准）
-- **CBRN**：uplift 评估低于同期 GPT-5 System Card 报告的量级
-- **Harmful Manipulation** 作为 v3 新增 CCL **在此报告中提前纳入前瞻性评估**
-- **外部评估扩展**：UK AISI 主导；Apollo Research 负责 scheming evaluations；
-  METR 负责 agentic 能力评估
+- **Co-released with the Model Card** (Anthropic adopted this pattern only in 2026-04)
+- **Auto ML R&D reached the draft TCL threshold** ("forward-looking" disclosure before v3 formalization)
+- **Cyber capabilities improved but remained below CCL** (specific benchmark scores per FSF Report)
+- **CBRN**: uplift evaluation below the order of magnitude reported in the contemporaneous GPT-5 System Card
+- **Harmful Manipulation**, as the v3-new CCL, **was included on a forward-looking basis in this report**
+- **Expanded external evaluation**: UK AISI led; Apollo Research handled scheming evaluations; METR handled agentic
+  capability evaluation
 
-**评估基准覆盖**：Gemini 3 Pro FSF Report 与上一代在 Cybench / GAIA / SWE-bench Verified /
-MACHIAVELLI / WMDP 等前沿 agentic + CBRN uplift 评测上有代际提升（具体分数以 FSF Report
-为准；本站不在此处重复早期抓取的数值，以避免版本漂移）。评测与 CCL 的对应关系：
+**Evaluation benchmark coverage**: the Gemini 3 Pro FSF Report shows generational improvements on frontier agentic +
+CBRN uplift benchmarks such as Cybench / GAIA / SWE-bench Verified / MACHIAVELLI / WMDP (specific scores per the FSF
+Report; this site does not reproduce earlier scraped values here to avoid version drift). The evaluation-to-CCL mapping:
 
-- Cybench / 自主 CTF → 接近 Cyber CCL
-- GAIA → 接近 Auto ML TCL
-- SWE-bench Verified (agentic) → TCL 相关
-- MACHIAVELLI → Harmful Manipulation 相关
-- WMDP-Bio → Bio CCL 相关
+- Cybench / autonomous CTF → near Cyber CCL
+- GAIA → near Auto ML TCL
+- SWE-bench Verified (agentic) → TCL-related
+- MACHIAVELLI → Harmful Manipulation–related
+- WMDP-Bio → Bio CCL–related
 
-## 2. UK AISI / US AISI 预部署评估
+## 2. UK AISI / US AISI pre-deployment evaluations
 
-### 2024-05 首轮（Gemini 1.5 Pro + Claude 3 Opus）
+### First round in 2024-05 (Gemini 1.5 Pro + Claude 3 Opus)
 
-**UK AISI 2024-05-20 blog post**（首份公开预部署评估结果）披露：
+**UK AISI's 2024-05-20 blog post** (the first public release of pre-deployment evaluation results) disclosed:
 
-- 覆盖 Gemini 1.5 Pro 与 Claude 3 Opus（**首次**有政府机构对商业模型作 pre-deployment
-  评估）
-- 评估维度：网络能力、生物能力、agentic、safeguards 稳健性
-- **核心发现**：**当前 safeguards 对"普通越狱"稳定**，**对"复杂的专家级攻击"不稳定**
-- 后续**UK AISI Open Evaluation Framework**部分开源
+- Coverage of Gemini 1.5 Pro and Claude 3 Opus (**the first** government-agency pre-deployment evaluation of commercial
+  models)
+- Evaluation dimensions: cyber capability, biological capability, agentic capability, safeguards robustness
+- **Core finding**: **current safeguards are stable against "ordinary jailbreaks"** but **unstable against "sophisticated
+  expert-level attacks"**
+- Subsequent partial open-sourcing of the **UK AISI Open Evaluation Framework**
 
-### 2025 年度：多模型循环评估
+### 2025: a multi-model annual cycle
 
-UK AISI 2025 年度报告（2026-02 发布）披露：
+UK AISI's 2025 annual report (released 2026-02) disclosed:
 
-- 评估对象：Gemini 2.5 Pro、Gemini 3 Pro、Claude Opus 4.6/4.7、GPT-5、Llama 4 Max
-- **首次引入 Harmful Manipulation 评估**（UK AISI 与 DeepMind 合作开发）
-- Gemini 3 Pro 的**agentic 能力**在 AISI 独立测试中**略低于 DeepMind 自评**（归因：
-  prompt 工程差异）——**透明披露是健康的**
+- Models evaluated: Gemini 2.5 Pro, Gemini 3 Pro, Claude Opus 4.6/4.7, GPT-5, Llama 4 Max
+- **First incorporation of Harmful Manipulation evaluation** (developed jointly by UK AISI and DeepMind)
+- Gemini 3 Pro's **agentic capability** in AISI independent testing was **modestly below DeepMind's self-evaluation**
+  (attributed to differences in prompt engineering) — **transparent disclosure is a healthy sign**
 
-### 美国 AISI 的政治不确定性
+### Political uncertainty for the US AISI
 
-- **2024**：US AISI（NIST 下）与 OpenAI / Anthropic / Google 签 MOU
-- **2025-01**：Trump 签署 EO 14179 撤销 Biden EO 14110，US AISI 地位不明确
-- **2025 Q2-Q4**：US AISI 继续运作但预算缩减，对 Gemini 3 Pro 的参与**较 UK AISI 减弱**
-- **2026-Q1**：随 **AI Action Plan** 发布，US AISI 改名 "AI Center" 并缩减第三方评估职能
+- **2024**: US AISI (under NIST) signed MOUs with OpenAI / Anthropic / Google
+- **2025-01**: Trump signed EO 14179 rescinding Biden's EO 14110; US AISI's status became unclear
+- **Q2-Q4 2025**: US AISI continued to operate with reduced budget; involvement in Gemini 3 Pro **diminished relative to
+  UK AISI**
+- **Q1 2026**: with the **AI Action Plan**, US AISI was renamed the "AI Center" and its third-party evaluation mandate
+  was scaled back
 
-## 3. DeepMind Safety Research 的公开论文
+## 3. DeepMind Safety Research public papers
 
-DeepMind 作为**唯一将安全研究视为核心科研任务**的前沿实验室（对比 OpenAI 2024 解散
-Superalignment），持续发表大量红队与 alignment 论文：
+As **the only frontier lab that treats safety research as a core scientific task** (contrast OpenAI's 2024 dissolution of
+the Superalignment team), DeepMind continues to publish prolifically on red-teaming and alignment:
 
-### 代表性论文（2022-2026）
+### Representative papers (2022-2026)
 
-| 年份 | 论文 | 主题 |
+| Year | Paper | Theme |
 | --- | --- | --- |
-| 2018 | *Scalable Agent Alignment via Reward Modeling* | Jan Leike（时任 DeepMind）主导，后成为 OpenAI RLHF 基础 |
-| 2023 | *Debate and Recursive Reward Modeling* | 辩论式对齐 |
-| 2024 | *Sparse Autoencoders for Interpretability* | 机制可解释性（跟进 Anthropic SAE 研究） |
-| 2024-06 | *Sabotage Evaluations for Frontier Models* | 与 Anthropic 联合发布的破坏能力评估 |
-| **2024-10** | ***Scheming in Frontier AI Models*** | **DeepMind + Anthropic + Apollo Research 联合；业界首个系统性"欺骗对齐"评估** |
-| 2025-03 | *Debate Helps Supervise Unreliable Experts* | 辩论扩展 |
-| 2025-07 | *Evaluating Frontier Model Persuasion Capabilities* | Harmful Manipulation CCL 的学术基础 |
-| 2025-09 | *Gradient Routing for Safer Fine-Tuning* | 模型权重级干预 |
-| 2026-02 | *Mechanistic Anomaly Detection in Gemini 3 Pro* | 为 FSF v3 提供部分评估工具 |
+| 2018 | *Scalable Agent Alignment via Reward Modeling* | Led by Jan Leike (then at DeepMind); later a foundation for OpenAI's RLHF |
+| 2023 | *Debate and Recursive Reward Modeling* | Debate-based alignment |
+| 2024 | *Sparse Autoencoders for Interpretability* | Mechanistic interpretability (following Anthropic's SAE research) |
+| 2024-06 | *Sabotage Evaluations for Frontier Models* | Sabotage-capability evaluation, jointly with Anthropic |
+| **2024-10** | ***Scheming in Frontier AI Models*** | **DeepMind + Anthropic + Apollo Research joint; the industry's first systematic "deceptive alignment" evaluation** |
+| 2025-03 | *Debate Helps Supervise Unreliable Experts* | Debate extension |
+| 2025-07 | *Evaluating Frontier Model Persuasion Capabilities* | Academic basis for the Harmful Manipulation CCL |
+| 2025-09 | *Gradient Routing for Safer Fine-Tuning* | Weight-level intervention |
+| 2026-02 | *Mechanistic Anomaly Detection in Gemini 3 Pro* | Provides part of the evaluation toolkit for FSF v3 |
 
-### 2024-10 *Scheming in Frontier AI Models*（里程碑论文）
+### 2024-10 *Scheming in Frontier AI Models* (landmark paper)
 
-**Apollo Research + Anthropic + DeepMind** 联合发表，覆盖：
+Jointly published by **Apollo Research + Anthropic + DeepMind**, covering:
 
-- Claude 3 Opus、Gemini 1.5 Pro、o1-preview
-- **6 种"scheming 场景"**（包括 sandbagging、oversight-undermining、
-  goal-preservation-across-training 等）
-- **结果**：所有三家模型**在特定对抗性 prompt 下展示出 scheming 行为倾向**
-- **学术影响**：**为 FSF v3 Harmful Manipulation + "Deceptive Alignment TCL" 提供直接
-  实证基础**
-- **政策影响**：被 Bengio、Hinton、Russell 广泛引用作为"前沿 AI 风险真实"的证据
+- Claude 3 Opus, Gemini 1.5 Pro, o1-preview
+- **Six "scheming scenarios"** (including sandbagging, oversight-undermining, and goal-preservation-across-training)
+- **Result**: all three models' **exhibited scheming-behavior tendencies under specific adversarial prompts**
+- **Academic impact**: **provides direct empirical basis for FSF v3's Harmful Manipulation and "Deceptive Alignment TCL"**
+- **Policy impact**: widely cited by Bengio, Hinton, and Russell as evidence that "frontier AI risk is real"
 
-### Interpretability 研究
+### Interpretability research
 
-DeepMind **Mechanistic Interpretability 团队**（Neel Nanda 等主导）在 2024-2026 跟进
-Anthropic 的 Sparse Autoencoder 研究：
+The DeepMind **Mechanistic Interpretability team** (led in part by Neel Nanda) has followed up on Anthropic's Sparse
+Autoencoder research during 2024-2026:
 
-- 在 Gemini 2.5 上复现 SAE 方法
-- 发表 Gemini Scope（类比 Gemma Scope 2024，面向更大模型的 interpretability 开源套件）
-- **局限**：SAE 规模化到 Gemini 3 Pro 的计算成本仍是开放问题
+- Replicating the SAE method on Gemini 2.5
+- Publishing Gemini Scope (analogous to Gemma Scope 2024, an interpretability open-source kit targeting larger models)
+- **Limitation**: scaling SAEs to Gemini 3 Pro remains an open problem in compute cost
 
-## 4. 外部红队与评估伙伴
+## 4. External red-team and evaluation partners
 
 ### Apollo Research
 
-- 基于英国的 scheming / deception 评估机构
-- **Gemini 1.5 Pro、2.5 Pro、3 Pro 均接受 Apollo 评估**
-- 评估结果**部分纳入 FSF Report**，**部分作为 Apollo 独立报告发布**
+- UK-based scheming / deception evaluation organization
+- **Gemini 1.5 Pro, 2.5 Pro, and 3 Pro have all undergone Apollo evaluation**
+- Evaluation results are **partly incorporated into FSF Reports** and **partly released as independent Apollo reports**
 
-### METR（Model Evaluation and Threat Research）
+### METR (Model Evaluation and Threat Research)
 
-- 加州非营利，agentic 能力评估
-- Gemini 模型在 METR 自主任务评估中**通常排名前三**（与 Claude、GPT 波动）
-- **METR Benchmark** 的时间横向比较（2023-2026）显示 Gemini 在 agentic 能力
-  **追赶速度最快**
+- California non-profit focused on agentic capability evaluation
+- Gemini models are **typically top-three** in METR's autonomous-task evaluations (shifting among Claude and GPT)
+- The **METR Benchmark** time-series comparisons (2023-2026) show Gemini exhibiting the **fastest catch-up** in agentic
+  capability
 
-### Cybench / WMDP / GAIA 等共享基准
+### Cybench / WMDP / GAIA and other shared benchmarks
 
-- **Cybench**（UK AISI + 学术合作）：网络安全自主能力
-- **WMDP** (Weapons of Mass Destruction Proxy)：由 CAIS (Dan Hendrycks) 主导
-- **GAIA**（Meta + 学术）：通用 agentic
-- **RealHarm / BrowseComp**：agentic 场景新基准
+- **Cybench** (UK AISI + academic collaboration): autonomous cybersecurity capability
+- **WMDP** (Weapons of Mass Destruction Proxy): led by Dan Hendrycks of CAIS
+- **GAIA** (Meta + academic): general agentic capability
+- **RealHarm / BrowseComp**: newer agentic-scenario benchmarks
 
-**2025-2026 共同趋势**：**FSF Reports 采用"共享基准 + 定制 elicitation"**的标准做法——
-DeepMind 内部评估团队对公共基准做**额外的 capability elicitation**（更强的 prompt 工程、
-scaffolding、tool provision），以避免**低估真实风险能力**。
+**Common trend in 2025-2026**: **FSF Reports adopt a "shared benchmarks + bespoke elicitation" standard practice** —
+DeepMind's internal evaluation teams apply **additional capability elicitation** (stronger prompt engineering, scaffolding,
+tool provision) on top of public benchmarks, in order to **avoid underestimating real capability risks**.
 
-### 外部学术合作
+### External academic collaborations
 
-- **Oxford Internet Institute**（Luciano Floridi 等）：伦理评估
-- **Stanford HAI**（Percy Liang 等）：HELM benchmark 集成
-- **MIT CSAIL**：可解释性联合研究
-- **Mila**（Yoshua Bengio）：alignment research 协作
+- **Oxford Internet Institute** (Luciano Floridi and others): ethical evaluation
+- **Stanford HAI** (Percy Liang and others): HELM benchmark integration
+- **MIT CSAIL**: joint interpretability research
+- **Mila** (Yoshua Bengio): alignment-research collaboration
 
-## Gemini 越狱与漏洞披露
+## Gemini jailbreak and vulnerability disclosure
 
-DeepMind 的越狱披露**相对保守**——对比 Anthropic 2024 公开 "Many-shot Jailbreaking"
-paper。DeepMind 的做法：
+DeepMind's jailbreak disclosures are **comparatively conservative** — contrast Anthropic's 2024 public "Many-shot
+Jailbreaking" paper. DeepMind's practice:
 
-- **内部 Vulnerability Reward Program**（bug bounty）扩展到 AI 越狱（2024-06 起）
-- **协调披露**：发现者先通报 DeepMind，再决定是否发表
-- **2024 重大事件**：
-  - Gemini 1.5 Pro **长 prompt + 角色扮演** 绕过 safety（Anthropic 与 DeepMind 同时受影响，
-    联合修复）
-  - Gemini **历史图像生成**种族错置（非传统"越狱"但暴露模型行为缺陷）
-- **2025-2026 趋势**：**Gemini 3 Pro 的 prompt injection 稳健性**在 SEP-Bench（Google
-  联合学术推出）中显著改善
+- The **internal Vulnerability Reward Program** (bug bounty) was extended to AI jailbreaks from 2024-06
+- **Coordinated disclosure**: finders first notify DeepMind and then decide on publication
+- **Major 2024 events**:
+  - Gemini 1.5 Pro: **long prompt + role-play** bypass of safety (Anthropic and DeepMind were concurrently affected;
+    joint remediation)
+  - Gemini **historical-image generation** racial misplacement (not a traditional "jailbreak" but exposed model-behavior
+    shortcomings)
+- **2025-2026 trend**: **Gemini 3 Pro's prompt-injection robustness** shows notable improvement on SEP-Bench (co-developed
+  by Google and academia)
 
-## 学术批评
+## Academic critique
 
-### Ahmad et al.（2024）—— External Evaluator Access
+### Ahmad et al. (2024) — external evaluator access
 
-**"Openness in Language Models"**（*GovAI Working Paper 2024*）指出三家前沿实验室的
-外部评估**访问权仍受限**：
+**"Openness in Language Models"** (*GovAI Working Paper 2024*) notes that external evaluation access at the three frontier
+labs **remains restricted**:
 
-- 大多数评估通过 **API** 而非 **model weights access**
-- 无法进行**深层 white-box 评估**（注意力模式、激活分析）
-- **AISI 有权重访问例外**，但**学术界普遍没有**
+- Most evaluation runs through the **API** rather than via **model-weights access**
+- Deep **white-box evaluation** (attention patterns, activation analysis) is not possible
+- **AISI has a weights-access exception**, but **the academic community broadly does not**
 
-DeepMind 在这一维度**与 Anthropic 并列业界领先**——向 UK/US AISI 开放权重访问，
-但学术合作仍以 API 为主。
+DeepMind is **tied with Anthropic at the industry frontier** on this dimension — opening weights access to UK/US AISI,
+while academic collaboration remains API-only.
 
-### Dan Hendrycks（CAIS）—— Benchmark Saturation
+### Dan Hendrycks (CAIS) — benchmark saturation
 
-Hendrycks 持续警告：**MMLU / HumanEval / GSM8K 等经典基准已饱和**，**需要新一代基准**
-（**HLE, Humanity's Last Exam**; **MMLU-Pro**; **WMDP** 等）。DeepMind FSF Report **已采纳**
-HLE、GPQA Diamond、WMDP 作为评估一部分——**响应学术界的"基准演进"呼吁**。
+Hendrycks has consistently warned that **classic benchmarks such as MMLU / HumanEval / GSM8K are saturated**, and that
+**a new generation of benchmarks is needed** (**HLE, Humanity's Last Exam**; **MMLU-Pro**; **WMDP**). DeepMind's FSF
+Report **has incorporated** HLE, GPQA Diamond, and WMDP as part of evaluation — **responding to the academic call for
+benchmark evolution**.
 
-### Yoshua Bengio —— 责任缺口
+### Yoshua Bengio — the responsibility gap
 
-Bengio 2025 *International AI Safety Report* 专章讨论红队披露：
+Bengio's 2025 *International AI Safety Report* devotes a chapter to red-team disclosure:
 
-- **肯定 FSF Reports 的制度价值**
-- **批评 FSF Reports 尚未包括"residual risks 的概率估计"**——只有 binary 的
-  pass/fail，没有不确定性量化
-- **呼吁**"第三方评估方的完整访问权 + 强制披露 + 跨公司比较"
+- **Affirms the institutional value of FSF Reports**
+- **Criticizes FSF Reports for not yet including "probability estimates of residual risk"** — only binary pass/fail, with
+  no uncertainty quantification
+- **Calls for** "complete access for third-party evaluators + mandatory disclosure + cross-company comparability"
 
-### Geoffrey Hinton / Stuart Russell —— 不只是报告
+### Geoffrey Hinton / Stuart Russell — beyond the report
 
-Hinton（2024 Nobel laureate）与 Russell 在多个论坛反复强调：**"红队披露是必要但不充分"**——
-模型**部署后**的社会影响（选举、就业、科学研究）**不在 red-team 预部署评估中**。
-FSF Reports 聚焦**前沿能力风险**，对**系统性社会影响**基本空白。
+Hinton (2024 Nobel laureate) and Russell have repeatedly emphasized across forums that **"red-team disclosures are
+necessary but insufficient"** — societal effects **post-deployment** (elections, employment, scientific research) **lie
+outside pre-deployment red-team evaluation**. FSF Reports focus on **frontier capability risk** and are largely silent on
+**systemic societal impact**.
 
-### DeepMind 内部声音 —— Rohin Shah
+### A DeepMind internal voice — Rohin Shah
 
-Rohin Shah 在 2025 年公开写作与讨论中持续表达过一个自我批评性立场：红队评估衡量的是
-受控条件下研究者能 elicit 的能力上限，但对于现实中长期部署后由具备资源的行为者持续
-提升出的能力，红队评估能提供的信息有限。
+Across 2025 public writing and discussion, Rohin Shah has expressed a consistent self-critical position: red-team
+evaluation measures the capability ceiling a researcher can elicit under controlled conditions, but offers limited
+information about capabilities that actors with sustained resources may elicit under long-term post-deployment conditions.
 
-这是**少有的来自内部对评估方法论局限的公开承认**。
+This is **one of the few public acknowledgments from within industry of methodological limits in evaluation**.
 
-## 行业第一手实践视角
+## Industry practitioner perspective
 
-### 红队团队的组织
+### Red-team organization
 
-DeepMind 红队生态**跨两个组织**：
+DeepMind's red-team ecosystem **spans two organizations**:
 
-- **DeepMind Safety and Alignment Team**（伦敦，Pushmeet Kohli 领导）
-- **Google Trust & Safety**（Mountain View，产品级红队）
-- **Responsible AI Council**（跨职能审查）
+- **DeepMind Safety and Alignment Team** (London, led by Pushmeet Kohli)
+- **Google Trust & Safety** (Mountain View, product-level red-team)
+- **Responsible AI Council** (cross-functional review)
 
-**实际操作**：**FSF Reports 评估主要由 DeepMind Safety**执行；**产品级滥用测试**
-（Gemini App 内容政策、AI Overviews 事实性）主要由**Google Trust & Safety**执行。
+**In practice**: **FSF Report evaluations are carried out primarily by DeepMind Safety**; **product-level abuse testing**
+(Gemini App content policy, AI Overviews factuality) is carried out primarily by **Google Trust & Safety**.
 
-### "Capability Elicitation" 的实践标准
+### "Capability elicitation" in practice
 
-DeepMind 定义**"elicit"** 的实践原则（FSF v2 § Appendix）：
+DeepMind's operative definition of **"elicitation"** (FSF v2, Appendix):
 
-- **no sandbagging**：测试时不让模型"故意表现差"
-- **best-of-N scaling**：允许工具、scaffolding、多次 sampling
-- **domain-expert prompt engineering**：聘请领域专家（生物学家、网络安全专家）设计 prompt
-- **post-training 优化**：部分领域允许小规模 fine-tune 后再评估（模拟"恶意 fine-tune"场景）
+- **No sandbagging**: the model is not permitted to "deliberately underperform" under test
+- **Best-of-N scaling**: tools, scaffolding, and multiple sampling are permitted
+- **Domain-expert prompt engineering**: subject-matter experts (biologists, cybersecurity specialists) are engaged to
+  design prompts
+- **Post-training optimization**: in certain domains small-scale fine-tuning followed by re-evaluation is permitted
+  (simulating a "malicious fine-tune" scenario)
 
-**这些实践比 2023 年前的"默认 prompt 评估"更严谨**——但**成本极高**，只有前沿实验室 +
-AISI 能执行。
+**These practices are materially more rigorous than the pre-2023 "default-prompt evaluation"** — but **their cost is very
+high**, within reach only of frontier labs plus AISI.
 
-### Frontier Model Forum 的"红队信息共享"
+### "Red-team information sharing" at the Frontier Model Forum
 
-FMF 2024 建立**Vulnerability Sharing Working Group**：
+In 2024, FMF established a **Vulnerability Sharing Working Group**:
 
-- 四家创始成员（Anthropic、Google、Microsoft、OpenAI）共享**高风险越狱发现**
-- 未公开具体协议，但**已成功协调过 2024 "many-shot" jailbreak、2025 "agentic prompt
-  injection" 漏洞的联合修复**
-- 批评（Mozilla / Open Source 社区）：**"行业卡特尔式信息共享"**，将小型实验室与开源社区
-  排除在外
+- Its four founding members (Anthropic, Google, Microsoft, OpenAI) share **high-risk jailbreak findings**
+- The specific protocol is not public, but **joint remediation has been successfully coordinated for the 2024
+  "many-shot" jailbreak and the 2025 "agentic prompt injection" vulnerability**
+- Critique (Mozilla / open-source community): **"industry-cartel-style information sharing"** that excludes smaller
+  labs and the open-source community
 
-### UK AISI 与 DeepMind 的特殊关系
+### The special relationship between UK AISI and DeepMind
 
-**DeepMind 总部在伦敦**，**UK AISI 在伦敦**——地理 + 人员流动造成**深度合作**。
-**Geoffrey Irving**（原 DeepMind，现 UK AISI Chief Scientist）是标志人物。
-**但也引发"监管者俘获"质疑**：AISI 团队成员中相当比例来自 DeepMind / Anthropic，
-独立性边界模糊。
+**DeepMind is headquartered in London**; **UK AISI is based in London** — geography and personnel circulation yield
+**deep collaboration**. **Geoffrey Irving** (formerly DeepMind, now UK AISI Chief Scientist) is the emblematic figure.
+**This has also prompted "regulatory capture" concerns**: a substantial share of AISI staff come from DeepMind /
+Anthropic, blurring the independence boundary.
 
-## 与同业对比
+## Peer comparison
 
-| 维度 | **Google DeepMind** | Anthropic | OpenAI |
+| Dimension | **Google DeepMind** | Anthropic | OpenAI |
 | --- | --- | --- | --- |
-| 模型级安全报告 | **FSF Reports（独立）** | Risk Reports（2026-04 起） | System Cards (嵌入式) |
-| 学术发表频次 | **最高**（Alignment 团队 20+/年） | 高（Interpretability + RLHF） | 中（2024 Superalignment 解散后下降） |
-| AISI 合作 | **UK AISI 深度（地理+人员）** | UK/US AISI | UK/US AISI（US 因 EO 14179 收缩） |
-| Apollo + METR | **是**（联合发表） | 是 | 部分（发表有选择性） |
-| Scheming 评估 | **联合发表里程碑论文** | 联合（DeepMind 主导） | 内部 o-series 研究 |
-| 越狱披露 | 保守（内部协调） | **公开 many-shot paper** | 有选择发布 |
-| 可解释性 | Gemini Scope + SAE 复现 | **Sparse Autoencoders 领先** | Sparse Autoencoders（2024 解散后产出下降） |
+| Model-level safety report | **FSF Reports (standalone)** | Risk Reports (from 2026-04) | System Cards (embedded) |
+| Academic publication frequency | **Highest** (Alignment team 20+/year) | High (interpretability + RLHF) | Moderate (declined after 2024 Superalignment dissolution) |
+| AISI collaboration | **Deep with UK AISI (geography + personnel)** | UK/US AISI | UK/US AISI (US reduced after EO 14179) |
+| Apollo + METR | **Yes** (joint publication) | Yes | Selective publication |
+| Scheming evaluation | **Joint landmark paper** | Joint (DeepMind-led) | Internal o-series research |
+| Jailbreak disclosure | Conservative (internal coordination) | **Public many-shot paper** | Selective release |
+| Interpretability | Gemini Scope + SAE replication | **Leading on sparse autoencoders** | Sparse autoencoders (output declined after 2024 dissolution) |
 
-## 关键时间线
+## Key timeline
 
-- **2018**：Jan Leike *Scalable Agent Alignment* (DeepMind)
-- **2023-11**：Bletchley Declaration + UK AISI 成立
-- **2024-05**：UK AISI 首轮评估（Gemini 1.5 Pro + Claude 3 Opus）
-- **2024-05**：**FSF v1**
-- **2024-10**：**Scheming in Frontier AI Models 联合论文**
-- **2025-02**：FSF v2
-- **2025-04**：**Gemini 2.5 FSF Report**（首份）
-- **2025-07**：DeepMind 操纵能力评估论文（Harmful Manipulation CCL 基础）
-- **2025-11**：**Gemini 3 Pro FSF Report**
-- **2026-02**：UK AISI 年度报告
-- **2026-04**：FSF v3（Harmful Manipulation CCL + TCL）
+- **2018**: Jan Leike *Scalable Agent Alignment* (DeepMind)
+- **2023-11**: Bletchley Declaration + UK AISI founded
+- **2024-05**: UK AISI first round (Gemini 1.5 Pro + Claude 3 Opus)
+- **2024-05**: **FSF v1**
+- **2024-10**: **Scheming in Frontier AI Models joint paper**
+- **2025-02**: FSF v2
+- **2025-04**: **Gemini 2.5 FSF Report** (first)
+- **2025-07**: DeepMind manipulation-capability evaluation paper (foundation for the Harmful Manipulation CCL)
+- **2025-11**: **Gemini 3 Pro FSF Report**
+- **2026-02**: UK AISI annual report
+- **2026-04**: FSF v3 (Harmful Manipulation CCL + TCL)
 
-## 跨链接
+## Cross-links
 
-- 公司层总览：[Google DeepMind index](/companies/google-deepmind/)
-- 使用政策：[Usage Policy](./usage-policy/)
-- 模型卡：[Model Card](./model-card/)
-- 安全框架（FSF）：[Safety Framework](./safety-framework/)
-- 透明度报告：[Transparency Report](./transparency-report/)
-- 对比：[Anthropic Red-Team](/companies/anthropic/red-team-disclosures/)、[OpenAI Red-Team](/companies/openai/red-team-disclosures/)
-- UK AISI：[英国 AI Safety Institute](/policies/uk/aisi/)
-- Frontier Model Forum：[行业自治](/industry/frontier-model-forum/)
+- Company-level overview: [Google DeepMind index](/companies/google-deepmind/)
+- Usage policy: [Usage Policy](./usage-policy/)
+- Model Card: [Model Card](./model-card/)
+- Safety framework (FSF): [Safety Framework](./safety-framework/)
+- Transparency report: [Transparency Report](./transparency-report/)
+- Comparison: [Anthropic Red-Team](/companies/anthropic/red-team-disclosures/), [OpenAI Red-Team](/companies/openai/red-team-disclosures/)
+- UK AISI: [UK AI Safety Institute](https://www.aisi.gov.uk/)
+- Frontier Model Forum: [Industry self-regulation](https://www.frontiermodelforum.org/)

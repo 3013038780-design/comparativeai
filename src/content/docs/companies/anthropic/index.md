@@ -1,140 +1,145 @@
 ---
 title: Anthropic
-description: Anthropic 公司概况、RSP v3 深度分析、行业自律立场（2026-04-22）
+description: Anthropic company profile, RSP v3 deep dive, and industry self-regulation posture (2026-06-28)
 sidebar:
   order: 1
   label: Anthropic
-snapshotDate: 2026-04-22
+snapshotDate: 2026-06-28
 ---
 
-> **🆕 2026 Q1 重大更新**：**RSP v3 发布（2026-02-24）** —— 分离"单方承诺"与"行业共同义务"，
-> 放弃 pause 承诺；Risk Reports 每 3-6 个月发布；[SB 53 Frontier Compliance Framework](https://www.anthropic.com/news/compliance-framework-SB53) 作为加州合规路径。
+> **2026 Q1 major update**: **RSP v3 released (2026-02-24)** — separates "unilateral commitments" from
+> "industry-wide obligations," abandons the pause commitment, institutes Risk Reports on a 3–6 month cadence,
+> and designates the [SB 53 Frontier Compliance Framework](https://www.anthropic.com/news/compliance-framework-SB53)
+> as the company's California compliance path.
 
-## 公司概况
+## Company profile
 
-- **成立**：2021（创始人 Dario Amodei、Daniela Amodei 等 OpenAI 前成员）
-- **总部**：San Francisco, California, USA
-- **主要模型**：Claude 系列（Claude Opus 4.7 / Sonnet 4.6 / Haiku 4.5）
-- **商业模式**：Claude.ai 消费 / API / Claude Code / 企业 / AWS Bedrock / Google Vertex 分销
-- **融资轨迹**：Google $4B（2023）、Amazon $8B（2024 累计）；2026 估值超 **$60B**
-- **差异化叙事**：**安全优先前沿实验室**；Constitutional AI + 机制可解释性研究主导的品牌
+- **Founded**: 2021 (by Dario Amodei, Daniela Amodei, and other former OpenAI staff)
+- **Headquarters**: San Francisco, California, USA
+- **Main models**: the Claude family (Claude Opus 4.7 / Sonnet 4.6 / Haiku 4.5)
+- **Business model**: Claude.ai consumer / API / Claude Code / enterprise / AWS Bedrock and Google Vertex resale channels
+- **Funding trajectory**: Google $4B (2023); Amazon $8B cumulative (2024); 2026 valuation above **$60B**
+- **Differentiating narrative**: the **safety-first frontier lab**, branded around Constitutional AI and mechanistic interpretability research
 
-## 深度分析：RSP 作为行业自律模式的起源与演进
+## Deep dive: RSP as the origin and evolution of industry self-regulation
 
-### 为什么 RSP 是"行业自律大头"的起点
+### Why RSP is the starting point of voluntary frontier-lab governance
 
-2023-09 Anthropic 首次发布 **Responsible Scaling Policy (RSP)**，将 AI 安全承诺结构化为：
+In September 2023 Anthropic released the first **Responsible Scaling Policy (RSP)**, structuring AI-safety
+commitments around:
 
-- **AI Safety Level (ASL)** —— 参照生物安全等级（BSL-1 到 BSL-4）的风险分级
-- **Capability Thresholds** —— 触发 ASL 升级的能力阈值
-- **Safeguards Required at Each Level** —— 每级对应的部署和内部安全要求
-- **Pause Commitment**（v1 / v2 原版）—— 若达到阈值但安全措施未到位，**停止训练或部署**
+- **AI Safety Levels (ASL)** — a risk-tiering scheme modelled on biosafety levels (BSL-1 through BSL-4)
+- **Capability Thresholds** — the capability markers that trigger ASL upgrades
+- **Safeguards Required at Each Level** — deployment and internal-security requirements that attach to each level
+- **Pause Commitment** (v1 / v2 original) — **halt training or deployment** if a threshold is reached before safeguards are in place
 
-**制度意义**：RSP 是**全球首个结构化的自愿 AI 安全框架**，为后来 OpenAI Preparedness Framework、
-Google DeepMind FSF、Meta Frontier AI Framework 等提供模板。Frontier Model Forum（2023 成立）
-以此为共同语言。**加州 SB 53、EU GPAI CoP 的"Safety and Security"章节都部分对标 RSP 结构**。
+**Institutional significance**: RSP was the **first structured voluntary AI-safety framework globally**, and
+it supplied the template for OpenAI's Preparedness Framework, Google DeepMind's Frontier Safety Framework (FSF),
+Meta's Frontier AI Framework, and others. The Frontier Model Forum (founded 2023) uses it as a shared vocabulary.
+**California SB 53 and the "Safety and Security" chapter of the EU GPAI Code of Practice both echo the RSP structure in part.**
 
-### 版本演进时间线
+### Version timeline
 
-| 版本 | 日期 | 核心变化 |
+| Version | Date | Core change |
 | --- | --- | --- |
-| v1.0 | 2023-09 | 首发。ASL-1 到 ASL-4 框架；明确 pause 承诺 |
-| v2.x | 2024-10 至 2025-10 | 多次小幅更新；2025-05 对特定模型激活 ASL-3（生化武器辅助能力阈值） |
-| **v3.0** | **2026-02-24** | **结构性重写**（下文详述）|
+| v1.0 | 2023-09 | Initial release. ASL-1 through ASL-4 framework; explicit pause commitment |
+| v2.x | 2024-10 to 2025-10 | Several minor updates; ASL-3 activated for specific models in May 2025 (bioweapon-uplift threshold) |
+| **v3.0** | **2026-02-24** | **Structural rewrite** (detailed below) |
 
-### RSP v3 深度解读：**行业自律的结构性转向**
+### RSP v3 in detail: **a structural shift in voluntary frontier-lab governance**
 
-**核心变化**：把 RSP 拆成**两类义务**：
+**Core change**: the RSP is split into **two classes of obligations**:
 
-1. **Anthropic 无论其他公司做什么都会做的缓解措施（unilateral commitments）**
-2. **"能力—缓解"映射：Anthropic 认为整个行业都应采用、否则不足以管理风险的标准**（industry-wide recommendations）
+1. **Mitigations Anthropic will implement regardless of what other labs do** (unilateral commitments)
+2. **Capability-to-mitigation mappings that Anthropic believes the whole industry must adopt or else risk cannot be adequately managed** (industry-wide recommendations)
 
-**关键后果**：
-- **RAND Security Level 4**（最高级的**模型权重保护**，防范国家级行为者）从单方承诺**降级为行业建议**
-- **Pause 承诺被撤销**：v2 原版明文"如果达到阈值而安全措施未到位就停止"，v3 **无此条款**
-- Anthropic 官方解释：某些承诺只在**行业齐步**时才有意义；单方承担只会**失去市场地位而不真正降低风险**
+**Key consequences:**
+- **RAND Security Level 4** (the highest bar for **model-weight security**, designed to deter nation-state actors) has been **demoted from unilateral commitment to industry recommendation**
+- **The pause commitment has been withdrawn**: the v2 text explicitly stated "halt if a threshold is reached before safeguards are ready"; v3 contains **no equivalent clause**
+- Anthropic's stated rationale: certain commitments only make sense when **the industry moves in lockstep**, and unilateral adoption merely **erodes market position without reducing real-world risk**
 
-**争议焦点**（业界普遍批评，包括 *TIME*、GovAI、Zvi Mowshowitz 等）：
-1. **"竞争压力合理化"的危险**：一旦允许"看同行做什么再决定自己做什么"，安全承诺会**下行螺旋**
-2. **五角大楼压力**：Anthropic 2025 与美国国防部 OTA 签署 $200M 合同；RSP v3 降级恰好在合同生效后 6 个月
-3. **"industry-wide" 的不可执行性**：没有机制确保"行业"真的采纳，实际等于**无承诺**
+**Areas of controversy** (voiced by *TIME*, GovAI, Zvi Mowshowitz, and others):
 
-**Anthropic 的反驳**：
-- 新增 **Risk Reports**（每 3-6 个月）+ **外部审查方"无删减"访问权**（2026-04 首批外部审查方含 GovAI、MATS、METR）
-- **不降低既有缓解措施**：ASL-3 保护对 Claude Opus 4+ 仍适用
-- 发布 **Frontier Safety Roadmap** 含公开可问责指标
+1. **The "competitive-pressure rationalisation" risk**: once "wait and see what peers do" becomes legitimate, safety commitments enter a **downward spiral**
+2. **Pentagon pressure**: Anthropic signed a **$200M OTA contract with the U.S. Department of Defense in 2025**; RSP v3's demotion arrived six months after that contract took effect
+3. **"Industry-wide" is unenforceable**: there is no mechanism to verify that "the industry" in fact adopts any given standard, so the commitment is effectively **no commitment at all**
 
-### 与其他前沿实验室的对比
+**Anthropic's rebuttal:**
+- The new **Risk Reports** (every 3–6 months) plus **"unredacted" access for external reviewers** (the first cohort in April 2026 includes GovAI, MATS, and METR)
+- **No pre-existing mitigations have been weakened**: ASL-3 protections still apply to Claude Opus 4+
+- Publication of a **Frontier Safety Roadmap** with publicly accountable metrics
 
-| 维度 | Anthropic RSP v3 | OpenAI Preparedness v2 (2025-04) | Google DeepMind FSF v3 (2026-04) |
+### Comparison with other frontier labs
+
+| Dimension | Anthropic RSP v3 | OpenAI Preparedness v2 (2025-04) | Google DeepMind FSF v3 (2026-04) |
 | --- | --- | --- | --- |
-| 结构 | **能力等级**（ASL-2/3/4）+ 对应缓解 | **威胁类别 × 阈值**（High / Critical）| **Critical Capability Levels (CCLs)** + **Tracked CLs (TCLs)** |
-| 风险领域 | 生化武器、网络、自主、说服 | 生化、网络、自我改进（+ 长期自主、沙袋、自主复制等"观察"类）| 网络、自主 ML 研究、操纵、CBRN |
-| Pause 承诺 | **已撤销**（v3）| 本来就没有（"必要时暂停"措辞弱）| 无明确 pause |
-| 外部审查 | **明确有**（Risk Reports 含外部方） | Safety Advisory Group（内部+外部混合）| 发布模型 FSF 报告（如 Gemini 3 Pro FSF Report, 2025-11）|
-| 主要批评 | 放弃 pause / 竞争妥协 | arxiv 2509.24394 "不保证任何缓解实践"| TCL 门槛模糊 |
+| Structure | **Capability tiers** (ASL-2/3/4) + paired mitigations | **Threat category × threshold** (High / Critical) | **Critical Capability Levels (CCLs)** + **Tracked CLs (TCLs)** |
+| Risk domains | Bioweapons, cyber, autonomy, persuasion | Bio/chem, cyber, self-improvement (plus long-horizon autonomy, sandbagging, autonomous replication as "watch" categories) | Cyber, autonomous ML research, manipulation, CBRN |
+| Pause commitment | **Withdrawn** (v3) | Never formally adopted ("pause if necessary" phrasing is weak) | No explicit pause |
+| External review | **Yes, explicit** (Risk Reports include external parties) | Safety Advisory Group (mixed internal + external) | Model-level FSF reports published (e.g. Gemini 3 Pro FSF Report, Nov 2025) |
+| Principal criticism | Abandoning pause / competitive compromise | arxiv 2509.24394 — "does not guarantee any mitigation practice" | TCL thresholds are vague |
 
-**关键观察**：**三家框架看似不同，但 2025-2026 都经历了"松动"**。这既可能反映"实际风险没那么高"，
-也可能反映"行业自律在竞争中不可持续"——需要**外部硬法**（EU AI Act、加州 SB 53、EO 14365 后续立法）
-来锁定安全义务。
+**Key observation**: **the three frameworks look different on the surface, but each experienced
+softening in 2025–2026.** This can be read either as evidence that actual risk is lower than
+originally feared, or as evidence that voluntary self-regulation is unsustainable under competitive
+pressure — and therefore that **binding external law** (the EU AI Act, California SB 53, follow-on
+legislation to EO 14365) is necessary to lock in safety obligations.
 
-## 使用政策（AUP）的关键分析
+## Key analysis of the Usage Policy (AUP)
 
-Anthropic **Usage Policy**（2025-05 最新版）与其他前沿实验室相比：
+Anthropic's **Usage Policy** (latest version: May 2025), compared with other frontier labs:
 
-- **更强的武器化限制**：明确禁止"武器或危险化学、生物、核材料的开发、设计、生产、获取"
-- **更具体的儿童保护条款**：CSAM 生成禁令 + 对未成年人"显著身心损害"的泛化禁令
-- **选举类场景的 nuance**：禁止"实质性政治操纵"但允许"辅助起草真实政治内容"
-- **企业条款**：分 Consumer Usage Policy 和 Commercial Terms，企业合规负担分摊
+- **Stronger weaponisation limits**: explicit prohibition on "development, design, production, or acquisition of weapons or dangerous chemical, biological, or nuclear materials"
+- **More specific child-protection clauses**: CSAM-generation prohibition plus a broader ban on content that would cause "significant physical or psychological harm to minors"
+- **Nuanced treatment of elections**: bans "material political manipulation" but permits "assistance drafting genuine political content"
+- **Enterprise provisions**: the policy is split between a Consumer Usage Policy and Commercial Terms, distributing compliance burden
 
-**与 OpenAI Usage Policies 的对比**：OpenAI 2025-10 更新后缩短并模糊化（删除部分具体禁止类别，
-转向原则性表述）；**Anthropic AUP 保持更具体、更可执行**。
+**Contrast with OpenAI Usage Policies**: OpenAI's October 2025 refresh shortened and blurred the document (deleting specific prohibited categories in favour of principle-level language); **Anthropic's AUP remains more specific and more enforceable**.
 
-## 公开政策文档快照
+## Policy document snapshot
 
-| 类型 | 文档名 | 链接 | 本站子页 |
+| Type | Document | Link | Subpage |
 | --- | --- | --- | --- |
-| 使用政策 | Anthropic Usage Policy (AUP) | [anthropic.com/legal/aup](https://www.anthropic.com/legal/aup) | [usage-policy](./usage-policy/) |
-| 模型卡 | Claude Model Card（各版本）| [anthropic.com/claude](https://www.anthropic.com/claude) | [model-card](./model-card/) |
-| 安全框架 | **RSP v3** (2026-02-24) | [anthropic.com/news/responsible-scaling-policy-v3](https://www.anthropic.com/news/responsible-scaling-policy-v3) | [safety-framework](./safety-framework/) |
-| SB 53 合规 | Frontier Compliance Framework | [anthropic.com/news/compliance-framework-SB53](https://www.anthropic.com/news/compliance-framework-SB53) | — |
-| 透明度报告 | Transparency Hub | [anthropic.com/transparency](https://www.anthropic.com/transparency) | [transparency-report](./transparency-report/) |
-| 红队披露 | Frontier Red Team 论文 / 博客 | [anthropic.com/research](https://www.anthropic.com/research) | [red-team-disclosures](./red-team-disclosures/) |
+| Usage policy | Anthropic Usage Policy (AUP) | [anthropic.com/legal/aup](https://www.anthropic.com/legal/aup) | [usage-policy](./usage-policy/) |
+| Model card | Claude Model Cards (per release) | [anthropic.com/claude](https://www.anthropic.com/claude) | [model-card](./model-card/) |
+| Safety framework | **RSP v3** (2026-02-24) | [anthropic.com/news/responsible-scaling-policy-v3](https://www.anthropic.com/news/responsible-scaling-policy-v3) | [safety-framework](./safety-framework/) |
+| SB 53 compliance | Frontier Compliance Framework | [anthropic.com/news/compliance-framework-SB53](https://www.anthropic.com/news/compliance-framework-SB53) | — |
+| Transparency report | Transparency Hub | [anthropic.com/transparency](https://www.anthropic.com/transparency) | [transparency-report](./transparency-report/) |
+| Red-team disclosures | Frontier Red Team papers / blog | [anthropic.com/research](https://www.anthropic.com/research) | [red-team-disclosures](./red-team-disclosures/) |
 
-## 监管合规立场分析
+## Regulatory-compliance posture
 
-### 面向美国
+### United States
 
-- **2023 White House Voluntary Commitments**：首批签署方
-- **Frontier Model Forum**：创始成员
-- **加州 SB 53**：**明确 endorse**（业界唯一），发布 [Frontier Compliance Framework](https://www.anthropic.com/news/compliance-framework-SB53) 作为合规路径
-- **EO 14365 (州法抢占)**：隐性不满，但未公开反对
-- **Dario Amodei 参议院证词**（2023、2024）：**公开呼吁硬性联邦 AI 监管**，罕见在大厂中
+- **2023 White House Voluntary Commitments**: first-wave signatory
+- **Frontier Model Forum**: founding member
+- **California SB 53**: **explicit endorsement** (unique among frontier labs); publication of the [Frontier Compliance Framework](https://www.anthropic.com/news/compliance-framework-SB53) as a compliance path
+- **EO 14365 (state-law preemption)**: implicit dissatisfaction, but no public opposition
+- **Dario Amodei's Senate testimony** (2023, 2024): **publicly called for binding federal AI regulation**, unusual among major-lab CEOs
 
-### 面向欧盟
+### European Union
 
-- **GPAI Code of Practice**：**完整签署**（2025-08-01 首批，全部三章）
-- **AI Act 第 51-56 条 GPAI 义务**：Claude 系列超 10²⁵ FLOP 门槛，已准备系统性风险文档
+- **GPAI Code of Practice**: **fully signed** (first wave, 2025-08-01; all three chapters)
+- **AI Act Arts. 51–56 GPAI obligations**: the Claude line exceeds 10^25 FLOP and Anthropic has prepared systemic-risk documentation
 
-### 面向中国
+### China
 
-- **不直接进入中国市场**
-- AWS Bedrock 全球版可在中国非公开企业客户访问；豆包等国内服务不含 Claude
-- 技术出口受 BIS 管制约束
+- **Not offered directly in the Chinese market**
+- Global AWS Bedrock is accessible to some non-public enterprise customers in China; Chinese consumer services like Doubao 豆包 do not contain Claude
+- Technical export is subject to U.S. BIS controls
 
-### 面向英国
+### United Kingdom
 
-- **UK AISI (AI Safety Institute)** 预部署测试合作协议首批方（2024）
-- 2024 Bletchley、2025 Seoul、2025 Paris AI Summit 签署所有主要声明
+- First-wave partner in **UK AISI (AI Safety Institute)** pre-deployment testing agreements (2024)
+- Signed all major statements at the 2024 Bletchley, 2025 Seoul, and 2025 Paris AI Summits
 
-## 行业自律立场：**"强监管支持者"叙事的矛盾**
+## Self-regulation posture: **the internal contradictions of a "pro-binding-regulation" narrative**
 
-Anthropic 的自律姿态有**三重张力**：
+Anthropic's self-regulation posture contains **three structural tensions**:
 
-1. **修辞支持硬法 vs. 实际游说**：公开呼吁监管，但 2024 在加州 SB-1047 上**公开反对**最终版本；
-   2025 对 SB 53 endorse 是转向
-2. **单方承诺 vs. 竞争均衡**：RSP v3 承认"只有自己做安全没用"，但这削弱了"道德领导者"叙事
-3. **研究独立性 vs. 资本依赖**：Amazon $8B + Google $4B 的深度绑定是否影响治理立场？公司未公开披露
+1. **Rhetoric supporting hard law vs. actual lobbying practice**: the company publicly calls for regulation, yet **publicly opposed the final version of California SB-1047 in 2024**; the 2025 endorsement of SB 53 is a reversal
+2. **Unilateral commitments vs. competitive equilibrium**: RSP v3 concedes that "doing safety alone is useless" — but this concession erodes the "moral leader" narrative
+3. **Research independence vs. capital dependence**: Amazon $8B + Google $4B represent deep financial entanglement. Whether this affects governance stance has not been publicly disclosed by the company.
 
-**相对其他前沿实验室，Anthropic 的自律仍是最重的**，但 2026 开始出现**"竞争压力下的退让"**迹象。
-
+**Relative to other frontier labs, Anthropic's self-regulation remains the heaviest**, but 2026 shows
+the first signs of **retreat under competitive pressure**.

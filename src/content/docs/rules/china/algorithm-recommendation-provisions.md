@@ -1,8 +1,8 @@
 ---
-title: 互联网信息服务算法推荐管理规定
-description: 中国对算法推荐服务（含生成合成、排序、个性化推送等）的综合管理规章，2022-03-01 生效，建立"算法备案"基础设施
-ruleName: 互联网信息服务算法推荐管理规定
-issuer: 国家互联网信息办公室 / 工业和信息化部 / 公安部 / 国家市场监督管理总局（四部门联合发布）
+title: Provisions on the Administration of Algorithm Recommendation in Internet Information Services
+description: China's omnibus departmental rule on algorithm-recommendation services (covering generation-synthesis, ranking, personalized push, and more); effective 2022-03-01 and the source of the Algorithm Registry infrastructure
+ruleName: Provisions on the Administration of Algorithm Recommendation in Internet Information Services (《互联网信息服务算法推荐管理规定》)
+issuer: Cyberspace Administration of China (CAC) / Ministry of Industry and Information Technology (MIIT) / Ministry of Public Security (MPS) / State Administration for Market Regulation (SAMR) — four-ministry joint issuance
 level: departmental-rule
 binding: hard
 effectiveDate: 2022-03-01
@@ -12,152 +12,133 @@ relatedTopics:
   - risk-classification
   - content-labeling-provenance
   - frontier-gpai
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: 算法推荐规定 (2022)
+  label: Algorithm Recommendation Provisions (2022)
   order: 4
 ---
 
-> **📑 法律位阶**：第 3 级 · 部门规章 | **发布**：网信办、工信部、公安部、市场监管总局（**四部门联合发布**） | **生效**：2022-03-01 | **属性**：硬法
+> **📑 Legal hierarchy**: Level 3 · Departmental rule | **Issuance**: CAC, MIIT, MPS, SAMR (**four-ministry joint issuance**) | **Effective**: 2022-03-01 | **Character**: hard law
 
-> **⚠️ 位阶提醒**：本规则是**部门规章**，由四部委联合发布。**不是**国务院行政法规。
-> 详见 [中国规则索引](/rules/china/#法律位阶速览)。
+> **⚠️ Hierarchy note**: This instrument is a **departmental rule**, jointly issued by four ministries. It is **not** a State Council administrative regulation. See [Index of Chinese Rules](/rules/china/#the-legal-hierarchy-at-a-glance).
 
-## 英文摘要
+## English Summary
 
-The *Provisions on the Administration of Algorithm Recommendation in Internet Information
-Services* (互联网信息服务算法推荐管理规定), jointly issued by CAC, MIIT, MPS, and SAMR on
-2022-01-04 and effective 2022-03-01, is China's **foundational regulation on algorithmic
-systems** — pre-dating the dedicated deep-synthesis and generative-AI rules by one to
-two years. Its scope is broad: **generation-synthesis, personalized push, ranking,
-search-filtering, and scheduling-decision** algorithms are all covered. The Provisions
-establish the **Algorithm Registry** (算法备案系统) — a public filing system that
-subsequently became the compliance scaffolding reused by the 2022 *Deep Synthesis
-Provisions* and 2023 *Generative AI Interim Measures*. Article 17 introduced a
-**world-first user right**: the option to **turn off algorithmic recommendation**
-entirely, with immediate effect.
+The *Provisions on the Administration of Algorithm Recommendation in Internet Information Services* (《互联网信息服务算法推荐管理规定》), jointly issued by CAC, MIIT, MPS, and SAMR on 2022-01-04 and effective 2022-03-01, is China's **foundational regulation on algorithmic systems** — pre-dating the dedicated deep-synthesis and generative-AI rules by one to two years. Its scope is broad: **generation-synthesis, personalized push, ranking, search-filtering, and scheduling-decision** algorithms are all covered. The Provisions establish the **Algorithm Registry** (算法备案系统) — a public filing system that subsequently became the compliance scaffolding reused by the 2022 *Deep Synthesis Provisions* and 2023 *Generative AI Interim Measures*. Article 17 introduced a **world-first user right**: the option to **turn off algorithmic recommendation** entirely, with immediate effect.
 
-## 总览
+## Overview
 
-《算法推荐规定》是中国 AI 治理的**基础设施法**——
+The *Algorithm Recommendation Provisions* are the **infrastructural statute** of Chinese AI governance —
 
-- 它本身不是针对 AI 的专项规章（2021 年起草时生成式 AI 还不是舆论中心），
-  但它构建的**算法备案系统**成为后续所有 AI 规章的合规抓手
-- 它把"算法"而非"AI"作为规制对象，适用面**远超生成式 AI**，
-  涵盖传统推荐系统、内容排序、搜索过滤
-- 第十七条的"用户可关闭算法推荐"是**全球首个同类用户权利**，被国际学界重点关注
+- They were not drafted specifically for AI (when drafting began in 2021, generative AI had not yet become the focal public concern), but the **algorithmic filing (*备案*) system** they built has become the compliance anchor for every subsequent AI rule.
+- They regulate "algorithms" rather than "AI" per se, reaching **well beyond generative AI** to conventional recommender systems, content ranking, and search filtering.
+- The Article 17 "user may disable algorithmic recommendation" right is **a first of its kind globally**, and has drawn extensive international scholarly attention.
 
-## 适用范围
+## Scope
 
-**覆盖的 5 类算法**（第二条）：
-1. **生成合成类** generation-synthesis — 后来被《深度合成规定》和《生成式 AI 办法》接手
-2. **个性化推送类** personalized push — 信息流、视频流的主要载体
-3. **排序精选类** ranking and selection — 电商、搜索结果
-4. **检索过滤类** search-filtering — 搜索引擎
-5. **调度决策类** scheduling-decision — 外卖、网约车派单等
+**Five categories of algorithm covered** (Article 2):
 
-**主体**：提供算法推荐服务的网络信息服务提供者
-**地域**：境内提供服务
+1. **Generation-synthesis** — later taken up by the *Deep Synthesis Provisions* and the *Generative AI Measures*.
+2. **Personalized push** — the main carrier of feeds and video streams.
+3. **Ranking and selection** — e-commerce and search results.
+4. **Search-filtering** — search engines.
+5. **Scheduling-decision** — order dispatch in food delivery, ride-hailing, and similar services.
 
-## 核心义务
+**Subjects**: network information service providers that use algorithmic recommendation.
+**Territory**: services provided within China.
 
-### 通用义务（对所有算法推荐服务提供者）
+## Core Duties
 
-- **主流价值导向**：服务提供者应当坚持主流价值导向，积极传播正能量
-- **不得违法用算法**：不得利用算法实施**垄断、不正当竞争**
-- **健全管理制度**：用户注册、信息发布审核、数据安全和个人信息保护、反电信网络诈骗等
-- **安全评估与备案义务**（对有舆论属性或社会动员能力的服务）：
-  - **备案**：通过"互联网信息服务算法备案系统"进行备案
-  - **安全评估**：按国家有关规定开展
-- **定期审核**算法机制机理、模型、数据、应用结果
+### General duties (on all algorithm-recommendation service providers)
 
-### 用户权利（第十六条—第二十一条，重点条款）
+- **Mainstream value orientation**: providers shall uphold mainstream values and actively disseminate positive content.
+- **No unlawful use of algorithms**: providers shall not use algorithms to carry out **monopolistic conduct or unfair competition**.
+- **Sound management systems**: user registration, information-publishing review, data and personal-information protection, anti-telecom-fraud, etc.
+- **Security assessment and filing obligations** (for services with "public opinion attributes or social mobilization capacity"):
+  - **Filing (*备案*)**: through the "Internet Information Service Algorithm Registry System."
+  - **Security assessment**: per the relevant national rules.
+- **Periodic review** of algorithmic mechanisms and logic, models, data, and application outputs.
 
-- **知情权**：以显著方式告知用户本服务提供算法推荐
-- **选择权**（第十七条，标志性条款）：
-  - 向用户提供**不针对其个人特征**的选项
-  - 或提供**便捷的关闭算法推荐服务的选项**
-  - 用户选择关闭的，服务提供者应当立即停止提供
-- **特殊群体保护**：
-  - **未成年人**：不得推送可能影响其身心健康的信息；应当提供适合其身心健康的产品和服务
-  - **老年人**：应当充分考虑老年人需求；不得利用算法实施"大数据杀熟"
-  - **劳动者**：平台对劳动者提供算法推荐服务的，应当保护劳动者合法权益，完善平台订单分配、
-    报酬构成、工作时间等相关算法（**外卖骑手条款**）
-- **消费者权利**：不得利用算法对消费者在交易价格等交易条件上实施**不合理的差别待遇**（"大数据杀熟"）
+### User rights (Articles 16–21, headline provisions)
 
-## 执法与处罚
+- **Right to be informed**: conspicuously notify users that the service uses algorithmic recommendation.
+- **Right of choice** (Article 17, the signature provision):
+  - offer users an **option not targeted at their personal characteristics**, or
+  - offer a **convenient option to turn off algorithmic recommendation**;
+  - where the user elects to turn it off, the provider shall cease provision immediately.
+- **Protection of special groups**:
+  - **Minors**: shall not be pushed information that may harm their physical or mental health; products and services suitable for their physical and mental health shall be provided.
+  - **Older persons**: providers shall give full consideration to their needs; shall not use algorithms to practice "big-data price discrimination."
+  - **Workers**: platforms providing algorithmic recommendation services to workers shall protect workers' lawful rights and interests, refining algorithms for order allocation, remuneration composition, working hours, and similar (**the delivery-rider clause**).
+- **Consumer rights**: providers shall not use algorithms to impose unreasonable differential treatment on consumers regarding transaction prices or other conditions (the "big-data price discrimination" prohibition).
 
-- **主管机构**：网信办牵头，工信部、公安部、市场监管总局协同（四部门联合发布即意味着联合执法）
-- **处罚阶梯**：警告 → 通报批评 → 责令改正 → 罚款（1 万 –10 万）→ 责令停业整顿 → 下架 APP
-- **严重情形**：吊销许可证；构成犯罪的追究刑事责任
+## Enforcement and Penalties
 
-## 与其他规则的关系
+- **Competent authorities**: CAC leads; MIIT, MPS, and SAMR coordinate (joint issuance by four ministries implies joint enforcement).
+- **Penalty ladder**: warning → public reprimand → order to rectify → fine (RMB 10,000–100,000) → suspension of operations → app de-listing.
+- **Serious cases**: revocation of permits; criminal liability where conduct constitutes a crime.
 
-- **《网络安全法》**：上位法，提供执法和处罚依据
-- **《个人信息保护法》**：第二十四条（自动化决策）的实施抓手；算法推荐场景的专门规则
-- **《深度合成规定》(2023)**：本规定第二条第(一)项"生成合成类算法"**被深度合成规定接手细化**，
-  备案程序沿用本规定
-  见 [deep-synthesis-provisions](/rules/china/deep-synthesis-provisions/)
-- **《生成式 AI 暂行办法》(2023)**：生成式 AI 服务的备案与安全评估义务**直接引用**本规定
-  见 [generative-ai-interim-measures](/rules/china/generative-ai-interim-measures/)
-- **《反垄断法》**：第十七条不正当竞争条款与本规定算法垄断条款的交叉
+## Relationship with Other Rules
 
-## 争议与解读
+- **Cybersecurity Law (CSL)**: the upstream statute providing enforcement and penalty bases.
+- **Personal Information Protection Law (PIPL)**: the operational anchor for Article 24 (automated decision-making); the specialized rule in the algorithm-recommendation scenario.
+- **Deep Synthesis Provisions (2023)**: the "generation-synthesis" category of these Provisions' Article 2(1) **was taken over and refined** by the Deep Synthesis Provisions, which retain the filing procedure.
+  See [deep-synthesis-provisions](/rules/china/deep-synthesis-provisions/).
+- **Generative AI Interim Measures (2023)**: the filing and security-assessment duties for generative AI services **directly cite** these Provisions.
+  See [generative-ai-interim-measures](/rules/china/generative-ai-interim-measures/).
+- **Anti-Monopoly Law**: Article 17's anti-unfair-competition clauses intersect with this rule's anti-monopolistic-algorithm clauses.
 
-1. **"用户可关闭算法推荐"的实际落地**：各平台提供的关闭选项往往**隐藏极深**或
-   伴随**功能降级**（例如关闭后无法浏览）。合规形式上满足，实质规避。
-2. **算法备案的透明度**：备案信息对外公开的字段有限（算法名称、备案号、
-   主要用途），**不涉及算法逻辑和参数**，对公众监督作用有限。
-3. **"主流价值导向"的定性要求**：第六条等条款要求算法传播主流价值，在**工程实现**上
-   几乎不可测；实务中作为**兜底追责条款**存在。
-4. **平台劳动者条款的执行困境**：外卖骑手、网约车司机相关条款（第二十条）在各地
-   执行差异大；北京、上海、深圳的地方试点各有不同口径。
-5. **与 PIPL 第二十四条的衔接**：两者均规制自动化决策，但 PIPL 强调个人权利
-   （拒绝单纯自动化决策），本规定强调服务提供者义务，两者如何合力是解释难点。
+## Debates and Commentary
 
-## 原文与翻译
+1. **Operationalization of the "user may turn off recommendation" right**: the opt-outs offered by platforms are often **deeply buried** or accompanied by **feature degradation** (e.g., browsing disabled once turned off). Formal compliance is met, substantive avoidance is common.
+2. **Transparency of filing (*备案*)**: publicly disclosed fields are limited (algorithm name, filing number, primary use); algorithmic logic and parameters are **not disclosed**, limiting the filing's role as a public-oversight mechanism.
+3. **"Mainstream value orientation" as a qualitative duty**: provisions such as Article 6 demand that algorithms disseminate mainstream values — a requirement **effectively non-testable at the engineering level**; in practice it functions as a residual basis for liability.
+4. **Challenges enforcing the platform-worker clauses**: the delivery-rider / ride-hailing clauses (Article 20) exhibit significant variation in enforcement across localities; Beijing, Shanghai, and Shenzhen pilots have adopted different approaches.
+5. **Interface with PIPL Article 24**: both address automated decision-making, but PIPL emphasizes individual rights (refusal of purely automated decisions) while these Provisions emphasize provider duties; how the two combine is an interpretive question.
 
-| 语言 | 来源 | 链接 |
+## Source Text and Translations
+
+| Language | Source | Link |
 | --- | --- | --- |
-| 中文（原文） | 国家网信办 | [cac.gov.cn](https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm) |
-| 中文（归档） | 本站 | [algorithm-recommendation-provisions-2022-01-04.html](/archives/china/algorithm-recommendation-provisions-2022-01-04.html) |
-| English | **Stanford DigiChina**（Rogier Creemers et al.） | [digichina.stanford.edu/work/...effective-march-1-2022](https://digichina.stanford.edu/work/translation-internet-information-service-algorithmic-recommendation-management-provisions-effective-march-1-2022/) |
-| English（征求意见稿翻译） | China Law Translate | [chinalawtranslate.com/algorithm-regulation-draft](https://www.chinalawtranslate.com/algorithm-regulation-draft/) |
-| English（结构化） | Regulations.AI | [regulations.ai/.../PAARIXX-2021](https://regulations.ai/regulations/RAI-CN-NA-PAARIXX-2021) |
+| Chinese (original) | CAC | [cac.gov.cn](https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm) |
+| Chinese (archived copy) | This site | [algorithm-recommendation-provisions-2022-01-04.html](/archives/china/algorithm-recommendation-provisions-2022-01-04.html) |
+| English | **Stanford DigiChina** (Rogier Creemers et al.) | [digichina.stanford.edu/work/...effective-march-1-2022](https://digichina.stanford.edu/work/translation-internet-information-service-algorithmic-recommendation-management-provisions-effective-march-1-2022/) |
+| English (draft for comment) | China Law Translate | [chinalawtranslate.com/algorithm-regulation-draft](https://www.chinalawtranslate.com/algorithm-regulation-draft/) |
+| English (structured) | Regulations.AI | [regulations.ai/.../PAARIXX-2021](https://regulations.ai/regulations/RAI-CN-NA-PAARIXX-2021) |
 
-## 版本历史
+## Version History
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2021-08-27 | 征求意见稿发布 |
-| 2021-12-31 | 四部门签发 |
-| 2022-01-04 | 官方发布 |
-| 2022-02-25 | 算法备案系统上线 |
-| 2022-03-01 | 规定生效 |
-| 2026-04-21 | 本站首次归档 |
+| 2021-08-27 | Draft for public comment released |
+| 2021-12-31 | Signed by all four ministries |
+| 2022-01-04 | Officially released |
+| 2022-02-25 | Algorithm Registry system went online |
+| 2022-03-01 | Effective |
+| 2026-04-21 | First archived on this site |
 
-## 引用来源
+## Cited Sources
 
-### 一手
-- 官方原文：https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm
-- 四部门联合发布通告：https://www.cac.gov.cn/2022-01/04/c_1642894606258238.htm
-- 答记者问：https://www.cac.gov.cn/2022-01/04/c_1642894606594726.htm
-- 算法备案系统上线通告：https://www.cac.gov.cn/2022-02/25/c_1647395666889023.htm
+### Primary
+- Official text: https://www.cac.gov.cn/2022-01/04/c_1642894606364259.htm
+- Four-ministry joint issuance notice: https://www.cac.gov.cn/2022-01/04/c_1642894606258238.htm
+- Press Q&A: https://www.cac.gov.cn/2022-01/04/c_1642894606594726.htm
+- Algorithm Registry launch notice: https://www.cac.gov.cn/2022-02/25/c_1647395666889023.htm
 
-### 主要解读
-- **Carnegie Endowment** "What China's Algorithm Registry Reveals about AI Governance"：
+### Major commentary
+- **Carnegie Endowment** "What China's Algorithm Registry Reveals about AI Governance":
   https://carnegieendowment.org/posts/2022/12/what-chinas-algorithm-registry-reveals-about-ai-governance
-- **Carnegie** "Tracing the Roots of China's AI Regulations"（Matt Sheehan）：
+- **Carnegie** "Tracing the Roots of China's AI Regulations" (Matt Sheehan):
   https://carnegieendowment.org/research/2024/02/tracing-the-roots-of-chinas-ai-regulations
-- **CSIS Interpret** "Algorithmic Recommendations Can Finally Be Turned Off"：
+- **CSIS Interpret** "Algorithmic Recommendations Can Finally Be Turned Off":
   https://interpret.csis.org/translations/algorithmic-recommendations-can-finally-be-turned-off-chinas-provisions-are-a-world-first/
 
-### 官方专家解读合集
-- 专家解读汇总（含清华、人大、北大多位学者）：
+### Official expert commentary (compilation)
+- Compilation of expert commentaries (Tsinghua, Renmin, Peking University scholars included):
   https://www.cac.gov.cn/2022-01/05/c_1642983970927235.htm
 
 ---
 
-**引用本页**（生成于 2026-04-21）：
-> Comparative AI. 《互联网信息服务算法推荐管理规定》解读. 访问于 YYYY-MM-DD.
+**Cite this page** (generated 2026-04-21):
+> Comparative AI. Commentary on the *Provisions on the Administration of Algorithm Recommendation in Internet Information Services*. Accessed YYYY-MM-DD.
 > https://comparativeai.org/rules/china/algorithm-recommendation-provisions/

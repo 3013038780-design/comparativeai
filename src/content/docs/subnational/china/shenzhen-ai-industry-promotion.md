@@ -1,8 +1,8 @@
 ---
-title: 深圳经济特区人工智能产业促进条例
-description: 深圳 2022 通过、11-01 施行；中国首部地方层级 AI 产业专项条例，首创"低风险 AI 产品先行先试"制度
-ruleName: 深圳经济特区人工智能产业促进条例
-issuer: 深圳市人民代表大会常务委员会
+title: Shenzhen Special Economic Zone AI Industry Promotion Regulation
+description: Passed by Shenzhen in 2022, in force from 2022-11-01; China's first local-level AI industry regulation, pioneering a "low-risk AI products pilot-and-experiment" regime
+ruleName: Shenzhen Special Economic Zone AI Industry Promotion Regulation (《深圳经济特区人工智能产业促进条例》)
+issuer: Standing Committee of the Shenzhen Municipal People's Congress
 level: local-regulation
 binding: hard
 effectiveDate: 2022-11-01
@@ -10,114 +10,108 @@ publishedDate: 2022-09-06
 originalUrl: https://www.szrd.gov.cn/v2/zx/szfg/content/post_966197.html
 relatedTopics:
   - risk-classification
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: 深圳 AI 产业条例 (2022)
+  label: Shenzhen AI Industry Regulation (2022)
   order: 1
 ---
 
-> **📑 法律位阶**：深圳经济特区立法（地方性法规，**特区立法权**） | **制定机关**：深圳市人民代表大会**常务委员会**第十一次会议（2022-08-30 通过） | **公布**：2022-09-06 | **施行**：2022-11-01 | **属性**：硬法
+> **Legal hierarchy**: Shenzhen Special Economic Zone legislation (local regulation, **SEZ legislative power**) | **Enacting body**: 11th session of the Standing Committee of the Shenzhen Municipal People's Congress (passed 2022-08-30) | **Promulgated**: 2022-09-06 | **In force**: 2022-11-01 | **Nature**: hard law.
 
-> **⚠️ 位阶提醒**：本规则是**地方性法规**，通过**深圳经济特区立法权**制定，效力范围限于深圳。
-> **是中国首部 AI 产业专项地方立法**，对国家层面立法有**先行先试**意义——许多制度（分类分级、
-> 监管沙盒）在国家层面的 [《生成式 AI 办法》](/rules/china/generative-ai-interim-measures/) 等规则中被吸纳。
+> **Hierarchy note**: this rule is a **local regulation** made under **Shenzhen Special Economic Zone legislative power**; its territorial scope is limited to Shenzhen.
+> **It is China's first dedicated local AI industry statute**, with **pilot-and-experiment** significance for national legislation — many of its institutional mechanisms (risk classification-and-grading, regulatory sandboxes) have been taken up in national rules such as the [*Interim Measures for Generative AI*](/rules/china/generative-ai-interim-measures/).
 
-## 中文摘要
+## Summary
 
-《深圳经济特区人工智能产业促进条例》于 **2022-08-30** 由**深圳市第七届人民代表大会常务委员会
-第十一次会议**通过，**2022-09-06** 公布，**2022-11-01 施行**。
+The *Shenzhen Special Economic Zone AI Industry Promotion Regulation* (《深圳经济特区人工智能产业促进条例》) was passed on **2022-08-30** by the **11th session of the Standing Committee of the Seventh Shenzhen Municipal People's Congress**, promulgated on **2022-09-06**, and **entered into force on 2022-11-01**.
 
-**意义**：
-- **中国首部 AI 产业专项地方立法**
-- **全球首部**聚焦 AI 产业促进而非管制的综合性法律文件
-- 为国家层面的 AI 立法**先行探路**（如"分类分级"、"监管沙盒"被后续国家规则借鉴）
+**Significance**:
+- **China's first dedicated local AI industry statute**.
+- The **world's first** comprehensive legal instrument focused on AI industry promotion rather than regulation.
+- A **pioneering pilot** for national-level AI legislation (for example, "classification-and-grading" and "regulatory sandbox" mechanisms were later drawn on by national rules).
 
-## 立法结构
+## Legislative structure
 
-**共 7 章 73 条**：
+**7 chapters, 73 articles**:
 
-1. 总则
-2. 基础研究与技术开发
-3. 产业基础设施建设
-4. 应用场景拓展
-5. 促进与保障
-6. 治理原则与措施
-7. 附则
+1. General provisions
+2. Basic research and technology development
+3. Industry infrastructure development
+4. Application-scenario expansion
+5. Promotion and safeguards
+6. Governance principles and measures
+7. Supplementary provisions
 
-## AI 定义（条例）
+## Definition of AI (in the Regulation)
 
-> 本条例所称人工智能，是指利用计算机或者其控制的设备，通过**感知环境、获取知识、推导演绎**
-> 等方法，对**人类智能的模拟、延伸或者扩展**。
+> "Artificial intelligence" in this Regulation refers to the use of computers or devices under their control, by means of **perceiving the environment, acquiring knowledge, and conducting reasoning and inference**, to **simulate, extend, or augment human intelligence**.
 
-→ 比后续国家层面的《生成式 AI 办法》定义更广，覆盖**全部 AI 类型**而非仅生成式。
+→ This is broader than the later national definition in the *Interim Measures for Generative AI*; it covers **all forms of AI** rather than only generative AI.
 
-## 核心创新制度（对全国立法的先行性）
+## Core innovations (pioneering effect on national legislation)
 
-### 1. 低风险 AI 产品 "先行先试"
+### 1. Low-risk AI products "pilot-and-experiment"
 
-> 对于国家、地方尚未制定标准但**符合国际先进产品标准或者规范**的**低风险人工智能产品和服务**，
-> 允许通过**测试、试验、试点**等方式开展先行先试。
+> For **low-risk AI products and services** that **conform to advanced international product standards or specifications** but for which national or local standards have not yet been established, pilot-and-experiment is permitted by means of **testing, trials, and pilots**.
 
-→ 这是**中国首次在立法层面**确立的 AI "先行先试" 机制，比国家级"AI 沙箱安全服务平台"
-（2026 拟人化互动服务办法第 28 条）**早 4 年**。
+→ This is the **first time at the legislative level in China** that a "pilot-and-experiment" mechanism has been established for AI — **4 years earlier** than the national "AI sandbox safety service platform" (Article 28 of the 2026 proposed Measures on Anthropomorphic Interactive Services).
 
-### 2. 分级分类监管
+### 2. Classification-and-grading supervision
 
-条例确立"**分级分类监管**"原则，比国家级的《生成式 AI 办法》第 3 条"分类分级监管"**早 1 年**。
+The Regulation establishes the principle of **classification-and-grading supervision**, **1 year earlier** than Article 3 of the national *Interim Measures for Generative AI* (which likewise refers to "classification-and-grading supervision").
 
-### 3. 算力 / 数据 / 人才激励
+### 3. Compute / data / talent incentives
 
-- 算力券、算力基础设施共建
-- 公共数据开放
-- 人才引进与培养
+- Compute vouchers and joint build-out of compute infrastructure.
+- Open public data.
+- Talent attraction and cultivation.
 
-### 4. 伦理治理
+### 4. Ethics governance
 
-- 人工智能伦理委员会
-- 伦理审查机制（早于国家层面[《科技伦理审查办法（试行）》](/rules/china/science-tech-ethics-review-measures/) 2023-12-01 施行）
+- An AI ethics committee.
+- An ethics review mechanism (predating the national-level [*Measures for the Review of Science and Technology Ethics (Trial)*](/rules/china/science-tech-ethics-review-measures/), in force 2023-12-01).
 
-## 对国家立法的先行作用
+## Pioneering effect on national legislation
 
-| 深圳条例的制度创新 | 国家层面后续吸纳 |
+| Shenzhen innovation | Later national-level uptake |
 | --- | --- |
-| 低风险 AI 先行先试（2022-11 施行） | 拟人化办法第 28 条"AI 沙箱"（2026-07 施行）|
-| 分级分类监管（2022）| 生成式 AI 办法第 3 条（2023）+ AI 安全治理框架（2024/2025）|
-| AI 伦理委员会 | 科技伦理审查办法（2023-12）|
-| AI 产品准入制度（条例）| （国家尚未立项，但被多地借鉴）|
+| Low-risk AI pilot-and-experiment (in force 2022-11) | Article 28 "AI sandbox" of the Anthropomorphic Services Measures (in force 2026-07) |
+| Classification-and-grading supervision (2022) | Article 3 of the Interim Measures for Generative AI (2023) + AI Safety Governance Framework (2024/2025) |
+| AI ethics committee | Measures for the Review of Science and Technology Ethics (2023-12) |
+| AI-product market-entry regime (the Regulation) | (not yet taken up nationally, but drawn on by several localities) |
 
-这体现了**中国改革开放以来"地方试验 + 中央吸纳"的立法传统**，论文将其归纳为"**中央—地方—企业**
-三级协同"的敏捷治理机制。
+This illustrates the **"local experimentation + central uptake" legislative tradition that has characterized China since the reform-and-opening era**, which the accompanying papers summarize as an "**central — local — enterprise** three-tier collaborative" agile-governance mechanism.
 
-## 执法
+## Enforcement
 
-- 主管：**深圳市科技创新局**（产业促进方面）+ 市网信办（内容安全）+ 市市场监管局（标准）
-- 法律责任：以**促进**为主，惩罚条款较少；违反基础研究 / 数据安全等条款按上位法处罚
+- Competent authority: the **Shenzhen Municipal Science, Technology and Innovation Bureau** (for industry promotion) + the municipal CAC office (content safety) + the municipal Market Regulation Bureau (standards).
+- Legal liability: oriented toward **promotion**, with relatively few penal clauses; breaches of basic-research or data-security provisions are punished under the upper-tier law.
 
-## 与国家规则的关系
+## Relation to national rules
 
-- **不抵触原则**：深圳条例不得与国家层面法律法规冲突
-- **先行先试**：在国家未立法领域可先行；国家立法后按"**不抵触**"原则调适
-- **对内对外**：条例不限制非深圳主体在深圳运营，但优先支持本地研发和应用
+- **Non-conflict principle**: the Shenzhen Regulation may not conflict with national laws and administrative regulations.
+- **Pilot-and-experiment**: local initiative is permitted in areas not yet legislated nationally; once national legislation appears, the local rule is adjusted under the **"non-conflict"** principle.
+- **Inbound and outbound**: the Regulation does not restrict non-Shenzhen entities operating in Shenzhen, but prioritizes support for locally-based R&D and deployment.
 
-## 原文与归档
+## Primary text and archives
 
-| 来源 | 链接 |
+| Source | Link |
 | --- | --- |
-| 深圳人大 | [szrd.gov.cn/v2/zx/szfg/content/post_966197.html](https://www.szrd.gov.cn/v2/zx/szfg/content/post_966197.html) |
-| PDF（阿里云镜像） | [cnshuziren.oss-cn-shenzhen.aliyuncs.com/.../条例.pdf](https://cnshuziren.oss-cn-shenzhen.aliyuncs.com/wenzhang/2022-09-07/%E6%B7%B1%E5%9C%B3%E7%BB%8F%E6%B5%8E%E7%89%B9%E5%8C%BA%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A7%E4%B8%9A%E4%BF%83%E8%BF%9B%E6%9D%A1%E4%BE%8B.pdf) |
-| 深圳市政府公报 | 第 1258 期（2022-09-30） |
-| 人民网解读 | [sz.people.com.cn/n2/2022/0906/c202846-40113369.html](http://sz.people.com.cn/n2/2022/0906/c202846-40113369.html) |
+| Shenzhen People's Congress | [szrd.gov.cn/v2/zx/szfg/content/post_966197.html](https://www.szrd.gov.cn/v2/zx/szfg/content/post_966197.html) |
+| PDF (Aliyun mirror) | [cnshuziren.oss-cn-shenzhen.aliyuncs.com/.../条例.pdf](https://cnshuziren.oss-cn-shenzhen.aliyuncs.com/wenzhang/2022-09-07/%E6%B7%B1%E5%9C%B3%E7%BB%8F%E6%B5%8E%E7%89%B9%E5%8C%BA%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BA%A7%E4%B8%9A%E4%BF%83%E8%BF%9B%E6%9D%A1%E4%BE%8B.pdf) |
+| Shenzhen Municipal Gazette | Issue No. 1258 (2022-09-30) |
+| People's Daily Online commentary | [sz.people.com.cn/n2/2022/0906/c202846-40113369.html](http://sz.people.com.cn/n2/2022/0906/c202846-40113369.html) |
 
-## 后续地方立法借鉴（全国范围）
+## Subsequent local uptake (nationwide)
 
-- **上海《促进人工智能产业发展条例》**（2022-10，上海人大）
-- **北京《人工智能产业高质量发展若干措施》**（2023）
-- 杭州、成都、武汉等省会城市 2024-2026 AI 条例陆续出台
+- **Shanghai Regulation on Promoting the Development of the AI Industry** (2022-10, Shanghai People's Congress).
+- **Beijing Measures on the High-Quality Development of the AI Industry** (2023).
+- AI regulations from Hangzhou, Chengdu, Wuhan and other provincial capitals issued in waves over 2024-2026.
 
-## 版本历史
+## Revision history
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2022-08-30 | 深圳人大常委会通过 |
-| 2022-09-06 | 公布 |
-| 2022-11-01 | 施行 |
+| 2022-08-30 | Passed by the Standing Committee of the Shenzhen People's Congress |
+| 2022-09-06 | Promulgated |
+| 2022-11-01 | In force |

@@ -1,8 +1,8 @@
 ---
-title: 人工智能生成合成内容标识办法
-description: 中国四部门联合发布的合成内容标识规则，2025-09-01 生效；配套 GB 45438-2025 强制性国家标准
-ruleName: 人工智能生成合成内容标识办法
-issuer: 国家互联网信息办公室 / 工业和信息化部 / 公安部 / 国家广播电视总局（四部门联合发布）
+title: Measures for the Identification of AI-Generated and Synthesized Content
+description: A four-ministry joint rule on labeling (*标识*) of synthesized content, effective 2025-09-01; paired with mandatory national standard GB 45438-2025
+ruleName: Measures for the Identification of AI-Generated and Synthesized Content (《人工智能生成合成内容标识办法》)
+issuer: Cyberspace Administration of China (CAC) / Ministry of Industry and Information Technology (MIIT) / Ministry of Public Security (MPS) / National Radio and Television Administration (NRTA) — four-ministry joint issuance
 level: departmental-rule
 binding: hard
 effectiveDate: 2025-09-01
@@ -10,166 +10,138 @@ publishedDate: 2025-03-07
 originalUrl: https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm
 relatedTopics:
   - content-labeling-provenance
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: 标识办法 (2025)
+  label: Labeling Measures (2025)
   order: 1
 ---
 
-> **📑 法律位阶**：第 3 级 · 部门规章 | **发布**：网信办、工信部、公安部、广电总局（**四部门联合发布**） | **生效**：2025-09-01 | **属性**：硬法
+> **📑 Legal hierarchy**: Level 3 · Departmental rule | **Issuance**: CAC, MIIT, MPS, NRTA (**four-ministry joint issuance**) | **Effective**: 2025-09-01 | **Character**: hard law
 
-> **⚠️ 位阶提醒**：本规则是**部门规章**，由四部委联合发布。**不是**全国人大法律，**不是**国务院行政法规。
-> 罚则通过援引《网络安全法》等上位法律落地。位阶含义详见 [中国规则索引](/rules/china/#法律位阶速览)。
+> **⚠️ Hierarchy note**: This instrument is a **departmental rule**, jointly issued by four ministries. It is **neither** a NPC law **nor** a State Council administrative regulation. Its penalties land via reference to upstream laws such as the Cybersecurity Law. See [Index of Chinese Rules](/rules/china/#the-legal-hierarchy-at-a-glance).
 
-## 英文摘要
+## English Summary
 
-The *Measures for the Identification of Artificial Intelligence Generated and Synthesized Content*
-(人工智能生成合成内容标识办法), jointly issued by the Cyberspace Administration of China (CAC)
-and three other ministries on 2025-03-07 and effective 2025-09-01, imposes a **dual-track
-labeling regime** on AI-generated content: **explicit labels** (human-readable watermarks or
-text prompts) and **implicit labels** (machine-readable metadata embedded in the file).
-Obligated parties include (i) generative AI service providers, (ii) platforms that host and
-distribute such content, and (iii) end-users uploading synthesized content. The Measures are
-operationalized by the mandatory national standard **GB 45438-2025**, which defines the
-technical fields for implicit labels. Enforcement follows the penalty framework of the
-Cybersecurity Law, the Data Security Law, and the Personal Information Protection Law.
+The *Measures for the Identification of Artificial Intelligence Generated and Synthesized Content* (《人工智能生成合成内容标识办法》), jointly issued by the Cyberspace Administration of China (CAC) and three other ministries on 2025-03-07 and effective 2025-09-01, impose a **dual-track labeling regime** on AI-generated content: **explicit labels** (human-readable watermarks or text prompts) and **implicit labels** (machine-readable metadata embedded in the file). Obligated parties include (i) generative AI service providers, (ii) platforms that host and distribute such content, and (iii) end-users uploading synthesized content. The Measures are operationalized by the mandatory national standard **GB 45438-2025**, which defines the technical fields for implicit labels. Enforcement follows the penalty framework of the Cybersecurity Law, the Data Security Law, and the Personal Information Protection Law.
 
-## 总览
+## Overview
 
-《标识办法》是中国对 AI 生成合成内容标识义务的**首个系统性部门规章**，
-解决了此前《深度合成管理规定》和《生成式 AI 服务管理暂行办法》中"应当进行标识"
-的原则性要求如何**落地**的问题。
+The *Labeling Measures* are the **first systematic departmental rule** on the duty to label AI-generated and synthesized content in China, resolving the question of how the earlier principled requirements to "label such content" in the *Deep Synthesis Provisions* and the *Generative AI Interim Measures* are to be **operationalized**.
 
-三个层面的突破：
+Three breakthroughs:
 
-1. **从"应当标识"到"双轨标识"**：首次把**显式标识**（人眼可见）与**隐式标识**（机器可读）
-   同时写入义务。前者服务于公众知情，后者服务于跨平台、跨流转环节的自动识别。
-2. **从服务提供者单点义务到链路全覆盖**：义务主体从过去的"服务提供者"扩展到
-   **服务提供者 + 传播平台 + 上传用户**三方。传播平台有**核验义务**，缺失标识应主动补加。
-3. **技术标准前置绑定**：与 GB 45438-2025 同步生效，明确了隐式标识的字段规范
-   （含服务提供者名称、内容编号、生成日期），让不同服务商的标识可互操作。
+1. **From "shall label" to "dual-track labeling"**: for the first time, **explicit labels** (human-perceptible) and **implicit labels** (machine-readable) are both set as duties. The former serves public notice; the latter enables automated detection across platforms and through content flows.
+2. **From single-point provider duty to chain-wide coverage**: duty subjects are extended from "service providers" to **service providers + distribution platforms + uploading users**. Distribution platforms carry a **verification duty** and, where labels are missing, shall proactively add them.
+3. **Bundling with a technical standard upstream**: effective the same day as GB 45438-2025, which specifies the implicit-label fields (including provider name, content ID, generation date), enabling interoperability across providers.
 
-## 适用范围
+## Scope
 
-- **地域**：境内提供服务及面向境内用户的境外服务（实际执法强度待观察）
-- **活动**：文本、图像、音频、视频四类合成内容
-- **主体**：
-  - 生成式 AI 服务提供者（含大模型部署者）
-  - 承载、分发用户生成内容的网络平台
-  - 向平台上传合成内容的用户
+- **Territory**: services within China and offshore services aimed at domestic users (actual enforcement intensity remains to be seen).
+- **Activities**: four types of synthesized content — text, image, audio, video.
+- **Subjects**:
+  - generative AI service providers (including deployers of large models);
+  - network platforms that host and distribute user-generated content;
+  - users who upload synthesized content to platforms.
 
-## 核心义务
+## Core Duties
 
-### 对服务提供者
+### On service providers
 
-- **显式标识**：在生成内容的**显著位置**添加"AI 生成"或同等提示（文字、角标、或水印）
-- **隐式标识**：在文件元数据或内容本体中写入：服务提供者名称、内容编号、生成日期等字段，
-  符合 GB 45438-2025 规范
-- **不得对抗**：不得故意使标识可被轻易删除、破坏
+- **Explicit labels**: add an "AI-generated" prompt or equivalent at a **conspicuous location** in the generated content (text label, corner mark, or watermark).
+- **Implicit labels**: embed fields in the file metadata or within the content itself: provider name, content ID, generation date, and other fields, complying with GB 45438-2025.
+- **No anti-removal design**: shall not deliberately make labels trivially removable or destructible.
 
-### 对传播平台
+### On distribution platforms
 
-- **核验**：接收上传内容时核查是否携带合规隐式标识
-- **补加**：标识缺失时主动添加"平台声明此内容可能为合成"类提示
-- **不得恶意处理**：不得删除、篡改、隐匿他人合规标识
+- **Verification**: check, upon receipt of uploaded content, whether compliant implicit labels are present.
+- **Proactive tagging**: where labels are missing, proactively add a notice such as "the platform declares this content may be synthesized."
+- **No bad-faith interference**: shall not delete, tamper with, or hide another party's compliant labels.
 
-### 对上传用户
+### On uploading users
 
-- 主动声明内容为 AI 合成
-- 不得恶意去除平台或服务商打的标识
+- Proactively declare content to be AI-synthesized.
+- Shall not maliciously remove labels applied by platforms or service providers.
 
-## 执法与处罚
+## Enforcement and Penalties
 
-依据：
-- 《网络安全法》第六十八条（信息服务违法处罚）
-- 《数据安全法》
-- 《个人信息保护法》
+Basis:
 
-处罚梯度（按上述既有法律）：警告 → 责令改正 → 罚款 → 责令停业 → 吊销许可。
-严重情形涉及治安管理处罚或刑事责任。
+- *Cybersecurity Law* Article 68 (penalties for information service violations);
+- *Data Security Law*;
+- *Personal Information Protection Law*.
 
-主管机构：网信办牵头；工信部（算力与基础设施）、公安部（刑事）、广电总局（视听）
-在各自职责内协同执法。
+Penalty gradient (from the above laws): warning → order to rectify → fine → suspension of operations → revocation of permits. Serious cases engage public-security administrative penalties or criminal liability.
 
-## 与其他规则的关系
+Competent authorities: CAC leads; MIIT (compute and infrastructure), MPS (criminal), and NRTA (audiovisual) coordinate within their mandates.
 
-- **《互联网信息服务深度合成管理规定》(2023)**：上位原则性规章，本《办法》细化其第十七条
-  "应当进行显著标识"的落地要求
-- **《生成式人工智能服务管理暂行办法》(2023)**：服务端备案与安全评估义务的姊妹规章；
-  本《办法》聚焦"结果层"的标识，《暂行办法》聚焦"服务层"的合规
-- **GB 45438-2025**：强制性国标，定义隐式标识字段。本站方法论将其归**软法**
-  （[见原因](/methodology/#hard-vs-soft)），但标注其强制性
-- **《个人信息保护法》**：合成内容涉及人脸、声音等敏感信息时，与 PIPL 第二十八条交叉适用
+## Relationship with Other Rules
 
-## 争议与解读
+- **Deep Synthesis Provisions (2023)**: the upstream principled rule; these Measures elaborate its Article 17 "shall apply conspicuous labeling."
+- **Generative AI Interim Measures (2023)**: a sister rule on provider-side filing and security assessment; these Measures focus on the **output layer** (labeling), while the *Interim Measures* focus on the **service layer** (compliance).
+- **GB 45438-2025**: the mandatory national standard defining the implicit-label fields. This site classifies it as **soft law** ([see reasoning](/methodology/#hard-vs-soft)) while flagging its mandatory character.
+- **Personal Information Protection Law**: where synthesized content involves faces, voices, or other sensitive information, PIPL Article 28 applies jointly.
 
-1. **境外服务适用性**：办法对"向境内用户提供服务"的境外公司如何执法？
-   与 TikTok 国内版规则的对齐问题尚不清楚
-2. **隐式标识的稳健性**：GB 45438 定义的隐式标识在经历截图、压缩、二次编辑后
-   是否仍可识别？技术可行性学界有质疑
-3. **艺术创作与讽刺豁免**：与欧盟 AI Act 第 50 条不同，本《办法》未明确豁免
-   艺术和讽刺作品。实务中如何界定？
-4. **平台核验责任边界**：要求平台核验每一条上传内容的隐式标识，技术成本极高，
-   中小平台合规可行性有待观察
+## Debates and Commentary
 
-## 原文与翻译
+1. **Offshore applicability**: how will these Measures be enforced against offshore providers serving users within China? The alignment with the mainland TikTok counterpart remains unclear.
+2. **Robustness of implicit labels**: will GB 45438's implicit labels survive screenshots, compression, or re-editing? Scholars have raised doubts about technical feasibility.
+3. **Artistic and satirical carve-outs**: unlike EU AI Act Article 50, these Measures do not expressly exempt artistic or satirical works. How are the boundaries to be drawn in practice?
+4. **Bounds of platform verification responsibility**: requiring platforms to verify implicit labels on every upload is technically expensive; the feasibility for small and mid-sized platforms remains to be observed.
 
-本站**不自产全文翻译**。中文原文以官方为准，英文译本选用学术圈公认的权威二手翻译。
-如需引用条文，请回到下列一手/权威来源。
+## Source Text and Translations
 
-| 语言 | 来源 | 链接 |
+This site does **not produce its own full translations**. The Chinese text of record is the official release; for English, we rely on academically respected secondary translations. For citation of specific articles, please return to the primary and authoritative sources below.
+
+| Language | Source | Link |
 | --- | --- | --- |
-| 中文（原文） | 国家网信办 | [cac.gov.cn](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm) |
-| 中文（归档） | 本站 | [biaozhi-banfa-2025-03-07.html](/archives/china/biaozhi-banfa-2025-03-07.html) |
-| English | **China Law Translate**（Jeremy Daum, Paul Tsai China Center, Yale） | [chinalawtranslate.com/en/ai-labeling](https://www.chinalawtranslate.com/en/ai-labeling/) |
-| English（结构化版） | Regulations.AI | [regulations.ai/.../MIASCXX-2025](https://regulations.ai/regulations/RAI-CN-NA-MIASCXX-2025) |
-| 配套国标 | 国家标准全文公开系统 | [GB 45438-2025](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547&refer=outter) |
+| Chinese (original) | CAC | [cac.gov.cn](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm) |
+| Chinese (archived copy) | This site | [biaozhi-banfa-2025-03-07.html](/archives/china/biaozhi-banfa-2025-03-07.html) |
+| English | **China Law Translate** (Jeremy Daum, Paul Tsai China Center, Yale) | [chinalawtranslate.com/ai-labeling](https://www.chinalawtranslate.com/ai-labeling/) |
+| English (structured) | Regulations.AI | [regulations.ai/.../MIASCXX-2025](https://regulations.ai/regulations/RAI-CN-NA-MIASCXX-2025) |
+| Companion national standard | National Public Service Platform for Standards Information | [GB 45438-2025](https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547&refer=outter) |
 
-## 版本历史
+## Version History
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2024-09 | 征求意见稿发布 |
-| 2025-03-07 | 正式发布 |
-| 2025-09-01 | 生效 |
-| 2026-04-21 | 本站首次归档 |
+| 2024-09 | Draft for public comment released |
+| 2025-03-07 | Official release |
+| 2025-09-01 | Effective |
+| 2026-04-21 | First archived on this site |
 
-## 引用来源
+## Cited Sources
 
-### 一手来源
-- 国家网信办发布原文：https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm
-- GB 45438-2025《网络安全技术 人工智能生成合成内容标识方法》（强制性国标）：
+### Primary
+- CAC release: https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm
+- GB 45438-2025 *Cybersecurity Technology — Labeling Method for AI-Generated and Synthesized Content* (mandatory national standard):
   https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=F32EA2A561F1886CD8D606513512D547&refer=outter
-- 网信办答记者问（2025-03-07 同日发布）：https://www.cac.gov.cn/2025-03/14/c_1743654735022812.htm
+- CAC press Q&A (released same day, 2025-03-07): https://www.cac.gov.cn/2025-03/14/c_1743654735022812.htm
 
-### 权威英文译本
-- **China Law Translate**（Jeremy Daum, Paul Tsai China Center, Yale Law School）：
-  https://www.chinalawtranslate.com/en/ai-labeling/
-- **Regulations.AI**（结构化版）：
+### Authoritative English translations
+- **China Law Translate** (Jeremy Daum, Paul Tsai China Center, Yale Law School):
+  https://www.chinalawtranslate.com/ai-labeling/
+- **Regulations.AI** (structured version):
   https://regulations.ai/regulations/RAI-CN-NA-MIASCXX-2025
 
-### 主要国际解读
-- Covington & Burling "Inside Privacy"：
+### Major international commentary
+- Covington & Burling *Inside Privacy*:
   https://www.insideprivacy.com/international/china/china-releases-new-labeling-requirements-for-ai-generated-content/
-- DGC Briefings：
+- DGC Briefings:
   https://dgcbriefings.substack.com/p/china-finalised-measures-for-labelling
-- Technology's Legal Edge (Perkins Coie)：
+- *Technology's Legal Edge* (Perkins Coie):
   https://www.technologyslegaledge.com/2025/03/china-released-new-measures-for-labelling-ai-generated-and-synthetic-content/
 
-### 相关研究
+### Related research
 
-- **张凌寒**（中国政法大学 / 人大）— 关于《标识办法》与《深度合成规定》《暂行办法》的位阶关系、
-  以及"显式 + 隐式双轨"作为制度创新的法理分析
-- **朱悦、戴昕**（中国政法大学 / 北大）— 关于隐式标识与机器可读元数据在跨境互操作下的制度难题
-- **Matt Sheehan** (Carnegie Endowment) — 在 *China's AI Regulations and How They Get Made* 系列中
-  对标识办法的制度化路径分析
-- **Paul Triolo** (DigiChina) — 对中国强制双轨标识相较美欧的制度比较
-- **CAIDP** (Center for AI and Digital Policy) — 在 *AI and Democratic Values Index 2025* 中
-  将中国标识办法列为"强制内容溯源"典型示范
+- **Zhang Linghan** 张凌寒 (China University of Political Science and Law / CUPL; Renmin University) — on the hierarchical relationships among the *Labeling Measures*, *Deep Synthesis Provisions*, and *Interim Measures*, and jurisprudential analysis of the "explicit + implicit dual track" as an institutional innovation.
+- **Zhu Yue** 朱悦 and **Dai Xin** 戴昕 (CUPL / Peking University) — institutional challenges of implicit labeling and machine-readable metadata under cross-border interoperability.
+- **Matt Sheehan** (Carnegie Endowment) — institutional-pathway analysis in the *China's AI Regulations and How They Get Made* series.
+- **Paul Triolo** (DigiChina) — comparative institutional analysis of China's mandatory dual-track labeling against US and EU regimes.
+- **CAIDP** (Center for AI and Digital Policy) — lists the Chinese *Labeling Measures* as a reference example of "mandatory content provenance" in the *AI and Democratic Values Index 2025*.
 
 ---
 
-**引用本页**（生成于 2026-04-21）：
+**Cite this page** (generated 2026-04-21):
 
-> Comparative AI. 《人工智能生成合成内容标识办法》解读. 访问于 YYYY-MM-DD.
+> Comparative AI. Commentary on the *Measures for the Identification of AI-Generated and Synthesized Content*. Accessed YYYY-MM-DD.
 > https://comparativeai.org/rules/china/biaozhi-banfa/

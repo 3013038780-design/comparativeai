@@ -1,6 +1,6 @@
 ---
 title: EU AI Act (Regulation 2024/1689)
-description: 欧盟人工智能法案，2024-08-01 生效，分阶段实施至 2027；全球首部横向 AI 法规，建立风险分级、禁止清单、高风险合规、GPAI 专章
+description: The EU Artificial Intelligence Act entered into force 2024-08-01, with amended phased implementation through 2028; the world's first horizontal AI law, establishing risk tiers, a prohibited list, high-risk compliance, and a dedicated GPAI chapter
 ruleName: Regulation (EU) 2024/1689 — Artificial Intelligence Act
 issuer: European Parliament & Council
 level: eu-regulation
@@ -13,173 +13,183 @@ relatedTopics:
   - frontier-gpai
   - content-labeling-provenance
   - data-training
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-30
 sidebar:
   label: AI Act (2024)
   order: 1
 ---
 
-## 中文摘要
+## Summary
 
-《欧盟人工智能法案》(Regulation EU 2024/1689) 于 2024-07-12 在欧盟官方公报公布，
-2024-08-01 生效，是**全球首部横向 AI 法规**。核心设计：
+The **EU Artificial Intelligence Act** (Regulation (EU) 2024/1689) was published in the Official Journal
+of the European Union on 2024-07-12 and entered into force on 2024-08-01 as the **world's first horizontal
+AI regulation**. Core design:
 
-1. **四级风险分类**：不可接受（禁止）/ 高风险 / 有限风险（透明度）/ 最低风险
-2. **通用人工智能模型（GPAI）专章**：第五十一-五十六条 + 附件 XI/XII/XIII
-3. **分阶段实施**：禁止清单 2025-02-02 → GPAI 条款 2025-08-02 → 高风险（大部分）2026-08-02
-   → 公共部门嵌入式高风险 2027-08-02
-4. **治理架构**：欧盟 AI Office（中央）+ 成员国监管机构；对 GPAI 集中监管
+1. **Four-tier risk classification**: unacceptable (prohibited) / high-risk / limited risk (transparency) / minimal risk
+2. **Dedicated chapter on general-purpose AI models (GPAI)**: Articles 51-56 + Annexes XI / XII / XIII
+3. **Phased application as amended by the 2026 Digital Omnibus**: prohibited list 2025-02-02 → GPAI
+   provisions 2025-08-02 → article 50 transparency duties 2026-08-02 → standalone high-risk systems
+   2027-12-02 → product-embedded high-risk systems 2028-08-02
+4. **Governance architecture**: EU AI Office (center) + member-state market surveillance authorities; centralized GPAI oversight
 
-罚则上限极高：违反禁止清单**全球年营收 7%**，违反其他义务 3%。
+Penalty ceilings are exceptionally high: violations of the prohibited list may reach **7% of global annual turnover**;
+other obligations up to 3%.
 
-## 英文一句话摘要
+## English one-liner
 
 The AI Act (Regulation EU 2024/1689) is the world's first horizontal AI law, applying a
 risk-tiered approach plus a dedicated chapter on general-purpose AI models, with global
 extraterritorial reach and headline penalties up to 7% of worldwide turnover.
 
-## 结构速览
+## Structure at a glance
 
-| 部分 | 内容 | 条款 |
+| Part | Content | Articles |
 | --- | --- | --- |
-| I | 总则 | 1-4 |
-| II | **禁止清单** | 5 |
-| III | **高风险 AI 系统** | 6-49 |
-| IV | 透明度义务（有限风险） | 50 |
-| V | **通用人工智能模型 (GPAI)** | 51-56 |
-| VI | 创新支持 | 57-63 |
-| VII | 治理 | 64-70 |
-| VIII | 欧盟数据库 | 71 |
-| IX | 市场后监控 | 72-94 |
-| X | 行为守则 | 95-96 |
-| XI-XIII | 最终条款 | 97-113 |
+| I | General provisions | 1-4 |
+| II | **Prohibited list** | 5 |
+| III | **High-risk AI systems** | 6-49 |
+| IV | Transparency obligations (limited risk) | 50 |
+| V | **General-purpose AI models (GPAI)** | 51-56 |
+| VI | Support for innovation | 57-63 |
+| VII | Governance | 64-70 |
+| VIII | EU database | 71 |
+| IX | Post-market monitoring | 72-94 |
+| X | Codes of conduct | 95-96 |
+| XI-XIII | Final provisions | 97-113 |
 
-## 禁止清单（第五条）
+## Prohibited list (Article 5)
 
-2025-02-02 生效。禁止在欧盟投放以下 AI 系统：
+Effective 2025-02-02. Prohibits placing on the EU market AI systems that:
 
-1. 使用**潜意识 / 操纵 / 欺骗技术**造成实质性伤害
-2. 利用**特定群体脆弱性**（含年龄、残疾、社会经济处境）实质扭曲行为
-3. **社会评分**（社会行为或个人特征的通用分类打分）导致不成比例或超场景的不利对待
-4. **预测性执法**仅基于画像或人格特征
-5. **无差别抓取**面部图像构建面部识别数据库
-6. 工作场所 / 教育场所的**情绪识别**（医疗 / 安全例外）
-7. 利用**敏感特征**的生物识别分类（法定执法例外）
-8. 执法目的在公共空间的**实时远程生物识别**（含三类狭窄例外）
+1. Use **subliminal, manipulative, or deceptive techniques** causing material harm
+2. Exploit **vulnerabilities of specific groups** (including age, disability, socio-economic circumstance) to materially distort behavior
+3. Conduct **social scoring** (general-purpose classification/scoring of social behavior or personal characteristics) leading to disproportionate or out-of-context adverse treatment
+4. Conduct **predictive policing** based solely on profiling or personality features
+5. Perform **untargeted scraping** of facial images to build facial recognition databases
+6. Deploy **emotion recognition** in workplace or education settings (with medical / safety exceptions)
+7. Perform biometric categorization using **sensitive attributes** (with statutory law-enforcement exceptions)
+8. Conduct **real-time remote biometric identification** in publicly accessible spaces for law-enforcement purposes (with three narrow exceptions)
 
-## 高风险 AI 系统（第六-四十九条）
+## High-risk AI systems (Articles 6-49)
 
-### 定义（第六条）
+### Definition (Article 6)
 
-两类：
-- **附件 I 产品安全**：已受欧盟产品安全立法覆盖的产品中内嵌的 AI 组件（玩具、机械、医疗器械等）
-- **附件 III 独立用例**：生物识别、关键基础设施、教育 / 职业培训、就业 / 人力管理、
-  重要私人 / 公共服务获取（含信贷、保险）、执法、移民与边境、司法与民主程序
+Two categories:
+- **Annex I product safety**: AI components embedded in products already covered by EU product-safety legislation (toys, machinery, medical devices, etc.)
+- **Annex III standalone use cases**: biometrics, critical infrastructure, education / vocational training, employment / HR management, access to essential private / public services (including credit, insurance), law enforcement, migration and borders, judicial and democratic processes
 
-### 义务矩阵
+### Obligation matrix
 
-| 义务 | 条款 | 要点 |
+| Obligation | Article | Key point |
 | --- | --- | --- |
-| 风险管理系统 | 9 | 整个生命周期 |
-| 数据治理 | 10 | 训练 / 验证 / 测试数据质量 |
-| 技术文档 | 11 + 附件 IV | 详尽文档化 |
-| 日志记录 | 12 | 自动生成事件日志 |
-| 透明度 | 13 | 向部署者说明 |
-| 人类监督 | 14 | 可行有效 |
-| 精度、鲁棒性、网络安全 | 15 | 定量指标 |
-| 质量管理系统 | 17 | 提供者 |
-| 合格评定 | 43 + 附件 VI/VII | 自评估或第三方 |
-| CE 标记与欧盟声明 | 47-48 | |
-| 欧盟数据库登记 | 49 + 71 | |
+| Risk management system | 9 | Entire lifecycle |
+| Data governance | 10 | Training / validation / testing data quality |
+| Technical documentation | 11 + Annex IV | Detailed documentation |
+| Logging | 12 | Automatic event logs |
+| Transparency | 13 | Information to deployers |
+| Human oversight | 14 | Feasible and effective |
+| Accuracy, robustness, cybersecurity | 15 | Quantitative metrics |
+| Quality management system | 17 | Providers |
+| Conformity assessment | 43 + Annex VI / VII | Self-assessment or third-party |
+| CE marking and EU declaration | 47-48 | |
+| EU database registration | 49 + 71 | |
 
-## 通用人工智能模型 (GPAI)（第五十一-五十六条）
+## General-purpose AI models (GPAI) (Articles 51-56)
 
-### 两档分类
+### Two tiers
 
-1. **所有 GPAI 模型**：训练文档、下游文档、版权合规（欧盟版权指令 TDM 例外）、
-   公开训练数据摘要
-2. **具有系统性风险的 GPAI**：累计训练算力 **≥ 10²⁵ FLOP** 自动推定为系统性风险；
-   或经委员会指定
+1. **All GPAI models**: training documentation, downstream documentation, copyright compliance (EU Copyright Directive TDM exception), publicly available training-data summary
+2. **GPAI with systemic risk**: cumulative training compute **≥ 10²⁵ FLOP** creates an automatic presumption of systemic risk; or Commission designation
 
-### 系统性风险 GPAI 额外义务（第五十五条）
+### Additional obligations for systemic-risk GPAI (Article 55)
 
-- 模型评估含**对抗性测试**
-- 系统性风险评估和缓解
-- 严重事件报告（第五十六条）
-- **网络安全保护**模型和物理基础设施
+- Model evaluation including **adversarial testing**
+- Systemic-risk assessment and mitigation
+- Serious-incident reporting (Article 56)
+- **Cybersecurity protection** of the model and physical infrastructure
 
-### 行为守则 (Code of Practice)
+### Code of Practice
 
-第五十六条授权 AI Office 召集 GPAI 行为守则。**2025-07-10 定稿**，**2025-08-01 欧委会与 AI Board
-通过 Adequacy Decisions** 并公布签署者列表；**2025-08-02 GPAI 条款生效**后，签署守则是证明合规的
-事实路径。详见 [GPAI Code of Practice](./gpai-code-of-practice/) 独立页。
+Article 56 authorizes the AI Office to convene a GPAI Code of Practice. **Finalized 2025-07-10**; the
+**European Commission and AI Board adopted Adequacy Decisions on 2025-08-01** and published the list
+of signatories; after the **2025-08-02 entry into application of the GPAI provisions**, signing the
+Code is the de facto path to demonstrating compliance. See the standalone [GPAI Code of Practice](./gpai-code-of-practice/) page.
 
-## 透明度义务（第五十条 · 有限风险）
+## Transparency obligations (Article 50 · limited risk)
 
-- 与 AI 交互时告知用户（聊天机器人例外："对合理知情的自然人明显"）
-- 合成内容**机器可读标注**（第五十条第二款）
-- 生物识别分类 / 情绪识别系统告知
-- 深度伪造 **"人工生成或操纵"** 披露，艺术 / 讽刺有限例外
+- Notify users when interacting with AI (chatbot exception: "obvious to a reasonably informed natural person")
+- **Machine-readable marking** of synthetic content (Article 50(2))
+- Disclosure for biometric categorization / emotion recognition systems
+- Deepfake **"artificially generated or manipulated"** disclosure, with limited artistic / satirical exceptions
 
-## 治理架构
+## Governance architecture
 
-- **欧盟 AI Office**（委员会 DG CNECT 内）：GPAI 监管、行为守则、标准化推动
-- **欧盟 AI Board**（成员国代表）：协调机制
-- **成员国市场监管机构**（MSA）：高风险系统执法
-- **欧盟数据库**（第七十一条）：高风险系统登记
+- **EU AI Office** (within Commission DG CNECT): GPAI supervision, Codes of Practice, standardization push
+- **EU AI Board** (member-state representatives): coordination mechanism
+- **Member-state market surveillance authorities** (MSAs): enforcement of high-risk systems
+- **EU database** (Article 71): registration of high-risk systems
 
-## 罚则（第九十九条）
+### Enforcement bodies operationalised in June 2026
 
-- 违反**第五条禁止清单**：最高 **35M 欧元 或 全球年营收 7%**
-- 违反其他适用义务（高风险、透明度）：15M 或 3%
-- 提供错误 / 误导信息：7.5M 或 1%
-- GPAI 罚则独立（第一百零一条）：最高 15M 或 3%
+The Commission appointed the **60-member Scientific Panel** under article 68 to advise on GPAI systemic risk,
+classification, evaluation methods and cross-border market surveillance. It also selected the **174-member
+Advisory Forum** under article 67; the Forum held its inaugural meeting on 19 June. These bodies advise the AI
+Office, AI Board and national authorities but do not replace the legal decision-maker or market-surveillance authority.
 
-## 时间线（分阶段适用）
+## Penalties (Article 99)
 
-| 日期 | 适用内容 |
+- Breach of **Article 5 prohibited list**: up to **EUR 35M or 7% of global annual turnover**
+- Breach of other applicable obligations (high-risk, transparency): EUR 15M or 3%
+- Supply of false / misleading information: EUR 7.5M or 1%
+- GPAI penalties separately (Article 101): up to EUR 15M or 3%
+
+## Timeline (phased application)
+
+| Date | Content that applies |
 | --- | --- |
-| 2024-08-01 | 法规生效 |
-| 2025-02-02 | **第五条禁止清单** + 总则（第 1-4 条）+ 通用定义 + AI literacy 义务 |
-| 2025-08-02 | **GPAI 条款**（第五十一-五十六）+ 治理（第三部分）+ 罚则（大部分） |
-| 2026-08-02 | **高风险系统**（附件 III）+ 大多数其余条款 |
-| 2027-08-02 | 嵌入式高风险（附件 I 产品中）+ 公共部门延后部分 |
+| 2024-08-01 | Regulation enters into force |
+| 2025-02-02 | **Article 5 prohibited list** + general provisions (Arts. 1-4) + common definitions + AI literacy obligation |
+| 2025-08-02 | **GPAI provisions** (Arts. 51-56) + governance (Part III) + most penalties |
+| 2026-08-02 | **Article 50 transparency obligations** and most remaining non-high-risk provisions |
+| 2026-12-02 | Omnibus transition deadline for providers' synthetic-content transparency solutions |
+| 2027-12-02 | Standalone high-risk systems (Annex III) |
+| 2028-08-02 | High-risk systems embedded in regulated products |
 
-## 与中国相关规则的对比
+## Comparison with Chinese rules
 
-- **风险分级**：EU 四级 vs. 中国《生成式 AI 办法》第三条"分类分级监管"但**至今未落地具体分级**
-- **GPAI 门槛**：EU 10²⁵ FLOP vs. 中国无量化算力门槛，以服务类型划
-- **透明度**：EU 第五十条要求机器可读标识 vs. 中国《标识办法》+ GB 45438 更细技术字段
-- **禁止清单**：EU 第五条 8 项明确禁令 vs. 中国以部门规章的"不得"条款列在各规则内
+- **Risk tiering**: EU four tiers vs. China's Generative AI Measures Article 3 "tiered and graded supervision," which has **yet to produce concrete tiers**
+- **GPAI threshold**: EU 10²⁵ FLOP vs. China's absence of a quantitative compute threshold, with lines drawn by service type instead
+- **Transparency**: AI Act Article 50 requires machine-readable marking vs. China's Labeling Measures + GB 45438 with more granular technical fields
+- **Prohibited list**: AI Act Article 5 contains 8 express prohibitions vs. China's "shall not" clauses scattered across sectoral regulations
 
-## 原文与翻译
+## Text and translations
 
-| 语言 | 来源 | 链接 |
+| Language | Source | Link |
 | --- | --- | --- |
-| English（原文） | EUR-Lex | [eur-lex.europa.eu](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689) |
-| 24 种欧盟官方语言 | EUR-Lex | [EUR-Lex 多语言](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689) |
-| 中文非官方译本 | — | _建议引用学术圈译本；避免自制全文翻译_ |
+| English (original) | EUR-Lex | [eur-lex.europa.eu](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689) |
+| 24 official EU languages | EUR-Lex | [EUR-Lex multilingual](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32024R1689) |
+| Chinese (unofficial academic translation) | — | _Cite recognized academic translations; avoid self-made full-text translations_ |
 | EU AI Act Explorer | Future of Life Institute | [artificialintelligenceact.eu](https://artificialintelligenceact.eu/) |
-| 条文检索工具 | EU AI Office | [digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai) |
+| Article lookup tool | EU AI Office | [digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu/policies/regulatory-framework-ai) |
 
-## 关键解读
+## Key commentary
 
-- Mueller (CEPS) 系列评论
-- Bradford "Brussels Effect" 框架下的 AI Act 扩散分析
-- Engler (Brookings) GPAI 条款解读
-- MacCarthy 关于行为守则的持续追踪
+- Mueller (CEPS) commentary series
+- Bradford's "Brussels Effect" framework applied to the AI Act
+- Engler (Brookings) on GPAI provisions
+- MacCarthy's ongoing tracking of the Code of Practice
 
-## 版本历史
+## Version history
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2021-04-21 | 委员会提案 |
-| 2023-06 | 议会一读立场 |
-| 2023-12-08 | 三方会谈政治协议 |
-| 2024-03-13 | 议会最终表决通过 |
-| 2024-05-21 | 理事会批准 |
-| 2024-07-12 | 官方公报公布 |
-| 2024-08-01 | 生效 |
-| 2025-02-02 | 禁止清单适用 |
-| 2025-08-02 | GPAI 条款适用 |
-| 2026-08-02 | 高风险系统适用 |
+| 2021-04-21 | Commission proposal |
+| 2023-06 | Parliament first-reading position |
+| 2023-12-08 | Trilogue political agreement |
+| 2024-03-13 | Parliament final vote |
+| 2024-05-21 | Council approval |
+| 2024-07-12 | Published in Official Journal |
+| 2024-08-01 | Entry into force |
+| 2025-02-02 | Prohibited list applies |
+| 2025-08-02 | GPAI provisions apply |
+| 2026-06-29 | Council gives final approval to the Digital Omnibus on AI, revising the phased schedule |

@@ -1,8 +1,8 @@
 ---
-title: 数字虚拟人信息服务管理办法（征求意见稿）
-description: 国家网信办 2026-04-03 单独发布的数字虚拟人信息服务专项规章征求意见稿；与"拟人化互动服务办法"构成姐妹规则
-ruleName: 数字虚拟人信息服务管理办法（征求意见稿）
-issuer: 国家互联网信息办公室
+title: Measures for the Administration of Digital Virtual Human Information Services (Draft for Comment)
+description: Draft for public comment on digital virtual human information services, released by CAC on 2026-04-03; a sister rule to the Anthropomorphic Interaction Services Measures
+ruleName: Measures for the Administration of Digital Virtual Human Information Services (Draft for Comment) (《数字虚拟人信息服务管理办法（征求意见稿）》)
+issuer: Cyberspace Administration of China (CAC / 国家互联网信息办公室)
 level: departmental-rule
 binding: hard
 effectiveDate: 2026-XX-XX
@@ -11,113 +11,109 @@ originalUrl: https://www.cac.gov.cn/2026-04/03/c_1776952992709096.htm
 relatedTopics:
   - content-labeling-provenance
   - risk-classification
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: 数字虚拟人办法（征求意见稿）(2026)
+  label: Digital Virtual Human Measures (Draft) (2026)
   order: 6
 ---
 
-> **📑 法律位阶**：第 3 级 · 部门规章（**征求意见稿阶段**，尚未施行） | **发布**：国家互联网信息办公室（单部门发布征求意见稿） | **发布**：2026-04-03 | **属性**：硬法（生效后）
+> **📑 Legal hierarchy**: Level 3 · Departmental rule (**draft-for-comment stage**, not yet effective) | **Issuance**: Cyberspace Administration of China (single-ministry draft for comment) | **Released**: 2026-04-03 | **Character**: hard law (once effective)
 
-> **⚠️ 位阶提醒**：本规则目前是**征求意见稿**，尚未以最终形式发布。定稿后将是**部门规章**。
-> 最终版本可能由多部委联合发布（参考 2026-04-10 五部委联合发布的[拟人化互动服务办法](./anthropomorphic-interaction-services/)）。
-> 详见 [中国规则索引](/rules/china/#法律位阶速览)。
+> **⚠️ Hierarchy note**: This instrument is currently a **draft for public comment**, not yet in its final form. When finalized, it will be a **departmental rule**. The final version may be jointly issued by multiple ministries (see the 2026-04-10 five-ministry joint [*Interim Measures for the Administration of AI Anthropomorphic Interaction Services*](./anthropomorphic-interaction-services/)). See [Index of Chinese Rules](/rules/china/#the-legal-hierarchy-at-a-glance).
 
-> **🆕 2026-04-03 征求意见稿**。国家网信办依据 CSL / DSL / PIPL / 《互联网信息服务管理办法》
-> 起草。与 2026-04-10 发布的[《人工智能拟人化互动服务管理暂行办法》](./anthropomorphic-interaction-services/)
-> 形成**姐妹规则**：拟人化办法侧重"交互行为层"，本办法侧重"数字形象层"。归档见
-> `public/archives/china/digital-virtual-human-services-draft-2026-04-03.html`。
+> **🆕 2026-04-03 Draft for comment**. Drafted by CAC pursuant to CSL / DSL / PIPL / the *Measures for the Administration of Internet Information Services*. Together with the 2026-04-10 [*Interim Measures for the Administration of AI Anthropomorphic Interaction Services*](./anthropomorphic-interaction-services/), it forms a **sister-rule pair**: the Anthropomorphic Measures focus on the "interaction-behavior layer," while this instrument focuses on the "digital-image layer." Archived copy at `public/archives/china/digital-virtual-human-services-draft-2026-04-03.html`.
 
-## 中文摘要
+## Chinese Summary
 
-国家互联网信息办公室依据《网络安全法》《数据安全法》《个人信息保护法》《互联网信息服务管理办法》
-等法律、行政法规，起草了《数字虚拟人信息服务管理办法（征求意见稿）》，**2026-04-03** 公开征求意见。
+The Cyberspace Administration of China drafted the *Measures for the Administration of Digital Virtual Human Information Services (Draft for Comment)* pursuant to the *Cybersecurity Law*, *Data Security Law*, *Personal Information Protection Law*, and *Measures for the Administration of Internet Information Services*, and opened it for public comment on **2026-04-03**.
 
-## 核心定义（征求意见稿）
+## Core Definition (Draft for Comment)
 
-> **数字虚拟人**：存在于非物理世界，利用图形学、数字图像处理或者人工智能等技术，
-> 借助真人驱动或者计算驱动，模拟人类外貌，具备声音、行为、交互能力或者性格等特征的
-> 虚拟数字形象。
+> **数字虚拟人**：存在于非物理世界，利用图形学、数字图像处理或者人工智能等技术，借助真人驱动或者计算驱动，模拟人类外貌，具备声音、行为、交互能力或者性格等特征的虚拟数字形象。
 
-覆盖范围含：
-- 虚拟主播、数字人主持
-- 虚拟偶像、虚拟代言人
-- AI 驱动的拟人化客服 / 陪伴
-- 真人动作捕捉驱动的数字分身
+> **— English gloss —** "Digital virtual human" means a virtual digital image existing in a non-physical world, produced with technologies such as computer graphics, digital-image processing, or artificial intelligence; driven by a real person or by computation; simulating human appearance; and possessing features such as voice, behavior, interactive capability, or personality.
 
-## 已知关键条款（摘自 2026-04-03 解读）
+Scope includes:
 
-### 身份告知与显著标识
+- Virtual anchors, AI news presenters;
+- Virtual idols, virtual spokespersons;
+- AI-driven anthropomorphic customer-service / companions;
+- Digital doubles driven by real-person motion capture.
+
+## Known Key Provisions (from 2026-04-03 commentary)
+
+### Identity notice and conspicuous labeling
 
 > 自数字虚拟人服务开始，需在其**展示区域全程**进行**显著提示标识**。
 
-禁止使用与特定自然人**高度相似**的肖像或声音**误导受众**。
+> **— English gloss —** From the start of a digital virtual human service, a **conspicuous prompt/label** shall be maintained **throughout the display area**.
 
-### 第七条 · 肖像 / 声音保护
+The use of likeness or voice **highly similar** to a specific natural person in a way that **misleads the audience** is prohibited.
 
-**未经同意**，不得提供足以**识别特定自然人身份**的数字虚拟人服务。
+### Article 7 · Likeness / Voice Protection
 
-敏感个人信息需取得同意，**撤回后应删除**相关信息。
+**Without consent**, services that can **identify a specific natural person** via a digital virtual human shall not be provided.
 
-### 第十条 · 未成年人保护（与拟人化办法第 14 条呼应）
+Sensitive personal information requires consent; **upon withdrawal, relevant information shall be deleted**.
 
-- **禁止诱导未成年人沉迷**
-- **不得提供"虚拟亲属、虚拟伴侣"等服务**
+### Article 10 · Protection of Minors (mirroring Article 14 of the Anthropomorphic Measures)
 
-注：与[《拟人化互动服务办法》](./anthropomorphic-interaction-services/)第 14 条**几乎同文**，
-体现两规则在未成年人保护条款上的一致性。
+- **Inducing addiction of minors is prohibited**;
+- **No "virtual relatives / virtual lovers" services shall be provided**.
 
-### 第十一条 · 英雄烈士形象保护
+Note: nearly identical to Article 14 of the [*Anthropomorphic Interaction Services Measures*](./anthropomorphic-interaction-services/), reflecting consistency between the two rules on minors' protection.
 
-不得用于商业用途；依《英雄烈士保护法》衔接。
+### Article 11 · Protection of Heroes' and Martyrs' Images
 
-### 劳动者（驱动方）权益
+Shall not be used for commercial purposes; interfaces with the *Law on the Protection of Heroes and Martyrs*.
 
-保护**真人驱动数字虚拟人**的"**驱动方**"（演员 / 主播 / 配音）：
-- 个人信息保护
-- **择业自由**（防止数字分身被雇主长期绑定或售卖）
+### Rights of Drivers (the real person behind the virtual human)
 
-### 第二十条 · 申诉投诉机制
+Protects the **"drivers"** (actors, anchors, voice-over artists) behind **real-person-driven digital virtual humans**:
 
-平台需建立便捷的用户申诉和投诉举报机制。
+- Personal-information protection;
+- **Freedom to choose employment** (preventing long-term lock-in or sale of a person's digital double by an employer).
 
-## 与拟人化互动服务办法的关系
+### Article 20 · Complaints and Reports Mechanism
 
-**双规则体系**（2026-04 国家网信办两步走）：
+Platforms shall establish convenient user complaint and reporting mechanisms.
 
-| 维度 | 拟人化互动服务办法（2026-04-10 已发布） | 数字虚拟人办法（2026-04-03 征求意见稿） |
+## Relationship with the Anthropomorphic Interaction Services Measures
+
+**A dual-rule system** (CAC's two-step move in April 2026):
+
+| Dimension | Anthropomorphic Interaction Services Measures (issued 2026-04-10) | Digital Virtual Human Measures (2026-04-03 draft for comment) |
 | --- | --- | --- |
-| 发布主体 | 五部委联合 | 网信办单独（定稿后可能联合） |
-| 侧重 | **交互行为层**（AI 陪伴、语言情感交互） | **数字形象层**（视觉呈现、肖像声音） |
-| 适用范围重叠 | 虚拟陪伴、AI 伴侣 | 虚拟主播、数字分身、虚拟偶像 |
-| 未成年人条款 | 第 14 条 禁止虚拟伴侣 | 第 10 条 同文 |
-| 老年人专条 | 第 15 条 有 | _待定稿确认是否含_ |
-| 肖像/声音专条 | _未见强专条_ | 第 7、11 条 强专条 |
-| 驱动方保护 | _未见_ | **独有**，保护真人主播 |
+| Issuer | Five-ministry joint | CAC alone (final text may be joint) |
+| Focus | **Interaction-behavior layer** (AI companionship, language/emotion interaction) | **Digital-image layer** (visual presentation, likeness and voice) |
+| Overlap in scope | Virtual companionship, AI partners | Virtual anchors, digital doubles, virtual idols |
+| Minors clause | Article 14 — bans virtual companions | Article 10 — same text |
+| Dedicated clause for older persons | Article 15 present | _To be confirmed against final text_ |
+| Dedicated clause on likeness / voice | _No strong dedicated clause_ | Articles 7, 11 — strong dedicated clause |
+| Driver protection | _Not present_ | **Unique to this rule** — protects real-person anchors |
 
-结构上是"**交互侧**（拟人化）+ **形象侧**（数字虚拟人）"的**互补覆盖**。
+Structurally this is a **complementary coverage** of "**interaction side** (anthropomorphism) + **image side** (digital virtual human)."
 
-## 与上位 / 相邻规则的关系
+## Relationship with Upstream / Adjacent Rules
 
-- **[深度合成规定](./deep-synthesis-provisions/) (2023)**：数字虚拟人的"形象生成"部分已被
-  深度合成规定覆盖；本办法做服务层专项深化
-- **[生成式 AI 办法](./generative-ai-interim-measures/) (2023)**：交互部分的底层 AI 仍受此规制
-- **[标识办法](./biaozhi-banfa/) (2025)**：数字虚拟人产出的合成内容仍需标识
-- **[PIPL](./personal-info-protection-law/)**：肖像 / 声音按敏感信息
-- **《英雄烈士保护法》**：第 11 条的上位依据
+- **[Deep Synthesis Provisions](./deep-synthesis-provisions/) (2023)**: the "image generation" part of digital virtual humans is already covered; these Measures deepen the rule at the service layer.
+- **[Generative AI Interim Measures](./generative-ai-interim-measures/) (2023)**: the underlying AI used in the interaction part remains subject to them.
+- **[Labeling Measures](./biaozhi-banfa/) (2025)**: synthesized content produced by digital virtual humans is still subject to labeling.
+- **[PIPL](./personal-info-protection-law/)**: treats likeness / voice as sensitive information.
+- ***Law on the Protection of Heroes and Martyrs***: the upstream authority for Article 11.
 
-## 原文与归档
+## Source Text and Archival Copies
 
-| 来源 | 链接 |
+| Source | Link |
 | --- | --- |
-| 中文征求意见稿（CAC） | [cac.gov.cn/2026-04/03/c_1776952992709096.htm](https://www.cac.gov.cn/2026-04/03/c_1776952992709096.htm) |
-| 中文（归档） | [archives/china/digital-virtual-human-services-draft-2026-04-03.html](/archives/china/digital-virtual-human-services-draft-2026-04-03.html) |
+| Chinese draft for comment (CAC) | [cac.gov.cn/2026-04/03/c_1776952992709096.htm](https://www.cac.gov.cn/2026-04/03/c_1776952992709096.htm) |
+| Chinese (archived copy) | [archives/china/digital-virtual-human-services-draft-2026-04-03.html](/archives/china/digital-virtual-human-services-draft-2026-04-03.html) |
 | English | [China Law Translate](https://www.chinalawtranslate.com/%E6%95%B0%E5%AD%97%E8%99%9A%E6%8B%9F%E4%BA%BA%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1%E7%AE%A1%E7%90%86%E5%8A%9E%E6%B3%95-%EF%BC%88%E5%BE%81%E6%B1%82%E6%84%8F%E8%A7%81%E7%A8%BF%EF%BC%89/) |
 
-## 版本历史
+## Version History
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2026-04-03 | 征求意见稿发布 |
-| 2026-05 前后（估计） | 征求意见期结束 |
-| 2026 下半年（估计） | 正式发布 |
+| 2026-04-03 | Draft for public comment released |
+| ~2026-05 (estimated) | End of comment period |
+| Second half of 2026 (estimated) | Official release |

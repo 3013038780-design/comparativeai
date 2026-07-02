@@ -1,0 +1,336 @@
+---
+// Comparative AI — 首页（完全自定义布局，脱离 Starlight Layout）
+// 数据来自 src/data/home.ts；样式在 src/styles/home.css
+import { topics, updates, timeline, stats } from '../../data/home';
+import SiteHeader from '../../components/SiteHeader.astro';
+import '../../styles/home.css';
+
+const GITHUB_URL = 'https://github.com/3013038780-design/comparativeai';
+
+const axes = [
+	{
+		num: 'i.',
+		title: '议题比较 · 横向',
+		desc: '风险分级、内容标识、数据训练、前沿模型——同一议题的三辖区对照。',
+		href: '/zh/topics/',
+	},
+	{
+		num: 'ii.',
+		title: '顶层规则 · 辖区',
+		desc: '按辖区整理的中央立法与权威指南一手索引，划分硬法 / 软法。',
+		href: '/zh/rules/',
+	},
+	{
+		num: 'iii.',
+		title: '地方层级',
+		desc: '中国地方试点、美国州市立法、欧盟成员国转化。',
+		href: '/zh/subnational/',
+	},
+	{
+		num: 'iv.',
+		title: '公司实践',
+		desc: '前沿实验室与平台巨头的政策、框架与责任声明快照。',
+		href: '/zh/companies/',
+	},
+	{
+		num: 'v.',
+		title: '参考框架',
+		desc: 'OECD、UNESCO、NIST、ISO/IEC、PAI 等国际与行业框架的轻量索引。',
+		href: '/zh/reference/',
+	},
+	{
+		num: 'vi.',
+		title: '方法论',
+		desc: '收录标准、硬法/软法划分、版本管理、引用规则与免责声明。',
+		href: '/zh/methodology/',
+	},
+];
+
+const footerContents = [
+	{ label: '议题比较', href: '/zh/topics/' },
+	{ label: '顶层规则', href: '/zh/rules/' },
+	{ label: '地方层级', href: '/zh/subnational/' },
+	{ label: '公司实践', href: '/zh/companies/' },
+	{ label: '参考框架', href: '/zh/reference/' },
+];
+
+const footerAbout = [
+	{ label: '项目简介', href: '/zh/about/' },
+	{ label: '方法论', href: '/zh/methodology/' },
+	{ label: '引用与免责', href: '/zh/methodology/citation-disclaimer/' },
+	{ label: '更新日志', href: '/zh/updates/' },
+];
+
+const footerOSS = [
+	{ label: 'GitHub ↗', href: GITHUB_URL },
+	{
+		label: '贡献指南',
+		href: GITHUB_URL + '/blob/main/README.md',
+	},
+	{
+		label: 'Edit this page ↗',
+		href: GITHUB_URL,
+	},
+];
+
+// 辖区标签映射（表格每行的 data-juris 属性、更新列表的 tag 等）
+const juris = {
+	cn: { label: 'CN · 中国', tag: 'CN', color: 'cn' },
+	us: { label: 'US · 美国', tag: 'US', color: 'us' },
+	eu: { label: 'EU · 欧盟', tag: 'EU', color: 'eu' },
+} as const;
+
+// 格式化日期：2026-04-18 → 2026.04.18
+const fmtDate = (d: string) => d.replaceAll('-', '.');
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Comparative AI | 中美欧 AI 治理比较</title>
+		<meta
+			name="description"
+			content="沿议题、顶层规则、地方层级、公司实践、参考框架五个轴，对中美欧三大司法辖区的 AI 治理规则进行结构化整理。"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<SiteHeader />
+
+		<main>
+			<!-- ===== 刊头 ===== -->
+			<header class="masthead-block">
+				<div class="kicker">独立学术研究</div>
+				<h1 class="title">中美欧 AI 治理的<br />结构化比较</h1>
+				<p class="dek">
+					沿议题、顶层规则、地方层级、公司实践、参考框架五个轴，对三大司法辖区的 AI
+					治理规则进行结构化整理，追踪硬法与软法的平行演进。
+				</p>
+				<div class="meta-strip">
+					<span><strong>{stats.jurisdictions}</strong> 司法辖区</span>
+					<span><strong>{stats.issues}</strong> 核心议题</span>
+					<span><strong>{stats.rules}</strong> 一手规则</span>
+					<span><strong>{stats.companies}</strong> 公司快照</span>
+					<span>最近更新 · <strong>{stats.lastUpdate}</strong></span>
+				</div>
+			</header>
+
+			<!-- ===== §I 议题 × 辖区 ===== -->
+			<section class="chapter">
+				<div class="chapter-head">
+					<div class="chapter-num">§ I · Issue Matrix</div>
+					<h2 class="chapter-title">议题 × 辖区</h2>
+					<p class="chapter-lede">
+						同一议题在三辖区的规则形态对照。点击任一条目进入详细比较与逐条批注。
+					</p>
+				</div>
+
+				<!-- 桌面 / 平板：表格形式 (>= 900px) -->
+				<table class="matrix matrix-desktop">
+					<thead>
+						<tr>
+							<th>议题 / Issue</th>
+							<th class="cn">
+								<span class="juris-marker"></span>中国 &middot;
+								<span style="font-family:var(--mono);font-size:11px;">CN</span>
+							</th>
+							<th class="us">
+								<span class="juris-marker"></span>美国 &middot;
+								<span style="font-family:var(--mono);font-size:11px;">US</span>
+							</th>
+							<th class="eu">
+								<span class="juris-marker"></span>欧盟 &middot;
+								<span style="font-family:var(--mono);font-size:11px;">EU</span>
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						{
+							topics.map((t) => (
+								<tr>
+									<td class="topic-cell">
+										<div class="topic-name">{t.name}</div>
+										<div class="topic-desc">{t.desc}</div>
+									</td>
+									{(['cn', 'us', 'eu'] as const).map((j) => {
+										const cell = t[j];
+										return (
+											<td class="cell" data-juris={juris[j].label}>
+												<a href={cell.href}>
+													<div class="cell-headline">{cell.headline}</div>
+													<span class={`cell-status ${cell.status}`}>
+														{cell.statusLabel}
+													</span>
+													<span class="cell-meta">{cell.meta}</span>
+												</a>
+											</td>
+										);
+									})}
+								</tr>
+							))
+						}
+					</tbody>
+				</table>
+
+				<!-- 手机 / 窄平板：折叠卡片形式 (< 900px) -->
+				<div class="matrix-cards">
+					{
+						topics.map((t) => (
+							<article class="topic-card">
+								<header class="topic-card-head">
+									<h3 class="topic-card-name">{t.name}</h3>
+									<p class="topic-card-desc">{t.desc}</p>
+								</header>
+								<ul class="topic-card-rows">
+									{(['cn', 'us', 'eu'] as const).map((j) => {
+										const cell = t[j];
+										return (
+											<li>
+												<a href={cell.href} class={`tc-row tc-${j}`}>
+													<span class={`juris-pill ${j}`}>{juris[j].tag}</span>
+													<span class="tc-body">
+														<span class="tc-headline">{cell.headline}</span>
+														<span class={`cell-status ${cell.status}`}>
+															{cell.statusLabel}
+														</span>
+													</span>
+													<span class="tc-arrow">→</span>
+												</a>
+											</li>
+										);
+									})}
+								</ul>
+							</article>
+						))
+					}
+				</div>
+
+				<a href="/zh/topics/" class="read-more">查看所有议题 →</a>
+			</section>
+
+			<!-- ===== §II 五轴导览 ===== -->
+			<section class="chapter">
+				<div class="chapter-head">
+					<div class="chapter-num">§ II · Five Axes</div>
+					<h2 class="chapter-title">五轴交叉的整理体系</h2>
+					<p class="chapter-lede">
+						同一条规则可以沿不同轴被索引。本站不假设任何一轴是主，而是让读者从最顺手的入口进入。
+					</p>
+				</div>
+
+				<div class="axes">
+					{
+						axes.map((a) => (
+							<a href={a.href} class="axis">
+								<div class="axis-num">{a.num}</div>
+								<div>
+									<div class="axis-title">{a.title}</div>
+									<div class="axis-desc">{a.desc}</div>
+								</div>
+								<div class="axis-link">→</div>
+							</a>
+						))
+					}
+				</div>
+			</section>
+
+			<!-- ===== §III 最新 + 时间线 ===== -->
+			<section class="chapter">
+				<div class="chapter-head">
+					<div class="chapter-num">§ III · Dispatches</div>
+					<h2 class="chapter-title">近期更新 &amp; 纵向脉络</h2>
+					<p class="chapter-lede">
+						每两周追踪三辖区立法与公司政策变化；侧栏附中国部门规章层的演进。
+					</p>
+				</div>
+
+				<div class="two-col">
+					<div>
+						<ul class="updates-list">
+							{
+								updates.map((u) => {
+									const j = juris[u.jurisdiction.toLowerCase() as 'cn' | 'us' | 'eu'];
+									return (
+										<li>
+											<a href={u.href}>
+												<span class="u-date">{fmtDate(u.date)}</span>
+												<span class="u-title">{u.title}</span>
+												<span class={`u-tag ${j.color}`}>{j.tag}</span>
+											</a>
+										</li>
+									);
+								})
+							}
+						</ul>
+						<a href="/zh/updates/" class="read-more">查看完整更新日志 →</a>
+					</div>
+
+					<aside class="sidebar-card">
+						<h3>中国生成式 AI 监管的五年轨迹</h3>
+						<p class="sidebar-sub">
+							部门规章层从"算法"到"深度合成"到"拟人化"的演进。
+						</p>
+						<div class="tl">
+							{
+								timeline.map((item) => (
+									<div class="tl-item">
+										<div class="tl-date">{item.date}</div>
+										<div class="tl-title">{item.title}</div>
+										{item.note && <div class="tl-note">{item.note}</div>}
+									</div>
+								))
+							}
+						</div>
+					</aside>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer-inner">
+				<div class="foot-brand">
+					<strong>Comparative AI</strong>
+					独立学术研究项目。不构成法律意见，不代表任何机构立场。内容按 CC&nbsp;BY&nbsp;4.0
+					授权，代码按 MIT 授权。
+				</div>
+				<div class="foot-col">
+					<h5>Contents</h5>
+					<ul>
+						{footerContents.map((x) => <li><a href={x.href}>{x.label}</a></li>)}
+					</ul>
+				</div>
+				<div class="foot-col">
+					<h5>About</h5>
+					<ul>
+						{footerAbout.map((x) => <li><a href={x.href}>{x.label}</a></li>)}
+					</ul>
+				</div>
+				<div class="foot-col">
+					<h5>Open Source</h5>
+					<ul>
+						{
+							footerOSS.map((x) => (
+								<li>
+									<a href={x.href} target="_blank" rel="noopener">
+										{x.label}
+									</a>
+								</li>
+							))
+						}
+					</ul>
+				</div>
+			</div>
+			<div class="colophon">
+				<span>© 2026 Comparative AI · CC BY 4.0</span>
+				<span>build · {stats.lastUpdate}</span>
+			</div>
+		</footer>
+	</body>
+</html>

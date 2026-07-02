@@ -1,6 +1,6 @@
 // Comparative AI 首页数据
 // 修改本文件即可更新首页三大区块（议题矩阵 / 更新列表 / 时间线 / 顶部统计）。
-// 所有跨站链接应使用 Starlight 的绝对路径（如 /topics/...）。
+// 所有跨站链接应使用 Starlight 的绝对路径（如 /zh/topics/...）。
 
 export type Status = 'live' | 'draft' | 'void';
 
@@ -54,7 +54,7 @@ export const stats: Stats = {
 	issues: 4,
 	rules: '30+',
 	companies: '13',
-	lastUpdate: '2026-04-22',
+	lastUpdate: '2026-06-28',
 };
 
 /** §I 议题矩阵：四个 v1 议题 × 三辖区 */
@@ -67,21 +67,21 @@ export const topics: Topic[] = [
 			status: 'live',
 			statusLabel: '已生效',
 			meta: '深度合成规定 · 生成式 AI 暂行办法',
-			href: '/topics/risk-classification/china/',
+			href: '/zh/topics/risk-classification/china/',
 		},
 		us: {
 			headline: 'NIST AI RMF + GenAI Profile',
 			status: 'void',
 			statusLabel: '自愿采纳',
 			meta: '软法框架 · 非强制约束',
-			href: '/topics/risk-classification/us/',
+			href: '/zh/topics/risk-classification/us/',
 		},
 		eu: {
 			headline: '四级风险金字塔',
 			status: 'live',
 			statusLabel: '分阶段生效',
 			meta: 'AI Act Art. 5–50',
-			href: '/topics/risk-classification/eu/',
+			href: '/zh/topics/risk-classification/eu/',
 		},
 	},
 	{
@@ -92,21 +92,21 @@ export const topics: Topic[] = [
 			status: 'live',
 			statusLabel: '2025-09 生效',
 			meta: '显式 + 隐式双重强制',
-			href: '/topics/content-labeling-provenance/china/',
+			href: '/zh/topics/content-labeling-provenance/china/',
 		},
 		us: {
 			headline: '无联邦统一要求',
 			status: 'void',
 			statusLabel: '州法分散',
 			meta: 'CA AB 2655 · TX SB 751 等',
-			href: '/topics/content-labeling-provenance/us/',
+			href: '/zh/topics/content-labeling-provenance/us/',
 		},
 		eu: {
 			headline: 'AI Act Art. 50 披露义务',
 			status: 'live',
 			statusLabel: '2026-08 适用',
 			meta: '用户知情 + 机读标识',
-			href: '/topics/content-labeling-provenance/eu/',
+			href: '/zh/topics/content-labeling-provenance/eu/',
 		},
 	},
 	{
@@ -117,21 +117,21 @@ export const topics: Topic[] = [
 			status: 'live',
 			statusLabel: '数据出境评估',
 			meta: '训练语料合法性要求',
-			href: '/topics/data-training/china/',
+			href: '/zh/topics/data-training/china/',
 		},
 		us: {
 			headline: '判例法主导（Fair Use）',
 			status: 'draft',
 			statusLabel: '诉讼待决',
 			meta: 'NYT v. OpenAI 等',
-			href: '/topics/data-training/us/',
+			href: '/zh/topics/data-training/us/',
 		},
 		eu: {
 			headline: 'GPAI Code + 版权披露',
 			status: 'live',
 			statusLabel: '2025-08 起',
 			meta: '尊重 TDM Opt-out',
-			href: '/topics/data-training/eu/',
+			href: '/zh/topics/data-training/eu/',
 		},
 	},
 	{
@@ -142,21 +142,21 @@ export const topics: Topic[] = [
 			status: 'live',
 			statusLabel: '2025 发布',
 			meta: 'TC260 系列标准配套',
-			href: '/topics/frontier-gpai/china/',
+			href: '/zh/topics/frontier-gpai/china/',
 		},
 		us: {
-			headline: 'California SB 53 · 联邦抢占之争',
+			headline: 'EO 14409 · California SB 53',
 			status: 'draft',
-			statusLabel: 'EO 14365 争议中',
-			meta: '州—联邦博弈',
-			href: '/topics/frontier-gpai/us/',
+			statusLabel: '联邦自愿机制',
+			meta: '网络能力评测 + 预发布访问',
+			href: '/zh/topics/frontier-gpai/us/',
 		},
 		eu: {
 			headline: 'GPAI 章 + Code of Practice',
 			status: 'live',
 			statusLabel: '2025-08 生效',
 			meta: '系统性风险模型专章',
-			href: '/topics/frontier-gpai/eu/',
+			href: '/zh/topics/frontier-gpai/eu/',
 		},
 	},
 ];
@@ -164,34 +164,34 @@ export const topics: Topic[] = [
 /** §III 最近更新（倒序） */
 export const updates: Update[] = [
 	{
-		date: '2026-04-18',
-		title: '新增《数字虚拟人办法（征求意见稿）》页面与逐条批注',
-		jurisdiction: 'CN',
-		href: '/rules/china/digital-virtual-human-services-draft/',
-	},
-	{
-		date: '2026-04-10',
-		title: 'Texas TRAIGA 与 Colorado AI Act 实施细则对照更新',
+		date: '2026-06-28',
+		title: '完成全站一手来源核验；英文版本改为默认入口',
 		jurisdiction: 'US',
-		href: '/subnational/us/',
+		href: '/zh/updates/',
 	},
 	{
-		date: '2026-03-28',
-		title: 'Digital Omnibus Proposal 对 AI Act 的潜在影响分析',
+		date: '2026-06-18',
+		title: 'Google DeepMind AI Control Roadmap 纳入公司安全快照',
+		jurisdiction: 'US',
+		href: '/zh/companies/google-deepmind/safety-framework/',
+	},
+	{
+		date: '2026-06-10',
+		title: '欧盟发布最终版 AI 生成内容透明度行为守则',
 		jurisdiction: 'EU',
-		href: '/rules/eu/digital-omnibus-proposal/',
+		href: '/zh/rules/eu/synthetic-content-code/',
 	},
 	{
-		date: '2026-03-15',
-		title: 'Anthropic RSP v3、OpenAI Preparedness Framework 快照更新',
+		date: '2026-06-02',
+		title: 'EO 14409 建立自愿前沿模型网络安全接口',
 		jurisdiction: 'US',
-		href: '/companies/',
+		href: '/zh/rules/us/eo-14409-frontier-ai-cybersecurity/',
 	},
 	{
-		date: '2026-02-22',
-		title: '新增《拟人化互动服务办法》页面及其与《标识办法》的衔接分析',
+		date: '2026-05-19',
+		title: 'TC260-005《人工智能应用伦理安全指引 1.0》发布',
 		jurisdiction: 'CN',
-		href: '/rules/china/anthropomorphic-interaction-services/',
+		href: '/zh/rules/china/tc260-005-ai-ethics-safety-guidelines/',
 	},
 ];
 

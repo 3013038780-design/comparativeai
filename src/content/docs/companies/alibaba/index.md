@@ -1,123 +1,122 @@
 ---
-title: 阿里巴巴 Alibaba
-description: 阿里通义千问（Qwen）概况与政策文档快照（2026-04-22）
+title: Alibaba 阿里巴巴
+description: Alibaba Tongyi Qwen 通义千问 profile and policy-document snapshot (2026-06-28)
 sidebar:
   order: 7
-  label: 阿里巴巴 Alibaba
-snapshotDate: 2026-04-22
+  label: Alibaba 阿里巴巴
+snapshotDate: 2026-06-28
 ---
 
-## 公司概况
+## Company profile
 
-- **成立**：1999
-- **总部**：杭州
-- **主要 AI 产品**：
-  - **通义千问（Qwen）系列**：
-    - **Qwen 3.5**（2026-02-16 春节除夕发布）：**397B 总参数 / 170B 激活**，原生多模态；
-      官方称性能对标或超越 Gemini-3-Pro、GPT-5.2；API 输入价 **0.8 元 / 百万 tokens**（Gemini 3 Pro 的 1/18）
-    - **Qwen 3 系列**（2025-04 发布）
-    - **Qwen 2.5 / 2 / 1** 系列
-  - **Wan（万相）**视频生成：Wan 2.6（2025-12 发布）
-  - **通义实验室**：阿里 AI 研发中枢
-  - **百炼（Model Studio）**：面向企业的大模型 API 平台
-  - **夸克**：AI 浏览器 / 助手
-- **商业模式**：电商 + 云（阿里云 + 通义）+ 支付（蚂蚁集团独立）+ 物流 + AI 应用
+- **Founded**: 1999
+- **Headquarters**: Hangzhou
+- **Main AI products**:
+  - **Qwen 通义千问 series**:
+    - **Qwen 3.5** (released 2026-02-16 on Lunar New Year's Eve): **397B total / 170B active** parameters, natively multimodal; Alibaba claims performance at or above Gemini 3 Pro and GPT-5.2; API input price at **¥0.8 per million tokens** (about one-eighteenth of Gemini 3 Pro)
+    - **Qwen 3 series** (released 2025-04)
+    - **Qwen 2.5 / 2 / 1** series
+  - **Wan 万相**: video generation; Wan 2.6 released 2025-12
+  - **Tongyi Lab 通义实验室**: Alibaba's AI R&D hub
+  - **Bailian 百炼 (Model Studio)**: enterprise-facing LLM API platform
+  - **Quark 夸克**: AI browser / assistant
+- **Business model**: e-commerce + cloud (Alibaba Cloud + Tongyi) + payments (Ant Group, separate) + logistics + AI applications
 
-## 战略定位：**开源主导的中国 Meta**
+## Strategic positioning: **the open-source-led "Chinese Meta"**
 
-- **Apache 2.0 全面开源**：Qwen **400+ 开源模型、20 万+ 衍生模型、10 亿+ 下载量**
-- **32% 中国企业级 LLM API 市场份额** #1（2026 Q1 数据）
-- **对标 Meta Llama**：开源权重 + 商业化服务组合
-- **阿里云 + 通义**双引擎：AI 是阿里云的第二增长曲线
+- **Across-the-board Apache 2.0 open source**: Qwen has **400+ open-sourced models, 200,000+ derivatives, and over 1 billion downloads**
+- **32% market share of China's enterprise LLM API market**, #1 (2026 Q1 data)
+- **Benchmarked against Meta Llama**: open weights + commercialisation services in combination
+- **Alibaba Cloud + Tongyi**: dual-engine, with AI as Alibaba Cloud's second growth curve
 
-## 公开政策文档快照
+## Policy document snapshot
 
-| 类型 | 文档名 | 链接 | 本站子页 |
+| Type | Document | Link | Subpage |
 | --- | --- | --- | --- |
-| 使用政策 | Qwen 服务协议 + 开源 License | [tongyi.aliyun.com](https://tongyi.aliyun.com/) | — |
-| 技术报告 | Qwen 3 / 3.5 Technical Report | Qwen 官网 + arXiv | — |
-| 开源模型 | Qwen GitHub / HuggingFace | [github.com/QwenLM](https://github.com/QwenLM) | — |
-| 透明度 | CAC 算法备案（多批次） | [cac.gov.cn](https://www.cac.gov.cn/) | — |
+| Usage policy | Qwen service agreement + open-source licence | [tongyi.aliyun.com](https://tongyi.aliyun.com/) | — |
+| Technical reports | Qwen 3 / 3.5 Technical Report | Qwen site + arXiv | — |
+| Open-source models | Qwen GitHub / HuggingFace | [github.com/QwenLM](https://github.com/QwenLM) | — |
+| Transparency | CAC algorithm filings (multiple batches) | [cac.gov.cn](https://www.cac.gov.cn/) | — |
 
-## 监管合规位置
+## Regulatory-compliance posture
 
-- **中国**：
-  - [《生成式 AI 办法》](/rules/china/generative-ai-interim-measures/) 算法备案 — 通义千问首批备案服务之一
-  - [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) 合规
-  - 阿里作为**头部企业**参与多份 TC260 标准起草
-- **美国**：Qwen 开源模型在美国可自由下载使用；夸克等消费者产品不在美国
-- **欧盟**：Qwen 开源模型在欧盟可下载；未来若触发 AI Act 第 53 条（训练数据摘要）义务需应对
-- **东南亚 / 中东**：积极出海（Qwen-for-SEA 等本地化版本）
+- **China**:
+  - Algorithm filing under the [Generative AI Interim Measures](/rules/china/generative-ai-interim-measures/) — Qwen was among the first-wave filed services
+  - [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) compliance
+  - Alibaba participates as a **leading company** in the drafting of multiple TC260 standards
+- **United States**: Qwen open-source models can be freely downloaded; Quark and other consumer products are not offered in the U.S.
+- **European Union**: Qwen open-source models are downloadable in the EU; AI Act Article 53 obligations (training-data summary) would apply if triggered
+- **Southeast Asia / Middle East**: active overseas push (Qwen-for-SEA and other localised variants)
 
-## 深度分析：**开源路径的中国版本**
+## Deep dive: **the Chinese variant of the open-source path**
 
-### 阿里的开源叙事与其商业战略
+### The Alibaba open-source narrative and its commercial strategy
 
-阿里 Qwen 是中国最成功的开源 AI 生态：
+Alibaba Qwen is the most successful open-source AI ecosystem from China:
 
-**数据**（2026-04 公开数据）：
-- **400+ 开源模型**（Qwen 1/2/2.5/3/3.5 系列 + Wan 系列 + 多模态变体）
-- **200,000+ 衍生模型**（基于 Qwen 微调的）
-- **10 亿+ 下载量**（HuggingFace + ModelScope 合计）
-- **32% 中国企业级 LLM API 市场** #1
+**Metrics** (disclosed as of April 2026):
+- **400+ open-source models** (Qwen 1/2/2.5/3/3.5 series + Wan series + multimodal variants)
+- **200,000+ derivative models** (fine-tuned on top of Qwen)
+- **Over 1 billion downloads** (HuggingFace + ModelScope combined)
+- **32% market share of China's enterprise LLM API market**, #1
 
-**商业逻辑**：
-- **开源是获客工具**：开源权重 → 开发者试用 → 转向阿里云付费 API（类似 Meta Llama + AWS 策略）
-- **通义 + 阿里云双引擎**：AI 是阿里云第二增长曲线
-- **极低价格策略**：Qwen 3.5 API 0.8 元 / 百万输入 tokens，约 Gemini 3 Pro 1/18
+**Commercial logic:**
+- **Open source as customer acquisition**: open weights → developer experimentation → conversion to paid Alibaba Cloud API (analogous to Meta Llama + AWS)
+- **Tongyi + Alibaba Cloud dual engine**: AI as Alibaba Cloud's second growth curve
+- **Aggressive pricing**: Qwen 3.5 API at ¥0.8 per million input tokens — about one-eighteenth of Gemini 3 Pro
 
-### Qwen 开源的国际合规压力
+### International compliance pressure on Qwen open source
 
-**Qwen 开源在欧盟的 AI Act 合规问题**：
+**Qwen's AI Act compliance position in the EU:**
 
-- Qwen 3.5 训练算力**很可能超过 10²⁵ FLOP** → 触发系统性风险 GPAI
-- **AI Act 第 53 条第 2 款开源豁免**对"系统性风险 GPAI"**不适用**
-- 理论上 Qwen 需履行：对抗性测试、系统性风险评估、事件报告、网络安全
-- **实务**：阿里**未签署 GPAI Code of Practice**（截至 2026-04-22）
-- 欧盟 AI Office 是否对 Qwen 开源下载到欧盟境内的场景执法，是**未决边界**
+- Qwen 3.5 training compute **very likely exceeds 10^25 FLOP** → triggers systemic-risk GPAI
+- **The open-source exemption in AI Act Art. 53(2)** **does not apply to systemic-risk GPAI**
+- In theory, Qwen must meet: adversarial testing, systemic-risk assessment, incident reporting, and cybersecurity
+- In practice: Alibaba has **not signed the GPAI Code of Practice** (as of 2026-04-22)
+- Whether the EU AI Office will enforce against scenarios where Qwen open weights are downloaded into the EU is an **open boundary**
 
-**Qwen 在美国的情况**：
-- 开源模型在美国可自由下载
-- Alibaba Cloud International 在美国运营但**不含 Qwen 主力**（美国合规风险）
-- 可能受未来 BIS 出口管制针对"中国 AI 权重"的政策影响
+**Qwen's position in the U.S.:**
+- Open-source models are freely downloadable in the U.S.
+- Alibaba Cloud International operates in the U.S. but **does not include the Qwen main line** (U.S. compliance risk)
+- Potentially affected by future BIS export-control policy targeting "Chinese AI weights"
 
-### 自律文件的**显著缺位**
+### The **conspicuous absence** of self-regulation documents
 
-阿里作为**全球开源 AI #1 之一**，但**未发布独立的安全框架文档**：
-- 无 RSP / Preparedness / FSF 对标
-- 无 AI Principles 独立文件（仅嵌入阿里巴巴 ESG 报告的子章节）
-- 无 Frontier Model Forum 参与
-- 无公开红队披露机制
+Alibaba is **one of the global #1 open-source AI providers**, yet it has **not published a standalone safety-framework document**:
+- No RSP / Preparedness / FSF equivalent
+- No standalone AI Principles (only a sub-section embedded in the Alibaba ESG report)
+- Not a participant in the Frontier Model Forum
+- No public red-team disclosure mechanism
 
-**解释**：
-- **与监管互动为主**：通过 CAC 备案 + TC260 参与履行治理义务
-- **开源自身是透明度**：技术报告、模型权重、训练细节公开
-- **商业务实**：类似 Meta / Mistral，**避免"承诺约束未来灵活性"**
+**Explanations:**
+- **Regulator interaction is primary**: governance obligations discharged via CAC filings and TC260 participation
+- **Open source is itself transparency**: technical reports, model weights, and training details are public
+- **Commercial pragmatism**: similar to Meta / Mistral, **avoiding "commitments that constrain future flexibility"**
 
-### 与 Meta / Mistral 的开源对比
+### Compared with Meta / Mistral's open source
 
-| 维度 | Alibaba Qwen | Meta Llama | Mistral |
+| Dimension | Alibaba Qwen | Meta Llama | Mistral |
 | --- | --- | --- | --- |
-| 旗舰开源 | Qwen 3.5（Apache 2.0） | Llama 3/4（Llama Community License，有使用限制）| Mistral Large 3（MRL，仅研究）|
-| 开源深度 | **最深**（含旗舰）| 中（商业有条件）| 中（旗舰闭源）|
-| 自律文件 | **无** | Responsible Use Guide（弱）| 无正式 |
-| 监管配合 | 中国：强；其他：弱 | 美国：中；欧盟：签 CoP 部分保留 | 欧盟：强签 CoP |
-| 商业模式 | 阿里云订阅 | 广告 + Meta 产品 | API + Mistral Compute |
+| Flagship open source | Qwen 3.5 (Apache 2.0) | Llama 3/4 (Llama Community License, use restrictions) | Mistral Large 3 (MRL, research-only) |
+| Open-source depth | **Deepest** (including flagship) | Medium (commercial with conditions) | Medium (flagship closed) |
+| Self-regulation document | **None** | Responsible Use Guide (weak) | None formal |
+| Regulatory engagement | China: strong; elsewhere: weak | U.S.: medium; EU: signed CoP with partial reservations | EU: strong; signed CoP |
+| Business model | Alibaba Cloud subscription | Advertising + Meta products | API + Mistral Compute |
 
-## 公司立场速览
+## Company posture, in brief
 
-- **开源战略的商业逻辑**：开源获客 + 云服务变现，类似 Meta + AWS 而非 Anthropic
-- **无独立安全框架**：通过国内合规 + 技术报告履行治理义务
-- **对国家战略的配合**：参与 TC260 标准、支持国家 AI 产业政策
-- **产业 AI 导向**：ToB + 垂直行业应用（金融、医疗、制造）重于消费者 AI
-- **国际合规待观察**：GPAI CoP 未签、BIS 管制潜在影响
+- **Commercial logic of the open-source strategy**: open source for acquisition + cloud services for monetisation; closer to Meta + AWS than to Anthropic
+- **No standalone safety framework**: governance obligations discharged via domestic compliance and technical reports
+- **Alignment with national strategy**: TC260 standard participation, support for national AI industrial policy
+- **Industrial-AI orientation**: B2B and vertical applications (finance, healthcare, manufacturing) over consumer AI
+- **International compliance remains to be observed**: unsigned GPAI CoP; potential BIS impact
 
-## 与 Meta / Mistral 的开源对比
+## Comparison with Meta / Mistral open source
 
-| 维度 | Alibaba Qwen | Meta Llama | Mistral |
+| Dimension | Alibaba Qwen | Meta Llama | Mistral |
 | --- | --- | --- | --- |
-| 旗舰模型参数 | 397B / 170B active | ~405B | 675B / 41B active |
-| License | Apache 2.0 | Llama 3 Community License（有使用限制）| Apache 2.0（部分） |
-| 法域 | 中国 | 美国 | 法国（EU） |
-| 商业模式 | 云服务 + 订阅 | 广告 + Meta 产品 | API + Mistral Compute |
-| 开源模型数量 | 400+ | ~15 | ~20 |
+| Flagship parameters | 397B total / 170B active | ~405B | 675B / 41B active |
+| License | Apache 2.0 | Llama 3 Community License (use restrictions) | Apache 2.0 (partial) |
+| Home jurisdiction | China | US | France (EU) |
+| Business model | Cloud + subscription | Advertising + Meta products | API + Mistral Compute |
+| Number of open-source models | 400+ | ~15 | ~20 |

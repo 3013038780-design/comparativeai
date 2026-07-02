@@ -1,171 +1,171 @@
 ---
-title: 使用政策
-description: 字节跳动 / 豆包 / 火山方舟 / TikTok / CapCut 使用政策与内容规范的跨辖区分析（2026-04-23 快照）
+title: Usage Policy
+description: Cross-jurisdictional analysis of ByteDance / Doubao / Volcano Engine / TikTok / CapCut usage policies and content rules (snapshot 2026-06-28)
 sidebar:
   order: 1
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> 字节跳动没有一份全球统一的 "Usage Policy"。取而代之的，是**按辖区、按产品线拆分的多份用户协议 + 内容规范 + API 合规条款**——
-> 这本身就是公司政策架构的第一个关键事实。
+> ByteDance does not maintain a single global "Usage Policy." Instead, its policies are split **by jurisdiction and by product line into multiple user agreements, content rules, and API compliance addenda**—
+> that fact itself is the first key observation about the company's policy architecture.
 
-## 一、政策文档矩阵
+## 1. The document matrix
 
-字节跳动的"使用政策"在不同产品 / 不同辖区体现为形态不同的文档：
+ByteDance's "usage policy" takes different documentary forms across products and jurisdictions:
 
-| 辖区 | 产品 | 文档名（公开可查） | 法律性质 |
+| Jurisdiction | Product | Public document name | Legal character |
 | --- | --- | --- | --- |
-| 中国 | 豆包 APP / 网页版 | 《豆包用户协议》《豆包内容规范》《个人信息保护政策》 | 民事合同 + 合规声明 |
-| 中国 | 扣子 Coze | 《扣子用户协议》《开发者行为准则》 | 民事合同 |
-| 中国 | 火山方舟 API | 《火山方舟大模型服务协议》《内容安全合规附录》 | B2B 协议，附算法备案义务转嫁条款 |
-| 海外 | TikTok | TikTok Community Guidelines + Terms of Service | 平台规则 + 合同 |
-| 海外 | CapCut / Lemon8 | CapCut Community Guidelines + Terms | 平台规则 + 合同 |
-| 海外 | Cici（Doubao 海外版） | Cici Terms of Service（按市场分版本） | 合同 |
+| China | Doubao 豆包 (app / web) | *Doubao User Agreement*, *Doubao Content Rules*, *Personal Information Protection Policy* | Civil contract + compliance declaration |
+| China | Coze 扣子 | *Coze User Agreement*, *Developer Code of Conduct* | Civil contract |
+| China | Volcano Engine 火山方舟 API | *Volcano Engine Large Model Service Agreement*, *Content Safety Compliance Addendum* | B2B agreement with flow-down clauses that transfer algorithm filing (算法备案) duties |
+| Overseas | TikTok | TikTok Community Guidelines + Terms of Service | Platform rules + contract |
+| Overseas | CapCut / Lemon8 | CapCut Community Guidelines + Terms | Platform rules + contract |
+| Overseas | Cici (overseas version of Doubao) | Cici Terms of Service (market-specific editions) | Contract |
 
-对比 Anthropic 单一的 **Consumer Usage Policy + Commercial Terms** 两层结构（详见 [Anthropic / usage-policy](/companies/anthropic/usage-policy/)），
-字节的分层更复杂：**同一家公司同时承担消费者平台、开发者平台、云服务提供商、全球社媒平台四重角色**，
-每一层面对不同的监管和市场。
+Compared to Anthropic's single two-layer structure of **Consumer Usage Policy + Commercial Terms** (see [Anthropic / usage-policy](/companies/anthropic/usage-policy/)),
+ByteDance layers far more densely: **the same company simultaneously acts as a consumer platform, a developer platform, a cloud service provider, and a global social-media platform**,
+with each layer facing distinct regulators and markets.
 
-## 二、中国侧：豆包 / 火山方舟的"代政府审核"性质
+## 2. Inside China: Doubao and Volcano Engine as "delegated government review"
 
-### 豆包 APP 与扣子的内容规范
+### Doubao app and Coze content rules
 
-《豆包用户协议》与《豆包内容规范》在明文禁止内容上与《生成式人工智能服务管理暂行办法》
-（下称《生成式 AI 暂行办法》）第 4 条、第 7 条高度同构。禁止类别包括：
+The *Doubao User Agreement* and *Doubao Content Rules* are highly isomorphic with Articles 4 and 7 of the *Generative AI Interim Measures* (《生成式人工智能服务管理暂行办法》,
+hereafter *Generative AI Interim Measures*). Prohibited categories include:
 
-- 反对宪法所确定的基本原则、危害国家安全、泄露国家秘密、颠覆国家政权、破坏国家统一的内容
-- 损害国家荣誉和利益、宣扬恐怖主义 / 极端主义、煽动民族仇恨 / 民族歧视的内容
-- 破坏国家宗教政策、宣扬邪教和封建迷信的内容
-- 散布谣言、扰乱经济和社会秩序的内容
-- 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的内容
-- 侮辱或者诽谤他人、侵害他人合法权益的内容
-- 涉及未成年人的色情、暴力、诱导性内容（《未成年人网络保护条例》第 51 条对接）
-- 深度伪造、换脸、拟声中未按《标识办法》/《深度合成规定》标注的内容
+- Content that opposes the basic principles established by the Constitution, endangers national security, leaks state secrets, subverts state power, or undermines national unity
+- Content that harms national honor and interests, promotes terrorism or extremism, or incites ethnic hatred or discrimination
+- Content that undermines state religious policy, promotes cults, or feudal superstition
+- Content that spreads rumors or disturbs the economic and social order
+- Content that spreads obscenity, pornography, gambling, violence, murder, terror, or incites crime
+- Content that insults or defames others, or infringes their lawful rights and interests
+- Pornographic, violent, or inducement content involving minors (aligned with Article 51 of the *Regulations on the Network Protection of Minors*)
+- Deepfake, face-swap, or voice-cloning content not labeled under the *Labeling Measures* and the *Deep Synthesis Provisions*
 
-> 关键观察：上述禁止条款**并非字节的企业价值判断**，而是 CAC 算法备案的**前置要求**。
-> 备案材料中必须提交"违法违规内容防御机制说明"与"关键词 / 语义黑名单样本"，
-> 未通过将不予备案。——这就是张凌寒所谓"平台治理的国家化"：平台规则的生产者不再是平台本身，
-> 而是监管机构。
+> Key observation: these prohibitions are **not ByteDance's own corporate value judgments**; they are **prerequisites** for passing CAC algorithm filing (算法备案).
+> Filing submissions must include an "illegal content defense mechanism" description and sample keyword / semantic blacklists;
+> without these the application will not be filed. This is what Zhang Linghan 张凌寒 calls the "nationalization of platform governance" (平台治理的国家化): the producer of platform rules
+> is no longer the platform itself, but the regulator.
 
-### 火山方舟 API：合规义务的"企业客户转嫁"
+### Volcano Engine API: flow-down of compliance duties to enterprise clients
 
-火山方舟作为**云服务提供商（B2B）**，采用经典的 "Acceptable Use Policy 下沉"结构：
+As a **B2B cloud service provider**, Volcano Engine adopts the classic "Acceptable Use Policy flow-down" structure:
 
-1. **火山方舟侧的义务**：模型本身已通过《生成式 AI 暂行办法》备案，承担"技术提供者"义务
-2. **API 调用方的义务**：企业客户作为"服务提供者"，在自己的应用场景中需独立承担：
-   - 本应用的算法备案（如属于"具有舆论属性或社会动员能力"的服务）
-   - 本应用的《标识办法》合规（对 AI 生成内容的显式标识）
-   - 本应用的用户投诉处理通道
-   - 针对本应用用户的内容审核与日志保留（一般要求 6 个月以上）
-3. **双方共同义务**：发生事故时，按《生成式 AI 暂行办法》第 9 条承担**连带配合监管的义务**
+1. **Duties on Volcano Engine**: the model itself has been filed under the *Generative AI Interim Measures* and carries the "technology provider" obligations.
+2. **Duties on the API caller**: the enterprise client, as the "service provider," is independently responsible within its own use case for:
+   - Algorithm filing for its own application (if the service has "public-opinion or social-mobilization attributes")
+   - Compliance with the *Labeling Measures* for the application (explicit labeling of AI-generated content)
+   - A user complaint channel for the application
+   - Content moderation and log retention for the application's users (generally 6+ months)
+3. **Joint duties**: in the event of an incident, Article 9 of the *Generative AI Interim Measures* imposes a **joint duty to cooperate with regulators**.
 
-这一"连带 + 转嫁"结构，与 OpenAI 的 API Usage Policies、Anthropic Commercial Terms 的结构类似，
-但中国版的关键差异是：**合规转嫁建立在"备案清单已明确绑定"的基础上**——
-当监管机构查询一款 AI 应用的上游模型时，从备案信息可以直接穿透到火山方舟 / 豆包大模型。
+This "joint + flow-down" structure parallels OpenAI's API Usage Policies and Anthropic Commercial Terms,
+but the key difference in the Chinese version is that **the flow-down rests on a filing registry that already binds upstream and downstream together**—
+when a regulator queries the upstream model of a given AI application, the filing record lets them trace directly through to Volcano Engine / Doubao.
 
-## 三、海外侧：TikTok / CapCut 的 EU DSA 合规镜像
+## 3. Outside China: TikTok and CapCut as EU DSA compliance mirrors
 
 ### TikTok Community Guidelines
 
-TikTok 自 2019 年建立 Community Guidelines 起，每年会做 2–3 次修订。与中国侧"禁止性清单向国家规范靠拢"不同，
-TikTok 的海外规则**高度镜像 Meta / YouTube 的内容治理语言**：
+Since establishing Community Guidelines in 2019, TikTok has revised them 2–3 times per year. Unlike the Chinese side where "prohibition lists converge toward state norms,"
+TikTok's overseas rules **closely mirror the content-governance language of Meta / YouTube**:
 
 - Hate speech / Harassment / Bullying
 - Violent and Graphic Content
 - Sexual Exploitation and Gender-based Violence
-- Integrity and Authenticity（含 **Synthetic and Manipulated Media** 与 **AI-Generated Content** 的专章，
-  2023-09 起按欧盟 DSA 要求显式引入）
+- Integrity and Authenticity (including dedicated chapters on **Synthetic and Manipulated Media** and **AI-Generated Content**,
+  introduced explicitly from 2023-09 in response to EU DSA requirements)
 - Youth Safety and Well-being
 
-欧盟《数字服务法》（DSA）2024-02-17 对 VLOP 全面适用后，TikTok 作为 VLOP 需依据 **DSA 第 14 条**
-（明确可及的条款）、**第 17 条**（理由说明 / Statement of Reasons）与 **第 24 条**（透明度报告）
-重构其规则披露。2024-04，欧委会就 TikTok Lite（奖励视频观看时长）启动 DSA 第 66 条正式程序，
-TikTok 48 小时内自愿下线 TikTok Lite 欧盟版——这是 **DSA 生效后第一起由 VLOP 主动让步结案的案例**。
+Once the EU *Digital Services Act* (DSA) applied in full to VLOPs from 2024-02-17, TikTok—as a VLOP—was required to restructure its rule disclosures under
+**DSA Art. 14** (clear and accessible terms), **Art. 17** (Statement of Reasons), and **Art. 24** (transparency reporting).
+In 2024-04 the European Commission opened formal proceedings under DSA Art. 66 concerning TikTok Lite (the reward-for-watch-time feature); TikTok voluntarily took TikTok Lite offline in the EU within 48 hours—
+the **first VLOP to resolve a DSA case through proactive concession**.
 
-### CapCut 的 AI 生成内容条款
+### CapCut's AI-generated content clauses
 
-CapCut 作为字节系全球装机量最大的创作工具（公开估算 MAU 处于数亿量级），在 2024-2025 版本里
-新增了 **AI-generated effect / avatar / voice clone** 条款，要求：
+As ByteDance's globally largest creator tool by installs (publicly estimated MAU in the hundreds of millions), CapCut's 2024–2025 versions
+added clauses on **AI-generated effects / avatars / voice clones**, requiring:
 
-- 用户在使用"AI 特效"/"AI 换脸"时同意内容打水印
-- 禁止用于政治人物、未成年人、他人肖像未授权的换脸
-- CapCut 保留在后端强制嵌入 C2PA 内容凭证的权利（2025-10 起在欧盟市场默认开启）
+- User consent to watermarking when using "AI effects" / "AI face-swap" features
+- Prohibition on face-swapping political figures, minors, or non-consenting third parties
+- CapCut's right to force-embed C2PA content credentials at the backend (enabled by default in the EU market from 2025-10)
 
-这一分叉很值得关注：**同一家公司在中国侧按 GB 45438-2025 标识内容、在欧盟按 C2PA 标识内容、
-在美国按各州法（如 CA AB 2655 选举 deepfake 法）处理**——
-三套并行的技术标识体系，是字节全球合规工程化程度最高的场景之一。
+This fork is worth noting: **the same company labels content under GB 45438-2025 in China, under C2PA in the EU,
+and under state laws (e.g. California AB 2655 on election deepfakes) in the U.S.**—
+these three parallel technical labeling regimes are one of ByteDance's most engineered global-compliance scenarios.
 
-## 四、跨辖区对比：禁止类别的真实差异
+## 4. Cross-jurisdictional comparison: the real differences between prohibition categories
 
-|  | 豆包 / 火山方舟（中国） | TikTok（欧盟） | TikTok（美国） | Claude AUP（参考） |
+|  | Doubao / Volcano Engine (China) | TikTok (EU) | TikTok (US) | Claude AUP (reference) |
 | --- | --- | --- | --- | --- |
-| 涉政内容 | **明确禁止**（宪法原则、国家安全等 8 类）| 有限（仅"选举诚信"类）| 最低限度（第一修正案约束）| 有限（"实质性政治操纵"）|
-| 未成年人 | 强（对接《未保条例》）| 强（DSA Art 28）| 强（COPPA + KOSA 动向）| 强（CSAM + 身心损害泛化）|
-| 武器 / 化生放核 | 较弱（未单列）| 较弱 | 较弱 | **最强**（明确 CBRN）|
-| AI 换脸 / 拟声 | **明确禁止未标注**（强制国标 GB 45438）| 需按 DSA + C2PA 标识 | 州法拼凑 | 禁止未经同意的冒充 |
-| 武装冲突 / 恐怖主义 | 明确禁止 | 明确禁止 | 明确禁止 | 明确禁止 |
+| Political content | **Explicitly prohibited** (constitutional principles, national security, 8 categories) | Limited (only "electoral integrity" type) | Minimal (First Amendment constraints) | Limited ("material political manipulation") |
+| Minors | Strong (aligned with *Minors Regulations*) | Strong (DSA Art. 28) | Strong (COPPA + KOSA developments) | Strong (CSAM + generalized physical/mental harm) |
+| Weapons / CBRN | Weaker (no standalone category) | Weaker | Weaker | **Strongest** (explicit CBRN) |
+| AI face-swap / voice-clone | **Explicitly prohibited if unlabeled** (mandatory GB 45438) | Labeling required under DSA + C2PA | Patchwork of state laws | Non-consensual impersonation prohibited |
+| Armed conflict / terrorism | Explicitly prohibited | Explicitly prohibited | Explicitly prohibited | Explicitly prohibited |
 
-> **Schaefer & Sheehan** 观察：中国 AUP 承担了西方 AUP 不承担的职能——
-> 它实际上是**国家内容审核标准的企业分发版**。相较之下，Anthropic / OpenAI AUP 的核心在"前沿风险 + 公司价值观"，
-> 而豆包 AUP 的核心在"备案通过 + 专项执法响应"。
+> **Schaefer and Sheehan** observation: the Chinese AUP performs functions that Western AUPs do not—
+> it effectively operates as the **enterprise-distributed edition of national content moderation standards**. By contrast, the Anthropic / OpenAI AUP is built around "frontier risk + corporate values,"
+> while the Doubao AUP is built around "filing approval + targeted enforcement response."
 
-## 五、2025–2026 关键更新
+## 5. Key updates, 2025–2026
 
-- **2025-09-01**：《人工智能生成合成内容标识办法》+ **GB 45438-2025** 同日施行。
-  豆包、Seed-Seedance（视频）、Seed-ASR（语音）全线适配显式 + 隐式双层标识要求
-- **2026-04-10**：《人工智能拟人化互动服务管理暂行办法》发布，2026-07-15 施行。
-  豆包"虚拟朋友 / AI 人设"功能须重新备案，用户协议预计同步更新
-  （预览版条款已要求"未成年人夜间 22:00–次日 6:00 禁用拟人化聊天"、"情感成瘾识别机制"等）
-- **2026-Q1**：PAFACA（《保护美国人免受外国对手控制应用程序法》）在美执行压力持续，
-  TikTok 美国资产出售谈判尚未收盘；Community Guidelines 美国版本与全球版本的条款开始出现事实差异
+- **2025-09-01**: the *Measures for Labeling AI-Generated Synthetic Content* and **GB 45438-2025** took effect on the same day.
+  Doubao, Seed-Seedance (video), and Seed-ASR (speech) all adapted to the dual explicit + implicit labeling requirements.
+- **2026-04-10**: the *Interim Measures for the Administration of Anthropomorphic Interactive AI Services* were published, taking effect on 2026-07-15.
+  Doubao's "virtual friend / AI persona" functions must be re-filed, and user agreements are expected to be updated in parallel
+  (the draft preview already requires "no anthropomorphic chat for minors between 22:00–06:00," "emotional-addiction detection mechanisms," etc.).
+- **2026 Q1**: enforcement pressure under PAFACA (Protecting Americans from Foreign Adversary Controlled Applications Act) continues in the U.S.;
+  negotiations over the sale of TikTok's U.S. assets have not concluded. Factual divergence between the U.S. and global editions of the Community Guidelines is beginning to appear.
 
-## 六、学术批评
+## 6. Academic critique
 
-### 中国学界视角
+### Perspectives from Chinese scholarship
 
-- **张凌寒（中国政法大学）**：在《平台法治》一书中提出，中国 AI 平台的用户协议正在经历
-  "由合同向公法义务"的转化——用户协议不再只是 B2C 合同，而是承担了行政法上的内容审核义务。
-  豆包用户协议即是典型
-- **戴昕（北京大学）**：批评算法备案导致用户协议"趋同化"——
-  各家大模型的禁止类别高度一致，用户选择权实质上被压缩
-- **薛澜（清华大学）**：将这种平台规则与国家规则的耦合称为**"敏捷协同治理"**的必然产物——
-  部门规章快速迭代、企业规则随之同步，但代价是**稳定性与可预期性不足**
+- **Zhang Linghan 张凌寒 (China University of Political Science and Law)** in *Platform Rule of Law* argues that user agreements for Chinese AI platforms
+  are undergoing a shift "from contract to public-law obligation": user agreements are no longer purely B2C contracts but carry administrative-law content-review duties.
+  The Doubao user agreement is a paradigm case.
+- **Dai Xin 戴昕 (Peking University)**: critiques filing for causing convergence of user agreements—
+  the prohibition lists of large models look nearly identical across firms, which meaningfully shrinks the user's choice set.
+- **Xue Lan 薛澜 (Tsinghua University 清华大学)**: frames this coupling of platform rules with state rules as an inevitable product of **agile collaborative governance** (敏捷治理)—
+  department rules iterate rapidly and corporate rules follow suit, at the price of **insufficient stability and predictability**.
 
-### 国际学界视角
+### International perspectives
 
-- **Matt Sheehan（Carnegie）**："Algorithm regulation as content regulation"——
-  中国的算法治理在实质上是内容治理的延伸。豆包 AUP 是最清晰的例证
-- **Kendra Schaefer（Trivium China）**：中国企业 AUP 的"可披露性"低——
-  很多具体审核边界在 AUP 中不明示，而在**备案材料 + 企业内部审核手册**中
-- **Rebecca Arcesati（MERICS）**：TikTok 在欧盟的合规实践反向影响了公司总部的治理结构——
-  欧盟 DSA 的"Statement of Reasons"机制要求对每一条下架 / 降权决定给出结构化理由，
-  这一能力最终也会被豆包国内版复用
-- **Jeffrey Ding（GWU）**：字节的双轨 AUP 结构是"differential transparency"的教科书案例——
-  面对不同监管方提供不同的可见性，而非统一的最高透明度
+- **Matt Sheehan (Carnegie)**: "Algorithm regulation as content regulation"—
+  Chinese algorithm governance is in substance an extension of content governance, and the Doubao AUP is the clearest illustration.
+- **Kendra Schaefer (Trivium China)**: the "disclosability" of Chinese corporate AUPs is low—
+  many concrete moderation boundaries are not stated in the AUP but live in **filing materials plus internal moderation manuals**.
+- **Rebecca Arcesati (MERICS)**: TikTok's EU compliance practice has reflexively shaped the governance architecture at headquarters—
+  the DSA Statement of Reasons mechanism requires structured rationales for every takedown / demotion decision,
+  and that capability will ultimately be reused by the China-facing Doubao version.
+- **Jeffrey Ding (GWU)**: ByteDance's dual-track AUP structure is a textbook case of "differential transparency"—
+  different regulators receive different visibility rather than a single maximum-transparency front.
 
-## 七、实务洞察：字节"合规三层"如何落地 AUP
+## 7. Operational insight: how ByteDance's "three-layer compliance" executes its AUP
 
-基于公开访谈、员工披露与行业惯例，字节实际执行 AUP 的内部架构：
+Based on public interviews, employee disclosures, and industry conventions, ByteDance's internal architecture for AUP execution is:
 
-1. **党委 + 法务总部（合规顶层）**：决定 AUP 的总体红线——
-   特别是涉政、涉军、涉重大舆情类别的**原则级条款**。重大修订（如 2023-08 首批备案前的大改版）
-   由党委审议
-2. **算法备案团队（产品合规层）**：逐产品生成 CAC 备案材料，其中"用户协议 + 内容规范"
-   作为标准附件。**新产品上线前的备案周期通常 4–8 周**
-3. **Trust & Safety（运行层）**：数千人规模的内容审核团队，按 AUP 执行具体案例判定。
-   国内团队主要在天津 / 成都 / 济南；海外主要在都柏林 / 洛杉矶 / 新加坡
+1. **Party Committee (党委) + corporate legal (the top compliance layer)**: sets the overall red lines for the AUP—
+   especially **principle-level clauses** concerning political, military, and major public-opinion categories. Major revisions
+   (e.g. the big rewrite before the first filing batch in 2023-08) are reviewed by the Party Committee.
+2. **Algorithm filing team (product compliance layer)**: prepares CAC filing materials per product, with "user agreement + content rules" as standard annexes.
+   **The filing cycle before a new product launch is typically 4–8 weeks.**
+3. **Trust & Safety (operating layer)**: thousands of content reviewers apply the AUP to individual cases.
+   Domestic teams are primarily based in Tianjin, Chengdu, and Jinan; overseas teams in Dublin, Los Angeles, and Singapore.
 
-> 与 OpenAI / Anthropic 的"少量政策制定人员 + 模型端执行"相比，字节是**制度密集 + 人力密集**的路线。
-> 这也解释了为何字节在海外从未出现 "delete forever prompt" / "system prompt 泄露"级别的 AUP 争议——
-> 前端已被多层人工过滤预处理。
+> Compared to OpenAI / Anthropic's "small policy staff + model-side enforcement," ByteDance runs an **institution-dense and labor-dense** model.
+> This also explains why ByteDance has not experienced overseas AUP controversies at the level of "delete-forever prompts" or "system-prompt leaks"—
+> multiple layers of human filters already preprocess the front end.
 
-## 八、相关索引
+## 8. Related index
 
-- 顶层规则：[《生成式 AI 暂行办法》](/rules/china/generative-ai-interim-measures/)
-  · [《深度合成规定》](/rules/china/deep-synthesis-provisions/)
-  · [《算法推荐规定》](/rules/china/algorithm-recommendation-provisions/)
-  · [《标识办法》+ GB 45438-2025](/rules/china/biaozhi-banfa/)
-  · [《拟人化互动服务办法》](/rules/china/anthropomorphic-interaction-services/)
-- 同类对比：[Anthropic / usage-policy](/companies/anthropic/usage-policy/)
+- Top-level rules: [*Generative AI Interim Measures*](/rules/china/generative-ai-interim-measures/)
+  · [*Deep Synthesis Provisions*](/rules/china/deep-synthesis-provisions/)
+  · [*Algorithm Recommendation Provisions*](/rules/china/algorithm-recommendation-provisions/)
+  · [*Labeling Measures* + GB 45438-2025](/rules/china/biaozhi-banfa/)
+  · [*Anthropomorphic Interactive Services Measures*](/rules/china/anthropomorphic-interaction-services/)
+- Peer comparison: [Anthropic / usage-policy](/companies/anthropic/usage-policy/)
   · [OpenAI / usage-policy](/companies/openai/usage-policy/)
-- 欧盟层：DSA VLOP 条款体系（第 14 / 17 / 24 / 34 条）
+- EU layer: DSA VLOP clause system (Art. 14 / 17 / 24 / 34)

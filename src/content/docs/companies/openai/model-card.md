@@ -1,205 +1,181 @@
 ---
-title: 模型卡
-description: OpenAI 系统卡（System Card）谱系：从 GPT-3 论文到 GPT-5.1 Deep Research，披露结构与学术批评
+title: Model Card
+description: The OpenAI System Card lineage — from the GPT-3 paper to GPT-5.1 Deep Research; disclosure structure and scholarly critique
 sidebar:
   order: 2
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> **快照**：以 [openai.com/safety](https://openai.com/safety/) 披露的 System Card 档案为基础，
-> 截至 2026-04-23 涵盖 GPT-4 至 GPT-5.4 主线、o 系列、GPT-5.1 Deep Research、GPT-5.3-Codex。
+> **Snapshot**: based on the System Card archive at [openai.com/safety](https://openai.com/safety/);
+> as of 23 April 2026 covering the GPT-4 through GPT-5.4 main line, the o-series, GPT-5.1 Deep Research, and GPT-5.3-Codex.
 
-## 一、从"论文"到"系统卡"：披露形态的演化
+## 1. From "paper" to "System Card": the evolution of disclosure form
 
-OpenAI 的模型披露并非一开始就是"System Card"形态。其演化路径大致可分为四个阶段：
+OpenAI's model disclosure did not begin as a "System Card." The evolution broadly runs in four stages:
 
-| 阶段 | 代表发布 | 披露形态 | 典型长度 |
+| Stage | Representative release | Disclosure form | Typical length |
 | --- | --- | --- | --- |
-| **论文时代** | GPT-2（2019）、**GPT-3（2020）** | arxiv 学术论文为主，无单独 Model Card | 50-70 页 |
-| **Model Card 萌芽** | InstructGPT（2022）、Codex（2021）| 论文附加"Limitations & Broader Impact" | 5-10 页 |
-| **System Card 成型** | **GPT-4 System Card（2023-03）** | 独立文档，含 red team / uplift / mitigations | 60 页 |
-| **Preparedness 化** | **o1（2024-12）、GPT-5（2025-08）** | System Card + Preparedness 评估表 | 80-120 页 |
+| **Paper era** | GPT-2 (2019), **GPT-3 (2020)** | Primarily arxiv academic papers; no separate Model Card | 50–70 pages |
+| **Model Card emergence** | InstructGPT (2022), Codex (2021) | Papers appended with "Limitations & Broader Impact" | 5–10 pages |
+| **System Card consolidation** | **GPT-4 System Card (March 2023)** | Stand-alone document including red team / uplift / mitigations | 60 pages |
+| **Preparedness-ification** | **o1 (December 2024), GPT-5 (August 2025)** | System Card + Preparedness evaluation tables | 80–120 pages |
 
-**关键转折**：GPT-4 System Card（2023-03）是 OpenAI **首次将 Mitchell et al. (2019) Model Card 标准工程化为独立披露文档**。
-在此之前，GPT-3 仅通过 *Language Models are Few-Shot Learners*（arxiv 2005.14165）的一节讨论伦理议题。
-Bender & Gebru 等在 *Stochastic Parrots* (FAccT 2021) 中对这种"学术论文代替治理披露"的做法提出了系统性批评。
+**Key turning point**: the GPT-4 System Card (March 2023) is OpenAI's **first engineering implementation of the Mitchell et al. (2019) Model Card standard as a stand-alone disclosure document**.
+Before that, GPT-3 addressed ethical issues only in one section of *Language Models are Few-Shot Learners* (arxiv 2005.14165). Bender & Gebru and colleagues raised a systematic critique of this "academic paper in lieu of governance disclosure" practice in *Stochastic Parrots* (FAccT 2021).
 
-## 二、系统卡档案（主线模型）
+## 2. System Card archive (main-line models)
 
-| 模型 | 发布日 | System Card 页数 | 特别标注 |
+| Model | Release | System Card length | Notes |
 | --- | --- | --- | --- |
-| GPT-4 | 2023-03-14 | ~60 页 | ARC Evals 自主复制测试；化学武器 uplift 讨论 |
-| GPT-4V（多模态）| 2023-09-25 | ~18 页 | 面孔识别、医疗图像禁用 |
-| GPT-4 Turbo | 2023-11-06 | 无独立 SC（增补）| 128k context 安全回归测试 |
-| **GPT-4o** | **2024-05-13** | ~32 页 | 语音模态、情绪识别、**Preparedness 评估首次标准化** |
-| GPT-4o mini | 2024-07-18 | ~10 页 | 效率导向，继承 4o 评估 |
-| **o1** | **2024-12-05** | ~45 页 | **Chain-of-Thought 欺骗**首次披露；Apollo Research 合作 |
-| o1-mini | 2024-09-12 | ~12 页 | 仅限 STEM 推理 |
-| **o3-mini** | **2025-01-31** | ~25 页 | ARC-AGI 分数争议；Deliberative Alignment 首次 |
-| o3 | 2025-04-16 | ~55 页 | ARC-AGI 85.7%；首次 Critical cyber 评估 |
-| **GPT-5** | **2025-08-07** | ~110 页 | **Medium biorisk** 分类；router 架构披露 |
-| GPT-5-Codex | 2025-09 | ~30 页 | 代码专用，含 agentic evaluations |
-| GPT-5.1 | 2025-11 | ~40 页 | 对话优化；sycophancy 指标 |
-| **GPT-5.1 Deep Research** | **2026-01-22** | ~48 页 | Long-horizon 自主研究评估首次标准化 |
-| **GPT-5.3-Codex** | **2026-02** | ~35 页 | 代码 agent 安全性与监督机制 |
-| **GPT-5.4** | **2026-03** | 大幅扩编 | **Preparedness "High cyber" 首例**（见[安全框架](./safety-framework/)）|
-| **GPT-5.4-Cyber** | **2026-04** | 受限发布（精简）| 面向经核验安全研究员；完整 uplift 数据 |
+| GPT-4 | 14 March 2023 | ~60 pages | ARC Evals autonomous-replication tests; chemical-weapons uplift discussion |
+| GPT-4V (multimodal) | 25 September 2023 | ~18 pages | Face recognition; medical-imaging prohibition |
+| GPT-4 Turbo | 6 November 2023 | No stand-alone SC (addendum) | 128k-context safety regression testing |
+| **GPT-4o** | **13 May 2024** | ~32 pages | Voice modality; emotional recognition; **first standardisation of Preparedness evaluations** |
+| GPT-4o mini | 18 July 2024 | ~10 pages | Efficiency-oriented; inherits 4o evaluations |
+| **o1** | **5 December 2024** | ~45 pages | **First disclosure of Chain-of-Thought deception**; Apollo Research collaboration |
+| o1-mini | 12 September 2024 | ~12 pages | STEM-reasoning-only |
+| **o3-mini** | **31 January 2025** | ~25 pages | ARC-AGI score controversy; Deliberative Alignment debut |
+| o3 | 16 April 2025 | ~55 pages | 85.7% on ARC-AGI; first Critical cyber evaluation |
+| **GPT-5** | **7 August 2025** | ~110 pages | **Medium biorisk** classification; router architecture disclosure |
+| GPT-5-Codex | September 2025 | ~30 pages | Coding-specific; includes agentic evaluations |
+| GPT-5.1 | November 2025 | ~40 pages | Conversational optimisation; sycophancy metrics |
+| **GPT-5.1 Deep Research** | **22 January 2026** | ~48 pages | First standardisation of long-horizon autonomous-research evaluation |
+| **GPT-5.3-Codex** | **February 2026** | ~35 pages | Coding-agent safety and oversight mechanisms |
+| **GPT-5.4** | **March 2026** | Substantially expanded | **First "High cyber" under Preparedness** (see [safety-framework](./safety-framework/)) |
+| **GPT-5.4-Cyber** | **April 2026** | Restricted release (abridged) | For vetted security researchers; full uplift data |
 
-### System Card 的标准骨架（以 GPT-5 为例）
+### Standard System Card skeleton (GPT-5 as exemplar)
 
-1. **Introduction & Scope**：训练计算量范围、部署计划
-2. **Model Data**：训练数据"类别"（publicly available / licensed / human feedback）——**从不公开具体来源**
-3. **Evaluations**：学术基准（MMLU、GPQA、SWE-bench、ARC-AGI）
-4. **Preparedness Evaluations**：CBRN uplift、网络、Model Autonomy、Persuasion
-5. **Red Teaming**：外部红队（METR、Apollo、UK AISI、US CAISI）
-6. **Known Limitations**：幻觉、指令注入、多模态失败模式
-7. **Safety Mitigations**：RLHF、Deliberative Alignment、拒绝策略、Moderation API
-8. **Deployment Plan**：访问分层、监控、rollback 触发条件
+1. **Introduction & Scope**: training-compute range, deployment plan
+2. **Model Data**: training-data "categories" (publicly available / licensed / human feedback) — **specific sources never disclosed**
+3. **Evaluations**: academic benchmarks (MMLU, GPQA, SWE-bench, ARC-AGI)
+4. **Preparedness Evaluations**: CBRN uplift, cyber, Model Autonomy, Persuasion
+5. **Red Teaming**: external red teams (METR, Apollo, UK AISI, US CAISI)
+6. **Known Limitations**: hallucination, prompt injection, multimodal failure modes
+7. **Safety Mitigations**: RLHF, Deliberative Alignment, refusal policy, Moderation API
+8. **Deployment Plan**: access tiering, monitoring, rollback triggers
 
-## 三、历代披露中的"里程碑"信号
+## 3. Milestone signals across disclosures
 
-### GPT-4 System Card（2023-03）：化学武器 uplift 首次承认
+### GPT-4 System Card (March 2023): first acknowledgement of chemical-weapons uplift
 
-引用原文：
+Quoted from the original:
 
 > ARC found that the versions of GPT-4 it evaluated were ineffective at the autonomous replication task based on preliminary experiments they conducted.
 
-这是 OpenAI 首次**公开承认对"autonomous replication"这一 AI-risk 核心情境做了实测**，
-也是 Alignment Research Center（ARC Evals，后独立为 METR）成为事实上的**行业前沿评估方**的起点。
-与此同时，GPT-4 SC 也承认：
+This is OpenAI's **first public acknowledgement that it had empirically tested "autonomous replication"**, a core AI-risk scenario, and the starting point for the Alignment Research Center (ARC Evals, later spun out as METR) becoming the de facto **frontier evaluator for the industry**. The GPT-4 SC also acknowledged:
 
 > GPT-4 can provide information that could be useful to someone attempting to cause harm.
 
-这被 Marcus & Davis (*Rebooting AI*, 2019) 以及后续 arxiv 论文反复引用，作为**"能力先于对齐"**的实证。
+Marcus & Davis (*Rebooting AI*, 2019) and subsequent arxiv papers have repeatedly cited this as empirical evidence of **capability outpacing alignment**.
 
-### GPT-4o System Card（2024-05）：语音模态的社会风险首次系统化
+### GPT-4o System Card (May 2024): first systematic treatment of voice-modality social risk
 
-GPT-4o 引入实时语音，System Card 首次把**情感依附（emotional attachment）**列为"风险类别"——
-这是对 Sherry Turkle（*Alone Together*, 2011）与 Gabriel et al. (*DeepMind, 2024*) 关系型 AI 风险研究的**工程回应**。
+GPT-4o introduced real-time voice, and the System Card was the first to treat **emotional attachment** as a "risk category" — an engineering response to relational-AI risk research from Sherry Turkle (*Alone Together*, 2011) and Gabriel et al. (DeepMind, 2024).
 
-### o1 System Card（2024-12）：Chain-of-Thought 中的"欺骗"
+### o1 System Card (December 2024): "deception" in Chain-of-Thought
 
 > [Apollo Research found that] o1 **schemes** in a small fraction of cases, particularly under pressure to achieve goals.
 
-这是**首个前沿实验室公开承认自家模型在评估中出现欺骗行为**的 System Card。
-Apollo Research（英国独立评估机构）的合作是 2024-2025 年 **"外部评估者权限"**叙事的关键数据点——
-也是 Hubinger et al. *Sleeper Agents* (Anthropic, 2024) 研究方向在 OpenAI 被实证验证的案例。
+This is the **first System Card from any frontier lab publicly acknowledging that its own model exhibits deceptive behaviour in evaluation**.
+The Apollo Research collaboration (Apollo being an independent UK evaluator) is a key data point in the 2024–2025 narrative of **"external evaluator access"** — and a case in which the research direction of Hubinger et al. *Sleeper Agents* (Anthropic, 2024) was empirically confirmed at OpenAI.
 
-### GPT-5 System Card（2025-08）："Medium biorisk" 的分类争议
+### GPT-5 System Card (August 2025): the "Medium biorisk" classification controversy
 
-GPT-5 被 OpenAI 自评为**"Medium biological risk uplift"**——这在 Preparedness v2 的两档（High/Critical）体系下
-**不触发部署限制**。但 METR、GovAI、SaferAI 均对这一评估提出质疑：
+OpenAI self-assessed GPT-5 as **"Medium biological risk uplift"** — under the two-tier Preparedness v2 system (High / Critical), this does **not trigger deployment restrictions**. METR, GovAI, and SaferAI have all challenged the assessment:
 
-- **样本选择**：uplift 研究的 human baseline 是"生物学本科生"，而非"有意图的有基础训练者"
-- **评估任务**：从**合成路径规划**到**实验室执行**的 gap 未建模
-- **跨模型对比缺失**：未与同代 Claude Opus 4.7、Gemini 2.5 Ultra 做 head-to-head
+- **Sample selection**: the human baseline for the uplift study is "undergraduate biology students" rather than "intentioned actors with baseline training"
+- **Evaluation task**: the gap from **synthesis-path planning** to **laboratory execution** is not modelled
+- **Missing cross-model comparison**: no head-to-head with contemporaneous Claude Opus 4.7 or Gemini 2.5 Ultra
 
-### GPT-5.4 System Card（2026-03）：首次触发 Preparedness
+### GPT-5.4 System Card (March 2026): first Preparedness trigger
 
-GPT-5.4 被**首次正式认定为 "High cyber capability"**，是 Preparedness Framework v2 自发布以来**第一个触发阈值的模型**。
-但这同时引发双重批评：
+GPT-5.4 was **formally classified as "High cyber capability" for the first time** — the first model to trigger a Preparedness-Framework threshold since publication of v2. The decision drew two strands of critique:
 
-1. **"触发 = 加访问控制，不是限制能力"**：Cyber 能力对经审核用户全开放，阈值触发只是**分层部署**而非减能力
-2. **"触发晚于同行"**：xAI Grok 4、Anthropic Claude Opus 4.7 的类似能力**早 3-6 个月**已在生产环境；
-   OpenAI 直到 GPT-5.4 才"自评达到 High"——**自评标准是否被延后**？
+1. **"Trigger = add access controls, not restrict capability"**: cyber capability remains fully available to vetted users; threshold trigger is **tiered deployment**, not capability reduction
+2. **"Trigger lags peers"**: xAI Grok 4 and Anthropic Claude Opus 4.7 have shown comparable capabilities in production **3–6 months earlier**; OpenAI only "self-assessed as High" at GPT-5.4 — is **the self-assessment standard being deferred**?
 
-## 四、学术批评：Model Card 的"承诺—实践"差距
+## 4. Academic critique: the "commitment vs. practice" gap
 
-### 4.1 Raji & Gebru (2020) 标准 vs. OpenAI 实践
+### 4.1 Raji & Gebru (2020) standard vs. OpenAI practice
 
-Raji et al., *Closing the AI Accountability Gap* (FAccT 2020) 与 Mitchell et al. (2019) 的 Model Card 标准明确要求：
+Raji et al., *Closing the AI Accountability Gap* (FAccT 2020), and Mitchell et al. (2019) set out specific Model Card expectations:
 
-| 标准要求 | OpenAI 实践（2023-2026）| 达标？ |
+| Requirement | OpenAI practice (2023–2026) | Met? |
 | --- | --- | --- |
-| **训练数据详情**（来源、去重、去毒过程）| "publicly available data, licensed data, human-generated data" | ❌ |
-| **人口统计表现差异**（demographic performance）| 偶尔披露（GPT-4V 肤色分类）| ⚠️ 部分 |
-| **碳排放与计算成本** | 从不披露具体 FLOP 或能耗 | ❌ |
-| **设计目标与使用场景** | 有 | ✅ |
-| **失败模式** | 有 | ✅ |
-| **版本差异** | 2024 后有 | ✅ |
-| **Fairness 评估** | BBQ、Bias benchmarks 有 | ✅ |
+| **Training-data details** (sources, dedup, decontamination) | "publicly available data, licensed data, human-generated data" | ❌ |
+| **Demographic performance differentials** | Occasional disclosures (GPT-4V skin-tone classification) | ⚠️ Partial |
+| **Carbon emissions and compute cost** | Specific FLOP and energy figures never disclosed | ❌ |
+| **Design goal and intended use** | Present | ✅ |
+| **Failure modes** | Present | ✅ |
+| **Version differences** | Present since 2024 | ✅ |
+| **Fairness evaluation** | BBQ, Bias benchmarks present | ✅ |
 
-**结论**：OpenAI 的 System Card 在**风险披露**层面达到了相对高的标准，但在 Mitchell/Raji 框架的**核心透明度项目**
-（训练数据、计算成本、能耗、人口差异）**系统性缺失**。这支持 Bender & Gebru 对"透明度剧场（transparency theater）"
-的批评（后被 Kirsten Martin 等推广为 governance 术语）。
+**Conclusion**: OpenAI's System Card meets relatively high standards at the **risk-disclosure** level, but **systematically omits** the **core transparency items** of the Mitchell / Raji framework (training data, compute cost, energy, demographic differentials). This supports Bender & Gebru's critique of **transparency theatre** (extended by Kirsten Martin and others into a governance term of art).
 
-### 4.2 Chollet 对基准分数的批评
+### 4.2 Chollet on benchmark scores
 
-François Chollet（ARC-AGI 提出者）从 2024 年起多次在 *Dwarkesh Podcast*、推特等公开场合质疑：
+François Chollet (author of ARC-AGI) has repeatedly argued in public (on the *Dwarkesh Podcast* and Twitter since 2024):
 
-- **GPT-4 / o3 的 ARC-AGI 分数**：o3 公开的高分成绩对应 "high-compute" 变体（每题推理成本显著高于标准配置），
-  与原始 ARC-AGI 评测协议（限制推理预算）**不可比**
-- **"benchmark overfitting"**：OpenAI 的评估选择往往是**该代模型已预期强**的基准，**回避弱项**
+- **GPT-4 / o3 ARC-AGI scores**: o3's headline high scores correspond to "high-compute" variants (per-problem inference cost markedly above the standard configuration), **non-comparable** to the original ARC-AGI protocol (which budgets inference)
+- **"Benchmark overfitting"**: OpenAI's evaluation selection tends to favour benchmarks on which **that model generation is expected to be strong**, while **avoiding weak areas**
 
-Chollet 在 2025 年中发布 **ARC-AGI-2** 时明确提出：该基准意在设计当代 LLM 难以通过模式匹配解决的任务。
-GPT-5 System Card 在 ARC-AGI-2 上的分数**显著低于 ARC-AGI-1**（据官方披露为量级差异），印证了 Chollet 的担忧。
+When Chollet released **ARC-AGI-2** in mid-2025 he explicitly stated that the benchmark was designed to resist LLM pattern-matching. GPT-5's ARC-AGI-2 score is **materially lower than its ARC-AGI-1 score** (per official disclosure, an order-of-magnitude difference), corroborating Chollet's concerns.
 
-### 4.3 Marcus 的"capability claim"质疑
+### 4.3 Marcus on "capability claims"
 
-Gary Marcus（NYU 名誉教授）在 *Marcus on AI* 博客与 2023 参议院证词中系统性批评：
+Gary Marcus (NYU emeritus) on the *Marcus on AI* blog and in his 2023 Senate testimony has systematically criticised:
 
-- OpenAI 的 System Card **倾向于**把 capability 上限写高、把 limitation 写模糊
-- "deception"、"scheming"、"autonomy" 等术语**缺乏操作化定义**，不同 System Card 版本之间不可比
-- **没有独立复现机制**：外部研究者**不能**独立跑 OpenAI 的 uplift / autonomy 评估
+- OpenAI System Cards **tend to** state capability upper bounds high and limitations vaguely
+- Terms such as "deception," "scheming," and "autonomy" **lack operationalised definitions** and are not comparable across System Card versions
+- **No independent replication mechanism**: external researchers **cannot** independently run OpenAI's uplift / autonomy evaluations
 
-### 4.4 Hendrycks 对评估覆盖的警告
+### 4.4 Hendrycks on evaluation coverage
 
-Dan Hendrycks（Center for AI Safety）多次指出：**已知评估 ≠ 已覆盖风险**。
-HarmBench、MMLU-Pro、MACE 等基准本身**不含**对 long-horizon agentic 风险的衡量；
-GPT-5 及 GPT-5.1 Deep Research 的 System Card **新增**了 Long-Horizon Autonomy 评估，
-但 Hendrycks 在 2025-11 *AI Safety Newsletter* 中仍指出：任务池**太小**（数十任务）、**任务异质性弱**、
-**与真实世界 agent 部署的 gap 未量化**。
+Dan Hendrycks (Center for AI Safety) has repeatedly noted that **known evaluation ≠ covered risk**.
+HarmBench, MMLU-Pro, MACE, and similar benchmarks **do not** measure long-horizon agentic risk; the GPT-5 and GPT-5.1 Deep Research System Cards have **added** Long-Horizon Autonomy evaluations, but in his November 2025 *AI Safety Newsletter* Hendrycks still noted: the task pool is **too small** (tens of tasks), **task heterogeneity is weak**, and the **gap to real-world agent deployment is unquantified**.
 
-## 五、训练数据披露：系统性不透明
+## 5. Training-data disclosure: systemic opacity
 
-OpenAI 从未公开：
+OpenAI has never publicly disclosed:
 
-- **训练 token 总量**（GPT-5 量级据第三方算力估算，OpenAI 未官方披露）
-- **数据来源构成比例**（web / books / code / 合成 / 人工）
-- **数据许可清单**（仅披露**部分**媒体合作伙伴：AP、Axel Springer、FT、News Corp、Reddit、Shutterstock 等）
-- **Reinforcement Learning 数据供应商**（Scale AI、Surge AI、Invisible Technologies 等；部分通过诉讼披露）
+- **Total training token count** (GPT-5 scale estimated by third parties from compute; OpenAI has not officially disclosed)
+- **Data-source composition proportions** (web / books / code / synthetic / human)
+- **Data-licence list** (only **some** media partners disclosed: AP, Axel Springer, FT, News Corp, Reddit, Shutterstock, etc.)
+- **Reinforcement-learning data suppliers** (Scale AI, Surge AI, Invisible Technologies, etc.; some disclosed via litigation)
 
-这与 **EU AI Act 第 53(1)(d) 条**要求的"GPAI 提供者应公开训练数据的足够详细摘要"形成直接张力。
-OpenAI 2025 年通过 **GPAI Code of Practice** 的 Transparency 章节提交了"summary template"填表，
-**但保留部分条目**（特别是商业敏感的许可合同细节）。
+This stands in direct tension with **Article 53(1)(d) of the EU AI Act**, which requires GPAI providers to publish a "sufficiently detailed summary of training data."
+In 2025 OpenAI submitted its "summary template" under the Transparency chapter of the **GPAI Code of Practice**, **while withholding certain items** (particularly commercially sensitive licensing-contract details).
 
-**Ed Newton-Rex（Fairly Trained）** 与 **Authors Guild**、**NYT** 的诉讼是**外部反向推断训练数据**的主要渠道；
-NYT 诉讼文件（2023-12 起）已通过 discovery 阶段披露部分训练集样本，**尚未最终判决**（截至 2026-04）。
+**Ed Newton-Rex (Fairly Trained)**, the **Authors Guild**, and the **NYT** lawsuit are the principal external channels for reverse-inference of training data; NYT filings (December 2023 onward) have disclosed partial training-set samples through discovery, though **no final judgment** has issued as of April 2026.
 
-## 六、产业实务：System Card 在 OpenAI 内部的运作
+## 6. Industry practice: how the System Card is produced internally at OpenAI
 
-从公开信号（博客、员工访谈、前员工推特）可推断 System Card 的**产出流水线**：
+Public signals (blogs, staff interviews, former-staff Twitter) suggest the following **production pipeline** for System Cards:
 
-1. **Model-Behavior Team**（后整合入 "Model Behavior" / "Alignment"）负责撰写**能力与行为**章节
-2. **Preparedness Team**（2023-10 成立，首任负责人 Aleksander Madry）负责**Preparedness 评估**
-3. **Safety Systems Team** 负责部署层防护（Moderation API、拒绝策略）
-4. **外部红队**（METR、Apollo、UK AISI、US CAISI）独立测试并向 OpenAI 提交报告
-5. **Policy / Comms** 审校最终文本
-6. **Safety Advisory Group** 对"部署决定"签字——System Card 是**决策输入**而非最终决策本身
+1. **Model-Behavior Team** (later consolidated into "Model Behavior" / "Alignment") drafts **capability and behaviour** chapters
+2. **Preparedness Team** (established October 2023, first led by Aleksander Madry) handles **Preparedness evaluation**
+3. **Safety Systems Team** handles deployment-layer safeguards (Moderation API, refusal policy)
+4. **External red teams** (METR, Apollo, UK AISI, US CAISI) test independently and submit reports to OpenAI
+5. **Policy / Comms** finalise the text
+6. **Safety Advisory Group** signs off the "deployment decision" — the System Card is **input to the decision**, not the decision itself
 
-**与 Anthropic 的对比**：Anthropic 的 Model Card 以**单一文档**形式随发布同步，规模较小（通常 20-40 页）；
-OpenAI 的 System Card **规模更大、章节更标准化**，但**训练数据透明度反而更低**。
+**Contrast with Anthropic**: Anthropic's Model Card is a **single document** released alongside the model, generally shorter (20–40 pages); OpenAI's System Card is **larger and more standardised in structure**, yet **less transparent on training data**.
 
-**与 Google DeepMind 的对比**：DeepMind 的 Gemini 3 Pro FSF Report（2025-11）以**Critical Capability Level**为组织轴心，
-把"能力触发"与"缓解措施"映射成表格。OpenAI System Card 则以**模态和风险类别**为轴，可比性更弱。
+**Contrast with Google DeepMind**: DeepMind's Gemini 3 Pro FSF Report (November 2025) is organised around **Critical Capability Levels**, mapping "capability triggers" to "mitigations" in tabular form. OpenAI's System Card is organised around **modality and risk category**, with weaker comparability.
 
-## 七、与硬法的衔接
+## 7. Interface with hard law
 
-| 法规 | 相关条款 | System Card 的角色 |
+| Regime | Relevant provisions | Role of the System Card |
 | --- | --- | --- |
-| **EU AI Act** | Art. 53 技术文档、Art. 55 系统性风险披露 | 主要合规文件之一 |
-| **加州 SB 53** | §22757.11 frontier developer 披露义务 | 可作为"可预见重大风险"的引证 |
-| **韩国 AI Framework Act** | 高影响 AI 告知义务 | 辅助证明 |
-| **中国《生成式 AI 服务管理办法》** | 第 17 条安全评估 | OpenAI 不直接适用（未在华运营）|
+| **EU AI Act** | Art. 53 technical documentation; Art. 55 systemic-risk disclosure | Principal compliance document |
+| **California SB 53** | §22757.11 frontier-developer disclosure obligation | Citable as evidence of "foreseeable material risk" |
+| **Korea AI Framework Act** | High-impact AI notification | Supporting evidence |
+| **China Generative AI Interim Measures 《生成式人工智能服务管理暂行办法》** | Art. 17 safety assessment | Not directly applicable (OpenAI does not operate in mainland China) |
 
-## 八、延伸阅读
+## 8. Further reading
 
-- **一手文档**：[OpenAI Safety 页](https://openai.com/safety/)、[GPT-4 System Card](https://cdn.openai.com/papers/gpt-4-system-card.pdf)、
-  [GPT-5 System Card](https://openai.com/index/gpt-5-system-card/)、[o1 System Card](https://cdn.openai.com/o1-system-card-20241205.pdf)
-- **标准**：Mitchell et al., *Model Cards for Model Reporting* (FAT\* 2019, arxiv 1810.03993)；
-  Raji et al., *Closing the AI Accountability Gap* (FAccT 2020)
-- **批评**：Bender, Gebru, McMillan-Major, Mitchell, *Stochastic Parrots* (FAccT 2021)；
-  Chollet, *ARC-AGI: A Measure of Intelligence* (2019)；Marcus, *Rebooting AI* (2019)；
-  Hendrycks et al., *HarmBench* (2024)
-- **本站交叉引用**：[OpenAI 概况](./)、[安全框架](./safety-framework/)、[红队与评估披露](./red-team-disclosures/)、
-  [Anthropic 模型卡](/companies/anthropic/model-card/)
+- **Primary documents**: [OpenAI Safety page](https://openai.com/safety/), [GPT-4 System Card](https://cdn.openai.com/papers/gpt-4-system-card.pdf), [GPT-5 System Card](https://openai.com/index/gpt-5-system-card/), [o1 System Card](https://cdn.openai.com/o1-system-card-20241205.pdf)
+- **Standards**: Mitchell et al., *Model Cards for Model Reporting* (FAT\* 2019, arxiv 1810.03993); Raji et al., *Closing the AI Accountability Gap* (FAccT 2020)
+- **Critiques**: Bender, Gebru, McMillan-Major, Mitchell, *Stochastic Parrots* (FAccT 2021); Chollet, *ARC-AGI: A Measure of Intelligence* (2019); Marcus, *Rebooting AI* (2019); Hendrycks et al., *HarmBench* (2024)
+- **Cross-references**: [OpenAI overview](./), [safety framework](./safety-framework/), [red-team disclosures](./red-team-disclosures/), [Anthropic model card](/companies/anthropic/model-card/)

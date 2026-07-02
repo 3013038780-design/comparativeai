@@ -1,102 +1,105 @@
 ---
-title: 智谱 ZhipuAI (Z.ai)
-description: 智谱 AI 公司概况、GLM 系列与 中国 AI 创业公司首家 IPO（2026-04-22）
+title: ZhipuAI 智谱 (Z.ai)
+description: ZhipuAI 智谱 profile, GLM series, and the first IPO of a Chinese AI-native startup (2026-06-28)
 sidebar:
   order: 9
-  label: 智谱 ZhipuAI
-snapshotDate: 2026-04-22
+  label: ZhipuAI 智谱
+snapshotDate: 2026-06-28
 ---
 
-## 公司概况
+## Company profile
 
-- **成立**：2019（由**清华大学计算机系知识工程实验室（KEG）**孵化，核心团队含唐杰教授等）
-- **总部**：北京
-- **上市**：**2026 香港主板 IPO**（股票代码 **2513.HK**），**中国首家大模型公司上市**
-- **主要模型**：
-  - **GLM-4.5 / GLM-4.5-Air**（2025-07-28 开源，**MIT License**）—— 12 项主流评测全球第三、国内第一
-  - **GLM-5**（2026-02 发布）—— **完全适配华为昇腾等国产芯片**
-  - **CogVideo / CogView** 视频 / 图像生成
-- **Agent 产品**：**AutoGLM**（浏览器 / 手机自动化）+ **GLM-PC**（电脑操作 Agent）—— "GLM-OS" 愿景
-- **商业模式**：开放平台 API（bigmodel.cn）+ 企业定制 + Z.ai 消费者产品
+- **Founded**: 2019 (incubated from **Tsinghua University's KEG Lab (Knowledge Engineering Group)** in the Department of Computer Science; core team includes Professor Tang Jie 唐杰)
+- **Headquarters**: Beijing
+- **Listed**: **Hong Kong main-board IPO in 2026** (ticker **2513.HK**), **the first Chinese LLM company to go public**
+- **Main models**:
+  - **GLM-4.5 / GLM-4.5-Air** (open-sourced 2025-07-28, **MIT License**) — #3 globally and #1 in China across 12 mainstream benchmarks
+  - **GLM-5** (released 2026-02) — **fully compatible with Huawei Ascend 昇腾 and other domestic chips**
+  - **CogVideo / CogView** video and image generation
+- **Agent products**: **AutoGLM** (browser / mobile automation) + **GLM-PC** (desktop-operation agent) — the "GLM-OS" vision
+- **Business model**: open-platform API (bigmodel.cn) + enterprise customisation + Z.ai consumer products
 
-## 战略定位：**中国 AI 创业公司首家上市 + 国家队深度**
+## Strategic positioning: **first Chinese AI-native startup IPO + deep national-team ties**
 
-中国主要 AI 创业公司包括：智谱 ZhipuAI、月之暗面 Moonshot（Kimi）、MiniMax、百川智能 Baichuan、
-阶跃星辰 StepFun、零一万物 01.AI（李开复创办）、DeepSeek（独立路径）等。
+Major Chinese AI-native startups include: ZhipuAI 智谱, Moonshot 月之暗面 (Kimi), MiniMax, Baichuan 百川智能,
+StepFun 阶跃星辰, 01.AI 零一万物 (founded by Lee Kai-Fu 李开复), and DeepSeek (on an independent path).
 
-**智谱是中国 AI 创业公司中首个上市**的，标志中国大模型创业公司进入资本市场化阶段。
+**Zhipu is the first Chinese AI-native startup to list**, marking the entry of Chinese LLM startups into the
+capital-markets phase.
 
-### 国家队特征
+### National-team characteristics
 
-- **清华背景**：唐杰团队的 KEG 实验室是中国 NLP / 知识图谱研究重镇
-- **国家新一代 AI 开放创新平台**（认知智能方向）——依托智谱建设
-- **信创生态深度参与**：GLM-5 适配华为昇腾等国产 AI 芯片是**对美国出口管制的直接应对**
-- **政府采购偏好**：多省市政务 AI、教育 AI 落地案例
+- **Tsinghua heritage**: Professor Tang Jie's KEG Lab is a leading Chinese NLP / knowledge-graph research group
+- **"New-Generation AI Open Innovation Platform"** (cognitive-intelligence direction) — anchored at Zhipu
+- **Deep participation in the xinchuang 信创 ecosystem**: GLM-5 compatibility with Huawei Ascend and other domestic AI chips is a **direct response to U.S. export controls**
+- **Government-procurement preference**: multiple provincial and municipal government-AI and education-AI deployments
 
-### 美国出口管制影响
+### Impact of U.S. export controls
 
-**2025 美国商务部 BIS** 将多家中国 AI 公司纳入观察 / 实体清单（具体是否含智谱需核对最新 Federal Register）。
-智谱 GLM-5 明确**适配华为昇腾**是对这一压力的直接回应：**在无 NVIDIA 芯片的前提下依然能训练和部署旗舰模型**。
+**The U.S. Commerce Department's BIS** added multiple Chinese AI companies to watch / entity lists in 2025
+(whether Zhipu is included should be checked against the latest Federal Register).
+Zhipu's explicit **Ascend compatibility** in GLM-5 is a direct response to this pressure: **the ability to
+train and deploy flagship models without NVIDIA chips**.
 
-## 深度分析：**学术出身 + 国家队 + 上市公司的三重身份**
+## Deep dive: **a triple identity — academic heritage, national team, and listed company**
 
-### 治理结构的独特性
+### Unique governance structure
 
-相比其他中国 AI 创业公司，智谱的独特性：
+Compared with other Chinese AI-native startups, Zhipu is distinctive:
 
-| 维度 | 智谱 | 月之暗面 | MiniMax | 百川 |
+| Dimension | Zhipu | Moonshot | MiniMax | Baichuan |
 | --- | --- | --- | --- | --- |
-| 创始背景 | **清华学术** | 清华 + 商业 | 学术 + 商业 | 搜狗 + 王小川 |
-| 上市状态 | **已上市（港交所）** | 筹备港股 | 未上市 | 未上市 |
-| 国家队深度 | **最深** | 中 | 中 | 中 |
-| 开源力度 | 强（MIT）| 强（Kimi K2.5 开源）| 中 | 中 |
-| 信创 / 国产芯片 | **明确适配** | 未明确 | 未明确 | 未明确 |
+| Founder background | **Tsinghua academic** | Tsinghua + commercial | Academic + commercial | Sogou + Wang Xiaochuan 王小川 |
+| Listing status | **Listed (HKEX)** | Hong Kong IPO prep | Not listed | Not listed |
+| National-team depth | **Deepest** | Medium | Medium | Medium |
+| Open-source intensity | Strong (MIT) | Strong (Kimi K2.5 open-sourced) | Medium | Medium |
+| Domestic chips / xinchuang | **Explicit compatibility** | Not explicit | Not explicit | Not explicit |
 
-上市意味着：
-- **公开披露要求** → 招股书、年报披露 AI 治理信息
-- **2025 年报将于 2026-03-31 发布** → 首份含全年 AI 业务数据和治理说明的年报
-- **股东压力** → 估值驱动 vs. 安全投入的张力
+Being listed implies:
+- **Public-disclosure obligations** → prospectus and annual reports disclose AI governance information
+- **2025 annual report due 2026-03-31** → the first annual report with full-year AI business data and governance narrative
+- **Shareholder pressure** → tension between valuation-driven growth and safety investment
 
-### 自律立场
+### Self-regulation posture
 
-与其他中国 AI 公司类似，智谱**无独立的"安全框架"文档**：
+Similar to other Chinese AI companies, Zhipu **has no standalone "safety framework" document**:
 
-- 通过 **CAC 算法备案**履行合规义务（GLM 系列已多次备案）
-- 参与 **TC260 标准制定**（唐杰等学者是多项 AI 标准的起草专家）
-- **开源模型卡**（GLM-4.5 等）含局部安全评估披露
-- **GPAI CoP 未签**
+- Compliance obligations discharged via **CAC algorithm filings** (multiple GLM-series filings)
+- Participation in **TC260 standard-drafting** (Tang Jie and others are drafting experts on multiple AI standards)
+- **Open-source model cards** (e.g. GLM-4.5) include some safety-evaluation disclosure
+- **GPAI CoP not signed**
 
-但作为上市公司，**公开披露义务**给智谱带来了额外的治理透明度要求——这可能成为**中国 AI 公司治理透明度的分水岭**。
+But as a listed company, the **public-disclosure obligations** impose additional governance-transparency
+requirements on Zhipu — potentially a **watershed for governance transparency among Chinese AI companies**.
 
-## 公开政策文档快照
+## Policy document snapshot
 
-| 类型 | 文档名 | 链接 | 本站子页 |
+| Type | Document | Link | Subpage |
 | --- | --- | --- | --- |
-| 使用政策 | Z.ai 服务协议 + 隐私政策 | [zhipuai.cn](https://www.zhipuai.cn/) | — |
-| 技术报告 | GLM-4.5 / GLM-5 Technical Report | ModelScope + arXiv | — |
-| 开源模型 | GLM-4.5 / GLM-4.5-Air GitHub | [github.com/THUDM](https://github.com/THUDM) | — |
-| 透明度 | CAC 算法备案 + 港交所披露（2026-03-31 年报）| [cac.gov.cn](https://www.cac.gov.cn/) + [hkexnews.hk](https://www.hkexnews.hk/) | — |
+| Usage policy | Z.ai service agreement + privacy policy | [zhipuai.cn](https://www.zhipuai.cn/) | — |
+| Technical reports | GLM-4.5 / GLM-5 Technical Report | ModelScope + arXiv | — |
+| Open-source models | GLM-4.5 / GLM-4.5-Air GitHub | [github.com/THUDM](https://github.com/THUDM) | — |
+| Transparency | CAC algorithm filings + HKEX disclosures (2026-03-31 annual report) | [cac.gov.cn](https://www.cac.gov.cn/) + [hkexnews.hk](https://www.hkexnews.hk/) | — |
 
-## 监管合规位置
+## Regulatory-compliance posture
 
-- **中国**：
-  - CAC 算法备案（GLM 系列多次）
-  - TC260-003-2024 合规
-  - **信创生态**深度参与（GLM-5 适配昇腾）
-  - **港交所上市公司披露义务**（2026 首个 AI 年报将为观察重点）
-- **美国**：
-  - BIS 观察 / 实体清单（需核对最新状态）
-  - 消费者产品不在美国
-  - GLM 开源权重美国可下载
-- **欧盟**：
-  - 开源模型在欧盟下载 → AI Act 第 53 条义务
-  - GPAI CoP 未签
-  - 意大利 Garante 等 DPA 未对智谱单独行动
+- **China**:
+  - CAC algorithm filings (multiple GLM-series filings)
+  - TC260-003-2024 compliance
+  - **Deep xinchuang ecosystem participation** (GLM-5 Ascend compatibility)
+  - **HKEX listed-company disclosure obligations** (the first AI annual report in 2026 will be a key observation)
+- **United States**:
+  - BIS watch / entity list (current status to be checked)
+  - Consumer products not offered in the U.S.
+  - GLM open weights can be downloaded in the U.S.
+- **European Union**:
+  - Open-source model downloads trigger AI Act Art. 53 obligations
+  - GPAI CoP not signed
+  - No standalone action by Italy's Garante or other DPAs against Zhipu so far
 
-## 公司立场速览
+## Company posture, in brief
 
-- **学术文化与商业化的平衡**：唐杰团队的研究基因仍强
-- **国家队认同强**：信创生态、国产芯片适配
-- **资本化导向**：港股 IPO 后估值和业绩压力增加
-- **开源友好**：MIT License 是中国头部公司中较开放的
-
+- **Balance of academic culture and commercialisation**: the research DNA of the Tang Jie team remains strong
+- **Strong national-team identification**: xinchuang ecosystem, domestic-chip compatibility
+- **Capital-markets orientation**: post-IPO valuation and earnings pressure will intensify
+- **Open-source friendly**: MIT licensing is among the more permissive choices among leading Chinese companies

@@ -7,7 +7,7 @@ export interface Props {
 }
 const { locale = 'zh-CN' } = Astro.props;
 const k = locale === 'en' ? 'en' : 'zh';
-const basePath = locale === 'en' ? '/en' : '';
+const basePath = locale === 'zh-CN' ? '/zh' : '';
 
 // Localized rule hrefs
 const tiers = cnHierarchy.map((t) => ({

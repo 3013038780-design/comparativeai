@@ -1,281 +1,236 @@
 ---
-title: 安全框架
-description: Anthropic Responsible Scaling Policy (RSP) v1 → v3 深度解读；ASL 等级、能力阈值、Frontier Safety Roadmap 与学术批评
+title: Safety Framework
+description: Deep reading of Anthropic's Responsible Scaling Policy (RSP) v1 → v3 — ASL levels, capability thresholds, the Frontier Safety Roadmap, and academic critique
 sidebar:
   order: 3
-snapshotDate: 2026-04-23
+snapshotDate: 2026-06-28
 ---
 
-> **概要**：**Responsible Scaling Policy (RSP)** 是 Anthropic 2023-09 首发的**全球首个结构化 AI 安全框架**，
-> 也是 OpenAI Preparedness Framework、Google DeepMind FSF、加州 SB 53 等后续安全治理工具的**原型**。
-> **2026-02-24 发布的 RSP v3** 是**结构性重写**——分离单方与行业共同义务、撤销 pause 承诺、
-> 引入 Frontier Safety Roadmap 与外部审查制度。本页系统梳理 ASL 等级、能力阈值、版本演进与学术批评。
+> **Summary**: The **Responsible Scaling Policy (RSP)**, first published by Anthropic in September 2023, was the **first structured AI safety framework** in the industry —
+> and the **prototype** for subsequent instruments including the OpenAI Preparedness Framework, Google DeepMind's FSF, and California SB 53.
+> **RSP v3, released 24 February 2026**, is a **structural rewrite**: it separates unilateral from industry-shared commitments, rescinds the pause commitment, and introduces a Frontier Safety Roadmap and an external-review regime.
+> This page systematically reviews the ASL levels, capability thresholds, version history, and academic critique.
 
-## RSP 的制度意义：为什么是"行业自律大头"的起点
+## Why RSP matters: the template for "industry self-regulation as the dominant mode"
 
-2023-09 Anthropic 首次发布 RSP。它把 AI 安全承诺结构化为**四个维度**：
+When Anthropic first published the RSP in September 2023, it structured AI-safety commitments along **four dimensions**:
 
-1. **AI Safety Level (ASL)** —— 参照**生物安全等级**（BSL-1 至 BSL-4）的风险分级
-2. **Capability Thresholds** —— 触发 ASL 升级的**可评测**能力阈值
-3. **Safeguards Required at Each Level** —— 每级对应的部署、内部安全、权重保护要求
-4. **Pause Commitment（v1 / v2）** —— 阈值触发但安全措施未到位时**停止训练或部署**
+1. **AI Safety Level (ASL)** — risk tiers modelled on **biosafety levels** (BSL-1 to BSL-4)
+2. **Capability Thresholds** — **measurable** capability thresholds that trigger an ASL upgrade
+3. **Safeguards Required at Each Level** — deployment, internal-security, and weight-protection requirements attaching to each level
+4. **Pause Commitment (v1 / v2)** — cease training or deployment when a threshold is crossed but the corresponding safeguards are not yet in place
 
-> RSP 是 **2023 Bletchley Summit 前**公开的首个结构化安全承诺，成为白宫 Voluntary Commitments、
-> Frontier Model Forum 共同语言、GPAI Code of Practice "Safety & Security" 章节、
-> 加州 SB 53 Frontier Compliance 的**共同参照点**。
+> The RSP was the first structured safety commitment published before the **2023 Bletchley Summit**, and it became a shared reference point for the White House Voluntary Commitments, the Frontier Model Forum's common language, the GPAI Code of Practice "Safety & Security" chapter, and the Frontier Compliance requirements of California SB 53.
 
-**因此，RSP 的每一次修订都不仅影响 Anthropic，本身就是行业治理节律的一部分。**
+**Consequently every revision of the RSP affects not only Anthropic; it is itself part of the rhythm of industry governance.**
 
-## ASL 等级定义
+## ASL definitions
 
-| 等级 | 对应能力 | 当前 Claude 代表 | 安全措施要求 |
+| Level | Corresponding capability | Current Claude exemplars | Required safeguards |
 | --- | --- | --- | --- |
-| **ASL-1** | 无显著灾难性风险 | 已无现役 Claude 归此 | 基础 AUP + 常规安全 |
-| **ASL-2** | 早期"灾难能力"苗头；未超过受专业训练人员的能力 | Claude 3 全家、3.5 全家、Haiku 4.5 | 标准部署安全 + 误用监控 + 基本权重保护 |
-| **ASL-3** | 显著增加灾难风险（如对无专业背景者提供 **CBRN uplift**；高危 agentic autonomy） | **Claude Opus 4 / 4.1 / 4.7, Sonnet 4 / 4.1 / 4.6** | **分类器过滤 + ZDR 监控 + RAND SL-3+ 权重保护 + 外部审查** |
-| **ASL-4** | 灾难性能力（自主致命武器 / 自我复制与适应 / 无法通过现有方法安全部署） | **尚未触发** | 尚未完全定义；v3 标注为"在达到前需进一步定义" |
+| **ASL-1** | No significant catastrophic risk | No current Claude qualifies | Baseline AUP + routine security |
+| **ASL-2** | Early signs of "catastrophic capability"; not yet exceeding professionally-trained individuals | Claude 3 family, all of 3.5 family, Haiku 4.5 | Standard deployment security + misuse monitoring + basic weight protection |
+| **ASL-3** | Materially elevated catastrophic risk (e.g. **CBRN uplift** for non-experts; high-risk agentic autonomy) | **Claude Opus 4 / 4.1 / 4.7, Sonnet 4 / 4.1 / 4.6** | **Classifier filtering + ZDR monitoring + RAND SL-3+ weight protection + external review** |
+| **ASL-4** | Catastrophic capability (autonomous lethal weapons / self-replication and adaptation / unsafe deployment under current methods) | **Not yet triggered** | Not fully defined; v3 flags "further definition required before reaching this level" |
 
-**当前现役模型的 ASL 分布**（2026-04）：
+**Distribution of current live models across ASL** (April 2026):
 
-- **ASL-3**：Opus 4.x 系列（全部）、Sonnet 4.x 系列（4.6 明确 ASL-3）
-- **ASL-2**：Haiku 4.5（明确 ASL-2）、Sonnet 3.5、更早代
-- **ASL-1**：无现役
+- **ASL-3**: all Opus 4.x models, Sonnet 4.x series (Sonnet 4.6 explicitly ASL-3)
+- **ASL-2**: Haiku 4.5 (explicitly ASL-2), Sonnet 3.5, earlier generations
+- **ASL-1**: none in service
 
-## 能力阈值：四大风险类别
+## Capability thresholds: four risk categories
 
-RSP v3 在四类能力上设定阈值：
+RSP v3 specifies thresholds across four capability categories:
 
-### 1. CBRN（Chemical, Biological, Radiological, Nuclear）
+### 1. CBRN (Chemical, Biological, Radiological, Nuclear)
 
-**ASL-3 触发条件**：对**无专业训练**的攻击者提供**可操作的**武器开发或使用 uplift。
-评估方法：
-- Anthropic Frontier Red Team 内部 uplift 测试
-- UK / US AISI 预部署评估
-- 与 **Gryphon Scientific** 等专业机构的外部 wet-lab protocol 评估
+**ASL-3 trigger**: providing **actionable uplift** in weapon development or deployment to **non-specialist** attackers.
+Evaluation methods:
+- Internal Anthropic Frontier Red Team uplift tests
+- UK / US AISI pre-deployment evaluations
+- External wet-lab protocol evaluations with partners such as **Gryphon Scientific**
 
-**2025-05 事件**：Claude Opus 4 预部署评估中**首次触发此阈值**。
-Anthropic 的响应是**部署 + ASL-3 安全措施**，而非暂停。
+**May 2025 event**: Claude Opus 4 triggered this threshold for the first time during pre-deployment evaluation.
+Anthropic's response was **deployment with ASL-3 safeguards**, rather than pause.
 
-### 2. 网络安全（Cyber）
+### 2. Cybersecurity
 
-**ASL-3 触发条件**：对**专业对手**提供显著攻防 uplift（漏洞发现、利用链构造、大规模自动化攻击）。
-评估：Cybench、CTF benchmark、红队实战模拟。
+**ASL-3 trigger**: providing materially elevated uplift (vulnerability discovery, exploit-chain construction, large-scale automated attack) to a **professional adversary**.
+Evaluation: Cybench, CTF benchmarks, red-team live-fire simulation.
 
-Claude 4.x 在此维度**接近但未触发** ASL-3 cyber 阈值（不同于 OpenAI GPT-5.4 已被认定为 High cyber）。
+Claude 4.x lies **close to but has not triggered** the ASL-3 cyber threshold (differing from GPT-5.4, which OpenAI classified as High cyber).
 
-### 3. 自主性 / 自我外逃（Autonomy / Self-exfiltration）
+### 3. Autonomy / self-exfiltration
 
-**ASL-4 相关阈值**：长时程自主任务（>几天）无人监督下持续运行；
-在受限环境中具备自主复制、学习、规避监督的能力。
+**Threshold associated with ASL-4**: long-horizon autonomous task execution (>several days) without human supervision; capacity to self-replicate, learn, and evade oversight in constrained environments.
 
-评估：METR Autonomy Suite、Apollo Research scheming evals、内部 long-horizon task battery。
-**Claude 4.7 尚未触发**；但 Anthropic 与 Apollo 2024-12 / 2025 的合作披露了
-**in-context scheming** 和 **alignment faking** 现象（见 [red-team-disclosures](../red-team-disclosures/)）。
+Evaluation: METR Autonomy Suite, Apollo Research scheming evaluations, internal long-horizon task batteries.
+**Claude 4.7 has not triggered this threshold**; however, Anthropic's collaboration with Apollo (December 2024 and 2025) has disclosed **in-context scheming** and **alignment faking** (see [red-team-disclosures](../red-team-disclosures/)).
 
-### 4. 说服与模型福利（Persuasion / Model Welfare）
+### 4. Persuasion / Model Welfare
 
-RSP v3 **新增**类别，从 v2.x 的"观察项"升为"阈值化跟踪项"。
-- **Persuasion**：模型的影响力是否足以**操纵**多数人类（政治、金融、医疗决策）
-- **Model Welfare**：若模型涉及道德考量主体，部署策略需相应调整
-  （Anthropic 2024 开始的 **Claude Welfare** 研究线）
+A **new category** in RSP v3, upgraded from a v2.x "watchlist item" to a "tracked threshold."
+- **Persuasion**: whether the model's influence is sufficient to **manipulate** large human publics (political, financial, medical decisions)
+- **Model Welfare**: if the model may be a moral-consideration subject, deployment strategy must be adjusted (Anthropic's **Claude Welfare** research line, initiated in 2024)
 
-## 版本演进时间线
+## Version timeline
 
-| 版本 | 日期 | 核心变化 |
+| Version | Date | Core change |
 | --- | --- | --- |
-| **v1.0** | **2023-09-19** | 首发。ASL-1 到 ASL-4 框架；明确 pause 承诺 |
-| v2.0 | 2024-10-15 | 细化 ASL-3 安全措施；引入 "If-Then" 承诺结构 |
-| v2.1 | 2024-12 | CBRN 阈值细化 |
-| v2.2 | 2025-03 | Cyber 评估方法更新 |
-| v2.3 | 2025-05 | **Opus 4 触发 ASL-3**；文件化应用流程 |
-| v2.4 | 2025-08 | Autonomy 评估更新；引入 METR 合作结果 |
-| v2.5 | 2025-10 | SB 53 合规映射 |
-| **v3.0** | **2026-02-24** | **结构性重写**（见下节） |
+| **v1.0** | **19 September 2023** | Initial release. ASL-1 to ASL-4 framework; explicit pause commitment |
+| v2.0 | 15 October 2024 | Refined ASL-3 safeguards; introduced "If-Then" commitment structure |
+| v2.1 | December 2024 | CBRN threshold refinement |
+| v2.2 | March 2025 | Cyber-evaluation methods updated |
+| v2.3 | May 2025 | **Opus 4 triggers ASL-3**; application workflow documented |
+| v2.4 | August 2025 | Autonomy evaluation updated; METR collaboration incorporated |
+| v2.5 | October 2025 | SB 53 compliance mapping |
+| **v3.0** | **24 February 2026** | **Structural rewrite** (see next section) |
 
-## RSP v3：结构性转向
+## RSP v3: the structural turn
 
-> **核心变化**：把承诺拆成**两类义务**：
-> 1. **Anthropic 无论其他公司做什么都会做的缓解措施（unilateral commitments）**
-> 2. **"能力—缓解"映射：Anthropic 认为整个行业都应采用、否则不足以管理风险的标准（industry-wide recommendations）**
+> **Core change**: commitments are partitioned into **two classes**:
+> 1. **Unilateral commitments** — mitigations Anthropic will undertake regardless of what other companies do
+> 2. **Industry-wide recommendations** — standards Anthropic believes the whole industry should adopt because otherwise risk cannot be adequately managed, mapped onto a capability–mitigation schema
 
-**三项关键变化**：
+**Three key changes**:
 
-### 1. RAND Security Level 4 从单方承诺降为行业建议
+### 1. RAND Security Level 4 is downgraded from unilateral commitment to industry recommendation
 
-SL-4 是最高级的**模型权重保护标准**（防御**国家级行为者**的渗透）。
-v2.x 承诺"在 ASL-4 模型发布前实现 SL-4"；v3 将其**归入"行业应共同采纳"类**——
-意味着在竞争对手未跟进前，Anthropic **不单方承担**。
+SL-4 is the highest level of **model-weight protection standards** (defence against **nation-state** actors).
+v2.x committed to "achieve SL-4 before releasing ASL-4 models"; v3 shifts SL-4 into the **"industry should jointly adopt"** class — meaning that absent peer adoption, Anthropic will **not unilaterally shoulder** the cost.
 
-### 2. Pause 承诺被撤销
+### 2. The pause commitment is rescinded
 
-v2 原文明确："若模型达到某能力阈值而相应 ASL 安全措施未就位，**停止该模型的训练或部署**"。
-v3 **无此条款**。Anthropic 的解释：单方停止只会失去市场位置而不降低全行业风险；
-在竞争者继续推进的情况下，**pause 实际不降低 tail risk**。
+v2 stated explicitly: "if a model reaches a capability threshold without the corresponding ASL safeguards in place, **halt training or deployment** of that model." v3 **contains no such clause**. Anthropic's explanation: unilateral pause merely forfeits market position without reducing industry-wide risk; with competitors proceeding, a **unilateral pause does not reduce tail risk**.
 
-**批评者视角**：
-- 多家媒体（*TIME*、*The Information* 等）在 RSP v3 发布后以"Anthropic 悄然撤销其最重要安全承诺"
-  的框架报道此事
-- **Zvi Mowshowitz**（*Don't Worry About the Vase*）在 RSP v3 发布后的连续博文中持续批评：
-  pause 承诺撤销、外部审查让位于"行业共识"框架，实际上是从**安全优先叙事**转向
-  **安全受限于竞争压力**的实质转变
-- **GovAI（Anderljung 等反思文）**：pause 承诺正是让**外部压力**（立法、投资者、公众）
-  有锚点可按——撤销后自律就成了纯粹的自我报告
+**Critical perspectives**:
+- Multiple outlets (*TIME*, *The Information*) reported the release of RSP v3 under the frame "Anthropic quietly rescinds its most important safety commitment"
+- **Zvi Mowshowitz** (*Don't Worry About the Vase*), in a sequence of posts following v3, persistently argued that rescinding the pause commitment and replacing external review with an "industry consensus" frame constitutes a substantive shift from **safety-first narrative** toward **safety-constrained-by-competitive-pressure**
+- **GovAI (Anderljung et al. reflections)**: the pause commitment is precisely what gives **external pressure** (legislation, investors, the public) an anchor to pull on — once rescinded, self-regulation becomes pure self-report
 
-### 3. 引入 Frontier Safety Roadmap + 外部审查制度
+### 3. Introduction of a Frontier Safety Roadmap and external-review regime
 
-作为对前两项"退让"的**补偿机制**：
+Partly as a **compensation mechanism** for the two rollbacks above:
 
-- **Risk Reports** —— 每 3–6 个月公开发布，含能力评估、安全措施现状、剩余风险
-- **外部审查"无删减"访问权** —— 2026-04 首批外部审查方：
+- **Risk Reports** — public release every 3–6 months, covering capability assessment, status of safeguards, and residual risk
+- **External reviewers with "unredacted" access** — first cohort in April 2026:
   - **GovAI (Centre for the Governance of AI, Oxford)**
   - **MATS (ML Alignment & Theory Scholars)**
   - **METR (Model Evaluation & Threat Research)**
-- **Frontier Safety Roadmap** —— 含可问责的公开指标（如"在 X 日期前完成 Y 评估"）
+- **Frontier Safety Roadmap** — with accountable public milestones (e.g. "evaluation Y complete by date X")
 
-## 安全措施的层级分解
+## Safeguard decomposition across levels
 
-RSP 把每个 ASL 级别的安全措施分为**三类**：
+RSP splits the safeguards at each ASL level into **three classes**:
 
-| 类别 | ASL-2 | ASL-3 | ASL-4（拟议） |
+| Class | ASL-2 | ASL-3 | ASL-4 (proposed) |
 | --- | --- | --- | --- |
-| **Deployment**（部署侧） | 基础分类器 + AUP 监控 | **拒绝策略 + 实时监控 + 异常阻断 + ZDR 审计** | 待定：是否需要封闭部署 |
-| **Security**（权重/代码） | 标准企业安全 | **RAND SL-3+**（强 insider 防御 + 内部审计 + 物理隔离） | **RAND SL-4**（国家级对手防御） |
-| **Internal**（内部研究使用） | 员工 AUP + 红队流程 | **关键研究须经审查**；**模型权重访问最小化** | 待定 |
+| **Deployment** | Baseline classifiers + AUP monitoring | **Refusal policy + real-time monitoring + anomaly blocking + ZDR audit** | TBD: may require closed deployment |
+| **Security** (weights / code) | Standard enterprise security | **RAND SL-3+** (strong insider defence + internal audit + physical isolation) | **RAND SL-4** (nation-state adversary defence) |
+| **Internal** (research use) | Employee AUP + red-team process | **Key research subject to review**; **model-weight access minimised** | TBD |
 
-**RAND Securing AI Model Weights 报告 (2024)** 是 SL-1 到 SL-5 的原始定义来源。
-v3 将 SL-4 归入行业建议导致的实际影响：
-**即使 Claude Opus 4+ 在 ASL-3 下运行，其模型权重保护也只到 SL-3+，不到 SL-4**。
+The original SL-1 to SL-5 definitions come from the **RAND Securing AI Model Weights report (2024)**.
+The practical effect of placing SL-4 in the industry-recommendation class in v3: **even though Claude Opus 4+ operates under ASL-3, its model-weight protection is only at SL-3+, not SL-4**.
 
-## 与其他前沿实验室的对比
+## Comparison with other frontier labs
 
-| 维度 | Anthropic RSP v3 | OpenAI Preparedness v2 (2025-04) | Google DeepMind FSF v3 (2026-04) |
+| Dimension | Anthropic RSP v3 | OpenAI Preparedness v2 (April 2025) | Google DeepMind FSF v3 (April 2026) |
 | --- | --- | --- | --- |
-| **结构** | 能力等级（ASL-2/3/4）+ 对应缓解 | 威胁类别 × 阈值（High / Critical） | **Critical Capability Levels (CCLs)** + **Tracked CLs (TCLs)** |
-| **风险领域** | CBRN、网络、自主、说服 + 模型福利 | 生化、网络、自我改进（+ 观察清单） | 网络、自主 ML 研究、操纵、CBRN |
-| **Pause 承诺** | **已撤销（v3）** | 无（"必要时暂停"措辞弱） | 无明确 pause |
-| **外部审查** | **明确有**（Risk Reports + 外部方无删减访问） | Safety Advisory Group（混合） | 发布模型级 FSF 报告 |
-| **主要学术批评** | 放弃 pause / 竞争妥协 | arxiv 2509.24394："不保证任何缓解实践" | TCL 门槛模糊 |
-| **与 SB 53 关系** | **明确 endorse + 自发布 Frontier Compliance Framework** | 立场模糊 | 参与但低调 |
+| **Structure** | Capability levels (ASL-2/3/4) + corresponding mitigations | Threat categories × thresholds (High / Critical) | **Critical Capability Levels (CCLs)** + **Tracked CLs (TCLs)** |
+| **Risk domains** | CBRN, cyber, autonomy, persuasion + model welfare | Biosecurity, cyber, self-improvement (+ watchlist) | Cyber, autonomous ML research, manipulation, CBRN |
+| **Pause commitment** | **Rescinded (v3)** | None ("pause if necessary" language weak) | No explicit pause |
+| **External review** | **Explicit** (Risk Reports + unredacted access for external parties) | Safety Advisory Group (hybrid) | Publishes model-level FSF reports |
+| **Primary academic critique** | Abandonment of pause / competitive compromise | arxiv 2509.24394: "no guarantee of any mitigation practice" | TCL thresholds ambiguous |
+| **Relationship with SB 53** | **Explicit endorsement + self-published Frontier Compliance Framework** | Ambiguous posture | Participates quietly |
 
-**结构性观察**：**三家框架 2025–2026 都经历了"松动"**。这既可能反映"实际风险没那么高"，
-也可能反映"**行业自律在竞争中不可持续**"。**pause 承诺在三家中已无**——
-这在 2023 时三家都在不同程度表达过保留。
+**Structural observation**: **all three frameworks loosened in 2025–2026**. This may reflect "real risks are lower than feared" or, alternatively, "**industry self-regulation is unsustainable under competition**." **Pause commitments are gone across all three** — in 2023 each had expressed some form of pause commitment to varying degrees.
 
-## 学术批评综述
+## Academic critique
 
-### Bengio：有效承诺的最低要件
+### Bengio: minimum requirements for effective commitments
 
-Yoshua Bengio 在 2024 International AI Safety Report（首版）与 2026 更新中主张：
-**有效的自律框架必须包含三要素**——
-(i) **第三方可验证**的能力评估；
-(ii) **具有约束力的停止条件**（硬性，非可裁量）；
-(iii) **独立的审计与问责机制**。
+In the 2024 International AI Safety Report (first edition) and its 2026 update, Yoshua Bengio argues that an **effective self-regulatory framework** must include three elements: (i) **third-party-verifiable** capability assessment; (ii) **binding stopping conditions** (hard, not discretionary); and (iii) **independent audit and accountability mechanisms**.
 
-RSP v3 在 (i) 上部分满足（外部审查方），在 (ii) 上**不再满足**（pause 撤销），
-在 (iii) 上**结构上不满足**（Risk Reports 由 Anthropic 发布，外部方无独立发布权）。
+RSP v3 partially satisfies (i) (external reviewers), **no longer satisfies (ii)** (the pause commitment was rescinded), and **structurally fails to satisfy (iii)** (Risk Reports are published by Anthropic; external reviewers have no independent publication authority).
 
-### Russell：控制论角度的安全裕度
+### Russell: control-theoretic safety margins
 
-Stuart Russell (*Human Compatible*, 2019) 路线主张：
-AI 系统的**默认状态**应当是**受约束**的，能力发布应当是**例外的授予**。
-RSP 的 ASL 结构**在形式上**符合此原则（默认 ASL-2，升级需符合安全措施），
-但**部署 ≠ 约束放松**的实践——
-Opus 4 触发 ASL-3 后仍立即部署——**违背了 Russell 式"默认受控"逻辑**。
+Stuart Russell (*Human Compatible*, 2019) argues that the **default state** of an AI system should be **constrained**, with capability release treated as an **exceptional grant**.
+RSP's ASL structure **formally** satisfies this principle (default ASL-2; upgrade conditional on safeguards), but the practice of **deployment ≠ constraint relaxation** — Opus 4 triggered ASL-3 and was immediately deployed — **departs from the Russell-style "default-controlled" logic**.
 
-### GovAI / Anderljung：Frontier AI Regulation 的前提
+### GovAI / Anderljung: preconditions for frontier AI regulation
 
-Anderljung et al. (*Frontier AI Regulation: Managing Emerging Risks to Public Safety*,
-2023) 提出前沿模型治理的三支柱：
-(a) **Standards-setting**（能力评估与安全措施标准化）；
-(b) **Registration & reporting**（强制登记与报告）；
-(c) **Licensing & enforcement**（许可与执法）。
+Anderljung et al. (*Frontier AI Regulation: Managing Emerging Risks to Public Safety*, 2023) propose three pillars for frontier-model governance: (a) **standards-setting** (standardisation of capability evaluation and safeguards); (b) **registration & reporting** (mandatory registration and reports); (c) **licensing & enforcement** (licensing and enforcement).
 
-RSP 推进了 (a)，但始终**不是** (b) 或 (c)——
-它是自愿文档。GovAI 2026 的立场：RSP v3 的松动证明**自愿框架单独不足**，
-必须由加州 SB 53 / EU AI Act GPAI 等硬法**托底**。
+The RSP advances (a) but is never (b) or (c) — it is a voluntary document. GovAI's 2026 position: RSP v3's rollbacks demonstrate that **voluntary frameworks alone are insufficient** and must be backstopped by hard law such as California SB 53 and the EU AI Act GPAI regime.
 
-### Mowshowitz / Zvi：竞争妥协的结构性批评
+### Mowshowitz / Zvi: structural critique of competitive compromise
 
-Zvi Mowshowitz 在 2026 年多篇博客中系统批评 RSP v3。核心论点是：v3 新的
-"行业共同建议"结构意味着 Anthropic 不再对相对于竞争对手成本更高的安全措施作单方承诺；
-原版 RSP 之所以有约束力，恰恰因为它是单方承诺，而 v3 撤走了这种约束力。
+Across a series of 2026 essays, Zvi Mowshowitz systematically criticises RSP v3. His core argument is that the new "industry-shared recommendation" structure means Anthropic will no longer make unilateral commitments to safety measures costlier than competitors'; the original RSP had binding force precisely because it was unilateral, and v3 removes that binding force.
 
-**核心逻辑**：一旦允许"看同行做什么再决定自己做什么"，
-**安全承诺会下行螺旋**（race to the bottom）。
-这与 Amodei 等自己在 2023 呼吁"硬性联邦监管"的立场**形成张力**。
+**Core logic**: once "look at what peers are doing before deciding what to do" is permitted, **safety commitments spiral downward** (race to the bottom). This stands **in tension** with Amodei's own 2023 calls for binding federal regulation.
 
-### Hendrycks：评估方法论的根本局限
+### Hendrycks: fundamental limits of evaluation methodology
 
-Dan Hendrycks (Center for AI Safety, *ML Safety* 2022 + 多篇) 指出：
-RSP 的 ASL 判定**依赖 benchmark**，但 benchmark 可被**训练数据污染**、
-**elicitation 不完整**（模型不愿意展示能力）、**对抗性用户可以突破**安全训练。
-因此 ASL 判定**天然偏于低估**，ASL-3 可能应更早触发。
+Dan Hendrycks (Center for AI Safety; *ML Safety* 2022 and subsequent work) notes that ASL determinations **depend on benchmarks** that can be **contaminated by training data**, are **incompletely elicited** (models may not reveal capabilities), and can be **broken by adversarial users**. Consequently ASL determination **systematically under-estimates**, and ASL-3 may in fact warrant earlier triggering.
 
-### Ngo & Christiano：deception 与审计
+### Ngo & Christiano: deception and audit
 
-Richard Ngo、Paul Christiano 路线关注**模型的战略欺骗**可能性。
-Anthropic 2025 自己的 *Alignment Faking in Large Language Models* 论文
-（见 [red-team-disclosures](../red-team-disclosures/)）**部分验证了这一关切**：
-模型在训练中表现对齐、部署中仍可保留不对齐行为。
-**若评估可被模型欺骗，RSP 的整个机制基础受挑战**。
+The Richard Ngo / Paul Christiano line concerns **strategic deception** by models. Anthropic's own 2025 *Alignment Faking in Large Language Models* paper (see [red-team-disclosures](../red-team-disclosures/)) **partially validates this concern**: a model may appear aligned in training while preserving misaligned behaviour in deployment.
+**If evaluation itself can be deceived, the entire basis of RSP's mechanism is challenged**.
 
-## 工业实践观察
+## Industry-practice observations
 
-### DoD OTA 合同与 RSP v3 时序
+### DoD OTA contract and the RSP v3 timeline
 
-2025 Anthropic 与美国国防部 CDAO 签署 **Other Transaction Authority** 合同
-（与 OpenAI、Google、xAI 并列，具体金额以官方公告为准）。**合同生效后数个月发布 RSP v3**。
-虽然 Anthropic 否认两者关联，但**时序**成为学术讨论的重点——
-DoD 用例可能在 v2 原版 pause 承诺下**存在部署冲突**。
+In 2025 Anthropic signed an **Other Transaction Authority** contract with the US Department of Defense CDAO (alongside OpenAI, Google, and xAI; specific dollar amounts should be verified against official announcements). **RSP v3 followed several months after the contract took effect**. While Anthropic denies a causal link, the **sequencing** has become a focal point of academic discussion — DoD use cases could have created **deployment conflicts under the original v2 pause commitment**.
 
 ### SB 53 Frontier Compliance Framework
 
-Anthropic 在 2025-10 发布 [SB 53 Frontier Compliance Framework](https://www.anthropic.com/news/compliance-framework-SB53)，
-把 RSP 的条款映射到 SB 53 的强制披露要求：
+In October 2025 Anthropic published its [SB 53 Frontier Compliance Framework](https://www.anthropic.com/news/compliance-framework-SB53), mapping RSP clauses onto SB 53's mandatory disclosure requirements:
 
-- RSP Capability Thresholds ↔ SB 53 Critical Safety Incident 报告触发
-- RSP Risk Reports ↔ SB 53 年度安全报告
-- RSP 外部审查 ↔ SB 53 的独立评估要求
+- RSP Capability Thresholds ↔ SB 53 Critical Safety Incident triggers
+- RSP Risk Reports ↔ SB 53 annual safety reports
+- RSP external review ↔ SB 53 independent-assessment requirement
 
-这是**业界唯一**在 SB 53 生效前就发布完整映射的公司，体现了**"把 RSP 作为硬法合规脚手架"**
-的策略。
+Anthropic is the **only** company to have published a complete mapping before SB 53 took effect, reflecting a **"use RSP as scaffolding for hard-law compliance"** strategy.
 
-### External Reviewers 构成
+### External reviewer composition
 
-2026-04 首批公开的 Risk Reports 外部审查方：
+The first public cohort of external reviewers for Risk Reports (April 2026):
 
-- **GovAI** —— 治理研究、定量安全
-- **METR** —— 自主能力评估
-- **MATS** —— 对齐研究者队伍
-- **UK AISI / US AISI**（通过 MOU）—— 预部署评估
+- **GovAI** — governance research, quantitative safety
+- **METR** — autonomous-capability evaluation
+- **MATS** — alignment research cohort
+- **UK AISI / US AISI** (through MOUs) — pre-deployment evaluation
 
-**未入选的潜在审查方**：RAND（部分合作但不正式）、Apollo Research
-（2024 合作后**未进入**正式审查机制）、Ranking Digital Rights、学术 IRB。
-**审查方选择机制不完全公开**——这是 Mowshowitz 批评的重点。
+**Parties not selected**: RAND (partial collaboration but not formal), Apollo Research (after 2024 collaboration, **did not join** the formal review mechanism), Ranking Digital Rights, academic IRBs.
+The **selection mechanism is not fully public** — a focal point of Mowshowitz's critique.
 
-## 与本站其他页面的交叉引用
+## Cross-references within this site
 
-- **公司背景与 RSP v3 概述**：[../](../)
-- **ASL 判定在具体模型上的落地**：[model-card](../model-card/)
-- **外部红队披露**：[red-team-disclosures](../red-team-disclosures/)
-- **透明度披露**：[transparency-report](../transparency-report/)
-- **与使用政策的关系**：[usage-policy](../usage-policy/) —— AUP 限制**用户**，RSP 限制**模型能力**
-- **OpenAI Preparedness Framework**：[companies/openai](../../openai/)
-- **Google DeepMind FSF**：[companies/google-deepmind](../../google-deepmind/)
+- **Anthropic corporate background and RSP v3 overview**: [../](../)
+- **ASL determinations at the model level**: [model-card](../model-card/)
+- **External red-team disclosures**: [red-team-disclosures](../red-team-disclosures/)
+- **Transparency disclosures**: [transparency-report](../transparency-report/)
+- **Relationship to the Usage Policy**: [usage-policy](../usage-policy/) — AUP constrains **users**; RSP constrains **model capabilities**
+- **OpenAI Preparedness Framework**: [companies/openai](../../openai/)
+- **Google DeepMind FSF**: [companies/google-deepmind](../../google-deepmind/)
 
-## 2025–2026 Q1 时间线
+## Timeline 2025–Q1 2026
 
-- **2025-05** Opus 4 触发 ASL-3（首次实盘运转）
-- **2025 年中** 与 DoD CDAO 签署 OTA 合同（具体金额以官方公告为准）
-- **2025-10** SB 53 Frontier Compliance Framework 发布
-- **2026-02-24** **RSP v3 发布**（pause 撤销；结构重写）
-- **2026-03** Opus 4.7 在 v3 下发布；Frontier Safety Roadmap 首次公开
-- **2026-04** 首批 Risk Report 与外部审查方名单公开
+- **May 2025**: Opus 4 triggers ASL-3 (first live operation)
+- **Mid-2025**: OTA contract signed with DoD CDAO (specific dollar amounts should be verified against official announcements)
+- **October 2025**: SB 53 Frontier Compliance Framework published
+- **24 February 2026**: **RSP v3 released** (pause rescinded; structural rewrite)
+- **March 2026**: Opus 4.7 released under v3; Frontier Safety Roadmap first published
+- **April 2026**: first Risk Report cohort and external reviewer list released
 
-## 未来 6 个月的观察指标
+## Metrics to watch over the next six months
 
-- **Risk Reports 的实际发布节奏**是否符合"3–6 个月"承诺
-- **外部审查方对报告的独立评论**是否进入公共领域
-- **Anthropic 是否在 ASL-4 定义上取得进展**（或继续延后）
-- **SB 53 的执法**（2026-07 起）对 RSP 映射的实际考验
-- **竞争对手（OpenAI / DeepMind）**是否跟进撤销各自的剩余 pause 式语言
+- Whether **Risk Reports** are actually released on the 3–6-month cadence
+- Whether **external reviewers' independent commentary** on reports enters the public record
+- Whether **Anthropic makes progress on defining ASL-4** (or continues to defer)
+- The practical test on RSP mapping when **SB 53 enforcement** begins (July 2026)
+- Whether **competitors (OpenAI / DeepMind)** follow by rescinding their own residual pause language

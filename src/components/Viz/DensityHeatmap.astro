@@ -41,7 +41,7 @@ const headings = {
 	yearLabel: { zh: '年份 →', en: 'Year →' },
 	topicLabel: { zh: '议题 ↓', en: 'Topic ↓' },
 	observations: { zh: '观察', en: 'Observations' },
-	note: { zh: '计数为分析代理（重要一手规则），非穷举。详见 [方法论](/methodology/)。', en: 'Counts are analytical proxies (major primary-source rules), not exhaustive. See [Methodology](/en/methodology/).' },
+		note: { zh: '计数为分析代理（重要一手规则），非穷举。详见 [方法论](/zh/methodology/)。', en: 'Counts are analytical proxies (major primary-source rules), not exhaustive. See [Methodology](/methodology/).' },
 };
 
 const observations = locale === 'en' ? [
@@ -117,8 +117,8 @@ const observations = locale === 'en' ? [
 
 	<p class="viz-note" set:html={
 		headings.note[k]
-			.replace('[方法论]', '<a href="/methodology/">方法论</a>')
-			.replace('[Methodology]', '<a href="/en/methodology/">Methodology</a>')
+			.replace('[方法论]', '<a href="/zh/methodology/">方法论</a>')
+			.replace('[Methodology]', '<a href="/methodology/">Methodology</a>')
 	}></p>
 </section>
 

@@ -1,6 +1,6 @@
 ---
 title: Product Liability Directive (2024/2853)
-description: 欧盟新产品责任指令，2024-12-08 生效；明确软件 / AI 系统属于 "产品"，无过错责任适用于 AI 造成的损害
+description: The EU's new Product Liability Directive entered into force 2024-12-08; expressly classifies software and AI systems as "products," applying strict liability to AI-caused harm
 ruleName: Directive (EU) 2024/2853 — New Product Liability Directive
 issuer: European Parliament & Council
 level: eu-directive
@@ -10,80 +10,83 @@ publishedDate: 2024-11-18
 originalUrl: https://eur-lex.europa.eu/eli/dir/2024/2853/oj
 relatedTopics:
   - risk-classification
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: 产品责任指令 (2024)
+  label: Product Liability Directive (2024)
   order: 4
 ---
 
-## 中文摘要
+## Summary
 
-2024/2853 指令取代 1985/374 号旧产品责任指令，2024-12-08 生效，成员国应于 **2026-12-09**
-前转化为国内法。对 AI 最重要的三点：
+Directive (EU) 2024/2853 replaces the 1985/374 old Product Liability Directive; it entered into force
+on 2024-12-08, with member states required to transpose it into national law by **2026-12-09**. Three
+points matter most for AI:
 
-1. **软件 / AI 系统 = 产品**：明确纳入"产品"定义（对比旧指令的模糊性）
-2. **无过错责任**：受害者无需证明过错，只需证明：产品缺陷 + 损害 + 因果关系
-3. **证据 / 举证减轻**：对 AI 等"技术复杂"产品，成员国法院可**要求披露**证据，
-   且在无法获得的情况下可**推定因果关系**
+1. **Software / AI systems = products**: expressly included in the "product" definition (in contrast to the old directive's ambiguity)
+2. **Strict liability**: the injured party need not prove fault — only defect + damage + causation
+3. **Evidence / burden-of-proof relief**: for "technically complex" products such as AI, member-state
+   courts may **order disclosure** of evidence, and may **presume causation** where disclosure cannot be obtained
 
-**AI Liability Directive** 于 2025-02 被欧委会撤回，2024/2853 指令承接了大部分功能。
+The **AI Liability Directive** was withdrawn by the Commission in 2025-02; Directive 2024/2853 absorbs most of its functions.
 
-## 对 AI 的直接影响
+## Direct impact on AI
 
-### 谁可能承担责任
+### Who may bear liability
 
-- **制造商 / 生产者**（含 AI 模型的开发者）
-- **进口商 / 授权代表**
-- **fulfillment 服务提供者**
-- **substantially modifying 的经济运营者**（对模型做实质性修改的下游方）
+- **Manufacturers / producers** (including developers of AI models)
+- **Importers / authorized representatives**
+- **Fulfillment service providers**
+- **Economic operators who substantially modify** the product (downstream parties that make material modifications to a model)
 
-### 缺陷判定（第七条）
+### Defect determination (Article 7)
 
-考虑：
-- **产品预期用途和合理预见的使用**
-- 安全合理期望（含说明书和合理预见的误用）
-- **与 AI Act 等监管标准的合规状态** → 与 AI Act 合规互相影响
-- **自学习 / 升级后的行为**（第七条第 2(c) 款明确涵盖产品投放市场后的机器学习变化）
+Takes into account:
+- **Intended use and reasonably foreseeable use**
+- Reasonable expectations of safety (including instructions and reasonably foreseeable misuse)
+- **Compliance with regulatory standards such as the AI Act** → interacts with AI Act compliance
+- **Behavior after self-learning / updates** (Article 7(2)(c) expressly covers machine-learning-driven changes after placement on the market)
 
-### 举证减轻（第十、十一条）
+### Burden of proof relief (Articles 10, 11)
 
-- 法院可令被告**披露证据**（技术文档、训练数据元信息）
-- 被告拒绝披露 → 推定产品有缺陷
-- 诉讼"过度复杂"（显著包括 AI 场景）→ 可推定缺陷或因果关系
+- Courts may order the defendant to **disclose evidence** (technical documentation, training-data metadata)
+- If the defendant refuses disclosure → defect may be presumed
+- Where the litigation is "excessively complex" (notably including AI cases) → defect or causation may be presumed
 
-### 时效（第十六、十七条）
+### Limitation periods (Articles 16, 17)
 
-- 诉讼时效：知道或应知损害起 3 年
-- 产品投放后绝对时效：**10 年**
-- **慢发病**（如长期暴露造成的）：**25 年**
+- Procedural limitation: 3 years from when damage was or should have been known
+- Absolute limitation after product placement: **10 years**
+- **Latent injury** (e.g., long-term exposure): **25 years**
 
-## 与 AI Act 的关系
+## Relationship with the AI Act
 
-- AI Act：**前置合规**（投放市场前）
-- 本指令：**事后责任**（发生损害后）
-- 合规 AI Act **不豁免**本指令责任（但是抗辩中的重要证据）
+- AI Act: **ex ante compliance** (before placement on the market)
+- This Directive: **ex post liability** (after damage occurs)
+- AI Act compliance **does not exempt** from this Directive's liability (though it is important evidence in defense)
 
-## 欧盟 AI Liability Directive 撤回
+## Withdrawal of the EU AI Liability Directive
 
-原拟议的《AI Liability Directive》（过错责任层面的协调）**2025-02** 被欧委会从立法议程撤回。
-官方理由：2024/2853 新产品责任指令已覆盖大部分实质问题 + 成员国对统一过错责任机制的分歧较大。
-实际影响：**AI 相关过错责任**仍由各成员国法处理；可能的碎片化风险。
+The originally proposed **AI Liability Directive** (on coordination of fault-based liability) was
+**withdrawn** from the Commission's legislative agenda in 2025-02. Official reasoning: Directive 2024/2853
+already covers most substantive issues, and member states were deeply divided on a unified fault-liability
+mechanism. Practical effect: **AI fault-based liability** is left to national law, with attendant
+fragmentation risk.
 
-## 原文与翻译
+## Text and translations
 
-| 语言 | 来源 | 链接 |
+| Language | Source | Link |
 | --- | --- | --- |
-| English（原文） | EUR-Lex | [eur-lex.europa.eu](https://eur-lex.europa.eu/eli/dir/2024/2853/oj) |
-| 多语言版本 | EUR-Lex | 24 种官方语言 |
+| English (original) | EUR-Lex | [eur-lex.europa.eu](https://eur-lex.europa.eu/eli/dir/2024/2853/oj) |
+| Multilingual versions | EUR-Lex | 24 official languages |
 
-## 版本历史
+## Version history
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2022-09 | 委员会提案 |
-| 2024-03 | 议会通过 |
-| 2024-10-10 | 理事会通过 |
-| 2024-11-18 | 官方公报公布 |
-| 2024-12-08 | 生效 |
-| 2026-12-09 | 成员国转化截止 |
-| 2025-02 | AI Liability Directive 撤回 |
+| 2022-09 | Commission proposal |
+| 2024-03 | Parliament adoption |
+| 2024-10-10 | Council adoption |
+| 2024-11-18 | Published in Official Journal |
+| 2024-12-08 | Entry into force |
+| 2026-12-09 | Member-state transposition deadline |
+| 2025-02 | AI Liability Directive withdrawn |

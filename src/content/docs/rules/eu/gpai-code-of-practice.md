@@ -1,126 +1,129 @@
 ---
 title: GPAI Code of Practice (EU AI Act)
-description: EU AI Office 召集、2025-07-10 定稿、2025-08-01 欧委会与 AI Board 通过；AI Act 第 56 条授权的 GPAI 行为守则，签署 = 合规推定
+description: Convened by the EU AI Office, finalized 2025-07-10 and adopted by the Commission and AI Board on 2025-08-01; Code of Practice authorized under AI Act Article 56 — signing produces a presumption of compliance
 ruleName: General-Purpose AI Code of Practice (GPAI CoP)
-issuer: European AI Office (DG CNECT, European Commission) · 由约 1,000 参与者多轮磋商起草
+issuer: European AI Office (DG CNECT, European Commission) · drafted through multi-round consultation involving approximately 1,000 participants
 level: soft-law-code
 binding: soft
 effectiveDate: 2025-08-02
 publishedDate: 2025-07-10
-originalUrl: https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai
+originalUrl: https://digital-strategy.ec.europa.eu/policies/contents-code-gpai
 relatedTopics:
   - frontier-gpai
   - data-training
   - content-labeling-provenance
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
   label: GPAI Code of Practice (2025)
   order: 5
 ---
 
-## 中文摘要
+## Summary
 
-**通用人工智能行为守则（General-Purpose AI Code of Practice, GPAI CoP）**由 **EU AI Office**
-依 [EU AI Act](./ai-act/) 第 56 条召集，经**近 1,000 参与者**多轮磋商后于 **2025-07-10 定稿**，
-**欧委会和 AI Board 于 2025-08-01 通过 Adequacy Decisions**，与 AI Act GPAI 条款的 **2025-08-02
-适用日期**同步生效。
+The **General-Purpose AI Code of Practice (GPAI CoP)** was convened by the **EU AI Office** pursuant to
+Article 56 of the [EU AI Act](./ai-act/); following multiple rounds of consultation with **roughly
+1,000 participants**, it was **finalized on 2025-07-10**. The **Commission and the AI Board adopted
+Adequacy Decisions on 2025-08-01**, synchronized with the **2025-08-02 entry into application of the
+AI Act's GPAI provisions**.
 
-**性质**：**自愿工具**，但**签署 = 合规推定**（第 56 条第 8 款）。未签署方需自证合规，成本更高。
+**Nature**: a **voluntary instrument**, but **signing produces a presumption of compliance**
+(Article 56(8)). Non-signatories must demonstrate compliance on their own, at higher cost.
 
-## 三个章节结构
+## Three-chapter structure
 
-### Chapter 1 · Transparency（透明度）
+### Chapter 1 · Transparency
 
-**适用**：**所有** GPAI 模型提供者（不论规模 / 开源 / 算力）。
+**Scope**: **all** GPAI model providers (regardless of size / open-source status / compute).
 
-内容：
-- 技术文档（附件 XI 模板的落地）
-- 下游文档（附件 XII 模板的落地）
-- 训练数据**"足够详细摘要"**（AI Office 2024-07 发布的模板）
-- 公开政策声明
+Content:
+- Technical documentation (operationalizing the Annex XI template)
+- Downstream documentation (operationalizing the Annex XII template)
+- **"Sufficiently detailed summary"** of training data (template published by the AI Office in 2024-07)
+- Public policy statements
 
-### Chapter 2 · Copyright（版权）
+### Chapter 2 · Copyright
 
-**适用**：所有 GPAI 模型提供者。
+**Scope**: all GPAI model providers.
 
-内容：
-- 遵守 **EU DSM Copyright Directive** 第 4 条（商业 TDM + 机器可读 opt-out）
-- 识别和尊重**版权人 opt-out 声明**（robots.txt、ai.txt 等）
-- **标准化 opt-out 识别流程**
-- 与版权人的争议处理机制
+Content:
+- Compliance with **EU DSM Copyright Directive** Article 4 (commercial TDM + machine-readable opt-out)
+- Recognize and honor **rightsholder opt-out declarations** (robots.txt, ai.txt, etc.)
+- **Standardized opt-out recognition workflows**
+- Dispute-resolution mechanism with rightsholders
 
-### Chapter 3 · Safety and Security（安全与保障）
+### Chapter 3 · Safety and Security
 
-**仅适用**于**具有系统性风险的 GPAI 模型**提供者（**≥ 10²⁵ FLOP** 推定，目前约 **5-15 家公司**）。
+**Scope**: applies **only** to providers of **GPAI models with systemic risk** (presumptively **≥ 10²⁵ FLOP**;
+currently about **5-15 companies**).
 
-内容：
-- **对抗性测试 / 红队**
-- **系统性风险评估和缓解**
-- **严重事件报告**（第 56 条）
-- **网络安全**（模型权重 + 物理基础设施）
-- 部署后监测
+Content:
+- **Adversarial testing / red teaming**
+- **Systemic-risk assessment and mitigation**
+- **Serious-incident reporting** (Article 56)
+- **Cybersecurity** (model weights + physical infrastructure)
+- Post-deployment monitoring
 
-## 签署情况（截至 2025-08-01）
+## Signatory status (as of 2025-08-01)
 
-**AI Office 官方签署者列表** 于 2025-08-01 公开。主要签署者（行业公开信息）：
+The **AI Office's official signatory list** was published on 2025-08-01. Principal signatories (based on publicly available information):
 
-| 公司 | 签署状态 |
+| Company | Signatory status |
 | --- | --- |
-| **Anthropic** | ✅ 完整签署 |
-| **Google DeepMind** | ✅ 完整签署 |
-| **Microsoft** | ✅ 完整签署 |
-| **OpenAI** | ✅ 签署，部分章节有保留意见 |
-| **Meta** | ⚠️ 签署但对**版权章节异议** |
-| **xAI** | ⚠️ 签署但对**安全与保障章节异议** |
-| **Mistral** | ✅ 完整签署 |
-| 非欧盟公司（DeepSeek、智谱、ByteDance） | ❌ 未公开签署 |
+| **Anthropic** | ✅ Signed in full |
+| **Google DeepMind** | ✅ Signed in full |
+| **Microsoft** | ✅ Signed in full |
+| **OpenAI** | ✅ Signed, with reservations on certain chapters |
+| **Meta** | ⚠️ Signed but dissenting on the **Copyright chapter** |
+| **xAI** | ⚠️ Signed but dissenting on the **Safety and Security chapter** |
+| **Mistral** | ✅ Signed in full |
+| Non-EU companies (DeepSeek, Zhipu, ByteDance) | ❌ No public signatures |
 
-## 合规推定的实操意义
+## Operational meaning of the presumption of compliance
 
-根据 **AI Act 第 56 条第 8 款**：
+Under **AI Act Article 56(8)**:
 
-- **签署 + 遵守 = 合规推定**：AI Office 和成员国监管机构在执法中**推定该提供者符合第 53-55 条义务**
-- **未签署**：需自行提交文档证明符合，可能面临更高合规文档负担和更严执法审视
-- **部分异议**：对有异议的章节仍需自证合规
+- **Signing + adherence = presumption of compliance**: the AI Office and member-state authorities
+  **presume the provider meets Articles 53-55 obligations** during enforcement
+- **Non-signatories**: must submit their own documentation; likely face higher documentation burden and stricter enforcement scrutiny
+- **Partial dissent**: still must self-evidence compliance for dissented chapters
 
-## 与其他监管框架的交叉
+## Intersection with other frameworks
 
-### 与美国的对比
+### Comparison with the United States
 
-- **Biden Voluntary Commitments (2023-07)**：8 家公司签署；EO 14110 撤销后失去政策背书
-- **GPAI CoP (2025)**：正式法律授权（AI Act 第 56 条），签署有实质法律效果
-- **跨大西洋合规**：签署 GPAI CoP 对通过白宫 2023 Commitments 的公司是**文档复用**
+- **Biden Voluntary Commitments (2023-07)**: signed by 8 companies; lost policy backing after EO 14110's revocation
+- **GPAI CoP (2025)**: formal legal authority (AI Act Article 56); signing has substantive legal effect
+- **Transatlantic compliance**: for companies that signed the 2023 White House Commitments, signing the GPAI CoP enables **documentation reuse**
 
-### 与中国的对比
+### Comparison with China
 
-- **TC260-003-2024**：事实强制的技术规范，类似"Code of Practice"但性质是技术标准
-- **人工智能安全治理框架 1.0/2.0**：跨场景风险分类，类似 GPAI CoP 的 Safety 章节但范围更广
+- **TC260-003-2024**: de facto mandatory technical specification, comparable to a "Code of Practice" but formally a technical standard
+- **AI Safety Governance Framework 1.0 / 2.0**: cross-scenario risk classification, comparable to the CoP's Safety chapter but broader in scope
 
-### 与 G7 Hiroshima Process
+### Relation to the G7 Hiroshima Process
 
-- Hiroshima Code of Conduct (2023-10)：国际自愿框架
-- GPAI CoP 吸收了 Hiroshima 原则但**更具体、更可执行**
+- The Hiroshima Code of Conduct (2023-10) is an international voluntary framework
+- The GPAI CoP absorbs Hiroshima principles but is **more concrete and more enforceable**
 
-## 时间线
+## Timeline
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2024-08-01 | EU AI Act 生效，第 56 条授权召集 |
-| 2024-10 | 第一轮草案 |
-| 2025-04 | 第二轮草案 |
-| 2025-07-10 | **终版发布** |
-| 2025-08-01 | 欧委会 + AI Board 通过 Adequacy Decisions；签署者列表公开 |
-| 2025-08-02 | AI Act GPAI 条款（第 51-56 条）适用日期 |
-| 2026-2027 | 根据实践迭代 |
+| 2024-08-01 | EU AI Act enters into force; Article 56 mandates the CoP convening |
+| 2024-10 | First draft |
+| 2025-04 | Second draft |
+| 2025-07-10 | **Final version published** |
+| 2025-08-01 | Commission + AI Board Adequacy Decisions; signatory list published |
+| 2025-08-02 | AI Act GPAI provisions (Articles 51-56) become applicable |
+| 2026-2027 | Iteration based on practice |
 
-## 原文与归档
+## Text and archives
 
-| 来源 | 链接 |
+| Source | Link |
 | --- | --- |
-| 欧委会 GPAI CoP 专页 | [digital-strategy.ec.europa.eu/.../contents-code-gpai](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai) |
-| 终版全文（官方） | [code-of-practice.ai](https://code-of-practice.ai/) |
-| 签署者任务组 | [digital-strategy.ec.europa.eu/.../signatory-taskforce-gpai](https://digital-strategy.ec.europa.eu/en/policies/signatory-taskforce-gpai-code-practice) |
-| 邀请签署函 | [digital-strategy.ec.europa.eu/.../invites-providers-sign](https://digital-strategy.ec.europa.eu/en/library/ai-office-invites-providers-sign-gpai-code-practice) |
-| Latham & Watkins 解读 | [lw.com/.../eu-ai-act-gpai-model-obligations](https://www.lw.com/en/insights/eu-ai-act-gpai-model-obligations-in-force-and-final-gpai-code-of-practice-in-place) |
-| Skadden 解读 | [skadden.com/.../eus-general-purpose-ai-obligations](https://www.skadden.com/insights/publications/2025/08/eus-general-purpose-ai-obligations) |
-
+| Commission GPAI CoP page | [digital-strategy.ec.europa.eu/.../contents-code-gpai](https://digital-strategy.ec.europa.eu/policies/contents-code-gpai) |
+| Final version (official) | [code-of-practice.ai](https://code-of-practice.ai/) |
+| Signatory task force | [digital-strategy.ec.europa.eu/.../signatory-taskforce-gpai](https://digital-strategy.ec.europa.eu/policies/signatory-taskforce-gpai-code-practice) |
+| Invitation to sign | [digital-strategy.ec.europa.eu/.../invites-providers-sign](https://digital-strategy.ec.europa.eu/library/ai-office-invites-providers-sign-gpai-code-practice) |
+| Latham & Watkins analysis | [lw.com/.../eu-ai-act-gpai-model-obligations](https://www.lw.com/insights/eu-ai-act-gpai-model-obligations-in-force-and-final-gpai-code-of-practice-in-place) |
+| Skadden analysis | [skadden.com/.../eus-general-purpose-ai-obligations](https://www.skadden.com/insights/publications/2025/08/eus-general-purpose-ai-obligations) |

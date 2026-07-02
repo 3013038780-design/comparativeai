@@ -1,82 +1,81 @@
 ---
-title: 中国 — 数据与训练
-description: 中国对 AI 训练数据的 "三法叠加 + TC260 技术标准" 合规路径
+title: China — Data and Training
+description: China's "three-law stack + TC260 technical standards" compliance path for AI training data.
 sidebar:
   order: 2
-  label: 中国
+  label: China
 ---
 
-## 相关规则
+## Relevant rules
 
-| 规则 | 与训练数据的关系 |
+| Rule | Relationship to training data |
 | --- | --- |
-| [PIPL](/rules/china/personal-info-protection-law/) (2021) | 个人信息合法基础、敏感信息、跨境 |
-| [CSL](/rules/china/cybersecurity-law/) (2017) | 数据本地化（CII） |
-| [DSL](/rules/china/data-security-law/) (2021) | 重要数据风险评估 / 出境 |
-| [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) | 语料合法性 5% 阈值、来源多样性 |
-| [《生成式 AI 办法》](/rules/china/generative-ai-interim-measures/) (2023) | 第七条训练数据专条 |
+| [PIPL](/rules/china/personal-info-protection-law/) (2021) | Lawful basis for personal information; sensitive data; cross-border |
+| [CSL](/rules/china/cybersecurity-law/) (2017) | Data localisation (CII) |
+| [DSL](/rules/china/data-security-law/) (2021) | Important-data risk assessment and export |
+| [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) | 5% threshold for corpus lawfulness; source diversity |
+| [*Generative AI Interim Measures*](/rules/china/generative-ai-interim-measures/) (2023) | Article 7, the training-data-specific provision |
 
-## 中国训练数据合规的三层结构
+## Three layers of training-data compliance in China
 
-### 法律层（PIPL + DSL + CSL）
+### Law layer (PIPL + DSL + CSL)
 
-- **个人信息**：合法基础、告知同意、敏感信息单独同意、未成年人
-- **重要数据**：识别、风险评估、出境审查
-- **数据本地化**：CII 运营者收集的境内数据原则上境内存
+- **Personal information**: lawful basis, notice and consent, separate consent for sensitive information, minors.
+- **Important data**: identification, risk assessment, export review.
+- **Data localisation**: data collected domestically by CII operators must, in principle, remain stored domestically.
 
-### 部门规章层（《生成式 AI 办法》第七条）
+### Departmental-rule layer (*Generative AI Interim Measures*, art. 7)
 
-> 生成式人工智能服务提供者应当依法开展预训练、优化训练等训练数据处理活动，
-> 遵守以下规定：
+> 《生成式人工智能服务管理暂行办法》第七条: "生成式人工智能服务提供者应当依法开展预训练、优化训练等训练数据处理活动，遵守以下规定：
 > （一）使用具有合法来源的数据和基础模型；
 > （二）涉及知识产权的，不得侵害他人依法享有的知识产权；
 > （三）涉及个人信息的，应当取得个人同意或者符合法律、行政法规规定的其他情形；
 > （四）采取有效措施提高训练数据质量，增强训练数据的真实性、准确性、客观性、多样性；
-> （五）《网络安全法》《数据安全法》《个人信息保护法》等法律、行政法规的其他有关规定和
->     有关主管部门的相关监管要求。
+> （五）《网络安全法》《数据安全法》《个人信息保护法》等法律、行政法规的其他有关规定和有关主管部门的相关监管要求。"
+>
+> — i.e., generative AI service providers must conduct pre-training, fine-tuning, and related data-processing activities in accordance with the law, and must: (1) use data and foundation models with a lawful source; (2) not infringe the intellectual property rights of others; (3) where personal information is involved, obtain consent or comply with other circumstances provided in law or administrative regulations; (4) take effective measures to improve the quality of training data, strengthening its authenticity, accuracy, objectivity, and diversity; (5) comply with all relevant provisions of the *Cybersecurity Law*, the *Data Security Law*, the *Personal Information Protection Law*, and other laws and regulations, and with requirements from competent authorities.
 
-### 技术标准层（[TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/)）
+### Technical-standard layer ([TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/))
 
-**核心量化要求**：
-- 语料抽样 4000 条，非法不良信息比例 **≤ 5%**
-- 来源多样性（中文 / 英文）
-- 标注人员培训与测试
-- 31 类风险覆盖
+**Core quantitative requirements**:
+- Corpus sampling of 4,000 items; unlawful or harmful content must be **≤ 5%**.
+- Source diversity (Chinese / English).
+- Annotator training and testing.
+- Coverage across 31 risk categories.
 
-## 特殊问题
+## Special issues
 
-### 1. 合法来源 & 公开可获取
+### 1. Lawful source and publicly accessible data
 
-《生成式 AI 办法》第七条"合法来源"+ PIPL 第十三条"合法基础"的叠加：
+The stacking of "lawful source" in art. 7 of the *Generative AI Interim Measures* and "lawful basis" in art. 13 of PIPL:
 
-- **公开可获取**（互联网抓取）≠ **可用于训练**
-- 用户生成内容 (UGC)：用户协议中的训练授权条款越来越普遍，但**PIPL 的单独同意**要求是否满足存争议
+- **Publicly accessible** (web scraping) ≠ **usable for training**.
+- User-generated content (UGC): training-authorisation clauses in user agreements are increasingly common, but whether they satisfy PIPL's **separate-consent** requirement is disputed.
 
-### 2. 知识产权
+### 2. Intellectual property
 
-- 版权：《著作权法》修改未明确引入"文本数据挖掘 (TDM) 例外"
-- 实务：训练数据引发的版权诉讼（如 2024 上海某案例涉及文生图模型）
-- 合理使用的边界不清
+- Copyright: the revised *Copyright Law* has not expressly introduced a "text and data mining (TDM) exception".
+- In practice: copyright lawsuits triggered by training data (e.g., a 2024 Shanghai case involving a text-to-image model).
+- The contours of fair use are unclear.
 
-### 3. 数据跨境
+### 3. Cross-border data
 
-训练数据涉及跨境场景：
-- **境内训练 / 境外存储**：数据出境（安全评估 / SCCs / 认证三路径）
-- **境外训练 / 服务境内**：境外模型本身不直接适用，但服务落地需独立评估
-- **跨境共享训练数据集**：可能触发 DSL 第三十六条阻断条款
+Cross-border scenarios for training data:
+- **Domestic training / foreign storage**: data export (security assessment / SCCs / certification — three routes).
+- **Foreign training / serving domestic users**: the foreign model itself is not directly covered, but onshore service launch requires a separate assessment.
+- **Cross-border sharing of training datasets**: may trigger the blocking provision in art. 36 of the DSL.
 
-### 4. 合成数据 / 人类反馈 (RLHF)
+### 4. Synthetic data and human feedback (RLHF)
 
-- **合成数据**：由模型生成的训练数据，法规未特殊化；真实性 / 多样性要求不变
-- **RLHF 标注数据**：TC260-003 有专门章节；标注员的劳动和数据权利有单独关注
+- **Synthetic data**: model-generated training data — not specifically regulated; authenticity and diversity requirements still apply.
+- **RLHF annotation data**: TC260-003 has a dedicated section; annotators' labour and data rights have drawn independent attention.
 
-## 与 EU / US 的对比
+## Comparison with the EU and the US
 
-| 维度 | 中国 | EU | US |
+| Dimension | China | EU | US |
 | --- | --- | --- | --- |
-| 个人数据 | PIPL 单独同意（敏感）+ 合法基础 | GDPR 合法基础 + 第 9 条特殊类别 | 无联邦隐私法（州法拼图） |
-| 版权 / TDM | 无明确 TDM 例外 | 有 DSM TDM 例外（opt-out 机制） | Fair Use 原则下处理 |
-| 数据质量 | TC260-003 量化（5%/90%） | AI Act 第 10 条质量要求 | NIST RMF 原则性 |
-| 跨境 | PIPL + DSL + CSL 三重机制 | Schrems II + DPF | EO 14179 后相对宽松 |
-| 训练数据摘要 | 无强制公开 | AI Act 第 53 条强制 | 无 |
-
+| Personal data | PIPL separate consent (sensitive) + lawful basis | GDPR lawful basis + art. 9 special categories | No federal privacy law (state patchwork) |
+| Copyright / TDM | No express TDM exception | DSM TDM exception (opt-out mechanism) | Handled under fair-use doctrine |
+| Data quality | TC260-003 quantitative (5% / 90%) | AI Act art. 10 quality requirements | NIST RMF principles |
+| Cross-border | PIPL + DSL + CSL triple mechanism | Schrems II + DPF | Permissive after EO 14179 |
+| Training-data summary | No mandatory disclosure | AI Act art. 53 mandatory | None |

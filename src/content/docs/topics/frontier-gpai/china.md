@@ -1,62 +1,72 @@
 ---
-title: 中国 — 前沿模型与 GPAI
-description: 中国对基础大模型的备案制、安全评估、TC260 技术规范；没有"GPAI"单独概念
+title: China — Frontier Models and GPAI
+description: China's approach to large foundation models — algorithm filing, security assessment, and TC260 technical specifications, with no dedicated "GPAI" concept.
 sidebar:
   order: 2
-  label: 中国
+  label: China
 ---
 
-## 相关规则
+## Relevant rules
 
-| 规则 | 与 GPAI 的关系 |
+| Rule | Relationship to GPAI |
 | --- | --- |
-| [《生成式 AI 办法》](/rules/china/generative-ai-interim-measures/) (2023) | 大模型面向公众服务的上位规章 |
-| [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) | 备案的事实技术标准 |
-| [《深度合成规定》](/rules/china/deep-synthesis-provisions/) (2023) | 服务类备案的姊妹规章 |
-| [《算法推荐规定》](/rules/china/algorithm-recommendation-provisions/) (2022) | 算法备案的最早规则 |
+| [*Generative AI Interim Measures*](/rules/china/generative-ai-interim-measures/) (2023) | Primary rule for large models offered as public-facing services |
+| [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) | De facto technical standard for filing review |
+| [*Deep Synthesis Provisions*](/rules/china/deep-synthesis-provisions/) (2023) | Sister rule for service-level filings |
+| [*Algorithmic Recommendation Provisions*](/rules/china/algorithm-recommendation-provisions/) (2022) | Earliest rule for algorithm filing |
 
-## 中国没有"GPAI"概念
+## China has no "GPAI" concept
 
-- 中国立法**没有对应 EU AI Act 第 51 条 GPAI 的独立类别**
-- 监管锚点是**服务**而非**模型**：无论是 100 亿参数还是 1000 亿参数模型，只要面向中国公众提供生成式 AI 服务，都走同一条备案+评估路径
-- **开源** vs. **闭源** 在监管文本中区分有限：CAC 2024 回答有表态"开源不面向公众 = 不触发备案"，实操中仍存在灰色区
+- Chinese legislation has **no dedicated category corresponding to art. 51 of the EU AI Act**.
+- The regulatory anchor is the **service**, not the **model**: whether the model has 10 billion or 1 trillion parameters, any public-facing generative AI service in China follows the same filing + assessment pathway.
+- The **open-source vs. closed-source** distinction is thinly articulated in the regulatory text: a 2024 CAC Q&A did state that "open-source without public-facing deployment does not trigger filing", but grey areas remain in practice.
 
-## 监管三件套
+## Three-part regulatory toolkit
 
-### 1. 算法备案
+### 1. Algorithm filing
 
-- 依据：《算法推荐规定》第二十四条、《生成式 AI 办法》第十七条、《深度合成规定》第十九条
-- 流程：提交备案材料 → 网信办审核 → 获得备案号 → 可对外宣传
-- **实质门槛**：具备"舆论属性或社会动员能力"的大模型服务
-- 清单：CAC 每季度公示备案清单（2026-04 已过 **十余批次**）
+- Legal basis: *Algorithmic Recommendation Provisions* art. 24, *Generative AI Interim Measures* art. 17, *Deep Synthesis Provisions* art. 19.
+- Process: submit filing materials → CAC review → receive filing number → permissioned to market.
+- **De facto threshold**: large-model services with "public-opinion attributes or capacity for social mobilisation".
+- Register: CAC publishes periodic filing notices. As of 30 April 2026, **868 services had completed filing**;
+  **530 downstream applications or functions** using already-filed models had completed local registration.
 
-### 2. 安全评估（第二十三条《生成式 AI 办法》援引）
+### 2. Security assessment (referenced in art. 17 of the *Generative AI Interim Measures*)
 
-- 上位：《具有舆论属性或社会动员能力的互联网信息服务安全评估规定》(2018)
-- 标尺：[TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/)
-- **实质要求**：训练语料合法 / 标注规范 / 模型输出安全通过率 ≥ 90% / 关键词库 / 应急机制
+- Primary rule: *Provisions on Security Assessment of Internet Information Services with Public-Opinion Attributes or Capacity for Social Mobilisation* (2018).
+- Yardstick: [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/).
+- **Substantive requirements**: lawfulness of training corpora / normative annotation / ≥ 90% safety-pass rate on model outputs / keyword-base coverage / incident-response mechanism.
 
-### 3. 科技伦理审查（立项阶段）
+### 3. Science and technology ethics review (R&D stage)
 
-- 依据：[科技伦理审查办法（试行）](/rules/china/science-tech-ethics-review-measures/)
-- 第二十五条清单含"具有舆论社会动员能力和社会意识引导能力的算法模型"
-- 研发阶段义务（相对于上市阶段）
+- Legal basis: [*Science and Technology Ethics Review Measures (Trial)*](/rules/china/science-tech-ethics-review-measures/).
+- Article 25's list includes "algorithmic models with capacity for social mobilisation or for shaping social consciousness".
+- An R&D-stage obligation (as distinct from obligations at the market-launch stage).
 
-## 实务观察
+## Practice notes
 
-1. **"面向公众服务"是阈值**：未对外服务的内部研发 / 封闭测试不强制备案
-2. **境外模型镜像**：境外大模型在华中文服务一般通过境内合作方备案
-3. **模型层 vs. 应用层**：很多应用（Chatbot / 虚拟人 / 文生图）背后同一个基础模型——**每个应用单独备案**
-4. **开源模型的尴尬**：训练方发布开源模型（如 DeepSeek）自身是否需备案？实务中，训练方提供 API 服务的走备案；仅发布权重可能不走
+1. **"Public-facing service" is the trigger**: internal R&D or closed testing does not mandate filing.
+2. **Foreign-model mirrors**: Chinese-language services built on foreign large models typically file through a domestic partner.
+3. **Model layer vs. application layer**: a covered base service completes filing; a downstream application or
+   function that directly calls an already-filed model normally completes **local registration** and displays the
+   model name and filing or launch number. It does not necessarily duplicate the base model's filing.
+4. **The awkwardness of open-source models**: whether the training party that releases an open-weight model (e.g., DeepSeek) itself needs to file is disputed — in practice, the training party files when it also offers an API, and weight-only releases may not trigger filing.
 
-## 与 EU / US 的对比
+## Comparison with the EU and the US
 
-| 维度 | 中国 | EU (AI Act) | US |
+| Dimension | China | EU (AI Act) | US |
 | --- | --- | --- | --- |
-| 专门概念 | 无 | "GPAI" + "系统性风险 GPAI" | 无（EO 14110 的 10²⁶ FLOP 已撤销） |
-| 算力门槛 | 无 | 10²⁵ FLOP 推定 | 无（历史上曾 10²⁶） |
-| 义务 | 备案 + 安评 + TC260 | 训练文档 / 事件报告 / 对抗测试 | 自愿（Frontier Model Forum、NIST AI RMF） |
-| 上市闸门 | **严格**（无备案不能面向公众） | 事前合规但无"批准" | 无 |
+| Dedicated concept | None | "GPAI" + "systemic-risk GPAI" | None (EO 14110's 10²⁶ FLOP is revoked) |
+| Compute threshold | None | 10²⁵ FLOP presumption | None (historically 10²⁶) |
+| Obligations | Filing + security assessment + TC260 | Training documentation / incident reporting / adversarial testing | Voluntary (Frontier Model Forum, NIST AI RMF) |
+| Market gate | **Strict** (no filing = no public service) | Ex-ante compliance but no "approval" | None |
 
-中国是三辖区中对前沿模型**事前闸门**最严格的。
+Among the three jurisdictions, China has the strictest **ex-ante gate** for frontier models.
 
+## June 2026 implementation note
+
+The May 2026 [AI-agent Implementation Opinion](/rules/china/ai-agent-implementation-opinion/) extends this
+service-centred model toward systems that can plan, call tools and act. It proposes differentiated governance by
+scenario and impact, but does **not** create a compute threshold or a new GPAI-style model category.
+
+**Primary implementation source:** [CAC filing notice, 13 May 2026](https://www.cac.gov.cn/2026-05/13/c_1780413225190669.htm).

@@ -1,55 +1,58 @@
 ---
-title: 美国各州 / 市 — AI 相关立法
-description: 州综合性 AI 法、市级专项条例，以及州检察长执法；2025 年 1,208 项州 AI 法案、145 项获通过
+title: US States / Cities — AI-related Legislation
+description: Comprehensive state AI laws, municipal sector-specific ordinances, and state attorneys general enforcement; 1,208 state AI bills in 2025, 145 enacted
 sidebar:
   order: 2
-  label: 🇺🇸 美国各州
+  label: US States
 ---
 
 import UsStateMap from '../../../../components/Viz/UsStateMap.astro';
 
-<UsStateMap locale="zh-CN" />
+<UsStateMap locale="en" />
 
-## 概览
+## Overview
 
-美国**联邦层面**至今无综合性 AI 立法（EO 14179 后更向去监管方向），**AI 治理的硬法主战场在州**。
+At the **federal level** the United States still has no comprehensive AI legislation (and EO 14179 pushed further in a deregulatory direction); **the hard-law main theatre of AI governance is at the state level**.
 
-**2025 立法会议**：全美**1,208 项**州级 AI 法案被提出，**145 项获通过**（IAPP、NCSL 统计）。
-2026 多部综合性州 AI 法进入**生效期**（Colorado、California SB 53、Texas TRAIGA）。
+**The 2025 legislative session**: **1,208** state AI bills were introduced nationwide, **145 enacted** (IAPP / NCSL statistics). Several comprehensive state AI laws enter their **effective phase** in 2026 (Colorado, California SB 53, Texas TRAIGA).
 
-**2025-12-11 Trump EO 14365**：联邦对州 AI 法发起**抢占攻势**，但**法律界普遍认为行政令不能
-独立抢占州法**，短期内各州 AI 法**继续生效**。
+**Trump EO 14365 (2025-12-11)**: the federal government launched a **preemption offensive** against state AI laws, but **the legal profession generally considers that an executive order cannot independently preempt state law**; in the near term, state AI laws **continue to take effect**.
 
-## 已收录（三部综合性州法 + 一部市法）
+## Collected (three comprehensive state laws + sectoral state and municipal laws)
 
-### 州法（综合性 AI）
+### State laws (comprehensive AI)
 
-- [**Colorado AI Act (SB24-205)**](./colorado-ai-act/) — 2026-06-30 生效（2025 修正后推迟）·
-  **美国首部综合性 AI 反歧视州法**，结构最接近 EU AI Act
+- [**Colorado AI Act (SB24-205)**](./colorado-ai-act/) — effective 2026-06-30 (postponed by 2025 amendments) ·
+  **the first US comprehensive state AI anti-discrimination law**, structurally closest to the EU AI Act.
 - [**California SB 53 (Transparency in Frontier AI Act)**](./california-sb-53-frontier-ai/) —
-  **2026-01-01 生效** · **美国首部前沿 AI 专门州法**，算力阈值 10²⁶ FLOP
-- [**Texas TRAIGA (HB 149)**](./texas-traiga/) — **2026-01-01 生效** · 共和党版综合 AI 法，
-  聚焦禁止有害用途 + 抢占地方条例
+  **effective 2026-01-01** · **the first US state law specifically targeting frontier AI**, with a 10²⁶ FLOP compute threshold.
+- [**Texas TRAIGA (HB 149)**](./texas-traiga/) — **effective 2026-01-01** · the Republican-led version of a comprehensive AI law, focused on prohibiting harmful uses + preempting local ordinances.
 
-### 市法（专项）
+### Municipal law (sector-specific)
 
-- [**NYC Local Law 144 (AEDT)**](./nyc-local-law-144/) — 2023-07-05 执法 · 美国首部针对 AI 招聘
-  工具的具体合规法
+- [**NYC Local Law 144 (AEDT)**](./nyc-local-law-144/) — enforcement began 2023-07-05 · the first US law with concrete compliance requirements for AI hiring tools.
 
-## 三部州综合法对比
+### State law (sector-specific)
 
-| 维度 | Colorado AI Act | California SB 53 | Texas TRAIGA |
+- [**Colorado HB26-1195 — Psychotherapy AI Restrictions**](./colorado-psychotherapy-ai-restrictions/) —
+  signed 2026-06-03, effective 2026-08-12; requires real-time professional participation or review for therapeutic
+  communications and recommendations, plus informed consent for AI recording or transcription.
+
+## Comparison of the three comprehensive state laws
+
+| Dimension | Colorado AI Act | California SB 53 | Texas TRAIGA |
 | --- | --- | --- | --- |
-| 定位 | 反歧视 / 高风险 AI | 前沿 AI 透明度 | 禁止特定有害用途 |
-| 适用对象 | Developer + Deployer | 年营收 ≥ $500M 大型前沿开发者 | 所有主体 |
-| 合规负担 | 高 | 中 | 低 |
-| 罚则 | 按 CPA | $1M / violation | $10K-$200K / violation |
-| 政党主导 | 民主党 | 民主党 | 共和党 |
-| 抢占地方 | — | — | **明确抢占市县** |
+| Positioning | Anti-discrimination / high-risk AI | Frontier AI transparency | Prohibition of specific harmful uses |
+| Covered entities | Developer + Deployer | Large frontier developers with annual revenue ≥ $500M | All entities |
+| Compliance burden | High | Medium | Low |
+| Penalties | Per CPA | $1M / violation | $10K-$200K / violation |
+| Party lead | Democratic Party | Democratic Party | Republican Party |
+| Preemption of local ordinances | — | — | **Explicitly preempts cities and counties** |
 
-## 与联邦层级的关系（2026-04 当前态势）
+## Relation to the federal level (state of play as of 2026-06-30)
 
-- **联邦去监管 + 州监管抵抗**：Trump 政府推动抢占，州 AG 抵抗
-- **EO 14365 诉讼威胁**：2026-Q1/Q2 预期 DOJ AI 诉讼工作组向加州 / 科州提起挑战
-- **实务判断**：企业**短期继续合规既有州法**，中期等联邦法院判决
-- **大州示范效应**：加州 / 科州 / 德州 / 伊州 / 纽州的立法常被后续州借鉴（跨意识形态光谱）
+- **Federal deregulation + state-level regulatory resistance**: the Trump administration pushes preemption; state AGs push back.
+- **EO 14365 litigation threat**: the federal preemption campaign continues, but no executive order by itself
+  displaced the Colorado Act before its 30 June effective date.
+- **Practical takeaway**: firms should **continue to comply with existing state laws in the near term** and await federal-court rulings over the medium term.
+- **Large-state demonstration effect**: the legislation of California / Colorado / Texas / Illinois / New York is frequently drawn on by subsequent states (across the ideological spectrum).

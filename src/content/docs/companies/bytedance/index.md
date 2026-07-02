@@ -1,97 +1,97 @@
 ---
-title: 字节跳动 ByteDance
-description: 字节跳动公司概况与公开政策文档快照（2026-04-21）
+title: ByteDance 字节跳动
+description: ByteDance 字节跳动 (parent of Douyin / TikTok / Doubao 豆包) company profile and policy-document snapshot (2026-06-28)
 sidebar:
   order: 4
-  label: 字节跳动 ByteDance
-snapshotDate: 2026-04-21
+  label: ByteDance 字节跳动
+snapshotDate: 2026-06-28
 ---
 
-## 公司概况
+## Company profile
 
-- **成立**：2012
-- **总部**：北京
-- **主要 AI 产品**：
-  - **豆包 (Doubao)**：消费者 AI 助手
-  - **豆包大模型 / Seed 系列**：基础模型
-  - **扣子 (Coze)**：AI 应用 / Agent 平台
-  - **Cici / 海外 Doubao**：海外用户界面（部分功能）
-  - **TikTok / CapCut / Lemon8** 等应用中内嵌的 AI 能力
-- **商业模式**：消费者应用（广告 + 订阅）、火山引擎（ToB 云服务）
-- **定位**：中国本土**第一阵营**的大模型公司；出海意愿强但受限（特别是美国）
+- **Founded**: 2012
+- **Headquarters**: Beijing
+- **Main AI products**:
+  - **Doubao 豆包**: consumer AI assistant
+  - **Doubao LLMs / Seed series**: foundation models
+  - **Coze 扣子**: AI applications and Agent platform
+  - **Cici / overseas Doubao**: international-facing surfaces (subset of features)
+  - Embedded AI capabilities in **TikTok, CapCut, Lemon8**, and other apps
+- **Business model**: consumer apps (advertising + subscription), Volcano Engine 火山引擎 (B2B cloud services)
+- **Positioning**: **first-tier** Chinese domestic LLM company; strong overseas ambition but constrained (especially in the U.S.)
 
-## 公开政策文档快照
+## Policy document snapshot
 
-| 类型 | 文档名 | 链接 | 本站子页 |
+| Type | Document | Link | Subpage |
 | --- | --- | --- | --- |
-| 使用政策 | 豆包 / 扣子《用户协议》及内容规范 | [doubao.com](https://www.doubao.com/) / [coze.cn](https://www.coze.cn/) | [usage-policy](./usage-policy/) |
-| 模型卡 | 豆包大模型系列技术报告 | [volcengine.com](https://www.volcengine.com/product/doubao) | [model-card](./model-card/) |
-| 安全框架 | 内部风控 + TC260-003 合规（公开文档有限） | _公开文档有限_ | [safety-framework](./safety-framework/) |
-| 透明度报告 | CAC 备案（多批次） | [cac.gov.cn](https://www.cac.gov.cn/) | [transparency-report](./transparency-report/) |
-| 红队披露 | 公开红队披露较少；技术论文 arXiv | [arxiv.org](https://arxiv.org/) | [red-team-disclosures](./red-team-disclosures/) |
+| Usage policy | Doubao / Coze User Agreement and content rules | [doubao.com](https://www.doubao.com/) / [coze.cn](https://www.coze.cn/) | [usage-policy](./usage-policy/) |
+| Model cards | Doubao LLM series technical reports | [volcengine.com](https://www.volcengine.com/product/doubao) | [model-card](./model-card/) |
+| Safety framework | Internal risk controls + TC260-003 compliance (limited public documentation) | _limited public documentation_ | [safety-framework](./safety-framework/) |
+| Transparency report | CAC filings (multiple batches) | [cac.gov.cn](https://www.cac.gov.cn/) | [transparency-report](./transparency-report/) |
+| Red-team disclosures | Limited public red-team disclosure; technical papers on arXiv | [arxiv.org](https://arxiv.org/) | [red-team-disclosures](./red-team-disclosures/) |
 
-## 监管合规位置
+## Regulatory-compliance posture
 
-- **中国**：
-  - [《生成式 AI 办法》](/rules/china/generative-ai-interim-measures/) 算法备案（豆包多产品已备案）
-  - [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) 合规
-  - [《深度合成规定》](/rules/china/deep-synthesis-provisions/)、[《算法推荐规定》](/rules/china/algorithm-recommendation-provisions/) 多项合规
-- **美国**：**CFIUS / TikTok 立法持续压力**（2024 通过《Protecting Americans from
-  Foreign Adversary Controlled Applications Act》强制剥离或禁用）；豆包 / Doubao 北美消费者未上线
-- **欧盟**：TikTok 已是 DSA VLOP；2024 欧委会对 TikTok Lite 发起 DSA 正式程序
-- **新加坡 / 印尼 / 巴西**：持续推进本地化
+- **China**:
+  - Algorithm filing under the [Generative AI Interim Measures](/rules/china/generative-ai-interim-measures/) (multiple Doubao products filed)
+  - [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/) compliance
+  - Compliance with the [Deep Synthesis Provisions](/rules/china/deep-synthesis-provisions/), [Algorithm Recommendation Provisions](/rules/china/algorithm-recommendation-provisions/), and others
+- **United States**: **persistent CFIUS / TikTok legislative pressure** (the 2024 *Protecting Americans from Foreign Adversary Controlled Applications Act* mandated divestiture or ban); Doubao is not available to North-American consumers
+- **European Union**: TikTok is a designated DSA Very Large Online Platform (VLOP); in 2024 the Commission opened formal DSA proceedings against TikTok Lite
+- **Singapore / Indonesia / Brazil**: ongoing localisation
 
-## 深度分析：**嵌入式自律**——中国公司的独特自律模式
+## Deep dive: **embedded self-regulation — the distinctive mode of Chinese companies**
 
-### 中国 AI 公司自律的制度背景
+### The institutional backdrop of Chinese AI company self-regulation
 
-与美国 / 欧盟公司不同，中国头部 AI 公司的"自律"并非**独立于国家监管**的企业自主选择，而是
-**嵌入在国家监管框架内**执行。ByteDance 是这一模式的典型：
+Unlike U.S. / EU companies, Chinese leading AI companies' "self-regulation" is not **independent corporate
+choice** standing outside state regulation; it is **embedded within the state-regulatory framework**.
+ByteDance is a prototypical case:
 
-- **没有独立的"Responsible Scaling Policy"类文档**
-- **安全框架 = CAC 备案材料 + TC260-003 合规清单**
-- 公司对外披露的"治理承诺"本质是**对监管机构的合规声明**
-- 公司内部的"安全委员会"更多对应**党委指导**下的跨部门合规协调
+- **No standalone "Responsible Scaling Policy"-type document**
+- **Safety framework = CAC filing materials + TC260-003 compliance checklist**
+- Publicly disclosed "governance commitments" are essentially **compliance statements directed at regulators**
+- Internal "safety committees" correspond more to **Party-committee-directed** cross-functional compliance coordination
 
-### ByteDance 的合规架构（推测，基于公开材料 + 行业惯例）
+### ByteDance's compliance architecture (inferred from public materials + industry practice)
 
-**外部合规层**：
-- **CAC 算法备案**：豆包、扣子、火山方舟、多个细分产品单独备案（每季度 CAC 公示）
-- **TC260-003-2024 合规**：通过备案审核的事实要求
-- **《深度合成规定》**：换脸 / 变声产品的强化备案
-- **专项执法响应**："清朗"系列专项行动中的快速整改
+**External compliance layer:**
+- **CAC algorithm filings**: Doubao, Coze, Volcano Ark, and multiple sub-products filed separately (quarterly CAC publication)
+- **TC260-003-2024 compliance**: a de facto requirement for passing filings
+- **Deep Synthesis Provisions**: enhanced filings for face-swap and voice-change products
+- **Targeted-enforcement response**: rapid rectification in the "Qinglang 清朗" campaign series
 
-**内部治理层**：
-- **党委**：算法价值观、生成式内容审核、重大技术路线选择（参见 [Olivia 毕业论文](/about/) 引用的三级协同机制）
-- **内容安全团队**：规模约 **数千人**（公开估计）的人工审核员
-- **法务 / 合规**：对接 CAC、工信部、公安部多头监管
-- **海外合规团队**：TikTok 在美国（$1.5B+ 内容审核投入）、欧盟（DSA VLOP 合规）、新加坡等独立团队
+**Internal governance layer:**
+- **Party committee**: participates in algorithmic values, content moderation for generative outputs, and major technical-roadmap decisions (see the three-tier coordination mechanism cited in [Olivia's graduate thesis](/about/))
+- **Content-safety team**: human moderator headcount on the order of **several thousand** (public estimate)
+- **Legal / compliance**: liaises with CAC, MIIT, and Ministry of Public Security across multiple regulators
+- **Overseas compliance teams**: independent units for TikTok in the U.S. ($1.5B+ invested in content moderation), the EU (DSA VLOP compliance), Singapore, and others
 
-### ByteDance 的合规复杂度：**全球监管的撕裂**
+### ByteDance's compliance complexity: **the global regulatory split**
 
-ByteDance 是**唯一同时面对中美欧三大监管体系严格审视**的 AI 公司：
+ByteDance is **the only AI company simultaneously subject to intense U.S., EU, and Chinese regulatory scrutiny**:
 
-| 辖区 | 主要压力 |
+| Jurisdiction | Primary pressure |
 | --- | --- |
-| **中国** | CAC / 工信部 / 公安部多头合规；TC260-003；清朗专项 |
-| **美国** | **PAFACA 2024 强制剥离 / 禁用**法律；CFIUS 审查；多州对 TikTok 政府设备禁令 |
-| **欧盟** | TikTok **VLOP**（DSA 下最严义务）；2024 TikTok Lite 被正式程序；意大利 Garante 调查 |
-| **印尼 / 巴西 / 印度** | 持续监管压力 |
+| **China** | CAC / MIIT / Ministry of Public Security multi-agency compliance; TC260-003; Qinglang campaigns |
+| **United States** | **PAFACA 2024 mandatory divestiture / ban** law; CFIUS review; multiple state-level TikTok government-device bans |
+| **European Union** | TikTok VLOP (highest DSA obligation tier); 2024 formal proceedings against TikTok Lite; Italy's Garante investigation |
+| **Indonesia / Brazil / India** | Continuous regulatory pressure |
 
-**结果**：ByteDance 的合规成本在全球 AI 公司中**最高**，但**自律立场文件**几乎无法产生——
-任何一份文件在一个辖区的承诺可能在另一个辖区被使用作对抗证据。
+**Result**: ByteDance's compliance costs are **the highest in the global AI industry**, yet self-regulation
+position papers are almost impossible to produce — any statement that satisfies one jurisdiction may be
+**used against the company in another**.
 
-### 对 AI 生态的影响
+### Impact on the AI ecosystem
 
-- **中国市场的事实头部**：豆包 2026 Q1 用户数超 **4 亿**（日活），国内生成式 AI 消费者市场份额 #1
-- **火山引擎**：豆包大模型 API + 文生图 / 视频 API，中国 TOP 3 企业 AI 云
-- **出海受限**：Doubao 海外版 Cici 主要在东南亚 / 中东 / 日本；**不在美国、欧盟主要国家主动运营**
-- **开源参与**：Seed-Thinking、Seed-Coder 等部分技术开源（远少于 DeepSeek、Qwen）
+- **De facto leader in China**: Doubao had over **400 million daily actives** in 2026 Q1, #1 in the domestic consumer generative-AI market
+- **Volcano Engine**: Doubao LLM API + text-to-image / video APIs; a top-3 enterprise AI cloud in China
+- **Overseas constrained**: Doubao international (Cici) is primarily in Southeast Asia / Middle East / Japan; **not actively marketed in the U.S. or major EU countries**
+- **Research open-sourcing is restrained**: some technical work open-sourced (Seed-Thinking, Seed-Coder, etc.), much less than DeepSeek or Qwen
 
-## 公司立场速览
+## Company posture, in brief
 
-- **官方自律立场文件稀少**：与美国 / 欧盟公司显著对比
-- **合规靠实际行动**：备案、人工审核投入、快速响应监管
-- **地缘政治最大阻力**：TikTok 是公司全球化的关键战场；PAFACA 压力持续
-- **研究开源较克制**：相比 Qwen、DeepSeek 开源量小，保留商业核心
-
+- **Sparse official self-regulation documentation**: in clear contrast to U.S. / EU peers
+- **Compliance by action**: filings, human-moderation headcount, rapid regulator response
+- **Geopolitics as the greatest friction**: TikTok is the central global-expansion battleground; PAFACA pressure persists
+- **Restrained open-sourcing**: smaller releases than Qwen or DeepSeek, with commercial core held back

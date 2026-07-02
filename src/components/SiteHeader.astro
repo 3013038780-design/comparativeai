@@ -3,7 +3,7 @@
 // 结构、样式、行为参考 /Users/olivialee/Downloads/comparativeai-academic1.html
 // 搜索集成方案 A：直接渲染 Starlight 的 <Search />，用 CSS 把默认按钮改造成纯放大镜图标。
 // 全局 ⌘K / Ctrl+K 由 Search.astro 内部脚本处理。
-// 双语支持：检测当前 locale (zh-CN 为 root, en 为 /en/ 前缀)。
+// Bilingual routing: English is canonical at root; Chinese uses /zh/.
 
 import Search from '@astrojs/starlight/components/Search.astro';
 
@@ -15,7 +15,7 @@ export interface Props {
 		| 'companies'
 		| 'reference'
 		| 'methodology';
-	/** 显式覆盖 locale。不传则从 URL 路径推断（以 /en/ 开头为英文）。 */
+	/** Explicit locale override; otherwise infer Chinese from the /zh/ prefix. */
 	locale?: 'zh-CN' | 'en';
 }
 
@@ -23,12 +23,13 @@ const GITHUB_URL = 'https://github.com/3013038780-design/comparativeai';
 
 // 优先 prop；其次 Astro.currentLocale（Starlight 路由下可用）；最后从 URL 推断。
 const urlPathname = Astro.url.pathname;
-const isEn =
-	Astro.props.locale === 'en' ||
-	(Astro.props.locale !== 'zh-CN' &&
-		(Astro.currentLocale === 'en' || urlPathname.startsWith('/en/') || urlPathname === '/en'));
+const isZh =
+	Astro.props.locale === 'zh-CN' ||
+	(Astro.props.locale !== 'en' &&
+		(Astro.currentLocale === 'zh-CN' || urlPathname.startsWith('/zh/') || urlPathname === '/zh'));
+const isEn = !isZh;
 const locale: 'zh-CN' | 'en' = isEn ? 'en' : 'zh-CN';
-const basePath = isEn ? '/en' : '';
+const basePath = isZh ? '/zh' : '';
 
 // 导航链接（按 locale 切换 href 和 label）
 const navLinks = (
@@ -42,12 +43,12 @@ const navLinks = (
 				{ key: 'methodology', label: 'Methodology', href: `${basePath}/methodology/` },
 			]
 		: [
-				{ key: 'topics', label: '议题', href: '/topics/' },
-				{ key: 'rules', label: '规则', href: '/rules/' },
-				{ key: 'subnational', label: '地方', href: '/subnational/' },
-				{ key: 'companies', label: '公司', href: '/companies/' },
-				{ key: 'reference', label: '参考', href: '/reference/' },
-				{ key: 'methodology', label: '方法论', href: '/methodology/' },
+				{ key: 'topics', label: '议题', href: `${basePath}/topics/` },
+				{ key: 'rules', label: '规则', href: `${basePath}/rules/` },
+				{ key: 'subnational', label: '地方', href: `${basePath}/subnational/` },
+				{ key: 'companies', label: '公司', href: `${basePath}/companies/` },
+				{ key: 'reference', label: '参考', href: `${basePath}/reference/` },
+				{ key: 'methodology', label: '方法论', href: `${basePath}/methodology/` },
 			]
 ) as const;
 
@@ -58,15 +59,10 @@ const mastheadSubtitle = locale === 'en'
 const menuLabel = locale === 'en' ? 'Menu' : '菜单';
 const ghShortLabel = locale === 'en' ? 'GitHub' : 'GitHub';
 
-// 语言切换：英文 → 中文，切到对应路径（去掉 /en 前缀 or 保留相对路径）
+// Language switch preserves the current route where a translated page exists.
 const switchPath = (() => {
-	if (isEn) {
-		// en → zh-CN: 去掉 /en 前缀
-		return urlPathname.replace(/^\/en(\/|$)/, '/') || '/';
-	} else {
-		// zh-CN → en: 加 /en 前缀
-		return `/en${urlPathname === '/' ? '/' : urlPathname}`;
-	}
+	if (isZh) return urlPathname.replace(/^\/zh(\/|$)/, '/') || '/';
+	return `/zh${urlPathname === '/' ? '/' : urlPathname}`;
 })();
 const switchLabel = isEn ? '中文' : 'EN';
 
@@ -76,8 +72,7 @@ if (!currentSection) {
 	try {
 		const route = (Astro.locals as any)?.starlightRoute;
 		const rawSlug: string = route?.entry?.slug ?? '';
-		// 英文内容的 slug 带 "en/" 前缀；统一剥掉再匹配
-		const slug = rawSlug.replace(/^en\//, '');
+		const slug = rawSlug.replace(/^zh\//, '');
 		if (slug.startsWith('topics/') || slug === 'topics') currentSection = 'topics';
 		else if (slug.startsWith('rules/') || slug === 'rules') currentSection = 'rules';
 		else if (slug.startsWith('subnational/') || slug === 'subnational')
@@ -86,7 +81,7 @@ if (!currentSection) {
 			currentSection = 'companies';
 		else if (slug.startsWith('reference/') || slug === 'reference')
 			currentSection = 'reference';
-		else if (slug.startsWith('methodology') || slug === 'about' || slug === 'en' || slug === '')
+		else if (slug.startsWith('methodology') || slug === 'about' || slug === 'zh' || slug === '')
 			currentSection = slug.startsWith('methodology') || slug === 'about' ? 'methodology' : undefined;
 	} catch {}
 }
@@ -94,7 +89,7 @@ if (!currentSection) {
 
 <nav class="topbar" data-locale={locale}>
 	<div class="nav-inner">
-		<a href={isEn ? '/en/' : '/'} class="masthead">
+		<a href={isEn ? '/' : '/zh/'} class="masthead">
 			<span class="masthead-full">Comparative&nbsp;AI <em>{mastheadSubtitle}</em></span>
 			<span class="masthead-short">Comparative AI</span>
 		</a>

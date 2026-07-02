@@ -1,132 +1,132 @@
 ---
 title: MiniMax
-description: MiniMax 概况 —— 海螺 AI、Talkie 与中国 AI 出海样板（2026-04-22）
+description: MiniMax profile — Hailuo AI 海螺, Talkie, and the Chinese AI consumer-export exemplar (2026-06-28)
 sidebar:
   order: 12
   label: MiniMax
-snapshotDate: 2026-04-22
+snapshotDate: 2026-06-28
 ---
 
-## 公司概况
+## Company profile
 
-- **成立**：2021-12
-- **总部**：上海
-- **创始人**：**闫俊杰**（前商汤科技副总裁）
-- **主要产品**：
-  - **MiniMax Agent**：Agent 平台
-  - **海螺 AI（Hailuo）**：国内 AI 消费者应用（含视频、音频、对话）
-  - **Talkie**：**海外 AI 陪伴应用**（AI 角色定制 / 聊天）
-  - **星野（Xingye）**：国内 AI 陪伴 / 互动娱乐
-  - **MiniMax Audio**：语音生成
-  - **abab 系列**：大语言模型（abab6、abab-video-1 等）
-  - **海螺视频**：基于 abab-video-1 的 DiT 架构文生视频
-- **商业模式**：海外消费者订阅（Talkie 主力）+ 国内消费者（海螺 / 星野）+ API
+- **Founded**: 2021-12
+- **Headquarters**: Shanghai
+- **Founder**: **Yan Junjie 闫俊杰** (former vice-president at SenseTime 商汤科技)
+- **Main products**:
+  - **MiniMax Agent**: Agent platform
+  - **Hailuo AI 海螺**: Chinese-domestic AI consumer app (video, audio, dialogue)
+  - **Talkie**: **overseas AI-companionship app** (customisable AI characters / chat)
+  - **Xingye 星野**: Chinese-domestic AI companionship / interactive entertainment
+  - **MiniMax Audio**: voice generation
+  - **abab series**: LLMs (abab6, abab-video-1, etc.)
+  - **Hailuo Video**: text-to-video with DiT architecture, based on abab-video-1
+- **Business model**: overseas consumer subscription (Talkie as the main line) + Chinese-domestic consumer (Hailuo / Xingye) + API
 
-## 战略定位：**中国 AI 出海最成功的消费者公司**
+## Strategic positioning: **China's most successful AI consumer-export company**
 
-### Talkie 的海外爆款
+### Talkie, the overseas hit
 
-Talkie 是中国 AI **出海最成功的消费者产品**之一：
-- **2023-06 海外上线**（海螺国内版本的早于国内）
-- **全球月活超 1,100 万**，**超过一半来自美国**
-- **2024-06 美国免费娱乐 App 榜第 5**
-- 核心差异化：**AI 角色定制**（外貌 / 声音 / 性格 / 偏好）+ UGC 角色库
+Talkie is one of China's **most successful AI consumer-export** products:
+- **Launched overseas in 2023-06** (the overseas version pre-dated the Chinese-domestic Hailuo)
+- **Over 11 million global monthly actives**, with **more than half from the U.S.**
+- **#5 in the U.S. free-entertainment App Store** in June 2024
+- Core differentiation: **AI character customisation** (appearance / voice / personality / preferences) + a user-generated character library
 
-**业界意义**：
-- 证明中国 AI **To C 产品**出海可行（相对 TikTok 的内容平台路径）
-- AI 陪伴品类在美国市场**获得规模化用户**，区别于 Character.AI / Replika
-- 但**地缘政治风险**可能随时触发（Talkie 尚未被美国政府清单审视但存在潜在风险）
+**Industry significance:**
+- Proves that Chinese AI **consumer (B2C) products** can succeed overseas (relative to TikTok's content-platform path)
+- AI companionship achieved scale user adoption in the U.S. market, distinct from Character.AI / Replika
+- **Geopolitical risk could trigger at any time**: Talkie has not yet appeared on U.S. government lists but the potential risk is present
 
-### 海螺 AI 的国内强势
+### Hailuo AI's domestic strength
 
-**海螺 AI** 2024-09 上线，**一个月内全球 AI 产品增长榜第一**（月访问量同比 +2772.92%，达 1,173 万）；
-**2024-12、2025-01 连续两月**全球 AI 出海榜 + 视频生成榜第一。
+**Hailuo AI** launched in September 2024 and reached **#1 on the global AI product growth chart within a month**
+(monthly visits up **+2,772.92% y/y to 11.73 million**); **#1 on the global AI export chart and the video-generation chart
+for two consecutive months in December 2024 and January 2025**.
 
-**abab-video-1 视频模型**：
-- DiT 架构 + 物理仿真
-- **6 秒 1280×720 视频**
-- 与 OpenAI Sora、Runway Gen-3、Kling（快手）、Sora-2、可灵（快手）等竞争
+**The abab-video-1 video model:**
+- DiT architecture + physical simulation
+- **6-second 1280×720 video**
+- Competes with OpenAI Sora, Runway Gen-3, Kling 可灵 (Kuaishou), Sora 2, etc.
 
-### 多模态全覆盖
+### Full-multimodal coverage
 
-MiniMax 产品矩阵覆盖：
-- **对话**（海螺 / 星野 / Talkie）
-- **视频**（海螺视频 / abab-video）
-- **音频**（MiniMax Audio）
-- **Agent**（MiniMax Agent）
-- **音乐**（海螺 AI 音乐）
+MiniMax's product matrix covers:
+- **Dialogue** (Hailuo / Xingye / Talkie)
+- **Video** (Hailuo Video / abab-video)
+- **Audio** (MiniMax Audio)
+- **Agent** (MiniMax Agent)
+- **Music** (Hailuo AI Music)
 
-相比其他中国 AI 创业公司，MiniMax 的**应用层覆盖最广**。
+Relative to other Chinese AI-native startups, MiniMax has the **broadest application-layer coverage**.
 
-## 深度分析：**AI 陪伴 / 虚拟关系的监管敏感性**
+## Deep dive: **regulatory sensitivity of AI companionship / virtual relationships**
 
-### 为什么 MiniMax 在监管上位置特殊
+### Why MiniMax occupies a special regulatory position
 
-中国 2026-04-10 发布的 [《人工智能拟人化互动服务管理暂行办法》](/rules/china/anthropomorphic-interaction-services/) **直接规制**AI 陪伴类产品：
+China's **[Interim Measures for the Management of AI Anthropomorphic Interaction Services 人工智能拟人化互动服务管理暂行办法](/rules/china/anthropomorphic-interaction-services/)**, released on 2026-04-10, **directly regulate**
+AI-companionship products:
 
-- **第 14 条**：**禁止向未成年人提供"虚拟亲属、虚拟伴侣"等虚拟亲密关系**
-- **第 22 条**：用户规模 > 100 万触发安全评估
-- **第 30 条**：危害生命健康 → 10-20 万元罚款
+- **Article 14**: **prohibits offering minors "virtual kinship" or "virtual companion" relationships**
+- **Article 22**: services exceeding 1 million users trigger a safety assessment
+- **Article 30**: endangering life / health → RMB 100,000–200,000 penalty
 
-MiniMax 的**海螺 / 星野 / Talkie** 全部是**直接适用范围**的产品：
-- 用户规模均超过 100 万 → 安全评估义务
-- 星野的"AI 角色定制"含虚拟伴侣元素 → 第 14 条
-- **Talkie 在美国**不受中国法规直接管辖，但**公司总部在上海**可能触发**母公司合规要求**
+MiniMax's **Hailuo / Xingye / Talkie** are **directly within scope**:
+- All three exceed the 1-million-user threshold → safety-assessment obligation
+- Xingye's "AI character customisation" includes virtual-companion elements → Article 14
+- **Talkie in the U.S.** is not directly governed by Chinese rules, but the company's Shanghai headquarters could trigger **parent-company compliance requirements**
 
-### 与国际对手的监管对比
+### Regulatory comparison with international peers
 
-| 公司 / 产品 | 中国合规 | 美国压力 | 核心差异化 |
+| Company / product | China compliance | U.S. pressure | Core differentiation |
 | --- | --- | --- | --- |
-| **MiniMax Talkie**（美国）| 总部合规约束 | 无正式清单压力 | 角色定制 + UGC |
-| Character.AI（美国）| N/A | **德州 AG 调查 + 佛州自杀案诉讼** | 角色社区 |
-| Replika（美国）| N/A | **意大利 Garante 2023 禁令** | 亲密关系模拟 |
-| 海螺 AI（中国）| 直接适用拟人化办法 | 不在美国 | 多模态平台 |
-| 星野（中国）| 同上 | 不在美国 | 角色扮演 + 互动 |
+| **MiniMax Talkie** (U.S.) | Parent-company compliance constraint | No formal listing pressure | Character customisation + UGC |
+| Character.AI (U.S.) | N/A | **Texas AG investigation + Florida teen-suicide lawsuit** | Character community |
+| Replika (U.S.) | N/A | **Italy Garante 2023 ban** | Intimate-relationship simulation |
+| Hailuo AI (China) | Directly within Anthropomorphic Measures | Not in U.S. | Multimodal platform |
+| Xingye (China) | As above | Not in U.S. | Roleplay + interaction |
 
-**AI 陪伴品类**已成为**全球监管焦点**（中国 2026 专项立法 + 美国州 AG + 欧洲 DPA）。
-MiniMax 同时面对**中国 + 美国**两套监管压力。
+**AI companionship** has become a **global regulatory focus** (China's 2026 dedicated legislation + U.S. state AGs + European DPAs). MiniMax faces pressure from **both Chinese and U.S.** regimes simultaneously.
 
-### 自律立场
+### Self-regulation posture
 
-MiniMax 在 AI 自律上的公开文档：
-- **无独立安全框架**
-- 海螺 / 星野 / Talkie 各产品的**用户协议 + 内容规则**
-- 2025 **Talkie 调整成人 / 暧昧内容的过滤**（"AI 男友不再擦边" 报道）—— 在产品层面做自律调整
-- CAC 算法备案（海螺系列多次）
+Public documents:
+- **No standalone safety framework**
+- User agreements + content rules for each Hailuo / Xingye / Talkie product
+- In 2025 **Talkie tightened its filters on sexual / suggestive content** (reported as "Talkie AI-boyfriends no longer push the edge") — product-level self-regulation
+- CAC algorithm filings (multiple Hailuo-series filings)
 
-**Talkie 的"去擦边"自律**（2025-04 发生）是**产品自律的典型案例**：
-- 可能应对**App Store 内容审核**压力
-- 也可能应对**美国州 AG 的潜在调查**（类似 Character.AI 面临的）
-- **不是出于独立的 AI 安全框架**，而是**商业生存驱动**
+Talkie's **2025-04 "edge removal"** is a typical **product-level self-regulation case**:
+- Likely a response to **App Store content-review** pressure
+- Also likely a response to **potential U.S. state AG investigations** (analogous to Character.AI)
+- **Not driven by a standalone AI-safety framework**, but by **commercial survival**
 
-## 公开政策文档快照
+## Policy document snapshot
 
-| 类型 | 文档名 | 链接 | 本站子页 |
+| Type | Document | Link | Subpage |
 | --- | --- | --- | --- |
-| 使用政策 | MiniMax / 海螺 / 星野 / Talkie 各自用户协议 | [minimaxi.com](https://www.minimaxi.com) / 各产品 | — |
-| 技术报告 | abab / abab-video-1 Technical Reports | arXiv + 官网 | — |
-| 透明度 | CAC 算法备案 | [cac.gov.cn](https://www.cac.gov.cn/) | — |
+| Usage policy | MiniMax / Hailuo / Xingye / Talkie respective user agreements | [minimaxi.com](https://www.minimaxi.com) / per product | — |
+| Technical reports | abab / abab-video-1 Technical Reports | arXiv + company site | — |
+| Transparency | CAC algorithm filings | [cac.gov.cn](https://www.cac.gov.cn/) | — |
 
-## 监管合规位置
+## Regulatory-compliance posture
 
-- **中国**：
-  - 海螺 / 星野 / 海螺视频多次 CAC 算法备案
-  - TC260-003-2024 合规
-  - **拟人化互动服务暂行办法**（2026-07-15 生效）**高直接影响**
-  - 未成年人保护合规需要重大调整
-- **美国**：
-  - Talkie 不在政府禁用清单
-  - **潜在 COPPA 风险**（若 Talkie 涉及未成年人数据）
-  - 州 AG 针对 AI 陪伴的调查可能延伸
-- **欧盟**：
-  - Talkie 可在欧盟使用 → **GDPR + DSA**（若达到 VLOP 门槛）义务
-  - **意大利 Garante** 对 Replika 的禁令先例为 Talkie 敲警钟
-- **日本 / 东南亚 / 巴西**：Talkie + 海螺国际版持续扩展
+- **China**:
+  - Multiple CAC algorithm filings for Hailuo / Xingye / Hailuo Video
+  - TC260-003-2024 compliance
+  - **Anthropomorphic Interaction Interim Measures** (effective 2026-07-15) **directly applicable with high impact**
+  - Minor-protection compliance requires substantial adjustment
+- **United States**:
+  - Talkie is not on the government-device ban list
+  - **Potential COPPA risk** (if Talkie touches minor data)
+  - State AG investigations targeting AI companionship may extend
+- **European Union**:
+  - Talkie is available in the EU → **GDPR + DSA** obligations (if VLOP threshold reached)
+  - **Italy's Garante ban on Replika** sets a warning precedent for Talkie
+- **Japan / Southeast Asia / Brazil**: Talkie + Hailuo international continue to expand
 
-## 公司立场速览
+## Company posture, in brief
 
-- **消费者 AI 出海样板**：Talkie 是中国 AI To C 出海成功案例
-- **多模态全覆盖**：对话 + 视频 + 音频 + Agent
-- **监管敏感度高**：AI 陪伴 / 虚拟关系品类最受全球监管关注
-- **自律跟随商业压力**：2025 Talkie"去擦边"是典型产品自律案例
-
+- **Exemplar of consumer-AI export**: Talkie is a flagship Chinese AI-B2C overseas success
+- **Full-multimodal coverage**: dialogue + video + audio + Agent
+- **High regulatory sensitivity**: AI companionship / virtual relationships attract the most global scrutiny
+- **Self-regulation tracks commercial pressure**: Talkie's 2025 "edge removal" is a typical product-level self-regulation case

@@ -1,6 +1,6 @@
 ---
 title: NIST AI Risk Management Framework 1.0
-description: NIST 2023-01 发布的 AI 风险管理框架，自愿性但广泛采用；4 大功能（GOVERN/MAP/MEASURE/MANAGE）是美国 AI 治理的事实基础层
+description: NIST's AI Risk Management Framework published 2023-01; voluntary but widely adopted; the four functions (GOVERN / MAP / MEASURE / MANAGE) form the de facto foundational layer of U.S. AI governance
 ruleName: NIST AI Risk Management Framework (AI RMF 1.0) + Generative AI Profile (NIST AI 600-1)
 issuer: National Institute of Standards and Technology (NIST), U.S. Department of Commerce
 level: technical-standard
@@ -12,118 +12,122 @@ relatedTopics:
   - risk-classification
   - frontier-gpai
   - data-training
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
   label: NIST AI RMF (2023)
   order: 10
 ---
 
-## 中文摘要
+## Summary
 
-**NIST AI Risk Management Framework 1.0** 于 2023-01-26 发布，是美国商务部国家标准与技术研究院
-（NIST）开发的**自愿性 AI 风险管理框架**。核心结构：
+The **NIST AI Risk Management Framework 1.0**, released on 2023-01-26, is a **voluntary AI risk
+management framework** developed by the U.S. Department of Commerce's National Institute of Standards
+and Technology (NIST). Core structure:
 
-- **4 大功能**：GOVERN（治理）/ MAP（识别）/ MEASURE（测量）/ MANAGE（管理）
-- **跨所有 AI 系统生命周期阶段**
-- **2024-07 发布生成式 AI Profile**（NIST AI 600-1）扩展至 GPAI 特定风险
-- 虽自愿但被美国联邦采购、各州法律、金融 / 医疗 / 保险行业广泛引用为**事实基线**
+- **Four functions**: GOVERN / MAP / MEASURE / MANAGE
+- **Applies across all phases of the AI system lifecycle**
+- **Generative AI Profile released 2024-07** (NIST AI 600-1) extends the framework to GPAI-specific risks
+- Though voluntary, it is widely cited as a **de facto baseline** in federal procurement, state laws,
+  and the finance / healthcare / insurance industries
 
-尽管 EO 14110 被撤销，AI RMF 作为 NIST 技术工作的产出**独立存在**，继续是美国 AI 治理的基础层。
+Although EO 14110 has been revoked, the AI RMF — as a product of NIST's technical work — **stands
+independently** and continues to serve as the foundational layer of U.S. AI governance.
 
-## 4 大核心功能
+## The four core functions
 
-### GOVERN（治理）
+### GOVERN
 
-- 建立组织 AI 风险管理政策、流程、角色
-- 跨功能问责
-- 与组织其他风险管理框架的整合
+- Establish organizational AI risk management policies, processes, and roles
+- Cross-functional accountability
+- Integration with other risk management frameworks in the organization
 
-### MAP（识别情境和风险）
+### MAP (identify context and risk)
 
-- 使用情境：部署场景、用户、受影响方
-- 目标系统的能力 / 局限
-- 风险和负面影响的识别和优先级
+- Use context: deployment scenarios, users, affected parties
+- System capabilities and limitations
+- Identification and prioritization of risks and adverse impacts
 
-### MEASURE（测量）
+### MEASURE
 
-- 选择、应用、记录定量 / 定性方法
-- 可信度特征：**有效性与可靠性、安全、保障与韧性、可问责与透明、可解释与可诠释、
-  隐私增强、公平**
-- 持续监测
+- Select, apply, and document quantitative and qualitative methods
+- Trustworthiness characteristics: **validity and reliability; safety; security and resilience;
+  accountability and transparency; explainability and interpretability; privacy-enhancement; fairness**
+- Continuous monitoring
 
-### MANAGE（管理）
+### MANAGE
 
-- 风险应对：缓解、转移、接受、规避
-- 资源分配
-- 事件和退役处置
+- Risk response: mitigate, transfer, accept, avoid
+- Resource allocation
+- Incident handling and decommissioning
 
-## AI RMF Profile 系列
+## AI RMF Profile series
 
-AI RMF 是**元框架**，需要 Profile 做行业 / 用例 / 技术特化：
+The AI RMF is a **meta-framework**; Profiles provide sector / use-case / technology specialization:
 
-- **NIST AI 600-1** — Generative AI Profile（2024-07）
-- **NIST AI 100-1 Companion Playbook**（持续更新）
-- 行业特化 Profile 由 NIST 与 NCCoE、Frontier Model Forum 等协作
+- **NIST AI 600-1** — Generative AI Profile (2024-07)
+- **NIST AI 100-1 Companion Playbook** (continuously updated)
+- Sector-specific Profiles developed by NIST with NCCoE, Frontier Model Forum, and others
 
-## Generative AI Profile (NIST AI 600-1) 要点
+## Generative AI Profile (NIST AI 600-1) highlights
 
-2024-07 发布，对 AI RMF 4 大功能做生成式 AI 专门解读：
+Released 2024-07; provides a generative-AI-specific reading of the four RMF functions.
 
-12 类生成式 AI 风险（节选）：
-1. CBRN 信息或扩散
-2. 混淆 / 同质化（confabulation）
-3. 危险、暴力或憎恶内容
-4. 数据隐私
-5. 环境影响
-6. 对人的尊严损害 / 工作场所影响
-7. 信息完整性
-8. 信息安全
-9. 知识产权
-10. 淫秽、贬低或虐待儿童性内容
-11. 价值链与组件集成
-12. 对人员 / 心理的损害
+Twelve categories of generative-AI risk (selected):
+1. CBRN information or proliferation
+2. Confabulation / homogenization
+3. Dangerous, violent, or hateful content
+4. Data privacy
+5. Environmental impact
+6. Human dignity harms / workplace impacts
+7. Information integrity
+8. Information security
+9. Intellectual property
+10. Obscene, degrading, or child sexual-abuse content
+11. Value-chain and component integration
+12. Harm to persons / psychological harms
 
-每类给出：Suggested Actions × RMF 功能 矩阵。
+Each category is mapped in a Suggested Actions × RMF Function matrix.
 
-## 事实地位
+## De facto status
 
-虽自愿，但：
+Although voluntary, in practice:
 
-- **联邦采购**：OMB 采购指引要求承包商说明 AI 风险管理；AI RMF 是事实模板
-- **金融**：OCC、Fed SR 11-7 更新中融入 RMF 语言
-- **州法**：Colorado AI Act、Connecticut SB 2、California SB 896 等都引用 RMF 作为合规路径
-- **国际**：G7 Hiroshima Process Code of Conduct、新加坡 AI Verify、澳大利亚自愿 AI 安全标准均参考 AI RMF
+- **Federal procurement**: OMB procurement guidance requires contractors to describe AI risk management; AI RMF is the de facto template
+- **Finance**: OCC and Federal Reserve SR 11-7 updates incorporate RMF language
+- **State law**: the Colorado AI Act, Connecticut SB 2, California SB 896, and others reference the RMF as a compliance path
+- **International**: the G7 Hiroshima Process Code of Conduct, Singapore's AI Verify, and Australia's voluntary AI Safety Standard all draw on the AI RMF
 
-## 与 EU AI Act / 中国 TC260 的对比
+## Comparison with the EU AI Act and China's TC260
 
-| 维度 | NIST AI RMF | EU AI Act | TC260-003 |
+| Dimension | NIST AI RMF | EU AI Act | TC260-003 |
 | --- | --- | --- | --- |
-| 约束性 | 自愿 | 硬法 | 推荐但事实硬 |
-| 覆盖 | 横向 + GPAI Profile | 横向 + GPAI 专章 | 生成式 AI |
-| 方法 | 风险管理流程 | 义务清单 + 合格评定 | 技术指标 |
-| 测量 | 原则性（7 个特性） | 结合和谐标准 | 定量（5% / 90% 门槛） |
+| Bindingness | Voluntary | Hard law | Recommended but de facto hard |
+| Coverage | Horizontal + GPAI Profile | Horizontal + GPAI chapter | Generative AI |
+| Method | Risk-management process | Obligation list + conformity assessment | Technical indicators |
+| Measurement | Principle-based (7 characteristics) | Aligned with harmonized standards | Quantitative (5% / 90% thresholds) |
 
-## EO 14179 后的地位
+## Status after EO 14179
 
-EO 14179 撤销 EO 14110，但**不撤销 AI RMF 本身**。RMF 是 NIST 依《国家 AI 倡议法》（2020 NAII Act）
-和《商务促进法》授权开发，**独立于 EO**。
+EO 14179 revokes EO 14110 but **does not revoke the AI RMF itself**. The RMF was developed by NIST
+under the 2020 National AI Initiative Act (NAII Act) and the Commerce-promotion authority; it is
+**independent of the EO**.
 
-CAISI（Center for AI Standards and Innovation，取代 AISI）仍以 AI RMF 为其工作基础，
-侧重标准和评估。
+CAISI (Center for AI Standards and Innovation, which replaces AISI) continues to treat the AI RMF
+as the basis of its work, with a focus on standards and evaluation.
 
-## 原文与文档
+## Text and documents
 
-| 文档 | 链接 |
+| Document | Link |
 | --- | --- |
-| AI RMF 1.0（PDF） | [nist.gov/itl/ai-risk-management-framework](https://www.nist.gov/itl/ai-risk-management-framework) |
+| AI RMF 1.0 (PDF) | [nist.gov/itl/ai-risk-management-framework](https://www.nist.gov/itl/ai-risk-management-framework) |
 | Generative AI Profile (NIST AI 600-1) | [doi.org/10.6028/NIST.AI.600-1](https://doi.org/10.6028/NIST.AI.600-1) |
 | AI RMF Playbook | [airc.nist.gov/AI_RMF_Knowledge_Base/Playbook](https://airc.nist.gov/AI_RMF_Knowledge_Base/Playbook) |
-| AI RMF Roadmap | NIST 网站 |
+| AI RMF Roadmap | NIST website |
 
-## 版本历史
+## Version history
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2023-01-26 | AI RMF 1.0 发布 |
-| 2024-07-26 | Generative AI Profile (NIST AI 600-1) 发布 |
-| 2025+ | 持续行业 Profile 扩展 |
+| 2023-01-26 | AI RMF 1.0 released |
+| 2024-07-26 | Generative AI Profile (NIST AI 600-1) released |
+| 2025+ | Ongoing sector Profile expansion |

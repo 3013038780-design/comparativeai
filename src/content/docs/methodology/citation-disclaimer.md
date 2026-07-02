@@ -1,94 +1,88 @@
 ---
-title: 引用与免责
-description: 如何引用本站，以及必须了解的免责声明
+title: Citation and disclaimer
+description: How to cite the site, and the disclaimers you must read
 sidebar:
   order: 1
 ---
 
-## 如何引用
+## How to cite
 
-### 建议引用格式（APA 风格）
+### Suggested citation (APA style)
 
-> 匿名作者. (2026). *《条目标题》*. Comparative AI. Retrieved YYYY-MM-DD, from https://comparativeai.org/path
+> Anonymous author. (2026). *Entry title*. Comparative AI. Retrieved YYYY-MM-DD, from https://comparativeai.org/path
 
-### 中文学术格式
+### Chinese academic format
 
-> Comparative AI. 《条目标题》[EB/OL]. (本次访问时间 YYYY-MM-DD). https://comparativeai.org/path
+> Comparative AI. 《Entry title》[EB/OL]. (accessed YYYY-MM-DD). https://comparativeai.org/path
 
-### 建议始终附带
+### Always include
 
-- **本次访问时间**：本站内容会持续更新，引用时固定住你看到的那一版
-- **页面底部的"最后更新时间"**：这是 Git commit 时间，可作为版本标记
-- **如援引边界情况或有争议的分类**（如中国强制性国标归软法），请同时脚注本站 [方法论 §2](/methodology/#hard-vs-soft) 的说明
-
----
-
-## 免责声明
-
-### 1. 本站不是法律意见
-
-本站内容为个人学术整理，**不构成任何形式的法律意见、合规咨询或监管解读**。
-任何具体合规问题请咨询持牌律师或相应司法辖区的法律顾问。
-
-### 2. 不代表任何机构立场
-
-作者的本职工作与本站内容**无直接关联**。本站为个人研究项目，
-**不代表、不受托于、不反映**作者所在机构、合作方或任何第三方的观点。
-
-### 3. 对公司政策的呈现
-
-对公司 Usage Policy、Safety Framework 等材料的摘要和归档：
-
-- 仅基于**公司公开发布的**文档
-- 带有明确的 `snapshot_date` 标记，不声称反映当前状态
-- **不做评判性措辞**（避免"不充分"、"应当加强"等）
-- 如相关公司认为呈现不准确，请通过 GitHub Issue 联系修正
-
-### 4. 对法律原文的翻译
-
-- 所有译文**以原文为准**。译文仅辅助阅读
-- 未经校对的机器翻译**不会**直接发布
-- AI 辅助翻译的段落会显式标注
-
-### 5. 信息时效性
-
-- 法律环境变化快。生效日期、修订状态、执法案例都可能滞后
-- 发现任何陈旧信息，请通过 Issue 指出，会在下次更新致谢
+- **The access date.** Content on the site is updated on an ongoing basis; cite the specific version you read.
+- **The "last updated" stamp at the foot of the page.** This is the Git commit time and functions as a version marker.
+- **If you are citing a boundary case or a contested classification** (for example, our treatment of Chinese mandatory national standards as soft law), please also footnote our [Methodology §2](/methodology/#hard-vs-soft).
 
 ---
 
-## 投诉与更正请求
+## Disclaimers
 
-如果你是：
+### 1. The site is not legal advice
 
-- **法律文本的官方发布机构**，认为本站对条文的翻译/摘要不准确 →
-  请发 Issue 到 [GitHub](https://github.com/3013038780-design/comparativeai/issues)，附原文核对依据。
-- **公司政策的发布方**，认为对你的政策描述不准确 →
-  同上，会优先核对并在 7 天内处理。
-- **研究者**，发现错误或希望补充资料 →
-  欢迎提 Issue 或 PR。
+The contents of the site are a personal academic compilation and **do not constitute legal advice, compliance consulting, or regulatory interpretation of any kind**. For any specific compliance question, please consult a licensed attorney or legal counsel in the relevant jurisdiction.
+
+### 2. Not the position of any institution
+
+The author's day job has **no direct connection** to the contents of this site. The site is a personal research project and **does not represent, act on behalf of, or reflect** the views of the author's employer, collaborators, or any third party.
+
+### 3. Treatment of corporate policy
+
+Summaries and archives of Usage Policies, Safety Frameworks, and other corporate documents:
+
+- draw only on **documents the company has publicly released**;
+- carry explicit `snapshot_date` markers and do not claim to reflect the present state;
+- **avoid evaluative framing** (no "inadequate", "should be strengthened", and so on);
+- if a company considers any description inaccurate, please open a GitHub Issue and we will correct it.
+
+### 4. Treatment of legal text
+
+- **The original text is authoritative** in every case. Translations are aids to reading, not substitutes.
+- Uncorrected machine translation **is not published**.
+- AI-assisted translations are explicitly marked.
+
+### 5. Timeliness
+
+- The legal environment evolves quickly. Effective dates, amendment status, and enforcement cases may all lag behind.
+- If you spot outdated information, please flag it via an Issue; you will be credited in the next update.
 
 ---
 
-## 许可
+## Complaints and correction requests
 
-- **内容**（本站所有原创文字）：CC BY 4.0 — 可转载、可引用，署名即可
-- **代码**（站点本身的 Astro/样式/配置）：MIT
-- **引用的一手法律条文**：版权归相应官方机构所有，本站仅做合理使用范围内的转引与节选
-- **引用的公司文档**：版权归相应公司所有，本站仅归档与摘要
+If you are:
+
+- **An official issuing body for a legal text** and consider our translation or summary inaccurate — please file an Issue on [GitHub](https://github.com/3013038780-design/comparativeai/issues) with the original-text reference for cross-checking.
+- **A company whose policy is described** and consider the description inaccurate — same channel; we will prioritise the review and respond within seven days.
+- **A researcher** who has found an error or would like to contribute material — Issues and PRs are welcome.
 
 ---
 
-## 边界情况记录 {#hard-soft-edge-cases}
+## Licensing
 
-以下条目的硬/软法归类在学界或实务中存在争议，本站的处理方式在此登记。
-任何新增边界情况都会补入本列表。
+- **Content** (all original text on the site): CC BY 4.0 — may be redistributed and cited with attribution.
+- **Code** (the site's Astro templates, styling, and configuration): MIT.
+- **Primary legal text quoted on the site:** copyright belongs to the respective official bodies; the site's use is within the bounds of fair use (quotation and excerpt).
+- **Corporate documents quoted on the site:** copyright belongs to the respective companies; the site archives and summarises.
 
-| 条目 | 本站归类 | 争议点 | 本站理由 |
+---
+
+## Boundary-case register {#hard-soft-edge-cases}
+
+The following items have a contested hard-law / soft-law classification in the scholarly or practical literature. The site's treatment is logged here, and any new boundary case encountered will be added.
+
+| Item | Our classification | Contested point | Our reasoning |
 | --- | --- | --- | --- |
-| 中国强制性国标（GB） | 软法 | 强制性国标具有法律强制力，部分学者主张归硬法 | 为保持跨辖区分类的来源一致性（"由立法/行政机关制定"vs."由标准机构制定"），本站统一把所有标准归软法，并在具体条目标注其强制性 |
-| NIST AI RMF | 软法 | 被联邦机构和监管大量援引，事实上有强约束力 | 本质为自愿框架，无违反后果 |
-| 欧盟 GPAI Code of Practice | 软法 | 签署即产生合规推定（conformity presumption） | 仍属自愿签署，且不签不构成违法 |
-| 美国 Executive Order | 硬法 | 仅约束行政分支、可被下任总统撤销 | 对行政分支有实际强制力，本站归硬法但注明效力范围 |
+| Chinese mandatory national standards (GB) | Soft law | Mandatory national standards have legal force; some scholars argue they should be classified as hard law | To keep source-of-promulgation consistent across jurisdictions ("issued by a legislature / administrative body" vs. "issued by a standards body"), we place all standards on the soft-law side and flag their mandatory character in the specific entry |
+| NIST AI RMF | Soft law | Cited extensively by federal agencies and regulators, with de facto binding force | Fundamentally a voluntary framework with no consequence for non-compliance |
+| EU GPAI Code of Practice | Soft law | Signing triggers a conformity presumption | Signing remains voluntary; non-signing does not constitute a breach |
+| US executive orders | Hard law | Bind only the executive branch; revocable by the next president | They are genuinely binding on the executive branch; classified as hard law but with the scope of effect noted |
 
-边界情况遇到新增，会先在 [GitHub Issues](https://github.com/3013038780-design/comparativeai/issues) 讨论再合并。
+For any new boundary case, we will discuss on [GitHub Issues](https://github.com/3013038780-design/comparativeai/issues) before merging a decision.

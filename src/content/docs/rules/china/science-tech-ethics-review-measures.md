@@ -1,8 +1,8 @@
 ---
-title: 科技伦理审查办法（试行）
-description: 科技部等十部门 2023 发布的科技伦理审查规则，2023-12-01 生效；含 "涉及数据和算法" 负面清单，AI 研发伦理审查的上位依据
-ruleName: 科技伦理审查办法（试行）
-issuer: 科技部 / 教育部 / 工信部 / 农业农村部 / 卫健委 / 中国科学院 / 中国社科院 / 中国工程院 / 中国科协 / 军委科技委（十部门）
+title: Trial Measures for Science and Technology Ethics Review
+description: Ten-ministry joint rule issued in 2023, effective 2023-12-01; contains a negative list covering "data and algorithms" and is the upstream authority for AI R&D ethics review
+ruleName: Trial Measures for Science and Technology Ethics Review (《科技伦理审查办法（试行）》)
+issuer: Ministry of Science and Technology (MOST) / Ministry of Education (MOE) / Ministry of Industry and Information Technology (MIIT) / Ministry of Agriculture and Rural Affairs (MARA) / National Health Commission (NHC) / Chinese Academy of Sciences (CAS) / Chinese Academy of Social Sciences (CASS) / Chinese Academy of Engineering (CAE) / China Association for Science and Technology (CAST) / Science and Technology Commission of the Central Military Commission (ten ministries)
 level: departmental-rule
 binding: hard
 effectiveDate: 2023-12-01
@@ -11,96 +11,85 @@ originalUrl: https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2
 relatedTopics:
   - risk-classification
   - frontier-gpai
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: 科技伦理审查办法（试行）(2023)
+  label: Science & Tech Ethics Review Measures (Trial) (2023)
   order: 40
 ---
 
-> **📑 法律位阶**：第 3 级 · 部门规章 | **发布**：科技部牵头**十部门联合发布**（科技部 / 教育部 / 工信部 / 农业农村部 / 卫健委 / 中科院 / 中国社科院 / 中国工程院 / 中国科协 / 军委科技委） | **生效**：2023-12-01 | **属性**：硬法
+> **📑 Legal hierarchy**: Level 3 · Departmental rule | **Issuance**: **MOST-led, ten-ministry joint issuance** (MOST / MOE / MIIT / MARA / NHC / CAS / CASS / CAE / CAST / CMC S&T Commission) | **Effective**: 2023-12-01 | **Character**: hard law
 
-> **⚠️ 位阶提醒**：本规则是**部门规章**，十部门联合发布。**不是**国务院行政法规。
-> "试行"同"暂行"，反映立法者留出调整空间，不是位阶指示。
-> 详见 [中国规则索引](/rules/china/#法律位阶速览)。
+> **⚠️ Hierarchy note**: This instrument is a **departmental rule**, jointly issued by ten ministries. It is **not** a State Council administrative regulation. "Trial" (*试行*), like "Interim" (*暂行*), reflects the legislator's decision to reserve room for adjustment — it is not a hierarchy marker. See [Index of Chinese Rules](/rules/china/#the-legal-hierarchy-at-a-glance).
 
-## 英文摘要
+## English Summary
 
-The **Trial Measures for Science and Technology Ethics Review**, issued jointly by ten
-ministries led by MOST on 2023-09-07 and effective 2023-12-01, establish China's framework
-for ethics review of R&D activities. For AI, the Measures require (i) the establishment of
-ethics review committees at research institutions performing "sensitive" R&D, (ii) review
-of projects on a negative list ("审查清单") that explicitly includes **autonomous
-decision-making AI with significant safety/ethics risks**, algorithms capable of steering
-public opinion, and **large-scale generative models with certain characteristics**, and
-(iii) expert ethics review — a precursor oversight layer sitting above the CAC's
-filing-based regime.
+The **Trial Measures for Science and Technology Ethics Review**, issued jointly by ten ministries led by MOST on 2023-09-07 and effective 2023-12-01, establish China's framework for ethics review of R&D activities. For AI, the Measures require (i) the establishment of ethics review committees at research institutions performing "sensitive" R&D, (ii) review of projects on a negative list ("审查清单") that explicitly includes **autonomous decision-making AI with significant safety/ethics risks**, algorithms capable of steering public opinion, and **large-scale generative models with certain characteristics**, and (iii) expert ethics review — a precursor oversight layer sitting above the CAC's filing-based regime.
 
-## 总览
+## Overview
 
-这是中国**首个跨部委科技伦理审查的具体办法**。对 AI 治理的关键作用：
+This is China's **first cross-ministerial implementing rule for science-and-technology ethics review**. Its key roles in AI governance:
 
-1. **前置审查层**：CAC 的算法备案是"上线前"审查，而科技伦理审查是"立项阶段"审查
-2. **清单制**：第二十五条给出"**需要开展专家复核的科技活动清单**"，
-   AI 相关含：
-   - 具有舆论社会动员能力和社会意识引导能力的算法模型、应用程序及系统的研发
-   - 面向存在**安全、人身健康风险**的场景的自动化决策系统的研发
-   - 对人类主体具有较强心理情感影响的人机融合系统的研发
-3. **机构内部委员会**：科研机构需设立科技伦理（审查）委员会，审 → 报科技主管部门备案
+1. **A pre-emptive review layer**: CAC's algorithm filing (*备案*) is a pre-launch review, whereas science-and-technology ethics review operates at the **project-initiation** stage.
+2. **List-based approach**: Article 25 sets out an "**expert re-review list of science-and-technology activities**." AI-related entries include:
+   - research and development of algorithmic models, applications, and systems with the capacity to shape public opinion and mobilize society;
+   - research and development of automated decision-making systems for scenarios involving **safety or human-health risks**;
+   - research and development of human-machine fusion systems with significant psychological or emotional impact on human subjects.
+3. **Internal institutional committees**: research institutions shall establish science-and-technology ethics (review) committees; review → file with the competent S&T authority.
 
-## 核心条款（择要）
+## Core Provisions (selected)
 
-### 第四条 · 伦理审查原则
+### Article 4 · Principles of Ethics Review
 
-- 增进人类福祉
-- 尊重生命权利
-- 坚持公平公正
-- 合理控制风险
-- 保持公开透明
+- Promote human well-being;
+- Respect the right to life;
+- Uphold fairness and justice;
+- Reasonably control risks;
+- Maintain openness and transparency.
 
-### 第九-十条 · 机构内部委员会
+### Articles 9–10 · Internal Institutional Committees
 
-开展伦理敏感研发的单位**应设立**科技伦理（审查）委员会。委员会至少七人，含不同学科、
-外部伦理 / 法律专家、不少于两名外部委员。
+Units conducting ethically sensitive R&D **shall establish** a science-and-technology ethics (review) committee. Committees shall have at least seven members, including members from different disciplines, external ethics / legal experts, and not fewer than two external members.
 
-### 第二十五条 · 专家复核清单
+### Article 25 · Expert Re-review List
 
-重点领域：
-1. 涉及人的生命健康
-2. **涉及数据和算法**：含舆论引导能力的算法、面向安全 / 健康场景的自动决策、
-   具有强心理情感影响的人机融合系统
-3. 合成生物学、神经科学、基因编辑等
+Key areas:
 
-### 第二十七-三十一条 · 流程
+1. Involving human life and health;
+2. **Involving data and algorithms**: algorithms with capacity to steer public opinion, automated decision-making for safety / health scenarios, and human-machine fusion systems with strong psychological or emotional impact;
+3. Synthetic biology, neuroscience, gene editing, and the like.
 
-- 机构自审 → 符合清单的提交专家复核 → 科技主管部门备案
-- 重大变更重新审查
-- 定期跟踪审查
+### Articles 27–31 · Process
 
-## 与 AI 专项规则的关系
+- institutional self-review → listed projects submitted for expert re-review → filed with the competent S&T authority;
+- material changes trigger fresh review;
+- periodic follow-up review.
 
-- **先于 CAC 备案**：伦理审查在立项阶段，CAC 备案在上线前
-- **《生成式 AI 办法》**：未明确引用本办法，但"大模型+能力上限"类项目事实上涉及第二十五条
-- **TC260-003**：技术层面评估 vs. 伦理审查：层面不同但可能交叉
+## Relationship with AI-Specific Rules
 
-## 执法
+- **Precedes CAC filing**: ethics review at the project-initiation stage; CAC filing at the pre-launch stage.
+- **Generative AI Interim Measures**: do not expressly cite these Measures, but "large model + capability frontier" projects in fact engage Article 25.
+- **TC260-003**: technical-level assessment vs. ethics review — different layers, but potential intersection.
 
-主管：科技部牵头科技伦理委员会办公室；行业按分管部门协同。
+## Enforcement
 
-处罚：
-- 机构未建立伦理审查委员会：责令改正、通报批评、项目不予立项
-- 违规研发：终止项目、追回资助、追究单位和个人责任
+Primary authority: the MOST-led Ethics Committee Office; sector regulators coordinate within their mandates.
 
-## 原文与翻译
+Penalties:
 
-| 语言 | 来源 | 链接 |
+- failure by institutions to establish an ethics review committee: order to rectify, public reprimand, refusal to approve projects;
+- non-compliant R&D: termination of projects, clawback of funding, pursuit of institutional and individual responsibility.
+
+## Source Text and Translations
+
+| Language | Source | Link |
 | --- | --- | --- |
-| 中文（原文） | 科技部 | [most.gov.cn](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2023/202310/t20231008_188309.html) |
-| English | DigiChina / Carnegie 分析 | https://digichina.stanford.edu/ |
+| Chinese (original) | MOST | [most.gov.cn](https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/gfxwj/gfxwj2023/202310/t20231008_188309.html) |
+| English | DigiChina / Carnegie analysis | https://digichina.stanford.edu/ |
 
-## 版本历史
+## Version History
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2023-04 | 征求意见稿 |
-| 2023-09-07 | 十部门联合发布 |
-| 2023-12-01 | 生效 |
+| 2023-04 | Draft for public comment |
+| 2023-09-07 | Joint issuance by ten ministries |
+| 2023-12-01 | Effective |

@@ -8,7 +8,7 @@ export interface Props {
 }
 const { locale = 'zh-CN' } = Astro.props;
 const k = locale === 'en' ? 'en' : 'zh';
-const basePath = locale === 'en' ? '/en' : '';
+const basePath = locale === 'zh-CN' ? '/zh' : '';
 
 // Sort by date ascending
 const events = [...cnTimeline].sort((a, b) => a.date.localeCompare(b.date));

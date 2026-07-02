@@ -1,47 +1,46 @@
 ---
-title: 项目简介
-description: Comparative AI 是什么、为什么做、给谁看
+title: About
+description: What Comparative AI is, why it exists, and who it is for
 sidebar:
   order: 1
 ---
 
-## 这是什么
+## What this is
 
-**Comparative AI** 是一个独立的学术研究项目。目标很具体：
-**在中国、美国、欧盟三个司法辖区之间，建立一个以议题为切口、以一手材料为底座、可追溯、可挑错的 AI 治理比较图谱。**
+**Comparative AI** is an independent academic research project with a narrow, explicit aim:
 
-## 为什么做
+**to build a topic-first, source-grounded, traceable, and contestable comparative atlas of AI governance across three jurisdictions — China, the United States, and the European Union.**
 
-关于 AI 治理，中文世界已经有不少优质综述，但具备这三个特征的公开资源仍稀缺：
+## Why
 
-1. **按议题横向对照**（而非按国别做综述）
-2. **附原文追溯**（每条论断都能点到原始文本）
-3. **把"硬法 / 软法 / 公司实践"作为相互关联的三类材料一起组织**
-   — 前沿模型的行为规则，有时行政令里找不到，要看 Anthropic 的 RSP；公司自愿的技术标准，有时反过来被写进政府指南
+Excellent overview literature on AI governance already exists in both Chinese and English. What remains scarce, especially as a freely accessible resource, is a body of work that combines the following three features:
 
-## 给谁看
+1. **Horizontal, topic-by-topic comparison** (rather than country-by-country surveys).
+2. **Full traceability to primary texts** — every claim on the site can be clicked through to the original document.
+3. **Treating hard law, soft law, and corporate practice as three interrelated families of material, organised together.** Frontier model behaviour, for instance, is often nowhere to be found in executive orders — it lives in Anthropic's Responsible Scaling Policy. Voluntary industry standards, conversely, sometimes end up written into government guidance.
 
-- **政策研究者**：跨辖区比较时省掉一手检索的时间
-- **合规从业者**：把条文映射到具体产品决策时，作为交叉校对的参考起点
-- **PM 与工程师**：理解公司政策与外部监管的对齐边界
-- **学生与新入行者**：了解这个领域的"骨架"
+## Who it is for
 
-本站**不是**面向大众读者的新闻解读，也**不是**律师给出的合规意见。
+- **Policy researchers** comparing across jurisdictions, who want to save time on primary-source retrieval.
+- **Compliance practitioners** mapping statutory text onto concrete product decisions, who need a cross-checking starting point.
+- **Product managers and engineers** trying to understand where company policy ends and external regulation begins.
+- **Students and newcomers** seeking the skeleton of the field.
 
-## 这不是什么
+This site is **not** journalistic commentary for a general audience, nor is it legal advice from an attorney.
 
-- **不是法律意见**。任何具体合规问题请咨询执业律师
-- **不是新闻聚合**。不追热点、不做情绪化评论
-- **不是立场输出**。比较的目的在于**还原差异**，不对制度做优劣评判
-- **不是机器翻译产品**。所有译文都经过人工校对；AI 辅助的段落会显式标注
+## What this is not
 
-## 作者
+- **Not legal advice.** For any concrete compliance question, please consult a practising lawyer.
+- **Not a news aggregator.** We do not chase breaking stories or write reactive commentary.
+- **Not advocacy.** The goal of comparison is to surface structural differences, not to rank systems as better or worse.
+- **Not a machine-translation product.** All translations are human-reviewed; AI-assisted passages are explicitly marked.
 
-由一名在 AI/LLM 行业工作的独立研究者维护。个人资料与联系方式暂略，
-正式合作与投诉请通过 [GitHub Issues](https://github.com/3013038780-design/comparativeai/issues)。
+## Author
 
-## 下一步
+The site is maintained by an independent researcher working in the AI / LLM industry. Personal details and contact information are deliberately minimal. For formal collaboration or complaints, please use [GitHub Issues](https://github.com/3013038780-design/comparativeai/issues).
 
-- 想了解我是怎么做判断的 → [方法论](/methodology/)
-- 想开始读内容 → [议题比较](/topics/)
-- 想引用本站 → [引用与免责](/methodology/citation-disclaimer/)
+## Next steps
+
+- To understand how editorial judgements are made → [Methodology](/methodology/)
+- To start reading content → [Topic comparisons](/topics/)
+- To cite the site → [Citation and disclaimer](/methodology/citation-disclaimer/)

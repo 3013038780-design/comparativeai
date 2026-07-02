@@ -1,0 +1,83 @@
+---
+title: 欧盟 — 顶层规则
+description: EU Regulation / Directive / Commission Guidelines / AI Office 指引
+sidebar:
+  order: 3
+  label: 🇪🇺 欧盟
+---
+
+## 📍 本页仅收 EU 层级（直接适用于 27 成员国）
+
+**成员国层面的实施、主管机构和国家 AI 法：参见 [欧盟成员国](/zh/subnational/eu/)**。
+
+## 欧盟 AI 治理的两层位阶（New Legislative Framework）
+
+参见 [方法论 §2 · 欧盟](/zh/methodology/#hard-vs-soft)，欧盟自 1985 NLF 以来的标准范式：
+
+1. **二级立法**（Regulation / Directive）：设"本质要求"（essential requirements）
+2. **协调标准（hEN, harmonised standard）**：把"本质要求"译为可检验技术规范，
+   一经 OJEU 引用产生**符合性推定**（AI Act 第 40 条）
+
+**其他实施机制**（不构成独立位阶）：
+- **条约层**（TEU / TFEU / Charter of Fundamental Rights）：宪法性背景，不直接产生 AI 治理义务
+- **Commission Implementing / Delegated Acts**：填二级立法的技术细节
+- **Code of Practice**（如 GPAI CoP）：**hEN 到位前的过渡合规路径**
+- **Commission Guidelines / AI Office Guidelines**：解释执法预期
+- **成员国 DPA / MSA 执法**：硬法的落地
+
+## 已收录
+
+### AI 专项 Regulation
+
+- [**EU AI Act (Regulation 2024/1689)**](./ai-act/) — 全球首部横向 AI 法规，2024-08-01 生效，
+  经修订后的分阶段适用延续至 2028-08
+- [**GPAI Code of Practice**](./gpai-code-of-practice/) — AI Act 第 56 条授权的行为守则，
+  2025-07-10 定稿；签署 = 合规推定
+- [**AI 生成内容透明度行为守则**](./synthetic-content-code/) — 第 50 条最终自愿实施守则，
+  2026-06-10 发布
+
+### AI 相关上位 Regulation / Directive
+
+- [**GDPR (2016/679)**](./gdpr/) — 数据保护基础法，2018 适用
+- [**Digital Services Act (2022/2065)**](./dsa/) — 平台内容治理；VLOP 系统性风险评估纳入生成式 AI
+- [**Product Liability Directive (2024/2853)**](./product-liability-directive/) — 明确 AI 系统为"产品"，
+  无过错责任适用
+
+### 立法修正（已通过）
+
+- [**Digital Omnibus / AI Omnibus**](./digital-omnibus-proposal/) — 欧盟理事会于 **2026-06-29** 最终批准；Annex III 高风险规则移至 2027-12-02，产品嵌入规则移至 2028-08-02
+
+## 时间线（核心）
+
+| 日期 | 事件 |
+| --- | --- |
+| 2018-05-25 | GDPR 适用 |
+| 2022-10-19 | DSA 发布 |
+| 2024-02-17 | DSA 对所有中间服务商全面适用 |
+| 2024-07-12 | AI Act 官方公报公布 |
+| 2024-08-01 | AI Act 生效 |
+| 2024-12-08 | Product Liability Directive 生效 |
+| 2025-02-02 | AI Act 禁止清单（第 5 条）适用 |
+| 2025-07-10 | GPAI Code of Practice 定稿 |
+| 2025-08-02 | AI Act GPAI 条款（第 51-56 条）适用 |
+| 2025-11-19 | Digital Omnibus 提案发布 |
+| 2026-05-07 | **AI Omnibus 实施日期达成政治协议** |
+| 2026-06-10 | **AI 生成内容透明度最终守则发布** |
+| 2026-06-19 | **AI Act 咨询论坛召开首次会议** |
+| 2026-06-29 | **欧盟理事会最终批准 Digital Omnibus on AI** |
+| 2026-08-02 | AI Act 第 50 条透明度义务适用；其他分阶段条款按修订时间表推进 |
+
+## 2026 年 5—6 月实施状态
+
+- 欧盟委员会任命 **60 人科学专家组**和 **174 人咨询论坛**支持 AI Act 执法，论坛于 6 月 19 日开始工作。
+- 欧盟委员会 5 月 8 日公布第 50 条透明度指南草案；截至截止日仍是草案，应与 6 月 10 日发布的最终自愿透明度守则区分。
+- 欧盟理事会 6 月 29 日批准后，Digital Omnibus 已从提案变为通过的立法修正。
+
+一手来源：[欧盟委员会执行机构说明](https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support)、[欧盟理事会最终批准](https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/)。
+
+## 与其他辖区的关系
+
+- **Brussels Effect**：AI Act 对美国、英国、日本、巴西等立法有事实扩散
+- **跨大西洋合规**：美国 Voluntary Commitments + 加州 SB 53 与 GPAI CoP 文档可复用
+- **美国 Trump 政府反制**：EO 14365 + AI Action Plan 公开抵制 Brussels Effect
+- **中国**：TC260-003 + 安全治理框架形成**对应**但不对标的路径

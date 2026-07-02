@@ -1,191 +1,178 @@
 ---
-title: 人工智能拟人化互动服务管理暂行办法
-description: 五部门 2026-04-10 联合公布、2026-07-15 施行的 AI 拟人化互动服务（含适老陪伴、适幼照护、虚拟伴侣类）专项规章；首个系统规制"拟人化"AI 交互的部门规章
-ruleName: 人工智能拟人化互动服务管理暂行办法
-issuer: 国家互联网信息办公室 / 国家发展改革委 / 工业和信息化部 / 公安部 / 国家市场监督管理总局（五部门联合发布）
+title: Interim Measures for the Administration of AI Anthropomorphic Interaction Services
+description: Five-ministry joint rule on AI anthropomorphic interaction services (including elder companionship, child caretaker, and virtual-companion scenarios), issued 2026-04-10 and effective 2026-07-15; the first dedicated departmental rule systematically regulating "anthropomorphic" AI interaction
+ruleName: Interim Measures for the Administration of AI Anthropomorphic Interaction Services (《人工智能拟人化互动服务管理暂行办法》)
+issuer: Cyberspace Administration of China (CAC) / National Development and Reform Commission (NDRC) / Ministry of Industry and Information Technology (MIIT) / Ministry of Public Security (MPS) / State Administration for Market Regulation (SAMR) — five-ministry joint issuance
 level: departmental-rule
 binding: hard
 effectiveDate: 2026-07-15
 publishedDate: 2026-04-10
 originalUrl: https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm
-decreeNumber: 国家互联网信息办公室、国家发展和改革委员会、工业和信息化部、公安部、国家市场监督管理总局令第21号
+decreeNumber: CAC / NDRC / MIIT / MPS / SAMR Joint Decree No. 21
 relatedTopics:
   - risk-classification
   - content-labeling-provenance
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: 拟人化互动服务办法 (2026)
+  label: Anthropomorphic Interaction Services Measures (2026)
   order: 5
 ---
 
-> **📑 法律位阶**：第 3 级 · 部门规章 | **发布**：网信办、发改委、工信部、公安部、市监总局（**五部门联合发布**） | **发布**：2026-04-10 | **生效**：2026-07-15 | **属性**：硬法
+> **📑 Legal hierarchy**: Level 3 · Departmental rule | **Issuance**: CAC, NDRC, MIIT, MPS, SAMR (**five-ministry joint issuance**) | **Released**: 2026-04-10 | **Effective**: 2026-07-15 | **Character**: hard law
 
-> **⚠️ 位阶提醒**：本规则是**部门规章**，由五部委联合发布。**不是**国务院行政法规，**不是**全国人大法律。
-> "暂行"留政策调整空间。位阶详见 [中国规则索引](/rules/china/#法律位阶速览)。
+> **⚠️ Hierarchy note**: This instrument is a **departmental rule**, jointly issued by five ministries. It is **not** a State Council administrative regulation, and **not** a NPC law. "Interim" (*暂行*) leaves policy room for adjustment. See [Index of Chinese Rules](/rules/china/#the-legal-hierarchy-at-a-glance).
 
-> **🆕 2026-04-10 新发布**。**文号：令第 21 号**（五部委联合令）。本页基于 CAC 发布的全文
-> （[c_1777558395078289](https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm)）整理；归档 HTML 见
-> `public/archives/china/anthropomorphic-interaction-services-2026-04-10.html`。
+> **🆕 Newly issued 2026-04-10**. **Decree number: Joint Decree No. 21** (five-ministry joint decree). This page is based on the full text released by CAC ([c_1777558395078289](https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm)); archived HTML at `public/archives/china/anthropomorphic-interaction-services-2026-04-10.html`.
 
-## 中文摘要
+## Chinese Summary
 
-《人工智能拟人化互动服务管理暂行办法》由**国家网信办、国家发展改革委、工业和信息化部、公安部、
-国家市场监督管理总局**五部门于 **2026-04-10** 联合公布，**2026-07-15** 施行。
+The *Interim Measures for the Administration of AI Anthropomorphic Interaction Services* were jointly issued by the **Cyberspace Administration of China (CAC), the National Development and Reform Commission (NDRC), the Ministry of Industry and Information Technology (MIIT), the Ministry of Public Security (MPS), and the State Administration for Market Regulation (SAMR)** on **2026-04-10**, effective **2026-07-15**.
 
-**意义**：这是中国**首个针对"AI 拟人化互动服务"这一类别**的专项部门规章，覆盖 **AI 陪伴 /
-虚拟恋人 / 适老陪伴 / 适幼照护 / 文化传播的虚拟人**等场景。
-填补了《生成式 AI 办法》在**人机交互情感层面**的监管空白，特别回应"**危害未成年人身心健康、
-加剧伦理偏差**"等社会关切。
+**Significance**: This is China's **first dedicated departmental rule on the category of "AI anthropomorphic interaction services,"** covering scenarios such as **AI companions / virtual lovers / elder companionship / child caretaker / culturally themed virtual humans**. It fills a gap left by the *Generative AI Interim Measures* on **the emotional dimension of human-machine interaction**, responding directly to concerns over "**harm to minors' physical and mental health, and aggravation of ethical bias**."
 
-## 英文一句话摘要
+## English One-Sentence Summary
 
-The **Interim Measures for the Administration of AI Anthropomorphic Interaction Services**,
-jointly issued by 5 PRC ministries on 2026-04-10 and effective 2026-07-15, are the first
-sectoral rule targeting the category of **anthropomorphic AI interaction** (AI companions,
-elder-care chatbots, children-facing virtual caretakers, persona-based bots) — filling the
-emotional-human-machine-interaction gap left by the 2023 Generative AI Interim Measures.
+The **Interim Measures for the Administration of AI Anthropomorphic Interaction Services**, jointly issued by 5 PRC ministries on 2026-04-10 and effective 2026-07-15, are the first sectoral rule targeting the category of **anthropomorphic AI interaction** (AI companions, elder-care chatbots, children-facing virtual caretakers, persona-based bots) — filling the emotional-human-machine-interaction gap left by the 2023 Generative AI Interim Measures.
 
-## 适用范围（"拟人化互动服务"）
+## Scope ("Anthropomorphic Interaction Services")
 
-新闻稿用语："**人工智能拟人化互动服务**"，对应的典型应用场景包括（按新闻稿指向）：
+The press release phrase is "**AI anthropomorphic interaction services**" (*人工智能拟人化互动服务*), with typical application scenarios indicated by the release including:
 
-- **文化传播**：虚拟主播、数字人、虚拟偶像
-- **适老陪伴**：面向老年人的 AI 陪伴 / 交互产品
-- **适幼照护**：面向儿童的 AI 陪伴 / 教育交互
-- （隐含）**虚拟恋人 / AI 伴侣 / AI 朋友**等情感型交互产品
+- **Cultural communication**: virtual anchors, digital humans, virtual idols.
+- **Elder companionship**: AI companionship / interaction products aimed at older persons.
+- **Child caretaker**: AI companionship / educational interaction for children.
+- (Implicit) **Virtual lovers / AI companions / AI friends** and similar emotionally oriented interaction products.
 
-未来官方条款公布后本页会补充正式的**服务类型定义**。
+This page will be updated with the formal **definition of service types** once the full text is consulted.
 
-## 立法动机
+## Legislative Motivation
 
-新闻稿的原文表述：
+From the press release:
 
-> 近年来，拟人化互动服务快速发展，在文化传播、适幼照护、适老陪伴等领域的创新应用不断涌现。
-> 与此同时，**危害未成年人身心健康、影响网络信息安全、威胁公民生命健康以及加剧伦理偏差**
-> 等问题日益显现。
+> 近年来，拟人化互动服务快速发展，在文化传播、适幼照护、适老陪伴等领域的创新应用不断涌现。与此同时，**危害未成年人身心健康、影响网络信息安全、威胁公民生命健康以及加剧伦理偏差**等问题日益显现。
 
-四类风险明确列出：
-1. 危害未成年人身心健康
-2. 影响网络信息安全
-3. 威胁公民生命健康
-4. 加剧伦理偏差
+> **— English gloss —** In recent years, anthropomorphic interaction services have developed rapidly, with innovative applications continuously emerging in cultural communication, child caretaker, and elder companionship. At the same time, issues such as **harm to minors' physical and mental health, impact on online information security, threats to citizens' life and health, and aggravated ethical bias** have become increasingly prominent.
 
-## 关键条款（正文）
+Four categories of risk are expressly listed:
 
-### 第十四条 · 未成年人保护（**"虚拟伴侣"禁令**）
+1. Harm to minors' physical and mental health;
+2. Impact on online information security;
+3. Threats to citizens' life and health;
+4. Aggravated ethical bias.
 
-> **禁止向未成年人提供"虚拟亲属、虚拟伴侣等虚拟亲密关系"服务**；
-> 向不满十四周岁未成年人提供其他拟人化互动服务，应当取得其监护人同意。
+## Key Provisions (Final Text)
 
-**这是全球首条以部门规章形式明确禁止向未成年人提供 AI 虚拟伴侣类服务的规定**。
-关键点：
-- **"虚拟亲属、虚拟伴侣等虚拟亲密关系"** 是被**绝对禁止**的服务类型（对所有未成年人，18 岁以下）
-- **其他拟人化互动服务**对不满 14 周岁需**监护人同意**（与 PIPL 第三十一条衔接）
+### Article 14 · Protection of Minors (**the "virtual companion" ban**)
 
-### 第十五条 · 老年人保护
+> **禁止向未成年人提供"虚拟亲属、虚拟伴侣等虚拟亲密关系"服务**；向不满十四周岁未成年人提供其他拟人化互动服务，应当取得其监护人同意。
 
-向老年人提供**指导、风险提示和咨询求助服务**。
+> **— English gloss —** Article 14. **The provision of "virtual relatives, virtual lovers, and other virtual intimate-relationship" services to minors is prohibited**; where other anthropomorphic interaction services are provided to minors under 14, the consent of a guardian shall be obtained.
 
-→ 中国 AI 部门规章**首次将"老年人"与"未成年人"并列**作为专门保护对象。
+**This is the world's first departmental rule expressly prohibiting the provision of AI virtual-companion services to minors**. Key points:
 
-### 第十七条 · 个人信息
+- "Virtual relatives, virtual lovers, and other virtual intimate relationships" are an **absolutely prohibited** service type for all minors (i.e., under 18).
+- **Other anthropomorphic interaction services** require **guardian consent** for children under 14 (interfacing with PIPL Article 31).
 
-处理不满十四周岁未成年人个人信息需**取得监护人同意**（衔接 PIPL 第三十一条）。
+### Article 15 · Protection of Older Persons
 
-### 第二十二条 · 安全评估
+Providers shall offer **guidance, risk reminders, and assistance services** to older persons.
 
-**触发条件**：
-- 上线新服务
-- 使用新技术
-- **用户规模超 100 万**
-- 其他可能对社会公众产生显著影响的情形
+→ This is the **first time** a Chinese AI departmental rule has placed "older persons" alongside "minors" as an expressly protected category.
 
-→ 用户规模门槛明确到**100 万**，首次在拟人化服务领域量化。
+### Article 17 · Personal Information
 
-### 第二十六条 · 算法备案
+Processing personal information of minors under 14 requires **guardian consent** (connecting to PIPL Article 31).
 
-按 [《互联网信息服务算法推荐管理规定》](./algorithm-recommendation-provisions/) 履行算法备案手续。
-→ 复用既有算法备案体系，不另建新台账。
+### Article 22 · Security Assessment
 
-### 第二十八条 · AI 沙箱安全服务平台
+**Triggers**:
 
-建设**人工智能沙箱安全服务平台**，鼓励提供者**接入进行技术创新和安全测试**。
+- launching a new service;
+- adopting new technology;
+- **user scale exceeding 1 million**;
+- other circumstances that may significantly affect the public.
 
-→ 这是**中国部门规章中首次正式引入"监管沙盒"制度**。此前北京、深圳等地方有试点，
-本条正式上升为国家级制度。
+→ The user-scale threshold is expressly set at **1 million**, the first quantification in the anthropomorphic-services space.
 
-### 第三十条 · 处罚
+### Article 26 · Algorithm Filing
 
-| 情形 | 处罚 |
+File (*备案*) under the [*Provisions on the Administration of Algorithm Recommendation in Internet Information Services*](./algorithm-recommendation-provisions/). → Reuses the existing algorithm registry, without a separate new register.
+
+### Article 28 · AI Sandbox Safety Services Platform
+
+Build an **AI sandbox safety services platform**; encourage providers to **plug in for technical innovation and safety testing**.
+
+→ This is the **first time a Chinese departmental rule has formally introduced a "regulatory sandbox"** mechanism. Earlier pilots in Beijing and Shenzhen now receive a national-level analogue.
+
+### Article 30 · Penalties
+
+| Circumstances | Penalty |
 | --- | --- |
-| 一般违法 | **警告、通报、责令改正** |
-| 拒不改正或情节严重 | **1 万至 10 万元**罚款 |
-| **危害生命健康** | **10 至 20 万元**罚款 |
+| Ordinary violations | **Warning, public reprimand, order to rectify** |
+| Refusal to rectify, or serious circumstances | **Fine of RMB 10,000 to 100,000** |
+| **Harm to life or health** | **Fine of RMB 100,000 to 200,000** |
 
-对比：
-- 比《生成式 AI 办法》（援引《网络安全法》第 68 条的 10-100 万档）罚款上限**更低**
-- 但引入**"危害生命健康"分档** → 指向 AI 陪伴诱导自伤 / 自杀等极端风险场景
+Comparison:
 
-## 基本原则
+- Ceiling is **lower** than the *Generative AI Interim Measures* (which cite CSL Article 68's RMB 100,000–1,000,000 band).
+- But it introduces a **"harm to life and health" tier**, pointing to extreme scenarios such as AI-companion-induced self-harm or suicide.
 
-- **以人为本、智能向善**
-- 发展和安全并重、促进创新和依法治理相结合
-- **包容审慎和分类分级监管**
-- 多方参与（政府、企业、社会、网民）
+## Basic Principles
 
-## 禁止清单（生成内容）
+- **People-centered, AI for good** (以人为本、智能向善).
+- Balance development and safety; integrate innovation with lawful governance.
+- **Inclusive and prudent, classified and graded supervision** (包容审慎和分类分级监管).
+- Multi-stakeholder participation (government, enterprise, society, netizens).
 
-禁止生成：
-- 危害**国家安全、荣誉和利益**的内容
-- 煽动**颠覆国家政权、推翻社会主义制度**的内容
-- 其他依照上位法（CSL、DSL、PIPL）禁止的内容
+## Prohibited List (Generated Content)
 
-## 与上位 / 相邻规则的关系
+Generation is prohibited of:
 
-- **[生成式 AI 暂行办法](./generative-ai-interim-measures/) (2023)**：上位同类部门规章，本办法
-  在**服务形态（拟人化）**维度做专项补充，不替代
-- **[深度合成规定](./deep-synthesis-provisions/) (2023)**：数字人 / 虚拟主播构成交集
-- **[标识办法](./biaozhi-banfa/) (2025)**：拟人化服务的输出内容仍需遵守标识义务
-- **[算法推荐规定](./algorithm-recommendation-provisions/) (2022)**：推荐引擎驱动的拟人化产品交叉
-- **[未成年人网络保护条例](./minors-internet-protection-regulation/) (2024)**：
-  第四十四条"不得向未成年人提供诱导其沉迷的产品和服务"的上位依据
-- **[PIPL](./personal-info-protection-law/) (2021)**：第二十八条敏感信息（生物识别 / 未成年人）
-  处理义务
-- **[科技伦理审查办法](./science-tech-ethics-review-measures/) (2023)**：第二十五条"具有较强
-  心理情感影响的人机融合系统"研发阶段审查 → 与拟人化互动服务立项阶段衔接
+- Content endangering **national security, honor, or interests**;
+- Content inciting **subversion of state power, overthrow of the socialist system**;
+- Other content prohibited under upstream statutes (CSL, DSL, PIPL).
 
-## 实务影响（初步判断）
+## Relationship with Upstream / Adjacent Rules
 
-1. **虚拟恋人 / AI 伴侣类产品**：面向未成年人提供的需**事实下架**或**强年龄门槛**
-2. **适老陪伴类产品**：新增"老年人权益保护"合规要求 → 防沉迷 + 防情感依赖 + 防消费误导
-3. **文化传播类数字人**：与深度合成 + 标识办法多重合规
-4. **AI 沙箱**：首次在部门规章层面提及"沙箱"机制，对试点城市（北京、深圳等已有 AI 沙箱）
-   构成国家级肯定
-5. **跨境 / 外资**：未见专门跨境条款，依上位 CSL / DSL / PIPL 适用
+- **[Generative AI Interim Measures](./generative-ai-interim-measures/) (2023)**: the upstream departmental rule of the same category; these Measures add a specialization along the **service-form (anthropomorphism)** axis, without replacing.
+- **[Deep Synthesis Provisions](./deep-synthesis-provisions/) (2023)**: digital humans / virtual anchors form an intersection.
+- **[Labeling Measures](./biaozhi-banfa/) (2025)**: the outputs of anthropomorphic services remain subject to labeling duties.
+- **[Algorithm Recommendation Provisions](./algorithm-recommendation-provisions/) (2022)**: recommendation-driven anthropomorphic products intersect.
+- **[Regulations on the Protection of Minors Online](./minors-internet-protection-regulation/) (2024)**: Article 44 — "shall not provide products or services inducing addiction to minors" — is the upstream authority.
+- **[PIPL](./personal-info-protection-law/) (2021)**: Article 28 duties on sensitive information (biometrics / minors).
+- **[Science and Technology Ethics Review Measures](./science-tech-ethics-review-measures/) (2023)**: Article 25 covers "human-machine fusion systems with significant psychological or emotional impact on subjects," linking to the R&D-stage review of anthropomorphic interaction services.
 
-## 原文与归档
+## Practical Impact (preliminary assessment)
 
-| 来源 | 链接 |
+1. **Virtual-lover / AI-companion products**: those offered to minors will require **effective delisting** or **strong age-gating**.
+2. **Elder-companionship products**: new compliance requirements under "protection of older persons" — anti-addiction, anti-emotional-dependence, anti-misleading consumption.
+3. **Cultural-communication digital humans**: multi-layered compliance under Deep Synthesis + Labeling Measures.
+4. **AI sandbox**: first departmental-rule recognition of the "sandbox" mechanism; a national-level affirmation of pilot cities (Beijing, Shenzhen, etc. already have AI sandboxes).
+5. **Cross-border / foreign investment**: no dedicated cross-border provisions yet; CSL / DSL / PIPL apply upstream.
+
+## Source Text and Archival Copies
+
+| Source | Link |
 | --- | --- |
-| 中文全文（令第 21 号） | [cac.gov.cn/2026-04/10/c_1777558395078289.htm](https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm) |
-| 中文（CAC 新闻稿） | [cac.gov.cn/2026-04/10/c_1777558395023172.htm](https://www.cac.gov.cn/2026-04/10/c_1777558395023172.htm) |
-| 中文（归档） | [archives/china/anthropomorphic-interaction-services-2026-04-10.html](/archives/china/anthropomorphic-interaction-services-2026-04-10.html) |
-| English | —（预期 China Law Translate 会翻译） |
+| Chinese (full text, Joint Decree No. 21) | [cac.gov.cn/2026-04/10/c_1777558395078289.htm](https://www.cac.gov.cn/2026-04/10/c_1777558395078289.htm) |
+| Chinese (CAC press release) | [cac.gov.cn/2026-04/10/c_1777558395023172.htm](https://www.cac.gov.cn/2026-04/10/c_1777558395023172.htm) |
+| Chinese (archived copy) | [archives/china/anthropomorphic-interaction-services-2026-04-10.html](/archives/china/anthropomorphic-interaction-services-2026-04-10.html) |
+| English | — (China Law Translate expected to release a translation) |
 
-## 配套专家解读（CAC 2026-04-10 / 04-17 同步发布）
+## Companion Expert Commentaries (released concurrently by CAC, 2026-04-10 / 04-17)
 
-- 《积极回应人机互动新治理命题，促进人工智能负责任创新》(2026-04-17)
-- 《以人机价值对齐规范引领人工智能拟人化互动服务健康发展》(2026-04-17)
-- 《筑牢安全防线 让拟人化互动服务行稳致远》(2026-04-17)
-- 《人工智能拟人化互动服务的制度指引》(2026-04-10)
-- 《智能向善 构建人机和谐共生的治理新范式》(2026-04-10)
+- "Responding Positively to New Governance Challenges in Human-Machine Interaction, Promoting Responsible AI Innovation" (2026-04-17).
+- "Leading the Healthy Development of AI Anthropomorphic Interaction Services with Human-Machine Value Alignment Norms" (2026-04-17).
+- "Building Safety Lines So That Anthropomorphic Interaction Services Can Proceed Steadily and Far" (2026-04-17).
+- "Institutional Guidance for AI Anthropomorphic Interaction Services" (2026-04-10).
+- "AI for Good: Building a New Governance Paradigm of Harmonious Human-Machine Coexistence" (2026-04-10).
 
-链接在 CAC [政策法规专栏](https://www.cac.gov.cn/wxzw/zcfg/A093703index_1.htm)。
+Links at the CAC [Policies and Regulations column](https://www.cac.gov.cn/wxzw/zcfg/A093703index_1.htm).
 
-## 版本历史
+## Version History
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2026-04-10 | 五部门联合公布（CAC 新闻稿） |
-| 2026-07-15 | 正式施行 |
-| 2026-04-21 | 本站首次归档 |
+| 2026-04-10 | Jointly issued by five ministries (CAC press release) |
+| 2026-07-15 | Officially effective |
+| 2026-04-21 | First archived on this site |

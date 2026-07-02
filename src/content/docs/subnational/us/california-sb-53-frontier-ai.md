@@ -1,8 +1,8 @@
 ---
 title: California SB 53 — Transparency in Frontier Artificial Intelligence Act
-description: 加州 2025-09-29 签署、2026-01-01 生效；美国首部专门针对前沿 AI 安全和透明度的州法
+description: Signed by California on 2025-09-29, effective 2026-01-01; the first US state law specifically targeting frontier AI safety and transparency
 ruleName: California SB 53 — Transparency in Frontier Artificial Intelligence Act (TFAIA)
-issuer: California State Legislature (Senator Scott Wiener, D-San Francisco); 签署：Governor Gavin Newsom
+issuer: California State Legislature (Senator Scott Wiener, D-San Francisco); signed by Governor Gavin Newsom
 level: state-law
 binding: hard
 effectiveDate: 2026-01-01
@@ -11,129 +11,124 @@ originalUrl: https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_
 relatedTopics:
   - frontier-gpai
   - risk-classification
-snapshotDate: 2026-04-21
+snapshotDate: 2026-06-28
 sidebar:
-  label: California SB 53 (2026, 前沿 AI)
+  label: California SB 53 (2026, Frontier AI)
   order: 5
 ---
 
-## 中文摘要
+## Summary
 
-**Senate Bill 53 — 加州《前沿人工智能透明度法》（Transparency in Frontier Artificial Intelligence
-Act, TFAIA）**，由 State Senator **Scott Wiener (D-SF)** 起草，州长 **Newsom 于 2025-09-29 签署**，
-**2026-01-01 生效**。
+**Senate Bill 53 — California *Transparency in Frontier Artificial Intelligence Act* (TFAIA)**, drafted by State Senator **Scott Wiener (D-SF)** and signed by **Governor Newsom on 2025-09-29**, **enters into force on 2026-01-01**.
 
-**意义**：**美国首部专门针对前沿 AI 模型安全和透明度的州法**。在 SB-1047（2024 被 Newsom 否决）
-之后，加州以更温和但更聚焦的方式进入前沿 AI 监管领域。
+**Significance**: **the first US state law specifically targeting safety and transparency for frontier AI models**. Following SB-1047 (vetoed by Newsom in 2024), California enters the frontier-AI regulatory space in a more measured but more focused form.
 
-## 适用范围
+## Scope
 
-### "Frontier Model" 定义
+### Definition of "Frontier Model"
 
-**"foundation model trained on a quantity of computing power greater than 10²⁶ integer or
-floating-point operations (FLOPs)"**
+> "A foundation model trained on a quantity of computing power greater than 10²⁶ integer or floating-point operations (FLOPs)".
 
-→ 与 Biden EO 14110（已撤销）使用同一阈值。覆盖：
-- GPT-4o / o3 / o4 系列（OpenAI）
-- Claude Opus / Sonnet 系列（Anthropic）
-- Gemini Ultra 系列（Google DeepMind）
-- Llama 3+ 系列（Meta）
-- Grok 系列（xAI）
+→ The same threshold used in Biden EO 14110 (now rescinded). Covers:
+- the GPT-4o / o3 / o4 series (OpenAI)
+- the Claude Opus / Sonnet series (Anthropic)
+- the Gemini Ultra series (Google DeepMind)
+- the Llama 3+ series (Meta)
+- the Grok series (xAI)
 
 ### "Large Frontier Developer"
 
-年营收 **≥ $500M** 的前沿模型开发者承担**强化义务**。
+Frontier-model developers with annual revenue **≥ $500M** bear **heightened obligations**.
 
-## 核心义务
+## Core obligations
 
-### 1. 前沿 AI 框架（Framework）披露
+### 1. Frontier AI Framework disclosure
 
-大型前沿开发者须**在公司网站公布一份 AI 框架**，描述：
-- 如何整合**国家标准、国际标准、行业共识最佳实践**
-- 具体引用：**NIST AI RMF**、ISO/IEC 42001、MLCommons 等
-- 与 **白宫 Voluntary Commitments**、**EU GPAI Code of Practice**、**Frontier Model Forum** 等对齐
+Large frontier developers must **publish an AI Framework on the company website** describing:
+- How it incorporates **national standards, international standards, and industry-consensus best practices**.
+- Specific references: **NIST AI RMF**, ISO/IEC 42001, MLCommons, etc.
+- Alignment with the **White House Voluntary Commitments**, the **EU GPAI Code of Practice**, the **Frontier Model Forum**, and similar frameworks.
 
-### 2. 模型发布透明度报告
+### 2. Transparency reports on model releases
 
-每次**发布新模型或实质性修改**：
-- **发布日期**
-- 模型**modalities**（文本 / 视觉 / 音频 / 多模态）
-- **预期用途**
-- 任何**部署限制**
-- **灾难性风险评估摘要和结果**（仅大型开发者）
+On every **new model release or material modification**:
+- **Release date**.
+- The model's **modalities** (text / vision / audio / multimodal).
+- **Intended uses**.
+- Any **deployment limitations**.
+- **Summary and results of the catastrophic-risk assessment** (large developers only).
 
-### 3. 关键安全事件报告
+### 3. Critical safety-incident reporting
 
-- 向**加州紧急事务办公室（OES）**报告**潜在关键安全事件**
-- 覆盖：生物武器、网络攻击、模型自主性失控、大规模操纵等
+- Report **potential critical safety incidents** to the **California Office of Emergency Services (OES)**.
+- Covering: biological weapons, cyber-attacks, loss of model-autonomy control, large-scale manipulation, etc.
 
-### 4. 吹哨人保护
+### 4. Whistleblower protection
 
-- 披露前沿模型**重大健康 / 安全风险**的雇员和承包商获**民事和刑事保护**
-- 禁止雇主对吹哨人报复
+- Employees and contractors who disclose significant **health or safety risks** of frontier models receive **civil and criminal protections**.
+- Employers are prohibited from retaliating against whistleblowers.
 
-## 罚则
+## Penalties
 
-- **最高 $1,000,000 per violation**（年营收 ≥ $500M 的大型开发者）
-- 加州总检察长**独家执法**
-- **无私人诉权**（no private right of action）
+- **Up to $1,000,000 per violation** (for large developers with annual revenue ≥ $500M).
+- The California Attorney General has **sole enforcement authority**.
+- **No private right of action**.
 
-## 与 SB-1047 的对比（Wiener 同一作者）
+## Comparison with SB-1047 (same author — Wiener)
 
-| 维度 | SB-1047 (2024, 被否决) | SB 53 (2026, 生效) |
+| Dimension | SB-1047 (2024, vetoed) | SB 53 (2026, in force) |
 | --- | --- | --- |
-| 核心 | **强制安全义务** + "kill switch" + 报告 | **透明度 + 框架披露** |
-| 范围 | "covered model"（含算力 + $100M 训练成本） | "frontier model"（仅算力） |
-| 义务类型 | 实质性能力控制 | 文档 + 披露 |
-| 罚则 | 高（含州 AG 追究禁令） | 最高 $1M / violation |
-| 政治命运 | Newsom 2024-09 否决 | Newsom 2025-09 签署 |
+| Core | **Mandatory safety obligations** + "kill switch" + reporting | **Transparency + framework disclosure** |
+| Scope | "Covered model" (compute + $100M training cost) | "Frontier model" (compute alone) |
+| Type of obligation | Substantive capability controls | Documentation + disclosure |
+| Penalties | High (including state AG injunctive relief) | Up to $1M / violation |
+| Political fate | Vetoed by Governor Newsom 2024-09 | Signed by Governor Newsom 2025-09 |
 
-**战略**：从"强制性义务"退到"透明度"，避开 Newsom 否决理由（"扼杀加州创新"），
-同时保留"政府获得系统性信息"的监管价值。
+**Strategy**: a retreat from "mandatory obligations" to "transparency", avoiding the reason given for Newsom's veto ("stifles California innovation") while preserving the regulatory value of "government access to systematic information".
 
-## 企业应对
+## Corporate response
 
-### Anthropic（加州总部）
+### Anthropic (headquartered in California)
 
-发布了《SB 53 合规框架》（2025-10）：
-- 公开 **Usage Policy + RSP + Model Card** 作为 Framework
-- 关键安全事件向 CA OES 报告流程内部化
-- 吹哨人政策更新
+Published its *SB 53 Compliance Framework* (2025-10):
+- Publishes **Usage Policy + RSP + Model Card** as the Framework.
+- Internalizes the CA OES critical-safety-incident reporting process.
+- Updates whistleblower policy.
 
 ### OpenAI / Google DeepMind
 
-- 合规方案**预期与 EU GPAI Code of Practice 合并**（同样覆盖透明度 + 安全）
-- **跨 EU / CA 的"一套文档"合规**策略逐渐成型
+- Compliance plans are **expected to be merged with the EU GPAI Code of Practice** (which likewise covers transparency + safety).
+- A "single documentation set" strategy spanning EU / CA is gradually taking shape.
 
-### 非美公司
+### Non-US companies
 
-- Mistral、DeepSeek 若模型达到 10²⁶ FLOP 阈值 + 在加州提供服务 → 同样适用
+- Mistral, DeepSeek and others are equally subject if their models cross the 10²⁶ FLOP threshold + are made available in California.
 
-## 与 EO 14365 的冲突
+## Conflict with EO 14365
 
-SB 53 是 EO 14365（2025-12）**首要打击目标之一**：
-- EO 14365 派 AI 诉讼工作组挑战"负担过重"州法
-- 加州 AG 明确表态**继续执法**
-- 2026-Q1 / Q2 预期有联邦诉讼
+SB 53 is one of the **primary targets** of EO 14365 (2025-12):
+- EO 14365 tasks the AI Litigation Task Force with challenging "unduly burdensome" state laws.
+- The California Attorney General has explicitly signalled **continued enforcement**.
+- Federal lawsuits are expected in 2026-Q1/Q2.
 
-**但**：EO 14365 不能独立抢占州法（需国会立法或最高法院判决），SB 53 短期内**继续生效**。
+**Nevertheless**: EO 14365 cannot independently preempt state law (it requires Congressional legislation or a Supreme Court ruling); SB 53 **continues to take effect** in the near term.
 
-## 原文与归档
+## Primary text and archives
 
-| 来源 | 链接 |
+| Source | Link |
 | --- | --- |
-| 全文（加州立法网） | [leginfo.legislature.ca.gov/.../SB53](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB53) |
-| 州长签署公告 | [gov.ca.gov/2025/09/29/.../sb-53](https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/) |
-| Future of Privacy Forum 解读 | [fpf.org/blog/californias-sb-53-the-first-frontier-ai-law-explained](https://fpf.org/blog/californias-sb-53-the-first-frontier-ai-law-explained/) |
-| Brookings 解读 | [brookings.edu/articles/what-is-californias-ai-safety-law](https://www.brookings.edu/articles/what-is-californias-ai-safety-law/) |
-| Anthropic 合规框架 | [anthropic.com/news/compliance-framework-SB53](https://www.anthropic.com/news/compliance-framework-SB53) |
+| Full text (California legislature) | [leginfo.legislature.ca.gov/.../SB53](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260SB53) |
+| Governor's signing statement | [gov.ca.gov/2025/09/29/.../sb-53](https://www.gov.ca.gov/2025/09/29/governor-newsom-signs-sb-53-advancing-californias-world-leading-artificial-intelligence-industry/) |
+| Future of Privacy Forum commentary | [fpf.org/blog/californias-sb-53-the-first-frontier-ai-law-explained](https://fpf.org/blog/californias-sb-53-the-first-frontier-ai-law-explained/) |
+| Brookings commentary | [brookings.edu/articles/what-is-californias-ai-safety-law](https://www.brookings.edu/articles/what-is-californias-ai-safety-law/) |
+| Anthropic compliance framework | [anthropic.com/news/compliance-framework-SB53](https://www.anthropic.com/news/compliance-framework-SB53) |
 
-## 版本历史
+## Revision history
 
-| 日期 | 事件 |
+| Date | Event |
 | --- | --- |
-| 2024-09 | SB-1047 被 Newsom 否决 |
-| 2025-02 | SB 53 由 Wiener 重新起草 |
-| 2025-09-29 | Newsom 签署 |
-| 2026-01-01 | 生效 |
-| 2026-Q1+ | 预期联邦诉讼（EO 14365 背景下） |
+| 2024-09 | SB-1047 vetoed by Governor Newsom |
+| 2025-02 | SB 53 re-drafted by Senator Wiener |
+| 2025-09-29 | Signed by Governor Newsom |
+| 2026-01-01 | In force |
+| 2026-Q1+ | Federal litigation expected (against the backdrop of EO 14365) |
