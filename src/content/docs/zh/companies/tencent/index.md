@@ -4,7 +4,7 @@ description: 腾讯混元（Hunyuan）概况 —— 消费者生态 + 多模态�
 sidebar:
   order: 10
   label: 腾讯 Tencent
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 ## 公司概况
@@ -85,6 +85,12 @@ snapshotDate: 2026-06-28
 - 参与 TC260 标准起草（多个）
 - **开源模型伴随的技术报告**含部分安全评估披露
 
+## 2026 年 4 月发布的 2025 年 ESG 报告
+
+腾讯官方 2025 年 ESG 报告披露，公司进一步完善内部人工智能管理政策，并为模型研发项目提供安全评估与治理指导。这比本页此前“没有独立框架”的表述更具体：腾讯仍未发布 RSP 式独立安全框架，但已经公开描述内部政策与项目保障层。
+
+企业一手来源：[腾讯 2025 年 ESG 报告（中文 PDF，2026 年 4 月 9 日发布）](https://static.www.tencent.com/uploads/2026/04/09/f6dbd30b3d8ca9c65f76f3d73b7da739.pdf)。
+
 ## 公开政策文档快照
 
 | 类型 | 文档名 | 链接 | 本站子页 |
@@ -93,6 +99,7 @@ snapshotDate: 2026-06-28
 | 技术报告 | HunyuanVideo / 3D / Image 3 Technical Reports | [github.com/Tencent-Hunyuan](https://github.com/Tencent-Hunyuan) | — |
 | AI 原则 | 《腾讯人工智能伦理原则》（2018）| _搜索"腾讯 AI 伦理原则"_ | — |
 | 透明度 | CAC 算法备案 + 微信 / QQ 等业务透明度报告 | [cac.gov.cn](https://www.cac.gov.cn/) | — |
+| ESG 治理 | 2025 年 ESG 报告——内部 AI 政策及项目安全保障披露 | [腾讯 PDF](https://static.www.tencent.com/uploads/2026/04/09/f6dbd30b3d8ca9c65f76f3d73b7da739.pdf) | — |
 
 ## 监管合规位置
 

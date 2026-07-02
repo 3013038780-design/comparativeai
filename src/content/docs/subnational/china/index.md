@@ -16,3 +16,12 @@ Within China's three-tier **central — local — enterprise** collaborative gov
 
 - [Shenzhen Special Economic Zone AI Industry Promotion Regulation (2022)](./shenzhen-ai-industry-promotion/) —
   **China's first local AI industry legislation**, pioneering "low-risk AI pilot-and-experiment".
+
+### Sector-specific implementation and public-sector practice
+
+- [Shanghai Government-Procurement Supervisory Agent Trial Measures (2026)](./shanghai-government-procurement-agent/) —
+  issued in June 2026 and effective 1 July; a procurement-sector workflow that treats AI alerts as auxiliary,
+  requires human verification and preserves the evaluation committee's legal responsibility.
+
+The Shanghai instrument is intentionally separated from comprehensive local legislation: it regulates one
+government-procurement application and should not be read as a citywide AI Act.

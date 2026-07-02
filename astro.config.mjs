@@ -246,6 +246,7 @@ export default defineConfig({
 							items: [
 								{ ...t('概览', 'Overview'), slug: 'subnational/china' },
 								{ ...t('深圳 AI 产业促进条例 (2022)', 'Shenzhen AI Industry Promotion Regulation (2022)'), slug: 'subnational/china/shenzhen-ai-industry-promotion' },
+								{ ...t('上海政府采购监管智能体办法 (2026)', 'Shanghai Procurement Agent Measures (2026)'), slug: 'subnational/china/shanghai-government-procurement-agent' },
 							],
 						},
 						{

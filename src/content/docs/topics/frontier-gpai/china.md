@@ -28,9 +28,10 @@ sidebar:
 - Legal basis: *Algorithmic Recommendation Provisions* art. 24, *Generative AI Interim Measures* art. 17, *Deep Synthesis Provisions* art. 19.
 - Process: submit filing materials → CAC review → receive filing number → permissioned to market.
 - **De facto threshold**: large-model services with "public-opinion attributes or capacity for social mobilisation".
-- Register: CAC publishes filing lists quarterly (more than ten batches released by Apr 2026).
+- Register: CAC publishes periodic filing notices. As of 30 April 2026, **868 services had completed filing**;
+  **530 downstream applications or functions** using already-filed models had completed local registration.
 
-### 2. Security assessment (referenced in art. 23 of the *Generative AI Interim Measures*)
+### 2. Security assessment (referenced in art. 17 of the *Generative AI Interim Measures*)
 
 - Primary rule: *Provisions on Security Assessment of Internet Information Services with Public-Opinion Attributes or Capacity for Social Mobilisation* (2018).
 - Yardstick: [TC260-003-2024](/rules/china/tc260-gen-ai-security-basic-requirements/).
@@ -46,7 +47,9 @@ sidebar:
 
 1. **"Public-facing service" is the trigger**: internal R&D or closed testing does not mandate filing.
 2. **Foreign-model mirrors**: Chinese-language services built on foreign large models typically file through a domestic partner.
-3. **Model layer vs. application layer**: many applications (chatbots, virtual avatars, text-to-image) share one base model — **each application must file separately**.
+3. **Model layer vs. application layer**: a covered base service completes filing; a downstream application or
+   function that directly calls an already-filed model normally completes **local registration** and displays the
+   model name and filing or launch number. It does not necessarily duplicate the base model's filing.
 4. **The awkwardness of open-source models**: whether the training party that releases an open-weight model (e.g., DeepSeek) itself needs to file is disputed — in practice, the training party files when it also offers an API, and weight-only releases may not trigger filing.
 
 ## Comparison with the EU and the US
@@ -59,3 +62,11 @@ sidebar:
 | Market gate | **Strict** (no filing = no public service) | Ex-ante compliance but no "approval" | None |
 
 Among the three jurisdictions, China has the strictest **ex-ante gate** for frontier models.
+
+## June 2026 implementation note
+
+The May 2026 [AI-agent Implementation Opinion](/rules/china/ai-agent-implementation-opinion/) extends this
+service-centred model toward systems that can plan, call tools and act. It proposes differentiated governance by
+scenario and impact, but does **not** create a compute threshold or a new GPAI-style model category.
+
+**Primary implementation source:** [CAC filing notice, 13 May 2026](https://www.cac.gov.cn/2026-05/13/c_1780413225190669.htm).

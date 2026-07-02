@@ -4,7 +4,7 @@ description: Baidu ERNIE 文心 profile and policy-document snapshot (2026-06-28
 sidebar:
   order: 6
   label: Baidu 百度
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 ## Company profile
@@ -25,6 +25,16 @@ snapshotDate: 2026-06-28
 - **The earliest and heaviest AI investor among China's BAT trio** (started 2010; announced "All in AI" strategy in 2017)
 - **In-house chips** (Kunlun 昆仑芯) + **in-house LLM** (ERNIE) + **in-house inference framework** (PaddlePaddle 飞桨) → **full-stack indigenisation**
 - **Closed-source flagship + open-source mid-tier** layering (a hedging pattern similar to Anthropic / OpenAI closed + Meta open)
+
+## May 2026 governance-practice update
+
+Baidu Security disclosed that it had participated in drafting the China Artificial Intelligence Industry
+Alliance's *Risk-Management Guide for Deploying OpenClaw-type Agents*. The guide focuses on enterprise agent
+deployment rather than consumer model behaviour and reflects the shift from content-safety controls toward risks
+created when agents call APIs, operate systems and execute actions. This is an **industry-guidance contribution**,
+not a Baidu standalone safety framework or a government standard.
+
+Primary company source: [Baidu Security, 6 May 2026](https://shadu.baidu.com/article/2001).
 
 ## Policy document snapshot
 

@@ -13,7 +13,7 @@ relatedTopics:
   - data-training
   - content-labeling-provenance
   - risk-classification
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 sidebar:
   label: Generative AI Interim Measures (2023)
   order: 3
@@ -81,6 +81,23 @@ This carve-out — the single largest change from the April 2023 draft to the Ju
 - **Penalty basis**: the existing statutory ladder; no standalone penalty provisions.
 - **Classified and graded supervision**: the Measures leave an interface for detailed implementing rules (no comprehensive framework yet released).
 
+### Filing practice through 30 June 2026
+
+CAC's notice published on 13 May 2026 reported that **72 additional generative-AI services completed national
+filing during March–April 2026**, while **49 applications or functions directly calling already-filed models
+completed local registration**. The cumulative totals at 30 April were **868 filed services** and **530 registered
+applications or functions**.
+
+This confirms a two-track implementation practice:
+
+- providers of covered generative-AI services with public-opinion attributes or social-mobilisation capacity use
+  the filing procedure through their territorial cyberspace administration; and
+- downstream applications or functions that directly call an already-filed model through an API or another
+  method use local **registration**, rather than duplicating the base model's national filing.
+
+Deployed products must conspicuously disclose the model name and filing number or launch-registration number.
+The published totals describe administrative practice; they do not expand the substantive scope of article 17.
+
 ## Relationship with Other Rules
 
 - **Deep Synthesis Provisions (2023)**: both upstream and parallel. The Deep Synthesis Provisions regulate via **technology**; the *Interim Measures* regulate via **service**; the overlap is primarily in conspicuous labeling and algorithmic filing.
@@ -116,11 +133,14 @@ This carve-out — the single largest change from the April 2023 draft to the Ju
 | 2023-07-13 | Final text released (name amended to include "Interim"; duties markedly softened) |
 | 2023-08-15 | Effective |
 | 2026-04-21 | First archived on this site |
+| 2026-05-13 | CAC reports 868 filed services and 530 registered downstream applications/functions as of 30 April 2026 |
 
 ## Cited Sources
 
 ### Primary
 - Official text: http://www.cac.gov.cn/2023-07/13/c_1690898327029107.htm
+- CAC filing notice for March–April 2026:
+  https://www.cac.gov.cn/2026-05/13/c_1780413225190669.htm
 - Draft for comment (for comparison):
   https://www.chinalawtranslate.com/gen-ai-draft/
 

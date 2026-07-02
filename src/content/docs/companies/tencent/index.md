@@ -4,7 +4,7 @@ description: Tencent Hunyuan 混元 profile — consumer ecosystem + full-line m
 sidebar:
   order: 10
   label: Tencent 腾讯
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 ## Company profile
@@ -85,6 +85,15 @@ Tencent's public AI self-regulation documents:
 - Participation in TC260 standard-drafting (multiple)
 - **Technical reports accompanying open-source models** include some safety-evaluation disclosure
 
+## 2025 ESG report published in April 2026
+
+Tencent's official 2025 ESG report states that the company further improved internal AI-management policies and
+provided safety-assessment and governance guidance for model-research projects. This is a more concrete public
+governance disclosure than the page's earlier statement that Tencent had no standalone framework: Tencent still
+does not publish an RSP-style document, but it does describe an internal policy and project-assurance layer.
+
+Primary company source: [Tencent 2025 ESG Report (Chinese PDF, published 9 April 2026)](https://static.www.tencent.com/uploads/2026/04/09/f6dbd30b3d8ca9c65f76f3d73b7da739.pdf).
+
 ## Policy document snapshot
 
 | Type | Document | Link | Subpage |
@@ -93,6 +102,7 @@ Tencent's public AI self-regulation documents:
 | Technical reports | HunyuanVideo / 3D / Image 3 Technical Reports | [github.com/Tencent-Hunyuan](https://github.com/Tencent-Hunyuan) | — |
 | AI principles | *Tencent AI Ethics Principles 腾讯人工智能伦理原则* (2018) | _search "Tencent AI ethics principles"_ | — |
 | Transparency | CAC algorithm filings + WeChat / QQ business transparency reports | [cac.gov.cn](https://www.cac.gov.cn/) | — |
+| ESG governance | 2025 ESG Report — internal AI policies and project safety-assurance disclosure | [Tencent PDF](https://static.www.tencent.com/uploads/2026/04/09/f6dbd30b3d8ca9c65f76f3d73b7da739.pdf) | — |
 
 ## Regulatory-compliance posture
 
