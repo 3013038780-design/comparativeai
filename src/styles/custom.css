@@ -32,24 +32,27 @@
 	--sl-font-mono: var(--font-mono);
 
 	/* 三辖区语义色（与首页一致，供 Markdown 内容使用） */
-	--juris-cn: #8b2e2e;
-	--juris-us: #1e3a5f;
-	--juris-eu: #2d5a4e;
+	--juris-cn: #a64036;
+	--juris-us: #315b83;
+	--juris-eu: #3f6f62;
+	--archive-gold: #b08a3e;
+	--company: #66566f;
+	--library: #526c73;
 }
 
 /* ===== 2. 浅色：纸本米白 ===== */
 :root[data-theme='light'] {
-	--sl-color-bg: #fdfcfa;
-	--sl-color-bg-nav: #f4f2ed;
-	--sl-color-bg-sidebar: #f4f2ed;
-	--sl-color-bg-inline-code: #efede6;
+	--sl-color-bg: #faf7f0;
+	--sl-color-bg-nav: #f5f0e7;
+	--sl-color-bg-sidebar: #f1ebdf;
+	--sl-color-bg-inline-code: #ece5d9;
 
-	--sl-color-text: #1c1a17;
-	--sl-color-text-invert: #fdfcfa;
-	--sl-color-text-accent: #6b3f3f;      /* 深酒红 */
-	--sl-color-accent: #6b3f3f;
-	--sl-color-accent-high: #4a2b2b;
-	--sl-color-accent-low: #efe7e7;
+	--sl-color-text: #20201e;
+	--sl-color-text-invert: #faf7f0;
+	--sl-color-text-accent: #7b5e25;
+	--sl-color-accent: #b08a3e;
+	--sl-color-accent-high: #5f481d;
+	--sl-color-accent-low: #eee2c6;
 
 	--sl-color-white: #1c1a17;
 	--sl-color-gray-1: #2e2b27;
@@ -61,9 +64,9 @@
 	--sl-color-gray-7: #f4f2ed;
 	--sl-color-black: #fdfcfa;
 
-	--sl-color-hairline: #dcd7cc;
-	--sl-color-hairline-light: #ebe7dd;
-	--sl-color-hairline-shade: #d0cabe;
+	--sl-color-hairline: #d8d0c3;
+	--sl-color-hairline-light: #e8e1d6;
+	--sl-color-hairline-shade: #c8bdad;
 }
 
 /* ===== 3. 深色：偏蓝黑 ===== */
@@ -312,6 +315,7 @@
 	background: var(--sl-color-accent-low);
 	color: var(--sl-color-text-accent);
 	font-weight: 600;
+	box-shadow: inset 3px 0 0 var(--sl-color-accent);
 }
 
 /* ===== 6. 顶部导航 ===== */
