@@ -26,6 +26,20 @@ By the deadline of **2025-07-10**, only **3** of the 27 Member States (Lithuania
 
 - [France — CNIL AI](./france-cnil-ai/) — France's most active line of AI × GDPR regulation; 12+ guidance documents since 2023, two key recommendations in 2025-02.
 
+### National implementation legislation
+
+- [Germany — AI Act Implementation Bill (2026)](./germany-ai-act-implementation/) — Bundestag adopted the
+  authority-designation bill on 11 June; Bundesrat approval remained pending at the 30 June cutoff.
+
+### May–June 2026 DPA practice
+
+- Italy's Garante decision of 14 May examined an AI-supported workplace wellbeing system and stressed model
+  reliability, representative data, explainability, effective human control and the danger of opaque inferences.
+  It found no specific employer-side GDPR responsibility on the evidence before it. This is an application of
+  existing data-protection law, not a new AI Act sanction.
+
+Primary source: [Italian Garante, 14 May 2026](https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10255494).
+
 ## Comparison with non-EU neighbours
 
 - **UK**: AI Safety Institute (2023), a **pro-innovation non-legislative** approach.

@@ -30,7 +30,7 @@ See [Methodology §2 · EU](/methodology/#hard-vs-soft). Since the NLF of 1985, 
 ### AI-specific regulation
 
 - [**EU AI Act (Regulation 2024/1689)**](./ai-act/) — the world's first horizontal AI regulation;
-  entered into force 2024-08-01; phased application 2025-02 / 2025-08 / 2026-08 / 2027-08
+  entered into force 2024-08-01; amended phased application runs through 2028-08
 - [**GPAI Code of Practice**](./gpai-code-of-practice/) — Code of Practice under AI Act Art. 56,
   finalized 2025-07-10; signing equates to a presumption of conformity
 - [**Code of Practice on Transparency of AI-Generated Content**](./synthetic-content-code/) — final voluntary
@@ -42,10 +42,10 @@ See [Methodology §2 · EU](/methodology/#hard-vs-soft). Since the NLF of 1985, 
 - [**Digital Services Act (2022/2065)**](./dsa/) — platform content governance; VLOP systemic-risk assessment extends to generative AI
 - [**Product Liability Directive (2024/2853)**](./product-liability-directive/) — AI systems expressly classified as "products"; strict liability applies
 
-### Legislative amendment (political agreement reached)
+### Legislative amendment (adopted)
 
-- [**Digital Omnibus / AI Omnibus (2025-11)**](./digital-omnibus-proposal/) — political agreement reached
-  **2026-05-07**; high-risk Annex III rules move to 2027-12-02 and product-embedded rules to 2028-08-02
+- [**Digital Omnibus / AI Omnibus**](./digital-omnibus-proposal/) — Council final approval **2026-06-29**;
+  high-risk Annex III rules move to 2027-12-02 and product-embedded rules to 2028-08-02
 
 ## Timeline (core)
 
@@ -63,7 +63,20 @@ See [Methodology §2 · EU](/methodology/#hard-vs-soft). Since the NLF of 1985, 
 | 2025-11-19 | Digital Omnibus proposal released |
 | 2026-05-07 | **Political agreement on AI Omnibus implementation dates** |
 | 2026-06-10 | **Final Code on Transparency of AI-Generated Content published** |
+| 2026-06-19 | **AI Act Advisory Forum holds its inaugural meeting** |
+| 2026-06-29 | **Council gives final approval to the Digital Omnibus on AI** |
 | 2026-08-02 | AI Act article 50 transparency duties apply; other phased provisions continue under the revised schedule |
+
+## May–June 2026 implementation state
+
+- The Commission appointed the **60-member Scientific Panel** and **174-member Advisory Forum** to support AI
+  Act enforcement; the Forum began work on 19 June.
+- The Commission published draft article 50 transparency guidelines on 8 May. At the cutoff they remained draft
+  guidance, separate from the final voluntary Transparency Code published on 10 June.
+- The Council's 29 June approval converted the Digital Omnibus from a proposal into an adopted legislative amendment.
+
+Primary sources: [Commission enforcement bodies](https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support),
+[Council final approval](https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/).
 
 ## Relationship with other jurisdictions
 

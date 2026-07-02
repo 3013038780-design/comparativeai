@@ -2,7 +2,7 @@
 title: Code of Practice on Transparency of AI-Generated Content
 description: The European Commission's final June 2026 voluntary code supporting compliance with AI Act article 50
 publishedDate: 2026-06-10
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 sidebar:
   label: AI-Generated Content Code (2026)
 ---
@@ -21,6 +21,10 @@ The code provides practical compliance measures for:
 - using the Commission's common visual icons for AI-generated content.
 
 Signing is voluntary and does not replace the binding AI Act. It is a compliance aid: non-signatories remain responsible for demonstrating compliance by other adequate means.
+
+At the 30 June cutoff, the Commission and AI Board were still assessing the Code's adequacy. It was also due to
+be complemented by Commission guidelines on the legal scope of article 50; the May 2026 guidelines remained a
+draft. A final Code and draft legal guidance are therefore distinct instruments.
 
 ## Primary sources
 

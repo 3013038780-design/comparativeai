@@ -1,6 +1,6 @@
 ---
 title: EU AI Act (Regulation 2024/1689)
-description: 欧盟人工智能法案，2024-08-01 生效，分阶段实施至 2027；全球首部横向 AI 法规，建立风险分级、禁止清单、高风险合规、GPAI 专章
+description: 欧盟人工智能法案，2024-08-01 生效，经修订后分阶段实施至 2028；全球首部横向 AI 法规，建立风险分级、禁止清单、高风险合规、GPAI 专章
 ruleName: Regulation (EU) 2024/1689 — Artificial Intelligence Act
 issuer: European Parliament & Council
 level: eu-regulation
@@ -13,7 +13,7 @@ relatedTopics:
   - frontier-gpai
   - content-labeling-provenance
   - data-training
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 sidebar:
   label: AI Act (2024)
   order: 1
@@ -26,8 +26,7 @@ sidebar:
 
 1. **四级风险分类**：不可接受（禁止）/ 高风险 / 有限风险（透明度）/ 最低风险
 2. **通用人工智能模型（GPAI）专章**：第五十一-五十六条 + 附件 XI/XII/XIII
-3. **分阶段实施**：禁止清单 2025-02-02 → GPAI 条款 2025-08-02 → 高风险（大部分）2026-08-02
-   → 公共部门嵌入式高风险 2027-08-02
+3. **经 2026 Digital Omnibus 修订后的分阶段实施**：禁止清单 2025-02-02 → GPAI 条款 2025-08-02 → 第 50 条透明度义务 2026-08-02 → 独立高风险系统 2027-12-02 → 产品嵌入高风险系统 2028-08-02
 4. **治理架构**：欧盟 AI Office（中央）+ 成员国监管机构；对 GPAI 集中监管
 
 罚则上限极高：违反禁止清单**全球年营收 7%**，违反其他义务 3%。
@@ -128,6 +127,10 @@ extraterritorial reach and headline penalties up to 7% of worldwide turnover.
 - **成员国市场监管机构**（MSA）：高风险系统执法
 - **欧盟数据库**（第七十一条）：高风险系统登记
 
+### 2026 年 6 月执行机构正式运作
+
+欧盟委员会依第 68 条任命 **60 人科学专家组**，就 GPAI 系统性风险、分类、评估方法和跨境市场监管提供意见；依第 67 条选出 **174 人咨询论坛**，并于 6 月 19 日召开首次会议。两者向 AI Office、AI Board 和国家主管机关提供建议，但不取代法定决策者或市场监管机关。
+
 ## 罚则（第九十九条）
 
 - 违反**第五条禁止清单**：最高 **35M 欧元 或 全球年营收 7%**
@@ -142,8 +145,10 @@ extraterritorial reach and headline penalties up to 7% of worldwide turnover.
 | 2024-08-01 | 法规生效 |
 | 2025-02-02 | **第五条禁止清单** + 总则（第 1-4 条）+ 通用定义 + AI literacy 义务 |
 | 2025-08-02 | **GPAI 条款**（第五十一-五十六）+ 治理（第三部分）+ 罚则（大部分） |
-| 2026-08-02 | **高风险系统**（附件 III）+ 大多数其余条款 |
-| 2027-08-02 | 嵌入式高风险（附件 I 产品中）+ 公共部门延后部分 |
+| 2026-08-02 | **第 50 条透明度义务**及大多数非高风险剩余条款 |
+| 2026-12-02 | Omnibus 规定的合成内容透明度技术方案过渡截止日 |
+| 2027-12-02 | 附件 III 独立高风险系统 |
+| 2028-08-02 | 嵌入受监管产品的高风险系统 |
 
 ## 与中国相关规则的对比
 
@@ -182,4 +187,4 @@ extraterritorial reach and headline penalties up to 7% of worldwide turnover.
 | 2024-08-01 | 生效 |
 | 2025-02-02 | 禁止清单适用 |
 | 2025-08-02 | GPAI 条款适用 |
-| 2026-08-02 | 高风险系统适用 |
+| 2026-06-29 | 欧盟理事会最终批准 Digital Omnibus on AI，修订分阶段时间表 |

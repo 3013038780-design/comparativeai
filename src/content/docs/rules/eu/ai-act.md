@@ -1,6 +1,6 @@
 ---
 title: EU AI Act (Regulation 2024/1689)
-description: The EU Artificial Intelligence Act entered into force 2024-08-01, phased implementation through 2027; the world's first horizontal AI law, establishing risk tiers, a prohibited list, high-risk compliance, and a dedicated GPAI chapter
+description: The EU Artificial Intelligence Act entered into force 2024-08-01, with amended phased implementation through 2028; the world's first horizontal AI law, establishing risk tiers, a prohibited list, high-risk compliance, and a dedicated GPAI chapter
 ruleName: Regulation (EU) 2024/1689 — Artificial Intelligence Act
 issuer: European Parliament & Council
 level: eu-regulation
@@ -13,7 +13,7 @@ relatedTopics:
   - frontier-gpai
   - content-labeling-provenance
   - data-training
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 sidebar:
   label: AI Act (2024)
   order: 1
@@ -27,8 +27,9 @@ AI regulation**. Core design:
 
 1. **Four-tier risk classification**: unacceptable (prohibited) / high-risk / limited risk (transparency) / minimal risk
 2. **Dedicated chapter on general-purpose AI models (GPAI)**: Articles 51-56 + Annexes XI / XII / XIII
-3. **Phased application**: prohibited list 2025-02-02 → GPAI provisions 2025-08-02 → high risk (most)
-   2026-08-02 → high-risk systems embedded in public-sector products 2027-08-02
+3. **Phased application as amended by the 2026 Digital Omnibus**: prohibited list 2025-02-02 → GPAI
+   provisions 2025-08-02 → article 50 transparency duties 2026-08-02 → standalone high-risk systems
+   2027-12-02 → product-embedded high-risk systems 2028-08-02
 4. **Governance architecture**: EU AI Office (center) + member-state market surveillance authorities; centralized GPAI oversight
 
 Penalty ceilings are exceptionally high: violations of the prohibited list may reach **7% of global annual turnover**;
@@ -128,6 +129,13 @@ Code is the de facto path to demonstrating compliance. See the standalone [GPAI 
 - **Member-state market surveillance authorities** (MSAs): enforcement of high-risk systems
 - **EU database** (Article 71): registration of high-risk systems
 
+### Enforcement bodies operationalised in June 2026
+
+The Commission appointed the **60-member Scientific Panel** under article 68 to advise on GPAI systemic risk,
+classification, evaluation methods and cross-border market surveillance. It also selected the **174-member
+Advisory Forum** under article 67; the Forum held its inaugural meeting on 19 June. These bodies advise the AI
+Office, AI Board and national authorities but do not replace the legal decision-maker or market-surveillance authority.
+
 ## Penalties (Article 99)
 
 - Breach of **Article 5 prohibited list**: up to **EUR 35M or 7% of global annual turnover**
@@ -142,8 +150,10 @@ Code is the de facto path to demonstrating compliance. See the standalone [GPAI 
 | 2024-08-01 | Regulation enters into force |
 | 2025-02-02 | **Article 5 prohibited list** + general provisions (Arts. 1-4) + common definitions + AI literacy obligation |
 | 2025-08-02 | **GPAI provisions** (Arts. 51-56) + governance (Part III) + most penalties |
-| 2026-08-02 | **High-risk systems** (Annex III) + most remaining provisions |
-| 2027-08-02 | Embedded high-risk (in Annex I products) + deferred public-sector provisions |
+| 2026-08-02 | **Article 50 transparency obligations** and most remaining non-high-risk provisions |
+| 2026-12-02 | Omnibus transition deadline for providers' synthetic-content transparency solutions |
+| 2027-12-02 | Standalone high-risk systems (Annex III) |
+| 2028-08-02 | High-risk systems embedded in regulated products |
 
 ## Comparison with Chinese rules
 
@@ -182,4 +192,4 @@ Code is the de facto path to demonstrating compliance. See the standalone [GPAI 
 | 2024-08-01 | Entry into force |
 | 2025-02-02 | Prohibited list applies |
 | 2025-08-02 | GPAI provisions apply |
-| 2026-08-02 | High-risk systems apply |
+| 2026-06-29 | Council gives final approval to the Digital Omnibus on AI, revising the phased schedule |

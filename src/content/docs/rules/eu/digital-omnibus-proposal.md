@@ -1,25 +1,25 @@
 ---
-title: EU Digital Omnibus Proposal (2025-11)
-description: Commission proposal released 2025-11-19 as a "digital simplification" legislative package; includes a proposal to **delay AI Act high-risk provisions by up to 16 months** to 2027-12
-ruleName: Digital Omnibus Package (Proposal) — Commission, 2025-11-19
-issuer: European Commission
-level: eu-proposal
-binding: soft
-effectiveDate: 2026-XX-XX
+title: EU Digital Omnibus on AI (adopted 2026-06)
+description: The adopted Omnibus VII amendment fixes new AI Act dates, simplifies selected duties, strengthens child and intimate-image protections, and clarifies AI Office competence
+ruleName: Digital Omnibus on AI — Omnibus VII amendment to Regulation (EU) 2024/1689
+issuer: European Parliament and Council
+level: eu-regulation
+binding: hard
+effectiveDate: pending-official-journal-publication
 publishedDate: 2025-11-19
 originalUrl: https://digital-strategy.ec.europa.eu/news-redirect/863840
 relatedTopics:
   - risk-classification
   - frontier-gpai
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 sidebar:
-  label: Digital Omnibus Proposal (2025)
+  label: Digital Omnibus on AI (2026)
   order: 6
 ---
 
-> **⚠️ This page tracks a legislative proposal (not yet adopted).** The Digital Omnibus is still
-> **under consideration in the European Parliament and Council**. This page is based on the **Commission's
-> 2025-11-19 version**; provisions may change in the final text.
+> **Status at the cutoff:** Parliament adopted the agreed text during its June 2026 plenary and the Council gave
+> its final approval on **29 June 2026**. The measure is adopted; Official Journal publication and entry into
+> force follow. It must no longer be described as a pending Commission proposal.
 
 ## Summary
 
@@ -27,8 +27,8 @@ The **Digital Omnibus Package**, released by the Commission on **2025-11-19**, i
 spanning several digital laws**. Its core rationale is to respond to industry concerns about **"excessive
 regulatory complexity"** and **"insufficient preparedness for AI Act application."**
 
-**The most consequential proposal**: **delaying the AI Act high-risk system obligations (Chapter III) by
-up to 16 months to 2027-12.**
+**The most consequential change** fixes later application dates for high-risk-system duties while preserving
+the AI Act's risk-based structure.
 
 ## Triggering context
 
@@ -45,8 +45,8 @@ Consequences:
 
 ### 1. Delay of AI Act high-risk provisions
 
-Chapter III (Annex III standalone high-risk use cases), originally to apply on **2026-08-02**, is
-**deferred to 2027-12** (up to 16 months).
+Chapter III duties for Annex III standalone high-risk use cases move to **2027-12-02**. Duties for high-risk AI
+embedded in regulated products move to **2028-08-02**.
 
 Affected provisions:
 - Article 6 high-risk classification
@@ -58,7 +58,7 @@ Affected provisions:
 - Article 5 **prohibited list** (already applicable 2025-02-02)
 - Article 50 **transparency obligations** (scheduled 2026-08-02)
 - Articles 51-56 **GPAI obligations** (already applicable 2025-08-02)
-- Annex I embedded high-risk in products (original 2027-08-02 unchanged)
+- GPAI obligations already applicable from 2025-08 remain in place
 
 ### 2. Simplified compliance burden
 
@@ -68,7 +68,7 @@ Affected provisions:
 
 ### 3. SME support
 
-- **EU-wide mandatory** regulatory sandboxes (member states must provide them)
+- National regulatory-sandbox deadline moves to **2027-08-02**
 - Compliance-cost subsidies
 - Simplified templates
 
@@ -78,19 +78,23 @@ Affected provisions:
 - DSA VLOP designation threshold review
 - Cyber Resilience Act transition period
 
+### 4. Protections and institutional clarification
+
+- Adds prohibitions addressing AI systems that generate non-consensual sexual or intimate content and AI-generated CSAM.
+- Retains high-risk database registration where a provider claims its system is exempt from high-risk classification.
+- Clarifies AI Office supervision where the same provider develops a GPAI model and a downstream system, while
+  preserving defined national-authority competences.
+- Sets **2026-12-02** as the revised implementation deadline for synthetic-content transparency solutions.
+
 ## Legislative procedure
 
 | Stage | Timing (estimated) |
 | --- | --- |
 | Commission proposal | 2025-11-19 ✅ |
-| Parliament first-reading position | 2026-Q2 / Q3 |
-| Council position | 2026-Q3 / Q4 |
-| **Trilogue** | 2026-Q4 / 2027-Q1 |
-| Political agreement | 2027-Q1 / Q2 (earliest) |
-| **Formal adoption** | mid-2027 |
-
-**Risk**: if legislation drags past 2026-08, **AI Act Chapter III applies on the original schedule**
-and would then be **retroactively amended**.
+| Political agreement | 2026-05-07 ✅ |
+| Parliament plenary adoption | 2026-06 ✅ |
+| Council final approval | 2026-06-29 ✅ |
+| Official Journal publication / entry into force | follows legal-linguistic finalisation |
 
 ## Controversy
 
@@ -109,14 +113,10 @@ and would then be **retroactively amended**.
 
 ## Practical impact on companies
 
-**Short term (as of 2026-04)**:
-- **AI Act continues on its original schedule** (GPAI applied 2025-08, prohibited list applied 2025-02)
-- **Signing and complying with the GPAI CoP** remains the focus for 2026
-- High-risk AI system compliance preparation **need not accelerate** (pending Omnibus finalization)
-
-**Medium term (H2 2026 - 2027)**:
-- Omnibus adopted → high-risk provisions **delayed to 2027-12**; companies gain an extra 16 months of preparation
-- Omnibus not adopted → **2026-08-02 applies per original AI Act schedule** → member-state enforcement fragmentation becomes visible
+**At the 30 June 2026 cutoff:** companies can plan against fixed dates rather than a conditional Commission
+proposal. GPAI duties remain applicable; article 50 transparency obligations still begin in August 2026, with the
+Omnibus transition for technical implementation running to 2 December 2026. Standalone high-risk duties move to
+2 December 2027 and product-embedded duties to 2 August 2028.
 
 ## Relationship with other jurisdictions
 
@@ -129,6 +129,7 @@ and would then be **retroactively amended**.
 | Source | Link |
 | --- | --- |
 | Commission official press release | [digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu/news-redirect/863840) |
+| Council final approval, 29 June 2026 | [consilium.europa.eu](https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/) |
 | Digital Omnibus comprehensive analysis | IAPP, Covington, WilmerHale, and others |
 | IIEA EU digital agenda 2025-2026 | [iiea.com/blog/eu-digital-policy-2025-2026](https://www.iiea.com/blog/the-transition-to-a-new-digital-policy-agenda-eu-digital-policy-2025-2026) |
 
@@ -137,5 +138,6 @@ and would then be **retroactively amended**.
 | Date | Event |
 | --- | --- |
 | 2025-11-19 | Commission released the proposal |
-| 2026-Q2+ | Parliament consideration (expected) |
-| Mid-2027 | Earliest adoption date (if smooth) |
+| 2026-05-07 | Parliament and Council negotiators reached political agreement |
+| 2026-06 | Parliament adopted the agreed text in plenary |
+| 2026-06-29 | Council gave final approval |

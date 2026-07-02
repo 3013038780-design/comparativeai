@@ -229,7 +229,7 @@ export default defineConfig({
 									...t('④ 立法提案（未通过）', '④ Legislative Proposals (Pending)'),
 									collapsed: true,
 									items: [
-										{ ...t('Digital Omnibus Proposal (2025-11)', 'Digital Omnibus Proposal (Nov 2025)'), slug: 'rules/eu/digital-omnibus-proposal' },
+										{ ...t('Digital Omnibus on AI（2026-06 通过）', 'Digital Omnibus on AI (adopted Jun 2026)'), slug: 'rules/eu/digital-omnibus-proposal' },
 									],
 								},
 							],
@@ -269,6 +269,7 @@ export default defineConfig({
 								{ ...t('概览', 'Overview'), slug: 'subnational/eu' },
 								{ ...t('Spain AESIA', 'Spain AESIA'), slug: 'subnational/eu/spain-aesia' },
 								{ ...t('France CNIL AI', 'France CNIL AI'), slug: 'subnational/eu/france-cnil-ai' },
+								{ ...t('德国 AI Act 实施法案 (2026)', 'Germany AI Act Implementation (2026)'), slug: 'subnational/eu/germany-ai-act-implementation' },
 							],
 						},
 					],

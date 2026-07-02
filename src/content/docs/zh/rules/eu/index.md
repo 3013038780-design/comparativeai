@@ -30,7 +30,7 @@ sidebar:
 ### AI 专项 Regulation
 
 - [**EU AI Act (Regulation 2024/1689)**](./ai-act/) — 全球首部横向 AI 法规，2024-08-01 生效，
-  2025-02 / 2025-08 / 2026-08 / 2027-08 分阶段适用
+  经修订后的分阶段适用延续至 2028-08
 - [**GPAI Code of Practice**](./gpai-code-of-practice/) — AI Act 第 56 条授权的行为守则，
   2025-07-10 定稿；签署 = 合规推定
 - [**AI 生成内容透明度行为守则**](./synthetic-content-code/) — 第 50 条最终自愿实施守则，
@@ -43,10 +43,9 @@ sidebar:
 - [**Product Liability Directive (2024/2853)**](./product-liability-directive/) — 明确 AI 系统为"产品"，
   无过错责任适用
 
-### 修法方案（已达成政治协议）
+### 立法修正（已通过）
 
-- [**Digital Omnibus / AI Omnibus (2025-11)**](./digital-omnibus-proposal/) — **2026-05-07** 达成政治协议；
-  Annex III 高风险规则调整至 2027-12-02，嵌入产品的规则调整至 2028-08-02
+- [**Digital Omnibus / AI Omnibus**](./digital-omnibus-proposal/) — 欧盟理事会于 **2026-06-29** 最终批准；Annex III 高风险规则移至 2027-12-02，产品嵌入规则移至 2028-08-02
 
 ## 时间线（核心）
 
@@ -64,7 +63,17 @@ sidebar:
 | 2025-11-19 | Digital Omnibus 提案发布 |
 | 2026-05-07 | **AI Omnibus 实施日期达成政治协议** |
 | 2026-06-10 | **AI 生成内容透明度最终守则发布** |
+| 2026-06-19 | **AI Act 咨询论坛召开首次会议** |
+| 2026-06-29 | **欧盟理事会最终批准 Digital Omnibus on AI** |
 | 2026-08-02 | AI Act 第 50 条透明度义务适用；其他分阶段条款按修订时间表推进 |
+
+## 2026 年 5—6 月实施状态
+
+- 欧盟委员会任命 **60 人科学专家组**和 **174 人咨询论坛**支持 AI Act 执法，论坛于 6 月 19 日开始工作。
+- 欧盟委员会 5 月 8 日公布第 50 条透明度指南草案；截至截止日仍是草案，应与 6 月 10 日发布的最终自愿透明度守则区分。
+- 欧盟理事会 6 月 29 日批准后，Digital Omnibus 已从提案变为通过的立法修正。
+
+一手来源：[欧盟委员会执行机构说明](https://digital-strategy.ec.europa.eu/en/news/ai-act-enforcement-gets-independent-expert-support)、[欧盟理事会最终批准](https://www.consilium.europa.eu/en/press/press-releases/2026/06/29/artificial-intelligence-council-gives-final-green-light-to-simplify-and-streamline-rules/)。
 
 ## 与其他辖区的关系
 
