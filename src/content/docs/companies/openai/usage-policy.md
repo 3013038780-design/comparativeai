@@ -3,7 +3,7 @@ title: Usage Policy
 description: Structure of the OpenAI Usage Policies, the major October 2025 rewrite, erosion of the military prohibition, and enterprise-tier layering
 sidebar:
   order: 1
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **Snapshot**: based on the 29 October 2025 version of [openai.com/policies/usage-policies](https://openai.com/policies/usage-policies/),
@@ -79,7 +79,6 @@ Before 2023, the OpenAI Usage Policy expressly prohibited "activity that has hig
 | Late 2024 | Collaboration with Anduril Industries on counter-drone systems for the US military |
 | Mid-2025 | OTA contract signed with the US Department of Defense ("Civil Harmony" and other frontier-AI deployments for logistics and cyber defence; specific dollar amounts should be verified against official announcements) |
 | October 2025 | The Usage Policy rewrite **adds** "national-security use by the US government and allies" as a **permitted** scenario |
-| Q1 2026 | GSA / CIA contract rumours (unconfirmed) |
 
 **Critiques** (Stuart Russell BBC interview 2024; Future of Life Institute 2025 Annual Report):
 

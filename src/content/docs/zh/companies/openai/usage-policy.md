@@ -3,7 +3,7 @@ title: 使用政策
 description: OpenAI Usage Policies 结构、2025-10 重大重写、军事禁令松动与企业条款分层
 sidebar:
   order: 1
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **快照**：基于 [openai.com/policies/usage-policies](https://openai.com/policies/usage-policies/) 2025-10-29 版本，
@@ -89,7 +89,6 @@ OpenAI 把面向终端用户和开发者的政策重新切分为**三层并列**
 | 2024 年末 | 与 Anduril Industries 合作，面向美军反无人机系统 |
 | 2025 年中 | 签署美国国防部 OTA 合同（"Civil Harmony" 等前沿 AI 用于后勤与网络防御；具体金额以官方公告为准）|
 | 2025-10 | Usage Policy 重写版**新增**"为美国政府和盟友提供国家安全用途"作为**允许**场景 |
-| 2026-Q1 | GSA / CIA 合同传闻（未证实）|
 
 **批评**（Stuart Russell 2024 BBC 访谈、Future of Life Institute 2025 年度报告）：
 

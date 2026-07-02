@@ -75,7 +75,9 @@ For this reason, this site treats Subnational as its own axis, parallel to [Top-
 - [**Spain AESIA**](/subnational/eu/spain-aesia/) — **the EU's first national-level AI supervisory authority** (Agencia Española de Supervisión de la IA), established 2023-08 · based in La Coruña · formally exercising Article 70 MSA functions under the AI Act from 2025.
 - [**France CNIL AI**](/subnational/eu/france-cnil-ai/) — the French data protection authority issued a series of AI-specific guidelines (2023-2024) **before** the AI Act took effect, a leading example of active DPA intervention on AI among EU Member States.
 
-**Key observation**: as of 2026-04, **roughly half of Member States have not formally designated MSAs under the AI Act** (market-surveillance authorities); enforcement coordination relies on the AI Office (under the Commission) + AI Board + cooperation mechanisms between Member State DPAs / DSAs.
+**Key observation (30 June 2026)**: national authority designation remained incomplete in major jurisdictions;
+Germany's implementation bill had passed the Bundestag but still awaited Bundesrat approval. At EU level, the
+Scientific Panel and Advisory Forum began supporting the AI Office, AI Board and national authorities in June.
 
 ## Core tensions across the three models
 

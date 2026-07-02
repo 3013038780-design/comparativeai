@@ -3,7 +3,7 @@ title: 模型卡
 description: DeepSeek 模型技术报告归档：V2/V3/R1/V3.1 与 VL/Coder/Math 系列的"以论文代模型卡"实践（2026-06-28）
 sidebar:
   order: 2
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **一句话定位**：DeepSeek 没有西方意义上的"Model Card"，但其**技术报告（Technical Report）
@@ -23,7 +23,6 @@ snapshotDate: 2026-06-28
 | **DeepSeek-V3** | **2024-12-26** | **arXiv 2412.19437** | MIT | **671B 总参 / 37B 激活**；FP8 训练；MoE 路由改进 |
 | **DeepSeek-R1 / R1-Zero** | **2025-01-20** | **arXiv 2501.12948** | MIT | **纯 RL 推理模型**；规则奖励；蒸馏到小模型 |
 | DeepSeek-V3.1 | 2025-08 | 技术博客 + HuggingFace README | MIT | V3 基础上长上下文、工具使用、RL 对齐增强 |
-| DeepSeek-R2 | _2026 传言_ | — | — | 尚未官方确认 |
 
 以上论文均**可公开访问**，附带权重、配置文件、部分评测脚本、tokenizer。
 这在全球前沿实验室中是**最完整的开源交付包**。

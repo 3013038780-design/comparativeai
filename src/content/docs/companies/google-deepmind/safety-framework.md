@@ -3,7 +3,7 @@ title: Safety Framework
 description: Evolution of DeepMind's Frontier Safety Framework (FSF) v1 to v3; CCL methodology and the 2026-04 Harmful Manipulation CCL
 sidebar:
   order: 3
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **2026-04-17 FSF v3.0**: adds a **Tracked Capability Levels (TCLs)** early-warning layer
@@ -138,7 +138,6 @@ is strictly limited to "severe-scale" effects rather than ordinary persuasion**.
 | --- | --- | --- | --- |
 | Gemini 2.5 Pro | 2025-04 | Cyber / Auto ML / CBRN (under v2) | All below CCL; Cyber near TCL (TCL not yet formalized) |
 | **Gemini 3 Pro** | **2025-11** | Cyber / Auto ML / CBRN (v2 framework) | All below CCL; Auto ML **reached the draft TCL threshold** — triggering "enhanced monitoring" |
-| Gemini 3 Ultra | Expected 2026-Q1 | All four domains (v3 framework) | — |
 
 ### Gemini 3 Pro FSF Report (2025-11) — an industry first
 
@@ -155,8 +154,7 @@ This was **the industry's first** instance of a model-level safety evaluation re
 6. **Mitigation plan**: pre- and post-release mitigations
 7. **Residual uncertainty**: proactive disclosure of risk dimensions not covered
 
-**Significance**: **a template for the first v3-framework full-domain evaluation to accompany Gemini 3 Ultra**
-(expected 2026-Q1).
+**Significance**: a template for future v3-framework full-domain model evaluations.
 
 ## Three mitigation pillars
 
@@ -258,7 +256,6 @@ within the Frontier Model Forum**:
 - Gemini 1.5 Pro (2024-05) — UK AISI (among the first)
 - Gemini 2.5 Pro (2025-03) — joint US AISI + UK AISI evaluation
 - **Gemini 3 Pro (2025-11) — reduced US AISI involvement following policy retrenchment after EO 14179; UK AISI led**
-- **Gemini 3 Ultra (expected 2026-Q1) — AISI involvement will be shaped by follow-up to the AI Action Plan**
 
 ## Peer comparison (Q2 2026 snapshot)
 

@@ -3,7 +3,7 @@ title: Safety Framework
 description: DeepSeek's "minimalist + embedded" safety posture — an open-source path with no RSP / Preparedness / FSF counterpart (2026-06-28)
 sidebar:
   order: 3
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **One-line framing**: DeepSeek is **the only firm among the world's top-five capability frontier
@@ -251,8 +251,6 @@ friendliness of its technical reports.
   including bias tests.
 - **2025-11**: first DeepSeek engineer participation in the NeurIPS 2025 AI Safety Workshop (as
   an individual, not an official policy appearance).
-- **2026-Q1**: the rumored R2 model **may accompany the first standalone "DeepSeek Safety Notes"
-  document** (source: multiple media anonymous leaks; unverified).
 
 These **slow but monotonic increments** show that DeepSeek's "safety documentation" is being
 **pushed by the global ecosystem** (HuggingFace template norms, academic-journal Broader Impact

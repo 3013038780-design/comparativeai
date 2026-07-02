@@ -4,7 +4,7 @@ description: 月之暗面概况 —— Kimi K2.5 与中国 AI 创业公司的快
 sidebar:
   order: 11
   label: 月之暗面 Moonshot
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 ## 公司概况
@@ -19,8 +19,6 @@ snapshotDate: 2026-06-28
   - **Kimi K2.5**（2026-01-27）：最新开源旗舰，1T / 32B active
   - **Kimi-K2-Instruct-0905**（2025-09）：256K token 上下文
   - **Kimi Linear**（线性注意力，128K-1M 长上下文**解码速度提升 5-6 倍**）
-  - **Kimi K2.6 Code Preview**（2026 Q2，即将发布的代码 / Agent 模型）
-  - **Kimi K3**（研发中，目标 3-4 万亿参数）
 - **商业模式**：消费者订阅（Kimi App）+ API + 企业定制
 - **融资**：2025-12 **IDG 领投 $5亿 C 轮**，腾讯 / 阿里 / 王慧文跟投；2026-03 **评估赴港 IPO**
 

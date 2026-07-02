@@ -3,7 +3,7 @@ title: Red-Team and Evaluation Disclosures
 description: DeepSeek's red-teaming and third-party evaluation — from the V3/R1 technical reports to the structural reshaping of the global open-source evaluation ecosystem (2026-06-28)
 sidebar:
   order: 5
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **One-line framing**: DeepSeek has **no structured in-house red-team disclosure** (no counterpart
@@ -339,7 +339,6 @@ relying on overseas red-team results.
 | 2025-05 | MATS Summer | Multiple R1-Zero alignment research projects |
 | 2025-08 | DeepSeek V3.1 | First systematic bias evaluation added |
 | 2025-10 | EU AI Office | R1 added to GPAI systemic-risk review |
-| 2026-Q1 | Rumored R2 | May accompany first standalone "Safety Notes" document |
 
 (Exact dates per the relevant institutions' official announcements.)
 

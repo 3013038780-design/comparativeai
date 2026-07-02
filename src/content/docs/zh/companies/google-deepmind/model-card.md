@@ -3,7 +3,7 @@ title: 模型卡
 description: Gemini 技术报告与模型卡归档；从 Gemini 1.0 到 Gemini 3 Pro 的演进与能力披露
 sidebar:
   order: 2
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **🆕 2025-11 里程碑**：**Gemini 3 Pro Model Card** 首次与 [FSF Report](./safety-framework/)
@@ -30,7 +30,6 @@ Google 是**模型卡范式的学术发源地之一**。Raji、Gebru 等人 2019
 | Gemini 2.5 Flash | 2025-04 | 同上 | "Thinking budget"开关 |
 | Gemini 2.5 FSF Report | 2025-04 | [首份附带安全文档](https://storage.googleapis.com/deepmind-media/gemini/gemini_2_5_fsf_report.pdf) | 见 [safety-framework](./safety-framework/) |
 | **Gemini 3 Pro** | **2025-11** | [Gemini 3 Pro Model Card](https://deepmind.google/technologies/gemini/) + **独立 FSF Report** | **Agentic 核心**；GPQA Diamond / SWE-bench Verified 对齐同期前沿（具体分数以官方 Model Card 为准）|
-| Gemini 3 Ultra | 2026-Q1（预期） | 预告中 | — |
 | Gemini 3.5 系列 | 2026-Q2（预期） | — | — |
 
 ## 2025-11 Gemini 3 Pro Model Card 的结构
@@ -209,7 +208,6 @@ Google 在 2025-08 GPAI CoP 签署后，按 CoP Transparency Chapter 模板发�
 - **2025-03**：Gemini 2.5 Pro + Deep Think
 - **2025-04**：**Gemini 2.5 FSF Report**（首个附带安全报告的模型卡）
 - **2025-11**：**Gemini 3 Pro Model Card + FSF Report**
-- **2026-Q1**：预期 Gemini 3 Ultra
 - **2026-Q2**：预期 Gemini 3.5 系列
 
 ## 跨链接

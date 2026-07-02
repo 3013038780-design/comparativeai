@@ -4,7 +4,7 @@ description: OpenAI company profile, Preparedness Framework v2 deep dive, and ev
 sidebar:
   order: 2
   label: OpenAI
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **2026 Q1 major update**: **GPT-5.4 (2026-03)** was classified as having "High cyber capability";
@@ -16,7 +16,7 @@ snapshotDate: 2026-06-28
 - **Headquarters**: San Francisco, California, USA
 - **Main models**: **GPT-5.4 series (2026-03, latest)** / GPT-5.3 / Sora / DALL-E; the o1 / o3 reasoning line has been folded into the GPT-5 mainline
 - **Business model**: ChatGPT (consumer / Plus / Team / Enterprise), the API, deep Azure integration, and the Stargate infrastructure initiative
-- **Valuation**: **$500B** on secondary markets at end-2025; unconfirmed reporting of a **$1T** round in early 2026
+- **Valuation**: **$500B** reported on secondary markets at end-2025
 - **User base**: over **800 million ChatGPT weekly actives** (disclosed 2026 Q1)
 - **Positioning**: **"AGI commercialisation accelerator"** — a clear drift from the 2015 founding mission after 2024
 

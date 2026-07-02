@@ -4,7 +4,7 @@ description: OpenAI 公司概况、Preparedness Framework v2 深度分析、治�
 sidebar:
   order: 2
   label: OpenAI
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **🆕 2026 Q1 重大更新**：**GPT-5.4（2026-03）** 认定为"High cyber capability"；
@@ -16,7 +16,7 @@ snapshotDate: 2026-06-28
 - **总部**：San Francisco, California, USA
 - **主要模型**：**GPT-5.4 系列（2026-03 最新）** / GPT-5.3 / Sora / DALL-E；o1 / o3 推理系列已并入 GPT-5 主线
 - **商业模式**：ChatGPT（消费 / Plus / Team / Enterprise）、API、Azure 深度整合、Stargate 基础设施
-- **估值**：2025 底 **$500B**（二级市场）；2026 初传闻新一轮估值 **$1T**（未确认）
+- **估值**：2025 年底二级市场报道约 **$500B**
 - **用户规模**：ChatGPT 周活超 **8 亿**（2026 Q1 披露）
 - **定位**：**"AGI 商业化加速者"**（2024 后对比 2015 创办时的使命有明显漂移）
 

@@ -4,7 +4,7 @@ description: Moonshot 月之暗面 profile — Kimi K2.5 and the rapid rise of C
 sidebar:
   order: 11
   label: Moonshot 月之暗面
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 ## Company profile
@@ -19,8 +19,6 @@ snapshotDate: 2026-06-28
   - **Kimi K2.5** (2026-01-27): the latest open flagship, 1T / 32B active
   - **Kimi-K2-Instruct-0905** (2025-09): 256K-token context
   - **Kimi Linear** (linear attention; 128K–1M long context **with 5–6× decoding speedup**)
-  - **Kimi K2.6 Code Preview** (2026 Q2, forthcoming code / agent model)
-  - **Kimi K3** (in development, targeting 3–4 trillion parameters)
 - **Business model**: consumer subscription (Kimi app) + API + enterprise customisation
 - **Funding**: **$500M Series C led by IDG in 2025-12**, with Tencent / Alibaba / Wang Huiwen 王慧文 following on; **Hong Kong IPO under evaluation in 2026-03**
 

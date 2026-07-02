@@ -3,7 +3,7 @@ title: Model Card
 description: Gemini technical reports and model card archive; the evolution from Gemini 1.0 to Gemini 3 Pro and its capability disclosures
 sidebar:
   order: 2
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **2025-11 milestone**: The **Gemini 3 Pro Model Card** was released **concurrently** with the [FSF Report](./safety-framework/)
@@ -30,7 +30,6 @@ own model cards** — see the academic critique section below.
 | Gemini 2.5 Flash | 2025-04 | Same | "Thinking budget" toggle |
 | Gemini 2.5 FSF Report | 2025-04 | [First paired safety document](https://storage.googleapis.com/deepmind-media/gemini/gemini_2_5_fsf_report.pdf) | See [safety-framework](./safety-framework/) |
 | **Gemini 3 Pro** | **2025-11** | [Gemini 3 Pro Model Card](https://deepmind.google/technologies/gemini/) + **standalone FSF Report** | **Agent-core**; GPQA Diamond / SWE-bench Verified aligned with contemporary frontier (exact scores per official Model Card) |
-| Gemini 3 Ultra | 2026-Q1 (expected) | Announced | — |
 | Gemini 3.5 series | 2026-Q2 (expected) | — | — |
 
 ## Structure of the 2025-11 Gemini 3 Pro Model Card
@@ -217,7 +216,6 @@ documentation but **part of the SDK interface**.
 - **2025-03**: Gemini 2.5 Pro + Deep Think
 - **2025-04**: **Gemini 2.5 FSF Report** (first model card with paired safety report)
 - **2025-11**: **Gemini 3 Pro Model Card + FSF Report**
-- **2026-Q1**: Gemini 3 Ultra expected
 - **2026-Q2**: Gemini 3.5 series expected
 
 ## Cross-links

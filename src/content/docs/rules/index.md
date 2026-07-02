@@ -87,8 +87,9 @@ Locating the main theatre at ministerial regulations (tier 3) creates several pr
 
 ### EU: compliance-first × delayed enforcement
 
-- The AI Act's prohibitions take effect 2025-02; GPAI obligations 2025-08; high-risk obligations 2026-08; further provisions 2027-08.
-- But Member-State MSA (market surveillance authority) designation is **lagging** (as of 2026-04, roughly half the Member States still have no designated MSA).
+- The AI Act's prohibitions applied from 2025-02 and GPAI duties from 2025-08; after the 2026 Omnibus,
+  standalone high-risk duties move to 2027-12 and product-embedded duties to 2028-08.
+- Member-State MSA designation remains uneven, while the Scientific Panel and Advisory Forum now support implementation.
 - **Where does enforcement start?** The AI Office only covers GPAI; specific cases still depend on Member-State MSAs; the DPA / DSA coordination mechanisms (AI Pact Board, AI Board) have only recently been set up.
 
 ## Cross-jurisdiction map for the four core topics

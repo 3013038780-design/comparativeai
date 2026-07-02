@@ -3,7 +3,7 @@ title: Model Card
 description: DeepSeek model technical report archive — the "technical-report-as-model-card" practice across V2/V3/R1/V3.1 and the VL/Coder/Math series (2026-06-28)
 sidebar:
   order: 2
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **One-line framing**: DeepSeek has no "Model Card" in the Western sense, but its
@@ -25,7 +25,6 @@ snapshotDate: 2026-06-28
 | **DeepSeek-V3** | **2024-12-26** | **arXiv 2412.19437** | MIT | **671B total / 37B active**; FP8 training; improved MoE routing |
 | **DeepSeek-R1 / R1-Zero** | **2025-01-20** | **arXiv 2501.12948** | MIT | **Pure-RL reasoning model**; rule-based rewards; distillation to smaller models |
 | DeepSeek-V3.1 | 2025-08 | Technical blog + HuggingFace README | MIT | V3 base with long-context, tool use, and reinforced RL alignment |
-| DeepSeek-R2 | *2026 rumored* | — | — | Not yet officially confirmed |
 
 All of the above papers are **publicly accessible**, and come with weights, configuration files,
 partial evaluation scripts, and tokenizers. This is **the most complete open-source delivery

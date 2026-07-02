@@ -3,7 +3,7 @@ title: 安全框架
 description: DeepSeek "极简 + 嵌入式" 安全立场：无 RSP / Preparedness / FSF 对标的开源路径（2026-06-28）
 sidebar:
   order: 3
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **一句话定位**：DeepSeek 是全球能力位列前五的前沿实验室中**唯一没有公开结构化安全框架的公司**。
@@ -197,8 +197,6 @@ Anthropic RSP、OpenAI Preparedness、DeepMind FSF、Meta FAIF **全部依赖一
 - **2025-08 V3.1**：技术博客专设 "alignment & safety evaluation" 章节，包含 bias 测试
 - **2025-11**：首次有 DeepSeek 工程师参加 NeurIPS 2025 的 AI Safety Workshop（以个人名义发表，
   非官方政策演讲）
-- **2026-Q1**：传闻中的 R2 模型**可能伴随首个"DeepSeek Safety Notes"独立文档**（来源：多家媒体
-  匿名消息；未证实）
 
 这些**缓慢但单调的增量**显示：DeepSeek 的"安全文档化"正在**被全球生态推动**（HuggingFace 模板
 规范、学术期刊的 Broader Impact 要求、属地监管对下游托管商施压），而非由公司主动发起。

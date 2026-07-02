@@ -3,7 +3,7 @@ title: 红队与评估披露
 description: DeepSeek 的红队与第三方评估：从 V3/R1 技术报告到全球开源评估生态的结构重构（2026-06-28）
 sidebar:
   order: 5
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **一句话定位**：DeepSeek **没有自家的结构化红队披露**（无 Anthropic Frontier Red Team、
@@ -277,7 +277,6 @@ R1 是**开源红队范式的第一个大规模试验场**。其成败将**影�
 | 2025-05 | MATS Summer | 多个 R1-Zero 对齐研究项目 |
 | 2025-08 | DeepSeek V3.1 | 首次加入系统性 bias evaluation |
 | 2025-10 | EU AI Office | R1 纳入 GPAI 系统性风险审视 |
-| 2026-Q1 | 传闻 R2 | 可能伴随首个 "Safety Notes" 独立文档 |
 
 （各项具体日期以相关机构官方公告为准）
 

@@ -3,7 +3,7 @@ title: 安全框架
 description: DeepMind Frontier Safety Framework (FSF) v1→v3 演进；CCL 方法论与 2026-04 的 Harmful Manipulation CCL
 sidebar:
   order: 3
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 ---
 
 > **🆕 2026-04-17 FSF v3.0**：新增 **Tracked Capability Levels (TCLs)** 预警层；
@@ -133,7 +133,6 @@ Harmful Manipulation CCL 的草案在 DeepMind 内部经历了较长时间的争
 | --- | --- | --- | --- |
 | Gemini 2.5 Pro | 2025-04 | Cyber / Auto ML / CBRN（v2 时期） | 均未达 CCL；Cyber 接近 TCL（当时未发布） |
 | **Gemini 3 Pro** | **2025-11** | Cyber / Auto ML / CBRN（v2 框架） | 均未达 CCL；Auto ML **达到 TCL 草案阈值**——触发"增强监控" |
-| Gemini 3 Ultra | 预期 2026-Q1 | 四维全覆盖（v3 框架） | — |
 
 ### Gemini 3 Pro FSF Report（2025-11）——业界首个
 
@@ -150,7 +149,7 @@ Harmful Manipulation CCL 的草案在 DeepMind 内部经历了较长时间的争
 6. **Mitigation plan**：发布前和发布后的缓解措施
 7. **Residual uncertainty**：主动披露未覆盖的风险维度
 
-**意义**：**为 Gemini 3 Ultra（预期 2026-Q1 发布）的 v3-framework 首次全维评估提供模板**。
+**意义**：为后续 v3 框架的全维模型评估提供模板。
 
 ## 三大缓解支柱
 
@@ -248,7 +247,6 @@ FSF 与 Anthropic RSP、OpenAI Preparedness **在 Frontier Model Forum 下有"�
 - Gemini 1.5 Pro（2024-05）UK AISI 参与（首批之一）
 - Gemini 2.5 Pro（2025-03）US AISI + UK AISI 联合评估
 - **Gemini 3 Pro（2025-11）US AISI 因 EO 14179 后政策收缩下降参与；UK AISI 主导**
-- **Gemini 3 Ultra（预期 2026-Q1）AISI 参与方式由 AI Action Plan 后续决定**
 
 ## 与同业对比（2026 Q2 快照）
 
