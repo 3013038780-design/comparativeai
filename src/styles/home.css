@@ -232,6 +232,7 @@ section.chapter:last-of-type {
 .matrix {
 	width: 100%;
 	border-collapse: collapse;
+	table-layout: fixed;
 	font-size: 15px;
 }
 .matrix thead th {
@@ -294,6 +295,11 @@ section.chapter:last-of-type {
 }
 .matrix .topic-cell {
 	width: 22%;
+}
+.matrix thead th.cn,
+.matrix thead th.us,
+.matrix thead th.eu {
+	width: 26%;
 }
 .topic-name {
 	font-family: var(--serif-cn);
