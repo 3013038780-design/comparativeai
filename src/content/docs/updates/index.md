@@ -13,6 +13,8 @@ This page aggregates **content-level** material updates. Code-level changes live
   analyses; corrected the generative-AI filing model to distinguish national service filing from downstream local
   registration; added CAC's 868-service / 530-application implementation totals; and added Shanghai's
   government-procurement supervisory-agent trial measure as a sector-specific subnational practice case.
+- **2026-06-30** — United States review completed: added NSPM-11 and Colorado's psychotherapy-AI restrictions;
+  recorded the Colorado AI Act's entry into force; and added FTC practice under section 5 and the TAKE IT DOWN Act.
 - **2026-06-28** — Site-wide bilingual review through 28 June 2026. English became the default edition;
   Chinese remains available at matching locale routes. All 158 dated content snapshots now carry the same review date.
 - **2026-06-18** — Added Google DeepMind's **AI Control Roadmap** to the company safety-framework analysis,

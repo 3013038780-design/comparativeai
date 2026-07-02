@@ -10,13 +10,16 @@ publishedDate: 2024-05-17
 originalUrl: https://leg.colorado.gov/bills/sb24-205
 relatedTopics:
   - risk-classification
-snapshotDate: 2026-06-28
+snapshotDate: 2026-06-30
 sidebar:
   label: Colorado AI Act (2026-06-30)
   order: 1
 ---
 
 > **Effective-date update (2025 amendments)**: originally set to take effect on 2026-02-01, the Act was **postponed to 2026-06-30** following the 2025 legislative session. Certain provisions were also adjusted in response to industry concerns.
+
+> **Cutoff status:** The delayed effective date arrived on **30 June 2026**. At this site's cutoff, the Act is in
+> force; it is no longer accurate to describe compliance as merely prospective.
 
 ## Summary
 
@@ -110,3 +113,4 @@ creates a presumption of reasonable care.
 | 2024-05-17 | Signed by the Colorado Governor |
 | 2025 session | Several rounds of amendments attempted |
 | 2026-02-01 | Original effective date (subject to 2025/2026 amendments) |
+| 2026-06-30 | Requirements take effect under SB25B-004 |

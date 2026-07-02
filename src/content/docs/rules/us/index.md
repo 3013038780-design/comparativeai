@@ -46,6 +46,12 @@ mechanisms such as "reasonable care" and "compliance presumption," they harden i
 - [**EO 14110 (2023-10-30)**](./eo-14110-biden-ai/) — Biden-signed "Safe, Secure, Trustworthy AI,"
   **revoked by EO 14179 in 2025-01**
 
+### Presidential national-security memoranda
+
+- [**NSPM-11 (2026-06-05)**](./nspm-11-national-security-ai/) — replaces NSM-25 and directs accelerated,
+  multi-vendor AI adoption, updated autonomous-weapons guidance, secure computing, assurance and TEVV across
+  the defense and intelligence enterprise
+
 ### OMB memoranda
 
 - [**OMB M-25-21 / M-25-22 (2025-04-03)**](./omb-m-25-21-22-federal-ai-use/) — federal AI use
@@ -69,11 +75,25 @@ mechanisms such as "reasonable care" and "compliance presumption," they harden i
 | 2025-07-23 | **Trump AI Action Plan + 3 EOs** |
 | 2025-12-11 | **Trump EO 14365 (state law preemption)** |
 | 2026-06-02 | **EO 14409 creates a voluntary frontier-model cybersecurity interface** |
+| 2026-06-05 | **NSPM-11 replaces NSM-25 and resets national-security AI adoption and assurance policy** |
 
-## Federal / state / local relationship (as of 2026-06-28)
+## May–June 2026 enforcement and implementation
+
+- On 21 May, the FTC announced a **$930,000 settlement** with Cox Media Group and two marketing firms over
+  allegedly deceptive claims about an “Active Listening” AI-powered advertising service. The matter demonstrates
+  continued use of FTC Act section 5 against AI marketing claims rather than a new AI-specific cause of action.
+- The FTC began enforcement of the **TAKE IT DOWN Act** on 19 May and sent warning letters on 20 May. The Act is
+  technology-neutral but directly relevant to AI-generated non-consensual intimate imagery and platform removal workflows.
+- Colorado's comprehensive AI Act reached its delayed effective date on **30 June 2026**; Colorado also enacted
+  [sector-specific psychotherapy AI restrictions](/subnational/us/colorado-psychotherapy-ai-restrictions/),
+  signed 3 June and effective 12 August.
+
+Primary enforcement source: [FTC May 2026 releases](https://www.ftc.gov/news-events/news/press-releases/2026/05).
+
+## Federal / state / local relationship (as of 2026-06-30)
 
 - **Federal**: deregulation and state-law preemption remain the baseline, while EO 14409 adds a voluntary
-  national-security interface for cyber-capable frontier models
+  national-security interface for cyber-capable frontier models and NSPM-11 establishes a defense/intelligence adoption architecture
 - **State**: **1,208 state AI bills introduced and 145 state laws enacted in 2025**; the primary battlefield of AI governance
 - **Local**: TRAIGA explicitly preempts local ordinances; varies elsewhere
 

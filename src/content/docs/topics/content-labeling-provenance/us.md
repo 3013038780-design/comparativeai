@@ -15,6 +15,9 @@ The US posture on this topic is **state-first, federal in deliberation, suppleme
   - *COPIED Act* (provenance, artist protection).
   - *NO FAKES Act* (non-consensual deepfakes, rights of publicity).
   - *DEFIANCE Act* (civil remedies for intimate forgery).
+- **Federal platform-removal law (in force)**: the technology-neutral **TAKE IT DOWN Act** requires covered
+  platforms to provide a removal process for non-consensual intimate imagery, including AI-generated forgeries.
+  The FTC began enforcement on 19 May 2026 and issued warning letters the following day.
 - **State law**: California, Texas, Washington, Minnesota, and others have enacted AI-labeling-related statutes, focused principally on **elections** and **sexual-abuse forgery** contexts.
 - **Industry commitments**: the 2023 White House–led voluntary commitments by major AI companies (watermarking, provenance), together with C2PA's technical specifications.
 
@@ -35,3 +38,11 @@ The US posture on this topic is **state-first, federal in deliberation, suppleme
 - **FTC**: prosecutes deceptive AI promotion under "Section 5 — unfair or deceptive acts".
 - **State attorneys general**: the primary enforcers at the state level.
 - **Private right of action**: some state laws (such as the NO FAKES-type proposals) grant individuals a direct right to sue.
+
+## May 2026 practice note
+
+The TAKE IT DOWN Act does not impose a universal provenance label. Its relevance is remedial: once synthetic
+intimate content is posted without consent, covered platforms need an accessible notice-and-removal workflow.
+This should be kept analytically separate from watermarking and election-disclosure rules.
+
+Primary source: [FTC May 2026 enforcement releases](https://www.ftc.gov/news-events/news/press-releases/2026/05).

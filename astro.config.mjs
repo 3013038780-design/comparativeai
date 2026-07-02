@@ -185,6 +185,7 @@ export default defineConfig({
 									collapsed: true,
 									items: [
 										{ ...t('EO 14409 — 前沿 AI 网络安全 (2026-06)', 'EO 14409 — Frontier AI Cybersecurity (Jun 2026)'), slug: 'rules/us/eo-14409-frontier-ai-cybersecurity' },
+										{ ...t('NSPM-11 — 国家安全 AI (2026-06)', 'NSPM-11 — National Security AI (Jun 2026)'), slug: 'rules/us/nspm-11-national-security-ai' },
 										{ ...t('Trump AI Action Plan + 2025-07 EOs', 'Trump AI Action Plan + July 2025 EOs'), slug: 'rules/us/trump-ai-action-plan' },
 										{ ...t('EO 14365 — 州法抢占 (2025-12)', 'EO 14365 — State Law Preemption (Dec 2025)'), slug: 'rules/us/eo-14365-national-ai-framework' },
 										{ ...t('EO 14179 — 撤销前任 (2025-01)', 'EO 14179 — Revoking Prior EOs (Jan 2025)'), slug: 'rules/us/eo-14179-removing-barriers-ai' },
@@ -255,6 +256,7 @@ export default defineConfig({
 							items: [
 								{ ...t('概览', 'Overview'), slug: 'subnational/us' },
 								{ ...t('Colorado AI Act (2026-06)', 'Colorado AI Act (Jun 2026)'), slug: 'subnational/us/colorado-ai-act' },
+								{ ...t('Colorado 心理治疗 AI 限制 (2026)', 'Colorado Psychotherapy AI Restrictions (2026)'), slug: 'subnational/us/colorado-psychotherapy-ai-restrictions' },
 								{ ...t('California SB 53 (2026-01)', 'California SB 53 (Jan 2026)'), slug: 'subnational/us/california-sb-53-frontier-ai' },
 								{ ...t('Texas TRAIGA (2026-01)', 'Texas TRAIGA (Jan 2026)'), slug: 'subnational/us/texas-traiga' },
 								{ ...t('NYC Local Law 144 (2023)', 'NYC Local Law 144 (2023)'), slug: 'subnational/us/nyc-local-law-144' },
